@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.githubusercontent.com/NOAA-FIMS/collaborative_workflow/blob/main/logo.png" width="400" alt="NOAA FIMS logo">  
+<img align="right" src="https://raw.githubusercontent.com/NOAA-FIMS/collaborative_workflow/main/logo.png" width="400" alt="NOAA FIMS logo">  
 
 # The [NOAA Fisheries Integrated Modeling System](https://noaa-fims.github.io/) GitHub Organization 
 
