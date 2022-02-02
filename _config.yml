@@ -1,2 +1,8 @@
 theme: jekyll-theme-minimal
 logo: /assets/img/logo.png
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
