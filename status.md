@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Development Status"
 permalink: /status/
 ---
@@ -15,6 +15,5 @@ permalink: /status/
 |Milestone 1 Progress    | ![m1 Progress](https://img.shields.io/github/milestones/progress-percent/noaa-fims/fims/1)|
 |Issues that Need Triage | ![Issues needing triage](https://img.shields.io/github/issues-raw/noaa-fims/fims/needs-triage)|
 |Pull Requests           | ![Pull requests](https://img.shields.io/github/issues-pr/NOAA-FIMS/FIMS)|
-|`styler` on code        |[![call-style](https://github.com/NOAA-FIMS/FIMS/actions/workflows/style-r-code.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/style-r-code.yml)|
+|Style and document code        |[![call-doc-and-style-r](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-doc-and-style-r.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-doc-and-style-r.yml)|
 |`clang-tidy` on code    |[![Clang-tidy](https://github.com/NOAA-FIMS/FIMS/actions/workflows/clang-tidy.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/clang-tidy.yml)|
-|`Roxygen` docs build    |[![call-update-docs](https://github.com/NOAA-FIMS/FIMS/actions/workflows/update-roxygen.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/update-roxygen.yml)|
