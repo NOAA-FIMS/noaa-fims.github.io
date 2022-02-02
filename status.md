@@ -1,6 +1,8 @@
+---
 layout: page
 title: "Development Status"
 permalink: /dev-status/
+---
 
 # Status of the project
 | Metric            | Status | 
