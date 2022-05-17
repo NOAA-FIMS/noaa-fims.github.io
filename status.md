@@ -21,9 +21,9 @@ permalink: /status/
 |Pull Requests           | ![Pull requests](https://img.shields.io/github/issues-pr/NOAA-FIMS/FIMS)|
 |Style and document `R` code        |[![call-doc-and-style-r](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-doc-and-style-r.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-doc-and-style-r.yml)|
 |`clang-tidy` on `C++` code    |[![Clang-tidy](https://github.com/NOAA-FIMS/FIMS/actions/workflows/clang-tidy.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/clang-tidy.yml)|
-|Calculate test coverage |[![cov](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc_coverage.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc_coverage.yml)|
-|`R cmd check` |[![r-cmd-check](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg)]((https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml)|
-|Google test status |[![googletest](https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg)]((https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml)|
+|Calculate test coverage |[![call-calc_coverage](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml)|
+|`R cmd check` |![r-cmd-check](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg)|
+|Google test status |![googletest](https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg)|
 |**Developer handbook** | **Status** |
 |Total issues |![Total issues](https://img.shields.io/github/issues-raw/noaa-fims/collaborative_workflow)|
 |Closed Issues|![Closed issues](https://img.shields.io/github/issues-closed/noaa-fims/collaborative_workflow)|
