@@ -3,6 +3,8 @@ docs:
     url: "/status/"
   - title: "Developer handbook"
     url: "/collaborative_workflow/"
+  - title: "C++ documentation and file overview"
+    url: "/FIMS-docs/"
   - title: "Github organization"
     url: "https://github.com/NOAA-FIMS"
   - title: "Google drive folder (internal only)"
