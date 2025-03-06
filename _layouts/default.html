@@ -20,22 +20,10 @@
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <img src="{{site.logo | relative_url}}" alt="Logo" width="170px"  />
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-        <p class="view"><a href="https://noaa-fims.github.io/status">View the project status </a></p>
-
-        <p class="view"><a href="https://github.com/orgs/NOAA-FIMS/discussions">Join the team discussion</a></p>
-        
-        <p class="view"><a href="https://noaa-fims.github.io/authors"> View the team members</a> </p>
-        
-        <p class="view"><a href="https://noaa-fims.github.io/FIMS-docs"> View the C++ documentation </a> </p>
-
-        <p class="view"><a href="https://drive.google.com/drive/folders/1weGhwrvDEBEyRnJ-bEeMrsFtwloEdow4?usp=sharing">View the project documents (NOAA internal only)</a></p>
-
-        <p class="view"><a href="https://noaa-fims.github.io/collaborative_workflow">View the collaborative workflow book </a></p>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
