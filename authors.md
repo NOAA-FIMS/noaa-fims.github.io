@@ -17,6 +17,7 @@ FIMS is a collaborative effort that would not be possible without the generous s
 * Christine C. Stawitz (OST)
 * Christopher M. Legault (NEFSC)
 * Cole C. Monnahan (AFSC)
+* Eric J. Ward (NWFSC)
 * Ian G. Taylor (NWFSC)
 * Jane Y. Sullivan (AFSC)
 * Jon K. T. Brodziak (PIFSC)
