@@ -1,11 +1,72 @@
+pagetitle: "FIMS"
+page-layout: full
+title-block-banner: false
+header-includes: >
+  <link rel="stylesheet" href="_assets/index.css">
+resources:
+  - _assets/index.css
 ---
-title: "fims-website-test"
----
 
-This is a Quarto website.
+```{=html}
+<div class="site-hero mb-5">
+  <div class="site-intro">
+    <h1 class="site-title text-primary mt-0 fw-lighter text-center text-sm-start">
+      NOAA Fisheries Integrated Modeling System
+    </h1>
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+    <div class="social-icon-links my-3" aria-hidden="true">
+      <a
+        class="link-primary"
+        href="https://github.com/NOAA-FIMS"
+        title="github"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fab fa-github fa-lg fa-fw"></i>
+      </a>
 
-```{r}
-1 + 1
+      <a
+        class="link-primary"
+        href="https://noaa-fims.r-universe.dev"
+        title="r-project"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fab fa-r-project fa-lg fa-fw"></i>
+      </a>
+
+      <a
+        class="link-primary"
+        href="https://noaa-fims.github.io/collaborative_workflow/"
+        title="developer-handbook"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fab fa-book fa-lg fa-fw"></i>
+      </a>
+
+      <a
+        class="link-primary"
+        href="https://nmfs-ost.github.io/noaa-fit/"
+        title="FIT"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fab fa-briefcase fa-lg fa-fw"></i>
+      </a>
+    </div>
+
+    <p class="site-into fs-5">
+      Welcome to the <strong>Fisheries Integrated Modeling System (FIMS)</strong> 
+      development website! 
+      TLDR: FIMS is a software system designed to support next-generation 
+      fisheries stock assessment, ecosystem, and socioeconomic modeling.
+    </p>
+    <a class="mt4 action text" href="/about">See the about page for more! →</a>
+  </div>
+
+  <div class="site-logo">
+    <img src="_images/FIMS_logo3.png" alt="FIMS Logo">
+  </div>
+</div>
 ```

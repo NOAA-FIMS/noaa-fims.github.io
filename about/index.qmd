@@ -1,0 +1,46 @@
+---
+date: "2025-06-25"
+title: About FIMS
+about:
+  template: trestles
+  id: hero-heading
+---
+
+The NOAA Fisheries Integrated Modeling System is a software system designed to support next-generation fisheries stock assessment, ecosystem, and socioeconomic modeling. A team of [experts](https://noaa-fims.github.io/authors.md) within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners. The roles of internal and external collaborators are outlined in the [governance section](https://noaa-fims.github.io/collaborative_workflow/fims-governance.html) of our developer guide. A beta version of the software was released in 2023 and we plan to have another beta release in 2024. Users and developers are welcome to join the [Discussions board](https://github.com/orgs/NOAA-FIMS/discussions) or submit bug reports using GitHub issues. Please use the issues under [collaborative workflow](https://github.com/NOAA-FIMS/collaborative_workflow/issues) to make suggestions about the developer guide and the issues under the FIMS software [repository](https://github.com/NOAA-FIMS/FIMS/issues) for software design and development feedback.
+
+## Current project status
+
+The project is constantly under development 🔨. Check out our progress so far below: 
+
+| Metric                 | Status | 
+|----------------------- |------ |
+| **Development** | **Status** |
+|Total Issues           |  ![Total Issues](https://img.shields.io/github/issues-raw/noaa-fims/fims)|
+|Closed Issues           | ![Closed Issues](https://img.shields.io/github/issues-closed/noaa-fims/fims)|
+|Milestone 1 Open Issues | ![m1 Open Issues](https://img.shields.io/github/milestones/issues-open/noaa-fims/fims/1)|
+|Milestone 1 Closed Issues      | ![m1 Issues](https://img.shields.io/github/milestones/issues-closed/noaa-fims/fims/1)|
+|Milestone 1 Progress    | ![m1 Progress](https://img.shields.io/github/milestones/progress-percent/noaa-fims/fims/1)|
+|Milestone 2 Issues      | ![m2 Issues](https://img.shields.io/github/milestones/issues-open/noaa-fims/fims/2)|
+|Issues that Need Triage | ![Issues needing triage](https://img.shields.io/github/issues-raw/noaa-fims/fims/triage_needed)|
+|Feature requests        | ![Issues needing triage](https://img.shields.io/github/issues-raw/noaa-fims/fims/kind:%20feature)|
+|Bugs                    | ![Issues needing triage](https://img.shields.io/github/issues-raw/noaa-fims/fims/kind:%20bug)|
+|Pull Requests           | ![Pull requests](https://img.shields.io/github/issues-pr/NOAA-FIMS/FIMS)|
+|Style and document `R` code        |[![call-doc-and-style-r](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-doc-and-style-r.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-doc-and-style-r.yml)|
+|`clang-tidy` on `C++` code    |[![Clang-tidy](https://github.com/NOAA-FIMS/FIMS/actions/workflows/clang-tidy.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/clang-tidy.yml)|
+|Calculate test coverage |[![call-calc_coverage](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml)|
+|`R cmd check` |![r-cmd-check](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg)|
+|Google test status |![googletest](https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg)|
+|**Developer handbook** | **Status** |
+|Total issues |![Total issues](https://img.shields.io/github/issues-raw/noaa-fims/collaborative_workflow)|
+|Closed Issues|![Closed issues](https://img.shields.io/github/issues-closed/noaa-fims/collaborative_workflow)|
+
+## Release  
+
+ The current release can be found on the [release page](https://github.com/NOAA-FIMS/FIMS/releases).
+
+## Related Projects
+
+- [The Fisheries Integrated Toolbox](https://noaa-fisheries-integrated-toolbox.github.io/).
+- [Stock Assessment Dictionary Project](https://github.com/nmfs-fish-tools/fishdictionary)
+
+> If you have questions or comments please [contact the FIMS Project Lead](mailto:kelli.johnson@noaa.gov).
