@@ -107,7 +107,7 @@ resources:
 </div>
 ```
 
-## [Sites](/sites/sites_index.qmd)
+## [Sites](sites/sites_index.qmd)
 
 ::: {#sites-listing}
 :::
