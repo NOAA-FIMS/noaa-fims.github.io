@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>FIMS</title>
+<link>https://noaa-fims.github.io/sites/sites_index.html</link>
+<atom:link href="https://noaa-fims.github.io/sites/sites_index.xml" rel="self" type="application/rss+xml"/>
+<description>Websites associated with FIMS.
+</description>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Wed, 09 Jul 2025 19:04:06 GMT</lastBuildDate>
+<item>
+  <title>🔍 FIMS case studies</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>Test cases, based on regional assessments, to illustrate use of FIMS.
+</description>
+  <category>WHAM</category>
+  <category>SS3</category>
+  <category>ASAP</category>
+  <category>TMB</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Wed, 09 Jul 2025 19:04:06 GMT</pubDate>
+  <media:content url="https://noaa-fims.github.io/../_images/case_study.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>📔 Developer Handbook</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>The FIMS developer handbook describes the workflow for developers and contributors.
+</description>
+  <category>developers</category>
+  <category>contributing</category>
+  <category>guide</category>
+  <category>advanced</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Wed, 09 Jul 2025 19:04:06 GMT</pubDate>
+  <media:content url="https://noaa-fims.github.io/../_images/contribution.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>💻 Trainings</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>FIMS training materials including C++, TMB, etc.
+</description>
+  <category>training</category>
+  <category>C++</category>
+  <category>TMB</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Wed, 09 Jul 2025 19:04:06 GMT</pubDate>
+  <media:content url="https://noaa-fims.github.io/../_images/training.png" medium="image" type="image/png"/>
+</item>
+</channel>
+</rss>
