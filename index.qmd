@@ -96,7 +96,7 @@ resources:
       </a>
     </div>
 
-    <p class="site-into fs-5">
+    <p class="site-intro fs-5">
       Welcome to the <strong>Fisheries Integrated Modeling System (FIMS)</strong> 
       development website! <br>
       <strong>FIMS</strong> is a software system designed to support next-generation 
