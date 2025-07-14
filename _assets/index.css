@@ -26,11 +26,11 @@
   display: flex;
   align-items: center;
   justify-content: flex-end; /* logo to the right */
-  max-width: 100px; /* adjust as needed */
+  max-width: 300px; /* adjust as needed */
 }
 
 .site-logo img {
-  max-width: 100%;
+  max-width: 300%;
   height: auto;
   object-fit: contain;
 }
