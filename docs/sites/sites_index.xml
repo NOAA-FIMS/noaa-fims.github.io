@@ -6,49 +6,49 @@
       version="2.0">
 <channel>
 <title>FIMS</title>
-<link>https://noaa-fims.github.io/sites/sites_index.html</link>
-<atom:link href="https://noaa-fims.github.io/sites/sites_index.xml" rel="self" type="application/rss+xml"/>
+<link>https://e-perl-noaa.github.io/fims-website-test/sites/sites_index.html</link>
+<atom:link href="https://e-perl-noaa.github.io/fims-website-test/sites/sites_index.xml" rel="self" type="application/rss+xml"/>
 <description>Websites associated with FIMS.
 </description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Wed, 09 Jul 2025 21:20:11 GMT</lastBuildDate>
+<lastBuildDate>Mon, 14 Jul 2025 16:25:52 GMT</lastBuildDate>
 <item>
   <title>🔍 FIMS case studies</title>
-  <link>https://noaa-fims.github.io/</link>
+  <link>https://e-perl-noaa.github.io/fims-website-test/</link>
   <description>Test cases, based on regional assessments, to illustrate use of FIMS.
 </description>
   <category>WHAM</category>
   <category>SS3</category>
   <category>ASAP</category>
   <category>TMB</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 09 Jul 2025 21:20:11 GMT</pubDate>
-  <media:content url="https://noaa-fims.github.io/../_images/case_study.jpg" medium="image" type="image/jpeg"/>
+  <guid>https://e-perl-noaa.github.io/fims-website-test/</guid>
+  <pubDate>Mon, 14 Jul 2025 16:25:52 GMT</pubDate>
+  <media:content url="https://e-perl-noaa.github.io/fims-website-test/../images/case_study.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>📔 Developer Handbook</title>
-  <link>https://noaa-fims.github.io/</link>
+  <link>https://e-perl-noaa.github.io/fims-website-test/</link>
   <description>The FIMS developer handbook describes the workflow for developers and contributors.
 </description>
   <category>developers</category>
   <category>contributing</category>
   <category>guide</category>
   <category>advanced</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 09 Jul 2025 21:20:11 GMT</pubDate>
-  <media:content url="https://noaa-fims.github.io/../_images/contribution.jpg" medium="image" type="image/jpeg"/>
+  <guid>https://e-perl-noaa.github.io/fims-website-test/</guid>
+  <pubDate>Mon, 14 Jul 2025 16:25:52 GMT</pubDate>
+  <media:content url="https://e-perl-noaa.github.io/fims-website-test/../images/contribution.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>💻 Trainings</title>
-  <link>https://noaa-fims.github.io/</link>
+  <link>https://e-perl-noaa.github.io/fims-website-test/</link>
   <description>FIMS training materials including C++, TMB, etc.
 </description>
   <category>training</category>
   <category>C++</category>
   <category>TMB</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 09 Jul 2025 21:20:11 GMT</pubDate>
-  <media:content url="https://noaa-fims.github.io/../_images/training.png" medium="image" type="image/png"/>
+  <guid>https://e-perl-noaa.github.io/fims-website-test/</guid>
+  <pubDate>Mon, 14 Jul 2025 16:25:52 GMT</pubDate>
+  <media:content url="https://e-perl-noaa.github.io/fims-website-test/../images/training.png" medium="image" type="image/png"/>
 </item>
 </channel>
 </rss>

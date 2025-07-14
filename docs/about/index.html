@@ -68,6 +68,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var year = new Date().getFullYear();
+    var el = document.getElementById('copyright-year');
+    if (el) el.textContent = '© ' + year;
+  });
+</script>
 
 
 <link rel="stylesheet" href="../_assets/panelset-extras.css">
@@ -477,7 +485,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/noaa-fims\.github\.io\/");
+      var filterRegex = new RegExp("https:\/\/e-perl-noaa\.github\.io\/fims-website-test");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -809,18 +817,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© {{&lt; now year &gt;}} FIMS</p>
+<p><span id="copyright-year"></span> FIMS</p>
 </div>   
     <div class="nav-footer-center">
-<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="github" target="_blank" rel="noopener">{{&lt; fa brands github &gt;}}</a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="r-project" target="_blank" rel="noopener">{{&lt; fa brands r-project &gt;}}</a></p>
-<div class="toc-actions"><ul><li><a href="https://github.com/NOAA-FIMS/noaa-fims.github.io/blob/main/about/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/NOAA-FIMS/noaa-fims.github.io/edit/main/about/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/NOAA-FIMS/noaa-fims.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+      &nbsp;
+    <div class="toc-actions"><ul><li><a href="https://github.com/e-perl-noaa/fims-website-test/blob/main/about/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/e-perl-noaa/fims-website-test/edit/main/about/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/e-perl-noaa/fims-website-test/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
-<p>&lt;a class=“link-dark me-1” Made with 💙</p>
-</div><a class="link-dark me-1" made="" with="" 💙<="" a="">
-  </a></div><a class="link-dark me-1" made="" with="" 💙<="" a="">
-</a></footer><a class="link-dark me-1" made="" with="" 💙<="" a="">
+<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="github" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="r-project" target="_blank" rel="noopener"><i class="fab fa-r-project"></i></a></p>
+</div>
+  </div>
+</footer>
 
 
 
 
-</a></body></html>
+</body></html>

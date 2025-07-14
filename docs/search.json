@@ -14,6 +14,34 @@
     "text": "Sites"
   },
   {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About FIMS",
+    "section": "",
+    "text": "The NOAA Fisheries Integrated Modeling System is a software system designed to support next-generation fisheries stock assessment, ecosystem, and socioeconomic modeling. A team of experts within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners. The roles of internal and external collaborators are outlined in the governance section of our developer guide. A beta version of the software was released in 2023 and we plan to have another beta release in 2024. Users and developers are welcome to join the Discussions board or submit bug reports using GitHub issues. Please use the issues under collaborative workflow to make suggestions about the developer guide and the issues under the FIMS software repository for software design and development feedback."
+  },
+  {
+    "objectID": "about/index.html#current-project-status",
+    "href": "about/index.html#current-project-status",
+    "title": "About FIMS",
+    "section": "Current project status",
+    "text": "Current project status\nThe project is constantly under development 🔨. Check out our progress so far below:\n\n\n\nMetric\nStatus\n\n\n\n\nDevelopment\nStatus\n\n\nTotal Issues\n\n\n\nClosed Issues\n\n\n\nMilestone 1 Open Issues\n\n\n\nMilestone 1 Closed Issues\n\n\n\nMilestone 1 Progress\n\n\n\nMilestone 2 Issues\n\n\n\nIssues that Need Triage\n\n\n\nFeature requests\n\n\n\nBugs\n\n\n\nPull Requests\n\n\n\nStyle and document R code\n\n\n\nclang-tidy on C++ code\n\n\n\nCalculate test coverage\n\n\n\nR cmd check\n\n\n\nGoogle test status\n\n\n\nDeveloper handbook\nStatus\n\n\nTotal issues\n\n\n\nClosed Issues"
+  },
+  {
+    "objectID": "about/index.html#release",
+    "href": "about/index.html#release",
+    "title": "About FIMS",
+    "section": "Release",
+    "text": "Release\nThe current release can be found on the release page."
+  },
+  {
+    "objectID": "about/index.html#related-projects",
+    "href": "about/index.html#related-projects",
+    "title": "About FIMS",
+    "section": "Related Projects",
+    "text": "Related Projects\n\nThe Fisheries Integrated Toolbox.\nStock Assessment Dictionary Project\n\n\nIf you have questions or comments please contact the FIMS Project Lead."
+  },
+  {
     "objectID": "sites/sites_index.html",
     "href": "sites/sites_index.html",
     "title": "FIMS sites",
