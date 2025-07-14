@@ -102,7 +102,7 @@ resources:
   </div>
 
   <div class="site-logo">
-    <img src="FIMS_logo3.png" alt="FIMS Logo">
+    <img src="_images/FIMS_logo3.png" alt="FIMS Logo">
   </div>
 </div>
 ```
