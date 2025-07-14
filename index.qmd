@@ -41,7 +41,10 @@ header-includes: >
   <link rel="stylesheet" href="_assets/index.css">
 resources:
   - _assets/index.css
-  - images/
+  - images/case_study.jpg
+  - images/contribution.jpg
+  - images/training.png
+  - images/FIMS_logo3.png
 ---
 
 ```{=html}
