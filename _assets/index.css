@@ -9,7 +9,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between; /* ensures items are at the edges */
-  gap: 2rem; /* optional: adds space between intro and logo */
+  gap: 1rem; /* optional: adds space between intro and logo */
 }
 
 .site-intro {
@@ -30,9 +30,11 @@
 }
 
 .site-logo img {
-  max-width: 300%;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
+  /* Optional: for simple fade-in */
+  animation: fade-in 2s ease-in forwards;
 }
 
 @keyframes fade-in {
