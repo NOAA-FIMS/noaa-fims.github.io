@@ -6,7 +6,7 @@ project:
     - "sites/*.qmd"
     - "about/index.*md"
   resources:
-    - _images/
+    - images/
     - _assets/
   # post-render:
   #   - "cp -r static/. _site/"

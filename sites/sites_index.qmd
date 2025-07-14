@@ -5,7 +5,7 @@ description: >
 listing:
   contents:
     - path: https://noaa-fims.github.io/case-studies/
-      image: ../_images/case_study.jpg
+      image: ../images/case_study.jpg
       title: 🔍 FIMS case studies
       description: >
         Test cases, based on regional assessments, to illustrate use of FIMS.
@@ -17,7 +17,7 @@ listing:
       description: >
         The FIMS developer handbook describes the workflow for developers and contributors.
       categories: [developers, contributing, guide, advanced]
-      image: ../_images/contribution.jpg
+      image: ../images/contribution.jpg
       image-alt: >
         Image of puzzle pieces with a hand adding a final puzzle piece
     - path: https://noaa-fims.github.io/FIMS_training/
@@ -25,7 +25,7 @@ listing:
       description: >
         FIMS training materials including C++, TMB, etc.
       categories: [training, C++, TMB]
-      image: ../_images/training.png
+      image: ../images/training.png
       image-alt: >
         Image of people sitting around a white board with an instructor standing in front of the whiteboard.
 

@@ -18,7 +18,7 @@ listing:
           description: >
             Test cases, based on regional assessments, to illustrate use of FIMS.
           categories: [WHAM, SS3, ASAP, TMB]
-          image: _images/case_study.jpg
+          image: images/case_study.jpg
           image-alt: >
             Image of a laptop, book, and chart with text that says case study
         - path: https://noaa-fims.github.io/collaborative_workflow/
@@ -26,7 +26,7 @@ listing:
           description: >
             The FIMS developer handbook describes the workflow for developers and contributors.
           categories: [developers, contributing, guide, advanced]
-          image: _images/contribution.jpg
+          image: images/contribution.jpg
           image-alt: >
             Image of puzzle pieces with a hand adding a final puzzle piece
         - path: https://noaa-fims.github.io/FIMS_training/
@@ -34,13 +34,14 @@ listing:
           description: >
             FIMS training materials including C++, TMB, etc.
           categories: [training, C++, TMB]
-          image: _images/training.png
+          image: images/training.png
           image-alt: >
             Image of people sitting around a white board with an instructor standing in front of the whiteboard.
 header-includes: >
   <link rel="stylesheet" href="_assets/index.css">
 resources:
   - _assets/index.css
+  - images/
 ---
 
 ```{=html}
@@ -102,7 +103,7 @@ resources:
   </div>
 
   <div class="site-logo">
-    <img src="_images/FIMS_logo3.png" alt="FIMS Logo">
+    <img src="images/FIMS_logo3.png" alt="FIMS Logo">
   </div>
 </div>
 ```
