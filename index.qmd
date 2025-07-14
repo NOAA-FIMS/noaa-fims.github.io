@@ -18,9 +18,9 @@ listing:
           description: >
             Test cases, based on regional assessments, to illustrate use of FIMS.
           categories: [WHAM, SS3, ASAP, TMB]
-          image: images/briefcase-solid.svg
-          image-alt: >
-            Image of a laptop, book, and chart with text that says case study
+          # image: images/case_study.jpg
+          # image-alt: >
+          #   Image of a laptop, book, and chart with text that says case study
         - path: https://noaa-fims.github.io/collaborative_workflow/
           title: 📔 Developer Handbook
           description: >
