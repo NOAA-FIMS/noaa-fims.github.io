@@ -11,7 +11,7 @@ listing:
     categories: false
     sort-ui: false
     filter-ui: false
-    fields: [title, image, description]
+    fields: [title, description]
     contents:
         - path: https://noaa-fims.github.io/case-studies/
           title: 🔍 FIMS case studies
