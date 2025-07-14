@@ -24,10 +24,12 @@ website:
     title: FIMS
     background: light
     right:
-      - text: sites
-        href: sites/sites_index.qmd
+      - text: home
+        href: index.qmd
       - text: about
         href: about/index.qmd
+      - text: sites
+        href: sites/sites_index.qmd
       - icon: github
         href: https://github.com/NOAA-FIMS
   page-footer:
