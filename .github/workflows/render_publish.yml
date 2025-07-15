@@ -2,10 +2,13 @@ on:
   push:
     branches: main
   workflow_dispatch:
+  # schedule:
+  #   - cron: '0 8 * * 2' # Every Tuesday at 08:00 UTC
+
 concurrency:
   group: ${{ github.workflow}}-${{ github.ref }}
   cancel-in-progress: true
-  
+
 name: Render and Publish
 
 jobs:
@@ -14,11 +17,11 @@ jobs:
     env:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      
+
       - uses: r-lib/actions/setup-r@v2
 
       - uses: r-lib/actions/setup-r-dependencies@v2
@@ -34,7 +37,7 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -50,3 +53,62 @@ jobs:
           render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # weekly-pkgdown-list:
+  #   runs-on: ubuntu-latest
+  #   env:
+  #     R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+  #     GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+  #   if: github.event_name == 'schedule'
+  #   steps:
+  #     - name: Check out repository
+  #       uses: actions/checkout@v4
+  # 
+  #     - uses: r-lib/actions/setup-r@v2
+  # 
+  #     - uses: r-lib/actions/setup-r-dependencies@v2
+  #       with:
+  #         packages:
+  #           any::knitr
+  #           any::rmarkdown
+  #           any::gh
+  #           any::purrr
+  #           any::tibble
+  #           any::dplyr
+  # 
+  #     - name: Set up Quarto
+  #       uses: quarto-dev/quarto-actions/setup@v2
+  # 
+  #     - name: Render only pkgdown-list.qmd
+  #       run: quarto render pkgdown-list.qmd --to html
+  # 
+  #     - name: Check for changes to rendered file
+  #       run: |
+  #         git config --global user.email "gh-actions@github.com"
+  #         git config --global user.name "GitHub Actions"
+  #         git add docs/pkgdown-list.html
+  #         git diff --cached --quiet || echo "CHANGED=true" >> $GITHUB_ENV
+  # 
+  #     - name: Commit rendered file if changed
+  #       if: env.CHANGED == 'true'
+  #       run: |
+  #         git commit -m "Auto-update pkgdown list [skip ci]" || echo "Nothing to commit"
+  #         git push
+  # 
+  #     - name: Upload artifact if changed
+  #       if: env.CHANGED == 'true'
+  #       uses: actions/upload-pages-artifact@v3
+  #       with:
+  #         path: 'docs/'
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  # 
+  #     - name: Publish to GitHub Pages if changed
+  #       if: env.CHANGED == 'true'
+  #       uses: quarto-dev/quarto-actions/publish@v2
+  #       with:
+  #         target: gh-pages
+  #         path: docs
+  #         render: false
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
