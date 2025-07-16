@@ -2,8 +2,8 @@ on:
   push:
     branches: main
   workflow_dispatch:
-  # schedule:
-  #   - cron: '0 8 * * 2' # Every Tuesday at 08:00 UTC
+  schedule:
+    - cron: '15 18 * * 3' # Every Tuesday at 08:00 UTC
 
 concurrency:
   group: ${{ github.workflow}}-${{ github.ref }}
@@ -80,7 +80,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Check if pkgdown sites need updating and update
-        run: Rscript get_pkgdown_sites.R
+        run: Rscript .github/get_pkgdown_sites.R
 
       - name: Check for changes to qmd file file
         run: |

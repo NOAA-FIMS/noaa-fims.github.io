@@ -111,7 +111,7 @@ resources:
 </div>
 ```
 
-## [Sites](sites/sites_index.qmd)
+## [Useful sites](sites/sites_index.qmd)
 
 ::: {#sites-listing}
 :::
