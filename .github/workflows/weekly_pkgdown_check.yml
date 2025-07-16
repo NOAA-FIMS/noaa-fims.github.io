@@ -1,0 +1,65 @@
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 21 * * 3' # Every Wednesday at 3 PM EST
+
+concurrency:
+  group: ${{ github.workflow}}-${{ github.ref }}
+  cancel-in-progress: true
+
+name: Weekly Pkgdown Check
+
+jobs:
+weekly-pkgdown-list:
+    runs-on: ubuntu-latest
+    env:
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages:
+            any::knitr
+            any::rmarkdown
+            any::gh
+            any::purrr
+            any::tibble
+            any::dplyr
+
+      - name: Check if pkgdown sites need updating and update
+        run: Rscript .github/get_pkgdown_sites.R
+
+      - name: Check for changes to qmd file file
+        run: |
+          git config --global user.email "gh-actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add sites/sites_index.qmd
+          git diff --cached --quiet || echo "CHANGED=true" >> $GITHUB_ENV
+        
+      - name: Get top contributor username
+        id: topcontrib
+        run: |
+          echo "TOP_CONTRIB=$(cat top_contributor.txt)" >> $GITHUB_ENV
+          rm top_contributor.txt
+        
+      - name: Create Pull Request for updated sites_index.qmd
+        if: env.CHANGED == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Update sites_index.qmd for new pkgdown site in FIMS org"
+          branch: auto/pkgdown-update
+          title: "Update sites_index.qmd for new pkgdown site in FIMS org"
+          body: |
+            :sparkles: **Automated update to `sites/sites_index.qmd`** :sparkles:
+            
+            Hey 👋 ${{ env.TOP_CONTRIBS }}, your package’s pkgdown site has been added!
+
+            Please add appropriate **categories** to the newly listed pkgdown site in `sites/sites_index.qmd` to help with site indexing and discovery.
+
+            - Edit this pull request to add or update categories as needed.
+            - Once reviewed, you may merge this PR.
