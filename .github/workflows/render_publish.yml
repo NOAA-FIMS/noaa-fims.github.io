@@ -3,7 +3,7 @@ on:
     branches: main
   workflow_dispatch:
   schedule:
-    - cron: '0 19 * * 3' # Every Wednesday at 3 PM EST
+    - cron: '0 20 * * 3' # Every Wednesday at 3 PM EST
 
 concurrency:
   group: ${{ github.workflow}}-${{ github.ref }}

@@ -88,5 +88,5 @@ for (i in seq_len(nrow(results))) {
 
 if (length(new_blocks) > 0 && !is.na(insert_line)) {
   lines <- append(lines, new_blocks, after = insert_line - 1)
-  writeLines(lines, sites_file)
+  writeLines(lines, "sites/sites_index.qmd")
 }
