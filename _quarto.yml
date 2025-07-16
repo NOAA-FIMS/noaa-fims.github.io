@@ -30,6 +30,8 @@ website:
         href: about/index.qmd
       - text: sites
         href: sites/sites_index.qmd
+      - text: changelog
+        href: FIMS_CHANGELOG.qmd
       - icon: github
         href: https://github.com/NOAA-FIMS
   page-footer:
