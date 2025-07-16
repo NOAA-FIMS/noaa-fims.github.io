@@ -64,43 +64,43 @@ jobs:
             - Edit this pull request to add or update categories as needed.
             - Once reviewed, you may merge this PR.
 
-    weekly-update-changelog:
-      runs-on: ubuntu-latest
-      env:
-        R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
-        GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      steps:
-        - name: Check out repository
-          uses: actions/checkout@v4
+  weekly-update-changelog:
+    runs-on: ubuntu-latest
+    env:
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
   
-        - uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-r@v2
   
-        - uses: r-lib/actions/setup-r-dependencies@v2
-          with:
-            packages:
-              any::httr
-              any::jsonlite
-              any::glue
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages:
+            any::httr
+            any::jsonlite
+            any::glue
   
-        - name: Check if pkgdown sites need updating and update
-          run: Rscript .github/change_log.R
+      - name: Check if pkgdown sites need updating and update
+        run: Rscript .github/change_log.R
           
-        - name: Check for changes to FIMS_CHANGELOG.qmd
-          id: git-check
-          run: |
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git config --global user.name "github-actions[bot]"
-            git add FIMS_CHANGELOG.qmd
-            git diff --cached --quiet || echo "changed=true" >> $GITHUB_OUTPUT
+      - name: Check for changes to FIMS_CHANGELOG.qmd
+        id: git-check
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add FIMS_CHANGELOG.qmd
+          git diff --cached --quiet || echo "changed=true" >> $GITHUB_OUTPUT
   
-        - name: Create Pull Request for updated changelog
-          if: steps.git-check.outputs.changed == 'true'
-          uses: peter-evans/create-pull-request@v6
-          with:
-            commit-message: "Update FIMS_CHANGELOG.qmd with latest FIMS releases"
-            branch: auto/fims-changelog-update
-            title: "Update FIMS_CHANGELOG.qmd"
-            body: |
-              :robot: This automated PR updates `FIMS_CHANGELOG.qmd` with the latest releases from [NOAA-FIMS/FIMS](https://github.com/NOAA-FIMS/FIMS).
-            labels: |
-              changelog
+      - name: Create Pull Request for updated changelog
+        if: steps.git-check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Update FIMS_CHANGELOG.qmd with latest FIMS releases"
+          branch: auto/fims-changelog-update
+          title: "Update FIMS_CHANGELOG.qmd"
+          body: |
+            :robot: This automated PR updates `FIMS_CHANGELOG.qmd` with the latest releases from [NOAA-FIMS/FIMS](https://github.com/NOAA-FIMS/FIMS).
+          labels: |
+            changelog
