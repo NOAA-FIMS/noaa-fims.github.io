@@ -2,7 +2,8 @@ project:
   type: website
   output-dir: docs
   render:
-    - "*.qmd"
+    - "*. qmd"
+    - "*.md"
     - "sites/*.qmd"
     - "about/*qmd"
   resources:
