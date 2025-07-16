@@ -70,7 +70,8 @@ insert_line <- which(lines == "")[1]  # You want before the first empty line
 
 # Prepare new lines (only for sites not already present)
 new_blocks <- character(0)
-for (i in seq_len(nrow(results))) {
+new_contributors <- character(0)  
+for (i in seq_len(nrow(results_filt))) {
   site <- results_filt$github_pages_url[i]
   repo <- results_filt$repo[i]
   desc <- results_filt$description[i]
@@ -83,10 +84,31 @@ for (i in seq_len(nrow(results))) {
       sprintf("        %s", desc)
     )
     new_blocks <- c(new_blocks, block)
+    
+    # ---- Fetch top contributor for this repo ----
+    contributors <- tryCatch(
+      gh::gh("/repos/{owner}/{repo}/contributors", owner = org, repo = repo, .limit = 1),
+      error = function(e) NULL
+    )
+    if (!is.null(contributors) && length(contributors) > 0) {
+      username <- contributors[[1]]$login
+      if (!is.null(username)) {
+        new_contributors <- c(new_contributors, username)
+      }
+    }
+    # --------------------------------------------
   }
 }
 
 if (length(new_blocks) > 0 && !is.na(insert_line)) {
   lines <- append(lines, new_blocks, after = insert_line - 1)
   writeLines(lines, "sites/sites_index.qmd")
+}
+
+# Save unique contributors to a file for GitHub Actions to use in the PR
+if (length(new_contributors) > 0) {
+  new_contributors <- unique(new_contributors)
+  cat(paste(new_contributors, collapse = " "), file = "top_contributors.txt")
+} else {
+  cat("", file = "top_contributors.txt")  # Ensure the file exists, even if empty
 }
