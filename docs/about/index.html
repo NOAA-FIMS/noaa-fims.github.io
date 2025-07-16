@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-06-25">
 
 <title>About FIMS – FIMS</title>
 <style>
@@ -69,6 +68,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <script>
   window.addEventListener('DOMContentLoaded', function() {
     var year = new Date().getFullYear();
@@ -81,8 +81,10 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../_assets/panelset-extras.css">
 <meta property="og:title" content="About FIMS – FIMS">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://img.shields.io/github/issues-raw/noaa-fims/fims/kind: feature.png">
+<meta property="og:image" content="https://e-perl-noaa.github.io/fims-website-test/images/FIMS_logo3.png">
 <meta property="og:site_name" content="FIMS">
+<meta property="og:image:height" content="1433">
+<meta property="og:image:width" content="2711">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -103,12 +105,20 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../sites/sites_index.html"> 
-<span class="menu-text">sites</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../about/index.html" aria-current="page"> 
 <span class="menu-text">about</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../sites/sites_index.html"> 
+<span class="menu-text">sites</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../FIMS_CHANGELOG.md"> 
+<span class="menu-text">changelog</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/NOAA-FIMS"> <i class="bi bi-github" role="img">
@@ -129,24 +139,38 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
 <div class="quarto-about-trestles">
   <div class="about-entity">
+    <img src="../images/FIMS_logo3.png" class="about-image
+  rounded " style="width: 20em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">About FIMS</h1>
 </div>
 <div class="quarto-title-meta">
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 25, 2025</p>
-    </div>
-  </div>
   </div>
 </header>
   </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>The NOAA Fisheries Integrated Modeling System is a software system designed to support next-generation fisheries stock assessment, ecosystem, and socioeconomic modeling. A team of <a href="https://noaa-fims.github.io/authors.md">experts</a> within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners. The roles of internal and external collaborators are outlined in the <a href="https://noaa-fims.github.io/collaborative_workflow/fims-governance.html">governance section</a> of our developer guide. A beta version of the software was released in 2023 and we plan to have another beta release in 2024. Users and developers are welcome to join the <a href="https://github.com/orgs/NOAA-FIMS/discussions">Discussions board</a> or submit bug reports using GitHub issues. Please use the issues under <a href="https://github.com/NOAA-FIMS/collaborative_workflow/issues">collaborative workflow</a> to make suggestions about the developer guide and the issues under the FIMS software <a href="https://github.com/NOAA-FIMS/FIMS/issues">repository</a> for software design and development feedback.</p>
+  <div class="about-contents"><div id="hero-heading">
+<div class="h1">
+👋 Hey there!
+</div>
+<div class="lead">
+<p>The NOAA Fisheries Integrated Modeling System is a software system designed to support next-generation fisheries stock assessment, ecosystem, and socioeconomic modeling.</p>
+<p>A team of <a href="https://noaa-fims.github.io/authors.md">experts</a> within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners. The roles of internal and external collaborators are outlined in the <a href="https://noaa-fims.github.io/collaborative_workflow/fims-governance.html">governance section</a> of our developer guide.</p>
+</div>
+</div></div>
+</div>
+
+<section id="get-involved" class="level2">
+<h2 data-anchor-id="get-involved">Get involved</h2>
+<p>Users and developers are welcome to join the <a href="https://github.com/orgs/NOAA-FIMS/discussions">Discussions board</a> or submit bug reports using GitHub issues. Please use the issues under <a href="https://github.com/NOAA-FIMS/collaborative_workflow/issues">collaborative workflow</a> to make suggestions about the developer guide and the issues under the FIMS software <a href="https://github.com/NOAA-FIMS/FIMS/issues">repository</a> for software design and development feedback.</p>
+</section>
 <section id="current-project-status" class="level2">
 <h2 data-anchor-id="current-project-status">Current project status</h2>
 <p>The project is constantly under development 🔨. Check out our progress so far below:</p>
@@ -252,10 +276,10 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 
 
+
 </section>
-</main></div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

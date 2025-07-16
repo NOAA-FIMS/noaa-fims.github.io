@@ -1,0 +1,246 @@
+# FIMS Change Log
+
+
+# FIMS Change Log
+
+## v0.6.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.0))
+
+Clang-formatted code to initialize the changes needed for model
+families. Other than the changes to the names of a few derived
+quantities and the ungrouped output of `get_estimates()` users should
+not see any differences between v0.6.0 and v0.5.3.
+
+------------------------------------------------------------------------
+
+## v0.5.3 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.5.3))
+
+Hotfix to 0.5.2 to fix bug in `reshape_output()` where there are now
+fewer rows in the results from `get_estimates()` because the output from
+FIMS (via the json file) is now better matched to the output from TMB.
+Thanks to @KyleShertzer-NOAA for having a plot of selectivity in the
+scamp case study that was not working correctly anymore, which led to
+finding this 🐛.
+
+------------------------------------------------------------------------
+
+## v0.5.1 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.5.0.1))
+
+Hotfix to v0.5.0 to fix pr-commands.yml file, which was leading to a
+failed GitHub action and emails being sent out to everyone without
+meaning.
+
+------------------------------------------------------------------------
+
+## v0.5.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.5.0))
+
+Release 0.5.0 contains two major features, random effects for the power
+user and a fits tibble found in the results, e.g., get_fits(fit). See
+below or the commit messages for more details. \* Switch to TMBad from
+CppAD \* Checks that length data has the correct dimension in R \* Adds
+SB to model output \* Adds README files to the C++ code \* Exports logit
+functions to R \* Functionality was also added to the workflows to allow
+for better maintenance of the software via GitHub actions
+
+------------------------------------------------------------------------
+
+## v0.4.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.4.0))
+
+Release 0.4.0 contains two major features, allowance of
+catch-per-unit-effort data for fisheries and more information in the
+estimates tibble found in the results, e.g., `get_estimates(fit)`. See
+below for more details. \* Allows for CPUE data and landings within a
+single fleet and changes the composition data to be separate from the
+catch. If there are catches, compositions are based on F, if you have
+survey compositions those are scaled by q, and you can also have
+composition data without catch or CPUE and those match the population.
+\* Fixes bug in `finalize()` where variables were going out of scope by
+using a shared pointer and RealVector, which allows for estimates tibble
+to return more. Output is integrated between json and TMB using
+`reshape_tmb_estimates()`, `reshape_json_estimates()`, and
+`reshape_json_derived_quantities()`. ParameterVector are now set using
+`resize()` and `purrr::walk()` rather than `methods::new()`. \*
+Increases code coverage \* Restructures R tests using
+`use_testthat_template()` \* Starts to use Rcpp::Rcerr instead of
+Rcpp::Rcout \* Skips parallel and distribution rcpp test \* Adds
+`FIMS_dmultinom()` distribution to match TMB \* Fixes bug in
+`get_number_of_parameters()`. \* Uses static_cast<Type>(\[-0-9.\]+) to
+wrap constant variables. \* Fixes cmake_minimum_required to use a range
+and updates googletest version. \* Adds minimal fims-demo vignette. \*
+Removes unused estimated_log_M and estimated_log_init_naa from
+inst/include/interface/rcpp/rcpp_objects/rcpp_population.hpp. \* Adds
+gdb to the devcontainer.json file. \* Fixes broken model comparison
+project links. \* Adds dependabot.yml file to update GitHub actions. \*
+Combine `initialize_comp()` functions.
+
+------------------------------------------------------------------------
+
+## v0.3.0.1 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.3.0.1))
+
+Fixes errors in the R code found while working on the case studies.
+
+- `cli::cli_abort()` messages were not formatted correctly when using
+  pluralism capability
+- uncertainty in the multinomial is multiplied by value within the
+  wrapper functions, which lead to non -999 values. Now, if a -999 is
+  present, it is multiplied by 1 and if not then value is multiplied by
+  uncertainty.
+
+------------------------------------------------------------------------
+
+## v0.3.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.3.0))
+
+## What’s Changed
+
+Summary of high level/breaking changes:
+
+- Fits to length data using an age-to-length-conversion matrix, `data1`
+  includes the necessary information needed to fit to both ages and
+  lengths.
+- Adds C++ ParameterVector to allow for the estimation of time-varying
+  parameters.
+- Implements R wrapper functions to facilitate
+  - creating the input model specifications with `create_default_*()`,
+    `update_parameters()`, and `initialize_*()`;
+  - adding -999 to the missing fleet, year, age, length, etc.
+    combinations;
+  - running the model with a user-supplied argument of n_of_loops, where
+    the default is three, to restart the optimizer from the previous run
+    of nlmimb;
+  - summarizing the output with the `FIMSFit()` function and class.
+- Implements a switch for global verbosity within FIMS through the use
+  of {cli} messages and warnings.
+- Updates the logging system complete with a vignette about how to use
+  it, the logging system can be used for both R and C++ errors,
+  warnings, and information.
+- Creates the initial infrastructure to implement random effects with
+  density functions.
+- Implements a helper function to get the parameter names from the C++
+  code and populate the results with those names.
+- Makes lpdf_vec return 0 if data is missing.
+
+More detail: See the [commit message for this
+release](https://github.com/NOAA-FIMS/FIMS/commit/2338d23eda72676ba3ac79dc8007ecec600979a6)
+or the **full changelog**:
+https://github.com/NOAA-FIMS/FIMS/compare/v0.2.0…v0.3.0.
+
+------------------------------------------------------------------------
+
+## v0.2.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.2.0))
+
+## What’s Changed
+
+Summary of high level/breaking changes: \* Added a `pkgdown` site for
+FIMS \* Add code cov tests and site link \* Remove recruitment bias
+correction and adjustment because we plan to use `TMB`
+(https://github.com/NOAA-FIMS/FIMS/issues/185) \* Improve logging
+coverage and separate logs into multiple files \* Put recruitment
+deviations on the log scale when input \* Report more values with
+standard errors \* Code cleanup, documentation, and consistency
+improvements \* Remove rapidjson dependence \* Add `start_year` and
+`end_year` as slots to FIMSFrame \* Make `log_obs_error` a vector \*
+Load the Rcpp module upon package install so components don’t need to be
+prefaced by `fims$` \* Refactor vectors to use `fims::Vector` class \*
+Add Newton steps to FIMS integration test to improve convergence in
+integration test
+
+More detail: \* Update issue forms by @k-doering-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/426 \* Update DESCRIPTION to
+match release number by @ChristineStawitz-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/425 \* resolved issues causing
+warnings by @MOshima-PIFSC in https://github.com/NOAA-FIMS/FIMS/pull/430
+\* \#307: export age comp function by @k-doering-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/438 \* 368 convert fims to a
+pkgdown site by @Bai-Li-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/437 \* \#242 fix codecov calc and
+upload by @k-doering-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/436
+\* 391 feature find a file parser for c++ tests by @msupernaw in
+https://github.com/NOAA-FIMS/FIMS/pull/434 \* fix: deploying pkgdown by
+@k-doering-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/448 \* fix:
+remove set() by @KyleShertzer-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/451 \* Update DESCRIPTION by
+@peterkuriyama-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/435 \*
+Remove bias correction/adjustment by @Bai-Li-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/452 \* doc: error and progress
+logging for information.hpp by @nathanvaughan-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/424 \* fix: refactor parameter
+constructor by @Bai-Li-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/455 \* doc: logit_steep
+correction by @ChristineStawitz-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/463 \* refactor
+add_tmb_to_fims_internal by @msupernaw in
+https://github.com/NOAA-FIMS/FIMS/pull/459 \* Created get-gtest-codecov
+to create coverage.xml report for issue \#242 by @MOshima-PIFSC in
+https://github.com/NOAA-FIMS/FIMS/pull/470 \* \#441: fix reviewer
+checklist build trigger, edit checklist by @k-doering-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/474 \* 377 refactor call report f
+from modelhpp instead of fleet and population by @Andrea-Havron-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/466 \* Changed <T> to <Type> by
+@MOshima-PIFSC in https://github.com/NOAA-FIMS/FIMS/pull/487 \* 411
+refactor naming convention of member and local variables in the fleet
+class by @Bai-Li-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/476 \*
+Remove test data from fims deterministic folder by @Bai-Li-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/481 \* Update GHA workflows to
+enforce FIMS installation by @Bai-Li-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/489 \* renamed dimension folded
+indices to be clearer by @peterkuriyama-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/480 \* rm acomp/index nll tests
+objects by @ChristineStawitz-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/491 \* Delete test files by
+@ChristineStawitz-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/492 \*
+fix: update windows-2019 to windows-latest by @Bai-Li-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/495 \* Create multiple namespaces
+in FIMS by @k-doering-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/479
+\* fix: use expect_equal() for deterministic tests by @Bai-Li-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/496 \* fix: build trigger only on
+pr being opened by @k-doering-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/498 \* 407 updating log files by
+@nathanvaughan-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/499 \*
+Name refactoring for tests, growth, and median by @nathanvaughan-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/503 \* Fix the test for
+population.CalculateRecruitment() by @Bai-Li-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/508 \* fix: update run google
+test to use windows latest by @k-doering-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/511 \* refactor: move duplicated
+code into the test fixture section by @Bai-Li-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/497 \* Fims concurrent by
+@ChristineStawitz-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/520 \*
+Remove third party library rapidjson by @Bai-Li-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/519 \* Make Doxygen comment style
+the same by @k-doering-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/518 \* refactor recruitment
+deviations to log space by @Andrea-Havron-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/514 \* add documentation to
+test-fims-estimation by @Andrea-Havron-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/515 \* Added start_year and
+end_year as slots to FIMSFrame by @kellijohnson-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/501 \* New 464 load module by
+@Andrea-Havron-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/526 \*
+make log_obs_error a vector by @ChristineStawitz-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/532 \* Fims vector by
+@ChristineStawitz-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/517 \*
+Release mq by @ChristineStawitz-NOAA in
+https://github.com/NOAA-FIMS/FIMS/pull/533
+
+## New Contributors
+
+- @peterkuriyama-NOAA made their first contribution in
+  https://github.com/NOAA-FIMS/FIMS/pull/435
+
+**Full Changelog**:
+https://github.com/NOAA-FIMS/FIMS/compare/v0.1.0…v0.2.0
+
+------------------------------------------------------------------------
+
+## v0.1.0.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.1.0))
+
+This is the first version of the Fisheries Integrated Modeling System
+(FIMS). At this stage, FIMS can be used to estimate a simple
+age-structured population model such as case 0 in Li et al. (2021)’s
+manuscript. Please refer to the [collaborative
+workflow](https://noaa-fims.github.io/collaborative_workflow/) for a
+description of the model functionality and completeness. Documentation
+can be found [here](https://noaa-fims.github.io/FIMS-docs/).
+
+**Full Changelog**: https://github.com/NOAA-FIMS/FIMS/commits/v0.1.0
+
+------------------------------------------------------------------------

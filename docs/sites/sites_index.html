@@ -81,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-image","listing-title","listing-description","listing-categories","listing-image-alt"],
+      searchColumns: ["listing-title","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -101,6 +101,7 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <script>
   window.addEventListener('DOMContentLoaded', function() {
     var year = new Date().getFullYear();
@@ -163,12 +164,20 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../sites/sites_index.html" aria-current="page"> 
-<span class="menu-text">sites</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../about/index.html"> 
 <span class="menu-text">about</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../sites/sites_index.html" aria-current="page"> 
+<span class="menu-text">sites</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../FIMS_CHANGELOG.md"> 
+<span class="menu-text">changelog</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/NOAA-FIMS"> <i class="bi bi-github" role="img">
@@ -189,7 +198,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ASAP">ASAP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="C++">C++ <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SS3">SS3 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TMB">TMB <span class="quarto-category-count">(2)</span></div><div class="category" data-category="WHAM">WHAM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="advanced">advanced <span class="quarto-category-count">(1)</span></div><div class="category" data-category="contributing">contributing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="developers">developers <span class="quarto-category-count">(1)</span></div><div class="category" data-category="guide">guide <span class="quarto-category-count">(1)</span></div><div class="category" data-category="training">training <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ASAP">ASAP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="C++">C++ <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SS3">SS3 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TMB">TMB <span class="quarto-category-count">(2)</span></div><div class="category" data-category="WHAM">WHAM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="contributing">contributing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="developers">developers <span class="quarto-category-count">(1)</span></div><div class="category" data-category="training">training <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -240,12 +249,6 @@ window.Quarto = {
 </div>
 <div class="list quarto-listing-default">
 <div class="quarto-post image-left" data-index="0" data-categories="WHAM,SS3,ASAP,TMB">
-<div class="thumbnail">
-<p><a href="https://noaa-fims.github.io/case-studies/" class="no-external"></a></p><a href="https://noaa-fims.github.io/case-studies/" class="no-external">
-<p><img loading="lazy" src="../images/case_study.jpg" class="thumbnail-image" alt="Image of a laptop, book, and chart with text that says case study
-"></p>
-</a><p><a href="https://noaa-fims.github.io/case-studies/" class="no-external"></a></p>
-</div>
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="https://noaa-fims.github.io/case-studies/" class="no-external">🔍 FIMS case studies</a>
@@ -276,13 +279,7 @@ TMB
 </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="1" data-categories="developers,contributing,guide,advanced">
-<div class="thumbnail">
-<p><a href="https://noaa-fims.github.io/collaborative_workflow/" class="no-external"></a></p><a href="https://noaa-fims.github.io/collaborative_workflow/" class="no-external">
-<p><img loading="lazy" src="../images/contribution.jpg" class="thumbnail-image" alt="Image of puzzle pieces with a hand adding a final puzzle piece
-"></p>
-</a><p><a href="https://noaa-fims.github.io/collaborative_workflow/" class="no-external"></a></p>
-</div>
+<div class="quarto-post image-left" data-index="1" data-categories="developers,contributing">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="https://noaa-fims.github.io/collaborative_workflow/" class="no-external">📔 Developer Handbook</a>
@@ -297,12 +294,6 @@ developers
 <div class="listing-category" onclick="window.quartoListingCategory('contributing'); return false;">
 contributing
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('guide'); return false;">
-guide
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('advanced'); return false;">
-advanced
-</div>
 </div>
 <div class="listing-description">
 <a href="https://noaa-fims.github.io/collaborative_workflow/" class="no-external">The FIMS developer handbook describes the workflow for developers and contributors. </a>
@@ -314,12 +305,6 @@ advanced
 </div>
 </div>
 <div class="quarto-post image-left" data-index="2" data-categories="training,C++,TMB">
-<div class="thumbnail">
-<p><a href="https://noaa-fims.github.io/FIMS_training/" class="no-external"></a></p><a href="https://noaa-fims.github.io/FIMS_training/" class="no-external">
-<p><img loading="lazy" src="../images/training.png" class="thumbnail-image" alt="Image of people sitting around a white board with an instructor standing in front of the whiteboard.
-"></p>
-</a><p><a href="https://noaa-fims.github.io/FIMS_training/" class="no-external"></a></p>
-</div>
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="https://noaa-fims.github.io/FIMS_training/" class="no-external">💻 Trainings</a>

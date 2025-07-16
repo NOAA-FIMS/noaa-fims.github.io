@@ -4,7 +4,7 @@ project:
   render:
     - "*.qmd"
     - "sites/*.qmd"
-    - "about/index.*md"
+    - "about/*qmd"
   resources:
     - images/
     - _assets/

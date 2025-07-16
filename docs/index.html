@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-description","listing-categories","listing-image","listing-image-alt"],
+      searchColumns: ["listing-title","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -100,6 +100,7 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <script>
   window.addEventListener('DOMContentLoaded', function() {
     var year = new Date().getFullYear();
@@ -162,12 +163,20 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./sites/sites_index.html"> 
-<span class="menu-text">sites</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about/index.html"> 
 <span class="menu-text">about</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./sites/sites_index.html"> 
+<span class="menu-text">sites</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./FIMS_CHANGELOG.md"> 
+<span class="menu-text">changelog</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/NOAA-FIMS"> <i class="bi bi-github" role="img">
@@ -230,8 +239,8 @@ window.Quarto = {
     <img src="images/FIMS_logo3.png" alt="FIMS Logo">
   </div>
 </div>
-<section id="sites" class="level2">
-<h2 class="anchored" data-anchor-id="sites"><a href="./sites/sites_index.html">Sites</a></h2>
+<section id="useful-sites" class="level2">
+<h2 class="anchored" data-anchor-id="useful-sites"><a href="./sites/sites_index.html">Useful sites</a></h2>
 <div id="sites-listing">
 
 </div>
@@ -245,10 +254,6 @@ window.Quarto = {
 <div class="g-col-1" data-index="0" data-categories="WHAM,SS3,ASAP,TMB">
 <a href="https://noaa-fims.github.io/case-studies/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="images/case_study.jpg" class="thumbnail-image card-img" style="height: 150px;" alt="Image of a laptop, book, and chart with text that says case study
-">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 🔍 FIMS case studies
@@ -263,10 +268,6 @@ window.Quarto = {
 <div class="g-col-1" data-index="1" data-categories="developers,contributing,guide,advanced">
 <a href="https://noaa-fims.github.io/collaborative_workflow/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="images/contribution.jpg" class="thumbnail-image card-img" style="height: 150px;" alt="Image of puzzle pieces with a hand adding a final puzzle piece
-">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 📔 Developer Handbook
@@ -281,10 +282,6 @@ window.Quarto = {
 <div class="g-col-1" data-index="2" data-categories="training,C++,TMB">
 <a href="https://noaa-fims.github.io/FIMS_training/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="images/training.png" class="thumbnail-image card-img" style="height: 150px;" alt="Image of people sitting around a white board with an instructor standing in front of the whiteboard.
-">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 💻 Trainings
