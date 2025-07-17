@@ -46,6 +46,7 @@ jobs:
           cp -r docs/* archives/${{ steps.get_fims_release.outputs.fims_tag }}/
           
       - name: Add and commit everything
+        run: |
           git add .
           git commit -m "Release and archive website" || echo "No changes to commit"
 
