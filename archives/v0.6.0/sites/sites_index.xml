@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>FIMS</title>
+<link>https://e-perl-noaa.github.io/fims-website-test/sites/sites_index.html</link>
+<atom:link href="https://e-perl-noaa.github.io/fims-website-test/sites/sites_index.xml" rel="self" type="application/rss+xml"/>
+<description>Websites associated with FIMS.
+</description>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Thu, 17 Jul 2025 15:09:31 GMT</lastBuildDate>
+<item>
+  <title>🔍 FIMS case studies</title>
+  <link>https://e-perl-noaa.github.io/fims-website-test/</link>
+  <description>Test cases, based on regional assessments, to illustrate use of FIMS.
+</description>
+  <category>WHAM</category>
+  <category>SS3</category>
+  <category>ASAP</category>
+  <category>TMB</category>
+  <guid>https://e-perl-noaa.github.io/fims-website-test/</guid>
+  <pubDate>Thu, 17 Jul 2025 15:09:31 GMT</pubDate>
+</item>
+<item>
+  <title>📔 Developer Handbook</title>
+  <link>https://e-perl-noaa.github.io/fims-website-test/</link>
+  <description>The FIMS developer handbook describes the workflow for developers and contributors.
+</description>
+  <category>developers</category>
+  <category>contributing</category>
+  <guid>https://e-perl-noaa.github.io/fims-website-test/</guid>
+  <pubDate>Thu, 17 Jul 2025 15:09:31 GMT</pubDate>
+</item>
+<item>
+  <title>💻 Trainings</title>
+  <link>https://e-perl-noaa.github.io/fims-website-test/</link>
+  <description>FIMS training materials including C++, TMB, etc.
+</description>
+  <category>training</category>
+  <category>C++</category>
+  <category>TMB</category>
+  <guid>https://e-perl-noaa.github.io/fims-website-test/</guid>
+  <pubDate>Thu, 17 Jul 2025 15:09:31 GMT</pubDate>
+</item>
+</channel>
+</rss>
