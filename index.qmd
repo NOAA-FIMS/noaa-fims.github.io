@@ -55,7 +55,7 @@ resources:
     </h1>
     
     <h1 class="site-subtitle text-secondary mt-0 fw-lighter text-center text-sm-start">
-      Version 0.5.3
+      Version 0.6.0
     </h1>
 
     <div class="social-icon-links my-3" aria-hidden="true">
