@@ -38,7 +38,7 @@ jobs:
           ARCHIVE_DIR="archives/${{ steps.get_fims_release.outputs.fims_tag }}"
           mkdir -p "$ARCHIVE_DIR"
           cp -rv docs/. "$ARCHIVE_DIR"/
-          ls -l "$ARCHIVE_DIR"
+          ls archives
 
       # - name: Add and commit index and archive
       #   run: |
