@@ -34,7 +34,7 @@ jobs:
           # Remove leading 'v' from tag if present
           VERSION=$(echo "${{ steps.get_fims_release.outputs.fims_tag }}" | sed 's/^v//')
           # Replace the version string (assumes only one Version ... line present)
-          sed -i -E "s/Version [0-9]+\.[0-9]+\.[0-9]+/Version $VERSION/" index.qmd
+          sed -i -E "s/Version [0-9.]+/Version $VERSION/" index.qmd
 
       - name: Render site
         run: quarto render
@@ -42,13 +42,15 @@ jobs:
       # Archive current site to archives/<latest tag>
       - name: Archive current site
         run: |
-          mkdir -p archives/${{ steps.get_fims_release.outputs.fims_tag }}
-          cp -r docs/* archives/${{ steps.get_fims_release.outputs.fims_tag }}/
-          
-      - name: Add and commit everything
+          ARCHIVE_DIR="archives/${{ steps.get_fims_release.outputs.fims_tag }}"
+          mkdir -p "$ARCHIVE_DIR"
+          cp -rv docs/. "$ARCHIVE_DIR"/
+          ls -l "$ARCHIVE_DIR"
+      
+      - name: Add and commit index and archive
         run: |
-          git add .
-          git commit -m "Release and archive website" || echo "No changes to commit"
+          git add index.qmd docs/ archives/
+          git commit -m "Update version and archive site for ${{ steps.get_fims_release.outputs.fims_tag }}" || echo "No changes to commit"
 
       # Commit and push archive
       - name: Push archive
@@ -68,18 +70,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'docs/'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Publish to GitHub Pages (and render)
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-          path: docs
-          render: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     path: 'docs/'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # 
+      # - name: Publish to GitHub Pages (and render)
+      #   uses: quarto-dev/quarto-actions/publish@v2
+      #   with:
+      #     target: gh-pages
+      #     path: docs
+      #     render: false
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
