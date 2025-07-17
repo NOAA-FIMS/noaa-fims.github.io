@@ -53,6 +53,10 @@ resources:
     <h1 class="site-title text-primary mt-0 fw-lighter text-center text-sm-start">
       NOAA Fisheries Integrated Modeling System
     </h1>
+    
+    <h2 class="site-subtitle text-secondary mt-0 fw-lighter text-center text-sm-start">
+      Version 0.5.3
+    </h2>
 
     <div class="social-icon-links my-3" aria-hidden="true">
       <a
@@ -102,7 +106,7 @@ resources:
       <strong>FIMS</strong> is a software system designed to support next-generation 
       fisheries stock assessment, ecosystem, and socioeconomic modeling.
     </p>
-    <a class="mt4 action text" href="/about">See the about page for more! →</a>
+    <a class="mt4 action text" href="/about">See the <strong>about page</strong> for more! →</a>
   </div>
 
   <div class="site-logo">
