@@ -3,7 +3,6 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
-    - "*.md"
     - "sites/*.qmd"
     - "about/*qmd"
   resources:
