@@ -3,8 +3,6 @@ title: "FIMS Change Log"
 format: html
 ---
 
-# FIMS Change Log
-
 ## v0.6.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.0))
 Clang-formatted code to initialize the changes needed for model families. Other than the changes to the names of a few derived quantities and the ungrouped output of `get_estimates()` users should not see any differences between v0.6.0 and v0.5.3.
 
