@@ -20,7 +20,6 @@ jobs:
       # Set up Node (for Quarto, if needed; remove if not using Quarto)
       - uses: quarto-dev/quarto-actions/setup@v2
       
-      # Fetch the latest release tag from NOAA-FIMS/FIMS
       - name: Get latest FIMS release tag
         id: get_fims_release
         run: |
@@ -28,22 +27,19 @@ jobs:
           echo "Latest FIMS tag: $LATEST_TAG"
           echo "fims_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
 
-      # Replace version number in index.qmd
       - name: Update version in index.qmd
         run: |
           VERSION=$(echo "${{ steps.get_fims_release.outputs.fims_tag }}" | sed 's/^v//')
           sed -i -E "s/Version [0-9]+\.[0-9]+\.[0-9]+/Version $VERSION/" index.qmd
           cat index.qmd
           
-      # 
-      # Archive current site to archives/<latest tag>
-      # - name: Archive current site
-      #   run: |
-      #     ARCHIVE_DIR="archives/${{ steps.get_fims_release.outputs.fims_tag }}"
-      #     mkdir -p "$ARCHIVE_DIR"
-      #     cp -rv docs/. "$ARCHIVE_DIR"/
-      #     ls -l "$ARCHIVE_DIR"
-      # 
+      - name: Archive current site to archives folder
+        run: |
+          ARCHIVE_DIR="archives/${{ steps.get_fims_release.outputs.fims_tag }}"
+          mkdir -p "$ARCHIVE_DIR"
+          cp -rv docs/. "$ARCHIVE_DIR"/
+          ls -l "$ARCHIVE_DIR"
+
       # - name: Add and commit index and archive
       #   run: |
       #     git add index.qmd archives/
