@@ -103,6 +103,7 @@ resources:
     <p class="site-intro fs-5">
       Welcome to the <strong>Fisheries Integrated Modeling System (FIMS)</strong> 
       development website! <br>
+      <br>
       <strong>FIMS</strong> is a software system designed to support next-generation 
       fisheries stock assessment, ecosystem, and socioeconomic modeling.
     </p>
