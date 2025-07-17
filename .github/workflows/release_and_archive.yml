@@ -66,15 +66,14 @@ jobs:
           render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     
-      # # Create a release with the same tag as the FIMS repo
-      # - name: Create Release
-      #   uses: softprops/action-gh-release@v2
-      #   with:
-      #     tag_name: ${{ steps.get_fims_release.outputs.fims_tag }}
-      #     name: Release ${{ steps.get_fims_release.outputs.fims_tag }}
-      #     body: |
-      #       Website release synced with FIMS ${{ steps.get_fims_release.outputs.fims_tag }}.
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   
+
+      # Create a release with the same tag as the FIMS repo
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.get_fims_release.outputs.fims_tag }}
+          name: Release ${{ steps.get_fims_release.outputs.fims_tag }}
+          body: |
+            Website release synced with FIMS ${{ steps.get_fims_release.outputs.fims_tag }}.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
