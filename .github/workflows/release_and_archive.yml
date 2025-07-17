@@ -28,57 +28,57 @@ jobs:
           echo "Latest FIMS tag: $LATEST_TAG"
           echo "fims_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
 
-     # Replace version number in index.qmd
+      # Replace version number in index.qmd
       - name: Update version in index.qmd
         run: |
-          # Remove leading 'v' from tag if present
           VERSION=$(echo "${{ steps.get_fims_release.outputs.fims_tag }}" | sed 's/^v//')
-          # Replace the version string (assumes only one Version ... line present)
           sed -i -E "s/Version [0-9]+\.[0-9]+\.[0-9]+/Version $VERSION/" index.qmd
+          cat index.qmd
           
+      # 
       # Archive current site to archives/<latest tag>
-      - name: Archive current site
-        run: |
-          ARCHIVE_DIR="archives/${{ steps.get_fims_release.outputs.fims_tag }}"
-          mkdir -p "$ARCHIVE_DIR"
-          cp -rv docs/. "$ARCHIVE_DIR"/
-          ls -l "$ARCHIVE_DIR"
-      
-      - name: Add and commit index and archive
-        run: |
-          git add index.qmd archives/
-          git commit -m "Update version and archive site for ${{ steps.get_fims_release.outputs.fims_tag }}" || echo "No changes to commit"
-          git push
-      
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'docs/'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Publish to GitHub Pages (and render)
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-          path: docs
-          render: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      # Create a release with the same tag as the FIMS repo
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ steps.get_fims_release.outputs.fims_tag }}
-          name: Release ${{ steps.get_fims_release.outputs.fims_tag }}
-          body: |
-            Website release synced with FIMS ${{ steps.get_fims_release.outputs.fims_tag }}.
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
+      # - name: Archive current site
+      #   run: |
+      #     ARCHIVE_DIR="archives/${{ steps.get_fims_release.outputs.fims_tag }}"
+      #     mkdir -p "$ARCHIVE_DIR"
+      #     cp -rv docs/. "$ARCHIVE_DIR"/
+      #     ls -l "$ARCHIVE_DIR"
+      # 
+      # - name: Add and commit index and archive
+      #   run: |
+      #     git add index.qmd archives/
+      #     git commit -m "Update version and archive site for ${{ steps.get_fims_release.outputs.fims_tag }}" || echo "No changes to commit"
+      #     git push
+      # 
+      # - name: Render Quarto Project
+      #   uses: quarto-dev/quarto-actions/render@v2
+      #   with:
+      #     to: html
+      # 
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     path: 'docs/'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # 
+      # - name: Publish to GitHub Pages (and render)
+      #   uses: quarto-dev/quarto-actions/publish@v2
+      #   with:
+      #     target: gh-pages
+      #     path: docs
+      #     render: false
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     
+      # # Create a release with the same tag as the FIMS repo
+      # - name: Create Release
+      #   uses: softprops/action-gh-release@v2
+      #   with:
+      #     tag_name: ${{ steps.get_fims_release.outputs.fims_tag }}
+      #     name: Release ${{ steps.get_fims_release.outputs.fims_tag }}
+      #     body: |
+      #       Website release synced with FIMS ${{ steps.get_fims_release.outputs.fims_tag }}.
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   
