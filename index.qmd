@@ -54,7 +54,7 @@ resources:
       NOAA Fisheries Integrated Modeling System
     </h1>
     
-    <h2 class="site-subtitle text-secondary mt-0 fw-lighter text-center text-sm-start">
+    <h2 class="site-subtitle text-secondary mt-0 text-center text-sm-start">
       Version 0.5.3
     </h2>
 
