@@ -27,7 +27,11 @@ website:
       - text: home
         href: index.qmd
       - text: about
-        href: about/index.qmd
+        menu:
+          - text: about
+            href: about/index.qmd
+          - text: fims team
+            href: about/contributors.qmd
       - text: sites
         href: sites/sites_index.qmd
       - text: changelog

@@ -1,0 +1,58 @@
+---
+title: FIMS Team
+---
+
+FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.
+
+## Core Developers
+
+* Kelli F. Johnson (OST)
+* Alexander J. Jensen (SWFSC)
+* Andrea M. Havron
+* Bai Li (OST)
+* Christine C. Stawitz (OST)
+* Christopher M. Legault (NEFSC)
+* Cole C. Monnahan (AFSC)
+* Eric J. Ward (NWFSC)
+* Ian G. Taylor (NWFSC)
+* Jane Y. Sullivan (AFSC)
+* Jon K. T. Brodziak (PIFSC)
+* Kathryn L. Doering (OST)
+* Kyle W. Shertzer (SEFSC)
+* Matthew Supernaw (OST)
+* Megumi C. Oshima (PIFSC)
+* Nathan R. Vaughan (Vaughan Analytics)
+* Peter T. Kuriyama (SWFSC)
+* Ronald Klasky (T and T Consulting Services, Inc.)
+* Timothy J. Miller (NEFSC)
+
+## Subject-Matter Experts
+
+* Howard Townsend (OST)
+* James N. Ianelli (AFSC)
+* Jennifer S. Bigman (OST)
+* Lisa Pfeiffer (NWFSC)
+* Patrick D. Lynch (OST)
+* Richard D. Methot (OST)
+
+## Contributors
+
+* Alan C. Haynie (ICES)
+* Edward J. Dick (SWFSC)
+* Huihua Lee (SWFSC)
+* Kristan Blackhart (NEFSC)
+
+## FIMS Council
+
+* Anders Nielsen (DTU-Aqua)
+* André E. Punt (Chair, SAFS UW)
+* Anne M. Cooper (ICES)
+* Bjarki Þ. Elvarsson (MFRI, Gadget)
+* Curry J. Cunningham (NPFMC)
+* Éva E. Plagányi (CSIRO)
+* Geneviève M. Nesslage (Mid-Atlantic)
+* Henning Winker (JRC, Jabba)
+* Jim N. Sanchirico (UC Davis)
+* Jon R. Weidenmann (Rutgers)
+* Mark N. Maunder (IATTC)
+* Z. Teresa A'mar (Dragonfly Data Science)

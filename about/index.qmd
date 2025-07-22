@@ -4,6 +4,7 @@ image: ../images/FIMS_logo3.png
 about:
   template: trestles
   id: hero-heading
+include-after-body: ../_assets/open-in-new-tab.html
 ---
 
 ::: {#hero-heading}
@@ -14,7 +15,7 @@ about:
 
 The NOAA Fisheries Integrated Modeling System is a software system designed to support next-generation fisheries stock assessment, ecosystem, and socioeconomic modeling. 
 
-A team of [experts](https://noaa-fims.github.io/authors.md) within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners. The roles of internal and external collaborators are outlined in the [governance section](https://noaa-fims.github.io/collaborative_workflow/fims-governance.html) of our developer guide. 
+A team of [experts](contributors.qmd) within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners. The roles of internal and external collaborators are outlined in the [governance section](https://noaa-fims.github.io/collaborative_workflow/fims-governance.html) of our developer guide. 
 </div>
 :::
 
