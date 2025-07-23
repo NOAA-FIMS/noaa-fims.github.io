@@ -1,6 +1,10 @@
 ---
 title: July 21-25, 2025
 date: 'July 21, 2025'
+categories: 
+  - testing
+  - selectivity
+  - projections
 ---
 ![](images/fims_weekly.png){fig-alt="FIMS hex icon and noaa logo with text saying FIMS Weekly"}
 
