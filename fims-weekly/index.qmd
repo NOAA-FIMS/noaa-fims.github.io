@@ -1,9 +1,7 @@
 ---
 title: FIMS Weekly
 description: >
-  Mostly things I've figured out and wanted to share with you.
-  Or remember later. Or things I wrote about because I wanted
-  to learn something new. Occasional ramblings, sometimes thoughts.
+  FIMS weekly blog.
 listing:
   contents:
     - "*.qmd"

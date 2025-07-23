@@ -86,6 +86,11 @@ h2 {
   margin-top: 4em;
 }
 
+.header-image {
+  display: block;      /* helps if inside a paragraph */
+  margin-bottom: 2em;  /* adjust as needed */
+}
+
 .social-icon-links .link-primary {
   color: $pink-30;
   &:hover, &:focus {

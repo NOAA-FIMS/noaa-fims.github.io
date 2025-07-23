@@ -34,6 +34,8 @@ website:
             href: about/contributors.qmd
       - text: sites
         href: sites/sites_index.qmd
+      - text: fims weekly
+        href: fims-weekly/index.qmd
       - text: changelog
         href: FIMS_CHANGELOG.qmd
       - icon: github
