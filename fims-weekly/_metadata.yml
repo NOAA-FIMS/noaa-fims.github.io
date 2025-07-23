@@ -2,8 +2,8 @@ title-block-banner: true
 toc: true
 toc-location: right
 
-comments:
-  giscus:
-    repo: e-perl-NOAA/fims-website-test
-    mapping: pathname
-    category: Comments
+# comments:
+#   giscus:
+#     repo: e-perl-NOAA/fims-website-test
+#     mapping: pathname
+#     category: Comments
