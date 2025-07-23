@@ -75,6 +75,17 @@ h2 {
   border-bottom: 2px solid (var(--bs-light));
 }
 
+.header-wrap {
+  height: 3em; /* or whatever fits your tallest h2 */
+  display: flex;
+  align-items: flex-end;
+}
+.header-wrap h2 {
+  width: 100%;
+  border-bottom: 2px solid var(--bs-light);
+  margin-top: 4em;
+}
+
 .social-icon-links .link-primary {
   color: $pink-30;
   &:hover, &:focus {

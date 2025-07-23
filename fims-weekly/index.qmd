@@ -1,0 +1,21 @@
+---
+title: FIMS Weekly
+description: >
+  Mostly things I've figured out and wanted to share with you.
+  Or remember later. Or things I wrote about because I wanted
+  to learn something new. Occasional ramblings, sometimes thoughts.
+listing:
+  contents:
+    - "*.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [date, title, description, categories]
+  feed:
+    categories: [R]
+page-layout: full
+title-block-banner: false
+comments: false
+---
