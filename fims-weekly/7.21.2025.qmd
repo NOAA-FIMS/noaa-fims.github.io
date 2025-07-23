@@ -5,7 +5,6 @@ categories:
   - testing
   - selectivity
   - projections
-layout: full
 ---
 ![](images/fims_weekly.png){fig-alt="FIMS hex icon and noaa logo with text saying FIMS Weekly"}
 

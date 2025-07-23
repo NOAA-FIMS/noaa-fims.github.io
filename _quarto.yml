@@ -51,6 +51,7 @@ website:
 
 format:
   html:
+    body-width: 100%
     header-includes: |
       <script>
         window.addEventListener('DOMContentLoaded', function() {
