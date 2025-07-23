@@ -28,6 +28,14 @@ listing:
       # image: ../images/training.png
       # image-alt: >
       #   Image of people sitting around a white board with an instructor standing in front of the whiteboard.
+    - path: https://noaa-fims.github.io/r4MAS/
+      title: r4MAS
+      description: >
+        Package to translate stock synthesis input files into MAS inputs
+    - path: https://noaa-fims.github.io/FIMS/
+      title: FIMS
+      description: >
+        The repository for development of FIMS
 
   type: default
   categories: true
