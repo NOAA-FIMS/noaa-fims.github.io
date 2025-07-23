@@ -13,7 +13,7 @@ categories:
 ::: {.columns .equal-h2-cols}
 ::: {.column width="70%"}
 
-<div class="header-wrap"><h2>THREE BIG THINGS THIS WEEK</h2></div>
+<div class="header-wrap"><h2 class = "header-bg">THREE BIG THINGS THIS WEEK</h2></div>
 
 1. We are now successfully building FIMS on **ALL** operating systems on GitHub actions and R-universe thanks to many hours from Andrea, Bai, and Matthew. Way to go 💪👍! This week we will continue to work on problems with {devtools} 🤦 to see if we should submit an issue to {devtools} or if we just will not be able to run `devtools::test()` multiple times in a row.
 2. Initial testing and design of projections and reference points has started and will continue this week. Projections and reference points will more than likely be the topic of interest for our next Implementation Team Meeting. So, get ready to make some decisions. 
