@@ -14,7 +14,7 @@ listing:
     fields: [title, description]
     contents:
         - path: about/index.qmd
-          title: About FIMS
+          title: 💡 About FIMS
           description: >
             General information about the FIMS project.
         - path: about/contributors.qmd
