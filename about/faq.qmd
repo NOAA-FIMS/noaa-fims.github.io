@@ -1,0 +1,59 @@
+---
+title: Frequently Asked Questions
+---
+
+This document is meant to help answer questions that are frequently asked regarding the Fisheries Integrated Modeling System (FIMS). Should your question not be answered here, we recommend that you navigate to the [GitHub Discussion](https://github.com/orgs/NOAA-FIMS/discussions) page to see if your question has already been asked but just might not have been asked frequently enough to make it here.
+
+## Why
+
+### Why is FIMS being created?
+
+FIMS was created to increase the pool of developers, designers, and testers that contribute to a commonly-used stock assessment modeling system that can be used across regions. The commitment to build FIMS was made by the National Marine Fisheries Service (NMFS) Science Board in 2020 partly in response to the [Center for the Advancement of Population Assessment Methodology (CAPAM)](https://www.capamresearch.org/) workshop on Next Generation Models. New good practices in assessment methods, such as random effects, one-step ahead residuals, and new statistical distributions, can be difficult to add in a performant way to older software systems. FIMS will be written in a way that these new best practices are included at the onset rather than as an afterthought.
+
+### Why build FIMS now?
+
+[AD Model Builder (ADMB)](https://www.admb-project.org/) is no longer being supported so the ability to compile existing models that use ADMB, e.g., [Age Structured Assessment Program (ASAP)](https://nmfs-ost.github.io/noaa-fit/ASAP), [Assessment Model for Alaska (AMAK)](https://github.com/afsc-assessments/AMAK), Beaufort Assessment Model (BAM), and [Stock Synthesis 3 (SS3)](https://nmfs-ost/ss3-source-code), will be compromised with future operating system upgrades. Furthermore, development of these models that rely on ADMB to include best practices, such as random effects, is not feasible.
+
+## Transitioning to FIMS
+
+### Will FIMS have all the features of current assessment models?
+
+The feature set of some of the currently available assessment platforms have grown organically over several decades and certainly contain unused features, awkward conventions, and other aspects needing attention. For example, the last major refresh of the SS3 concept was more than twenty years ago (2004) when it was converted from FORTRAN to ADMB. All software needs a refresh and FIMS will be that for several assessment platforms. FIMS certainly will start with the major capabilities that are currently available such as simultaneously modeling fish growth and population numbers and to use both age and length and other data. FIMS will also start with some more advanced capabilities, particularly the ability to flexibly model time variation in parameters using random effects. Also, FIMS is being written in a more modular way to reduce duplication and facilitate robust testing of each individual part, following best-practice guides for coding. This has resulted in 78% test coverage, which is unmatched in most assessment software. A defined process for testing, model validation, and code review will support integrating future innovations after they have been proven in research sandboxes.
+
+### When will FIMS be ready to transition to?
+
+FIMS will have many of the features stock assessment analysts expect in a beta format sometime in 2025. We expect a fully tested and documented alpha release to be available in 2026. This includes implementation of fitting to length-composition data, random effects, Bayesian estimation, and SPR-based reference points in 2026.
+
+### I need a new model. Should I wait for FIMS or use WHAM?
+
+WHAM is likely to have a fuller complement of features available sooner than FIMS. WHAM is currently available for operational use and approved within the Northeast Region. However, in the future, we expect a subset of models currently using WHAM to transition to FIMS as the FIMS feature set becomes more complete, so using FIMS from the beginning may save time in the long-run. We leave the decision up to you because only you know your timeline and resources available. We highly encourage you to consider FIMS because the knowledge and comradery associated with FIMS will be unlike that found with any previously available platform given that it is the first to start with input from scientists within every center in NOAA Fisheries.
+
+### When will FIMS trainings be offered?
+
+We will be offering FIMS trainings in 2025. These initial trainings offered in 2025 will be targeted at early adopters and power users who are willing to debug and file issues when they encounter them. This will allow for the incorporation of user feedback in the code base during 2025–2026 development and release of a usable alpha version in 2026. In 2026, training will be offered at different levels from novice to expert users, including students.
+
+### How can I prepare for the transition to FIMS?
+
+You can conduct sensitivity analyses on the model you use for operational assessments to identify which model features have a large impact on model fit and which are included for historical consistency. Documenting the impact missing features have on model fit will help the FIMS team prioritize feature requests. If you haven’t worked with a random effects model, there are a number of [papers](https://academic.oup.com/icesjms/article/72/5/1245/758333) and [course material](https://github.com/NOAA-FIMS/TMB_training) created by Andrea Havron available to learn more about when and how random effects should be applied in stock assessment models.
+
+### How long will existing assessment platforms be maintained, and at what level?
+
+Support for existing models written in ADMB will phase out in stages. The first stage has already occurred for some, e.g., SS3, with a commitment to not add major new features in deference to their future consideration by FIMS. The second stage could be cessation of any releases of minor modifications or bug fixes but that may be just a gradual slowdown until re-compiling the code becomes impossible. The third will be relegation of helpdesk support entirely to the community as crowd sourcing.
+
+We recognize that the community often continues use of older models long after new models or model versions are available so the currently available platforms will remain downloadable as an executable from the NMFS Fisheries Integrated Toolbox. Additionally, if the code is publicly available, its code will remain available in its GitHub site.
+
+The following factors will affect the stages of SS3 succession: availability in FIMS of capability to address more assessment situations currently addressed by SS3; retirement of the main SS3 developer, Richard Methot; and changes in computer operating systems such that SS3 cannot be re-compiled because ADMB no longer works with those windows, ioS and/or unix compilers. All three of these transition triggers will occur, in no designable order, in 1 to 5 years. We are attempting to future-proof SS3 by building a dev_container for compiling with ADMB and the current suite of operating systems and creating a GoogleGroup user forum to bolster the generality of the help-desk support now provided by the core SS3 developers.
+
+ASAP is currently transitioning to WHAM in the Northeast Region. A research track on WHAM [was reviewed](https://www.fisheries.noaa.gov/event/applied-state-space-modeling-2023-research-track-peer-review) in February 2024. The Northeast Regional Coordinating Committee is expected to approve a recommendation from the Research Track Steering Committee to allow stock assessments to transition from ASAP to WHAM during a management track assessment. This is an exception to the rule in the region that all model transitions must be made in a research track. It is not known whether a similar exception will be made for the transition from WHAM to FIMS, nor whether a research track on FIMS will be required in the region. All development on ASAP has stopped with the focus shifted to WHAM.
+
+### Will there be translators from current platforms to FIMS?
+
+For model settings, we recommend using the default model configuration function that will be built into FIMS as a starting point. Then, customizing the model can be done in R as it would not be efficient to programmatically translate the model configurations, e.g., SS3 control file, given the large number of options for settings that will not be provided for FIMS. An R function is currently available to translate SS3 data inputs to the dataframe needed to run a FIMS model, and this data translator will be improved in the next few years as the range of data types used by FIMS is expanded.
+
+All ASAP models will likely be converted to WHAM before transitioning to FIMS. There are currently no plans to create a translator from WHAM to FIMS but both packages use R objects to define their models. This might allow future translations of configuration objects to be relatively simple. However, it would likely not be worth the effort to maintain a translator until the input and output format of WHAM and/or FIMS are static.
+
+Developers of BAM have discussed the desirability of translating BAM input files for compatibility with FIMS. This will likely be pursued after FIMS has matured enough for operational use.
+
+### How far will FIMS scale towards data-poor models?
+
+FIMS is primarily designed as an age-structured model. Right now, FIMS can run without age-composition data but estimates are poor. The ability to model data-moderate and data-limited cases is planned for addition in later milestones to facilitate the use of one modeling platform regardless of the amount of data available.

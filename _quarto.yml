@@ -32,6 +32,8 @@ website:
             href: about/index.qmd
           - text: fims team
             href: about/contributors.qmd
+          - text: faq
+            href: about/faq.qmd
       - text: sites
         href: sites/sites_index.qmd
       - text: fims weekly
