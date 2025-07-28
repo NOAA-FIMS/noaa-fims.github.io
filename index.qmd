@@ -25,6 +25,7 @@ listing:
           title: ❓ FAQs
           description: >
             Frequently asked questions.
+listing:
   - id: fims-sites-listing
     type: grid
     max-items: 9
