@@ -4,7 +4,7 @@ page-layout: full
 title-block-banner: false
 
 listing:
-  - id: fims-about-listings
+  - id: fims-about-listing
     type: grid
     max-items: 9
     page-size: 3
@@ -25,7 +25,6 @@ listing:
           title: ❓ FAQs
           description: >
             Frequently asked questions.
-listing:
   - id: fims-sites-listing
     type: grid
     max-items: 9
@@ -132,10 +131,10 @@ include-after-body: _assets/open-in-new-tab.html
 
 ## [About](about/index.qmd)
 
-::: {#about-listing}
+::: {#fims-about-listing}
 :::
 
 ## [Useful sites](sites/sites_index.qmd)
 
-::: {#sites-listing}
+::: {#fims-sites-listing}
 :::
