@@ -17,14 +17,18 @@ listing:
           title: 💡 About FIMS
           description: >
             General information about the FIMS project.
+          display-order: 1
         - path: about/contributors.qmd
           title: 👥 FIMS Team
           description: >
             List of all contributors to the FIMS project.
+          display-order: 2
         - path: about/faq.qmd
           title: ❓ FAQs
           description: >
             Frequently asked questions.
+          display-order: 3
+    sort: "display-order"
   - id: fims-sites-listing
     type: grid
     max-items: 9
