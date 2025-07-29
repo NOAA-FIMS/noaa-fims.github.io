@@ -26,8 +26,7 @@ photo_caption: |
   Elizabeth Perl has been working on revamping the NOAA-FIMS [github.io site](http://github.io/) and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task.
 photo: images/new-fims-website.png
 photo_alt: "image of the new FIMS website landing page"
+format:
+  html:
+    include-after-body: ../_assets/fims-weekly-template.qmd
 ---
-
-<!-- This is a template, so you only fill out the yml above and it handles the rest. -->
-
-{=include} ../_assets/fims-weekly-template.qmd
