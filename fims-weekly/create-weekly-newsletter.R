@@ -104,7 +104,7 @@ photo: images/extended_tests.png
 photo_alt: ""
 ---
   
-```{=include} _newsletter-template.qmd',
+```{=include} ../_assets/fims-weekly-template.qmd```',
     week_range, format(week_start, "%B %d, %Y")
     )
   writeLines(yaml, file_path) 
