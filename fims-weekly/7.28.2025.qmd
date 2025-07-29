@@ -57,7 +57,7 @@ params:
 install.packages("jsonlite")
 library(jsonlite)
 events <- fromJSON(params$events)
-for (event in params$events) {
+for (event in events) {
   cat(sprintf("### %s\n**%s**\nTime: %s\nLocation: %s\nOnline: [Google meet](%s)\n\n",
     event$date, event$title, event$time, event$location, event$online))
 }
