@@ -30,4 +30,4 @@ photo_alt: "image of the new FIMS website landing page"
 
 <!-- This is a template, so you only fill out the yml above and it handles the rest. -->
 
-```{=include} ../_assets/fims-weekly-template.qmd```
+{=include} ../_assets/fims-weekly-template.qmd
