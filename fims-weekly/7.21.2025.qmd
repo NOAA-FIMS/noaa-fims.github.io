@@ -40,16 +40,16 @@ categories:
 ::: {.column}
 ## UPCOMING EVENTS
 ### Tuesday, July 22
-**FIMS Code Club (Tackling TODO: items in code)**
-Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H 
-Location: Virtual
+**FIMS Code Club (Tackling TODO: items in code)** <br>
+Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H <br>
+Location: Virtual <br>
 Online: [Google Meet](http://meet.google.com/ica-ieta-ndu)
 
 ### Thursday, July 24
-**FIMS Seaside Chat (🤷)**
-Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H
-Location: Virtual
-Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj)
+**FIMS Seaside Chat (🤷)** <br>
+Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H <br>
+Location: Virtual <br>
+Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj) <br>
 :::
 :::
 

@@ -10,7 +10,7 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
-  fields: [date, title, description, categories]
+  fields: [date, title, categories]
   feed:
     categories: [R]
 page-layout: full
