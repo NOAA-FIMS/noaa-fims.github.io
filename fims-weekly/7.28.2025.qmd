@@ -12,6 +12,7 @@ big-things: |
   3. Projections and reference points are in the works. An update will be presented at the next FIMS Implementation Team Meeting.
 ---
 
+{{< include "/_assets/fims-weekly-template.qmd" >}}
 
 <!--
 ::: {.column width="30%"}
@@ -56,5 +57,3 @@ Elizabeth Perl has been working on revamping the NOAA-FIMS [github.io site](http
 
 ![](images/new-fims-website.png){height="150%" fig-alt="image of the new FIMS website landing page"}
 -->
-
-{{< include "/_assets/fims-weekly-template.qmd" > }}
