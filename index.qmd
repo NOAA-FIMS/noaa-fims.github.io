@@ -61,7 +61,6 @@ resources:
   - images/contribution.jpg
   - images/training.png
   - images/FIMS_logo3.png
-include-after-body: _assets/open-in-new-tab.html
 ---
 
 ```{=html}

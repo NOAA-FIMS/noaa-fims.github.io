@@ -54,6 +54,7 @@ website:
 format:
   html:
     body-width: 100%
+    include-after-body: _assets/open-in-new-tab.html
     header-includes: |
       <script>
         window.addEventListener('DOMContentLoaded', function() {
