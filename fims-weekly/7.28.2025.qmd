@@ -14,17 +14,7 @@ params:
   announcements: |
     - Version 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.
     - We need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday.
-  events: 
-    - date: "Tuesday, July 29"
-      title: "FIMS Code Club (length-based selectivity)"
-      time: "13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H"
-      location: "Virtual"
-      online: "http://meet.google.com/ica-ieta-ndu"
-    - date: "Thursday, July 31"
-      title: "FIMS Seaside Chat (❓)"
-      time: "12:00–13:00 E; 9:00–10:00 P; 8:00–9:00 AK; 6:00–7:00 H"
-      location: "Virtual"
-      online: "http://meet.google.com/scg-pyqi-ghj"
+  events: '[{"date": "Tuesday, July 29", "title": "FIMS Code Club (length-based selectivity)", "time": "13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H", "location": "Virtual", "online": "http://meet.google.com/ica-ieta-ndu"}, {"date": "Thursday, July 31", "title": "FIMS Seaside Chat (❓)", "time": "12:00–13:00 E; 9:00–10:00 P; 8:00–9:00 AK; 6:00–7:00 H" ,"location": "Virtual", "online": "http://meet.google.com/scg-pyqi-ghj"}]'
   photo_caption: |
     Elizabeth Perl has been working on revamping the NOAA-FIMS [github.io site](http://github.io/) and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task.
   photo: "images/new-fims-website.png"
@@ -64,6 +54,9 @@ params:
 ## UPCOMING EVENTS
 
 ```{r}
+install.packages("jsonlite")
+library(jsonlite)
+events <- fromJSON(params$events)
 for (event in params$events) {
   cat(sprintf("### %s\n**%s**\nTime: %s\nLocation: %s\nOnline: [Google meet](%s)\n\n",
     event$date, event$title, event$time, event$location, event$online))
