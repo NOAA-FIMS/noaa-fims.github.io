@@ -1,10 +1,21 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/sites/sites_index.html",
     "items": []
   },
   {
-    "listing": "/sites/sites_index.html",
-    "items": []
+    "listing": "/fims-weekly/index.html",
+    "items": [
+      "/fims-weekly/07.28.2025.html",
+      "/fims-weekly/07.21.2025.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/about/index.html",
+      "/about/contributors.html",
+      "/about/faq.html"
+    ]
   }
 ]

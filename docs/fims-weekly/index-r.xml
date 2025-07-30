@@ -6,11 +6,11 @@
       version="2.0">
 <channel>
 <title>FIMS</title>
-<link>https://e-perl-noaa.github.io/fims-website-test/sites/sites_index.html#category=R</link>
-<atom:link href="https://e-perl-noaa.github.io/fims-website-test/sites/sites_index-r.xml" rel="self" type="application/rss+xml"/>
-<description>Websites associated with FIMS.
+<link>https://e-perl-noaa.github.io/fims-website-test/fims-weekly/#category=R</link>
+<atom:link href="https://e-perl-noaa.github.io/fims-website-test/fims-weekly/index-r.xml" rel="self" type="application/rss+xml"/>
+<description>FIMS weekly blog.
 </description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Wed, 30 Jul 2025 21:53:21 GMT</lastBuildDate>
+<lastBuildDate>Wed, 30 Jul 2025 21:53:20 GMT</lastBuildDate>
 </channel>
 </rss>

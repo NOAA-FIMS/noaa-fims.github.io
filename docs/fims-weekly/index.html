@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="FIMS weekly blog.">
 
-<title>FIMS Change Log – FIMS</title>
+<title>FIMS Weekly – FIMS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +24,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-9d8943a0a3005986272e9d42f1364c54.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-41d529a2e232d286364b918470bc7fdb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-9d8943a0a3005986272e9d42f1364c54.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0b7d0f0e84f66219476955db08db446.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-17b7416e1dd1cbb45fd8e178ede7cd3c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-a0b7d0f0e84f66219476955db08db446.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-9d8943a0a3005986272e9d42f1364c54.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-41d529a2e232d286364b918470bc7fdb.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-9d8943a0a3005986272e9d42f1364c54.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0b7d0f0e84f66219476955db08db446.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-17b7416e1dd1cbb45fd8e178ede7cd3c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-a0b7d0f0e84f66219476955db08db446.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <script>
@@ -81,14 +113,43 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="_assets/panelset-extras.css">
-<meta property="og:title" content="FIMS Change Log – FIMS">
-<meta property="og:description" content="">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../_assets/panelset-extras.css">
+<link rel="alternate" type="application/rss+xml" title="FIMS" href="index.xml" data-external="1"><meta property="og:title" content="FIMS Weekly – FIMS">
+<meta property="og:description" content="FIMS weekly blog.">
 <meta property="og:site_name" content="FIMS">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -257,7 +318,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">FIMS</span>
     </a>
   </div>
@@ -268,7 +329,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -277,29 +338,29 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
-    <a class="dropdown-item" href="./about/index.html">
+    <a class="dropdown-item" href="../about/index.html">
  <span class="dropdown-text">about</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/contributors.html">
+    <a class="dropdown-item" href="../about/contributors.html">
  <span class="dropdown-text">fims team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./about/faq.html">
+    <a class="dropdown-item" href="../about/faq.html">
  <span class="dropdown-text">faq</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./fims-weekly/index.html"> 
+    <a class="nav-link active" href="../fims-weekly/index.html" aria-current="page"> 
 <span class="menu-text">fims weekly</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./sites/sites_index.html"> 
+    <a class="nav-link" href="../sites/sites_index.html"> 
 <span class="menu-text">sites</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./FIMS_CHANGELOG.html" aria-current="page"> 
+    <a class="nav-link" href="../FIMS_CHANGELOG.html"> 
 <span class="menu-text">changelog</span></a>
   </li>  
   <li class="nav-item compact">
@@ -316,22 +377,29 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZGlhZ25vc3RpY3M=">diagnostics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJvamVjdGlvbnM=">projections <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c2VsZWN0aXZpdHk=">selectivity <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dGVzdGluZw==">testing <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">FIMS Change Log</h1>
+<h1 class="title">FIMS Weekly</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>FIMS weekly blog.</p>
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -343,200 +411,85 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="v0.6.0-release-notes" class="level2">
-<h2 class="anchored" data-anchor-id="v0.6.0-release-notes">v0.6.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.0">release notes</a>)</h2>
-<p>Clang-formatted code to initialize the changes needed for model families. Other than the changes to the names of a few derived quantities and the ungrouped output of <code>get_estimates()</code> users should not see any differences between v0.6.0 and v0.5.3.</p>
-<hr>
-</section>
-<section id="v0.5.3-release-notes" class="level2">
-<h2 class="anchored" data-anchor-id="v0.5.3-release-notes">v0.5.3 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.5.3">release notes</a>)</h2>
-<p>Hotfix to 0.5.2 to fix bug in <code>reshape_output()</code> where there are now fewer rows in the results from <code>get_estimates()</code> because the output from FIMS (via the json file) is now better matched to the output from TMB. Thanks to <span class="citation" data-cites="KyleShertzer-NOAA">@KyleShertzer-NOAA</span> for having a plot of selectivity in the scamp case study that was not working correctly anymore, which led to finding this 🐛.</p>
-<hr>
-</section>
-<section id="v0.5.1-release-notes" class="level2">
-<h2 class="anchored" data-anchor-id="v0.5.1-release-notes">v0.5.1 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.5.0.1">release notes</a>)</h2>
-<p>Hotfix to v0.5.0 to fix pr-commands.yml file, which was leading to a failed GitHub action and emails being sent out to everyone without meaning.</p>
-<hr>
-</section>
-<section id="v0.5.0-release-notes" class="level2">
-<h2 class="anchored" data-anchor-id="v0.5.0-release-notes">v0.5.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.5.0">release notes</a>)</h2>
-<p>Release 0.5.0 contains two major features, random effects for the power user and a fits tibble found in the results, e.g., get_fits(fit). See below or the commit messages for more details.</p>
-<ul>
-<li><p>Switch to TMBad from CppAD</p></li>
-<li><p>Checks that length data has the correct dimension in R</p></li>
-<li><p>Adds SB to model output</p></li>
-<li><p>Adds README files to the C++ code</p></li>
-<li><p>Exports logit functions to R</p></li>
-<li><p>Functionality was also added to the workflows to allow for better maintenance of the software via GitHub actions</p></li>
-</ul>
-<hr>
-</section>
-<section id="v0.4.0-release-notes" class="level2">
-<h2 class="anchored" data-anchor-id="v0.4.0-release-notes">v0.4.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.4.0">release notes</a>)</h2>
-<p>Release 0.4.0 contains two major features, allowance of catch-per-unit-effort data for fisheries and more information in the estimates tibble found in the results, e.g., <code>get_estimates(fit)</code>. See below for more details.</p>
-<ul>
-<li><p>Allows for CPUE data and landings within a single fleet and changes the</p>
-<p>composition data to be separate from the catch. If there are catches,</p>
-<p>compositions are based on F, if you have survey compositions those are scaled</p>
-<p>by q, and you can also have composition data without catch or CPUE and those</p>
-<p>match the population.</p></li>
-<li><p>Fixes bug in <code>finalize()</code> where variables were going out of scope by using a</p>
-<p>shared pointer and RealVector, which allows for estimates tibble to return</p>
-<p>more. Output is integrated between json and TMB using</p>
-<p><code>reshape_tmb_estimates()</code>, <code>reshape_json_estimates()</code>, and</p>
-<p><code>reshape_json_derived_quantities()</code>. ParameterVector are now set using</p>
-<p><code>resize()</code> and <code>purrr::walk()</code> rather than <code>methods::new()</code>.</p></li>
-<li><p>Increases code coverage</p>
-<ul>
-<li><p>Restructures R tests using <code>use_testthat_template()</code></p></li>
-<li><p>Starts to use Rcpp::Rcerr instead of Rcpp::Rcout</p></li>
-<li><p>Skips parallel and distribution rcpp test</p></li>
-<li><p>Adds <code>FIMS_dmultinom()</code> distribution to match TMB</p></li>
-</ul></li>
-<li><p>Fixes bug in <code>get_number_of_parameters()</code>.</p></li>
-<li><p>Uses static_cast<type>([-0-9.]+) to wrap constant variables.</type></p></li>
-<li><p>Fixes cmake_minimum_required to use a range and updates googletest version.</p></li>
-<li><p>Adds minimal fims-demo vignette.</p></li>
-<li><p>Removes unused estimated_log_M and estimated_log_init_naa from</p>
-<p>inst/include/interface/rcpp/rcpp_objects/rcpp_population.hpp.</p></li>
-<li><p>Adds gdb to the devcontainer.json file.</p></li>
-<li><p>Fixes broken model comparison project links.</p></li>
-<li><p>Adds dependabot.yml file to update GitHub actions.</p></li>
-<li><p>Combine <code>initialize_comp()</code> functions.</p></li>
-</ul>
-<hr>
-</section>
-<section id="v0.3.0.1-release-notes" class="level2">
-<h2 class="anchored" data-anchor-id="v0.3.0.1-release-notes">v0.3.0.1 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.3.0.1">release notes</a>)</h2>
-<p>Fixes errors in the R code found while working on the case studies.</p>
-<ul>
-<li><p><code>cli::cli_abort()</code> messages were not formatted correctly when using pluralism capability</p></li>
-<li><p>uncertainty in the multinomial is multiplied by value within the wrapper functions, which lead to non -999 values. Now, if a -999 is present, it is multiplied by 1 and if not then value is multiplied by uncertainty.</p></li>
-</ul>
-<hr>
-</section>
-<section id="v0.3.0-release-notes" class="level2">
-<h2 class="anchored" data-anchor-id="v0.3.0-release-notes">v0.3.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.3.0">release notes</a>)</h2>
-</section>
-<section id="whats-changed" class="level2">
-<h2 class="anchored" data-anchor-id="whats-changed">What’s Changed</h2>
-<p>Summary of high level/breaking changes:</p>
-<ul>
-<li><p>Fits to length data using an age-to-length-conversion matrix, <code>data1</code></p>
-<p>includes the necessary information needed to fit to both ages and lengths.</p></li>
-<li><p>Adds C++ ParameterVector to allow for the estimation of time-varying</p>
-<p>parameters.</p></li>
-<li><p>Implements R wrapper functions to facilitate</p>
-<ul>
-<li><p>creating the input model specifications with <code>create_default_*()</code>,</p>
-<p><code>update_parameters()</code>, and <code>initialize_*()</code>;</p></li>
-<li><p>adding -999 to the missing fleet, year, age, length, etc. combinations;</p></li>
-<li><p>running the model with a user-supplied argument of n_of_loops, where the</p>
-<p>default is three, to restart the optimizer from the previous run of nlmimb;</p></li>
-<li><p>summarizing the output with the <code>FIMSFit()</code> function and class.</p></li>
-</ul></li>
-<li><p>Implements a switch for global verbosity within FIMS through the use</p>
-<p>of {cli} messages and warnings.</p></li>
-<li><p>Updates the logging system complete with a vignette about how to use it, the</p>
-<p>logging system can be used for both R and C++ errors, warnings, and</p>
-<p>information.</p></li>
-<li><p>Creates the initial infrastructure to implement random effects with density</p>
-<p>functions.</p></li>
-<li><p>Implements a helper function to get the parameter names from the</p>
-<p>C++ code and populate the results with those names.</p></li>
-<li><p>Makes lpdf_vec return 0 if data is missing.</p></li>
-</ul>
-<p>More detail:</p>
-<p>See the <a href="https://github.com/NOAA-FIMS/FIMS/commit/2338d23eda72676ba3ac79dc8007ecec600979a6">commit message for this release</a> or the <strong>full changelog</strong>: https://github.com/NOAA-FIMS/FIMS/compare/v0.2.0…v0.3.0.</p>
-<hr>
-</section>
-<section id="v0.2.0-release-notes" class="level2">
-<h2 class="anchored" data-anchor-id="v0.2.0-release-notes">v0.2.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.2.0">release notes</a>)</h2>
-</section>
-<section id="whats-changed-1" class="level2">
-<h2 class="anchored" data-anchor-id="whats-changed-1">What’s Changed</h2>
-<p>Summary of high level/breaking changes:</p>
-<ul>
-<li><p>Added a <code>pkgdown</code> site for FIMS</p></li>
-<li><p>Add code cov tests and site link</p></li>
-<li><p>Remove recruitment bias correction and adjustment because we plan to use <code>TMB</code> (https://github.com/NOAA-FIMS/FIMS/issues/185)</p></li>
-<li><p>Improve logging coverage and separate logs into multiple files</p></li>
-<li><p>Put recruitment deviations on the log scale when input</p></li>
-<li><p>Report more values with standard errors</p></li>
-<li><p>Code cleanup, documentation, and consistency improvements</p></li>
-<li><p>Remove rapidjson dependence</p></li>
-<li><p>Add <code>start_year</code> and <code>end_year</code> as slots to FIMSFrame</p></li>
-<li><p>Make <code>log_obs_error</code> a vector</p></li>
-<li><p>Load the Rcpp module upon package install so components don’t need to be prefaced by <code>fims$</code></p></li>
-<li><p>Refactor vectors to use <code>fims::Vector</code> class</p></li>
-<li><p>Add Newton steps to FIMS integration test to improve convergence in integration test</p></li>
-</ul>
-<p>More detail:</p>
-<ul>
-<li><p>Update issue forms by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/426</p></li>
-<li><p>Update DESCRIPTION to match release number by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/425</p></li>
-<li><p>resolved issues causing warnings by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in https://github.com/NOAA-FIMS/FIMS/pull/430</p></li>
-<li><p>#307: export age comp function by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/438</p></li>
-<li><p>368 convert fims to a pkgdown site by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/437</p></li>
-<li><p>#242 fix codecov calc and upload by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/436</p></li>
-<li><p>391 feature find a file parser for c++ tests by <span class="citation" data-cites="msupernaw">@msupernaw</span> in https://github.com/NOAA-FIMS/FIMS/pull/434</p></li>
-<li><p>fix: deploying pkgdown by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/448</p></li>
-<li><p>fix: remove set() by <span class="citation" data-cites="KyleShertzer-NOAA">@KyleShertzer-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/451</p></li>
-<li><p>Update DESCRIPTION by <span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/435</p></li>
-<li><p>Remove bias correction/adjustment by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/452</p></li>
-<li><p>doc: error and progress logging for information.hpp by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/424</p></li>
-<li><p>fix: refactor parameter constructor by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/455</p></li>
-<li><p>doc: logit_steep correction by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/463</p></li>
-<li><p>refactor add_tmb_to_fims_internal by <span class="citation" data-cites="msupernaw">@msupernaw</span> in https://github.com/NOAA-FIMS/FIMS/pull/459</p></li>
-<li><p>Created get-gtest-codecov to create coverage.xml report for issue #242 by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in https://github.com/NOAA-FIMS/FIMS/pull/470</p></li>
-<li><p>#441: fix reviewer checklist build trigger, edit checklist by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/474</p></li>
-<li><p>377 refactor call report f from modelhpp instead of fleet and population by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/466</p></li>
-<li><p>Changed <t> to <type> by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in https://github.com/NOAA-FIMS/FIMS/pull/487</type></t></p></li>
-<li><p>411 refactor naming convention of member and local variables in the fleet class by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/476</p></li>
-<li><p>Remove test data from fims deterministic folder by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/481</p></li>
-<li><p>Update GHA workflows to enforce FIMS installation by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/489</p></li>
-<li><p>renamed dimension folded indices to be clearer by <span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/480</p></li>
-<li><p>rm acomp/index nll tests objects by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/491</p></li>
-<li><p>Delete test files by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/492</p></li>
-<li><p>fix: update windows-2019 to windows-latest by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/495</p></li>
-<li><p>Create multiple namespaces in FIMS by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/479</p></li>
-<li><p>fix: use expect_equal() for deterministic tests by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/496</p></li>
-<li><p>fix: build trigger only on pr being opened by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/498</p></li>
-<li><p>407 updating log files by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/499</p></li>
-<li><p>Name refactoring for tests, growth, and median by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/503</p></li>
-<li><p>Fix the test for population.CalculateRecruitment() by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/508</p></li>
-<li><p>fix: update run google test to use windows latest by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/511</p></li>
-<li><p>refactor: move duplicated code into the test fixture section by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/497</p></li>
-<li><p>Fims concurrent by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/520</p></li>
-<li><p>Remove third party library rapidjson by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/519</p></li>
-<li><p>Make Doxygen comment style the same by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/518</p></li>
-<li><p>refactor recruitment deviations to log space by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/514</p></li>
-<li><p>add documentation to test-fims-estimation by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/515</p></li>
-<li><p>Added start_year and end_year as slots to FIMSFrame by <span class="citation" data-cites="kellijohnson-NOAA">@kellijohnson-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/501</p></li>
-<li><p>New 464 load module by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/526</p></li>
-<li><p>make log_obs_error a vector by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/532</p></li>
-<li><p>Fims vector by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/517</p></li>
-<li><p>Release mq by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/533</p></li>
-</ul>
-</section>
-<section id="new-contributors" class="level2">
-<h2 class="anchored" data-anchor-id="new-contributors">New Contributors</h2>
-<ul>
-<li><span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> made their first contribution in https://github.com/NOAA-FIMS/FIMS/pull/435</li>
-</ul>
-<p><strong>Full Changelog</strong>: https://github.com/NOAA-FIMS/FIMS/compare/v0.1.0…v0.2.0</p>
-<hr>
-</section>
-<section id="v0.1.0.0-release-notes" class="level2">
-<h2 class="anchored" data-anchor-id="v0.1.0.0-release-notes">v0.1.0.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.1.0">release notes</a>)</h2>
-<p>This is the first version of the Fisheries Integrated Modeling System (FIMS). At this stage, FIMS can be used to estimate a simple age-structured population model such as case 0 in Li et al.&nbsp;(2021)’s manuscript. Please refer to the <a href="https://noaa-fims.github.io/collaborative_workflow/">collaborative workflow</a> for a description of the model functionality and completeness. Documentation can be found <a href="https://noaa-fims.github.io/FIMS-docs/">here</a>.</p>
-<p><strong>Full Changelog</strong>: https://github.com/NOAA-FIMS/FIMS/commits/v0.1.0</p>
-<hr>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="dGVzdGluZyUyQ3NlbGVjdGl2aXR5JTJDZGlhZ25vc3RpY3MlMkNwcm9qZWN0aW9ucw==" data-listing-date-sort="1753660800000" data-listing-file-modified-sort="1753912233671" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../fims-weekly/07.28.2025.html" class="no-external">July 28 - August 1, 2025</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2VsZWN0aXZpdHk='); return false;">selectivity</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGlhZ25vc3RpY3M='); return false;">diagnostics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdGlvbnM='); return false;">projections</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../fims-weekly/07.28.2025.html" class="no-external">
+<div class="listing-date">
+Jul 28, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="dGVzdGluZyUyQ3NlbGVjdGl2aXR5JTJDcHJvamVjdGlvbnM=" data-listing-date-sort="1753056000000" data-listing-file-modified-sort="1753912233671" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="345">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../fims-weekly/07.21.2025.html" class="no-external">July 21 - 25, 2025</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2VsZWN0aXZpdHk='); return false;">selectivity</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHJvamVjdGlvbnM='); return false;">projections</div>
+
+</div>
+</div>
+<div class="metadata">
+<a href="../fims-weekly/07.21.2025.html" class="no-external">
+<div class="listing-date">
+Jul 21, 2025
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   // Select all anchor tags with href starting with http (external links only)
@@ -969,7 +922,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/e-perl-noaa/fims-website-test/blob/main/FIMS_CHANGELOG.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/e-perl-noaa/fims-website-test/edit/main/FIMS_CHANGELOG.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/e-perl-noaa/fims-website-test/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/e-perl-noaa/fims-website-test/blob/main/fims-weekly/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/e-perl-noaa/fims-website-test/edit/main/fims-weekly/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/e-perl-noaa/fims-website-test/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="github" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="r-project" target="_blank" rel="noopener"><i class="fab fa-r-project"></i></a></p>
 </div>

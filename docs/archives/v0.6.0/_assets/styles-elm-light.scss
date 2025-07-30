@@ -29,7 +29,7 @@ $teal:    $blue-50;
 $cyan:    $blue-70;
 
 $primary:       $blue !default;
-$secondary:     $blue-50 !default;
+$secondary:     $blue-90 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -73,17 +73,6 @@ $text-muted: $gray-700;
 
 h2 {
   border-bottom: 2px solid (var(--bs-light));
-}
-
-.header-wrap {
-  height: 3em; /* or whatever fits your tallest h2 */
-  display: flex;
-  align-items: flex-end;
-}
-.header-wrap h2 {
-  width: 100%; 
-  border-bottom: 2px solid var(--bs-light);
-  margin-top: 4em; 
 }
 
 .social-icon-links .link-primary {
