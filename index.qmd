@@ -137,7 +137,7 @@ resources:
 ::: {#fims-about-listing}
 :::
 
-## [Useful sites](sites/sites_index.qmd)
+## [Useful FIMS sites](sites/sites_index.qmd)
 
 ::: {#fims-sites-listing}
 :::
