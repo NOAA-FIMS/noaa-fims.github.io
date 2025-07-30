@@ -7,7 +7,9 @@
 
 <div class="header-wrap"><h2>THREE BIG THINGS THIS WEEK</h2></div>
 
-{{< meta big-things >}}
+1. {{< meta big-thing-1 >}}
+2. {{< meta big-thing-2 >}}
+3. {{< meta big-thing-3 >}}
 
 :::
 
@@ -23,12 +25,12 @@
 
 :::
 
-<!--
 ::: {.columns}
 ::: {.column}
 ## FIMS ANNOUNCEMENTS
-- 
-- 
+
+{{< meta announcements >}}
+
 :::
 
 ::: {.column}
@@ -37,6 +39,7 @@
 :::
 :::
 
+<!--
 ## PHOTO OF THE WEEK
 
 
