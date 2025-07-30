@@ -58,5 +58,5 @@ Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj)
 {{< meta photo.text >}}
 
 ```{=html}
-<img src="{{< meta photo.path >}}" alt="{{< meta photo.alt-text >}}">
+<img src="{{< meta photo.path >}}" alt="{{< meta photo.alt-text >}}" style="height:150%;">
 ```
