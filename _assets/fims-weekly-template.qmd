@@ -57,4 +57,4 @@ Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj)
 
 {{< meta photo.text >}}
 
-![]({{< meta photo.path >}}){height="150%" fig-alt={{< meta photo.alt-text >}}}
+![{{< meta photo.alt-text >}}]({{< meta photo.path >}}){height="150%"}
