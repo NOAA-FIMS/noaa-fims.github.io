@@ -9,7 +9,10 @@ categories:
 big-thing-1: "Writing tests 🧪 for length-based selectivity and finding the remaining 🐛."
 big-thing-2: "Meg and Ian are working on FIMSdiags. If you are interested in joining them, watch the FIMS Calendar for meetings or ask Meg specifically to be invited."
 big-thing-3: "Projections and reference points are in the works. An update will be presented at the next FIMS Implementation Team Meeting."
-announcements: "- announcement1\n - announcement2"
+announcements: |
+  &nbsp 
+  - announcement1\n 
+  - announcement2
 ---
 
 {{< include "/_assets/fims-weekly-template.qmd" >}}
