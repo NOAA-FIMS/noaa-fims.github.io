@@ -29,7 +29,7 @@
 ::: {.column}
 ## FIMS ANNOUNCEMENTS
 
-{{< content announcements >}}
+{{< contents announcements >}}
 
 :::
 
