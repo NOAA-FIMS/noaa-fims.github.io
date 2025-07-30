@@ -9,13 +9,32 @@ categories:
 big-thing-1: "Writing tests 🧪 for length-based selectivity and finding the remaining 🐛."
 big-thing-2: "Meg and Ian are working on FIMSdiags. If you are interested in joining them, watch the FIMS Calendar for meetings or ask Meg specifically to be invited."
 big-thing-3: "Projections and reference points are in the works. An update will be presented at the next FIMS Implementation Team Meeting."
-announcements: |
-  &nbsp 
-  - announcement1\n 
-  - announcement2
+upcoming-events:
+  code-club-date: "Tuesday, July 29"
+  code-club-name: "FIMS Code Club (length-based selectivity)"
+  seaside-chat-date: "Thursday, July 31"
+  seaside-chat-name: "FIMS Seaside Chat (❓)"
 ---
 
 {{< include "/_assets/fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- Version 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.
+- We need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday.
+::: 
+
+::: {#additional-events}
+
+<!--
+### DAY DATE
+**NAME**\n
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+
+:::
+
 
 
 <!--
@@ -47,8 +66,7 @@ Location: Virtual
 Online: [Google Meet](http://meet.google.com/ica-ieta-ndu)
 
 ### Thursday, July 31
-**FIMS Seaside Chat (❓)"**
-Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H
+**FIMS Seaside Chat (❓)" me: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H
 Location: Virtual
 Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj)
 
