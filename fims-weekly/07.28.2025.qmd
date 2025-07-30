@@ -16,6 +16,7 @@ upcoming-events:
   code-club-name: "FIMS Code Club (length-based selectivity)"
   seaside-chat-date: "Thursday, July 31"
   seaside-chat-name: "FIMS Seaside Chat (❓)"
+# If you have any additional events, uncomment and fill out the additional events section below.
 photo:
   text: "Elizabeth Perl has been working on revamping the NOAA-FIMS [github.io site](http://github.io/) and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
   path: "images/new-fims-website.png"

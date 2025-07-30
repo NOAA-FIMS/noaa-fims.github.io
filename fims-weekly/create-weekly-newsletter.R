@@ -73,6 +73,7 @@ create_weekly_qmd <- function(date = NULL, week_end_date = NULL, file_name = NUL
 '---
 title: "%s"
 date: "%s"
+# Change the following categories accordingly
 categories: 
   - testing
   - selectivity
@@ -87,7 +88,8 @@ upcoming-events:
   code-club-date: "Tuesday, "
   code-club-name: "FIMS Code Club"
   seaside-chat-date: "Thursday, "
-  seaside-chat-name: "FIMS Seaside Chat
+  seaside-chat-name: "FIMS Seaside Chat"
+# If you have any additional events, uncomment and fill out the additional events section below.
 photo:
   text: ""
   path: "images/NAME.png"
@@ -97,8 +99,8 @@ photo:
 {{< include "/_assets/fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
-- 
--
+- ANNOUNCEMENT 1
+- ANNOUNCEMENT 2
 ::: 
     
 ::: {#additional-events}
