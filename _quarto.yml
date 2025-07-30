@@ -36,7 +36,7 @@ website:
             href: about/faq.qmd
       - text: fims weekly
         href: fims-weekly/index.qmd
-      - text: FIMS sites
+      - text: sites
         href: sites/sites_index.qmd
       - text: changelog
         href: FIMS_CHANGELOG.qmd
