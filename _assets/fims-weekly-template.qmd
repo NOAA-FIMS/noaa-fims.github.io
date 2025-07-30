@@ -7,9 +7,9 @@
 
 <div class="header-wrap"><h2>THREE BIG THINGS THIS WEEK</h2></div>
 
-1. {{< meta big-thing-1 >}}
-2. {{< meta big-thing-2 >}}
-3. {{< meta big-thing-3 >}}
+1. {{< meta three-big-things.bt1 >}}
+2. {{< meta three-big-things.bt2 >}}
+3. {{< meta three-big-things.bt3 >}}
 
 :::
 
@@ -35,13 +35,13 @@
 
 ::: {.column}
 ## UPCOMING EVENTS
-### {{< meta upcoming-events.code-club-date}}
+### {{< meta upcoming-events.code-club-date >}}
 **{{< meta upcoming-events.code-club-name >}}**\n
 Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
 Location: Virtual\n
 Online: [Google Meet](http://meet.google.com/ica-ieta-ndu)
 
-### {{< meta upcoming-events.seaside-chat-date}}
+### {{< meta upcoming-events.seaside-chat-date >}}
 **{{< meta upcoming-events.seaside-chat-name >}}**\n
 Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
 Location: Virtual\n
@@ -52,9 +52,9 @@ Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj)
 :::
 :::
 
-<!--
+
 ## PHOTO OF THE WEEK
 
+{{< meta photo.text >}}
 
-![](images/PHOTO_NAME.png){height="150%" fig-alt="ALTERNATIVE TEXT"}
--->
+![]({{< meta photo.path >}}){height="150%" fig-alt="{{< meta photo.alt-text >}}"}

@@ -6,14 +6,20 @@ categories:
   - selectivity
   - diagnostics
   - projections
-big-thing-1: "Writing tests 🧪 for length-based selectivity and finding the remaining 🐛."
-big-thing-2: "Meg and Ian are working on FIMSdiags. If you are interested in joining them, watch the FIMS Calendar for meetings or ask Meg specifically to be invited."
-big-thing-3: "Projections and reference points are in the works. An update will be presented at the next FIMS Implementation Team Meeting."
+three-big-things:
+  bt1: "Writing tests 🧪 for length-based selectivity and finding the remaining 🐛."
+  bt2: "Meg and Ian are working on FIMSdiags. If you are interested in joining them, watch the FIMS Calendar for meetings or ask Meg specifically to be invited."
+  bt3: "Projections and reference points are in the works. An update will be presented at the next FIMS Implementation Team Meeting."
+# Announcements go below because of formatting that quarto doesn't transfer over from the yml
 upcoming-events:
   code-club-date: "Tuesday, July 29"
   code-club-name: "FIMS Code Club (length-based selectivity)"
   seaside-chat-date: "Thursday, July 31"
   seaside-chat-name: "FIMS Seaside Chat (❓)"
+photo:
+  text: "Elizabeth Perl has been working on revamping the NOAA-FIMS [github.io site](http://github.io/) and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
+  path: "images/new-fims-website.png"
+  alt-text: "image of the new FIMS website landing page"
 ---
 
 {{< include "/_assets/fims-weekly-template.qmd" >}}
@@ -34,48 +40,3 @@ Online: [Google meet](MEETING LINK)
 -->
 
 :::
-
-
-
-<!--
-::: {.column width="30%"}
-<div class="header-wrap"><h2>HELPFUL RESOURCES</h2></div>
-- [FIMS Outreach Activities](https://docs.google.com/spreadsheets/d/1g60HmAw8w_CIWBbQwTbq-oWs1ChdTTqvCREVQ8e66sE/edit?gid=0#gid=0)
-- [NMFS Open Science Calendar](https://calendar.google.com/calendar/embed?src=c_916b6948ef2ee8b7d49c28661efc0798303c2742be399c9290fa02d9320c769e%40group.calendar.google.com&ctz=America%2FNew_York)
-- [Implementation Team Notes](https://docs.google.com/document/d/10nSfbPaBF2p7wL2cr5lW7PGZxlZI4tbPiwQRC8JKaXk/edit?usp=drive_link)
-- [FIMS FAQs](https://noaa-fims.github.io/faq)
-- [NOAA-FIMS Discussions](http://github.com/orgs/NOAA-FIMS/discussions)
-:::
-
-:::
-
-::: {.columns}
-::: {.column}
-## FIMS ANNOUNCEMENTS
-- Version 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.
-- We need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday.
-    
-:::
-
-::: {.column}
-## UPCOMING EVENTS
-### Tuesday, July 29
-**FIMS Code Club (length-based selectivity)**
-Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H 
-Location: Virtual
-Online: [Google Meet](http://meet.google.com/ica-ieta-ndu)
-
-### Thursday, July 31
-**FIMS Seaside Chat (❓)" me: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H
-Location: Virtual
-Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj)
-
-:::
-:::
-
-## PHOTO OF THE WEEK
-
-Elizabeth Perl has been working on revamping the NOAA-FIMS [github.io site](http://github.io/) and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task.
-
-![](images/new-fims-website.png){height="150%" fig-alt="image of the new FIMS website landing page"}
--->
