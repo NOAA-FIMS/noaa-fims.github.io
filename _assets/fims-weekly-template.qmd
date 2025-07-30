@@ -47,7 +47,7 @@ Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
 Location: Virtual\n
 Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj)
 
-{{< content additional-events >}}
+{{< contents additional-events >}}
 
 :::
 :::
