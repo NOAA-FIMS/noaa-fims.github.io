@@ -56,7 +56,7 @@ listing:
 header-includes: >
   <link rel="stylesheet" href="/_assets/index.css">
 resources:
-  - /_assets/index.css
+  - _assets/index.css
   - images/case_study.jpg
   - images/contribution.jpg
   - images/training.png
