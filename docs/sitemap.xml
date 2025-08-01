@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://e-perl-noaa.github.io/fims-website-test/sites/sites_index.html</loc>
-    <lastmod>2025-08-01T15:08:08.697Z</lastmod>
+    <lastmod>2025-08-01T15:21:50.174Z</lastmod>
   </url>
   <url>
     <loc>https://e-perl-noaa.github.io/fims-website-test/fims-weekly/index.html</loc>
-    <lastmod>2025-08-01T15:08:08.695Z</lastmod>
+    <lastmod>2025-08-01T14:15:12.453Z</lastmod>
   </url>
   <url>
     <loc>https://e-perl-noaa.github.io/fims-website-test/fims-weekly/07.21.2025.html</loc>
-    <lastmod>2025-08-01T15:08:08.694Z</lastmod>
-  </url>
-  <url>
-    <loc>https://e-perl-noaa.github.io/fims-website-test/about/faq.html</loc>
-    <lastmod>2025-08-01T15:08:08.677Z</lastmod>
-  </url>
-  <url>
-    <loc>https://e-perl-noaa.github.io/fims-website-test/FIMS_CHANGELOG.html</loc>
-    <lastmod>2025-08-01T15:08:08.676Z</lastmod>
-  </url>
-  <url>
-    <loc>https://e-perl-noaa.github.io/fims-website-test/about/contributors.html</loc>
-    <lastmod>2025-08-01T15:08:08.677Z</lastmod>
+    <lastmod>2025-08-01T14:15:12.447Z</lastmod>
   </url>
   <url>
     <loc>https://e-perl-noaa.github.io/fims-website-test/about/index.html</loc>
-    <lastmod>2025-08-01T15:08:08.677Z</lastmod>
+    <lastmod>2025-08-01T15:21:12.954Z</lastmod>
+  </url>
+  <url>
+    <loc>https://e-perl-noaa.github.io/fims-website-test/about/contributors.html</loc>
+    <lastmod>2025-08-01T14:15:12.312Z</lastmod>
+  </url>
+  <url>
+    <loc>https://e-perl-noaa.github.io/fims-website-test/FIMS_CHANGELOG.html</loc>
+    <lastmod>2025-08-01T14:15:12.299Z</lastmod>
+  </url>
+  <url>
+    <loc>https://e-perl-noaa.github.io/fims-website-test/about/faq.html</loc>
+    <lastmod>2025-08-01T14:15:12.312Z</lastmod>
+  </url>
+  <url>
+    <loc>https://e-perl-noaa.github.io/fims-website-test/assets/fims-weekly-template.html</loc>
+    <lastmod>2025-08-01T14:15:12.303Z</lastmod>
   </url>
   <url>
     <loc>https://e-perl-noaa.github.io/fims-website-test/fims-weekly/07.28.2025.html</loc>
-    <lastmod>2025-08-01T15:08:08.694Z</lastmod>
+    <lastmod>2025-08-01T15:19:50.533Z</lastmod>
   </url>
   <url>
     <loc>https://e-perl-noaa.github.io/fims-website-test/index.html</loc>
-    <lastmod>2025-08-01T15:08:08.697Z</lastmod>
+    <lastmod>2025-08-01T15:18:07.199Z</lastmod>
   </url>
 </urlset>

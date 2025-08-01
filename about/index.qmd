@@ -4,7 +4,7 @@ image: ../images/FIMS_logo3.png
 about:
   template: trestles
   id: hero-heading
-include-after-body: ../_assets/open-in-new-tab.html
+include-after-body: ../assets/open-in-new-tab.html
 ---
 
 ::: {#hero-heading}

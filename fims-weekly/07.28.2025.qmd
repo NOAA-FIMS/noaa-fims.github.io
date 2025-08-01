@@ -23,7 +23,7 @@ photo:
   alt-text: "image of the new FIMS website landing page"
 ---
 
-{{< include "/_assets/fims-weekly-template.qmd" >}}
+{{< include "/assets/fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - Version 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.

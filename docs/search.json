@@ -4,14 +4,14 @@
     "href": "sites/sites_index.html",
     "title": "FIMS sites",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n🔍 FIMS case studies\n\n\n\nWHAM\n\nSS3\n\nASAP\n\nTMB\n\n\n\nTest cases, based on regional assessments, to illustrate use of FIMS.\n\n\n\n\n\n\n\n\n\n\n📔 Developer Handbook\n\n\n\ndevelopers\n\ncontributing\n\n\n\nThe FIMS developer handbook describes the workflow for developers and contributors.\n\n\n\n\n\n\n\n\n\n\n💻 Trainings\n\n\n\ntraining\n\nC++\n\nTMB\n\n\n\nFIMS training materials including C++, TMB, etc.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n🔍 FIMS case studies\n\n\n\n\n\n\nWHAM\n\n\nSS3\n\n\nASAP\n\n\nTMB\n\n\n\nTest cases, based on regional assessments, to illustrate use of FIMS. \n\n\n\n\n\n\n\n\n\n\n📔 Developer Handbook\n\n\n\n\n\n\ndevelopers\n\n\ncontributing\n\n\n\nThe FIMS developer handbook describes the workflow for developers and contributors. \n\n\n\n\n\n\n\n\n\n\n💻 Trainings\n\n\n\n\n\n\ntraining\n\n\nC++\n\n\nTMB\n\n\n\nFIMS training materials including C++, TMB, etc. \n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "fims-weekly/index.html",
     "href": "fims-weekly/index.html",
     "title": "FIMS Weekly",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nJuly 28 - August 1, 2025\n\n\n\ntesting\n\nselectivity\n\ndiagnostics\n\nprojections\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\nJuly 21 - 25, 2025\n\n\n\ntesting\n\nselectivity\n\nprojections\n\n\n\n\n\n\nJul 21, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nJuly 28 - August 1, 2025\n\n\n\n\n\n\ntesting\n\n\nselectivity\n\n\ndiagnostics\n\n\nprojections\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\nJuly 21 - 25, 2025\n\n\n\n\n\n\ntesting\n\n\nselectivity\n\n\nprojections\n\n\n\n\n\n\nJul 21, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "fims-weekly/07.21.2025.html#fims-announcements",
@@ -35,25 +35,74 @@
     "text": "PHOTO OF THE WEEK\nR-opensci has guidance on writing tests for packages submitted that Bai is looking into. But, it was pretty mind blowing to learn that there is a way to add comments to a commit message that can invoke “extended” tests, i.e., tests that do not need to be run on every commit. It was nice to know that others have been thinking about this as FIMS has struggled to find a resource or advice on what to do, see Discussion #870. Feel free to add any thoughts about the system below or other insights to running large tests on the Discussion board. Thank you in advance for taking the time to contribute 😊."
   },
   {
-    "objectID": "about/faq.html",
-    "href": "about/faq.html",
-    "title": "Frequently Asked Questions",
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About FIMS",
     "section": "",
-    "text": "This document is meant to help answer questions that are frequently asked regarding the Fisheries Integrated Modeling System (FIMS). Should your question not be answered here, we recommend that you navigate to the GitHub Discussion page to see if your question has already been asked but just might not have been asked frequently enough to make it here."
+    "text": "👋 Hey there!\n\n\nThe NOAA Fisheries Integrated Modeling System is a software system designed to support next-generation fisheries stock assessment, ecosystem, and socioeconomic modeling.\nA team of experts within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners. The roles of internal and external collaborators are outlined in the governance section of our developer guide."
   },
   {
-    "objectID": "about/faq.html#why",
-    "href": "about/faq.html#why",
-    "title": "Frequently Asked Questions",
-    "section": "Why",
-    "text": "Why\n\nWhy is FIMS being created?\nFIMS was created to increase the pool of developers, designers, and testers that contribute to a commonly-used stock assessment modeling system that can be used across regions. The commitment to build FIMS was made by the National Marine Fisheries Service (NMFS) Science Board in 2020 partly in response to the Center for the Advancement of Population Assessment Methodology (CAPAM) workshop on Next Generation Models. New good practices in assessment methods, such as random effects, one-step ahead residuals, and new statistical distributions, can be difficult to add in a performant way to older software systems. FIMS will be written in a way that these new best practices are included at the onset rather than as an afterthought.\n\n\nWhy build FIMS now?\nAD Model Builder (ADMB) is no longer being supported so the ability to compile existing models that use ADMB, e.g., Age Structured Assessment Program (ASAP), Assessment Model for Alaska (AMAK), Beaufort Assessment Model (BAM), and Stock Synthesis 3 (SS3), will be compromised with future operating system upgrades. Furthermore, development of these models that rely on ADMB to include best practices, such as random effects, is not feasible."
+    "objectID": "about/index.html#get-involved",
+    "href": "about/index.html#get-involved",
+    "title": "About FIMS",
+    "section": "Get involved",
+    "text": "Get involved\nUsers and developers are welcome to join the Discussions board or submit bug reports using GitHub issues. Please use the issues under collaborative workflow to make suggestions about the developer guide and the issues under the FIMS software repository for software design and development feedback."
   },
   {
-    "objectID": "about/faq.html#transitioning-to-fims",
-    "href": "about/faq.html#transitioning-to-fims",
-    "title": "Frequently Asked Questions",
-    "section": "Transitioning to FIMS",
-    "text": "Transitioning to FIMS\n\nWill FIMS have all the features of current assessment models?\nThe feature set of some of the currently available assessment platforms have grown organically over several decades and certainly contain unused features, awkward conventions, and other aspects needing attention. For example, the last major refresh of the SS3 concept was more than twenty years ago (2004) when it was converted from FORTRAN to ADMB. All software needs a refresh and FIMS will be that for several assessment platforms. FIMS certainly will start with the major capabilities that are currently available such as simultaneously modeling fish growth and population numbers and to use both age and length and other data. FIMS will also start with some more advanced capabilities, particularly the ability to flexibly model time variation in parameters using random effects. Also, FIMS is being written in a more modular way to reduce duplication and facilitate robust testing of each individual part, following best-practice guides for coding. This has resulted in 78% test coverage, which is unmatched in most assessment software. A defined process for testing, model validation, and code review will support integrating future innovations after they have been proven in research sandboxes.\n\n\nWhen will FIMS be ready to transition to?\nFIMS will have many of the features stock assessment analysts expect in a beta format sometime in 2025. We expect a fully tested and documented alpha release to be available in 2026. This includes implementation of fitting to length-composition data, random effects, Bayesian estimation, and SPR-based reference points in 2026.\n\n\nI need a new model. Should I wait for FIMS or use WHAM?\nWHAM is likely to have a fuller complement of features available sooner than FIMS. WHAM is currently available for operational use and approved within the Northeast Region. However, in the future, we expect a subset of models currently using WHAM to transition to FIMS as the FIMS feature set becomes more complete, so using FIMS from the beginning may save time in the long-run. We leave the decision up to you because only you know your timeline and resources available. We highly encourage you to consider FIMS because the knowledge and comradery associated with FIMS will be unlike that found with any previously available platform given that it is the first to start with input from scientists within every center in NOAA Fisheries.\n\n\nWhen will FIMS trainings be offered?\nWe will be offering FIMS trainings in 2025. These initial trainings offered in 2025 will be targeted at early adopters and power users who are willing to debug and file issues when they encounter them. This will allow for the incorporation of user feedback in the code base during 2025–2026 development and release of a usable alpha version in 2026. In 2026, training will be offered at different levels from novice to expert users, including students.\n\n\nHow can I prepare for the transition to FIMS?\nYou can conduct sensitivity analyses on the model you use for operational assessments to identify which model features have a large impact on model fit and which are included for historical consistency. Documenting the impact missing features have on model fit will help the FIMS team prioritize feature requests. If you haven’t worked with a random effects model, there are a number of papers and course material created by Andrea Havron available to learn more about when and how random effects should be applied in stock assessment models.\n\n\nHow long will existing assessment platforms be maintained, and at what level?\nSupport for existing models written in ADMB will phase out in stages. The first stage has already occurred for some, e.g., SS3, with a commitment to not add major new features in deference to their future consideration by FIMS. The second stage could be cessation of any releases of minor modifications or bug fixes but that may be just a gradual slowdown until re-compiling the code becomes impossible. The third will be relegation of help desk support entirely to the community as crowd sourcing.\nWe recognize that the community often continues use of older models long after new models or model versions are available so the currently available platforms will remain downloadable as an executable from the NMFS Fisheries Integrated Toolbox. Additionally, if the code is publicly available, its code will remain available in its GitHub site.\nThe following factors will affect the stages of SS3 succession: availability in FIMS of capability to address more assessment situations currently addressed by SS3; retirement of the main SS3 developer, Richard Methot; and changes in computer operating systems such that SS3 cannot be re-compiled because ADMB no longer works with those windows, ioS and/or unix compilers. All three of these transition triggers will occur, in no designable order, in 1 to 5 years. We are attempting to future-proof SS3 by building a dev_container for compiling with ADMB and the current suite of operating systems and creating a GoogleGroup user forum to bolster the generality of the help-desk support now provided by the core SS3 developers.\nASAP is currently transitioning to WHAM in the Northeast Region. A research track on WHAM was reviewed in February 2024. The Northeast Regional Coordinating Committee is expected to approve a recommendation from the Research Track Steering Committee to allow stock assessments to transition from ASAP to WHAM during a management track assessment. This is an exception to the rule in the region that all model transitions must be made in a research track. It is not known whether a similar exception will be made for the transition from WHAM to FIMS, nor whether a research track on FIMS will be required in the region. All development on ASAP has stopped with the focus shifted to WHAM.\n\n\nWill there be translators from current platforms to FIMS?\nFor model settings, we recommend using the default model configuration function that will be built into FIMS as a starting point. Then, customizing the model can be done in R as it would not be efficient to programmatically translate the model configurations, e.g., SS3 control file, given the large number of options for settings that will not be provided for FIMS. An R function is currently available to translate SS3 data inputs to the dataframe needed to run a FIMS model, and this data translator will be improved in the next few years as the range of data types used by FIMS is expanded.\nAll ASAP models will likely be converted to WHAM before transitioning to FIMS. There are currently no plans to create a translator from WHAM to FIMS but both packages use R objects to define their models. This might allow future translations of configuration objects to be relatively simple. However, it would likely not be worth the effort to maintain a translator until the input and output format of WHAM and/or FIMS are static.\nDevelopers of BAM have discussed the desirability of translating BAM input files for compatibility with FIMS. This will likely be pursued after FIMS has matured enough for operational use.\n\n\nHow far will FIMS scale towards data-poor models?\nFIMS is primarily designed as an age-structured model. Right now, FIMS can run without age-composition data but estimates are poor. The ability to model data-moderate and data-limited cases is planned for addition in later milestones to facilitate the use of one modeling platform regardless of the amount of data available."
+    "objectID": "about/index.html#current-project-status",
+    "href": "about/index.html#current-project-status",
+    "title": "About FIMS",
+    "section": "Current project status",
+    "text": "Current project status\nThe project is constantly under development 🔨. Check out our progress so far below:\n\n\n\nMetric\nStatus\n\n\n\n\nDevelopment\nStatus\n\n\nTotal Issues\n\n\n\nClosed Issues\n\n\n\nMilestone 1 Open Issues\n\n\n\nMilestone 1 Closed Issues\n\n\n\nMilestone 1 Progress\n\n\n\nMilestone 2 Issues\n\n\n\nIssues that Need Triage\n\n\n\nFeature requests\n\n\n\nBugs\n\n\n\nPull Requests\n\n\n\nStyle and document R code\n\n\n\nclang-tidy on C++ code\n\n\n\nCalculate test coverage\n\n\n\nR cmd check\n\n\n\nGoogle test status\n\n\n\nDeveloper handbook\nStatus\n\n\nTotal issues\n\n\n\nClosed Issues"
+  },
+  {
+    "objectID": "about/index.html#release",
+    "href": "about/index.html#release",
+    "title": "About FIMS",
+    "section": "Release",
+    "text": "Release\nThe current release can be found on the release page."
+  },
+  {
+    "objectID": "about/index.html#related-projects",
+    "href": "about/index.html#related-projects",
+    "title": "About FIMS",
+    "section": "Related Projects",
+    "text": "Related Projects\n\nThe Fisheries Integrated Toolbox.\nStock Assessment Dictionary Project\n\n\nIf you have questions or comments please contact the FIMS Project Lead."
+  },
+  {
+    "objectID": "about/contributors.html",
+    "href": "about/contributors.html",
+    "title": "FIMS Team",
+    "section": "",
+    "text": "FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council."
+  },
+  {
+    "objectID": "about/contributors.html#core-developers",
+    "href": "about/contributors.html#core-developers",
+    "title": "FIMS Team",
+    "section": "Core Developers",
+    "text": "Core Developers\n\nKelli F. Johnson (OST)\nAlexander J. Jensen (SWFSC)\nAndrea M. Havron\nBai Li (OST)\nChristine C. Stawitz (OST)\nChristopher M. Legault (NEFSC)\nCole C. Monnahan (AFSC)\nEric J. Ward (NWFSC)\nIan G. Taylor (NWFSC)\nJane Y. Sullivan (AFSC)\nJon K. T. Brodziak (PIFSC)\nKathryn L. Doering (OST)\nKyle W. Shertzer (SEFSC)\nMatthew Supernaw (OST)\nMegumi C. Oshima (PIFSC)\nNathan R. Vaughan (Vaughan Analytics)\nPeter T. Kuriyama (SWFSC)\nRonald Klasky (T and T Consulting Services, Inc.)\nTimothy J. Miller (NEFSC)"
+  },
+  {
+    "objectID": "about/contributors.html#subject-matter-experts",
+    "href": "about/contributors.html#subject-matter-experts",
+    "title": "FIMS Team",
+    "section": "Subject-Matter Experts",
+    "text": "Subject-Matter Experts\n\nHoward Townsend (OST)\nJames N. Ianelli (AFSC)\nJennifer S. Bigman (OST)\nLisa Pfeiffer (NWFSC)\nPatrick D. Lynch (OST)\nRichard D. Methot (OST)"
+  },
+  {
+    "objectID": "about/contributors.html#contributors",
+    "href": "about/contributors.html#contributors",
+    "title": "FIMS Team",
+    "section": "Contributors",
+    "text": "Contributors\n\nAlan C. Haynie (ICES)\nEdward J. Dick (SWFSC)\nHuihua Lee (SWFSC)\nKristan Blackhart (NEFSC)"
+  },
+  {
+    "objectID": "about/contributors.html#fims-council",
+    "href": "about/contributors.html#fims-council",
+    "title": "FIMS Team",
+    "section": "FIMS Council",
+    "text": "FIMS Council\n\nAnders Nielsen (DTU-Aqua)\nAndré E. Punt (Chair, SAFS UW)\nAnne M. Cooper (ICES)\nBjarki Þ. Elvarsson (MFRI, Gadget)\nCurry J. Cunningham (NPFMC)\nÉva E. Plagányi (CSIRO)\nGeneviève M. Nesslage (Mid-Atlantic)\nHenning Winker (JRC, Jabba)\nJim N. Sanchirico (UC Davis)\nJon R. Weidenmann (Rutgers)\nMark N. Maunder (IATTC)\nZ. Teresa A’mar (Dragonfly Data Science)"
   },
   {
     "objectID": "FIMS_CHANGELOG.html",
@@ -147,74 +196,46 @@
     "text": "v0.1.0.0 (release notes)\nThis is the first version of the Fisheries Integrated Modeling System (FIMS). At this stage, FIMS can be used to estimate a simple age-structured population model such as case 0 in Li et al. (2021)’s manuscript. Please refer to the collaborative workflow for a description of the model functionality and completeness. Documentation can be found here.\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/commits/v0.1.0"
   },
   {
-    "objectID": "about/contributors.html",
-    "href": "about/contributors.html",
-    "title": "FIMS Team",
+    "objectID": "about/faq.html",
+    "href": "about/faq.html",
+    "title": "Frequently Asked Questions",
     "section": "",
-    "text": "FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council."
+    "text": "This document is meant to help answer questions that are frequently asked regarding the Fisheries Integrated Modeling System (FIMS). Should your question not be answered here, we recommend that you navigate to the GitHub Discussion page to see if your question has already been asked but just might not have been asked frequently enough to make it here."
   },
   {
-    "objectID": "about/contributors.html#core-developers",
-    "href": "about/contributors.html#core-developers",
-    "title": "FIMS Team",
-    "section": "Core Developers",
-    "text": "Core Developers\n\nKelli F. Johnson (OST)\nAlexander J. Jensen (SWFSC)\nAndrea M. Havron\nBai Li (OST)\nChristine C. Stawitz (OST)\nChristopher M. Legault (NEFSC)\nCole C. Monnahan (AFSC)\nEric J. Ward (NWFSC)\nIan G. Taylor (NWFSC)\nJane Y. Sullivan (AFSC)\nJon K. T. Brodziak (PIFSC)\nKathryn L. Doering (OST)\nKyle W. Shertzer (SEFSC)\nMatthew Supernaw (OST)\nMegumi C. Oshima (PIFSC)\nNathan R. Vaughan (Vaughan Analytics)\nPeter T. Kuriyama (SWFSC)\nRonald Klasky (T and T Consulting Services, Inc.)\nTimothy J. Miller (NEFSC)"
+    "objectID": "about/faq.html#why",
+    "href": "about/faq.html#why",
+    "title": "Frequently Asked Questions",
+    "section": "Why",
+    "text": "Why\n\nWhy is FIMS being created?\nFIMS was created to increase the pool of developers, designers, and testers that contribute to a commonly-used stock assessment modeling system that can be used across regions. The commitment to build FIMS was made by the National Marine Fisheries Service (NMFS) Science Board in 2020 partly in response to the Center for the Advancement of Population Assessment Methodology (CAPAM) workshop on Next Generation Models. New good practices in assessment methods, such as random effects, one-step ahead residuals, and new statistical distributions, can be difficult to add in a performant way to older software systems. FIMS will be written in a way that these new best practices are included at the onset rather than as an afterthought.\n\n\nWhy build FIMS now?\nAD Model Builder (ADMB) is no longer being supported so the ability to compile existing models that use ADMB, e.g., Age Structured Assessment Program (ASAP), Assessment Model for Alaska (AMAK), Beaufort Assessment Model (BAM), and Stock Synthesis 3 (SS3), will be compromised with future operating system upgrades. Furthermore, development of these models that rely on ADMB to include best practices, such as random effects, is not feasible."
   },
   {
-    "objectID": "about/contributors.html#subject-matter-experts",
-    "href": "about/contributors.html#subject-matter-experts",
-    "title": "FIMS Team",
-    "section": "Subject-Matter Experts",
-    "text": "Subject-Matter Experts\n\nHoward Townsend (OST)\nJames N. Ianelli (AFSC)\nJennifer S. Bigman (OST)\nLisa Pfeiffer (NWFSC)\nPatrick D. Lynch (OST)\nRichard D. Methot (OST)"
+    "objectID": "about/faq.html#transitioning-to-fims",
+    "href": "about/faq.html#transitioning-to-fims",
+    "title": "Frequently Asked Questions",
+    "section": "Transitioning to FIMS",
+    "text": "Transitioning to FIMS\n\nWill FIMS have all the features of current assessment models?\nThe feature set of some of the currently available assessment platforms have grown organically over several decades and certainly contain unused features, awkward conventions, and other aspects needing attention. For example, the last major refresh of the SS3 concept was more than twenty years ago (2004) when it was converted from FORTRAN to ADMB. All software needs a refresh and FIMS will be that for several assessment platforms. FIMS certainly will start with the major capabilities that are currently available such as simultaneously modeling fish growth and population numbers and to use both age and length and other data. FIMS will also start with some more advanced capabilities, particularly the ability to flexibly model time variation in parameters using random effects. Also, FIMS is being written in a more modular way to reduce duplication and facilitate robust testing of each individual part, following best-practice guides for coding. This has resulted in 78% test coverage, which is unmatched in most assessment software. A defined process for testing, model validation, and code review will support integrating future innovations after they have been proven in research sandboxes.\n\n\nWhen will FIMS be ready to transition to?\nFIMS will have many of the features stock assessment analysts expect in a beta format sometime in 2025. We expect a fully tested and documented alpha release to be available in 2026. This includes implementation of fitting to length-composition data, random effects, Bayesian estimation, and SPR-based reference points in 2026.\n\n\nI need a new model. Should I wait for FIMS or use WHAM?\nWHAM is likely to have a fuller complement of features available sooner than FIMS. WHAM is currently available for operational use and approved within the Northeast Region. However, in the future, we expect a subset of models currently using WHAM to transition to FIMS as the FIMS feature set becomes more complete, so using FIMS from the beginning may save time in the long-run. We leave the decision up to you because only you know your timeline and resources available. We highly encourage you to consider FIMS because the knowledge and comradery associated with FIMS will be unlike that found with any previously available platform given that it is the first to start with input from scientists within every center in NOAA Fisheries.\n\n\nWhen will FIMS trainings be offered?\nWe will be offering FIMS trainings in 2025. These initial trainings offered in 2025 will be targeted at early adopters and power users who are willing to debug and file issues when they encounter them. This will allow for the incorporation of user feedback in the code base during 2025–2026 development and release of a usable alpha version in 2026. In 2026, training will be offered at different levels from novice to expert users, including students.\n\n\nHow can I prepare for the transition to FIMS?\nYou can conduct sensitivity analyses on the model you use for operational assessments to identify which model features have a large impact on model fit and which are included for historical consistency. Documenting the impact missing features have on model fit will help the FIMS team prioritize feature requests. If you haven’t worked with a random effects model, there are a number of papers and course material created by Andrea Havron available to learn more about when and how random effects should be applied in stock assessment models.\n\n\nHow long will existing assessment platforms be maintained, and at what level?\nSupport for existing models written in ADMB will phase out in stages. The first stage has already occurred for some, e.g., SS3, with a commitment to not add major new features in deference to their future consideration by FIMS. The second stage could be cessation of any releases of minor modifications or bug fixes but that may be just a gradual slowdown until re-compiling the code becomes impossible. The third will be relegation of help desk support entirely to the community as crowd sourcing.\nWe recognize that the community often continues use of older models long after new models or model versions are available so the currently available platforms will remain downloadable as an executable from the NMFS Fisheries Integrated Toolbox. Additionally, if the code is publicly available, its code will remain available in its GitHub site.\nThe following factors will affect the stages of SS3 succession: availability in FIMS of capability to address more assessment situations currently addressed by SS3; retirement of the main SS3 developer, Richard Methot; and changes in computer operating systems such that SS3 cannot be re-compiled because ADMB no longer works with those windows, ioS and/or unix compilers. All three of these transition triggers will occur, in no designable order, in 1 to 5 years. We are attempting to future-proof SS3 by building a dev_container for compiling with ADMB and the current suite of operating systems and creating a GoogleGroup user forum to bolster the generality of the help-desk support now provided by the core SS3 developers.\nASAP is currently transitioning to WHAM in the Northeast Region. A research track on WHAM was reviewed in February 2024. The Northeast Regional Coordinating Committee is expected to approve a recommendation from the Research Track Steering Committee to allow stock assessments to transition from ASAP to WHAM during a management track assessment. This is an exception to the rule in the region that all model transitions must be made in a research track. It is not known whether a similar exception will be made for the transition from WHAM to FIMS, nor whether a research track on FIMS will be required in the region. All development on ASAP has stopped with the focus shifted to WHAM.\n\n\nWill there be translators from current platforms to FIMS?\nFor model settings, we recommend using the default model configuration function that will be built into FIMS as a starting point. Then, customizing the model can be done in R as it would not be efficient to programmatically translate the model configurations, e.g., SS3 control file, given the large number of options for settings that will not be provided for FIMS. An R function is currently available to translate SS3 data inputs to the dataframe needed to run a FIMS model, and this data translator will be improved in the next few years as the range of data types used by FIMS is expanded.\nAll ASAP models will likely be converted to WHAM before transitioning to FIMS. There are currently no plans to create a translator from WHAM to FIMS but both packages use R objects to define their models. This might allow future translations of configuration objects to be relatively simple. However, it would likely not be worth the effort to maintain a translator until the input and output format of WHAM and/or FIMS are static.\nDevelopers of BAM have discussed the desirability of translating BAM input files for compatibility with FIMS. This will likely be pursued after FIMS has matured enough for operational use.\n\n\nHow far will FIMS scale towards data-poor models?\nFIMS is primarily designed as an age-structured model. Right now, FIMS can run without age-composition data but estimates are poor. The ability to model data-moderate and data-limited cases is planned for addition in later milestones to facilitate the use of one modeling platform regardless of the amount of data available."
   },
   {
-    "objectID": "about/contributors.html#contributors",
-    "href": "about/contributors.html#contributors",
-    "title": "FIMS Team",
-    "section": "Contributors",
-    "text": "Contributors\n\nAlan C. Haynie (ICES)\nEdward J. Dick (SWFSC)\nHuihua Lee (SWFSC)\nKristan Blackhart (NEFSC)"
+    "objectID": "assets/fims-weekly-template.html#fims-announcements",
+    "href": "assets/fims-weekly-template.html#fims-announcements",
+    "title": "FIMS",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS"
   },
   {
-    "objectID": "about/contributors.html#fims-council",
-    "href": "about/contributors.html#fims-council",
-    "title": "FIMS Team",
-    "section": "FIMS Council",
-    "text": "FIMS Council\n\nAnders Nielsen (DTU-Aqua)\nAndré E. Punt (Chair, SAFS UW)\nAnne M. Cooper (ICES)\nBjarki Þ. Elvarsson (MFRI, Gadget)\nCurry J. Cunningham (NPFMC)\nÉva E. Plagányi (CSIRO)\nGeneviève M. Nesslage (Mid-Atlantic)\nHenning Winker (JRC, Jabba)\nJim N. Sanchirico (UC Davis)\nJon R. Weidenmann (Rutgers)\nMark N. Maunder (IATTC)\nZ. Teresa A’mar (Dragonfly Data Science)"
+    "objectID": "assets/fims-weekly-template.html#upcoming-events",
+    "href": "assets/fims-weekly-template.html#upcoming-events",
+    "title": "FIMS",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\n?meta:upcoming-events.code-club-date\n?meta:upcoming-events.code-club-name Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n\n\n?meta:upcoming-events.seaside-chat-date\n?meta:upcoming-events.seaside-chat-name Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "About FIMS",
-    "section": "",
-    "text": "👋 Hey there!\n\n\nThe NOAA Fisheries Integrated Modeling System is a software system designed to support next-generation fisheries stock assessment, ecosystem, and socioeconomic modeling.\nA team of experts within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners. The roles of internal and external collaborators are outlined in the governance section of our developer guide."
-  },
-  {
-    "objectID": "about/index.html#get-involved",
-    "href": "about/index.html#get-involved",
-    "title": "About FIMS",
-    "section": "Get involved",
-    "text": "Get involved\nUsers and developers are welcome to join the Discussions board or submit bug reports using GitHub issues. Please use the issues under collaborative workflow to make suggestions about the developer guide and the issues under the FIMS software repository for software design and development feedback."
-  },
-  {
-    "objectID": "about/index.html#current-project-status",
-    "href": "about/index.html#current-project-status",
-    "title": "About FIMS",
-    "section": "Current project status",
-    "text": "Current project status\nThe project is constantly under development 🔨. Check out our progress so far below:\n\n\n\nMetric\nStatus\n\n\n\n\nDevelopment\nStatus\n\n\nTotal Issues\n\n\n\nClosed Issues\n\n\n\nMilestone 1 Open Issues\n\n\n\nMilestone 1 Closed Issues\n\n\n\nMilestone 1 Progress\n\n\n\nMilestone 2 Issues\n\n\n\nIssues that Need Triage\n\n\n\nFeature requests\n\n\n\nBugs\n\n\n\nPull Requests\n\n\n\nStyle and document R code\n\n\n\nclang-tidy on C++ code\n\n\n\nCalculate test coverage\n\n\n\nR cmd check\n\n\n\nGoogle test status\n\n\n\nDeveloper handbook\nStatus\n\n\nTotal issues\n\n\n\nClosed Issues"
-  },
-  {
-    "objectID": "about/index.html#release",
-    "href": "about/index.html#release",
-    "title": "About FIMS",
-    "section": "Release",
-    "text": "Release\nThe current release can be found on the release page."
-  },
-  {
-    "objectID": "about/index.html#related-projects",
-    "href": "about/index.html#related-projects",
-    "title": "About FIMS",
-    "section": "Related Projects",
-    "text": "Related Projects\n\nThe Fisheries Integrated Toolbox.\nStock Assessment Dictionary Project\n\n\nIf you have questions or comments please contact the FIMS Project Lead."
+    "objectID": "assets/fims-weekly-template.html#photo-of-the-week",
+    "href": "assets/fims-weekly-template.html#photo-of-the-week",
+    "title": "FIMS",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\n?meta:photo.text"
   },
   {
     "objectID": "fims-weekly/07.28.2025.html#fims-announcements",
@@ -249,13 +270,13 @@
     "href": "index.html#about",
     "title": "\n      NOAA Fisheries Integrated Modeling System\n    ",
     "section": "About",
-    "text": "About\n\n\n\n\n\n\n\n💡 About FIMS\n\n\nGeneral information about the FIMS project.\n\n\n\n\n\n\n\n\n\n👥 FIMS Team\n\n\nList of all contributors to the FIMS project.\n\n\n\n\n\n\n\n\n\n❓ FAQs\n\n\nFrequently asked questions.\n\n\n\n\n\nNo matching items"
+    "text": "About\n\n\n\n\n\n\n\n💡 About FIMS\n\n\nGeneral information about the FIMS project.\n\n\n\n\n\n\n\n\n\n\n👥 FIMS Team\n\n\nList of all contributors to the FIMS project.\n\n\n\n\n\n\n\n\n\n\n❓ FAQs\n\n\nFrequently asked questions.\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#useful-fims-sites",
     "href": "index.html#useful-fims-sites",
     "title": "\n      NOAA Fisheries Integrated Modeling System\n    ",
     "section": "Useful FIMS sites",
-    "text": "Useful FIMS sites\n\n\n\n\n\n\n\n🔍 FIMS case studies\n\n\nTest cases, based on regional assessments, to illustrate use of FIMS.\n\n\n\n\n\n\n\n\n\n📔 Developer Handbook\n\n\nThe FIMS developer handbook describes the workflow for developers and contributors.\n\n\n\n\n\n\n\n\n\n💻 Trainings\n\n\nFIMS training materials including C++, TMB, etc.\n\n\n\n\n\nNo matching items"
+    "text": "Useful FIMS sites\n\n\n\n\n\n\n\n🔍 FIMS case studies\n\n\nTest cases, based on regional assessments, to illustrate use of FIMS.\n\n\n\n\n\n\n\n\n\n\n📔 Developer Handbook\n\n\nThe FIMS developer handbook describes the workflow for developers and contributors.\n\n\n\n\n\n\n\n\n\n\n💻 Trainings\n\n\nFIMS training materials including C++, TMB, etc.\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

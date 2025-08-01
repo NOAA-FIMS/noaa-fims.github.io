@@ -54,9 +54,9 @@ listing:
             FIMS training materials including C++, TMB, etc.
           categories: [training, C++, TMB]
 header-includes: >
-  <link rel="stylesheet" href="./_assets/index.css">
+  <link rel="stylesheet" href="assets/index.css">
 resources:
-  - _assets/index.css
+  - assets/index.css
   - images/case_study.jpg
   - images/contribution.jpg
   - images/training.png

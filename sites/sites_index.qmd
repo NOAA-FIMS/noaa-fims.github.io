@@ -30,5 +30,5 @@ listing:
 page-layout: full
 title-block-banner: false
 comments: false
-include-after-body: ../_assets/open-in-new-tab.html
+include-after-body: ../assets/open-in-new-tab.html
 ---

@@ -7,7 +7,7 @@ project:
     - "about/*qmd"
   resources:
     - images/
-    - _assets/
+    - assets/
   # post-render:
   #   - "cp -r static/. _site/"
 
@@ -54,7 +54,7 @@ website:
 format:
   html:
     body-width: 100%
-    include-after-body: _assets/open-in-new-tab.html
+    include-after-body: assets/open-in-new-tab.html
     header-includes: |
       <script>
         window.addEventListener('DOMContentLoaded', function() {
@@ -70,19 +70,19 @@ format:
     theme:
       light:
         - zephyr
-        - _assets/styles-elm-light.scss
-        - _assets/styles-elm-base.scss
-        - _assets/colors.scss
+        - assets/styles-elm-light.scss
+        - assets/styles-elm-base.scss
+        - assets/colors.scss
       dark:
-        - _assets/zephyr-dark.scss
-        - _assets/styles-elm-dark.scss
-        - _assets/styles-elm-base.scss
-        - _assets/colors.scss
+        - assets/zephyr-dark.scss
+        - assets/styles-elm-dark.scss
+        - assets/styles-elm-base.scss
+        - assets/colors.scss
     css:
-      - _assets/panelset-extras.css
+      - assets/panelset-extras.css
     highlight-style:
-      light: _assets/syntax-elm-light.theme
-      dark: _assets/syntax-elm-dark.theme
+      light: assets/syntax-elm-light.theme
+      dark: assets/syntax-elm-dark.theme
     code-block-bg: false
     # If we want analystics we can add them through this code and creating a counter.dev dashboard
     # include-in-header:

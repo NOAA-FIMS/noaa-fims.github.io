@@ -10,7 +10,7 @@
 <atom:link href="https://e-perl-noaa.github.io/fims-website-test/fims-weekly/index-r.xml" rel="self" type="application/rss+xml"/>
 <description>FIMS weekly blog.
 </description>
-<generator>quarto-1.7.32</generator>
-<lastBuildDate>Fri, 01 Aug 2025 15:10:35 GMT</lastBuildDate>
+<generator>quarto-1.6.42</generator>
+<lastBuildDate>Fri, 01 Aug 2025 15:22:16 GMT</lastBuildDate>
 </channel>
 </rss>
