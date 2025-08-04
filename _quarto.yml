@@ -8,8 +8,8 @@ project:
   resources:
     - images/
     - assets/
-  # post-render:
-  #   - "cp -r static/. _site/"
+  post-render:
+    - "cp -r _static/. docs/"
 
 website:
   title: "FIMS"
