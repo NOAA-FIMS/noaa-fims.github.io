@@ -46,8 +46,8 @@ website:
         href: https://github.com/NOAA-FIMS
   sidebar:
     - title: "about"
-      style: "floating"
-      background: light
+      style: "docked"
+      background: white
       contents:
         - about/index.qmd
         - about/contributors.qmd
