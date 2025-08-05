@@ -54,6 +54,7 @@ website:
 format:
   html:
     body-width: 100%
+    anchor-sections: true
     include-after-body: assets/open-in-new-tab.html
     header-includes: |
       <script>
