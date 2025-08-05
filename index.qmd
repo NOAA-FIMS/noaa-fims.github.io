@@ -28,6 +28,11 @@ listing:
           description: >
             Frequently asked questions.
           display-order: 3
+        - path: about/calendar.qmd
+          title: 📅 Calendar
+          description: >
+            FIMS calendar.
+          display-order: 4
     sort: "display-order"
   - id: fims-sites-listing
     type: grid

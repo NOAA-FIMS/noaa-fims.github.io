@@ -34,6 +34,8 @@ website:
             href: about/contributors.qmd
           - text: faq
             href: about/faq.qmd
+          - text: calendar
+            href: about/calendar.qmd
       - text: fims weekly
         href: fims-weekly/index.qmd
       - text: sites
@@ -42,6 +44,15 @@ website:
         href: FIMS_CHANGELOG.qmd
       - icon: github
         href: https://github.com/NOAA-FIMS
+  sidebar:
+    - title: "about"
+      style: "docked"
+      background: light
+      contents:
+        - about/index.qmd
+        - about/contributors.qmd
+        - about/faq.qmd
+        - about/calendar.qmd
   page-footer:
     border: false
     background: light
