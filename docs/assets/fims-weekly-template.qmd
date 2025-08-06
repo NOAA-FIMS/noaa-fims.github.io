@@ -36,17 +36,17 @@
 ::: {.column}
 ## UPCOMING EVENTS
 
-::: {.content-hidden unless-meta="code-club-name"}
-### {{< meta code-club-date >}}
-**{{< meta code-club-name >}}**\n
+::: {.content-hidden unless-meta="upcoming-events['code-club-name']"}
+### {{< meta upcoming-events.code-club-date >}}
+**{{< meta upcoming-events.code-club-name >}}**\n
 Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
 Location: Virtual\n
 Online: [Google Meet](http://meet.google.com/ica-ieta-ndu)
 :::
 
-::: {.content-hidden unless-meta="seaside-chat-name"}
-### {{< meta seaside-chat-date >}}
-**{{< meta seaside-chat-name >}}**\n
+::: {.content-hidden unless-meta="upcoming-events['seaside-chat-name']"}
+### {{< meta upcoming-events.seaside-chat-date >}}
+**{{< meta upcoming-events.seaside-chat-name >}}**\n
 Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
 Location: Virtual\n
 Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj)
