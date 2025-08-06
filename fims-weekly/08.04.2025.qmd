@@ -10,9 +10,9 @@ three-big-things:
   bt2: "We will be migrating several resources from individual repositories to the FIMS website, e.g., FIMS Weekly newsletter, training repo, doxygen documentation, and potentially the collaborative workflow."
   bt3: "Please ensure that your affiliation in the [FIMS manuscript](https://docs.google.com/document/d/1UDQHA023U1_X2_2k2_V1QNGFhmhrx8c3omNDhSaVvdw/edit?usp=sharing) is correct, which will be submitted to ICES Journal of Marine Science at the beginning of next week."
 # Announcements go below because of formatting that quarto doesnt transfer over from the yml
-upcoming-events:
-  code-club-date: "Tuesday, August 05"
-  code-club-name: "FIMS Code Club (json)"
+# upcoming-events:
+code-club-date: "Tuesday, August 05"
+code-club-name: "FIMS Code Club (json)"
 # If you have any additional events, uncomment and fill out the additional events section below.
 photo:
   text: "During last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example: "
