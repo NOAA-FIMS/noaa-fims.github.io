@@ -57,11 +57,20 @@ HELPFUL RESOURCES
 <div class="column">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
-<p>{{ &lt; meta announcements &gt;}} <!--  --></p>
+<div id="announcements">
+<ul>
+<li><a href="https://noaa-fims.github.io/">FIMS website</a> is now newly updated thanks to Elizabeth 🥇!</li>
+<li>The CIE Review has been approved and will be held November 04–06, 2025 using an online platform.</li>
+</ul>
+</div>
 </section>
 </div><div class="column">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section">Tuesday, August 05</h3>
+<p><strong>FIMS Code Club (json)</strong> Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: <a href="http://meet.google.com/ica-ieta-ndu">Google Meet</a></p>
+</section>
 <div id="additional-events">
 <section id="wednesday-august-06" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-august-06">Wednesday, August 06</h3>
@@ -108,10 +117,6 @@ HELPFUL RESOURCES
   "inLanguage": "en"
 }</code></pre>
 </div>
-<!-- ::: {#announcements}
-- [FIMS website](https://noaa-fims.github.io/) is now newly updated thanks to Elizabeth 🥇!
-- The CIE Review has been approved and will be held November 04–06, 2025 using an online platform.
-:::  -->
 
 
 </section>
@@ -167,7 +172,12 @@ HELPFUL RESOURCES
 <div class="column">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
-<p>{{ &lt; meta announcements &gt;}} <!--  --></p>
+<div id="announcements">
+<ul>
+<li>Version 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.</li>
+<li>We need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday.</li>
+</ul>
+</div>
 </section>
 </div><div class="column">
 <section id="upcoming-events" class="level2">
@@ -187,12 +197,6 @@ Online: [Google meet](MEETING LINK)
 <section id="photo-of-the-week" class="level2">
 <h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
 <p>Elizabeth Perl has been working on revamping the NOAA-FIMS <a href="http://github.io/">github.io site</a> and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task.</p>
-<div id="announcements">
-<ul>
-<li>Version 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.</li>
-<li>We need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday.</li>
-</ul>
-</div>
 
 
 </section>

@@ -18,7 +18,7 @@
     "href": "fims-weekly/07.28.2025.html#fims-announcements",
     "title": "July 28 - August 1, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n{{ &lt; meta announcements &gt;}}"
+    "text": "FIMS ANNOUNCEMENTS\n\n\nVersion 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.\nWe need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday."
   },
   {
     "objectID": "fims-weekly/07.28.2025.html#upcoming-events",
@@ -32,14 +32,14 @@
     "href": "fims-weekly/07.28.2025.html#photo-of-the-week",
     "title": "July 28 - August 1, 2025",
     "section": "PHOTO OF THE WEEK",
-    "text": "PHOTO OF THE WEEK\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task.\n\n\nVersion 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.\nWe need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday."
+    "text": "PHOTO OF THE WEEK\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
   },
   {
     "objectID": "assets/fims-weekly-template.html#fims-announcements",
     "href": "assets/fims-weekly-template.html#fims-announcements",
     "title": "FIMS",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n{{ &lt; meta announcements &gt;}}"
+    "text": "FIMS ANNOUNCEMENTS"
   },
   {
     "objectID": "assets/fims-weekly-template.html#upcoming-events",
@@ -302,14 +302,14 @@
     "href": "fims-weekly/08.04.2025.html#fims-announcements",
     "title": "August 04 - 08, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n{{ &lt; meta announcements &gt;}}"
+    "text": "FIMS ANNOUNCEMENTS\n\n\nFIMS website is now newly updated thanks to Elizabeth 🥇!\nThe CIE Review has been approved and will be held November 04–06, 2025 using an online platform."
   },
   {
     "objectID": "fims-weekly/08.04.2025.html#upcoming-events",
     "href": "fims-weekly/08.04.2025.html#upcoming-events",
     "title": "August 04 - 08, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\n\n\nWednesday, August 06\nFIMS Implementation Team Meeting (Projections)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
+    "text": "UPCOMING EVENTS\n\nTuesday, August 05\nFIMS Code Club (json) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n\n\n\nWednesday, August 06\nFIMS Implementation Team Meeting (Projections)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
   },
   {
     "objectID": "fims-weekly/08.04.2025.html#photo-of-the-week",
