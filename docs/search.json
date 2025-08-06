@@ -25,14 +25,14 @@
     "href": "fims-weekly/07.28.2025.html#upcoming-events",
     "title": "July 28 - August 1, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\n\nTuesday, July 29\nFIMS Code Club (length-based selectivity) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n{% if upcoming_events.seaside_chat_name %} ### Thursday, July 31 FIMS Seaside Chat (❓) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet {% endif %}"
+    "text": "UPCOMING EVENTS\n\nTuesday, July 29\nFIMS Code Club (length-based selectivity) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
     "objectID": "fims-weekly/07.28.2025.html#photo-of-the-week",
     "href": "fims-weekly/07.28.2025.html#photo-of-the-week",
     "title": "July 28 - August 1, 2025",
     "section": "PHOTO OF THE WEEK",
-    "text": "PHOTO OF THE WEEK\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task.\n{% if photo.path %}\n\n{% endif %}\n{% if photo.code %} Elizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task. {% endif %}"
+    "text": "PHOTO OF THE WEEK\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
   },
   {
     "objectID": "assets/fims-weekly-template.html#fims-announcements",
@@ -46,14 +46,14 @@
     "href": "assets/fims-weekly-template.html#upcoming-events",
     "title": "FIMS",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\n\n?meta:upcoming-events.code-club-date\n?meta:upcoming-events.code-club-name Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n{% if upcoming_events.seaside_chat_name %} ### ?meta:upcoming-events.seaside-chat-date ?meta:upcoming-events.seaside-chat-name Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet {% endif %}"
+    "text": "UPCOMING EVENTS\n\n?meta:upcoming-events.code-club-date\n?meta:upcoming-events.code-club-name Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
     "objectID": "assets/fims-weekly-template.html#photo-of-the-week",
     "href": "assets/fims-weekly-template.html#photo-of-the-week",
     "title": "FIMS",
     "section": "PHOTO OF THE WEEK",
-    "text": "PHOTO OF THE WEEK\n?meta:photo.text\n{% if photo.path %}\n\n{% endif %}\n{% if photo.code %} ?meta:photo.text {% endif %}"
+    "text": "PHOTO OF THE WEEK\n?meta:photo.text"
   },
   {
     "objectID": "about/faq.html",
@@ -309,14 +309,14 @@
     "href": "fims-weekly/08.04.2025.html#upcoming-events",
     "title": "August 04 - 08, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\n\nTuesday, August 05\nFIMS Code Club (json) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n{% if upcoming_events.seaside_chat_name %} ### ?meta:upcoming-events.seaside-chat-date ?meta:upcoming-events.seaside-chat-name Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet {% endif %}\n\n\n\nWednesday, August 06\nFIMS Implementation Team Meeting (Projections)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
+    "text": "UPCOMING EVENTS\n\nTuesday, August 05\nFIMS Code Club (json) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n\n\n\nWednesday, August 06\nFIMS Implementation Team Meeting (Projections)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
   },
   {
     "objectID": "fims-weekly/08.04.2025.html#photo-of-the-week",
     "href": "fims-weekly/08.04.2025.html#photo-of-the-week",
     "title": "August 04 - 08, 2025",
     "section": "PHOTO OF THE WEEK",
-    "text": "PHOTO OF THE WEEK\nDuring last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example:\n{% if photo.path %}\n\n{% endif %}\n{% if photo.code %} During last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example: {% endif %}"
+    "text": "PHOTO OF THE WEEK\nDuring last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example:"
   },
   {
     "objectID": "index.html",
