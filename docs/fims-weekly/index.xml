@@ -67,10 +67,6 @@ HELPFUL RESOURCES
 </div><div class="column">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section">Tuesday, August 05</h3>
-<p><strong>FIMS Code Club (json)</strong> Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: <a href="http://meet.google.com/ica-ieta-ndu">Google Meet</a></p>
-</section>
 <div id="additional-events">
 <section id="wednesday-august-06" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-august-06">Wednesday, August 06</h3>
@@ -84,6 +80,39 @@ HELPFUL RESOURCES
 <section id="photo-of-the-week" class="level2">
 <h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
 <p>During last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example:</p>
+<div id="photo-code">
+<pre><code>{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Human Genome Assembly GRCh38",
+  "description": "The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.",
+  "url": "https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/",
+  "identifier": "GCF_000001405.26",
+  "creator": {
+    "@type": "Organization",
+    "name": "Genome Reference Consortium"
+  },
+  "citation": "Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.",
+  "keywords": [
+    "Human Genome",
+    "GRCh38",
+    "Genomics",
+    "Reference Assembly"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "datePublished": "2013-12-17",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "GRCh38 FASTA file",
+      "contentUrl": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz",
+      "encodingFormat": "application/x-fasta"
+    }
+  ],
+  "measurementTechnique": "Next-Generation Sequencing",
+  "inLanguage": "en"
+}</code></pre>
+</div>
 
 
 </section>
@@ -149,9 +178,6 @@ HELPFUL RESOURCES
 </div><div class="column">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section">Tuesday, July 29</h3>
-<p><strong>FIMS Code Club (length-based selectivity)</strong> Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: <a href="http://meet.google.com/ica-ieta-ndu">Google Meet</a></p>
 <div id="additional-events">
 <!--
 ### DAY DATE
@@ -161,7 +187,6 @@ Location: VIRTUAL/IN-PERSON
 Online: [Google meet](MEETING LINK)
 -->
 </div>
-</section>
 </section>
 </div>
 </div>
