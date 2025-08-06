@@ -16,6 +16,8 @@ upcoming-events:
 # If you have any additional events, uncomment and fill out the additional events section below.
 photo:
   text: "During last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example: "
+  path: "images/fims_weekly.png"
+  alt-text: "test"
 ---
   
 {{< include "/assets/fims-weekly-template.qmd" >}}
