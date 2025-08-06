@@ -29,15 +29,14 @@
 ::: {.column}
 ## FIMS ANNOUNCEMENTS
 
-{{ < meta announcements >}}
-<!-- {{< contents announcements >}} -->
+{{< contents announcements >}}
 
 :::
 
 ::: {.column}
 ## UPCOMING EVENTS
 
-::: {.content-visible when-meta="upcoming-events.code-club-name"}
+::: {.content-hidden unless-meta="upcoming-events.code-club"}
 ### {{< meta upcoming-events.code-club-date >}}
 **{{< meta upcoming-events.code-club-name >}}**\n
 Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n

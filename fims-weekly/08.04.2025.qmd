@@ -10,10 +10,8 @@ three-big-things:
   bt2: "We will be migrating several resources from individual repositories to the FIMS website, e.g., FIMS Weekly newsletter, training repo, doxygen documentation, and potentially the collaborative workflow."
   bt3: "Please ensure that your affiliation in the [FIMS manuscript](https://docs.google.com/document/d/1UDQHA023U1_X2_2k2_V1QNGFhmhrx8c3omNDhSaVvdw/edit?usp=sharing) is correct, which will be submitted to ICES Journal of Marine Science at the beginning of next week."
 # Announcements go below because of formatting that quarto doesnt transfer over from the yml
-announcements: |
-  * [FIMS website](https://noaa-fims.github.io/) is now newly updated thanks to Elizabeth 🥇!
-  * The CIE Review has been approved and will be held November 04–06, 2025 using an online platform.
 upcoming-events:
+  code-club: true
   code-club-date: "Tuesday, August 05"
   code-club-name: "FIMS Code Club (json)"
 # If you have any additional events, uncomment and fill out the additional events section below.
@@ -23,10 +21,10 @@ photo:
   
 {{< include "/assets/fims-weekly-template.qmd" >}}
 
-<!-- ::: {#announcements}
+::: {#announcements}
 - [FIMS website](https://noaa-fims.github.io/) is now newly updated thanks to Elizabeth 🥇!
 - The CIE Review has been approved and will be held November 04–06, 2025 using an online platform.
-:::  -->
+::: 
     
 ::: {#additional-events}
       
