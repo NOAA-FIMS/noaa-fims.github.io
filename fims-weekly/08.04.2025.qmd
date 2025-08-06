@@ -15,70 +15,39 @@ upcoming-events:
   code-club-name: "FIMS Code Club (json)"
 # If you have any additional events, uncomment and fill out the additional events section below.
 photo:
-  text: "During last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example: 
-
-  {
-
-  "@context": "https://schema.org/",
-
-  "@type": "Dataset",
-
-  "name": "Human Genome Assembly GRCh38",
-
-  "description": "The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.",
-
-  "url": "https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/",
-
-  "identifier": "GCF_000001405.26",
-
-  "creator": {
-
-    "@type": "Organization",
-
-    "name": "Genome Reference Consortium"
-
-  },
-
-  "citation": "Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.",
-
-  "keywords": [
-
-    "Human Genome",
-
-    "GRCh38",
-
-    "Genomics",
-
-    "Reference Assembly"
-
-  ],
-
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-
-  "datePublished": "2013-12-17",
-
-  "distribution": [
-
+  text: "During last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example: "
+  code: |
     {
-
-      "@type": "DataDownload",
-
-      "name": "GRCh38 FASTA file",
-
-      "contentUrl": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz",
-
-      "encodingFormat": "application/x-fasta"
-
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "Human Genome Assembly GRCh38",
+      "description": "The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.",
+      "url": "https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/",
+      "identifier": "GCF_000001405.26",
+      "creator": {
+        "@type": "Organization",
+        "name": "Genome Reference Consortium"
+        },
+      "citation": "Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.",
+      "keywords": [
+        "Human Genome",
+        "GRCh38",
+        "Genomics",
+        "Reference Assembly"
+        ],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "datePublished": "2013-12-17",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "name": "GRCh38 FASTA file",
+          "contentUrl": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz",
+          "encodingFormat": "application/x-fasta"
+        }
+      ],
+      "measurementTechnique": "Next-Generation Sequencing",
+      "inLanguage": "en"
     }
-
-  ],
-
-  "measurementTechnique": "Next-Generation Sequencing",
-
-  "inLanguage": "en"
-
-}
-"
 ---
   
 {{< include "/assets/fims-weekly-template.qmd" >}}
