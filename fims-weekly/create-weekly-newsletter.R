@@ -86,14 +86,17 @@ three-big-things:
 # Announcements go below because of formatting that quarto doesnt transfer over from the yml
 # If there is no code club or seaside chat, just delete those lines and the template will handle it for you
 upcoming-events:
+  code-club: true
   code-club-date: "Tuesday, "
   code-club-name: "FIMS Code Club"
+  seaside-chat: true
   seaside-chat-date: "Thursday, "
   seaside-chat-name: "FIMS Seaside Chat"
 # If you have any additional events, uncomment and fill out the additional events section below.
-# If there is no actual photo you can delete the path and alt-text and the template will handle it for you. If there is code instead, please uncomment the section below named photo-code.
+# If there is no actual photo you can delete include-photo, path, and alt-text and the template will handle it for you. If there is code instead, please uncomment the section below named photo-code.
 photo:
   text: ""
+  include-photo: true
   path: "images/NAME.png"
   alt-text: ""
 ---
@@ -118,11 +121,10 @@ Online: [Google meet](MEETING LINK)
 <!--
 ::: {#photo-code}
 ```
+PUT CODE HERE
 ```
 :::
 -->
-
-```
         
 :::
 

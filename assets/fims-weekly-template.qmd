@@ -44,7 +44,7 @@ Location: Virtual\n
 Online: [Google Meet](http://meet.google.com/ica-ieta-ndu)
 :::
 
-::: {.content-hidden unless-meta="upcoming-events.seaside-chat-name"}
+::: {.content-hidden unless-meta="upcoming-events.seaside-chat"}
 ### {{< meta upcoming-events.seaside-chat-date >}}
 **{{< meta upcoming-events.seaside-chat-name >}}**\n
 Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
@@ -62,7 +62,7 @@ Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj)
 
 {{< meta photo.text >}}
 
-::: {.content-hidden unless-meta="photo.path"}
+::: {.content-hidden unless-meta="photo.include-photo"}
 ```{=html}
 <img src="{{< meta photo.path >}}" alt="{{< meta photo.alt-text >}}" style="height:150%;">
 ```
