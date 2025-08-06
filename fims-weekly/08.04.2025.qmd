@@ -38,7 +38,7 @@ Online: [Google meet](http://meet.google.com/kbz-ccew-iij)
 
 ::: {#photo-code}
 
-```{json}
+```
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
