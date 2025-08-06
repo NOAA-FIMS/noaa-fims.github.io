@@ -41,11 +41,13 @@ Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
 Location: Virtual\n
 Online: [Google Meet](http://meet.google.com/ica-ieta-ndu)
 
+{% if upcoming_events.seaside_chat_name %}
 ### {{< meta upcoming-events.seaside-chat-date >}}
 **{{< meta upcoming-events.seaside-chat-name >}}**\n
 Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
 Location: Virtual\n
 Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj)
+{% endif %}
 
 {{< contents additional-events >}}
 
@@ -57,6 +59,8 @@ Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj)
 
 {{< meta photo.text >}}
 
+{% if photo.path %}
 ```{=html}
 <img src="{{< meta photo.path >}}" alt="{{< meta photo.alt-text >}}" style="height:150%;">
 ```
+{% endif %}

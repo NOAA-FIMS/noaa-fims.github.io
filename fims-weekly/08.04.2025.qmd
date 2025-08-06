@@ -1,0 +1,102 @@
+---
+title: "August 04 - 08, 2025"
+date: "August 04, 2025"
+# Change the following categories accordingly
+categories: 
+  - case studies
+  - projections
+three-big-things:
+  bt1: "The case studies will be updated this week to use the latest release. This has been done in dev for a while but just hanging in the ether."
+  bt2: "We will be migrating several resources from individual repositories to the FIMS website, e.g., FIMS Weekly newsletter, training repo, doxygen documentation, and potentially the collaborative workflow."
+  bt3: "Please ensure that your affiliation in the [FIMS manuscript](https://docs.google.com/document/d/1UDQHA023U1_X2_2k2_V1QNGFhmhrx8c3omNDhSaVvdw/edit?usp=sharing) is correct, which will be submitted to ICES Journal of Marine Science at the beginning of next week."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+upcoming-events:
+  code-club-date: "Tuesday, August 05"
+  code-club-name: "FIMS Code Club (json)"
+# If you have any additional events, uncomment and fill out the additional events section below.
+photo:
+  text: "During last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example: 
+
+  {
+
+  "@context": "https://schema.org/",
+
+  "@type": "Dataset",
+
+  "name": "Human Genome Assembly GRCh38",
+
+  "description": "The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.",
+
+  "url": "https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/",
+
+  "identifier": "GCF_000001405.26",
+
+  "creator": {
+
+    "@type": "Organization",
+
+    "name": "Genome Reference Consortium"
+
+  },
+
+  "citation": "Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.",
+
+  "keywords": [
+
+    "Human Genome",
+
+    "GRCh38",
+
+    "Genomics",
+
+    "Reference Assembly"
+
+  ],
+
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+
+  "datePublished": "2013-12-17",
+
+  "distribution": [
+
+    {
+
+      "@type": "DataDownload",
+
+      "name": "GRCh38 FASTA file",
+
+      "contentUrl": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz",
+
+      "encodingFormat": "application/x-fasta"
+
+    }
+
+  ],
+
+  "measurementTechnique": "Next-Generation Sequencing",
+
+  "inLanguage": "en"
+
+}
+"
+---
+  
+{{< include "/assets/fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- [FIMS website](https://noaa-fims.github.io/) is now newly updated thanks to Elizabeth 🥇!
+- The CIE Review has been approved and will be held November 04–06, 2025 using an online platform.
+::: 
+    
+::: {#additional-events}
+      
+### Wednesday, August 06
+**FIMS Implementation Team Meeting (Projections)**
+
+Time: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H
+Location: Virtual
+Online: [Google meet](http://meet.google.com/kbz-ccew-iij)
+        
+:::
+
+
