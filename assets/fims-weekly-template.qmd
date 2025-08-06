@@ -35,6 +35,7 @@
 
 ::: {.column}
 ## UPCOMING EVENTS
+
 ::: {.content-hidden unless-meta="upcoming-events.code-club-name"}
 ### {{< meta upcoming-events.code-club-date >}}
 **{{< meta upcoming-events.code-club-name >}}**\n
