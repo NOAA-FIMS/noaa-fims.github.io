@@ -11,49 +11,49 @@
     "href": "fims-weekly/index.html",
     "title": "FIMS Weekly",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nAugust 04 - 08, 2025\n\n\n\ncase studies\n\nprojections\n\n\n\n\n\n\nAug 4, 2025\n\n\n\n\n\n\n\nJuly 28 - August 1, 2025\n\n\n\ntesting\n\nselectivity\n\ndiagnostics\n\nprojections\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\nJuly 21 - 25, 2025\n\n\n\ntesting\n\nselectivity\n\nprojections\n\n\n\n\n\n\nJul 21, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nFIMS ANNOUNCEMENTS\n\n\n\n\n\n\n\n\n\n\nAugust 04 - 08, 2025\n\n\n\ncase studies\n\nprojections\n\n\n\n\n\n\nAug 4, 2025\n\n\n\n\n\n\n\nJuly 28 - August 1, 2025\n\n\n\ntesting\n\nselectivity\n\ndiagnostics\n\nprojections\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\nJuly 21 - 25, 2025\n\n\n\ntesting\n\nselectivity\n\nprojections\n\n\n\n\n\n\nJul 21, 2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "fims-weekly/07.28.2025.html#fims-announcements",
-    "href": "fims-weekly/07.28.2025.html#fims-announcements",
-    "title": "July 28 - August 1, 2025",
+    "objectID": "fims-weekly/08.04.2025.html#fims-announcements",
+    "href": "fims-weekly/08.04.2025.html#fims-announcements",
+    "title": "August 04 - 08, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nVersion 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.\nWe need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nFIMS website is now newly updated thanks to Elizabeth 🥇!\nThe CIE Review has been approved and will be held November 04–06, 2025 using an online platform."
   },
   {
-    "objectID": "fims-weekly/07.28.2025.html#upcoming-events",
-    "href": "fims-weekly/07.28.2025.html#upcoming-events",
-    "title": "July 28 - August 1, 2025",
+    "objectID": "fims-weekly/08.04.2025.html#upcoming-events",
+    "href": "fims-weekly/08.04.2025.html#upcoming-events",
+    "title": "August 04 - 08, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS"
+    "text": "UPCOMING EVENTS\n\nTuesday, August 05\nFIMS Code Club (json) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n\n\n\nWednesday, August 06\nFIMS Implementation Team Meeting (Projections)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
   },
   {
-    "objectID": "fims-weekly/07.28.2025.html#photo-of-the-week",
-    "href": "fims-weekly/07.28.2025.html#photo-of-the-week",
-    "title": "July 28 - August 1, 2025",
+    "objectID": "fims-weekly/08.04.2025.html#photo-of-the-week",
+    "href": "fims-weekly/08.04.2025.html#photo-of-the-week",
+    "title": "August 04 - 08, 2025",
     "section": "PHOTO OF THE WEEK",
-    "text": "PHOTO OF THE WEEK\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
+    "text": "PHOTO OF THE WEEK\nDuring last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example:\n\n{\n  \"@context\": \"https://schema.org/\",\n  \"@type\": \"Dataset\",\n  \"name\": \"Human Genome Assembly GRCh38\",\n  \"description\": \"The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.\",\n  \"url\": \"https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/\",\n  \"identifier\": \"GCF_000001405.26\",\n  \"creator\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Genome Reference Consortium\"\n  },\n  \"citation\": \"Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.\",\n  \"keywords\": [\n    \"Human Genome\",\n    \"GRCh38\",\n    \"Genomics\",\n    \"Reference Assembly\"\n  ],\n  \"license\": \"https://creativecommons.org/licenses/by/4.0/\",\n  \"datePublished\": \"2013-12-17\",\n  \"distribution\": [\n    {\n      \"@type\": \"DataDownload\",\n      \"name\": \"GRCh38 FASTA file\",\n      \"contentUrl\": \"ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz\",\n      \"encodingFormat\": \"application/x-fasta\"\n    }\n  ],\n  \"measurementTechnique\": \"Next-Generation Sequencing\",\n  \"inLanguage\": \"en\"\n}"
   },
   {
-    "objectID": "assets/fims-weekly-template.html#fims-announcements",
-    "href": "assets/fims-weekly-template.html#fims-announcements",
-    "title": "FIMS",
+    "objectID": "fims-weekly/07.21.2025.html#fims-announcements",
+    "href": "fims-weekly/07.21.2025.html#fims-announcements",
+    "title": "July 21 - 25, 2025",
     "section": "FIMS ANNOUNCEMENTS",
     "text": "FIMS ANNOUNCEMENTS"
   },
   {
-    "objectID": "assets/fims-weekly-template.html#upcoming-events",
-    "href": "assets/fims-weekly-template.html#upcoming-events",
-    "title": "FIMS",
+    "objectID": "fims-weekly/07.21.2025.html#upcoming-events",
+    "href": "fims-weekly/07.21.2025.html#upcoming-events",
+    "title": "July 21 - 25, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS"
+    "text": "UPCOMING EVENTS\n\nTuesday, July 22\nFIMS Code Club (Tackling TODO: items in code)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet\n\n\nThursday, July 24\nFIMS Seaside Chat (🤷)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet"
   },
   {
-    "objectID": "assets/fims-weekly-template.html#photo-of-the-week",
-    "href": "assets/fims-weekly-template.html#photo-of-the-week",
-    "title": "FIMS",
+    "objectID": "fims-weekly/07.21.2025.html#photo-of-the-week",
+    "href": "fims-weekly/07.21.2025.html#photo-of-the-week",
+    "title": "July 21 - 25, 2025",
     "section": "PHOTO OF THE WEEK",
-    "text": "PHOTO OF THE WEEK\n?meta:photo.text"
+    "text": "PHOTO OF THE WEEK\nR-opensci has guidance on writing tests for packages submitted that Bai is looking into. But, it was pretty mind blowing to learn that there is a way to add comments to a commit message that can invoke “extended” tests, i.e., tests that do not need to be run on every commit. It was nice to know that others have been thinking about this as FIMS has struggled to find a resource or advice on what to do, see Discussion #870. Feel free to add any thoughts about the system below or other insights to running large tests on the Discussion board. Thank you in advance for taking the time to contribute 😊."
   },
   {
     "objectID": "about/faq.html",
@@ -277,46 +277,46 @@
     ]
   },
   {
-    "objectID": "fims-weekly/07.21.2025.html#fims-announcements",
-    "href": "fims-weekly/07.21.2025.html#fims-announcements",
-    "title": "July 21 - 25, 2025",
+    "objectID": "fims-weekly/07.28.2025.html#fims-announcements",
+    "href": "fims-weekly/07.28.2025.html#fims-announcements",
+    "title": "July 28 - August 1, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nVersion 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.\nWe need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday."
+  },
+  {
+    "objectID": "fims-weekly/07.28.2025.html#upcoming-events",
+    "href": "fims-weekly/07.28.2025.html#upcoming-events",
+    "title": "July 28 - August 1, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "fims-weekly/07.28.2025.html#photo-of-the-week",
+    "href": "fims-weekly/07.28.2025.html#photo-of-the-week",
+    "title": "July 28 - August 1, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
+  },
+  {
+    "objectID": "fims-weekly/fims-weekly-template.html#fims-announcements",
+    "href": "fims-weekly/fims-weekly-template.html#fims-announcements",
+    "title": "FIMS",
     "section": "FIMS ANNOUNCEMENTS",
     "text": "FIMS ANNOUNCEMENTS"
   },
   {
-    "objectID": "fims-weekly/07.21.2025.html#upcoming-events",
-    "href": "fims-weekly/07.21.2025.html#upcoming-events",
-    "title": "July 21 - 25, 2025",
+    "objectID": "fims-weekly/fims-weekly-template.html#upcoming-events",
+    "href": "fims-weekly/fims-weekly-template.html#upcoming-events",
+    "title": "FIMS",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\n\nTuesday, July 22\nFIMS Code Club (Tackling TODO: items in code)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet\n\n\nThursday, July 24\nFIMS Seaside Chat (🤷)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "fims-weekly/07.21.2025.html#photo-of-the-week",
-    "href": "fims-weekly/07.21.2025.html#photo-of-the-week",
-    "title": "July 21 - 25, 2025",
+    "objectID": "fims-weekly/fims-weekly-template.html#photo-of-the-week",
+    "href": "fims-weekly/fims-weekly-template.html#photo-of-the-week",
+    "title": "FIMS",
     "section": "PHOTO OF THE WEEK",
-    "text": "PHOTO OF THE WEEK\nR-opensci has guidance on writing tests for packages submitted that Bai is looking into. But, it was pretty mind blowing to learn that there is a way to add comments to a commit message that can invoke “extended” tests, i.e., tests that do not need to be run on every commit. It was nice to know that others have been thinking about this as FIMS has struggled to find a resource or advice on what to do, see Discussion #870. Feel free to add any thoughts about the system below or other insights to running large tests on the Discussion board. Thank you in advance for taking the time to contribute 😊."
-  },
-  {
-    "objectID": "fims-weekly/08.04.2025.html#fims-announcements",
-    "href": "fims-weekly/08.04.2025.html#fims-announcements",
-    "title": "August 04 - 08, 2025",
-    "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nFIMS website is now newly updated thanks to Elizabeth 🥇!\nThe CIE Review has been approved and will be held November 04–06, 2025 using an online platform."
-  },
-  {
-    "objectID": "fims-weekly/08.04.2025.html#upcoming-events",
-    "href": "fims-weekly/08.04.2025.html#upcoming-events",
-    "title": "August 04 - 08, 2025",
-    "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\n\nTuesday, August 05\nFIMS Code Club (json) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n\n\n\nWednesday, August 06\nFIMS Implementation Team Meeting (Projections)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
-  },
-  {
-    "objectID": "fims-weekly/08.04.2025.html#photo-of-the-week",
-    "href": "fims-weekly/08.04.2025.html#photo-of-the-week",
-    "title": "August 04 - 08, 2025",
-    "section": "PHOTO OF THE WEEK",
-    "text": "PHOTO OF THE WEEK\nDuring last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example:\n\n{\n  \"@context\": \"https://schema.org/\",\n  \"@type\": \"Dataset\",\n  \"name\": \"Human Genome Assembly GRCh38\",\n  \"description\": \"The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.\",\n  \"url\": \"https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/\",\n  \"identifier\": \"GCF_000001405.26\",\n  \"creator\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Genome Reference Consortium\"\n  },\n  \"citation\": \"Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.\",\n  \"keywords\": [\n    \"Human Genome\",\n    \"GRCh38\",\n    \"Genomics\",\n    \"Reference Assembly\"\n  ],\n  \"license\": \"https://creativecommons.org/licenses/by/4.0/\",\n  \"datePublished\": \"2013-12-17\",\n  \"distribution\": [\n    {\n      \"@type\": \"DataDownload\",\n      \"name\": \"GRCh38 FASTA file\",\n      \"contentUrl\": \"ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz\",\n      \"encodingFormat\": \"application/x-fasta\"\n    }\n  ],\n  \"measurementTechnique\": \"Next-Generation Sequencing\",\n  \"inLanguage\": \"en\"\n}"
+    "text": "PHOTO OF THE WEEK\n?meta:photo.text"
   },
   {
     "objectID": "index.html",

@@ -6,44 +6,44 @@
       version="2.0">
 <channel>
 <title>FIMS</title>
-<link>https://e-perl-noaa.github.io/fims-website-test/sites/sites_index.html</link>
-<atom:link href="https://e-perl-noaa.github.io/fims-website-test/sites/sites_index.xml" rel="self" type="application/rss+xml"/>
+<link>https://noaa-fims.github.io/sites/sites_index.html</link>
+<atom:link href="https://noaa-fims.github.io/sites/sites_index.xml" rel="self" type="application/rss+xml"/>
 <description>Websites associated with FIMS.
 </description>
 <generator>quarto-1.7.33</generator>
-<lastBuildDate>Thu, 07 Aug 2025 17:31:26 GMT</lastBuildDate>
+<lastBuildDate>Thu, 07 Aug 2025 18:32:32 GMT</lastBuildDate>
 <item>
   <title>🔍 FIMS case studies</title>
-  <link>https://e-perl-noaa.github.io/fims-website-test/</link>
+  <link>https://noaa-fims.github.io/</link>
   <description>Test cases, based on regional assessments, to illustrate use of FIMS.
 </description>
   <category>WHAM</category>
   <category>SS3</category>
   <category>ASAP</category>
   <category>TMB</category>
-  <guid>https://e-perl-noaa.github.io/fims-website-test/</guid>
-  <pubDate>Thu, 07 Aug 2025 17:31:26 GMT</pubDate>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Thu, 07 Aug 2025 18:32:32 GMT</pubDate>
 </item>
 <item>
   <title>📔 Developer Handbook</title>
-  <link>https://e-perl-noaa.github.io/fims-website-test/</link>
+  <link>https://noaa-fims.github.io/</link>
   <description>The FIMS developer handbook describes the workflow for developers and contributors.
 </description>
   <category>developers</category>
   <category>contributing</category>
-  <guid>https://e-perl-noaa.github.io/fims-website-test/</guid>
-  <pubDate>Thu, 07 Aug 2025 17:31:26 GMT</pubDate>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Thu, 07 Aug 2025 18:32:32 GMT</pubDate>
 </item>
 <item>
   <title>💻 Trainings</title>
-  <link>https://e-perl-noaa.github.io/fims-website-test/</link>
+  <link>https://noaa-fims.github.io/</link>
   <description>FIMS training materials including C++, TMB, etc.
 </description>
   <category>training</category>
   <category>C++</category>
   <category>TMB</category>
-  <guid>https://e-perl-noaa.github.io/fims-website-test/</guid>
-  <pubDate>Thu, 07 Aug 2025 17:31:26 GMT</pubDate>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Thu, 07 Aug 2025 18:32:32 GMT</pubDate>
 </item>
 </channel>
 </rss>
