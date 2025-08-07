@@ -1,0 +1,6 @@
+dirs:
+  - ./
+
+fileExtensions:
+  - qmd
+  - md
