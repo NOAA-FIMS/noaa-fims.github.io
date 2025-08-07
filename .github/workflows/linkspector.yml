@@ -1,7 +1,7 @@
 name: Linkspector
 on:
   workflow_dispatch:
-  push:
+  pull-request:
     branches:
       - main
 jobs:
@@ -14,6 +14,7 @@ jobs:
       - name: Run linkspector
         uses: umbrelladocs/action-linkspector@v1
         with:
-          reporter: github-check
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
           fail_on_error: true
           config_file: '.github/.linkspector.yml'
