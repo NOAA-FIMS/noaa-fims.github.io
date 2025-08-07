@@ -1,5 +1,10 @@
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - FIMS_CHANGELOG.qmd
 
 concurrency:
   group: ${{ github.workflow}}-${{ github.ref }}
@@ -20,7 +25,19 @@ jobs:
       # Set up Node (for Quarto, if needed; remove if not using Quarto)
       - uses: quarto-dev/quarto-actions/setup@v2
       
+      - name: Check if new version heading added
+        id: heading_check
+        run: |
+          git fetch origin main
+          NEW_HEADINGS=$(git diff origin/main -- FIMS_CHANGELOG.qmd | grep '^+## v[0-9]\+\.[0-9]\+\.[0-9]\+' || true)
+          if [ -n "$NEW_HEADINGS" ]; then
+            echo "found_new_heading=true" >> $GITHUB_OUTPUT
+          else
+            echo "found_new_heading=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Get latest FIMS release tag
+        if: steps.heading_check.outputs.found_new_heading == 'true'
         id: get_fims_release
         run: |
           LATEST_TAG=$(curl --silent "https://api.github.com/repos/NOAA-FIMS/FIMS/releases/latest" | jq -r .tag_name)
@@ -28,12 +45,14 @@ jobs:
           echo "fims_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
 
       - name: Update version in index.qmd
+        if: steps.heading_check.outputs.found_new_heading == 'true'
         run: |
           VERSION=$(echo "${{ steps.get_fims_release.outputs.fims_tag }}" | sed 's/^v//')
           sed -i -E "s/Version [0-9]+\.[0-9]+\.[0-9]+/Version $VERSION/" index.qmd
           cat index.qmd
           
       - name: Archive current site to archives folder
+        if: steps.heading_check.outputs.found_new_heading == 'true'
         run: |
           ARCHIVE_DIR="_archives/${{ steps.get_fims_release.outputs.fims_tag }}"
           mkdir -p "$ARCHIVE_DIR"
@@ -41,17 +60,20 @@ jobs:
           ls archives
           
       - name: Commit & Push changes
+        if: steps.heading_check.outputs.found_new_heading == 'true'
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
 
       - name: Render Quarto Project
+        if: steps.heading_check.outputs.found_new_heading == 'true'
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html
 
       - name: Upload artifact
+        if: steps.heading_check.outputs.found_new_heading == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'docs/'
@@ -59,6 +81,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and push rendered site to main
+        if: steps.heading_check.outputs.found_new_heading == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -70,6 +93,7 @@ jobs:
 
       # Create a release with the same tag as the FIMS repo
       - name: Create Release
+        if: steps.heading_check.outputs.found_new_heading == 'true'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.get_fims_release.outputs.fims_tag }}

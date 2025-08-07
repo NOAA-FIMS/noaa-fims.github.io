@@ -5,6 +5,7 @@ description: >
 listing:
   contents:
     - "*.qmd"
+    - "!fims-weekly-template.qmd"
   sort: "date desc"
   type: default
   categories: true
