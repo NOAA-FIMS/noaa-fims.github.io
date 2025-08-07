@@ -84,11 +84,10 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="assets/panelset-extras.css">
 <meta property="og:title" content="FIMS Change Log – FIMS">
-<meta property="og:description" content="">
 <meta property="og:site_name" content="FIMS">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -303,7 +302,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">sites</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./FIMS_CHANGELOG.html" aria-current="page"> 
+    <a class="nav-link" href="./FIMS_CHANGELOG.md"> 
 <span class="menu-text">changelog</span></a>
   </li>  
   <li class="nav-item compact">
@@ -323,7 +322,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="FIMS_CHANGELOG.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -347,6 +348,22 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="fims-change-log" class="level1">
+<h1>FIMS Change Log</h1>
+<section id="v0.6.2-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.6.2-release-notes">v0.6.2 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.2">release notes</a>)</h2>
+<ul>
+<li>Fix TMBad windows make file by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/935</li>
+<li>Fix bug with uninitialized unfished_biomass by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/935</li>
+</ul>
+<p><strong>Full Changelog</strong>: https://github.com/NOAA-FIMS/FIMS/compare/v0.6.1…v0.6.2</p>
+<hr>
+</section>
+<section id="v0.6.1-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.6.1-release-notes">v0.6.1 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.1">release notes</a>)</h2>
+<p>Thanks to work from <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span>, <span class="citation" data-cites="msupernaw">@msupernaw</span>, and <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> for investigating the bug that has been persistent since v0.3.0 leading to failed builds on R-universe. This fix, implemented by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span>, allows for user and operating system information to be found on more operating systems then we had previously implemented.</p>
+<hr>
+</section>
 <section id="v0.6.0-release-notes" class="level2">
 <h2 class="anchored" data-anchor-id="v0.6.0-release-notes">v0.6.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.0">release notes</a>)</h2>
 <p>Clang-formatted code to initialize the changes needed for model families. Other than the changes to the names of a few derived quantities and the ungrouped output of <code>get_estimates()</code> users should not see any differences between v0.6.0 and v0.5.3.</p>
@@ -364,58 +381,20 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="v0.5.0-release-notes" class="level2">
 <h2 class="anchored" data-anchor-id="v0.5.0-release-notes">v0.5.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.5.0">release notes</a>)</h2>
-<p>Release 0.5.0 contains two major features, random effects for the power user and a fits tibble found in the results, e.g., get_fits(fit). See below or the commit messages for more details.</p>
-<ul>
-<li><p>Switch to TMBad from CppAD</p></li>
-<li><p>Checks that length data has the correct dimension in R</p></li>
-<li><p>Adds SB to model output</p></li>
-<li><p>Adds README files to the C++ code</p></li>
-<li><p>Exports logit functions to R</p></li>
-<li><p>Functionality was also added to the workflows to allow for better maintenance of the software via GitHub actions</p></li>
-</ul>
+<p>Release 0.5.0 contains two major features, random effects for the power user and a fits tibble found in the results, e.g., get_fits(fit). See below or the commit messages for more details. * Switch to TMBad from CppAD * Checks that length data has the correct dimension in R * Adds SB to model output * Adds README files to the C++ code * Exports logit functions to R * Functionality was also added to the workflows to allow for better maintenance of the software via GitHub actions</p>
 <hr>
 </section>
 <section id="v0.4.0-release-notes" class="level2">
 <h2 class="anchored" data-anchor-id="v0.4.0-release-notes">v0.4.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.4.0">release notes</a>)</h2>
-<p>Release 0.4.0 contains two major features, allowance of catch-per-unit-effort data for fisheries and more information in the estimates tibble found in the results, e.g., <code>get_estimates(fit)</code>. See below for more details.</p>
-<ul>
-<li><p>Allows for CPUE data and landings within a single fleet and changes the</p>
-<p>composition data to be separate from the catch. If there are catches,</p>
-<p>compositions are based on F, if you have survey compositions those are scaled</p>
-<p>by q, and you can also have composition data without catch or CPUE and those</p>
-<p>match the population.</p></li>
-<li><p>Fixes bug in <code>finalize()</code> where variables were going out of scope by using a</p>
-<p>shared pointer and RealVector, which allows for estimates tibble to return</p>
-<p>more. Output is integrated between json and TMB using</p>
-<p><code>reshape_tmb_estimates()</code>, <code>reshape_json_estimates()</code>, and</p>
-<p><code>reshape_json_derived_quantities()</code>. ParameterVector are now set using</p>
-<p><code>resize()</code> and <code>purrr::walk()</code> rather than <code>methods::new()</code>.</p></li>
-<li><p>Increases code coverage</p>
-<ul>
-<li><p>Restructures R tests using <code>use_testthat_template()</code></p></li>
-<li><p>Starts to use Rcpp::Rcerr instead of Rcpp::Rcout</p></li>
-<li><p>Skips parallel and distribution rcpp test</p></li>
-<li><p>Adds <code>FIMS_dmultinom()</code> distribution to match TMB</p></li>
-</ul></li>
-<li><p>Fixes bug in <code>get_number_of_parameters()</code>.</p></li>
-<li><p>Uses static_cast<type>([-0-9.]+) to wrap constant variables.</type></p></li>
-<li><p>Fixes cmake_minimum_required to use a range and updates googletest version.</p></li>
-<li><p>Adds minimal fims-demo vignette.</p></li>
-<li><p>Removes unused estimated_log_M and estimated_log_init_naa from</p>
-<p>inst/include/interface/rcpp/rcpp_objects/rcpp_population.hpp.</p></li>
-<li><p>Adds gdb to the devcontainer.json file.</p></li>
-<li><p>Fixes broken model comparison project links.</p></li>
-<li><p>Adds dependabot.yml file to update GitHub actions.</p></li>
-<li><p>Combine <code>initialize_comp()</code> functions.</p></li>
-</ul>
+<p>Release 0.4.0 contains two major features, allowance of catch-per-unit-effort data for fisheries and more information in the estimates tibble found in the results, e.g., <code>get_estimates(fit)</code>. See below for more details. * Allows for CPUE data and landings within a single fleet and changes the composition data to be separate from the catch. If there are catches, compositions are based on F, if you have survey compositions those are scaled by q, and you can also have composition data without catch or CPUE and those match the population. * Fixes bug in <code>finalize()</code> where variables were going out of scope by using a shared pointer and RealVector, which allows for estimates tibble to return more. Output is integrated between json and TMB using <code>reshape_tmb_estimates()</code>, <code>reshape_json_estimates()</code>, and <code>reshape_json_derived_quantities()</code>. ParameterVector are now set using <code>resize()</code> and <code>purrr::walk()</code> rather than <code>methods::new()</code>. * Increases code coverage * Restructures R tests using <code>use_testthat_template()</code> * Starts to use Rcpp::Rcerr instead of Rcpp::Rcout * Skips parallel and distribution rcpp test * Adds <code>FIMS_dmultinom()</code> distribution to match TMB * Fixes bug in <code>get_number_of_parameters()</code>. * Uses static_cast<type>([-0-9.]+) to wrap constant variables. * Fixes cmake_minimum_required to use a range and updates googletest version. * Adds minimal fims-demo vignette. * Removes unused estimated_log_M and estimated_log_init_naa from inst/include/interface/rcpp/rcpp_objects/rcpp_population.hpp. * Adds gdb to the devcontainer.json file. * Fixes broken model comparison project links. * Adds dependabot.yml file to update GitHub actions. * Combine <code>initialize_comp()</code> functions.</type></p>
 <hr>
 </section>
 <section id="v0.3.0.1-release-notes" class="level2">
 <h2 class="anchored" data-anchor-id="v0.3.0.1-release-notes">v0.3.0.1 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.3.0.1">release notes</a>)</h2>
 <p>Fixes errors in the R code found while working on the case studies.</p>
 <ul>
-<li><p><code>cli::cli_abort()</code> messages were not formatted correctly when using pluralism capability</p></li>
-<li><p>uncertainty in the multinomial is multiplied by value within the wrapper functions, which lead to non -999 values. Now, if a -999 is present, it is multiplied by 1 and if not then value is multiplied by uncertainty.</p></li>
+<li><code>cli::cli_abort()</code> messages were not formatted correctly when using pluralism capability</li>
+<li>uncertainty in the multinomial is multiplied by value within the wrapper functions, which lead to non -999 values. Now, if a -999 is present, it is multiplied by 1 and if not then value is multiplied by uncertainty.</li>
 </ul>
 <hr>
 </section>
@@ -426,32 +405,22 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="whats-changed">What’s Changed</h2>
 <p>Summary of high level/breaking changes:</p>
 <ul>
-<li><p>Fits to length data using an age-to-length-conversion matrix, <code>data1</code></p>
-<p>includes the necessary information needed to fit to both ages and lengths.</p></li>
-<li><p>Adds C++ ParameterVector to allow for the estimation of time-varying</p>
-<p>parameters.</p></li>
-<li><p>Implements R wrapper functions to facilitate</p>
+<li>Fits to length data using an age-to-length-conversion matrix, <code>data1</code> includes the necessary information needed to fit to both ages and lengths.</li>
+<li>Adds C++ ParameterVector to allow for the estimation of time-varying parameters.</li>
+<li>Implements R wrapper functions to facilitate
 <ul>
-<li><p>creating the input model specifications with <code>create_default_*()</code>,</p>
-<p><code>update_parameters()</code>, and <code>initialize_*()</code>;</p></li>
-<li><p>adding -999 to the missing fleet, year, age, length, etc. combinations;</p></li>
-<li><p>running the model with a user-supplied argument of n_of_loops, where the</p>
-<p>default is three, to restart the optimizer from the previous run of nlmimb;</p></li>
-<li><p>summarizing the output with the <code>FIMSFit()</code> function and class.</p></li>
+<li>creating the input model specifications with <code>create_default_*()</code>, <code>update_parameters()</code>, and <code>initialize_*()</code>;</li>
+<li>adding -999 to the missing fleet, year, age, length, etc. combinations;</li>
+<li>running the model with a user-supplied argument of n_of_loops, where the default is three, to restart the optimizer from the previous run of nlmimb;</li>
+<li>summarizing the output with the <code>FIMSFit()</code> function and class.</li>
 </ul></li>
-<li><p>Implements a switch for global verbosity within FIMS through the use</p>
-<p>of {cli} messages and warnings.</p></li>
-<li><p>Updates the logging system complete with a vignette about how to use it, the</p>
-<p>logging system can be used for both R and C++ errors, warnings, and</p>
-<p>information.</p></li>
-<li><p>Creates the initial infrastructure to implement random effects with density</p>
-<p>functions.</p></li>
-<li><p>Implements a helper function to get the parameter names from the</p>
-<p>C++ code and populate the results with those names.</p></li>
-<li><p>Makes lpdf_vec return 0 if data is missing.</p></li>
+<li>Implements a switch for global verbosity within FIMS through the use of {cli} messages and warnings.</li>
+<li>Updates the logging system complete with a vignette about how to use it, the logging system can be used for both R and C++ errors, warnings, and information.</li>
+<li>Creates the initial infrastructure to implement random effects with density functions.</li>
+<li>Implements a helper function to get the parameter names from the C++ code and populate the results with those names.</li>
+<li>Makes lpdf_vec return 0 if data is missing.</li>
 </ul>
-<p>More detail:</p>
-<p>See the <a href="https://github.com/NOAA-FIMS/FIMS/commit/2338d23eda72676ba3ac79dc8007ecec600979a6">commit message for this release</a> or the <strong>full changelog</strong>: https://github.com/NOAA-FIMS/FIMS/compare/v0.2.0…v0.3.0.</p>
+<p>More detail: See the <a href="https://github.com/NOAA-FIMS/FIMS/commit/2338d23eda72676ba3ac79dc8007ecec600979a6">commit message for this release</a> or the <strong>full changelog</strong>: https://github.com/NOAA-FIMS/FIMS/compare/v0.2.0…v0.3.0.</p>
 <hr>
 </section>
 <section id="v0.2.0-release-notes" class="level2">
@@ -459,69 +428,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="whats-changed-1" class="level2">
 <h2 class="anchored" data-anchor-id="whats-changed-1">What’s Changed</h2>
-<p>Summary of high level/breaking changes:</p>
-<ul>
-<li><p>Added a <code>pkgdown</code> site for FIMS</p></li>
-<li><p>Add code cov tests and site link</p></li>
-<li><p>Remove recruitment bias correction and adjustment because we plan to use <code>TMB</code> (https://github.com/NOAA-FIMS/FIMS/issues/185)</p></li>
-<li><p>Improve logging coverage and separate logs into multiple files</p></li>
-<li><p>Put recruitment deviations on the log scale when input</p></li>
-<li><p>Report more values with standard errors</p></li>
-<li><p>Code cleanup, documentation, and consistency improvements</p></li>
-<li><p>Remove rapidjson dependence</p></li>
-<li><p>Add <code>start_year</code> and <code>end_year</code> as slots to FIMSFrame</p></li>
-<li><p>Make <code>log_obs_error</code> a vector</p></li>
-<li><p>Load the Rcpp module upon package install so components don’t need to be prefaced by <code>fims$</code></p></li>
-<li><p>Refactor vectors to use <code>fims::Vector</code> class</p></li>
-<li><p>Add Newton steps to FIMS integration test to improve convergence in integration test</p></li>
-</ul>
-<p>More detail:</p>
-<ul>
-<li><p>Update issue forms by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/426</p></li>
-<li><p>Update DESCRIPTION to match release number by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/425</p></li>
-<li><p>resolved issues causing warnings by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in https://github.com/NOAA-FIMS/FIMS/pull/430</p></li>
-<li><p>#307: export age comp function by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/438</p></li>
-<li><p>368 convert fims to a pkgdown site by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/437</p></li>
-<li><p>#242 fix codecov calc and upload by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/436</p></li>
-<li><p>391 feature find a file parser for c++ tests by <span class="citation" data-cites="msupernaw">@msupernaw</span> in https://github.com/NOAA-FIMS/FIMS/pull/434</p></li>
-<li><p>fix: deploying pkgdown by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/448</p></li>
-<li><p>fix: remove set() by <span class="citation" data-cites="KyleShertzer-NOAA">@KyleShertzer-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/451</p></li>
-<li><p>Update DESCRIPTION by <span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/435</p></li>
-<li><p>Remove bias correction/adjustment by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/452</p></li>
-<li><p>doc: error and progress logging for information.hpp by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/424</p></li>
-<li><p>fix: refactor parameter constructor by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/455</p></li>
-<li><p>doc: logit_steep correction by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/463</p></li>
-<li><p>refactor add_tmb_to_fims_internal by <span class="citation" data-cites="msupernaw">@msupernaw</span> in https://github.com/NOAA-FIMS/FIMS/pull/459</p></li>
-<li><p>Created get-gtest-codecov to create coverage.xml report for issue #242 by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in https://github.com/NOAA-FIMS/FIMS/pull/470</p></li>
-<li><p>#441: fix reviewer checklist build trigger, edit checklist by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/474</p></li>
-<li><p>377 refactor call report f from modelhpp instead of fleet and population by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/466</p></li>
-<li><p>Changed <t> to <type> by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in https://github.com/NOAA-FIMS/FIMS/pull/487</type></t></p></li>
-<li><p>411 refactor naming convention of member and local variables in the fleet class by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/476</p></li>
-<li><p>Remove test data from fims deterministic folder by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/481</p></li>
-<li><p>Update GHA workflows to enforce FIMS installation by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/489</p></li>
-<li><p>renamed dimension folded indices to be clearer by <span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/480</p></li>
-<li><p>rm acomp/index nll tests objects by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/491</p></li>
-<li><p>Delete test files by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/492</p></li>
-<li><p>fix: update windows-2019 to windows-latest by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/495</p></li>
-<li><p>Create multiple namespaces in FIMS by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/479</p></li>
-<li><p>fix: use expect_equal() for deterministic tests by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/496</p></li>
-<li><p>fix: build trigger only on pr being opened by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/498</p></li>
-<li><p>407 updating log files by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/499</p></li>
-<li><p>Name refactoring for tests, growth, and median by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/503</p></li>
-<li><p>Fix the test for population.CalculateRecruitment() by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/508</p></li>
-<li><p>fix: update run google test to use windows latest by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/511</p></li>
-<li><p>refactor: move duplicated code into the test fixture section by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/497</p></li>
-<li><p>Fims concurrent by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/520</p></li>
-<li><p>Remove third party library rapidjson by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/519</p></li>
-<li><p>Make Doxygen comment style the same by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/518</p></li>
-<li><p>refactor recruitment deviations to log space by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/514</p></li>
-<li><p>add documentation to test-fims-estimation by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/515</p></li>
-<li><p>Added start_year and end_year as slots to FIMSFrame by <span class="citation" data-cites="kellijohnson-NOAA">@kellijohnson-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/501</p></li>
-<li><p>New 464 load module by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/526</p></li>
-<li><p>make log_obs_error a vector by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/532</p></li>
-<li><p>Fims vector by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/517</p></li>
-<li><p>Release mq by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/533</p></li>
-</ul>
+<p>Summary of high level/breaking changes: * Added a <code>pkgdown</code> site for FIMS * Add code cov tests and site link * Remove recruitment bias correction and adjustment because we plan to use <code>TMB</code> (https://github.com/NOAA-FIMS/FIMS/issues/185) * Improve logging coverage and separate logs into multiple files * Put recruitment deviations on the log scale when input * Report more values with standard errors * Code cleanup, documentation, and consistency improvements * Remove rapidjson dependence * Add <code>start_year</code> and <code>end_year</code> as slots to FIMSFrame * Make <code>log_obs_error</code> a vector * Load the Rcpp module upon package install so components don’t need to be prefaced by <code>fims$</code> * Refactor vectors to use <code>fims::Vector</code> class * Add Newton steps to FIMS integration test to improve convergence in integration test</p>
+<p>More detail: * Update issue forms by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/426 * Update DESCRIPTION to match release number by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/425 * resolved issues causing warnings by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in https://github.com/NOAA-FIMS/FIMS/pull/430 * #307: export age comp function by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/438 * 368 convert fims to a pkgdown site by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/437 * #242 fix codecov calc and upload by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/436 * 391 feature find a file parser for c++ tests by <span class="citation" data-cites="msupernaw">@msupernaw</span> in https://github.com/NOAA-FIMS/FIMS/pull/434 * fix: deploying pkgdown by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/448 * fix: remove set() by <span class="citation" data-cites="KyleShertzer-NOAA">@KyleShertzer-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/451 * Update DESCRIPTION by <span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/435 * Remove bias correction/adjustment by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/452 * doc: error and progress logging for information.hpp by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/424 * fix: refactor parameter constructor by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/455 * doc: logit_steep correction by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/463 * refactor add_tmb_to_fims_internal by <span class="citation" data-cites="msupernaw">@msupernaw</span> in https://github.com/NOAA-FIMS/FIMS/pull/459 * Created get-gtest-codecov to create coverage.xml report for issue #242 by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in https://github.com/NOAA-FIMS/FIMS/pull/470 * #441: fix reviewer checklist build trigger, edit checklist by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/474 * 377 refactor call report f from modelhpp instead of fleet and population by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/466 * Changed <t> to <type> by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in https://github.com/NOAA-FIMS/FIMS/pull/487 * 411 refactor naming convention of member and local variables in the fleet class by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/476 * Remove test data from fims deterministic folder by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/481 * Update GHA workflows to enforce FIMS installation by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/489 * renamed dimension folded indices to be clearer by <span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/480 * rm acomp/index nll tests objects by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/491 * Delete test files by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/492 * fix: update windows-2019 to windows-latest by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/495 * Create multiple namespaces in FIMS by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/479 * fix: use expect_equal() for deterministic tests by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/496 * fix: build trigger only on pr being opened by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/498 * 407 updating log files by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/499 * Name refactoring for tests, growth, and median by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/503 * Fix the test for population.CalculateRecruitment() by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/508 * fix: update run google test to use windows latest by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/511 * refactor: move duplicated code into the test fixture section by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/497 * Fims concurrent by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/520 * Remove third party library rapidjson by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/519 * Make Doxygen comment style the same by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/518 * refactor recruitment deviations to log space by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/514 * add documentation to test-fims-estimation by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/515 * Added start_year and end_year as slots to FIMSFrame by <span class="citation" data-cites="kellijohnson-NOAA">@kellijohnson-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/501 * New 464 load module by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/526 * make log_obs_error a vector by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/532 * Fims vector by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/517 * Release mq by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in https://github.com/NOAA-FIMS/FIMS/pull/533</type></t></p>
 </section>
 <section id="new-contributors" class="level2">
 <h2 class="anchored" data-anchor-id="new-contributors">New Contributors</h2>
@@ -538,6 +446,7 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
