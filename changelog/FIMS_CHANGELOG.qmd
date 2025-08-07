@@ -2,8 +2,6 @@
 title: FIMS Change Log
 ---
 
-# FIMS Change Log
-
 ## v0.6.2 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.2))
 * Fix TMBad windows make file by @Andrea-Havron-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/935
 * Fix bug with uninitialized unfished_biomass by @Andrea-Havron-NOAA in https://github.com/NOAA-FIMS/FIMS/pull/935

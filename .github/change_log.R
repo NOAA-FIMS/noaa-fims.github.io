@@ -19,8 +19,6 @@ write_changelog <- function(releases, output_file) {
     "---",
     'title: FIMS Change Log',
     "---",
-    "",
-    "# FIMS Change Log",
     ""
   )
   lines <- header
