@@ -101,7 +101,7 @@ photo:
   alt-text: ""
 ---
   
-{{< include "/assets/fims-weekly-template.qmd" >}}
+{{< include "fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - ANNOUNCEMENT 1

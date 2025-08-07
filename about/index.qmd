@@ -41,7 +41,7 @@ The project is constantly under development 🔨. Check out our progress so far 
 |Bugs                    | ![Issues needing triage](https://img.shields.io/github/issues-raw/noaa-fims/fims/kind:%20bug)|
 |Pull Requests           | ![Pull requests](https://img.shields.io/github/issues-pr/NOAA-FIMS/FIMS)|
 |Style and document `R` code        |[![call-doc-and-style-r](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-doc-and-style-r.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-doc-and-style-r.yml)|
-|`clang-tidy` on `C++` code    |[![Clang-tidy](https://github.com/NOAA-FIMS/FIMS/actions/workflows/clang-tidy.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/clang-tidy.yml)|
+|`clang-tidy` on `C++` code    |[![Clang-tidy](https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-clang-tidy.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-clang-tidy.yml)|
 |Calculate test coverage |[![call-calc_coverage](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml)|
 |`R cmd check` |![r-cmd-check](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg)|
 |Google test status |![googletest](https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg)|

@@ -12,7 +12,7 @@ FIMS was created to increase the pool of developers, designers, and testers that
 
 ### Why build FIMS now?
 
-[AD Model Builder (ADMB)](https://www.admb-project.org/) is no longer being supported so the ability to compile existing models that use ADMB, e.g., [Age Structured Assessment Program (ASAP)](https://nmfs-ost.github.io/noaa-fit/ASAP), [Assessment Model for Alaska (AMAK)](https://github.com/afsc-assessments/AMAK), Beaufort Assessment Model (BAM), and [Stock Synthesis 3 (SS3)](https://nmfs-ost/ss3-source-code), will be compromised with future operating system upgrades. Furthermore, development of these models that rely on ADMB to include best practices, such as random effects, is not feasible.
+[AD Model Builder (ADMB)](https://www.admb-project.org/) is no longer being supported so the ability to compile existing models that use ADMB, e.g., [Age Structured Assessment Program (ASAP)](https://nmfs-ost.github.io/noaa-fit/ASAP), [Assessment Model for Alaska (AMAK)](https://github.com/afsc-assessments/AMAK), Beaufort Assessment Model (BAM), and [Stock Synthesis 3 (SS3)](https://github.com/nmfs-ost/ss3-source-code), will be compromised with future operating system upgrades. Furthermore, development of these models that rely on ADMB to include best practices, such as random effects, is not feasible.
 
 ## Transitioning to FIMS
 

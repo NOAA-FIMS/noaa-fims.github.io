@@ -35,7 +35,7 @@ jobs:
           
       - name: Archive current site to archives folder
         run: |
-          ARCHIVE_DIR="archives/${{ steps.get_fims_release.outputs.fims_tag }}"
+          ARCHIVE_DIR="_archives/${{ steps.get_fims_release.outputs.fims_tag }}"
           mkdir -p "$ARCHIVE_DIR"
           cp -rv docs/. "$ARCHIVE_DIR"/
           ls archives

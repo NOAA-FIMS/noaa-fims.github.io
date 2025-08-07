@@ -13,8 +13,8 @@ project:
 
 website:
   title: "FIMS"
-  site-url: https://e-perl-noaa.github.io/fims-website-test
-  repo-url: https://github.com/e-perl-noaa/fims-website-test
+  site-url: https://noaa-fims.github.io
+  repo-url: https://github.com/noaa-fims.github.io
   repo-actions:
     - source
     - edit
