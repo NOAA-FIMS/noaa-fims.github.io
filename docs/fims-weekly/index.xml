@@ -10,8 +10,8 @@
 <atom:link href="https://noaa-fims.github.io/fims-weekly/index.xml" rel="self" type="application/rss+xml"/>
 <description>FIMS weekly blog.
 </description>
-<generator>quarto-1.7.33</generator>
-<lastBuildDate>Mon, 04 Aug 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Mon, 04 Aug 2025 04:00:00 GMT</lastBuildDate>
 <item>
   <title>August 04 - 08, 2025</title>
   <link>https://noaa-fims.github.io/fims-weekly/08.04.2025.html</link>
@@ -125,7 +125,7 @@ HELPFUL RESOURCES
   <category>case studies</category>
   <category>projections</category>
   <guid>https://noaa-fims.github.io/fims-weekly/08.04.2025.html</guid>
-  <pubDate>Mon, 04 Aug 2025 00:00:00 GMT</pubDate>
+  <pubDate>Mon, 04 Aug 2025 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>July 28 - August 1, 2025</title>
@@ -207,7 +207,7 @@ Online: [Google meet](MEETING LINK)
   <category>diagnostics</category>
   <category>projections</category>
   <guid>https://noaa-fims.github.io/fims-weekly/07.28.2025.html</guid>
-  <pubDate>Mon, 28 Jul 2025 00:00:00 GMT</pubDate>
+  <pubDate>Mon, 28 Jul 2025 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>July 21 - 25, 2025</title>
@@ -282,7 +282,7 @@ HELPFUL RESOURCES
   <category>selectivity</category>
   <category>projections</category>
   <guid>https://noaa-fims.github.io/fims-weekly/07.21.2025.html</guid>
-  <pubDate>Mon, 21 Jul 2025 00:00:00 GMT</pubDate>
+  <pubDate>Mon, 21 Jul 2025 04:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

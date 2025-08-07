@@ -4,7 +4,10 @@ project:
   render:
     - "*.qmd"
     - "sites/*.qmd"
-    - "about/*qmd"
+    - "about/*.qmd"
+    - "changelog/*.qmd"
+    - "fims-weekly/*.qmd"
+
   resources:
     - images/
     - assets/
