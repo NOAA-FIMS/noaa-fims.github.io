@@ -41,7 +41,7 @@ website:
       - text: sites
         href: sites/sites_index.qmd
       - text: changelog
-        href: FIMS_CHANGELOG.qmd
+        href: changelog/FIMS_CHANGELOG.qmd
       - icon: github
         href: https://github.com/NOAA-FIMS
   sidebar:

@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - FIMS_CHANGELOG.qmd
+      - changelog/FIMS_CHANGELOG.qmd
 
 concurrency:
   group: ${{ github.workflow}}-${{ github.ref }}
@@ -29,7 +29,7 @@ jobs:
         id: heading_check
         run: |
           git fetch origin main
-          NEW_HEADINGS=$(git diff origin/main -- FIMS_CHANGELOG.qmd | grep '^+## v[0-9]\+\.[0-9]\+\.[0-9]\+' || true)
+          NEW_HEADINGS=$(git diff origin/main -- changelog/FIMS_CHANGELOG.qmd | grep '^+## v[0-9]\+\.[0-9]\+\.[0-9]\+' || true)
           if [ -n "$NEW_HEADINGS" ]; then
             echo "found_new_heading=true" >> $GITHUB_OUTPUT
           else

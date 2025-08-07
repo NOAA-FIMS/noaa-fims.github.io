@@ -90,7 +90,7 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git add FIMS_CHANGELOG.qmd
+          git add changelog/FIMS_CHANGELOG.qmd
           git diff --cached --quiet || echo "changed=true" >> $GITHUB_OUTPUT
   
       - name: Create Pull Request for updated changelog

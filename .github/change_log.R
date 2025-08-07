@@ -2,7 +2,7 @@ library(httr)
 library(jsonlite)
 library(glue)
 
-QMD_FILE <- "FIMS_CHANGELOG.qmd"
+QMD_FILE <- "changelog/FIMS_CHANGELOG.qmd"
 REPO <- "NOAA-FIMS/FIMS"
 API_URL <- paste0("https://api.github.com/repos/", REPO, "/releases")
 
