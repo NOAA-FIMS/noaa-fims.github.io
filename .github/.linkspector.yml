@@ -2,7 +2,7 @@ dirs:
   - ./
 
 fileExtensions:
-  - **/*.qmd
-  - **/*.md
-  - *.md
-  - *.qmd
+  - "**/*.qmd"
+  - "**/*.md"
+  - "*.md"
+  - "*.qmd"
