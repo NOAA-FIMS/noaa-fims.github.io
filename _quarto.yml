@@ -15,6 +15,7 @@ project:
     - "cp -r _static/. docs/"
 
 website:
+  favicon: images/FIMS_hexlogo.png
   title: "FIMS"
   site-url: https://noaa-fims.github.io
   repo-url: https://github.com/noaa-fims.github.io
