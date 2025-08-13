@@ -9,19 +9,14 @@ categories:
 three-big-things:
   bt1: "Sorry for the late FIMS Weekly but I have been sick 🤕 and just haven’t been able to muster enough 🔥to get one together. I am doing better today but still don’t have much of a voice so there is no seaside chat this week."
   bt2: "v0.6.3 will be released this week, thanks to Andrea finding an intermittent bug when using TMBad on Windows regarding how we were implementing operators in fims_math.hpp."
-  bt3: "Lots of work is co-occurring in several branches, I will be missing some in the following list but I hope this helps people get a pulse 💓 on what is going on:  \n\n
-
-        a. Matthew - dev-length-selectivity-rebased trying to find 🐛 in length likelihood  \n\n
-
-        b. Alex - dev-dbl-norm implementing double normal selectivity  \n\n
-
-        c. Andrea - dev-osa adding one-step-ahead residuals  \n\n
-
-        d. Nathan & Andrea - dev-projections-[nathan|andrea] projections  \n\n
-
-        e. Bai - dev-refactor-nested-parameter-list updating R side of model input  \n\n
-
-        f. Kathryn - in ghactions4r allowing /document to work"
+  bt3: 
+    - "Lots of work is co-occurring in several branches, I will be missing some in the following list but I hope this helps people get a pulse 💓 on what is going on:  "
+    - "a. Matthew - dev-length-selectivity-rebased trying to find 🐛 in length likelihood"
+    - "b. Alex - dev-dbl-norm implementing double normal selectivity"
+    - "c. Andrea - dev-osa adding one-step-ahead residuals
+    - "d. Nathan & Andrea - dev-projections-[nathan|andrea] projections"
+    - "e. Bai - dev-refactor-nested-parameter-list updating R side of model input"
+    - "f. Kathryn - in ghactions4r allowing /document to work"
 # Announcements go below because of formatting that quarto doesnt transfer over from the yml
 # If there is no code club or seaside chat, just delete those lines and the template will handle it for you
 upcoming-events:
