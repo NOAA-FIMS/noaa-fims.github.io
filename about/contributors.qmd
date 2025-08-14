@@ -8,7 +8,7 @@ FIMS is a collaborative effort that would not be possible without the generous s
 
 * Kelli F. Johnson (OST)
 * Alexander J. Jensen (SWFSC)
-* Andrea M. Havron
+* Andrea M. Havron (OST)
 * Bai Li (OST)
 * Christine C. Stawitz (OST)
 * Christopher M. Legault (NEFSC)
