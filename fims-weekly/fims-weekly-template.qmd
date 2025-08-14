@@ -21,6 +21,7 @@
 - [Implementation Team Notes](https://docs.google.com/document/d/10nSfbPaBF2p7wL2cr5lW7PGZxlZI4tbPiwQRC8JKaXk/edit?usp=drive_link)
 - [FIMS FAQs](https://noaa-fims.github.io/about/faq)
 - [NOAA-FIMS Discussions](http://github.com/orgs/NOAA-FIMS/discussions)
+- [GitHub Trainings](https://nmfs-opensci.github.io/GitHub-Clinic/content/schedule.html)
 :::
 
 :::
