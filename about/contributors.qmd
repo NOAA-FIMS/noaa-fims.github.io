@@ -7,40 +7,40 @@ FIMS is a collaborative effort that would not be possible without the generous s
 ## Core Developers
 
 * Kelli F. Johnson (OST)
-* Alexander J. Jensen (SWFSC)
-* Andrea M. Havron (OST)
-* Bai Li (OST)
-* Christine C. Stawitz (OST)
-* Christopher M. Legault (NEFSC)
-* Cole C. Monnahan (AFSC)
-* Eric J. Ward (NWFSC)
-* Ian G. Taylor (NWFSC)
-* Jane Y. Sullivan (AFSC)
 * Jon K. T. Brodziak (PIFSC)
 * Kathryn L. Doering (OST)
-* Kyle W. Shertzer (SEFSC)
-* Matthew Supernaw (OST)
-* Megumi C. Oshima (PIFSC)
-* Nathan R. Vaughan (Vaughan Analytics)
-* Peter T. Kuriyama (SWFSC)
+* Andrea M. Havron (OST)
+* Alexander J. Jensen (SWFSC)
 * Ronald Klasky (T and T Consulting Services, Inc.)
+* Peter T. Kuriyama (SWFSC)
+* Christopher M. Legault (NEFSC)
+* Bai Li (OST)
 * Timothy J. Miller (NEFSC)
+* Cole C. Monnahan (AFSC)
+* Megumi C. Oshima (PIFSC)
+* Kyle W. Shertzer (SEFSC)
+* Jane Y. Sullivan (AFSC)
+* Matthew Supernaw (OST)
+* Ian G. Taylor (NWFSC)
+* Eric J. Ward (NWFSC)
+* Nathan R. Vaughan (Vaughan Analytics)
 
 ## Subject-Matter Experts
 
 * Howard Townsend (OST)
 * James N. Ianelli (AFSC)
-* Jennifer S. Bigman (OST)
 * Lisa Pfeiffer (NWFSC)
 * Patrick D. Lynch (OST)
-* Richard D. Methot (OST)
+* Richard D. Methot (NWFSC)
 
 ## Contributors
 
-* Alan C. Haynie (ICES)
-* Edward J. Dick (SWFSC)
-* Huihua Lee (SWFSC)
+* Jennifer S. Bigman (University of Delaware)
 * Kristan Blackhart (NEFSC)
+* Edward J. Dick (SWFSC)
+* Alan C. Haynie (ICES)
+* Hui-hua Lee (SWFSC)
+* Christine C. Stawitz (University of Birmingham)
 
 ## FIMS Council
 
