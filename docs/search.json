@@ -11,47 +11,47 @@
     "href": "fims-weekly/index.html",
     "title": "FIMS Weekly",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nAugust 11 - 15, 2025\n\n\n\nrelease\n\ngit/GitHub\n\nVSCode\n\n\n\n\n\n\nAug 11, 2025\n\n\n\n\n\n\n\nAugust 04 - 08, 2025\n\n\n\ncase studies\n\nprojections\n\n\n\n\n\n\nAug 4, 2025\n\n\n\n\n\n\n\nJuly 28 - August 1, 2025\n\n\n\ntesting\n\nselectivity\n\ndiagnostics\n\nprojections\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\nJuly 21 - 25, 2025\n\n\n\ntesting\n\nselectivity\n\nprojections\n\n\n\n\n\n\nJul 21, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nAugust 11–15, 2025\n\n\n\nrelease\n\ngit/GitHub\n\nVSCode\n\n\n\n\n\n\nAug 11, 2025\n\n\n\n\n\n\n\nAugust 04–08, 2025\n\n\n\ncase studies\n\nprojections\n\n\n\n\n\n\nAug 4, 2025\n\n\n\n\n\n\n\nJuly 28–August 1, 2025\n\n\n\ntesting\n\nselectivity\n\ndiagnostics\n\nprojections\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\nJuly 21–25, 2025\n\n\n\ntesting\n\nselectivity\n\nprojections\n\n\n\n\n\n\nJul 21, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "fims-weekly/08.11.2025.html#fims-announcements",
     "href": "fims-weekly/08.11.2025.html#fims-announcements",
-    "title": "August 11 - 15, 2025",
+    "title": "August 11–15, 2025",
     "section": "FIMS ANNOUNCEMENTS",
     "text": "FIMS ANNOUNCEMENTS\n\n\nThis will be the last FIMS Weekly in Google Doc form because Elizabeth created a way to distribute this via html on our FIMS Website 🎉. Emails will still go out but they will just link to where you can find the weekly and maybe a screen shot. I am not sure. Please feel free to email me suggestions.\nThe collaborative workflow repository will be removed once the material is migrated to our beautiful FIMS website. Stay tuned."
   },
   {
     "objectID": "fims-weekly/08.11.2025.html#upcoming-events",
     "href": "fims-weekly/08.11.2025.html#upcoming-events",
-    "title": "August 11 - 15, 2025",
+    "title": "August 11–15, 2025",
     "section": "UPCOMING EVENTS",
     "text": "UPCOMING EVENTS\n\nTuesday, August 12\nFIMS Code Club (WSL and docker) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
     "objectID": "fims-weekly/08.11.2025.html#photo-of-the-week",
     "href": "fims-weekly/08.11.2025.html#photo-of-the-week",
-    "title": "August 11 - 15, 2025",
+    "title": "August 11–15, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nDuring our GitHub training with Microsoft, Bai asked a ❓about git worktrees that kind of blew my mind. I had yet to understand the full question or the response but last week with the new version of VS Code that was released it started to make sense. VS Code now has support for git worktrees, where worktrees let you check out multiple branches at once within a single clone. This stops the need for having multiple clones of the same repository on a single computer. IMO this is genius. I am constantly making bogus commits or stashing things that I later forgot that I stashed so I can check out a different branch, do one thing, and then switch back to the other branch. Or worse yet, I am on a branch and want to see a file in a different branch so I go online copy and paste the raw text from the “other” branch that I am interested in and then put it in a new file in VS Code. All of these alternates are suboptimal and have led to 🧨, which is obviously not good. I am excited to check out the use of worktrees and if it goes well maybe we can get Jonathan to do a GitHub training on them. First, I had to click on the three dots to the right of “SOURCE CONTROL” and add “Repositories” to what was being shown in my “SOURCE CONTROL” section of VS Code. Second, I clicked the three dots to the left of REPOSITORIES/FIMS, where I currently have dev-fix-exp-TMBad checked out, which brought up a list where I selected Worktrees -&gt; Create Worktree and let me select an additional branch. I chose dev. Now you can see dev is a worktree in the list under FIMS. This is as far as I have gotten in my 🛣️."
   },
   {
     "objectID": "fims-weekly/07.28.2025.html#fims-announcements",
     "href": "fims-weekly/07.28.2025.html#fims-announcements",
-    "title": "July 28 - August 1, 2025",
+    "title": "July 28–August 1, 2025",
     "section": "FIMS ANNOUNCEMENTS",
     "text": "FIMS ANNOUNCEMENTS\n\n\nVersion 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.\nWe need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday."
   },
   {
     "objectID": "fims-weekly/07.28.2025.html#upcoming-events",
     "href": "fims-weekly/07.28.2025.html#upcoming-events",
-    "title": "July 28 - August 1, 2025",
+    "title": "July 28–August 1, 2025",
     "section": "UPCOMING EVENTS",
     "text": "UPCOMING EVENTS"
   },
   {
     "objectID": "fims-weekly/07.28.2025.html#photo-of-the-week",
     "href": "fims-weekly/07.28.2025.html#photo-of-the-week",
-    "title": "July 28 - August 1, 2025",
+    "title": "July 28–August 1, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
   },
@@ -272,42 +272,42 @@
   {
     "objectID": "fims-weekly/07.21.2025.html#fims-announcements",
     "href": "fims-weekly/07.21.2025.html#fims-announcements",
-    "title": "July 21 - 25, 2025",
+    "title": "July 21–25, 2025",
     "section": "FIMS ANNOUNCEMENTS",
     "text": "FIMS ANNOUNCEMENTS"
   },
   {
     "objectID": "fims-weekly/07.21.2025.html#upcoming-events",
     "href": "fims-weekly/07.21.2025.html#upcoming-events",
-    "title": "July 21 - 25, 2025",
+    "title": "July 21–25, 2025",
     "section": "UPCOMING EVENTS",
     "text": "UPCOMING EVENTS\n\nTuesday, July 22\nFIMS Code Club (Tackling TODO: items in code)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet\n\n\nThursday, July 24\nFIMS Seaside Chat (🤷)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet"
   },
   {
     "objectID": "fims-weekly/07.21.2025.html#photo-of-the-week",
     "href": "fims-weekly/07.21.2025.html#photo-of-the-week",
-    "title": "July 21 - 25, 2025",
+    "title": "July 21–25, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nR-opensci has guidance on writing tests for packages submitted that Bai is looking into. But, it was pretty mind blowing to learn that there is a way to add comments to a commit message that can invoke “extended” tests, i.e., tests that do not need to be run on every commit. It was nice to know that others have been thinking about this as FIMS has struggled to find a resource or advice on what to do, see Discussion #870. Feel free to add any thoughts about the system below or other insights to running large tests on the Discussion board. Thank you in advance for taking the time to contribute 😊."
   },
   {
     "objectID": "fims-weekly/08.04.2025.html#fims-announcements",
     "href": "fims-weekly/08.04.2025.html#fims-announcements",
-    "title": "August 04 - 08, 2025",
+    "title": "August 04–08, 2025",
     "section": "FIMS ANNOUNCEMENTS",
     "text": "FIMS ANNOUNCEMENTS\n\n\nFIMS website is now newly updated thanks to Elizabeth 🥇!\nThe CIE Review has been approved and will be held November 04–06, 2025 using an online platform."
   },
   {
     "objectID": "fims-weekly/08.04.2025.html#upcoming-events",
     "href": "fims-weekly/08.04.2025.html#upcoming-events",
-    "title": "August 04 - 08, 2025",
+    "title": "August 04–08, 2025",
     "section": "UPCOMING EVENTS",
     "text": "UPCOMING EVENTS\n\nTuesday, August 05\nFIMS Code Club (json) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n\n\n\nWednesday, August 06\nFIMS Implementation Team Meeting (Projections)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
   },
   {
     "objectID": "fims-weekly/08.04.2025.html#photo-of-the-week",
     "href": "fims-weekly/08.04.2025.html#photo-of-the-week",
-    "title": "August 04 - 08, 2025",
+    "title": "August 04–08, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nDuring last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example:\n\n{\n  \"@context\": \"https://schema.org/\",\n  \"@type\": \"Dataset\",\n  \"name\": \"Human Genome Assembly GRCh38\",\n  \"description\": \"The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.\",\n  \"url\": \"https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/\",\n  \"identifier\": \"GCF_000001405.26\",\n  \"creator\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Genome Reference Consortium\"\n  },\n  \"citation\": \"Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.\",\n  \"keywords\": [\n    \"Human Genome\",\n    \"GRCh38\",\n    \"Genomics\",\n    \"Reference Assembly\"\n  ],\n  \"license\": \"https://creativecommons.org/licenses/by/4.0/\",\n  \"datePublished\": \"2013-12-17\",\n  \"distribution\": [\n    {\n      \"@type\": \"DataDownload\",\n      \"name\": \"GRCh38 FASTA file\",\n      \"contentUrl\": \"ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz\",\n      \"encodingFormat\": \"application/x-fasta\"\n    }\n  ],\n  \"measurementTechnique\": \"Next-Generation Sequencing\",\n  \"inLanguage\": \"en\"\n}"
   },

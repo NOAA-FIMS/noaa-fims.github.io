@@ -13,7 +13,7 @@
 <generator>quarto-1.7.33</generator>
 <lastBuildDate>Mon, 11 Aug 2025 00:00:00 GMT</lastBuildDate>
 <item>
-  <title>August 11 - 15, 2025</title>
+  <title>August 11–15, 2025</title>
   <link>https://noaa-fims.github.io/fims-weekly/08.11.2025.html</link>
   <description><![CDATA[ 
 
@@ -36,9 +36,7 @@ THREE BIG THINGS THIS WEEK
 <ol type="1">
 <li><p>Sorry for the late FIMS Weekly but I have been sick 🤕 and just haven’t been able to muster enough 🔥to get one together. I am doing better today but still don’t have much of a voice so there is no seaside chat this week.</p></li>
 <li><p>v0.6.3 will be released this week, thanks to Andrea finding an intermittent bug when using TMBad on Windows regarding how we were implementing operators in fims_math.hpp.</p></li>
-<li><p>Lots of work is co-occurring in several branches, I will be missing some in the following list but I hope this helps people get a pulse 💓 on what is going on:<br>
-Matthew - dev-length-selectivity-rebased trying to find 🐛 in length likelihoodAlex - dev-dbl-norm implementing double normal selectivityAndrea - dev-osa adding one-step-ahead residualsNathan &amp; Andrea - dev-projections-[nathan|andrea] projectionsBai - dev-refactor-nested-parameter-list updating R side of model input<br>
-f.&nbsp;Kathryn - in ghactions4r allowing /document to work</p></li>
+<li><p>Lots of work is co-occurring in several branches, I will be missing some in the following list but I hope this helps people get a pulse 💓 on what is going on: (a) Matthew - dev-length-selectivity-rebased trying to find 🐛 in length likelihood, (b) Alex - dev-dbl-norm implementing double normal selectivity, (c) Andrea - dev-osa adding one-step-ahead residuals, (d) Nathan &amp; Andrea - dev-projections-[nathan|andrea] projections, (e) Bai - dev-refactor-nested-parameter-list updating R side of model input, and (f) Kathryn - in ghactions4r allowing /document to work.</p></li>
 </ol>
 </div><div class="column" style="width:30%;">
 <div class="header-wrap">
@@ -109,7 +107,7 @@ PUT CODE HERE
   <pubDate>Mon, 11 Aug 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>August 04 - 08, 2025</title>
+  <title>August 04–08, 2025</title>
   <link>https://noaa-fims.github.io/fims-weekly/08.04.2025.html</link>
   <description><![CDATA[ 
 
@@ -224,7 +222,7 @@ HELPFUL RESOURCES
   <pubDate>Mon, 04 Aug 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>July 28 - August 1, 2025</title>
+  <title>July 28–August 1, 2025</title>
   <link>https://noaa-fims.github.io/fims-weekly/07.28.2025.html</link>
   <description><![CDATA[ 
 
@@ -306,7 +304,7 @@ Online: [Google meet](MEETING LINK)
   <pubDate>Mon, 28 Jul 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>July 21 - 25, 2025</title>
+  <title>July 21–25, 2025</title>
   <link>https://noaa-fims.github.io/fims-weekly/07.21.2025.html</link>
   <description><![CDATA[ 
 
