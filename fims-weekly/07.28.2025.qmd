@@ -1,5 +1,5 @@
 ---
-title: July 28 - August 1, 2025
+title: July 28–August 1, 2025
 date: "July 28, 2025"
 categories: 
   - testing

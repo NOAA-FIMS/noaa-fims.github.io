@@ -1,5 +1,5 @@
 ---
-title: July 21 - 25, 2025
+title: July 21–25, 2025
 date: 'July 21, 2025'
 categories: 
   - testing

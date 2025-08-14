@@ -55,14 +55,14 @@ create_weekly_qmd <- function(date = NULL, week_end_date = NULL, file_name = NUL
     }
     
     if (format(week_start, "%B") == format(week_end, "%B")) {
-      week_range <- paste(
-        format(week_start, "%B %d"), "-", 
+      week_range <- paste0(
+        format(week_start, "%B %d"), "–", 
         format(week_end, "%d, %Y")
       )
     } else {
       # If different months, show both months
-      week_range <- paste(
-        format(week_start, "%B %d"), "-", 
+      week_range <- paste0(
+        format(week_start, "%B %d"), "–", 
         format(week_end, "%B %d, %Y")
       )
     }
