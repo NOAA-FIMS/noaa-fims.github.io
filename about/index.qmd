@@ -59,3 +59,20 @@ The project is constantly under development 🔨. Check out our progress so far 
 - [Stock Assessment Dictionary Project](https://github.com/nmfs-fish-tools/fishdictionary)
 
 > If you have questions or comments please [contact the FIMS Project Lead](mailto:kelli.johnson@noaa.gov).
+
+## Learning Resources
+
+### C++
+
+* [cplusplus.com](https://cplusplus.com/doc/)
+* [docs.microsoft.com](https://docs.microsoft.com/en-us/cpp/standard-library)
+* [geeksforgeeks.org](https://www.geeksforgeeks.org/c-plus-plus/?ref=outind)
+* [learncpp.com](https://www.learncpp.com/cpp-tutorial)
+* [positioniseverything.net](https://www.positioniseverything.net/category/coding/c/)
+* [w3schools.com/cpp](https://www.w3schools.com/cpp)
+
+### Rcpp
+
+* [rcpp.org](https://www.rcpp.org/)
+* [github.com/RcppCore](https://github.com/RcppCore/Rcpp)
+* [mjdenny.com](https://www.mjdenny.com/Rcpp_Intro.html)
