@@ -1,5 +1,9 @@
 ---
 title: Frequently Asked Questions
+format:
+  html:
+    toc: true
+    toc-location: right
 ---
 
 This document is meant to help answer questions that are frequently asked regarding the Fisheries Integrated Modeling System (FIMS). Should your question not be answered here, we recommend that you navigate to the [GitHub Discussion](https://github.com/orgs/NOAA-FIMS/discussions) page to see if your question has already been asked but just might not have been asked frequently enough to make it here.
