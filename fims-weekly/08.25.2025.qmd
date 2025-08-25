@@ -1,0 +1,57 @@
+---
+title: "August 25–29, 2025"
+date: "August 25, 2025"
+# Change the following categories accordingly
+categories: 
+  - documentation
+  - interface
+three-big-things:
+  bt1: "Bai is busy revamping the way users interact with the model parameters as lists of lists has gotten unwieldy."
+  bt2: "Matthew and Andrea are working on different parts of the model using feature branches off of the latest dev branch that has a draft of the Surplus Production Model (SPM)."
+  bt3: "This Thursday (see below) will be our first tutorial session to give new users a glimpse into how to run a FIMS model. Please share this information wide and far."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+  code-club: true
+  code-club-date: "Tuesday, document SPM"
+  code-club-name: "FIMS Code Club"
+  seaside-chat: true
+  seaside-chat-date: "Thursday, Tutorial"
+  seaside-chat-name: "FIMS Seaside Chat"
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text and the template will handle it for you. If there is code instead, please uncomment the section below named photo-code.
+photo:
+  text: "I recently learned about [Deep Wiki](www.deepwiki.com) where you can view a Wiki about any repository that is available on GitHub. I looked to see what Deep Wiki had to say about FIMS and first found it was not indexed but all it took to change that was proving my email. Within minutes, [FIMS had its own page](https://deepwiki.com/NOAA-FIMS/FIMS). Several diagrams were generated but the one that I thought was the most helpful (see below) summarized what is available in the main branch for the C++ code. I think this image will be extremely helpful as FIMS becomes more complex. I just wish I knew how we can create it dynamically :frown:"
+  include-photo: true
+  path: "images/deep_wiki_image.png"
+  alt-text: "The linkages between modules in the C++ source code of FIMS, which can be seen on Deep Wiki at https://deepwiki.com/NOAA-FIMS/FIMS#population-dynamics-system"
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- 71 calendar days until the FIMS CIE Review, we still need a chair.
+::: 
+    
+::: {#additional-events}
+      
+<!--
+### DAY DATE
+**NAME**
+
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+
+<!--
+::: {#photo-code}
+```
+PUT CODE HERE
+```
+:::
+-->
+        
+:::
+
+
