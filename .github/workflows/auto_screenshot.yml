@@ -1,0 +1,50 @@
+name: Screenshot Weekly Page and Email
+
+on:
+  push:
+    paths:
+      - 'docs/fims-weekly/*.html'
+
+jobs:
+  screenshot_and_email:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install puppeteer
+
+      - name: Find newly added weekly HTML files
+        id: added_html
+        run: |
+          # Find new (added) files in docs/fims-weekly/*.html in the latest commit(s)
+          ADDED_FILES=$(git diff --name-status ${{ github.event.before }} ${{ github.sha }} | awk '/^A/ && $2 ~ /^docs\/fims-weekly\/.*\.html$/ {print $2}')
+          echo "ADDED_FILES=$ADDED_FILES" >> $GITHUB_ENV
+
+      - name: Screenshot new weekly page
+        if: env.ADDED_FILES != ''
+        run: |
+          for file in $ADDED_FILES; do
+            node .github/screenshot.js "$file"
+            gh workflow run send-email.yml -f screenshot="screenshot.png"
+          done
+
+      - name: Send email
+        if: env.ADDED_FILES != ''
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: Github Actions job result
+          to: elizabeth.gugliotti@noaa.gov
+          from: FIMS Weekly GitHub
+          body: Here is a screenshot of this week's FIMS weekly.
+          attachments: screenshot.png
