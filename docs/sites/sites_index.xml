@@ -11,7 +11,7 @@
 <description>Websites associated with FIMS.
 </description>
 <generator>quarto-1.7.33</generator>
-<lastBuildDate>Wed, 27 Aug 2025 15:09:14 GMT</lastBuildDate>
+<lastBuildDate>Wed, 27 Aug 2025 15:44:55 GMT</lastBuildDate>
 <item>
   <title>🔍 FIMS case studies</title>
   <link>https://noaa-fims.github.io/</link>
@@ -22,7 +22,7 @@
   <category>ASAP</category>
   <category>TMB</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 27 Aug 2025 15:09:14 GMT</pubDate>
+  <pubDate>Wed, 27 Aug 2025 15:44:55 GMT</pubDate>
 </item>
 <item>
   <title>📔 Developer Handbook</title>
@@ -32,7 +32,7 @@
   <category>developers</category>
   <category>contributing</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 27 Aug 2025 15:09:14 GMT</pubDate>
+  <pubDate>Wed, 27 Aug 2025 15:44:55 GMT</pubDate>
 </item>
 <item>
   <title>💻 Trainings</title>
@@ -43,7 +43,7 @@
   <category>C++</category>
   <category>TMB</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 27 Aug 2025 15:09:14 GMT</pubDate>
+  <pubDate>Wed, 27 Aug 2025 15:44:55 GMT</pubDate>
 </item>
 </channel>
 </rss>
