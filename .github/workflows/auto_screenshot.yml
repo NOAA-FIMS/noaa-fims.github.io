@@ -41,7 +41,7 @@ jobs:
             html="docs/fims-weekly/${base}.html"
             if [ -f "$html" ]; then
               # Run your screenshot script (assuming it outputs screenshot.png)
-              node .github/scripts/screenshot.js "$html"
+              node .github/screenshot.js "$html"
               # (Optional: upload or email the screenshot)
             else
               echo "HTML file $html not found for $qmd"
