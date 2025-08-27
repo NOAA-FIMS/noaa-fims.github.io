@@ -27,17 +27,25 @@ jobs:
       - name: Find newly added weekly HTML files
         id: added_html
         run: |
-          ADDED_FILES=$(git diff --name-status HEAD~1 HEAD | awk '/^A/ && $2 ~ /^docs\/fims-weekly\/.*\.html$/ {print $2}')
+          ADDED_FILES=$(git diff --name-status HEAD~2 HEAD~1 | awk '/^A/ && $2 ~ /^fims-weekly\/.*\.qmd$/ {print $2}')
           echo "ADDED_FILES=$ADDED_FILES" >> $GITHUB_ENV
-          echo "$ADDED_FILES"
+          echo "$ADDED_QMD" > added_qmd.txt
 
       - name: Screenshot new weekly page
         if: env.ADDED_FILES != ''
         run: |
-          for file in $ADDED_FILES; do
-            node .github/screenshot.js "$file"
-            gh workflow run send-email.yml -f screenshot="screenshot.png"
-          done
+          while read qmd; do
+            # Get base filename (strip directory and extension)
+            base=$(basename "$qmd" .qmd)
+            html="docs/fims-weekly/${base}.html"
+            if [ -f "$html" ]; then
+              # Run your screenshot script (assuming it outputs screenshot.png)
+              node .github/scripts/screenshot.js "$html"
+              # (Optional: upload or email the screenshot)
+            else
+              echo "HTML file $html not found for $qmd"
+            fi
+          done < added_qmd.txt
 
       - name: Send email
         if: env.ADDED_FILES != ''
