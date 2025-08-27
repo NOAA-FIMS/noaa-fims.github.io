@@ -1,11 +1,10 @@
 name: Screenshot Weekly Page and Email
 
 on:
-  push:
-    branches: 
-      - main
-    paths:
-      - 'docs/fims-weekly/*.html'
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types:
+      - completed
 
 jobs:
   screenshot_and_email:
@@ -28,9 +27,9 @@ jobs:
       - name: Find newly added weekly HTML files
         id: added_html
         run: |
-          # Find new (added) files in docs/fims-weekly/*.html in the latest commit(s)
-          ADDED_FILES=$(git diff --name-status ${{ github.event.before }} ${{ github.sha }} | awk '/^A/ && $2 ~ /^docs\/fims-weekly\/.*\.html$/ {print $2}')
+          ADDED_FILES=$(git diff --name-status HEAD~1 HEAD | awk '/^A/ && $2 ~ /^docs\/fims-weekly\/.*\.html$/ {print $2}')
           echo "ADDED_FILES=$ADDED_FILES" >> $GITHUB_ENV
+          echo "$ADDED_FILES"
 
       - name: Screenshot new weekly page
         if: env.ADDED_FILES != ''
