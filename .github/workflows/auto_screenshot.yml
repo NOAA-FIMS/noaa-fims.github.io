@@ -29,7 +29,8 @@ jobs:
         run: |
           ADDED_FILES=$(git diff --name-status HEAD~2 HEAD~1 | awk '/^A/ && $2 ~ /^fims-weekly\/.*\.qmd$/ {print $2}')
           echo "ADDED_FILES=$ADDED_FILES" >> $GITHUB_ENV
-          echo "$ADDED_QMD" > added_qmd.txt
+          echo "$ADDED_FILES" > added_qmd.txt
+          echo "$ADDED_FILES"
 
       - name: Screenshot new weekly page
         if: env.ADDED_FILES != ''
