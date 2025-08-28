@@ -63,5 +63,4 @@ jobs:
           body: |
             <p>Here is a screenshot of this week's FIMS weekly:</p>
             <img src="cid:screenshot.png" alt="FIMS Weekly Screenshot" />
-          body: Here is a screenshot of this week's FIMS weekly.
           attachments: screenshot.png

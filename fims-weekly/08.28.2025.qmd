@@ -1,6 +1,6 @@
 ---
-title: "August 27–29, 2025"
-date: "August 27, 2025"
+title: "August 28–29, 2025"
+date: "August 28, 2025"
 # Change the following categories accordingly
 categories: 
   - testing
