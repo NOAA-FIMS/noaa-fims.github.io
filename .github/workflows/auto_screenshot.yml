@@ -49,10 +49,12 @@ jobs:
           done < added_qmd.txt
 
       - name: Convert PNG to base64
+        if: env.ADDED_FILES != ''
         run: |
           base64 screenshot.png > screenshot.b64
 
       - name: Prepare HTML body with base64 image
+        if: env.ADDED_FILES != ''
         run: |
           IMG_DATA=$(cat screenshot.b64)
           echo "<p>Screenshot:</p><img src=\"data:image/png;base64,$IMG_DATA\" />" > email_body.html
