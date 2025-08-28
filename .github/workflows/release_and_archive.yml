@@ -25,29 +25,32 @@ jobs:
       # Set up Node (for Quarto, if needed; remove if not using Quarto)
       - uses: quarto-dev/quarto-actions/setup@v2
       
-      - name: Check if new version heading added
-        id: heading_check
+      - name: Get latest version from changelog
+        id: changelog_version
         run: |
-          git fetch origin main
-          NEW_HEADINGS=$(git diff origin/main -- changelog/FIMS_CHANGELOG.qmd | grep '^+## v[0-9]\+\.[0-9]\+\.[0-9]\+' || true)
-          if [ -n "$NEW_HEADINGS" ]; then
-            echo "found_new_heading=true" >> $GITHUB_OUTPUT
-          else
-            echo "found_new_heading=false" >> $GITHUB_OUTPUT
-          fi
+          VERSION_HEADING=$(grep -m1 '^## v[0-9]\+\.[0-9]\+\.[0-9]\+' changelog/FIMS_CHANGELOG.qmd | sed 's/^## //' | tr -d ' ')
+          echo "version_heading=$VERSION_HEADING" >> $GITHUB_OUTPUT
 
       - name: Get latest FIMS release tag
-        if: steps.heading_check.outputs.found_new_heading == 'true'
-        id: get_fims_release
+        id: fims_release
         run: |
-          LATEST_TAG=$(curl --silent "https://api.github.com/repos/NOAA-FIMS/FIMS/releases/latest" | jq -r .tag_name)
-          echo "Latest FIMS tag: $LATEST_TAG"
+          LATEST_TAG=$(curl --silent "https://api.github.com/repos/NOAA-FIMS/FIMS/releases/latest" | jq -r .tag_name | tr -d ' ')
           echo "fims_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
 
-      - name: Update version in index.qmd
-        if: steps.heading_check.outputs.found_new_heading == 'true'
+      - name: Should archive new release
+        id: should_archive
         run: |
-          VERSION=$(echo "${{ steps.get_fims_release.outputs.fims_tag }}" | sed 's/^v//')
+          if [ "${{ steps.changelog_version.outputs.version_heading }}" != "${{ steps.fims_release.outputs.fims_tag }}" ]; then
+            echo "should_archive=true" >> $GITHUB_OUTPUT
+          else
+            echo "should_archive=false" >> $GITHUB_OUTPUT
+          fi
+
+      # Use this conditional for all release/archive steps
+      - name: Update version in index.qmd
+        if: steps.should_archive.outputs.should_archive == 'true'
+        run: |
+          VERSION=$(echo "${{ steps.changelog_version.outputs.version_heading }}" | sed 's/^v//')
           sed -i -E "s/Version [0-9]+\.[0-9]+\.[0-9]+/Version $VERSION/" index.qmd
           cat index.qmd
           
