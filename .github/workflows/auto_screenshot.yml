@@ -50,14 +50,14 @@ jobs:
 
       - name: Convert PNG to base64
         if: env.ADDED_FILES != ''
+        id: encode
         run: |
-          base64 screenshot.png > screenshot.b64
-
-      - name: Prepare HTML body with base64 image
-        if: env.ADDED_FILES != ''
-        run: |
-          IMG_DATA=$(cat screenshot.b64)
+          IMG_DATA=$(base64 -w 0 screenshot.png)
           echo "<p>Screenshot:</p><img src=\"data:image/png;base64,$IMG_DATA\" />" > email_body.html
+          # Set output variable
+          echo "body<<EOF" >> $GITHUB_OUTPUT
+          cat email_body.html >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Send email
         if: env.ADDED_FILES != ''
@@ -71,5 +71,5 @@ jobs:
           to: elizabeth.gugliotti@noaa.gov
           from: FIMS Weekly GitHub
           content_type: text/html
-          body: ${{ steps.prepare_html.outputs.body }}
+          body: ${{ steps.encode.outputs.body }}
           attachments: screenshot.png
