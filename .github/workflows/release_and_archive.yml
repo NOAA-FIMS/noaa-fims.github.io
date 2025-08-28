@@ -99,9 +99,9 @@ jobs:
         if: steps.should_archive.outputs.should_archive == 'true'
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ steps.get_fims_release.outputs.fims_tag }}
-          name: Release ${{ steps.get_fims_release.outputs.fims_tag }}
+          tag_name: ${{ steps.changelog_version.outputs.version_heading }}
+          name: Release ${{ steps.changelog_version.outputs.version_heading }}
           body: |
-            Website release synced with FIMS ${{ steps.get_fims_release.outputs.fims_tag }}.
+            Website release synced with FIMS ${{ steps.changelog_version.outputs.version_heading }}.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
