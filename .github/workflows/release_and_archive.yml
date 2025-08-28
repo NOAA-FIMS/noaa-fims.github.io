@@ -34,13 +34,13 @@ jobs:
       - name: Get latest FIMS release tag
         id: fims_release
         run: |
-          LATEST_TAG=$(curl --silent "https://api.github.com/repos/NOAA-FIMS/FIMS/releases/latest" | jq -r .tag_name | tr -d ' ')
-          echo "fims_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+          LATEST_TAG=$(curl --silent "https://api.github.com/repos/NOAA-FIMS/noaa-fims.github.io/releases/latest" | jq -r .tag_name | tr -d ' ')
+          echo "fims_website_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
 
       - name: Should archive new release
         id: should_archive
         run: |
-          if [ "${{ steps.changelog_version.outputs.version_heading }}" != "${{ steps.fims_release.outputs.fims_tag }}" ]; then
+          if [ "${{ steps.changelog_version.outputs.version_heading }}" != "${{ steps.fims_release.outputs.fims_website_tag }}" ]; then
             echo "should_archive=true" >> $GITHUB_OUTPUT
           else
             echo "should_archive=false" >> $GITHUB_OUTPUT
