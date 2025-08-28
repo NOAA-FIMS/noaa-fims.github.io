@@ -28,7 +28,7 @@ jobs:
       - name: Get latest version from changelog
         id: changelog_version
         run: |
-          VERSION_HEADING=$(grep -m1 '^## v[0-9]\+\.[0-9]\+\.[0-9]\+' changelog/FIMS_CHANGELOG.qmd | sed 's/^## //' | tr -d ' ')
+          VERSION_HEADING=$(grep -m1 '^## v' changelog/FIMS_CHANGELOG.qmd | sed -E 's/^## (v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?).*/\1/')
           echo "version_heading=$VERSION_HEADING" >> $GITHUB_OUTPUT
 
       - name: Get latest FIMS release tag

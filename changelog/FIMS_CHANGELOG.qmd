@@ -2,10 +2,10 @@
 title: FIMS Change Log
 ---
 
-<!-- ## v0.6.3 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.3))
+## v0.6.3 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.3))
 - Fix bugs in fims_math.hpp by @Andrea-Havron-NOAA in [#946](https://github.com/NOAA-FIMS/FIMS/pull/946)
 
---- -->
+---
 
 ## v0.6.2 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.6.2))
 - Fix TMBad windows make file by @Andrea-Havron-NOAA in [#935](https://github.com/NOAA-FIMS/FIMS/pull/935)
