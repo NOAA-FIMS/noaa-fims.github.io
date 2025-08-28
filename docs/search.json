@@ -262,14 +262,21 @@
     "href": "changelog/FIMS_CHANGELOG.html",
     "title": "FIMS Change Log",
     "section": "",
-    "text": "Fix TMBad windows make file by @Andrea-Havron-NOAA in #935\nFix bug with uninitialized unfished_biomass by @Andrea-Havron-NOAA in #935\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.6.1…v0.6.2"
+    "text": "Fix bugs in fims_math.hpp by @Andrea-Havron-NOAA in #946"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.6.3-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.6.3-release-notes",
+    "title": "FIMS Change Log",
+    "section": "",
+    "text": "Fix bugs in fims_math.hpp by @Andrea-Havron-NOAA in #946"
   },
   {
     "objectID": "changelog/FIMS_CHANGELOG.html#v0.6.2-release-notes",
     "href": "changelog/FIMS_CHANGELOG.html#v0.6.2-release-notes",
     "title": "FIMS Change Log",
-    "section": "",
-    "text": "Fix TMBad windows make file by @Andrea-Havron-NOAA in #935\nFix bug with uninitialized unfished_biomass by @Andrea-Havron-NOAA in #935\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.6.1…v0.6.2"
+    "section": "v0.6.2 (release notes)",
+    "text": "v0.6.2 (release notes)\n\nFix TMBad windows make file by @Andrea-Havron-NOAA in #935\nFix bug with uninitialized unfished_biomass by @Andrea-Havron-NOAA in #935\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.6.1…v0.6.2"
   },
   {
     "objectID": "changelog/FIMS_CHANGELOG.html#v0.6.1-release-notes",
