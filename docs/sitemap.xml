@@ -2,70 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://noaa-fims.github.io/sites/sites_index.html</loc>
-    <lastmod>2025-08-27T16:03:52.136Z</lastmod>
+    <lastmod>2025-08-28T14:23:29.889Z</lastmod>
   </url>
   <url>
     <loc>https://noaa-fims.github.io/fims-weekly/index.html</loc>
-    <lastmod>2025-08-27T16:03:52.133Z</lastmod>
+    <lastmod>2025-08-28T14:23:29.887Z</lastmod>
   </url>
   <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/08.28.2025.html</loc>
-    <lastmod>2025-08-27T16:03:52.132Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/08.25.2025.html</loc>
-    <lastmod>2025-08-27T16:03:52.132Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/08.11.2025.html</loc>
-    <lastmod>2025-08-27T16:03:52.132Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/07.28.2025.html</loc>
-    <lastmod>2025-08-27T16:03:52.132Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html</loc>
-    <lastmod>2025-08-27T16:03:52.121Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/about/faq.html</loc>
-    <lastmod>2025-08-27T16:03:52.120Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/about/calendar.html</loc>
-    <lastmod>2025-08-27T16:03:52.120Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/about/contributors.html</loc>
-    <lastmod>2025-08-27T16:03:52.120Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/about/index.html</loc>
-    <lastmod>2025-08-27T16:03:52.120Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/07.21.2025.html</loc>
-    <lastmod>2025-08-27T16:03:52.131Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/08.04.2025.html</loc>
-    <lastmod>2025-08-27T16:03:52.132Z</lastmod>
+    <loc>https://noaa-fims.github.io/fims-weekly/08.27.2025.html</loc>
+    <lastmod>2025-08-28T14:23:29.885Z</lastmod>
   </url>
   <url>
     <loc>https://noaa-fims.github.io/fims-weekly/08.18.2025.html</loc>
-    <lastmod>2025-08-27T16:03:52.132Z</lastmod>
+    <lastmod>2025-08-28T14:23:29.885Z</lastmod>
   </url>
   <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/08.26.2025.html</loc>
-    <lastmod>2025-08-27T16:03:52.132Z</lastmod>
+    <loc>https://noaa-fims.github.io/fims-weekly/08.04.2025.html</loc>
+    <lastmod>2025-08-28T14:23:29.885Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/07.21.2025.html</loc>
+    <lastmod>2025-08-28T14:23:29.885Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/about/index.html</loc>
+    <lastmod>2025-08-28T14:23:29.873Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/about/contributors.html</loc>
+    <lastmod>2025-08-28T14:23:29.873Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/about/calendar.html</loc>
+    <lastmod>2025-08-28T14:23:29.873Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/about/faq.html</loc>
+    <lastmod>2025-08-28T14:23:29.873Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html</loc>
+    <lastmod>2025-08-28T14:23:29.874Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/07.28.2025.html</loc>
+    <lastmod>2025-08-28T14:23:29.885Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/08.11.2025.html</loc>
+    <lastmod>2025-08-28T14:23:29.885Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/08.25.2025.html</loc>
+    <lastmod>2025-08-28T14:23:29.885Z</lastmod>
   </url>
   <url>
     <loc>https://noaa-fims.github.io/fims-weekly/fims-weekly-template.html</loc>
-    <lastmod>2025-08-27T16:03:52.132Z</lastmod>
+    <lastmod>2025-08-28T14:23:29.885Z</lastmod>
   </url>
   <url>
     <loc>https://noaa-fims.github.io/index.html</loc>
-    <lastmod>2025-08-27T16:03:52.135Z</lastmod>
+    <lastmod>2025-08-28T14:23:29.889Z</lastmod>
   </url>
 </urlset>
