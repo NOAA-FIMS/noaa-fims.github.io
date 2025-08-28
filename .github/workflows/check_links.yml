@@ -27,7 +27,7 @@ jobs:
       # Step 3: Run the broken link checker
       - name: Check for broken links
         id: lychee
-        uses: lycheeverse/lychee-action@v1.9.3
+        uses: lycheeverse/lychee-action@v2.0.2
         with:
           args: .
 
