@@ -55,28 +55,28 @@ jobs:
           cat index.qmd
           
       - name: Archive current site to archives folder
-        if: steps.heading_check.outputs.found_new_heading == 'true'
+        if: steps.should_archive.outputs.should_archive == 'true'
         run: |
-          ARCHIVE_DIR="_archives/${{ steps.get_fims_release.outputs.fims_tag }}"
+          ARCHIVE_DIR="_archives/${{ steps.get_fims_release.outputs.fims_website_tag }}"
           mkdir -p "$ARCHIVE_DIR"
           cp -rv docs/. "$ARCHIVE_DIR"/
           ls archives
           
       - name: Commit & Push changes
-        if: steps.heading_check.outputs.found_new_heading == 'true'
+        if: steps.should_archive.outputs.should_archive == 'true'
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
 
       - name: Render Quarto Project
-        if: steps.heading_check.outputs.found_new_heading == 'true'
+        if: steps.should_archive.outputs.should_archive == 'true'
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html
 
       - name: Upload artifact
-        if: steps.heading_check.outputs.found_new_heading == 'true'
+        if: steps.should_archive.outputs.should_archive == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'docs/'
@@ -84,7 +84,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and push rendered site to main
-        if: steps.heading_check.outputs.found_new_heading == 'true'
+        if: steps.should_archive.outputs.should_archive == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -96,7 +96,7 @@ jobs:
 
       # Create a release with the same tag as the FIMS repo
       - name: Create Release
-        if: steps.heading_check.outputs.found_new_heading == 'true'
+        if: steps.should_archive.outputs.should_archive == 'true'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.get_fims_release.outputs.fims_tag }}
