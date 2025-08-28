@@ -60,7 +60,7 @@ jobs:
           ARCHIVE_DIR="_archives/${{ steps.get_fims_release.outputs.fims_website_tag }}"
           mkdir -p "$ARCHIVE_DIR"
           cp -rv docs/. "$ARCHIVE_DIR"/
-          ls archives
+          ls _archives
           
       - name: Commit & Push changes
         if: steps.should_archive.outputs.should_archive == 'true'
