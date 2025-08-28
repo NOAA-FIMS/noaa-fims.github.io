@@ -48,6 +48,15 @@ jobs:
             fi
           done < added_qmd.txt
 
+      - name: Convert PNG to base64
+        run: |
+          base64 screenshot.png > screenshot.b64
+
+      - name: Prepare HTML body with base64 image
+        run: |
+          IMG_DATA=$(cat screenshot.b64)
+          echo "<p>Screenshot:</p><img src=\"data:image/png;base64,$IMG_DATA\" />" > email_body.html
+
       - name: Send email
         if: env.ADDED_FILES != ''
         uses: dawidd6/action-send-mail@v3
@@ -60,7 +69,5 @@ jobs:
           to: elizabeth.gugliotti@noaa.gov
           from: FIMS Weekly GitHub
           content_type: text/html
-          body: |
-            <p>Here is a screenshot of this week's FIMS weekly:</p>
-            <img src="cid:screenshot.png" alt="FIMS Weekly Screenshot" />
+          body: ${{ steps.prepare_html.outputs.body }}
           attachments: screenshot.png
