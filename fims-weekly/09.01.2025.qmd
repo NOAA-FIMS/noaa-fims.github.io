@@ -37,6 +37,7 @@ Online: [Google meet](http://meet.google.com/kbz-ccew-iij)
 :::
 
 ::: {#photo-code}
+
 ```
 {
                     "name": "age_to_length_conversion",
@@ -56,7 +57,8 @@ Online: [Google meet](http://meet.google.com/kbz-ccew-iij)
                         2.29736e-06,
                         0.00274388,
                         0.163077,
-```    
+```   
+
 :::
 
 

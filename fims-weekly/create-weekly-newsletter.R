@@ -93,7 +93,10 @@ upcoming-events:
   seaside-chat-date: "Thursday, "
   seaside-chat-name: "FIMS Seaside Chat"
 # If you have any additional events, uncomment and fill out the additional events section below.
-# If there is no actual photo you can delete include-photo, path, and alt-text and the template will handle it for you. If there is code instead, please uncomment the section below named photo-code.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
 photo:
   text: ""
   include-photo: true
