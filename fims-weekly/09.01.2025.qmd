@@ -15,6 +15,8 @@ upcoming-events:
   seaside-chat: true
   seaside-chat-date: "Thursday, Projections"
   seaside-chat-name: "FIMS Seaside Chat"
+photo:
+  text: "Below is a glimpse of what the new json output looks like, where dimensions are provided both in name and in length. Please contact Matthew if you have feedback on this structure."
 ---
   
 {{< include "fims-weekly-template.qmd" >}}
@@ -35,9 +37,6 @@ Online: [Google meet](http://meet.google.com/kbz-ccew-iij)
 :::
 
 ::: {#photo-code}
-
-Below is a glimpse of what the new json output looks like, where dimensions are provided both in name and in length. Please contact Matthew if you have feedback on this structure.
-
 ```
 {
                     "name": "age_to_length_conversion",
@@ -57,9 +56,7 @@ Below is a glimpse of what the new json output looks like, where dimensions are 
                         2.29736e-06,
                         0.00274388,
                         0.163077,
-```
-
-        
+```    
 :::
 
 
