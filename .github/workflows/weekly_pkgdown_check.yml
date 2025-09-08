@@ -104,3 +104,4 @@ jobs:
             :robot: This automated PR updates `FIMS_CHANGELOG.qmd` with the latest releases from [NOAA-FIMS/FIMS](https://github.com/NOAA-FIMS/FIMS). 
           labels: |
             changelog
+          reviewers: e-perl-NOAA
