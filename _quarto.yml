@@ -13,6 +13,7 @@ project:
     - assets/
   post-render:
     - "cp -r _static/. docs/"
+    - "cp -r doxygen docs/"
 
 website:
   favicon: images/FIMS_hexlogo.png
