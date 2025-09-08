@@ -27,7 +27,7 @@ photo:
 {{< include "fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
-- Please welcome :wave: Adrianne Wilson :wave: to the FIMS Team!
+- Please welcome 👋 Adrianne Wilson 👋 to the FIMS Team!
 - 57 calendar days until the FIMS CIE Review, we now have a chair.
 ::: 
     
