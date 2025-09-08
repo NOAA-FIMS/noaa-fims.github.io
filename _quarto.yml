@@ -44,7 +44,11 @@ website:
       - text: fims weekly
         href: fims-weekly/index.qmd
       - text: sites
-        href: sites/sites_index.qmd
+        menu:
+          - text: sites
+            href: sites/sites_index.qmd
+          - text: doxygen
+            href: doxygen/index.html
       - text: changelog
         href: changelog/FIMS_CHANGELOG.qmd
       - icon: github
