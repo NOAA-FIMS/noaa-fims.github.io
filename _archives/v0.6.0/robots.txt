@@ -1,1 +1,0 @@
-Sitemap: https://e-perl-noaa.github.io/fims-website-test/sitemap.xml
