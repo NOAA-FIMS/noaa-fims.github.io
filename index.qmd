@@ -47,7 +47,6 @@ listing:
           title: 🔍 FIMS case studies
           description: >
             Test cases, based on regional assessments, to illustrate use of FIMS.
-          categories: [WHAM, SS3, ASAP, TMB]
         - path: https://noaa-fims.github.io/FIMS/
           title: FIMS Packagedown
           description: >
@@ -55,7 +54,7 @@ listing:
         - path: doxygen/index.html
           title: FIMS Doxygen
           description: >
-            Doxygen documentation for FIMS c++ functions.
+            Doxygen documentation for FIMS C++ functions.
 header-includes: >
   <link rel="stylesheet" href="assets/index.css">
 resources:

@@ -9,16 +9,16 @@ listing:
       description: >
         Test cases, based on regional assessments, to illustrate use of FIMS.
       categories: [WHAM, SS3, ASAP, TMB]
-    - path: https://noaa-fims.github.io/collaborative_workflow/
-      title: 📔 Developer Handbook
+    - path: https://noaa-fims.github.io/FIMS/
+      title: FIMS Packagedown
       description: >
-        The FIMS developer handbook describes the workflow for developers and contributors.
-      categories: [developers, contributing]
-    - path: https://noaa-fims.github.io/FIMS_training/
-      title: 💻 Trainings
+        Packagedown site for FIMS package.
+      categories: [R]
+    - path: doxygen/index.html
+      title: FIMS Doxygen
       description: >
-        FIMS training materials including C++, TMB, etc.
-      categories: [training, C++, TMB]
+        Doxygen documentation for FIMS C++ functions.
+      categories: [C++]
   type: default
   categories: true
   sort-ui: true
