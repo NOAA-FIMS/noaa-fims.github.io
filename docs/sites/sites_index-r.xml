@@ -11,6 +11,15 @@
 <description>Websites associated with FIMS.
 </description>
 <generator>quarto-1.7.34</generator>
-<lastBuildDate>Tue, 09 Sep 2025 16:21:45 GMT</lastBuildDate>
+<lastBuildDate>Wed, 10 Sep 2025 14:30:15 GMT</lastBuildDate>
+<item>
+  <title>FIMS Packagedown</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>Packagedown site for FIMS package.
+</description>
+  <category>R</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Wed, 10 Sep 2025 14:30:15 GMT</pubDate>
+</item>
 </channel>
 </rss>

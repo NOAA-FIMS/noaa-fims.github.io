@@ -11,7 +11,7 @@
 <description>Websites associated with FIMS.
 </description>
 <generator>quarto-1.7.34</generator>
-<lastBuildDate>Tue, 09 Sep 2025 16:21:45 GMT</lastBuildDate>
+<lastBuildDate>Wed, 10 Sep 2025 14:30:15 GMT</lastBuildDate>
 <item>
   <title>🔍 FIMS case studies</title>
   <link>https://noaa-fims.github.io/</link>
@@ -22,28 +22,25 @@
   <category>ASAP</category>
   <category>TMB</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 09 Sep 2025 16:21:45 GMT</pubDate>
+  <pubDate>Wed, 10 Sep 2025 14:30:15 GMT</pubDate>
 </item>
 <item>
-  <title>📔 Developer Handbook</title>
+  <title>FIMS Packagedown</title>
   <link>https://noaa-fims.github.io/</link>
-  <description>The FIMS developer handbook describes the workflow for developers and contributors.
+  <description>Packagedown site for FIMS package.
 </description>
-  <category>developers</category>
-  <category>contributing</category>
+  <category>R</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 09 Sep 2025 16:21:45 GMT</pubDate>
+  <pubDate>Wed, 10 Sep 2025 14:30:15 GMT</pubDate>
 </item>
 <item>
-  <title>💻 Trainings</title>
+  <title>FIMS Doxygen</title>
   <link>https://noaa-fims.github.io/</link>
-  <description>FIMS training materials including C++, TMB, etc.
+  <description>Doxygen documentation for FIMS C++ functions.
 </description>
-  <category>training</category>
   <category>C++</category>
-  <category>TMB</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 09 Sep 2025 16:21:45 GMT</pubDate>
+  <pubDate>Wed, 10 Sep 2025 14:30:15 GMT</pubDate>
 </item>
 </channel>
 </rss>
