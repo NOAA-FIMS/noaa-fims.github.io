@@ -85,14 +85,19 @@ jobs:
       - name: Check if pkgdown sites need updating and update
         run: Rscript .github/change_log.R
           
+      - name: Normalize changelog file
+        run: |
+          dos2unix changelog/FIMS_CHANGELOG.qmd
+          sed -i 's/[ \t]*$//' changelog/FIMS_CHANGELOG.qmd
+
       - name: Check for changes to FIMS_CHANGELOG.qmd
         id: git-check
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git add changelog/FIMS_CHANGELOG.qmd
-          git diff --cached --quiet || echo "changed=true" >> $GITHUB_OUTPUT
-  
+          git diff --cached --ignore-space-at-eol --quiet || echo "changed=true" >> $GITHUB_OUTPUT
+      
       - name: Create Pull Request for updated changelog
         if: steps.git-check.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
