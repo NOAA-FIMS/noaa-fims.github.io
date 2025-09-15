@@ -7,7 +7,7 @@ categories:
 three-big-things:
   bt1: "After two weeks of not merging in any PRs, I switched it up and merged in Bai's first so now we just have one outstanding PR left, which we have made a lot of progress on but still need some more progress to get it into dev. Mainly, matching the TMB estimates of uncertainty with the estimates tibble."
   bt2: "This week is going to be documentation week. Please see the FIMS calendar for co-working sessions to help out with converting some Google Docs to markdown files."
-  bt3: "There are lot of issues marked under the CIE Review Milestone. Please feel free to sign up for any that you can accomplish by September 30, 2025."
+  bt3: "There are lots of issues marked under the CIE Review Milestone. Please feel free to sign up for any that you can accomplish by September 30, 2025."
 # Announcements go below because of formatting that quarto doesnt transfer over from the yml
 # If there is no code club or seaside chat, just delete those lines and the template will handle it for you
 upcoming-events:
