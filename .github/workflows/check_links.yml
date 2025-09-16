@@ -27,27 +27,8 @@ jobs:
       # Step 3: Run the broken link checker
       - name: Check for broken links
         id: lychee
-        uses: lycheeverse/lychee-action@v2.0.2
+        uses: lycheeverse/lychee-action@v2
         with:
           args: .
-
-      # Step 4: Add a summary report to the workflow run
-      # This step makes the output of the link checker easy to read
-      - name: Fail if there are broken links that produce 404 errors
-        run: |
-          echo "${{ steps.lychee.outputs.summary }}" > lychee-summary.txt
-          echo "## 🚨 Broken Links: HTTP 404 Only" >> $GITHUB_STEP_SUMMARY
-          if grep -q '404' lychee-summary.txt; then
-            grep '404' lychee-summary.txt >> $GITHUB_STEP_SUMMARY
-            exit 1
-          else
-            echo "No 404s found." >> $GITHUB_STEP_SUMMARY
-          fi
+          fail: true
       
-      # # Step 5: Create an issue from the output of the 
-      # - name: Create issue from link output
-      #   if: steps.lychee.outputs.exit_code != 0
-      #   uses: peter-evans/create-issue-from-file@v4
-      #   with:
-      #     title: Link Checker Report
-      #     content-filepath: ./lychee/out.md
