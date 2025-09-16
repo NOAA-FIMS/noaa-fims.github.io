@@ -68,7 +68,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Github Actions job result
-          to: kelli.johnson@noaa.gov
+          to: elizabeth.gugliotti@noaa.gov,kelli.johnson@noaa.gov
           from: FIMS Weekly GitHub
           content_type: text/html
           body: ${{ steps.encode.outputs.body }}
