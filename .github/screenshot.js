@@ -2,6 +2,8 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 
 const pagePath = process.argv[2];
+const outPath = process.argv[3] || 'screenshot.png';
+
 if (!pagePath) {
   console.error('No HTML file provided.');
   process.exit(1);
@@ -18,7 +20,7 @@ const url = `${baseUrl}${fileName}`;
   });
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: 'networkidle2' });
-  await page.screenshot({ path: 'screenshot.png', fullPage: true });
+  await page.screenshot({ path: outPath, fullPage: true });
   await browser.close();
-  console.log(`Screenshot saved for ${url}`);
+  console.log(`Screenshot saved for ${url} as ${outPath}`);
 })();
