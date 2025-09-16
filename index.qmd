@@ -99,16 +99,6 @@ resources:
 
       <a
         class="link-primary"
-        href="https://noaa-fims.github.io/collaborative_workflow/"
-        title="developer-handbook"
-        target="_blank"
-        rel="noopener"
-      >
-        <i class="fa fa-book fa-lg fa-fw"></i>
-      </a>
-
-      <a
-        class="link-primary"
         href="https://nmfs-ost.github.io/noaa-fit/"
         title="FIT"
         target="_blank"
