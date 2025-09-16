@@ -36,13 +36,10 @@ jobs:
         if: env.ADDED_FILES != ''
         run: |
           while read qmd; do
-            # Get base filename (strip directory and extension)
             base=$(basename "$qmd" .qmd)
             html="docs/fims-weekly/${base}.html"
             if [ -f "$html" ]; then
-              # Run your screenshot script (assuming it outputs screenshot.png)
-              node .github/screenshot.js "$html"
-              # (Optional: upload or email the screenshot)
+              node .github/screenshot.js "$html" "${base}.png"
             else
               echo "HTML file $html not found for $qmd"
             fi
