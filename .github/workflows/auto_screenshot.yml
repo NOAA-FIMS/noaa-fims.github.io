@@ -64,4 +64,5 @@ jobs:
           body: |
             <p>Here is a screenshot of this week's FIMS Weekly page:</p>
             <p><img src="cid:screenshot.png" alt="Weekly Page Screenshot" /></p>
-          attachments: screenshot.png
+          attachments: |
+            screenshot.png;content-id:screenshot.png;
