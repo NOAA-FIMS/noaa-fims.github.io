@@ -1,7 +1,5 @@
 ---
 title: FIMS Team
-resources: 
-  - FIMS_TOR_update_Aug2021.pdf
 ---
 
 FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.

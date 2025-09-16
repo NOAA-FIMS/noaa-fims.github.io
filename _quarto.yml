@@ -11,6 +11,7 @@ project:
   resources:
     - images/
     - assets/
+    - about/FIMS_TOR_update_Aug2021.pdf
   post-render:
     - "cp -r _static/. docs/"
     - "cp -r doxygen docs/"
