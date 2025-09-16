@@ -11,7 +11,7 @@
 <description>Websites associated with FIMS.
 </description>
 <generator>quarto-1.8.24</generator>
-<lastBuildDate>Tue, 16 Sep 2025 16:52:19 GMT</lastBuildDate>
+<lastBuildDate>Tue, 16 Sep 2025 17:00:38 GMT</lastBuildDate>
 <item>
   <title>🔍 FIMS case studies</title>
   <link>https://noaa-fims.github.io/</link>
@@ -22,7 +22,7 @@
   <category>ASAP</category>
   <category>TMB</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 16 Sep 2025 16:52:19 GMT</pubDate>
+  <pubDate>Tue, 16 Sep 2025 17:00:38 GMT</pubDate>
 </item>
 <item>
   <title>FIMS Packagedown</title>
@@ -31,7 +31,7 @@
 </description>
   <category>R</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 16 Sep 2025 16:52:19 GMT</pubDate>
+  <pubDate>Tue, 16 Sep 2025 17:00:38 GMT</pubDate>
 </item>
 <item>
   <title>FIMS Doxygen</title>
@@ -40,7 +40,7 @@
 </description>
   <category>C++</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 16 Sep 2025 16:52:19 GMT</pubDate>
+  <pubDate>Tue, 16 Sep 2025 17:00:38 GMT</pubDate>
 </item>
 </channel>
 </rss>
