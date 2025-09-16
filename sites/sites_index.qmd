@@ -14,7 +14,7 @@ listing:
       description: >
         Packagedown site for FIMS package.
       categories: [R]
-    - path: doxygen/index.html
+    - path: ../doxygen/index.html
       title: FIMS Doxygen
       description: >
         Doxygen documentation for FIMS C++ functions.
