@@ -21,8 +21,6 @@ website:
   title: "FIMS"
   site-url: https://noaa-fims.github.io
   repo-url: https://github.com/noaa-fims.github.io
-  repo-actions:
-    - source
   open-graph: true
   navbar:
     title: FIMS
