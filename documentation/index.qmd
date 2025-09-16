@@ -1,0 +1,24 @@
+---
+title: FIMS documentation
+image: ../images/FIMS_logo3.png
+about:
+  template: trestles
+  id: hero-heading
+include-after-body: ../assets/open-in-new-tab.html
+description: >
+  Documentation of the Fisheries Integrated Modeling System
+listing:
+  contents:
+    - "*.md"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [date, title, categories]
+  feed:
+    categories: [R]
+page-layout: full
+title-block-banner: false
+comments: false
+---
