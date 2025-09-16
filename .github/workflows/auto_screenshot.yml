@@ -27,36 +27,27 @@ jobs:
       - name: Find newly added weekly HTML files
         id: added_html
         run: |
-          ADDED_FILES=$(git diff --name-status HEAD~2 HEAD~1 | awk '/^A/ && $2 ~ /^fims-weekly\/.*\.qmd$/ {print $2}')
+          ADDED_FILES=$(git diff --name-status HEAD~1 HEAD | awk '/^A/ && $2 ~ /^docs\/fims-weekly\/.*\.html$/ {print $2}')
           echo "ADDED_FILES=$ADDED_FILES" >> $GITHUB_ENV
-          echo "$ADDED_FILES" > added_qmd.txt
+          echo "$ADDED_FILES" > added_html.txt
           echo "$ADDED_FILES"
 
       - name: Screenshot new weekly page
         if: env.ADDED_FILES != ''
         run: |
-          while read qmd; do
-            base=$(basename "$qmd" .qmd)
-            html="docs/fims-weekly/${base}.html"
-            if [ -f "$html" ]; then
-              # Run your screenshot script (assuming it outputs screenshot.png)
-              node .github/screenshot.js "$html"
-              # (Optional: upload or email the screenshot)
+          while read html_file; do
+            if [ -f "$html_file" ]; then
+              node .github/screenshot.js "$html_file"
             else
-              echo "HTML file $html not found for $qmd"
+              echo "HTML file $html_file not found."
             fi
-          done < added_qmd.txt
+          done < added_html.txt
 
-      - name: Convert PNG to base64
-        if: env.ADDED_FILES != ''
-        id: encode
+      - name: Check that png was created
+        if: success()
         run: |
-          IMG_DATA=$(base64 -w 0 screenshot.png)
-          echo "<p>Screenshot:</p><img src=\"data:image/png;base64,$IMG_DATA\" />" > email_body.html
-          # Set output variable
-          echo "body<<EOF" >> $GITHUB_OUTPUT
-          cat email_body.html >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          echo "Listing only the generated .png files..."
+          ls -l *.png
 
       - name: Send email
         if: env.ADDED_FILES != ''
@@ -70,5 +61,7 @@ jobs:
           to: elizabeth.gugliotti@noaa.gov
           from: FIMS Weekly GitHub
           content_type: text/html
-          body: ${{ steps.encode.outputs.body }}
+          body:
+            <p>Here is a screenshot of this week's FIMS Weekly page:</p>
+            <p><img src="cid:screenshot.png" alt="Weekly Page Screenshot" /></p>
           attachments: screenshot.png
