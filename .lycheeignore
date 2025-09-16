@@ -1,0 +1,18 @@
+# Ignore these docs in link check because they have permissions
+# Ignore fims plan
+https://docs.google.com/spreadsheets/d/1g60HmAw8w_CIWBbQwTbq-oWs1ChdTTqvCREVQ8e66sE/edit?gid=0#gid=0
+
+# Ignore fims calendar link
+https://calendar.google.com/calendar/u/0/embed?src=c_916b6948ef2ee8b7d49c28661efc0798303c2742be399c9290fa02d9320c769e@group.calendar.google.com&ctz=America/New_York%5D(https://calendar.google.com/calendar/embed?src%3Dc_916b6948ef2ee8b7d49c28661efc0798303c2742be399c9290fa02d9320c769e@group.calendar.google.com&ctz=America/New_York)
+
+# Ignore fims implementation team notes
+https://docs.google.com/document/d/10nSfbPaBF2p7wL2cr5lW7PGZxlZI4tbPiwQRC8JKaXk/edit?tab=t.0
+
+# Ignore fims draft paper
+https://docs.google.com/document/d/1UDQHA023U1_X2_2k2_V1QNGFhmhrx8c3omNDhSaVvdw/edit?tab=t.0
+
+# Ignore GitHub project board
+https://github.com/orgs/NOAA-FIMS/projects/21
+
+# Ignore ices journal publication
+https://academic.oup.com/icesjms/article/72/5/1245/758333
