@@ -20,7 +20,7 @@ upcoming-events:
 # If you have any additional events, uncomment and fill out the additional events section below.
 # If there is no actual photo you can delete include-photo, path, and alt-text and the template will handle it for you. If there is code instead, please uncomment the section below named photo-code.
 photo:
-  text: "Thanks to my GitHub Project Board mentors, Andrea and Kathryn, I have revitalized the [Issue Triage Board](https://github.com/orgs/NOAA-FIMS/projects/21/views/1) and I will be working on getting the, currently, 104 un-triaged issues assigned to someone or placed in the parking lot. It took me a while but I think Project Boards might be growing on me."
+  text: "Thanks to my GitHub Project Board mentors, Andrea and Kathryn, I have revitalized the [Issue Triage Board](https://github.com/orgs/NOAA-FIMS/projects/21) and I will be working on getting the, currently, 104 un-triaged issues assigned to someone or placed in the parking lot. It took me a while but I think Project Boards might be growing on me."
   include-photo: true
   path: "images/issue_triage_board.png"
   alt-text: "A screen shot of No Status and In Progress issues from https://github.com/orgs/NOAA-FIMS/projects/21/views/1."
