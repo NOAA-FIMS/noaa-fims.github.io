@@ -2,74 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://noaa-fims.github.io/sites/sites_index.html</loc>
-    <lastmod>2025-09-16T19:34:33.704Z</lastmod>
+    <lastmod>2025-09-16T20:25:27.235Z</lastmod>
   </url>
   <url>
     <loc>https://noaa-fims.github.io/fims-weekly/index.html</loc>
-    <lastmod>2025-09-16T19:34:33.701Z</lastmod>
+    <lastmod>2025-09-16T20:25:27.233Z</lastmod>
   </url>
   <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/09.15.2025.html</loc>
-    <lastmod>2025-09-16T19:34:33.700Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/09.01.2025.html</loc>
-    <lastmod>2025-09-16T19:34:33.699Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/08.18.2025.html</loc>
-    <lastmod>2025-09-16T19:34:33.699Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/08.04.2025.html</loc>
-    <lastmod>2025-09-16T19:34:33.699Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/07.21.2025.html</loc>
-    <lastmod>2025-09-16T19:34:33.699Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/about/index.html</loc>
-    <lastmod>2025-09-16T19:34:33.595Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/about/contributors.html</loc>
-    <lastmod>2025-09-16T19:34:33.594Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/about/calendar.html</loc>
-    <lastmod>2025-09-16T19:34:33.594Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/about/faq.html</loc>
-    <lastmod>2025-09-16T19:34:33.595Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html</loc>
-    <lastmod>2025-09-16T19:34:33.595Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/07.28.2025.html</loc>
-    <lastmod>2025-09-16T19:34:33.699Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/08.11.2025.html</loc>
-    <lastmod>2025-09-16T19:34:33.699Z</lastmod>
-  </url>
-  <url>
-    <loc>https://noaa-fims.github.io/fims-weekly/08.25.2025.html</loc>
-    <lastmod>2025-09-16T19:34:33.699Z</lastmod>
+    <loc>https://noaa-fims.github.io/fims-weekly/09.16.2025.html</loc>
+    <lastmod>2025-09-16T20:25:27.231Z</lastmod>
   </url>
   <url>
     <loc>https://noaa-fims.github.io/fims-weekly/09.08.2025.html</loc>
-    <lastmod>2025-09-16T19:34:33.699Z</lastmod>
+    <lastmod>2025-09-16T20:25:27.231Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/08.25.2025.html</loc>
+    <lastmod>2025-09-16T20:25:27.231Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/08.11.2025.html</loc>
+    <lastmod>2025-09-16T20:25:27.231Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/07.28.2025.html</loc>
+    <lastmod>2025-09-16T20:25:27.230Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html</loc>
+    <lastmod>2025-09-16T20:25:27.124Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/about/faq.html</loc>
+    <lastmod>2025-09-16T20:25:27.123Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/about/calendar.html</loc>
+    <lastmod>2025-09-16T20:25:27.123Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/about/contributors.html</loc>
+    <lastmod>2025-09-16T20:25:27.123Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/about/index.html</loc>
+    <lastmod>2025-09-16T20:25:27.123Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/07.21.2025.html</loc>
+    <lastmod>2025-09-16T20:25:27.230Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/08.04.2025.html</loc>
+    <lastmod>2025-09-16T20:25:27.231Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/08.18.2025.html</loc>
+    <lastmod>2025-09-16T20:25:27.231Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/09.01.2025.html</loc>
+    <lastmod>2025-09-16T20:25:27.231Z</lastmod>
+  </url>
+  <url>
+    <loc>https://noaa-fims.github.io/fims-weekly/09.15.2025.html</loc>
+    <lastmod>2025-09-16T20:25:27.231Z</lastmod>
   </url>
   <url>
     <loc>https://noaa-fims.github.io/fims-weekly/fims-weekly-template.html</loc>
-    <lastmod>2025-09-16T19:34:33.700Z</lastmod>
+    <lastmod>2025-09-16T20:25:27.231Z</lastmod>
   </url>
   <url>
     <loc>https://noaa-fims.github.io/index.html</loc>
-    <lastmod>2025-09-16T19:34:33.704Z</lastmod>
+    <lastmod>2025-09-16T20:25:27.235Z</lastmod>
   </url>
 </urlset>
