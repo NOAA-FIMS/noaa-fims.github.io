@@ -44,7 +44,7 @@ jobs:
           done < added_html.txt
 
       - name: Check that png was created
-        if: success()
+        if: env.ADDED_FILES != ''
         run: |
           echo "Listing only the generated .png files..."
           ls -l *.png
