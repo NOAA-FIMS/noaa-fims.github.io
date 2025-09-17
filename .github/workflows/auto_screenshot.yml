@@ -58,7 +58,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Github Actions job result
-          to: elizabeth.gugliotti@noaa.gov
+          to: elizabeth.gugliotti@noaa.gov,kelli.johnson@noaa.gov
           from: FIMS Weekly GitHub
           content_type: text/html
           body: Here is a screenshot of this week's FIMS Weekly page.
