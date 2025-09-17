@@ -61,8 +61,5 @@ jobs:
           to: elizabeth.gugliotti@noaa.gov
           from: FIMS Weekly GitHub
           content_type: text/html
-          body: |
-            <p>Here is a screenshot of this week's FIMS Weekly page:</p>
-            <p><img src="cid:screenshot" alt="Weekly Page Screenshot" /></p>
-          attachments: |
-            screenshot.png;content-id:<screenshot>;
+          body: Here is a screenshot of this week's FIMS Weekly page.
+          attachments: screenshot.png
