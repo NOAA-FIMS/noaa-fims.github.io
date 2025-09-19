@@ -13,54 +13,90 @@ SPMs combine all aspects of a population’s growth, recruitment, and mortality 
 
 # Equations 
 
-The goal is to estimate the unobserved quantity of the total population biomass for a given year. To do this, we rely on observed fishery catch data and indices of abundance, such as catch-per-unit-effort from a fishery or a relative index of abundance from a fishery-independent survey. There is a strong assumption that the indices of abundance provide a good idea of how the population responds to fishing pressure over time so the trend of the indices should represent the trend of the population’s biomass over time. While indices of abundance inform the trend of the population over time, catch data informs the scale of the population. In a surplus production model, the total population biomass in year *t* is calculated by:   
-B0 \= Binit                                                                  *t \= 0*  
-Bt+1 \= Bt \+ rBt(1-BtK)-Ct                                      *t \= 1…T*     
-where *t* \= year, *B* \= biomass, *Binit* \= initial biomass, *K* \= carrying capacity, *r* \= intrinsic growth rate of the population, and *C* \= catch. Biomass in year *t+1* is dependent on biomass in year *t*, the amount of production (recruitment, growth, and death) in year *t*, and catch in year *t*. If data is available from the assumed start of the fishery, *Binit* \= *K*, otherwise, initial biomass can be estimated based on initial depletion ():   
-Binit=K\* 
-
-To estimate the unobserved quantity of biomass, we can fit the model to the indices of abundance. Based on the assumptions of the model, biomass is related to the indices of abundance by a catchability, *q*, parameter:   
-It,f \= Ct,fEt,f \= qfBt  
-where It,f, is the predicted  index of abundance in year *t* for fleet *f*, and *qf* is the catchability coefficient (the amount of biomass or catch taken/one unit of effort) for fleet *f*. It is assumed that the index of abundance is a good representation of the population’s trend and response to fishing pressure over the timeseries. Therefore, the model tries to minimize the difference between the observed index values (It,f) and the predicted index values (It,f) by finding the values for Bt and qf that best fit the observed index values.   
-The production function (represented by rBt(1-BtK) in the biomass equation) can be parameterized in several ways. 
+The goal is to estimate the unobserved quantity of the total population biomass for a given year. To do this, we rely on observed fishery catch data and indices of abundance, such as catch-per-unit-effort from a fishery or a relative index of abundance from a fishery-independent survey. There is a strong assumption that the indices of abundance provide a good idea of how the population responds to fishing pressure over time so the trend of the indices should represent the trend of the population’s biomass over time. While indices of abundance inform the trend of the population over time, catch data informs the scale of the population. In a surplus production model, the total population biomass in year *t* is calculated by:
+$$
+\begin{align}   
+\nonumber B_{0} &= B_{init},\quad t = 0  \\
+\nonumber B_{t+1} &= B_{t} + rB_{t}(1-\frac{B_{t}}{K})-C_{t},\quad t = 1…T     
+\end{align}
+$$
+where $t$ \= year, $B$ \= biomass, $B_{init}$ \= initial biomass, $K$ \= carrying capacity, $r$ \= intrinsic growth rate of the population, and $C$ \= catch. Biomass in year $t+1$ is dependent on biomass in year $t$, the amount of production (recruitment, growth, and death) in year $t$, and catch in year $t$. If data is available from the assumed start of the fishery, $B_{init} = K$, otherwise, initial biomass can be estimated based on initial depletion ($\psi$): 
+$$  
+B_{init} = K\psi
+$$
+To estimate the unobserved quantity of biomass, we can fit the model to the indices of abundance. Based on the assumptions of the model, biomass is related to the indices of abundance by a catchability, $q$, parameter:   
+$$
+\hat{I}_{t,f} = \frac{C_{t,f}}{E_{t,f}} = q_{f}B_{t}  
+$$
+where $\hat{I}_{t,f}$, is the predicted index of abundance in year $t$ for fleet $f$, and $q_{f}$ is the catchability coefficient (the amount of biomass or catch taken/one unit of effort) for fleet $f$. It is assumed that the index of abundance is a good representation of the population’s trend and response to fishing pressure over the timeseries. Therefore, the model tries to minimize the difference between the observed index values ($I_{t,f}$) and the predicted index values ($\hat{I}_{t,f}$) by finding the values for $B_{t}$ and $q_{f}$ that best fit the observed index values.   
+The production function (represented by $rB_{t}(1-B_{t}K$) in the biomass equation) can be parameterized in several ways. 
 
 ### Schaefer model 
-
-f(Bt) \= rBt(1-BtK)
-
+$
+f(B_{t}) = rB_{t}(1-\frac{B_{t}}{K})
+$
 ### Fox model
-
-f(Bt) \= log(K)rBt(1-log(Bt)log(K))
-
+$
+f(B_{t}) = log(K)rB_{t}(1-\frac{log(B_{t})}{log(K)})
+$
 ### **Pella-Tomlinson model**
+$
+f(B_{t}) = \frac{r}{m-1}B_{t}(1-(\frac{B_{t}}{K})^{m-1})  
+$
 
-f(Bt) \= rm-1Bt(1-(BtK)m-1)  
-where *m* is the shape parameter that determines the *B/K* ratio where maximum surplus production is attained at. If *m* \= 2, the model reduces down to the Schaefer model, if *m*  1, the model reduces to the Fox model but there is no exact solution if *m* \= 1\. **We decided to use the Pella-Tomlinson implementation of the production function because it is the most flexible model, the shape parameter at 2 will give a Schaefer model and at 1 will give the Fox.**
+where $m$ is the shape parameter that determines the $B/K$ ratio where maximum surplus production is attained at. If $m = 2$, the model reduces down to the Schaefer model, if $m \approx 1$, the model reduces to the Fox model but there is no exact solution if $m = 1$. **We decided to use the Pella-Tomlinson implementation of the production function because it is the most flexible model, the shape parameter at 2 will give a Schaefer model and at 1 will give the Fox.**
 
 ### State-space formulation
 
-State-space models are a type of hierarchical model that allows the natural variability in the environment (process error, 2\) to be modeled separately from the error associated with observed data (observation error, 2). To help with computational estimation, the model can be re-written in terms of depletion, Pt,  where Pt \= BtK is an unobserved state. A Bayesian state-space formulation (Meyer and Millar, 1999\) can be written as:  
-P0=  
-Pt+1 \= Pt+rm-1Pt(1-Ptm-1)-CtK   t=1,...T  
-Pt |Pt, 2 \~ lognormal(ln(Pt), t2)   t=0,....T  
-and the depletion is then fit to index of abundance assuming a lognormal distribution  
-It,f| Pt,K,qf,2 \~ lognormal(ln\[qfPtK\], t2)  t=1,...T  
-where  is initial depletion (can be assumed to be 1 or estimated), and depletion in year *t* (Pt) is log-normally distributed with a mean of ln(Pt) and log-normal process error variance (t2) and the expected index of abundance value is lognormally distributed with a mean of ln\[qfPtK\] and log-normal observation variance of t2. Annual biomass can then be calculated as:   
-Bt= PtK
+State-space models are a type of hierarchical model that allows the natural variability in the environment (process error, 2\) to be modeled separately from the error associated with observed data (observation error, $\sigma^{2}$). To help with computational estimation, the model can be re-written in terms of depletion, $P_{t}$,  where $P_{t} = B_{t}K$ is an unobserved state. A Bayesian state-space formulation (Meyer and Millar, 1999) can be written as:  
+$$
+\begin{align}
+\nonumber P_{0} &= \psi, \quad t = 0\\  
+\nonumber P_{t+1} &= P_{t}+\frac{r}{m-1}P_{t}(1-P_{t}^{m-1}) - \frac{C_{t}}{K}, \quad   t=1,...T \\ 
+\nonumber P_{t} | P_{t}, \sigma^{2} &\sim lognormal(ln(P_{t}), \sigma_{t}^{2}), \quad   t=0,....T  
+\end{align}
+$$
+
+and the depletion is then fit to index of abundance assuming a lognormal distribution:
+$$ 
+I_{t,f}| P_{t},K,q_{f},\sigma^{2} \sim lognormal(ln[q_{f}P_{t}K], \tau^{2}) \quad  t=1,...T  
+$$
+where $\psi$ is initial depletion (can be assumed to be 1 or estimated), and depletion in year $t$ ($P_{t}$) is log-normally distributed with a mean of $ln(P_{t})$ and log-normal process error variance ($\sigma^{2}$) and the expected index of abundance value is lognormally distributed with a mean of $ln[q_{f}P_{t}K]$ and log-normal observation variance of $\tau^{2}$. Annual biomass can then be calculated as:   
+$$
+B_{t}= P_{t}K
+$$
+
 
 ### Derived Quantities and Reference Points
 
-Annual harvest rate (Ht ) is calculated by:   
-Ht \= CtBt  
+Annual harvest rate ($H_{t}$) is calculated by:   
+$
+H_{t} = \frac{C_{t}}{B_{t}}  
+$
 A penalty should be added to ensure that harvest rate does not go above 1.0, because while this may be possible mathematically, it is not possible biologically (cannot have more catch than biomass in a given year).   
-In the Pella-Tomlinson parameterization, the shape parameter, *m* can be directly linked to biomass at maximum sustainable yield, BMSY, by the ratio of BMSYK by:  
-BMSYK=m-1m-1,  
-therefore BMSY can be calculated as:  
-BMSY=Km-1m-1.  
+In the Pella-Tomlinson parameterization, the shape parameter, $m$ can be directly linked to biomass at maximum sustainable yield, $B_{MSY}$, by the ratio of $\frac{B_{MSY}}{K}$ by:
+
+$  
+\frac{B_{MSY}}{K} = m^{\frac{-1}{m-1}},  
+$
+
+therefore $B_{MSY}$ can be calculated as:
+
+$  
+B_{MSY} = Km^{\frac{-1}{m-1}}.  
+$
+
 The fishing mortality at maximum sustainable yield (MSY) can be calculated as:  
-FMSY=rm-1(1-1m).  
-And MSY is given as:   
-MSY=FMSYBMSY
+
+$
+F_{MSY}=\frac{r}{m-1}(1-\frac{1}{m}).  
+$
+
+And MSY is given as: 
+
+$  
+MSY=F_{MSY}B_{MSY}
+$
 
 # Input Requirements
 
