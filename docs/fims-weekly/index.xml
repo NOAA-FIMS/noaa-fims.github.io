@@ -34,7 +34,7 @@ THREE BIG THINGS THIS WEEK
 </h2>
 </div>
 <ol type="1">
-<li><p>A new release of FIMS will come out this week that contains the PRs brought in last week thanks to Bai and Eric as well improvements to the documentation thanks to those that showed up to Code Club and the extra design document meetings. Everyone’s work is greatly appreciated. Check out the issues listed in the <a href="https://github.com/NOAA-FIMS/FIMS/milestone/14">CIE cleanup milestone</a> for more tasks to work on.</p></li>
+<li><p>A new release of FIMS will come out this week that contains the PRs brought in last week thanks to Bai and Eric as well as improvements to the documentation thanks to those that showed up to Code Club and the extra design document meetings. Everyone’s work is greatly appreciated. Check out the issues listed in the <a href="https://github.com/NOAA-FIMS/FIMS/milestone/14">CIE cleanup milestone</a> for more tasks to work on.</p></li>
 <li><p>Once a bug in the likelihood calculations is fixed in dev-json-caa, this branch will be merged into dev. By the end of the day today though it will be rebased and Nathan can branch off it to start adding projections and Meg and Ian can use it for their diagnostic work.</p></li>
 <li><p>The case studies are mid-stream in an update to use {asar} and {stockplotr} for plotting. Thanks to help from Kyle and Sam we have two case studies nearly complete and we hope to get some help porting over the remaining ones this week.</p></li>
 </ol>
@@ -76,17 +76,17 @@ HELPFUL RESOURCES
 <section id="wednesday-september-24" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-september-24">Wednesday, September 24</h3>
 <p><strong>Using {stockplotr}</strong></p>
-<p>Time: 10:00–11:00 PT Location: Virtual Online: <a href="https://meet.google.com/jzu-xbnf-bzm">Google meet</a></p>
+<p>Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: <a href="https://meet.google.com/jzu-xbnf-bzm">Google meet</a></p>
 </section>
 <section id="thursday-september-25" class="level3">
 <h3 class="anchored" data-anchor-id="thursday-september-25">Thursday, September 25</h3>
 <p><strong>Using {stockplotr}</strong></p>
-<p>Time: 13:00–14:00 PT Location: Virtual Online: <a href="https://meet.google.com/jzu-xbnf-bzm">Google meet</a></p>
+<p>Time: 16:00–17:00 E; 13:00–14:00 P; 12:00–13:00 AK; 10:00–11:00 H Location: Virtual Online: <a href="https://meet.google.com/jzu-xbnf-bzm">Google meet</a></p>
 </section>
 <section id="friday-september-26" class="level3">
 <h3 class="anchored" data-anchor-id="friday-september-26">Friday, September 26</h3>
 <p><strong>Using {stockplotr}</strong></p>
-<p>Time: 07:00 – 08:00 Location: Virtual Online: <a href="https://meet.google.com/jzu-xbnf-bzm">Google meet</a></p>
+<p>Time: 10:00–11:00 E; 07:00–08:00 P; 06:00–07:00 AK; 04:00–05:00 H Location: Virtual Online: <a href="https://meet.google.com/jzu-xbnf-bzm">Google meet</a></p>
 </section>
 </div>
 </section>
