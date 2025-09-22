@@ -27,13 +27,15 @@ h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 
-.navbar-title span {
+.navbar-brand .navbar-title {
+  span {
     font-size: 50%;
+  }
 }
 
 .navbar-brand-logo img {
-  max-height: 56px;
-  margin-right: 8px;
+  max-height: 40px;
+  margin-right: 6px;
 }
 
 .sidebar-item {
