@@ -23,7 +23,8 @@ website:
   repo-url: https://github.com/noaa-fims.github.io
   open-graph: true
   navbar:
-    title: FIMS
+    title: "FIMS <small>{{< env VERSION >}}</small>"
+    logo: images/FIMS_logo3.png
     background: light
     right:
       - text: home

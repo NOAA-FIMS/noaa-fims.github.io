@@ -5,15 +5,16 @@ on:
       - main
     paths:
       - changelog/FIMS_CHANGELOG.qmd
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow}}-${{ github.ref }}
   cancel-in-progress: true
 
-name: Release and archive new release
+name: Auto Update New FIMS Website Release
 
 jobs:
-  release_and_archive:
+  website_release:
     runs-on: ubuntu-latest
     env:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
@@ -30,6 +31,12 @@ jobs:
         run: |
           VERSION_HEADING=$(grep -m1 '^## v' changelog/FIMS_CHANGELOG.qmd | sed -E 's/^## (v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?).*/\1/')
           echo "version_heading=$VERSION_HEADING" >> $GITHUB_OUTPUT
+      
+      # - name: Set environment variable
+      #   id: set_env
+      #   run: |
+      #     VERSION=$(echo "${{ steps.changelog_version.outputs.version_heading }}" | sed 's/^v//')
+      #     echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Get latest FIMS release tag
         id: fims_release
@@ -37,18 +44,18 @@ jobs:
           LATEST_TAG=$(curl --silent "https://api.github.com/repos/NOAA-FIMS/noaa-fims.github.io/releases/latest" | jq -r .tag_name | tr -d ' ')
           echo "fims_website_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
 
-      # - name: Should archive new release
-      #   id: should_archive
-      #   run: |
-      #     if [ "${{ steps.changelog_version.outputs.version_heading }}" != "${{ steps.fims_release.outputs.fims_website_tag }}" ]; then
-      #       echo "should_archive=true" >> $GITHUB_OUTPUT
-      #     else
-      #       echo "should_archive=false" >> $GITHUB_OUTPUT
-      #     fi
+      - name: Determine if there is a new fims release
+        id: release_updated
+        run: |
+          if [ "${{ steps.changelog_version.outputs.version_heading }}" != "${{ steps.fims_release.outputs.fims_website_tag }}" ]; then
+            echo "release_updated=true" >> $GITHUB_OUTPUT
+          else
+            echo "release_updated=false" >> $GITHUB_OUTPUT
+          fi
 
-      # Use this conditional for all release/archive steps
+      # Use this conditional for all release steps
       - name: Update version in index.qmd
-        if: steps.should_archive.outputs.should_archive == 'true'
+        if: steps.release_updated.outputs.release_updated == 'true'
         run: |
           VERSION=$(echo "${{ steps.changelog_version.outputs.version_heading }}" | sed 's/^v//')
           sed -i -E "s/Version [0-9]+\.[0-9]+\.[0-9]+/Version $VERSION/" index.qmd
@@ -70,13 +77,13 @@ jobs:
 
 
       - name: Render Quarto Project
-        # if: steps.should_archive.outputs.should_archive == 'true'
+        if: steps.release_updated.outputs.release_updated == 'true'
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html
 
       - name: Upload artifact
-        # if: steps.should_archive.outputs.should_archive == 'true'
+        if: steps.release_updated.outputs.release_updated == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'docs/'
@@ -84,7 +91,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and push rendered site to main
-        # if: steps.should_archive.outputs.should_archive == 'true'
+        if: steps.release_updated.outputs.release_updated == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -96,7 +103,7 @@ jobs:
 
       # Create a release with the same tag as the FIMS repo
       - name: Create Release
-        # if: steps.should_archive.outputs.should_archive == 'true'
+        if: steps.release_updated.outputs.release_updated == 'true'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.changelog_version.outputs.version_heading }}
