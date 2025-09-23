@@ -48,11 +48,11 @@ listing:
           description: >
             Test cases, based on regional assessments, to illustrate use of FIMS.
         - path: https://noaa-fims.github.io/FIMS/
-          title: FIMS Packagedown
+          title: <i class="fab fa-r-project"></i> FIMS Packagedown
           description: >
             Packagedown site for FIMS package.
         - path: doxygen/index.html
-          title: FIMS Doxygen
+          title: <i class="fa-solid fa-plus"></i> FIMS Doxygen
           description: >
             Doxygen documentation for FIMS C++ functions.
 header-includes: >
