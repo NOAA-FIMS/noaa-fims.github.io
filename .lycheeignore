@@ -13,3 +13,6 @@ https://github.com/orgs/NOAA-FIMS/projects/.*
 
 # Ignore ices journal publication
 https://academic.oup.com/icesjms/article/.*
+
+# Ignore doxygen link (it is valid but lychee thinks it's broken)
+https://www.doxygen.org/index.html
