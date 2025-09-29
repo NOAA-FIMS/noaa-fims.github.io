@@ -27,7 +27,7 @@ upcoming-events:
 photo:
   text: "I am truly impressed by the perseverance of Elizabeth Perl 😮. She was able to get our doxygen site to render with the same headers as our noaa-fims.github.io site. This was no easy feat, and it looks beautiful. If you have any suggestions feel free to fill out an [issue](https://github.com/NOAA-FIMS/noaa-fims.github.io/issues)."
   include-photo: true
-  path: "images/new-fims-website2.png."
+  path: "images/new-fims-website2.png"
   alt-text: "A screenshot of https://noaa-fims.github.io/doxygen/."
 ---
   
