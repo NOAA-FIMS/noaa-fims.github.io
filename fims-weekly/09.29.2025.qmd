@@ -40,22 +40,14 @@ photo:
     
 ::: {#additional-events}
       
-<!--
-### DAY DATE
-**NAME**
+### Wednesday, October 01
+**FIMS Implementation Team Meeting (CIE Review)**
 
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-
-<!--
-::: {#photo-code}
-```
-PUT CODE HERE
-```
+Time: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H
+Location: Virtual
+Online: [Google meet](http://meet.google.com/kbz-ccew-iij)
+        
 :::
--->
         
 :::
 
