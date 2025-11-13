@@ -1,5 +1,8 @@
 ---
 title: FIMS Team
+toc: true
+toc-location: left
+toc-depth: 2
 ---
 
 FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.
