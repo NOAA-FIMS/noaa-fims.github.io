@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,15 +36,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3366658ab4122165ae7ff49d7edbf35b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d4c2dc94f569d192ee57f543f58f7f0f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3366658ab4122165ae7ff49d7edbf35b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-b60fa282d3239d82d33997d7d1778d69.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-5c2dbfb1f33cabe1b15f73f35515edd7.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-b60fa282d3239d82d33997d7d1778d69.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0d7642d9f0085e55ff1babbc913e88da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d98ded21548a6529fecb40d78ff124a4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-0d7642d9f0085e55ff1babbc913e88da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5c5d58904a6a5c707f9a8e5817847b0d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-14bdf6b38375578f483856591ab05b48.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5c5d58904a6a5c707f9a8e5817847b0d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:image:width" content="2711">
 </head>
 
-<body class="nav-sidebar docked nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -276,7 +277,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -286,11 +287,11 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
     <a class="dropdown-item" href="../about/index.html">
- <span class="dropdown-text">about</span></a>
+ <span class="dropdown-text">overview</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../about/contributors.html">
- <span class="dropdown-text">fims team</span></a>
+ <span class="dropdown-text">team</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../about/faq.html">
@@ -300,6 +301,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../about/calendar.html">
  <span class="dropdown-text">calendar</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../changelog/FIMS_CHANGELOG.html">
+ <span class="dropdown-text">changelog</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/acknowledgements.html">
+ <span class="dropdown-text">acknowledgements</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -307,12 +316,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">fims weekly</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../sites/sites_index.html"> 
-<span class="menu-text">sites and docs</span></a>
+    <a class="nav-link" href="../projects/index.html"> 
+<span class="menu-text">projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../changelog/FIMS_CHANGELOG.html"> 
-<span class="menu-text">changelog</span></a>
+    <a class="nav-link" href="../packages/index.html"> 
+<span class="menu-text">packages</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../sites/sites_index.html"> 
+<span class="menu-text">resources</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/NOAA-FIMS"> <i class="bi bi-github" role="img">
@@ -326,93 +339,77 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../about/index.html">About FIMS</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../about/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">About FIMS</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../about/contributors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FIMS Team</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../about/faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Frequently Asked Questions</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../about/calendar.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FIMS Calendar</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#mission" id="toc-mission" class="nav-link active" data-scroll-target="#mission">Mission</a></li>
+  <li><a href="#community" id="toc-community" class="nav-link" data-scroll-target="#community">Community</a>
+  <ul class="collapse">
+  <li><a href="#get-involved" id="toc-get-involved" class="nav-link" data-scroll-target="#get-involved">Get involved <i class="fa-solid fa-user-plus"></i></a></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
+  </ul></li>
+  <li><a href="#current-project-status" id="toc-current-project-status" class="nav-link" data-scroll-target="#current-project-status">Current project status</a>
+  <ul class="collapse">
+  <li><a href="#release" id="toc-release" class="nav-link" data-scroll-target="#release">Release</a></li>
+  </ul></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-
-
-
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="../images/FIMS_logo3.png" class="about-image
-  rounded " style="width: 20em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">About FIMS</h1>
 </div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<div class="h1">
-👋 Hey there!
-</div>
-<div class="lead">
-<p>The NOAA Fisheries Integrated Modeling System is a software system designed to support next-generation fisheries stock assessment, ecosystem, and socioeconomic modeling.</p>
-<p>A team of <a href="../about/contributors.html">experts</a> within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners. The roles of internal and external collaborators are outlined in the <a href="https://noaa-fims.github.io/collaborative_workflow/fims-governance.html">governance section</a> of our developer guide.</p>
-</div>
-</div></div>
-</div>
 
-<section id="get-involved" class="level2">
-<h2 data-anchor-id="get-involved">Get involved</h2>
-<p>Users and developers are welcome to join the <a href="https://github.com/orgs/NOAA-FIMS/discussions">Discussions board</a> or submit bug reports using GitHub issues. Please use the issues under <a href="https://github.com/NOAA-FIMS/collaborative_workflow/issues">collaborative workflow</a> to make suggestions about the developer guide and the issues under the FIMS software <a href="https://github.com/NOAA-FIMS/FIMS/issues">repository</a> for software design and development feedback.</p>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="mission" class="level1">
+<h1>Mission</h1>
+<p>The mission of the Fisheries Integrated Modeling System (FIMS) is to <strong>enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs.</strong></p>
+<p>We aim to accomplish our mission with a <strong>user-friendly stock assessment tool</strong> that <strong>streamlines</strong> the development and application of scientific advice to inform current and future management needs of NOAA Fisheries’ regions.</p>
 </section>
-<section id="current-project-status" class="level2">
-<h2 data-anchor-id="current-project-status">Current project status</h2>
+<section id="community" class="level1">
+<h1>Community</h1>
+<p>A team of <a href="../about/contributors.html">experts</a> within NOAA Fisheries is designing and developing the system, and we are advised by the <a href="../about/contributors.html#fims-council">FIMS Council</a> which includes academic, industry, and international partners.</p>
+<p>Contributions from individuals of all skill levels are welcome. The codebase and documentation heavily relies of contributions from volunteers and it is imperative that we receive both feedback and contributions from users to ensure the user experience remains true to our aim of being user friendly. The roles of internal and external collaborators are outlined in the <a href="../about/contributors.html#roles">roles section</a> of this community playbook.</p>
+<section id="get-involved" class="level2">
+<h2 class="anchored" data-anchor-id="get-involved">Get involved <i class="fa-solid fa-user-plus"></i></h2>
+<p>Users and developers are welcome to join the <a href="https://github.com/orgs/NOAA-FIMS/discussions">Discussions board</a> or submit bug reports using GitHub Issues. Please use the issues under <a href="https://github.com/NOAA-FIMS/collaborative_workflow/issues">collaborative workflow</a> to make suggestions about the developer guide and the issues under the FIMS software <a href="https://github.com/NOAA-FIMS/FIMS/issues">repository</a> for software design and development feedback.</p>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<blockquote class="blockquote">
+<p>If you have questions or comments please <a href="mailto:kelli.johnson@noaa.gov">contact the FIMS Project Lead</a>.</p>
+</blockquote>
+</section>
+</section>
+<section id="current-project-status" class="level1">
+<h1>Current project status</h1>
 <p>The project is constantly under development 🔨. Check out our progress so far below:</p>
 <table class="caption-top table">
 <thead>
@@ -435,44 +432,12 @@ ul.task-list li input[type="checkbox"] {
 <td><img src="https://img.shields.io/github/issues-closed/noaa-fims/fims.png" class="img-fluid" alt="Closed Issues"></td>
 </tr>
 <tr class="even">
-<td>Milestone 1 Open Issues</td>
-<td><img src="https://img.shields.io/github/milestones/issues-open/noaa-fims/fims/1.png" class="img-fluid" alt="m1 Open Issues"></td>
-</tr>
-<tr class="odd">
-<td>Milestone 1 Closed Issues</td>
-<td><img src="https://img.shields.io/github/milestones/issues-closed/noaa-fims/fims/1.png" class="img-fluid" alt="m1 Issues"></td>
-</tr>
-<tr class="even">
-<td>Milestone 1 Progress</td>
-<td><img src="https://img.shields.io/github/milestones/progress-percent/noaa-fims/fims/1.png" class="img-fluid" alt="m1 Progress"></td>
-</tr>
-<tr class="odd">
-<td>Milestone 2 Issues</td>
-<td><img src="https://img.shields.io/github/milestones/issues-open/noaa-fims/fims/2.png" class="img-fluid" alt="m2 Issues"></td>
-</tr>
-<tr class="even">
 <td>Issues that Need Triage</td>
-<td><img src="https://img.shields.io/github/issues-raw/noaa-fims/fims/triage_needed.png" class="img-fluid" alt="Issues needing triage"></td>
-</tr>
-<tr class="odd">
-<td>Feature requests</td>
-<td><img src="https://img.shields.io/github/issues-raw/noaa-fims/fims/kind:%20feature.png" class="img-fluid" alt="Issues needing triage"></td>
-</tr>
-<tr class="even">
-<td>Bugs</td>
-<td><img src="https://img.shields.io/github/issues-raw/noaa-fims/fims/kind:%20bug.png" class="img-fluid" alt="Issues needing triage"></td>
+<td><img src="https://img.shields.io/github/issues-raw/noaa-fims/fims/status:%20triage_needed.png" class="img-fluid" alt="Issues needing triage"></td>
 </tr>
 <tr class="odd">
 <td>Pull Requests</td>
 <td><img src="https://img.shields.io/github/issues-pr/NOAA-FIMS/FIMS.png" class="img-fluid" alt="Pull requests"></td>
-</tr>
-<tr class="even">
-<td>Style and document <code>R</code> code</td>
-<td><a href="https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-doc-and-style-r.yml"><img src="https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-doc-and-style-r.yml/badge.svg" class="img-fluid" alt="call-doc-and-style-r"></a></td>
-</tr>
-<tr class="odd">
-<td><code>clang-tidy</code> on <code>C++</code> code</td>
-<td><a href="https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-clang-tidy.yml"><img src="https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-clang-tidy.yml/badge.svg" class="img-fluid" alt="Clang-tidy"></a></td>
 </tr>
 <tr class="even">
 <td>Calculate test coverage</td>
@@ -483,59 +448,26 @@ ul.task-list li input[type="checkbox"] {
 <td><img src="https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg" class="img-fluid" alt="r-cmd-check"></td>
 </tr>
 <tr class="even">
-<td>Google test status</td>
+<td>Google tests</td>
 <td><img src="https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg" class="img-fluid" alt="googletest"></td>
 </tr>
 <tr class="odd">
-<td><strong>Developer handbook</strong></td>
+<td><strong>Community Playbook</strong></td>
 <td><strong>Status</strong></td>
 </tr>
 <tr class="even">
 <td>Total issues</td>
-<td><img src="https://img.shields.io/github/issues-raw/noaa-fims/collaborative_workflow.png" class="img-fluid" alt="Total issues"></td>
+<td><img src="https://img.shields.io/github/issues-raw/noaa-fims/noaa-fims.github.io" class="img-fluid" alt="Total issues"></td>
 </tr>
 <tr class="odd">
 <td>Closed Issues</td>
-<td><img src="https://img.shields.io/github/issues-closed/noaa-fims/collaborative_workflow.png" class="img-fluid" alt="Closed issues"></td>
+<td><img src="https://img.shields.io/github/issues-closed/noaa-fims/noaa-fims.github.io" class="img-fluid" alt="Closed issues"></td>
 </tr>
 </tbody>
 </table>
-</section>
 <section id="release" class="level2">
-<h2 data-anchor-id="release">Release</h2>
-<p>The current release can be found on the <a href="https://github.com/NOAA-FIMS/FIMS/releases">release page</a>.</p>
-</section>
-<section id="related-projects" class="level2">
-<h2 data-anchor-id="related-projects">Related Projects</h2>
-<ul>
-<li><a href="https://noaa-fisheries-integrated-toolbox.github.io/">The Fisheries Integrated Toolbox</a>.</li>
-<li><a href="https://github.com/nmfs-fish-tools/fishdictionary">Stock Assessment Dictionary Project</a></li>
-</ul>
-<blockquote class="blockquote">
-<p>If you have questions or comments please <a href="mailto:kelli.johnson@noaa.gov">contact the FIMS Project Lead</a>.</p>
-</blockquote>
-</section>
-<section id="learning-resources" class="level2">
-<h2 data-anchor-id="learning-resources">Learning Resources</h2>
-<section id="c" class="level3">
-<h3 data-anchor-id="c">C++</h3>
-<ul>
-<li><a href="https://cplusplus.com/doc/">cplusplus.com</a></li>
-<li><a href="https://docs.microsoft.com/en-us/cpp/standard-library">docs.microsoft.com</a></li>
-<li><a href="https://www.geeksforgeeks.org/c-plus-plus/?ref=outind">geeksforgeeks.org</a></li>
-<li><a href="https://www.learncpp.com/cpp-tutorial">learncpp.com</a></li>
-<li><a href="https://www.positioniseverything.net/category/coding/c/">positioniseverything.net</a></li>
-<li><a href="https://www.w3schools.com/cpp">w3schools.com/cpp</a></li>
-</ul>
-</section>
-<section id="rcpp" class="level3">
-<h3 data-anchor-id="rcpp">Rcpp</h3>
-<ul>
-<li><a href="https://www.rcpp.org/">rcpp.org</a></li>
-<li><a href="https://github.com/RcppCore/Rcpp">github.com/RcppCore</a></li>
-<li><a href="https://www.mjdenny.com/Rcpp_Intro.html">mjdenny.com</a></li>
-</ul>
-
+<h2 class="anchored" data-anchor-id="release">Release</h2>
+<p>The current release can be found on the <a href="https://github.com/NOAA-FIMS/FIMS/releases">FIMS release page</a>. A list of all releases and their corresponding changes can be found on our <a href="../changelog/FIMS_CHANGELOG.html">changelog page</a>.</p>
 
 
 </section>
@@ -569,6 +501,13 @@ document.addEventListener("DOMContentLoaded", function() {
       window.document.body.appendChild(a);
     }
     setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

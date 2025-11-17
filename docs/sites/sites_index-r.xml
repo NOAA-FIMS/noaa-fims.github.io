@@ -10,16 +10,16 @@
 <atom:link href="https://noaa-fims.github.io/sites/sites_index-r.xml" rel="self" type="application/rss+xml"/>
 <description>Websites associated with FIMS.
 </description>
-<generator>quarto-1.8.24</generator>
-<lastBuildDate>Mon, 29 Sep 2025 13:56:34 GMT</lastBuildDate>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Mon, 17 Nov 2025 13:07:09 GMT</lastBuildDate>
 <item>
-  <title>&lt;i class=&quot;fab fa-r-project&quot;&gt;&lt;/i&gt; FIMS Packagedown</title>
+  <title>&lt;i class=&quot;fab fa-r-project&quot;&gt;&lt;/i&gt; FIMS R Documentation</title>
   <link>https://noaa-fims.github.io/</link>
   <description>Packagedown site for FIMS package.
 </description>
   <category>R</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Mon, 29 Sep 2025 13:56:34 GMT</pubDate>
+  <pubDate>Mon, 17 Nov 2025 13:07:09 GMT</pubDate>
 </item>
 </channel>
 </rss>
