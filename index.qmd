@@ -16,12 +16,12 @@ listing:
         - path: about/index.qmd
           title: 💡 About FIMS
           description: >
-            General information about the FIMS project.
+            General information about FIMS.
           display-order: 1
         - path: about/contributors.qmd
           title: 👥 FIMS Team
           description: >
-            List of all contributors to the FIMS project.
+            List of all contributors to FIMS.
           display-order: 2
         - path: about/faq.qmd
           title: ❓ FAQs
@@ -109,13 +109,16 @@ resources:
     </div>
 
     <p class="site-intro fs-5">
-      Welcome to the <strong>Fisheries Integrated Modeling System (FIMS)</strong> 
-      development website! <br>
+      Welcome to the <strong>Fisheries Integrated Modeling System (FIMS)</strong> community playbook, the sole source of information for all members of the FIMS community, which includes developers, users, and receivers of stock assessments. We welcome both those that are new and seasoned to the field to join us as we work to fulfill our <a href="about/index.qmd#mission">mission</a>! <br>
       <br>
-      <strong>FIMS</strong> is a software system designed to support next-generation 
-      fisheries stock assessment, ecosystem, and socioeconomic modeling.
+      We use the following icons to help each type of community member find information that is relevant to them quickly within this playbook:<br>
+
+      <i class="fa-solid fa-user-gear"></i> Developer<br>
+      <i class="fa-solid fa-user-plus"></i> New User<br>
+      <i class="fa-solid fa-user-ninja"></i> Power User<br>
+      <i class="fa-solid fa-person-arrow-down-to-line"></i> Receiver of Results<br>
     </p>
-    <a class="mt4 action text" href="/about">See the <strong>about page</strong> for more! →</a>
+    <a class="mt4 action text" href="about/index.qmd">See the <strong>overview page</strong> for more! →</a>
   </div>
 
   <div class="site-logo">
@@ -124,7 +127,7 @@ resources:
 </div>
 ```
 
-## [About](about/index.qmd)
+## [about](about/index.qmd)
 
 ::: {#fims-about-listing}
 :::

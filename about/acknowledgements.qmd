@@ -1,0 +1,10 @@
+---
+title: Acknowledgements
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-depth: 2
+---
+
+The development of this playbook was supported by FIMS's participation in the [Birdaro](https://www.birdaro.org/) training program, which included access to the Center for Scientific Collaboration and Community Engagement ([CSCCE](https://www.cscce.org/trainings/pbk/))'s online training course [Creating Community Playbooks](https://www.cscce.org/trainings/pbk/).

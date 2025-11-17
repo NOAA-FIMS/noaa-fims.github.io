@@ -1,5 +1,5 @@
 ---
-title: FIMS sites
+title: Resources
 description: >
   Websites associated with FIMS.
 listing:
@@ -10,15 +10,55 @@ listing:
         Test cases, based on regional assessments, to illustrate use of FIMS.
       categories: [WHAM, SS3, ASAP, TMB]
     - path: https://noaa-fims.github.io/FIMS/
-      title: <i class="fab fa-r-project"></i> FIMS Packagedown
+      title: <i class="fab fa-r-project"></i> FIMS R Documentation
       description: >
         Packagedown site for FIMS package.
       categories: [R]
     - path: ../doxygen/index.html
-      title: <i class="fa-solid fa-plus"></i> FIMS Doxygen
+      title: <i class="fa-solid fa-plus"></i> FIMS C++ Documentation
       description: >
-        Doxygen documentation for FIMS C++ functions.
+        Documentation for FIMS C++ functions, written using doxygen.
       categories: [C++]
+    - path: https://cplusplus.com/doc
+      title: cplusplus.com
+      description: >
+        A fast-paced, self-teaching tutorial covering the modern concepts of C++.
+      categories: [C++, training]
+    - path: https://www.geeksforgeeks.org/c-plus-plus/?ref=outind
+      title: geeksforgeeks.org
+      description: >
+        Free online tutorials for many computer programming languages, including C++.
+      categories: [C++, training]
+    - path: https://www.learncpp.com/cpp-tutorial
+      title: learncpp.com
+      description: >
+        Skill up with free C++ tutorials.
+      categories: [C++, training]
+    - path: https://www.positioniseverything.net/category/coding/c/
+      title: positioniseverything.net
+      description: >
+        The latest coding and computing news & tips for C++.
+      categories: [C++, training]
+    - path: https://docs.microsoft.com/en-us/cpp/standard-library
+      title: docs.microsoft.com
+      description: >
+        Documentation for the C++ Standard Library, which contains functions that perform services such as input and output and provide efficient implementations of frequently used operations.
+      categories: [C++, documentation]
+    - path: https://www.rcpp.org/
+      title: rcpp.org
+      description: >
+        Numerous examples, as well as extensive documentation, to facilitate the use of Rcpp.
+      categories: [Rcpp, training]
+    - path: https://github.com/RcppCore/Rcpp
+      title: github.com/RcppCore
+      description: >
+        Source code for Rcpp.
+      categories: [Rcpp, github, documentation]
+    - path: https://www.mjdenny.com/Rcpp_Intro.html
+      title: mjdenny.com
+      description: >
+        A tutorial that was originally presented as part of a 3-day intensive Data Science Workshop at UMass Amherst in June 2015 on using Rcpp.
+      categories: [Rcpp, training]
   type: default
   categories: true
   sort-ui: true

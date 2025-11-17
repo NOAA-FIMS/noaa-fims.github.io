@@ -1,0 +1,8 @@
+---
+title: FIMS Packages
+toc: true
+toc-location: left
+toc-depth: 2
+---
+
+This webpage is currently under construction but once it is done it will list all packages related to FIMS. For example, [{fishprior}](https://github.com/noaa-fims/fishprior) is an R package that is currently being built to use life-history information to help inform priors that are relevant to assessments. Thus, it will be helpful for those running FIMS models and will be listed here but it will also be helpful to those doing general fisheries research.

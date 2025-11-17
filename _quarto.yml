@@ -39,12 +39,18 @@ website:
             href: about/faq.qmd
           - text: calendar
             href: about/calendar.qmd
+          - text: changelog
+            href: changelog/FIMS_CHANGELOG.qmd
+          - text: acknowledgements
+            href: about/acknowledgements.qmd
       - text: fims weekly
         href: fims-weekly/index.qmd
-      - text: sites and docs
+      - text: projects
+        href: projects/index.qmd
+      - text: packages
+        href: packages/index.qmd
+      - text: resources
         href: sites/sites_index.qmd
-      - text: changelog
-        href: changelog/FIMS_CHANGELOG.qmd
       - icon: github
         href: https://github.com/NOAA-FIMS
   page-footer:

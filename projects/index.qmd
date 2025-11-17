@@ -1,0 +1,21 @@
+---
+title: FIMS Projects
+toc: true
+toc-location: left
+toc-depth: 2
+---
+
+# Current projects
+
+* [{stockplotr}](https://github.com/nmfs-ost/stockplotr)
+* Center for Independent Experts (CIE) Review
+* Once a month training opportunities via Google Meet
+* Manuscript on random effects
+* Manuscript on Dirichlet-multinomial distribution for composition data
+* Internal versus external estimation of growth
+
+# Related projects
+
+* [The Fisheries Integrated Toolbox](https://noaa-fisheries-integrated-toolbox.github.io/)
+* [Stock Assessment Dictionary Project](https://github.com/nmfs-ost/fishdictionary)
+* [Partially Automated Stock Assessment Reporting {asar}](https://github.com/nmfs-ost/asar)
