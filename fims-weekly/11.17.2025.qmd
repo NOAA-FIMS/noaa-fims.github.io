@@ -3,10 +3,8 @@ title: "November 17–21, 2025"
 date: "November 17, 2025"
 # Change the following categories accordingly
 categories: 
-  - testing
-  - selectivity
-  - diagnostics
-  - projections
+  - community playbook
+  - schedule
 three-big-things:
   bt1: "Welcome back all! Last week was spent catching up on emails and getting reorientated, where this week we will be working towards getting a release out within the next two weeks. Thank you to Bai, Adrianne, and Nathan for keeping the lights on."
   bt2: "We will no longer be having our Seaside Chats on Thursdays. Instead, we will be scheduling calls that work with people's schedules based on need. We encourage everyone to schedule these types of calls within the FIMS community based on your own needs. Just remember to add them to the FIMS calendar."
