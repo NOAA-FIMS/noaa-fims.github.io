@@ -1,0 +1,52 @@
+---
+title: "November 17–21, 2025"
+date: "November 17, 2025"
+# Change the following categories accordingly
+categories: 
+  - testing
+  - selectivity
+  - diagnostics
+  - projections
+three-big-things:
+  bt1: "Welcome back all! Last week was spent catching up on emails and getting reorientated, where this week we will be working towards getting a release out within the next two weeks. Thank you to Bai, Adrianne, and Nathan for keeping the lights on."
+  bt2: "We will no longer be having our Seaside Chats on Thursdays. Instead, we will be scheduling calls that work with people's schedules based on need. We encourage everyone to schedule these types of calls within the FIMS community based on your own needs. Just remember to add them to the FIMS calendar."
+  bt3: "The CIE Review will be rescheduled for next Spring. Before the review we will ensure that all work done in preparation for the review is solid and that the documentation has been vetted with new users to ensure that it is understandable to non-developers."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "As we update our website to be the best 'community playbook' that it can be, we will be adding some icons to titles to help users of all types navigate the pages. Look for each of the icons throughout this site based on which type of information you are looking for."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- The ICES Methods Group Working Group is convening this week at the University of Washington and remotely. Please contact Andrea Havron if you are interested in participating.
+::: 
+    
+::: {#additional-events}
+      
+<!--
+### DAY DATE
+**NAME**
+
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+
+::: {#photo-code}
+<i class="fa-solid fa-user-gear"></i> Developer<br>
+<i class="fa-solid fa-user-plus"></i> New User<br>
+<i class="fa-solid fa-user-ninja"></i> Power User<br>
+<i class="fa-solid fa-person-arrow-down-to-line"></i> Receiver of Results<br>
+:::
+
+        
+:::
+
+
