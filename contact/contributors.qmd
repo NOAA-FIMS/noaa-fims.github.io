@@ -7,9 +7,12 @@ toc-depth: 2
 
 FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.
 
-## Core Developers
+## Project Lead
 
 * Kelli F. Johnson (OST)
+
+## Core Developers
+
 * Jon K. T. Brodziak (PIFSC)
 * Kathryn L. Doering (OST)
 * Andrea M. Havron (OST)
@@ -21,17 +24,14 @@ FIMS is a collaborative effort that would not be possible without the generous s
 * Timothy J. Miller (NEFSC)
 * Cole C. Monnahan (AFSC)
 * Megumi C. Oshima (PIFSC)
-* Kyle W. Shertzer (SEFSC)
 * Jane Y. Sullivan (AFSC)
 * Matthew Supernaw (OST)
 * Ian G. Taylor (NWFSC)
-* Eric J. Ward (NWFSC)
 * Nathan R. Vaughan (Vaughan Analytics)
+* Eric J. Ward (NWFSC)
 
 ## Subject-Matter Experts
 
-* Howard Townsend (OST)
-* James N. Ianelli (AFSC)
 * Lisa Pfeiffer (NWFSC)
 * Patrick D. Lynch (OST)
 * Richard D. Methot (NWFSC)
@@ -42,8 +42,11 @@ FIMS is a collaborative effort that would not be possible without the generous s
 * Kristan Blackhart (NEFSC)
 * Edward J. Dick (SWFSC)
 * Alan C. Haynie (ICES)
+* James N. Ianelli (AFSC)
 * Hui-hua Lee (SWFSC)
+* Kyle W. Shertzer (SEFSC)
 * Christine C. Stawitz (University of Birmingham)
+* Howard Townsend (OST)
 
 ## FIMS Council
 
