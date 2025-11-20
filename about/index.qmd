@@ -23,10 +23,6 @@ Contributions from individuals of all skill levels are welcome. The codebase and
 
 Users and developers are welcome to join the [Discussions board](https://github.com/orgs/NOAA-FIMS/discussions) or submit bug reports using GitHub Issues. Please use the issues under [collaborative workflow](https://github.com/NOAA-FIMS/collaborative_workflow/issues) to make suggestions about the developer guide and the issues under the FIMS software [repository](https://github.com/NOAA-FIMS/FIMS/issues) for software design and development feedback.
 
-## Contact
-
-> If you have questions or comments please [contact the FIMS Project Lead](mailto:kelli.johnson@noaa.gov).
-
 # Current project status
 
 The project is constantly under development 🔨. Check out our progress so far below: 
