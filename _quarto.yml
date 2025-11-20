@@ -43,6 +43,8 @@ website:
             href: changelog/FIMS_CHANGELOG.qmd
           - text: acknowledgements
             href: about/acknowledgements.qmd
+          - text: contact
+            href: contact/index.qmd
       - text: fims weekly
         href: fims-weekly/index.qmd
       - text: projects
