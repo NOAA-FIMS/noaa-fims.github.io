@@ -19,17 +19,17 @@ listing:
       description: >
         Documentation for FIMS C++ functions, written using doxygen.
       categories: [C++]
-    - path: https://cplusplus.com/doc
+    - path: https://cplusplus.com/doc/
       title: cplusplus.com
       description: >
         A fast-paced, self-teaching tutorial covering the modern concepts of C++.
       categories: [C++, training]
-    - path: https://www.geeksforgeeks.org/c-plus-plus/?ref=outind
+    - path: https://www.geeksforgeeks.org/cpp/c-plus-plus/
       title: geeksforgeeks.org
       description: >
         Free online tutorials for many computer programming languages, including C++.
       categories: [C++, training]
-    - path: https://www.learncpp.com/cpp-tutorial
+    - path: https://www.learncpp.com/cpp-tutorial/
       title: learncpp.com
       description: >
         Skill up with free C++ tutorials.
@@ -39,7 +39,7 @@ listing:
       description: >
         The latest coding and computing news & tips for C++.
       categories: [C++, training]
-    - path: https://docs.microsoft.com/en-us/cpp/standard-library
+    - path: https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference?view=msvc-170
       title: docs.microsoft.com
       description: >
         Documentation for the C++ Standard Library, which contains functions that perform services such as input and output and provide efficient implementations of frequently used operations.
