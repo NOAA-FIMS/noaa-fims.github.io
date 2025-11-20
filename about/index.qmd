@@ -23,6 +23,10 @@ Contributions from individuals of all skill levels are welcome. The codebase and
 
 Users and developers are welcome to join the [Discussions board](https://github.com/orgs/NOAA-FIMS/discussions) or submit bug reports using GitHub Issues. Please use the issues under [collaborative workflow](https://github.com/NOAA-FIMS/collaborative_workflow/issues) to make suggestions about the developer guide and the issues under the FIMS software [repository](https://github.com/NOAA-FIMS/FIMS/issues) for software design and development feedback.
 
+# Background
+
+The idea for FIMS came out of the 2019 [CAPAM workshop](https://capamresearch.org/Next-Gen-SAM) on the creation of frameworks for the next generation general stock assessment models. Around the same time, a project led by Bai Li demonstrated that [similar results were possible using 4 different assessment models used in the United States](https://doi.org/10.7755/FB.119.2-3.5). The pandemic also increased our ability to work online and collaborate across NOAA Fisheries regions, so stock assessment scientists at NOAA Fisheries became more familiar with work being done in other regions. All of these forces led to the realization that a unified framework for doing federal stock assessments could be beneficial and could provide new capabilities that would be difficult to build in older frameworks.
+
 # Current project status
 
 The project is constantly under development 🔨. Check out our progress so far below: 
