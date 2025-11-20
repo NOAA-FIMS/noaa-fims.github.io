@@ -3,6 +3,8 @@ pagetitle: "FIMS"
 page-layout: full
 title-block-banner: false
 
+
+ <!-- Format for creating grid style listing with cards. See https://quarto.org/docs/websites/website-listings.html#listing-types -->
 listing:
   - id: fims-about-listing
     type: grid
@@ -18,10 +20,6 @@ listing:
           description: >
             General information about FIMS.
           display-order: 1
-        - path: about/contributors.qmd
-          title: 👥 FIMS Team
-          description: >
-            List of all contributors to FIMS.
           display-order: 2
         - path: about/faq.qmd
           title: ❓ FAQs
@@ -126,6 +124,7 @@ resources:
   </div>
 </div>
 ```
+<!--
 
 ## [about](about/index.qmd)
 
@@ -136,3 +135,5 @@ resources:
 
 ::: {#fims-sites-listing}
 :::
+
+-->
