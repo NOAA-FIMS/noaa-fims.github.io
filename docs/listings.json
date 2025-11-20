@@ -24,6 +24,7 @@
     "listing": "/index.html",
     "items": [
       "/about/index.html",
+      "/contact/contributors.html",
       "/about/faq.html",
       "/about/calendar.html"
     ]
