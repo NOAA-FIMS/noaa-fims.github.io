@@ -33,8 +33,6 @@ website:
         menu:
           - text: overview
             href: about/index.qmd
-          - text: team
-            href: about/contributors.qmd
           - text: faq
             href: about/faq.qmd
           - text: calendar
@@ -51,6 +49,12 @@ website:
         href: packages/index.qmd
       - text: resources
         href: sites/sites_index.qmd
+      - text: contact
+        menu:
+          - text: contact FIMS lead
+            href: contact/index.qmd
+          - text: FIMS team
+            href: contact/contributors.qmd
       - icon: github
         href: https://github.com/NOAA-FIMS
   page-footer:
