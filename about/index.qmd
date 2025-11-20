@@ -15,9 +15,9 @@ We aim to accomplish our mission with a **user-friendly stock assessment tool** 
 
 # Community
 
-A team of [experts](contributors.qmd) within NOAA Fisheries is designing and developing the system, and we are advised by the [FIMS Council](contributors.qmd#fims-council) which includes academic, industry, and international partners.
+A team of [experts](../contributors.qmd) within NOAA Fisheries is designing and developing the system, and we are advised by the [FIMS Council](../contributors.qmd#fims-council) which includes academic, industry, and international partners.
 
-Contributions from individuals of all skill levels are welcome. The codebase and documentation heavily relies of contributions from volunteers and it is imperative that we receive both feedback and contributions from users to ensure the user experience remains true to our aim of being user friendly. The roles of internal and external collaborators are outlined in the [roles section](contributors.qmd#roles) of this community playbook. 
+Contributions from individuals of all skill levels are welcome. The codebase and documentation heavily relies of contributions from volunteers and it is imperative that we receive both feedback and contributions from users to ensure the user experience remains true to our aim of being user friendly. The roles of internal and external collaborators are outlined in the [roles section](../contributors.qmd#roles) of this community playbook. 
 
 ## Get involved <i class="fa-solid fa-user-plus"></i>
 

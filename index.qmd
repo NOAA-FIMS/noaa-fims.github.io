@@ -18,7 +18,7 @@ listing:
           description: >
             General information about FIMS.
           display-order: 1
-        - path: about/contributors.qmd
+        - path: contact/contributors.qmd
           title: 👥 FIMS Team
           description: >
             List of all contributors to FIMS.
