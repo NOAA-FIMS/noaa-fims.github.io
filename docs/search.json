@@ -322,25 +322,32 @@
     "text": "FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council."
   },
   {
+    "objectID": "contact/contributors.html#project-lead",
+    "href": "contact/contributors.html#project-lead",
+    "title": "FIMS Team",
+    "section": "Project Lead",
+    "text": "Project Lead\n\nKelli F. Johnson (OST)"
+  },
+  {
     "objectID": "contact/contributors.html#core-developers",
     "href": "contact/contributors.html#core-developers",
     "title": "FIMS Team",
     "section": "Core Developers",
-    "text": "Core Developers\n\nKelli F. Johnson (OST)\nJon K. T. Brodziak (PIFSC)\nKathryn L. Doering (OST)\nAndrea M. Havron (OST)\nAlexander J. Jensen (SWFSC)\nRonald Klasky (T and T Consulting Services, Inc.)\nPeter T. Kuriyama (SWFSC)\nChristopher M. Legault (NEFSC)\nBai Li (OST)\nTimothy J. Miller (NEFSC)\nCole C. Monnahan (AFSC)\nMegumi C. Oshima (PIFSC)\nKyle W. Shertzer (SEFSC)\nJane Y. Sullivan (AFSC)\nMatthew Supernaw (OST)\nIan G. Taylor (NWFSC)\nEric J. Ward (NWFSC)\nNathan R. Vaughan (Vaughan Analytics)"
+    "text": "Core Developers\n\nJon K. T. Brodziak (PIFSC)\nKathryn L. Doering (OST)\nAndrea M. Havron (OST)\nAlexander J. Jensen (SWFSC)\nRonald Klasky (T and T Consulting Services, Inc.)\nPeter T. Kuriyama (SWFSC)\nChristopher M. Legault (NEFSC)\nBai Li (OST)\nTimothy J. Miller (NEFSC)\nCole C. Monnahan (AFSC)\nMegumi C. Oshima (PIFSC)\nJane Y. Sullivan (AFSC)\nMatthew Supernaw (OST)\nIan G. Taylor (NWFSC)\nNathan R. Vaughan (Vaughan Analytics)\nEric J. Ward (NWFSC)"
   },
   {
     "objectID": "contact/contributors.html#subject-matter-experts",
     "href": "contact/contributors.html#subject-matter-experts",
     "title": "FIMS Team",
     "section": "Subject-Matter Experts",
-    "text": "Subject-Matter Experts\n\nHoward Townsend (OST)\nJames N. Ianelli (AFSC)\nLisa Pfeiffer (NWFSC)\nPatrick D. Lynch (OST)\nRichard D. Methot (NWFSC)"
+    "text": "Subject-Matter Experts\n\nLisa Pfeiffer (NWFSC)\nPatrick D. Lynch (OST)\nRichard D. Methot (NWFSC)"
   },
   {
     "objectID": "contact/contributors.html#contributors",
     "href": "contact/contributors.html#contributors",
     "title": "FIMS Team",
     "section": "Contributors",
-    "text": "Contributors\n\nJennifer S. Bigman (University of Delaware)\nKristan Blackhart (NEFSC)\nEdward J. Dick (SWFSC)\nAlan C. Haynie (ICES)\nHui-hua Lee (SWFSC)\nChristine C. Stawitz (University of Birmingham)"
+    "text": "Contributors\n\nJennifer S. Bigman (University of Delaware)\nKristan Blackhart (NEFSC)\nEdward J. Dick (SWFSC)\nAlan C. Haynie (ICES)\nJames N. Ianelli (AFSC)\nHui-hua Lee (SWFSC)\nKyle W. Shertzer (SEFSC)\nChristine C. Stawitz (University of Birmingham)\nHoward Townsend (OST)"
   },
   {
     "objectID": "contact/contributors.html#fims-council",
