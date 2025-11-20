@@ -30,10 +30,10 @@ The project is constantly under development 🔨. Check out our progress so far 
 | Metric                 | Status| 
 |------------------------|-------|
 | **Development** | **Status**|
-| Total Issues           |  ![Total Issues](https://img.shields.io/github/issues-raw/noaa-fims/fims)|
-| Closed Issues           | ![Closed Issues](https://img.shields.io/github/issues-closed/noaa-fims/fims)|
-| Issues that Need Triage | ![Issues needing triage](https://img.shields.io/github/issues-raw/noaa-fims/fims/status:%20triage_needed)|
-| Pull Requests           | ![Pull requests](https://img.shields.io/github/issues-pr/NOAA-FIMS/FIMS)|
+| Total Issues           |  ![Total Issues](https://raster.shields.io/github/issues-raw/noaa-fims/fims.png)|
+| Closed Issues           | ![Closed Issues](https://raster.shields.io/github/issues-closed/noaa-fims/fims.png)|
+| Issues that Need Triage | ![Issues needing triage](https://raster.shields.io/github/issues-raw/noaa-fims/fims/status:%20triage_needed.png)|
+| Pull Requests           | ![Pull requests](https://raster.shields.io/github/issues-pr/NOAA-FIMS/FIMS.png)|
 | Calculate test coverage | [![call-calc_coverage](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml)|
 | `R cmd check` | ![r-cmd-check](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg)|
 | Google tests | ![googletest](https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg)|

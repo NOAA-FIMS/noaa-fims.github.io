@@ -27,7 +27,7 @@ categories:
 - [NMFS Open Science Calendar](https://calendar.google.com/calendar/embed?src=c_916b6948ef2ee8b7d49c28661efc0798303c2742be399c9290fa02d9320c769e%40group.calendar.google.com&ctz=America%2FNew_York)
 - [Implementation Team Notes](https://docs.google.com/document/d/10nSfbPaBF2p7wL2cr5lW7PGZxlZI4tbPiwQRC8JKaXk/edit?usp=drive_link)
 - [FIMS FAQs](https://noaa-fims.github.io/about/faq)
-- [NOAA-FIMS Discussions](http://github.com/orgs/NOAA-FIMS/discussions)
+- [NOAA-FIMS Discussions](https://github.com/orgs/NOAA-FIMS/discussions)
 :::
 
 :::
@@ -43,13 +43,13 @@ categories:
 **FIMS Code Club (Tackling TODO: items in code)** <br>
 Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H <br>
 Location: Virtual <br>
-Online: [Google Meet](http://meet.google.com/ica-ieta-ndu)
+Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&ref=https://meet.google.com/ica-ieta-ndu)
 
 ### Thursday, July 24
 **FIMS Seaside Chat (🤷)** <br>
 Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H <br>
 Location: Virtual <br>
-Online: [Google Meet](http://meet.google.com/scg-pyqi-ghj) <br>
+Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-ghj&ref=https://meet.google.com/scg-pyqi-ghj) <br>
 :::
 :::
 

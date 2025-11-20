@@ -67,7 +67,7 @@ FIMS is a collaborative effort that would not be possible without the generous s
 
 ### Project Lead
 
-The Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the [Terms of Reference](FIMS_TOR_08.26.2021.pdf) and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the [Github Projects](https://github.com/orgs/NOAA-FIMS/projects) and [GitHub Milestones](https://github.com/NOAA-FIMS/FIMS/milestones).
+The Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the [Terms of Reference](FIMS_TOR_08.26.2021.pdf) and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the [Github Projects](https://github.com/orgs/NOAA-FIMS/projects?query=is%3Aopen) and [GitHub Milestones](https://github.com/NOAA-FIMS/FIMS/milestones).
 
 ### Lead Software Architect
 
