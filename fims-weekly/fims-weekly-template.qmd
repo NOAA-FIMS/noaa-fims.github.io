@@ -40,7 +40,7 @@
 ::: {.content-hidden unless-meta="upcoming-events.code-club"}
 ### {{< meta upcoming-events.code-club-date >}}
 **{{< meta upcoming-events.code-club-name >}}**\n
-Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
+Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H\n
 Location: Virtual\n
 Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&ref=https://meet.google.com/ica-ieta-ndu)
 :::
