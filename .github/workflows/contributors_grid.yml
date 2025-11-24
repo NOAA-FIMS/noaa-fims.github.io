@@ -1,0 +1,133 @@
+name: Contributors list
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  contrib-qmd-job:
+    runs-on: ubuntu-latest
+    name: A job to fetch contribs from NOAA-FIMS/FIMS
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch contributors from NOAA-FIMS/FIMS and write avatar grid to qmd with text
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = 'NOAA-FIMS';
+            const repo = 'FIMS';
+            const per_page = 100;
+            let page = 1;
+            let contributors = [];
+            while (true) {
+              const res = await github.rest.repos.listContributors({
+                owner,
+                repo,
+                per_page,
+                page,
+              });
+              contributors = contributors.concat(res.data);
+              if (res.data.length < per_page) break;
+              page++;
+            }
+            
+            // Text above contributors grid
+            const aboveContributors = `# FIMS Team
+            
+            FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.
+            
+            ## Project Lead
+            
+            * Kelli F. Johnson (OST)
+            
+            ## Core Developers
+            
+            * Jon K. T. Brodziak (PIFSC)
+            * Kathryn L. Doering (OST)
+            * Andrea M. Havron (OST)
+            * Alexander J. Jensen (SWFSC)
+            * Ronald Klasky (T and T Consulting Services, Inc.)
+            * Peter T. Kuriyama (SWFSC)
+            * Christopher M. Legault (NEFSC)
+            * Bai Li (OST)
+            * Timothy J. Miller (NEFSC)
+            * Cole C. Monnahan (AFSC)
+            * Megumi C. Oshima (PIFSC)
+            * Jane Y. Sullivan (AFSC)
+            * Matthew Supernaw (OST)
+            * Ian G. Taylor (NWFSC)
+            * Nathan R. Vaughan (Vaughan Analytics)
+            * Eric J. Ward (NWFSC)
+            
+            ## Subject-Matter Experts
+            
+            * Lisa Pfeiffer (NWFSC)
+            * Patrick D. Lynch (OST)
+            * Richard D. Methot (NWFSC)`;
+
+            // Contributors grid (avatars above usernames, both linked)
+            const imageSize = 80;
+            let contributorsGrid = "## Contributors\n\n";
+            contributorsGrid += '<table><tr>';
+            let count = 0;
+            for (const c of contributors) {
+              contributorsGrid += `<td align="center" valign="top" style="padding:12px"><a href="${c.html_url}"><img src="${c.avatar_url}" width="${imageSize}" alt="${c.login}" style="border-radius:8px"/><br/><sub>${c.login}</sub></a></td>`;
+              count++;
+              if (count % 6 === 0) contributorsGrid += '</tr><tr>';
+            }
+            contributorsGrid += '</tr></table>\n';
+
+            // Roles and authorship section
+            const rolesAndAuthorship = `## Roles
+
+            ### Project Lead
+
+            The Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the [Terms of Reference](FIMS_TOR_08.26.2021.pdf) and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the [Github Projects](https://github.com/orgs/NOAA-FIMS/projects) and [GitHub Milestones](https://github.com/NOAA-FIMS/FIMS/milestones).
+
+            ### Lead Software Architect
+
+            The Lead Software Architect is responsible for advising the architecture of FIMS to maximize portability and extensibility; manage technical risks and opportunities; advise the Project Lead on software design, refactor, and implementation decisions; and guarantee quality of deliveries via code review. The Lead Software Architect also educates the team on technical best practices.
+
+            ### Lead Test Engineer
+
+            The Lead Test Engineer is responsible for designing and driving test objectives, test strategies, and test plans of the FIMS product at subsequent milestones. The Lead Test Engineer will identify the tools for test reporting, management and automation, guide and monitor the design, implementation, and execution of test cases and test procedures. The Lead Test Engineer will train and mentor implementation team members on how to effectively write and debug tests.
+
+            ### Lead Statistical Computing Engineer
+
+            The Lead Statistical Computing Engineer is responsible for designing the FIMS statistical architecture that maximizes statistical accuracy and ensures the implementation of statistical good practices. The Lead Statistical Computing Engineer will advise the Project Lead on design and implementation decisions and will work closely with the Lead Software Architect to ensure a balance between computation and statistical efficiency and with the Lead Test Engineer to develop tests that check the statistical accuracy of model design. 
+
+            ### Outreach and Transition Coordinator
+
+            The Outreach and Transition Coordinator communicates with policy-makers, NOAA leadership, and regional offices on transition plans from existing assessment models and processes to FIMS. This coordinator works with academic partners to develop and coordinate training on using FIMS.
+
+            ### Lead of Workflows, Accessibility, and Integration
+
+            The Lead of Workflows, Accessibility, and Integration is responsible for designing and driving workflows and automation to support the reliability and robustness of the FIMS. The Lead of Workflows, Accessibility, and Integration ensures FIMS aligns with expected standards for accessibility and quality control in accordance with guidelines set by the Fisheries Integrated Toolbox. This lead coordinates with the Lead Test Engineer to ensure test cases are automated and successfully run by GitHub Actions and coordinates with the Lead Statistical Computing Engineer to identify opportunities to expand FIMS across related disciplines. 
+
+            ### Regional Representatives
+
+            Regional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations.
+
+            ## Authorship
+
+            Current developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., [FIMS DESCRIPTION](https://github.com/NOAA-FIMS/FIMS/blob/main/DESCRIPTION). When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit.
+            `;
+
+            const fs = require('fs');
+            fs.mkdirSync('contact', { recursive: true });
+            fs.writeFileSync('contact/contributors.qmd',
+              `${aboveContributors}\n\n${contributorsGrid}\n${rolesAndAuthorship}`
+            );
+
+      - name: Commit and push if contributors.qmd changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add contact/contributors.qmd
+          git diff --cached --quiet || git commit -m "Update contributors list"
+          git push
