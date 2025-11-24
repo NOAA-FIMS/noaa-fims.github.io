@@ -130,4 +130,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add contact/contributors.qmd
           git diff --cached --quiet || git commit -m "Update contributors list"
+          git pull --rebase origin main
           git push
