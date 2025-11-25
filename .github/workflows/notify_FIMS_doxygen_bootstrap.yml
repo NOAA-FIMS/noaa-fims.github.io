@@ -1,0 +1,31 @@
+name: Notify FIMS on Bootstrap File Change in FIMS Website Repo
+
+on:
+  push:
+    paths:
+      - docs/site_libs/bootstrap/**
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        
+      - name: Check for target .css file
+        id: target_file
+        run: |
+          FILE=$(ls docs/site_libs/bootstrap | grep '^bootstrap-[0-9a-f]\+\.min\.css$' | grep -v 'dark' | head -n 1 || true)
+          echo "TARGET=$FILE" >> $GITHUB_ENV
+          if [ -z "$FILE" ]; then
+            echo "No matching file found"
+            exit 0
+          fi
+
+      - name: Repository Dispatch
+        if: env.TARGET != ''
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.FIMS_REPO_PAT }}
+          repository: NOAA-FIMS/FIMS
+          event-type: file-updated
