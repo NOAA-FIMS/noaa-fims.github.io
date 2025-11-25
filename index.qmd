@@ -118,9 +118,9 @@ resources:
       <i class="fa-solid fa-user-plus"></i> <strong>New User</strong><br>
       Someone who wants to use FIMS but is uncertain how to start or is more comfortable using the wrapper functions in R rather than specifying the model line by line with lists. <br>
       <i class="fa-solid fa-user-ninja"></i> <strong>Power User</strong><br>
-      A repeat user of FIMS who wants to dig down into the source code to see how it is connected to R or someone who wants more control of their model than what the wrapper functions in R can provide. <br>
+      A repeat user of FIMS who wants to dig into the source code to see how it is connected to R or someone who wants more control of their model than what the wrapper functions in R provide. <br>
       <i class="fa-solid fa-person-arrow-down-to-line"></i> <strong>Receiver of Results</strong><br>
-      Typically a manager or stakeholder who has a desire to explore the model output without wanting to know how to use FIMS themselves. <br>
+      Typically a manager or stakeholder who has a desire to explore the model output without wanting to use FIMS themselves. <br>
     </p>
     <a class="mt4 action text" href="about/index.qmd">See the <strong>overview page</strong> for more! →</a>
   </div>

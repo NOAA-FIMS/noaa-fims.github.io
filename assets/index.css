@@ -36,7 +36,7 @@
 .site-logo {
   flex: 1 1 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end; /* logo to the right */
   max-width: 600px; /* adjust as needed */
 }
