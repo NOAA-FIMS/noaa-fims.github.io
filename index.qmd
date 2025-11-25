@@ -109,14 +109,18 @@ resources:
     </div>
 
     <p class="site-intro fs-5">
-      Welcome to the <strong>Fisheries Integrated Modeling System (FIMS)</strong> community playbook, the sole source of information for all members of the FIMS community, which includes developers, users, and receivers of stock assessments. We welcome both those that are new and seasoned to the field to join us as we work to fulfill our <a href="about/index.qmd#mission">mission</a>! <br>
+      Welcome to the <strong>Fisheries Integrated Modeling System (FIMS)</strong> community playbook, your source of information for all members of the FIMS community--developers, users, and receivers of stock assessments. We welcome both those that are new and seasoned to the field to join us as we work to fulfill our <a href="about/index.qmd#mission">mission</a>! <br>
       <br>
-      We use the following icons to help each type of community member find information that is relevant to them quickly within this playbook:<br>
+      We use the following icons to help each type of community member find relevant information quickly within this playbook:<br>
 
-      <i class="fa-solid fa-user-gear"></i> Developer<br>
-      <i class="fa-solid fa-user-plus"></i> New User<br>
-      <i class="fa-solid fa-user-ninja"></i> Power User<br>
-      <i class="fa-solid fa-person-arrow-down-to-line"></i> Receiver of Results<br>
+      <i class="fa-solid fa-user-gear"></i> <strong>Developer</strong><br>
+      An active developer of FIMS that is wanting information on how to change the codebase or update the documentation. <br>
+      <i class="fa-solid fa-user-plus"></i> <strong>New User</strong><br>
+      Someone who wants to use FIMS but is uncertain how to start or is more comfortable using the wrapper functions in R rather than specifying the model line by line with lists. <br>
+      <i class="fa-solid fa-user-ninja"></i> <strong>Power User</strong><br>
+      A repeat user of FIMS who wants to dig down into the source code to see how it is connected to R or someone who wants more control of their model than what the wrapper functions in R can provide. <br>
+      <i class="fa-solid fa-person-arrow-down-to-line"></i> <strong>Receiver of Results</strong><br>
+      Typically a manager or stakeholder who has a desire to explore the model output without wanting to know how to use FIMS themselves. <br>
     </p>
     <a class="mt4 action text" href="about/index.qmd">See the <strong>overview page</strong> for more! →</a>
   </div>
