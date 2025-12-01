@@ -90,7 +90,7 @@ if (length(new_blocks) > 0) {
 # Save unique contributors
 if (length(new_contributors) > 0) {
   new_contributors <- unique(new_contributors)
-  cat(paste(new_contributors, collapse = " "), file = "top_contributors.txt")
+  cat(paste0("@", new_contributors, collapse = " "), file = "top_contributors.txt")
 } else {
   cat("", file = "top_contributors.txt")
 }

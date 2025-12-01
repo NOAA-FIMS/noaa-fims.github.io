@@ -55,7 +55,9 @@ jobs:
           commit-message: "Update sites_index.qmd for new pkgdown site in FIMS org"
           branch: auto/pkgdown-update
           title: "Update sites_index.qmd for new pkgdown site in FIMS org"
-          reviewers: e-perl-NOAA, ${{ env.TOP_CONTRIB }}
+          reviewers: | 
+            e-perl-NOAA 
+            ${{ env.TOP_CONTRIB }}
           body: |
             :sparkles: **Automated update to `sites/sites_index.qmd`** :sparkles:
               
