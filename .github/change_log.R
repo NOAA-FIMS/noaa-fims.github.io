@@ -8,7 +8,12 @@ API_URL <- paste0("https://api.github.com/repos/", REPO, "/releases")
 
 # Fetch releases from GitHub API
 fetch_releases <- function(api_url) {
-  resp <- GET(api_url)
+  token <- Sys.getenv("GITHUB_TOKEN")
+  resp <- if (nzchar(token)) {
+    GET(api_url, add_headers(Authorization = paste("Bearer", token)))
+  } else {
+    GET(api_url)
+  }
   stop_for_status(resp)
   fromJSON(content(resp, as = "text", encoding = "UTF-8"))
 }

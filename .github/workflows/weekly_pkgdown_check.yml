@@ -34,12 +34,13 @@ jobs:
       - name: Check if pkgdown sites need updating and update
         run: Rscript .github/get_pkgdown_sites.R
   
-      - name: Check for changes to qmd file file
+      - name: Check for changes to qmd file
+        id: git-check
         run: |
           git config --global user.email "gh-actions@github.com"
           git config --global user.name "GitHub Actions"
           git add sites/sites_index.qmd
-          git diff --cached --quiet || echo "CHANGED=true" >> $GITHUB_ENV
+          git diff --cached --quiet || echo "changed=true" >> $GITHUB_OUTPUT
           
       - name: Get top contributor username
         id: topcontrib
@@ -48,16 +49,17 @@ jobs:
           rm top_contributors.txt
           
       - name: Create Pull Request for updated sites_index.qmd
-        if: env.CHANGED == 'true'
+        if: steps.git-check.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           commit-message: "Update sites_index.qmd for new pkgdown site in FIMS org"
           branch: auto/pkgdown-update
           title: "Update sites_index.qmd for new pkgdown site in FIMS org"
+          reviewers: e-perl-NOAA, ${{ env.TOP_CONTRIB }}
           body: |
             :sparkles: **Automated update to `sites/sites_index.qmd`** :sparkles:
               
-            Hey 👋 ${{ env.TOP_CONTRIBS }}, your package’s pkgdown site has been added!
+            Hey 👋 ${{ env.TOP_CONTRIB }}, your package’s pkgdown site has been added!
   
             Please add appropriate **categories** to the newly listed pkgdown site in `sites/sites_index.qmd` to help with site indexing and discovery.
   
