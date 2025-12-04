@@ -38,10 +38,10 @@ Online: [Google meet](MEETING LINK)
 -->
 
 ::: {#photo-code}
-<i class="fa-solid fa-user-gear"></i> Developer<br>
+<i class="fa-solid fa-rectangle-terminal"></i> Developer<br>
 <i class="fa-solid fa-user-plus"></i> New User<br>
-<i class="fa-solid fa-user-ninja"></i> Power User<br>
-<i class="fa-solid fa-person-arrow-down-to-line"></i> Receiver of Results<br>
+<i class="fa-solid fa-bolt"></i> Power User<br>
+<i class="fa-solid fa-chart-line-up"></i> Receiver of Results<br>
 :::
 
         
