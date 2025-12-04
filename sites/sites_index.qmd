@@ -67,6 +67,7 @@ listing:
       title: FIMSdiags
       description: >
         R package to run model diagnostics on FIMS models
+      categories: [R, diagnostics]
     - path: https://noaa-fims.github.io/FIMSRTMB/
       title: FIMSRTMB
       description: >
