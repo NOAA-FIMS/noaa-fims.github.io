@@ -1,0 +1,11 @@
+- title: "FIMS"
+  description: "The primary package of FIMS"
+  repository: "https://github.com/noaa-fims/fims"
+  website: "https://noaa-fims.github.io/FIMS/"
+  status: experimental
+
+- title: "FIMSdiags"
+  description: "Run common diagnostic analyses on FIMS models"
+  repository: "https://github.com/NOAA-FIMS/FIMSdiags"
+  website: "https://noaa-fims.github.io/FIMSdiags/"
+  status: [experimental]
