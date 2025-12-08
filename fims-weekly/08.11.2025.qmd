@@ -3,7 +3,7 @@ title: "August 11–15, 2025"
 date: "August 11, 2025"
 # Change the following categories accordingly
 categories: 
-  - release
+  - releases
   - git/GitHub
   - VSCode
 three-big-things:
