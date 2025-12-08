@@ -24,25 +24,12 @@ FIMS is a collaborative effort that would not be possible without the generous s
 * Ian G. Taylor (NWFSC)
 * Nathan R. Vaughan (Vaughan Analytics)
 * Eric J. Ward (NWFSC)
-* Erik H. Williams (SEFSC)
 
 ## Subject-Matter Experts
 
 * Lisa Pfeiffer (NWFSC)
 * Patrick D. Lynch (OST)
 * Richard D. Methot (NWFSC)
-
-## Former Developers
-
-* Jennifer S. Bigman (University of Delaware)
-* Kristan Blackhart (NEFSC)
-* Edward J. Dick (SWFSC)
-* Alan C. Haynie (ICES)
-* James N. Ianelli (AFSC)
-* Hui-hua Lee (SWFSC)
-* Kyle W. Shertzer (SEFSC)
-* Christine C. Stawitz (University of Birmingham)
-* Howard Townsend (OST)
 
 ## Contributors
 
