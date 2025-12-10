@@ -162,3 +162,9 @@ pre > code,
   --bs-card-spacer-y: 0.75rem;  /* vertical padding inside card */
   --bs-card-spacer-x: 0.75rem;  /* horizontal padding inside card */
 }
+
+img.thumbnail-image.card-img {
+  height: 180px !important;   /* or your preferred height */
+  width: auto !important;     /* maintain aspect ratio */
+  object-fit: unset !important; /* disables cover/crop effect */
+}
