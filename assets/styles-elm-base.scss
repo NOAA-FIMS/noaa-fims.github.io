@@ -157,3 +157,8 @@ pre > code,
 .card h5 {
 	margin-top: 1em;
 }
+
+.card {
+  --bs-card-spacer-y: 0.75rem;  /* vertical padding inside card */
+  --bs-card-spacer-x: 0.75rem;  /* horizontal padding inside card */
+}
