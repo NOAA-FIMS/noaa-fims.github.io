@@ -149,12 +149,11 @@ pre > code,
   color: var(--bs-body-color);
 }
 
-.listing-card {
-  width: 400px !important;    /* adjust as needed */
-  margin: 10px !important;
+.quarto-listing-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1em;
 }
 
-.listing-grid {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important; /* matches card width */
-  gap: 10px !important; /* adds more space between cards */
+.card h5 {
+	margin-top: 1em;
 }
