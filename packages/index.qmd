@@ -7,7 +7,7 @@ listing:
   sort:
     - "title"
   type: grid
-  image-height: 10px
+  image-height: 100px
   grid-columns: 4
   fields: [image, title, description, categories]
 header-includes: >
@@ -16,5 +16,6 @@ header-includes: >
 
 ::: {#fims-packages-listing}
 :::
+
 
 
