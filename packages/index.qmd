@@ -9,11 +9,12 @@ listing:
   type: grid
   image-height: 10px
   grid-columns: 4
-  fields: [image, title, description, category]
+  fields: [image, title, description, categories]
 header-includes: >
   <link rel="stylesheet" href="../assets/index.css">
 ---
 
 ::: {#fims-packages-listing}
 :::
+
 
