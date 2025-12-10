@@ -150,8 +150,8 @@ pre > code,
 }
 
 .quarto-listing-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1em;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 0.75em;
 }
 
 .card h5 {
@@ -167,8 +167,12 @@ pre > code,
   padding: 0.75rem;
 }
 
+.quarto-grid-item.card-left {
+    text-align: center;
+}
+
 img.thumbnail-image.card-img {
-  height: 180px !important;   /* or your preferred height */
+  height: 120px !important;   /* or your preferred height */
   width: auto !important;     /* maintain aspect ratio */
   object-fit: unset !important; /* disables cover/crop effect */
 }
