@@ -7,15 +7,16 @@ listing:
   sort:
     - "title"
   type: grid
-  image-height: 225px
+  image-height: 250px
   grid-columns: 3
-  fields: [image, title, description, categories, repository-website]
+  fields: [image, title, description, categories]
 header-includes: >
   <link rel="stylesheet" href="../assets/index.css">
 ---
 
 ::: {#fims-packages-listing}
 :::
+
 
 
 
