@@ -11,7 +11,7 @@
     "href": "packages/index.html",
     "title": "FIMS Packages",
     "section": "",
-    "text": "This webpage is currently under construction but once it is done it will list all packages related to FIMS. For example, {fishprior} is an R package that is currently being built to use life-history information to help inform priors that are relevant to assessments. Thus, it will be helpful for those running FIMS models and will be listed here but it will also be helpful to those doing general fisheries research."
+    "text": "FIMS\n\n\nThe primary package of FIMS  - Link to website  - Link to repository\n\n\n\n\n\ncategory\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMSdiags\n\n\nRun common diagnostic analyses on FIMS models\n\n\n\n\n\ncategory\n\n\n \n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "fims-weekly/index.html",
