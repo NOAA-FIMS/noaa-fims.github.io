@@ -3,6 +3,10 @@
     The primary package of FIMS <br>
     - [Link to website](https://noaa-fims.github.io/) <br>
     - [Link to repository](https://github.com/noaa-fims/fims)
+  repository-website: >
+    - [Link to website](https://noaa-fims.github.io/FIMSdiags/)
+
+    - [Link to repository](https://github.com/NOAA-FIMS/FIMSdiags)
   path: "https://noaa-fims.github.io/"
   image: ../images/FIMS_hexlogo.png
   categories: [experimental]
