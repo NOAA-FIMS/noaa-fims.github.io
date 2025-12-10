@@ -9,9 +9,10 @@
 
 - title: "FIMSdiags"
   description: > 
-    Run common diagnostic analyses on FIMS models
+    Run common diagnostic analyses on FIMS models <br>
     - [Link to website](https://noaa-fims.github.io/FIMSdiags/) <br>
     - [Link to repository](https://github.com/NOAA-FIMS/FIMSdiags)
   path: "https://noaa-fims.github.io/FIMSdiags/"
   categories: [experimental]
+
 
