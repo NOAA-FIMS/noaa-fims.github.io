@@ -150,6 +150,11 @@ pre > code,
 }
 
 .listing-card {
-  width: 350px;    /* adjust as needed */
-  margin: 10px;
+  width: 400px !important;    /* adjust as needed */
+  margin: 10px !important;
+}
+
+.listing-grid {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important; /* matches card width */
+  gap: 10px !important; /* adds more space between cards */
 }
