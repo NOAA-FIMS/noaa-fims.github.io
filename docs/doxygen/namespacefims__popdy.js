@@ -1,8 +1,9 @@
 var namespacefims__popdy =
 [
     [ "CatchAtAge", "classfims__popdy_1_1CatchAtAge.html", "classfims__popdy_1_1CatchAtAge" ],
+    [ "DimensionInfo", "structfims__popdy_1_1DimensionInfo.html", "structfims__popdy_1_1DimensionInfo" ],
     [ "DoubleLogisticSelectivity", "structfims__popdy_1_1DoubleLogisticSelectivity.html", "structfims__popdy_1_1DoubleLogisticSelectivity" ],
-    [ "EWAAgrowth", "structfims__popdy_1_1EWAAgrowth.html", "structfims__popdy_1_1EWAAgrowth" ],
+    [ "EWAAGrowth", "structfims__popdy_1_1EWAAGrowth.html", "structfims__popdy_1_1EWAAGrowth" ],
     [ "FisheryModelBase", "classfims__popdy_1_1FisheryModelBase.html", "classfims__popdy_1_1FisheryModelBase" ],
     [ "Fleet", "structfims__popdy_1_1Fleet.html", "structfims__popdy_1_1Fleet" ],
     [ "GrowthBase", "structfims__popdy_1_1GrowthBase.html", "structfims__popdy_1_1GrowthBase" ],
@@ -15,5 +16,6 @@ var namespacefims__popdy =
     [ "RecruitmentBase", "structfims__popdy_1_1RecruitmentBase.html", "structfims__popdy_1_1RecruitmentBase" ],
     [ "SelectivityBase", "structfims__popdy_1_1SelectivityBase.html", "structfims__popdy_1_1SelectivityBase" ],
     [ "SRBevertonHolt", "structfims__popdy_1_1SRBevertonHolt.html", "structfims__popdy_1_1SRBevertonHolt" ],
-    [ "Subpopulation", "classfims__popdy_1_1Subpopulation.html", null ]
+    [ "Subpopulation", "classfims__popdy_1_1Subpopulation.html", null ],
+    [ "UncertaintyReportInfo", "structfims__popdy_1_1UncertaintyReportInfo.html", "structfims__popdy_1_1UncertaintyReportInfo" ]
 ];

@@ -4,6 +4,7 @@ var structfims__distributions_1_1DistributionElementObject =
     [ "get_n_x", "structfims__distributions_1_1DistributionElementObject.html#a079418141629bad2136d5995568eae9c", null ],
     [ "get_observed", "structfims__distributions_1_1DistributionElementObject.html#a0db161abeed5ea992be5a243c250190b", null ],
     [ "get_observed", "structfims__distributions_1_1DistributionElementObject.html#a34d8699ce451fc2a361d0078b472e0a6", null ],
+    [ "data_expected_values", "structfims__distributions_1_1DistributionElementObject.html#a4cfa06e9041918619f417b31b236ceba", null ],
     [ "expected_values", "structfims__distributions_1_1DistributionElementObject.html#aba452dcc2e5019a053dffbe018261a7b", null ],
     [ "input_type", "structfims__distributions_1_1DistributionElementObject.html#a9bc435e1950d9d44e7537a4a4266bf09", null ],
     [ "observed_values", "structfims__distributions_1_1DistributionElementObject.html#a79660a41cc408f0aea8dea71a9748c56", null ],

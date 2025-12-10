@@ -10,5 +10,6 @@ var classParameter =
     [ "id_m", "classParameter.html#aaa48a69ea9e425a8942ce9536ad5ccdf", null ],
     [ "initial_value_m", "classParameter.html#a0c506852f8ea3ca7b5b2e8ec596337e8", null ],
     [ "max_m", "classParameter.html#ace3bc0c1165266d153b58730ee540289", null ],
-    [ "min_m", "classParameter.html#afd532cb4fb7bac35a67a0097ea16b784", null ]
+    [ "min_m", "classParameter.html#afd532cb4fb7bac35a67a0097ea16b784", null ],
+    [ "uncertainty_m", "classParameter.html#a1ef2aa4e09ab76983ade45219a68989f", null ]
 ];

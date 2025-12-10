@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['throw_5fon_5ferror_0',['throw_on_error',['../classfims_1_1FIMSLog.html#a26d3d3b190fb352e3c4d8cd03c57397f',1,'fims::FIMSLog']]],
-  ['timestamp_1',['timestamp',['../structfims_1_1LogEntry.html#aecbb278a89207626d3b379f1bce9fffc',1,'fims::LogEntry']]],
-  ['total_5flandings_5fnumbers_2',['total_landings_numbers',['../structfims__popdy_1_1Population.html#ac664a58371fb6ef902c7d2e07d04b230',1,'fims_popdy::Population']]],
-  ['total_5flandings_5fweight_3',['total_landings_weight',['../structfims__popdy_1_1Population.html#ab7087dff024ddbd8bf0605a1a770db0d',1,'fims_popdy::Population']]]
+  ['uncertainty_0',['uncertainty',['../structfims__data__object_1_1DataObject.html#a2f8a5e4b6a6b203cd1c3539dff660019',1,'fims_data_object::DataObject::uncertainty'],['../classDataInterfaceBase.html#a92113c5294f746f9131970607842bc45',1,'DataInterfaceBase::uncertainty'],['../classAgeCompDataInterface.html#a0581df6d887e1f986485a5ce9dad5127',1,'AgeCompDataInterface::uncertainty'],['../classLengthCompDataInterface.html#a75ca791884cc4c07a9434439a99389ee',1,'LengthCompDataInterface::uncertainty'],['../classIndexDataInterface.html#ab5c23fa0684e53cb39a1293fa7eda105',1,'IndexDataInterface::uncertainty'],['../classLandingsDataInterface.html#a5c5715ca2a7d892c083164cd0fce3877',1,'LandingsDataInterface::uncertainty']]],
+  ['uncertainty_5fm_1',['uncertainty_m',['../classParameter.html#a1ef2aa4e09ab76983ade45219a68989f',1,'Parameter']]],
+  ['user_2',['user',['../structfims_1_1LogEntry.html#af918075584df32b11182b0406b84fd48',1,'fims::LogEntry']]]
 ];

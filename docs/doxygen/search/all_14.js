@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['unfished_5fbiomass_0',['unfished_biomass',['../structfims__popdy_1_1Population.html#ad2539a574c8959c8d2404a18e6d1e18c',1,'fims_popdy::Population']]],
-  ['unfished_5fnumbers_5fat_5fage_1',['unfished_numbers_at_age',['../structfims__popdy_1_1Population.html#a8b061fb7270fee912f17ccec44b04ba9',1,'fims_popdy::Population']]],
-  ['unfished_5fspawning_5fbiomass_2',['unfished_spawning_biomass',['../structfims__popdy_1_1Population.html#ab5743f2e2705d6502f5f5af913e262e3',1,'fims_popdy::Population']]],
-  ['user_3',['user',['../structfims_1_1LogEntry.html#af918075584df32b11182b0406b84fd48',1,'fims::LogEntry']]],
-  ['utilities_4',['Utilities',['../md_inst_2include_2utilities_2README.html',1,'']]]
+  ['uncertainty_0',['uncertainty',['../structfims__data__object_1_1DataObject.html#a2f8a5e4b6a6b203cd1c3539dff660019',1,'fims_data_object::DataObject::uncertainty'],['../classDataInterfaceBase.html#a92113c5294f746f9131970607842bc45',1,'DataInterfaceBase::uncertainty'],['../classAgeCompDataInterface.html#a0581df6d887e1f986485a5ce9dad5127',1,'AgeCompDataInterface::uncertainty'],['../classLengthCompDataInterface.html#a75ca791884cc4c07a9434439a99389ee',1,'LengthCompDataInterface::uncertainty'],['../classIndexDataInterface.html#ab5c23fa0684e53cb39a1293fa7eda105',1,'IndexDataInterface::uncertainty'],['../classLandingsDataInterface.html#a5c5715ca2a7d892c083164cd0fce3877',1,'LandingsDataInterface::uncertainty']]],
+  ['uncertainty_5fm_1',['uncertainty_m',['../classParameter.html#a1ef2aa4e09ab76983ade45219a68989f',1,'Parameter']]],
+  ['uncertaintyreportinfo_2',['uncertaintyreportinfo',['../structfims__popdy_1_1UncertaintyReportInfo.html',1,'fims_popdy::UncertaintyReportInfo'],['../structfims__popdy_1_1UncertaintyReportInfo.html#a56caaf3ace2d8a2ba90060c1c0734c7f',1,'fims_popdy::UncertaintyReportInfo::UncertaintyReportInfo()'],['../structfims__popdy_1_1UncertaintyReportInfo.html#abac86d638e7a014e8bf4456e0664cdff',1,'fims_popdy::UncertaintyReportInfo::UncertaintyReportInfo(const std::string &amp;name, uint32_t id, size_t start, size_t length)'],['../structfims__popdy_1_1UncertaintyReportInfo.html#a017a8c8dbc1f39dd5a69aee9885159eb',1,'fims_popdy::UncertaintyReportInfo::UncertaintyReportInfo(const UncertaintyReportInfo &amp;other)']]],
+  ['uncertaintyreportinfomap_3',['UncertaintyReportInfoMap',['../classfims__popdy_1_1FisheryModelBase.html#a7040d2c5bdca6bb3789f99bc7fb870f9',1,'fims_popdy::FisheryModelBase']]],
+  ['user_4',['user',['../structfims_1_1LogEntry.html#af918075584df32b11182b0406b84fd48',1,'fims::LogEntry']]],
+  ['utilities_5',['inst/include/utilities/',['../md_inst_2include_2README.html#autotoc_md7',1,'']]]
 ];

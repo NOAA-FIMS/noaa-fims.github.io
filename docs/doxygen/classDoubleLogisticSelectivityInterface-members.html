@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <meta name="generator" content="Doxygen 1.9.8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>FIMS: Member List</title><title>Member List</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
-    <link rel="icon" type="image/png" href="../images/FIMS_hexlogo.png">
+    <title>FIMS</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="https://noaa-fims.github.io/images/FIMS_hexlogo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-06a8a7a3a18fc17cd2940e96bb351f4a.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-5c5d58904a6a5c707f9a8e5817847b0d.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -42,11 +42,11 @@ MathJax.Hub.Config({
     <div id="titlearea">
         <table cellspacing="0" cellpadding="0">
             <tbody>
-            <tr style="height: 56px;">
+            <tr style="height: 70px;">
                 <td id="projectlogo"><img alt="Logo" src="FIMS_logo3.png"/></td>
                 <td id="projectalign" style="padding-left: 0.5em;">
                     <div id="projectname">FIMS
-                        &#160;<span id="projectnumber">v0.6.3</span></div>
+                        &#160;<span id="projectnumber">v0.7.0</span></div>
                     <div id="projectbrief"></div></td>
                 <td style="padding-left: 0.5em;">
                     <div id="projectbrief"></div>
@@ -73,20 +73,31 @@ MathJax.Hub.Config({
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/about/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">about</span></a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">about</span></a></li>
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/contributors.html"><span class="dropdown-text">fims team</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">overview</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/faq.html"><span class="dropdown-text">faq</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/calendar.html"><span class="dropdown-text">calendar</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="dropdown-text">changelog</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/acknowledgements.html"><span class="dropdown-text">acknowledgements</span></a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://noaa-fims.github.io/fims-weekly/index.html"><span class="menu-text">fims weekly</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">sites and docs</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/projects/index.html"><span class="menu-text">projects</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="menu-text">changelog</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/packages/index.html"><span class="menu-text">packages</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">resources</span></a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/contact/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">contact</span></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/index.html"><span class="dropdown-text">contact FIMS lead</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/contributors.html"><span class="dropdown-text">FIMS team</span></a></li>
+              </ul>
             </li>
             <li class="nav-item compact">
               <a class="nav-link" href="https://github.com/NOAA-FIMS/FIMS"><i class="bi bi-github" role="img"></i><span class="menu-text"></span></a>
@@ -109,8 +120,45 @@ MathJax.Hub.Config({
             </div>
       </div>
     </nav>
-    <!-- end header part -->
-<!-- Generated by Doxygen 1.9.8 -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Only on the cpp_directory_structure page!
+    document.querySelectorAll('.toc a').forEach(function(link) {
+      if (link.href && link.href.indexOf(location.pathname) !== -1) {
+        link.href = link.hash; // Just use the fragment
+      }
+    });
+  });
+  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function updateTocActive() {
+    var links = Array.from(document.querySelectorAll('.toc a'));
+    var anchors = links.map(link => document.getElementById(link.getAttribute('href').replace('#', '')));
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var offset = 150; // Match your scroll-margin-top
+    let currentActive = -1;
+    for (let i = anchors.length - 1; i >= 0; i--) {
+      if (anchors[i] && (anchors[i].getBoundingClientRect().top + window.scrollY - offset) <= scrollTop) {
+        currentActive = i;
+        break;
+      }
+    }
+    links.forEach((link, i) => {
+      link.classList.remove('active', 'aboveActive');
+      if (i === currentActive) {
+        link.classList.add('active');
+      } else if (i < currentActive) {
+        link.classList.add('aboveActive');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateTocActive);
+  window.addEventListener('hashchange', updateTocActive);
+  updateTocActive();
+});
+</script>
+    <!-- end header part --><!-- Generated by Doxygen 1.9.8 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -169,19 +217,22 @@ $(document).ready(function(){initNavTree('classDoubleLogisticSelectivityInterfac
   <tr class="odd"><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html#ae35e641acb050c1311154539e16ecdf3">finalize</a>()</td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classFIMSRcppInterfaceBase.html#a44e4e3b1dd18103bf79ccb30a76f5933">finalized</a></td><td class="entry"><a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a59dc01d2779fd81152156a19dae62fcf">get_id</a>()</td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a></td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#ad00e0a11844faa3aba5950ee634354fb">id_g</a></td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a47c30330966f4c4be60d469ff7d01d60">inflection_point_asc</a></td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a2a61582c3d83f94ddc17f5ddb01e8e89">inflection_point_desc</a></td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#a73e2366d975093bd8fc22beeb45049df">live_objects</a></td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classFIMSRcppInterfaceBase.html#a1fa6e0deb883a921fe70b328cdd30fee">make_dimensions</a>(uint32_t start, uint32_t end, uint32_t rep=1)</td><td class="entry"><a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#a400cc2a4a07f5b2faeb162e0460cdb0e">SelectivityInterfaceBase</a>()</td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#aa5f9b8006461f22d74fc1a0f58336530">SelectivityInterfaceBase</a>(const SelectivityInterfaceBase &amp;other)</td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFIMSRcppInterfaceBase.html#a72fc17f2f76b60a82db50167b1cde83d">get_se_values</a>(std::string name, std::map&lt; std::string, std::vector&lt; double &gt; &gt; &amp;se_values, fims::Vector&lt; double &gt; &amp;values)</td><td class="entry"><a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a></td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#ad00e0a11844faa3aba5950ee634354fb">id_g</a></td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a47c30330966f4c4be60d469ff7d01d60">inflection_point_asc</a></td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a2a61582c3d83f94ddc17f5ddb01e8e89">inflection_point_desc</a></td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#af1f01fe30078f84182958682e05a15a9">live_objects</a></td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFIMSRcppInterfaceBase.html#a1fa6e0deb883a921fe70b328cdd30fee">make_dimensions</a>(uint32_t start, uint32_t end, uint32_t rep=1)</td><td class="entry"><a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#a400cc2a4a07f5b2faeb162e0460cdb0e">SelectivityInterfaceBase</a>()</td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#aa5f9b8006461f22d74fc1a0f58336530">SelectivityInterfaceBase</a>(const SelectivityInterfaceBase &amp;other)</td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a8e11bab0b8c530e960f57a2f58ee4701">set_uncertainty</a>(std::map&lt; std::string, std::vector&lt; double &gt; &gt; &amp;se_values)</td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a4571cc0b0713c0f9a8c5078dbe5b1033">slope_asc</a></td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a11333991775c1771dcdbb80704a90972">slope_desc</a></td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a99e6d2a07db1738ad10e33b7c786a881">to_json</a>()</td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~DoubleLogisticSelectivityInterface</b>() (defined in <a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a>)</td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#a109aa1dea96e11fac9bdaa82b4688d62">~SelectivityInterfaceBase</a>()</td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classFIMSRcppInterfaceBase.html#a46e0ce655ef707a6c66e863aa4f0b374">value_to_string</a>(double value)</td><td class="entry"><a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~DoubleLogisticSelectivityInterface</b>() (defined in <a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a>)</td><td class="entry"><a class="el" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html#a109aa1dea96e11fac9bdaa82b4688d62">~SelectivityInterfaceBase</a>()</td><td class="entry"><a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

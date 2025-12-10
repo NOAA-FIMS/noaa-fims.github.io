@@ -20,9 +20,9 @@ var searchData=
   ['model_2ehpp_17',['model.hpp',['../model_8hpp.html',1,'']]],
   ['model_5fmap_5fiterator_18',['model_map_iterator',['../classfims__info_1_1Information.html#a9626f44ca9843b5b443519b933438a8f',1,'fims_info::Information']]],
   ['model_5fobject_2ehpp_19',['model_object.hpp',['../model__object_8hpp.html',1,'']]],
-  ['models_5fmap_20',['models_map',['../classfims__info_1_1Information.html#a14847edc29ac248e9dcaf194d824112b',1,'fims_info::Information']]],
-  ['mortality_5ff_21',['mortality_F',['../structfims__popdy_1_1Population.html#a15111c6b28581eb1e0b53c0e3a72dee0',1,'fims_popdy::Population']]],
-  ['mortality_5fz_22',['mortality_Z',['../structfims__popdy_1_1Population.html#ac1255c1f4cea7211ba9e0739e30ceafe',1,'fims_popdy::Population']]],
+  ['model_5ftype_5fm_20',['model_type_m',['../classfims__popdy_1_1FisheryModelBase.html#a447bcdf764fc22206d311aa7e36e5c8f',1,'fims_popdy::FisheryModelBase']]],
+  ['models_21',['inst/include/models/',['../md_inst_2include_2README.html#autotoc_md5',1,'']]],
+  ['models_5fmap_22',['models_map',['../classfims__info_1_1Information.html#a14847edc29ac248e9dcaf194d824112b',1,'fims_info::Information']]],
   ['multinomial_5flpmf_2ehpp_23',['multinomial_lpmf.hpp',['../multinomial__lpmf_8hpp.html',1,'']]],
   ['multinomiallpmf_24',['multinomiallpmf',['../structfims__distributions_1_1MultinomialLPMF.html',1,'fims_distributions::MultinomialLPMF&lt; Type &gt;'],['../structfims__distributions_1_1MultinomialLPMF.html#ab31b77abbda5863a2d6fd43cefb27b7e',1,'fims_distributions::MultinomialLPMF::MultinomialLPMF()']]]
 ];

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <meta name="generator" content="Doxygen 1.9.8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>FIMS: PopulationInterface Class Reference</title><title>PopulationInterface Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
-    <link rel="icon" type="image/png" href="../images/FIMS_hexlogo.png">
+    <title>FIMS</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="https://noaa-fims.github.io/images/FIMS_hexlogo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-06a8a7a3a18fc17cd2940e96bb351f4a.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-5c5d58904a6a5c707f9a8e5817847b0d.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -42,11 +42,11 @@ MathJax.Hub.Config({
     <div id="titlearea">
         <table cellspacing="0" cellpadding="0">
             <tbody>
-            <tr style="height: 56px;">
+            <tr style="height: 70px;">
                 <td id="projectlogo"><img alt="Logo" src="FIMS_logo3.png"/></td>
                 <td id="projectalign" style="padding-left: 0.5em;">
                     <div id="projectname">FIMS
-                        &#160;<span id="projectnumber">v0.6.3</span></div>
+                        &#160;<span id="projectnumber">v0.7.0</span></div>
                     <div id="projectbrief"></div></td>
                 <td style="padding-left: 0.5em;">
                     <div id="projectbrief"></div>
@@ -73,20 +73,31 @@ MathJax.Hub.Config({
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/about/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">about</span></a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">about</span></a></li>
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/contributors.html"><span class="dropdown-text">fims team</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">overview</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/faq.html"><span class="dropdown-text">faq</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/calendar.html"><span class="dropdown-text">calendar</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="dropdown-text">changelog</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/acknowledgements.html"><span class="dropdown-text">acknowledgements</span></a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://noaa-fims.github.io/fims-weekly/index.html"><span class="menu-text">fims weekly</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">sites and docs</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/projects/index.html"><span class="menu-text">projects</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="menu-text">changelog</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/packages/index.html"><span class="menu-text">packages</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">resources</span></a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/contact/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">contact</span></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/index.html"><span class="dropdown-text">contact FIMS lead</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/contributors.html"><span class="dropdown-text">FIMS team</span></a></li>
+              </ul>
             </li>
             <li class="nav-item compact">
               <a class="nav-link" href="https://github.com/NOAA-FIMS/FIMS"><i class="bi bi-github" role="img"></i><span class="menu-text"></span></a>
@@ -109,8 +120,45 @@ MathJax.Hub.Config({
             </div>
       </div>
     </nav>
-    <!-- end header part -->
-<!-- Generated by Doxygen 1.9.8 -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Only on the cpp_directory_structure page!
+    document.querySelectorAll('.toc a').forEach(function(link) {
+      if (link.href && link.href.indexOf(location.pathname) !== -1) {
+        link.href = link.hash; // Just use the fragment
+      }
+    });
+  });
+  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function updateTocActive() {
+    var links = Array.from(document.querySelectorAll('.toc a'));
+    var anchors = links.map(link => document.getElementById(link.getAttribute('href').replace('#', '')));
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var offset = 150; // Match your scroll-margin-top
+    let currentActive = -1;
+    for (let i = anchors.length - 1; i >= 0; i--) {
+      if (anchors[i] && (anchors[i].getBoundingClientRect().top + window.scrollY - offset) <= scrollTop) {
+        currentActive = i;
+        break;
+      }
+    }
+    links.forEach((link, i) => {
+      link.classList.remove('active', 'aboveActive');
+      if (i === currentActive) {
+        link.classList.add('active');
+      } else if (i < currentActive) {
+        link.classList.add('aboveActive');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateTocActive);
+  window.addEventListener('hashchange', updateTocActive);
+  updateTocActive();
+});
+</script>
+    <!-- end header part --><!-- Generated by Doxygen 1.9.8 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -200,6 +248,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a22cac116e4d291877015209dec5180e0" id="r_a22cac116e4d291877015209dec5180e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopulationInterface.html#a22cac116e4d291877015209dec5180e0">get_id</a> ()</td></tr>
 <tr class="memdesc:a22cac116e4d291877015209dec5180e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the ID of the interface base object.  <br /></td></tr>
 <tr class="separator:a22cac116e4d291877015209dec5180e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f36825cd3bd625457e984131568decb" id="r_a5f36825cd3bd625457e984131568decb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopulationInterface.html#a5f36825cd3bd625457e984131568decb">SetName</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> std::string &amp;<a class="el" href="classPopulationInterface.html#a35eeac59ec9c91677c936c68d292eadc">name</a>)</td></tr>
+<tr class="memdesc:a5f36825cd3bd625457e984131568decb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the population.  <br /></td></tr>
+<tr class="separator:a5f36825cd3bd625457e984131568decb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633cf3880396e386fc0af6a3e8a2c2fa" id="r_a633cf3880396e386fc0af6a3e8a2c2fa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopulationInterface.html#a633cf3880396e386fc0af6a3e8a2c2fa">GetName</a> () <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a></td></tr>
+<tr class="memdesc:a633cf3880396e386fc0af6a3e8a2c2fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the population.  <br /></td></tr>
+<tr class="separator:a633cf3880396e386fc0af6a3e8a2c2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ff1be8c6c4dcd417913fe9899acf135" id="r_a2ff1be8c6c4dcd417913fe9899acf135"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopulationInterface.html#a2ff1be8c6c4dcd417913fe9899acf135">SetMaturityID</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="classPopulationInterface.html#a40c59e0eaf40f3c24c2d9865bef8d477">maturity_id</a>)</td></tr>
 <tr class="memdesc:a2ff1be8c6c4dcd417913fe9899acf135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the unique ID for the Maturity object.  <br /></td></tr>
 <tr class="separator:a2ff1be8c6c4dcd417913fe9899acf135"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,10 +263,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe4f3922a8d7e4c0b503189926015ea0" id="r_afe4f3922a8d7e4c0b503189926015ea0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopulationInterface.html#afe4f3922a8d7e4c0b503189926015ea0">SetRecruitmentID</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="classPopulationInterface.html#ac29b9cd4342fce77b72213d7a448bdf6">recruitment_id</a>)</td></tr>
 <tr class="memdesc:afe4f3922a8d7e4c0b503189926015ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the unique ID for the recruitment object.  <br /></td></tr>
 <tr class="separator:afe4f3922a8d7e4c0b503189926015ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d3756ee502b615d5f7055dcb28e637" id="r_a86d3756ee502b615d5f7055dcb28e637"><td class="memItemLeft" align="right" valign="top"><a id="a86d3756ee502b615d5f7055dcb28e637" name="a86d3756ee502b615d5f7055dcb28e637"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>evaluate</b> ()</td></tr>
-<tr class="memdesc:a86d3756ee502b615d5f7055dcb28e637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the population function. <br /></td></tr>
-<tr class="separator:a86d3756ee502b615d5f7055dcb28e637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2b4d1d1f792e7ce542511b03c428ea6" id="r_ab2b4d1d1f792e7ce542511b03c428ea6"><td class="memItemLeft" align="right" valign="top"><a id="ab2b4d1d1f792e7ce542511b03c428ea6" name="ab2b4d1d1f792e7ce542511b03c428ea6"></a>
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddFleet</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">fleet_id</a>)</td></tr>
 <tr class="memdesc:ab2b4d1d1f792e7ce542511b03c428ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a fleet id to the list of fleets operating on this population. <br /></td></tr>
@@ -220,9 +270,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3eb4069c7432b3a68726e3041ed33eb" id="r_ae3eb4069c7432b3a68726e3041ed33eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopulationInterface.html#ae3eb4069c7432b3a68726e3041ed33eb">finalize</a> ()</td></tr>
 <tr class="memdesc:ae3eb4069c7432b3a68726e3041ed33eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts derived quantities back to the Rcpp interface object from the Information object.  <br /></td></tr>
 <tr class="separator:ae3eb4069c7432b3a68726e3041ed33eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab602d6441e3705e497faadaac7d17791" id="r_ab602d6441e3705e497faadaac7d17791"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopulationInterface.html#ab602d6441e3705e497faadaac7d17791">to_json</a> ()</td></tr>
-<tr class="memdesc:ab602d6441e3705e497faadaac7d17791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the data to json representation for the output.  <br /></td></tr>
-<tr class="separator:ab602d6441e3705e497faadaac7d17791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classPopulationInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classPopulationInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classPopulationInterfaceBase.html">PopulationInterfaceBase</a></td></tr>
 <tr class="memitem:a36e9d5a5ba67b71b8d19f601b274e169 inherit pub_methods_classPopulationInterfaceBase" id="r_a36e9d5a5ba67b71b8d19f601b274e169"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>PopulationInterfaceBase</b> ()</td></tr>
@@ -239,6 +286,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a9183d9379777d8be70ab66af1a07f94c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a> ()</td></tr>
 <tr class="memdesc:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual method to inherit to add objects to the TMB model.  <br /></td></tr>
 <tr class="separator:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97acd77c0c4d2e193c67cd0662d803c inherit pub_methods_classFIMSRcppInterfaceBase" id="r_aa97acd77c0c4d2e193c67cd0662d803c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#aa97acd77c0c4d2e193c67cd0662d803c">to_json</a> ()</td></tr>
+<tr class="memdesc:aa97acd77c0c4d2e193c67cd0662d803c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the data to json representation for the output.  <br /></td></tr>
+<tr class="separator:aa97acd77c0c4d2e193c67cd0662d803c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fc17f2f76b60a82db50167b1cde83d inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a72fc17f2f76b60a82db50167b1cde83d"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_se_values</b> (std::string name, std::map&lt; std::string, std::vector&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt; &amp;se_values, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">values</a>)</td></tr>
+<tr class="memdesc:a72fc17f2f76b60a82db50167b1cde83d inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to extract standard error values from the se_values working map. <br /></td></tr>
+<tr class="separator:a72fc17f2f76b60a82db50167b1cde83d inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e19680aa5d84f270939435588bce03b inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a5e19680aa5d84f270939435588bce03b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a5e19680aa5d84f270939435588bce03b">set_uncertainty</a> (std::map&lt; std::string, std::vector&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt; &amp;se_values)</td></tr>
+<tr class="memdesc:a5e19680aa5d84f270939435588bce03b inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set uncertainty values for the interface object.  <br /></td></tr>
+<tr class="separator:a5e19680aa5d84f270939435588bce03b inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e0ce655ef707a6c66e863aa4f0b374 inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a46e0ce655ef707a6c66e863aa4f0b374"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a46e0ce655ef707a6c66e863aa4f0b374">value_to_string</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> value)</td></tr>
+<tr class="memdesc:a46e0ce655ef707a6c66e863aa4f0b374 inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the parameter value as a string.  <br /></td></tr>
+<tr class="separator:a46e0ce655ef707a6c66e863aa4f0b374 inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa6e0deb883a921fe70b328cdd30fee inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a1fa6e0deb883a921fe70b328cdd30fee"><td class="memItemLeft" align="right" valign="top">
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>make_dimensions</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">start</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> end, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">rep</a>=1)</td></tr>
 <tr class="memdesc:a1fa6e0deb883a921fe70b328cdd30fee inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a string of dimensions for the model. <br /></td></tr>
@@ -246,28 +306,24 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>make_dimension
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a05c9b2f407c77ea8d4fc0b3b94682c68" id="r_a05c9b2f407c77ea8d4fc0b3b94682c68"><td class="memItemLeft" align="right" valign="top"><a id="a05c9b2f407c77ea8d4fc0b3b94682c68" name="a05c9b2f407c77ea8d4fc0b3b94682c68"></a>
-<a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nages</b></td></tr>
-<tr class="memdesc:a05c9b2f407c77ea8d4fc0b3b94682c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of age bins. <br /></td></tr>
-<tr class="separator:a05c9b2f407c77ea8d4fc0b3b94682c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af44ceac7d616b8c9b2cd5697dd8d5aff" id="r_af44ceac7d616b8c9b2cd5697dd8d5aff"><td class="memItemLeft" align="right" valign="top"><a id="af44ceac7d616b8c9b2cd5697dd8d5aff" name="af44ceac7d616b8c9b2cd5697dd8d5aff"></a>
-<a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nfleets</b></td></tr>
-<tr class="memdesc:af44ceac7d616b8c9b2cd5697dd8d5aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of fleets. <br /></td></tr>
-<tr class="separator:af44ceac7d616b8c9b2cd5697dd8d5aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a509125c0f19ac0813dfce7b8af2a7a" id="r_a3a509125c0f19ac0813dfce7b8af2a7a"><td class="memItemLeft" align="right" valign="top"><a id="a3a509125c0f19ac0813dfce7b8af2a7a" name="a3a509125c0f19ac0813dfce7b8af2a7a"></a>
+<a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>n_ages</b> = 0</td></tr>
+<tr class="memdesc:a3a509125c0f19ac0813dfce7b8af2a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of age bins. <br /></td></tr>
+<tr class="separator:a3a509125c0f19ac0813dfce7b8af2a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba786600f5febd7147a9d53eb735f08" id="r_aeba786600f5febd7147a9d53eb735f08"><td class="memItemLeft" align="right" valign="top"><a id="aeba786600f5febd7147a9d53eb735f08" name="aeba786600f5febd7147a9d53eb735f08"></a>
+<a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>n_fleets</b></td></tr>
+<tr class="memdesc:aeba786600f5febd7147a9d53eb735f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of fleets. <br /></td></tr>
+<tr class="separator:aeba786600f5febd7147a9d53eb735f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0402c6e36b1987376d293e44aae2eeaa" id="r_a0402c6e36b1987376d293e44aae2eeaa"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; std::set&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPopulationInterface.html#a0402c6e36b1987376d293e44aae2eeaa">fleet_ids</a></td></tr>
 <tr class="separator:a0402c6e36b1987376d293e44aae2eeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6079fcbdf21aaa3691eb85a077761e4d" id="r_a6079fcbdf21aaa3691eb85a077761e4d"><td class="memItemLeft" align="right" valign="top"><a id="a6079fcbdf21aaa3691eb85a077761e4d" name="a6079fcbdf21aaa3691eb85a077761e4d"></a>
-<a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nseasons</b></td></tr>
-<tr class="memdesc:a6079fcbdf21aaa3691eb85a077761e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of seasons. TODO: Remove seasons because we do not model them. <br /></td></tr>
-<tr class="separator:a6079fcbdf21aaa3691eb85a077761e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68356cc11e6eb0ef1f66d3c0931c6fe4" id="r_a68356cc11e6eb0ef1f66d3c0931c6fe4"><td class="memItemLeft" align="right" valign="top"><a id="a68356cc11e6eb0ef1f66d3c0931c6fe4" name="a68356cc11e6eb0ef1f66d3c0931c6fe4"></a>
-<a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nyears</b></td></tr>
-<tr class="memdesc:a68356cc11e6eb0ef1f66d3c0931c6fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of years. <br /></td></tr>
-<tr class="separator:a68356cc11e6eb0ef1f66d3c0931c6fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88da0942b2fe81c10f5b99b91c45e9f7" id="r_a88da0942b2fe81c10f5b99b91c45e9f7"><td class="memItemLeft" align="right" valign="top"><a id="a88da0942b2fe81c10f5b99b91c45e9f7" name="a88da0942b2fe81c10f5b99b91c45e9f7"></a>
-<a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nlengths</b></td></tr>
-<tr class="memdesc:a88da0942b2fe81c10f5b99b91c45e9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of length bins. <br /></td></tr>
-<tr class="separator:a88da0942b2fe81c10f5b99b91c45e9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568394717d8996d0d5583b6747879773" id="r_a568394717d8996d0d5583b6747879773"><td class="memItemLeft" align="right" valign="top"><a id="a568394717d8996d0d5583b6747879773" name="a568394717d8996d0d5583b6747879773"></a>
+<a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>n_years</b></td></tr>
+<tr class="memdesc:a568394717d8996d0d5583b6747879773"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of years. <br /></td></tr>
+<tr class="separator:a568394717d8996d0d5583b6747879773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9615845b6d1784f250b4d075589d8b79" id="r_a9615845b6d1784f250b4d075589d8b79"><td class="memItemLeft" align="right" valign="top"><a id="a9615845b6d1784f250b4d075589d8b79" name="a9615845b6d1784f250b4d075589d8b79"></a>
+<a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>n_lengths</b></td></tr>
+<tr class="memdesc:a9615845b6d1784f250b4d075589d8b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of length bins. <br /></td></tr>
+<tr class="separator:a9615845b6d1784f250b4d075589d8b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c59e0eaf40f3c24c2d9865bef8d477" id="r_a40c59e0eaf40f3c24c2d9865bef8d477"><td class="memItemLeft" align="right" valign="top"><a id="a40c59e0eaf40f3c24c2d9865bef8d477" name="a40c59e0eaf40f3c24c2d9865bef8d477"></a>
 <a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>maturity_id</b></td></tr>
 <tr class="memdesc:a40c59e0eaf40f3c24c2d9865bef8d477"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of the maturity module. <br /></td></tr>
@@ -302,7 +358,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:accb9a53a1148d95c3780352c3eaf4a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72bb9d21b9f124ce5d9fba3020597c84" id="r_a72bb9d21b9f124ce5d9fba3020597c84"><td class="memItemLeft" align="right" valign="top"><a id="a72bb9d21b9f124ce5d9fba3020597c84" name="a72bb9d21b9f124ce5d9fba3020597c84"></a>
 <a class="el" href="classRealVector.html">RealVector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ages</b></td></tr>
-<tr class="memdesc:a72bb9d21b9f124ce5d9fba3020597c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ages that are modeled in the population, the length of this vector should equal "nages". <br /></td></tr>
+<tr class="memdesc:a72bb9d21b9f124ce5d9fba3020597c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ages that are modeled in the population, the length of this vector should equal "n_ages". <br /></td></tr>
 <tr class="separator:a72bb9d21b9f124ce5d9fba3020597c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30ce5e52dec3526c7b1b506bfc0da851" id="r_a30ce5e52dec3526c7b1b506bfc0da851"><td class="memItemLeft" align="right" valign="top"><a id="a30ce5e52dec3526c7b1b506bfc0da851" name="a30ce5e52dec3526c7b1b506bfc0da851"></a>
 Rcpp::NumericVector&#160;</td><td class="memItemRight" valign="bottom"><b>derived_ssb</b></td></tr>
@@ -318,12 +374,12 @@ Rcpp::NumericVector&#160;</td><td class="memItemRight" valign="bottom"><b>derive
 <tr class="separator:afcd4ba90c94360bc22f5794a5619ee37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0a406e387acafa04f511fe3d99e7650" id="r_ac0a406e387acafa04f511fe3d99e7650"><td class="memItemLeft" align="right" valign="top"><a id="ac0a406e387acafa04f511fe3d99e7650" name="ac0a406e387acafa04f511fe3d99e7650"></a>
 Rcpp::NumericVector&#160;</td><td class="memItemRight" valign="bottom"><b>derived_recruitment</b></td></tr>
-<tr class="memdesc:ac0a406e387acafa04f511fe3d99e7650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived recruitment. TODO: document the unit. <br /></td></tr>
+<tr class="memdesc:ac0a406e387acafa04f511fe3d99e7650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived recruitment in numbers. <br /></td></tr>
 <tr class="separator:ac0a406e387acafa04f511fe3d99e7650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8661916968a54e36d76a378d091b398d" id="r_a8661916968a54e36d76a378d091b398d"><td class="memItemLeft" align="right" valign="top"><a id="a8661916968a54e36d76a378d091b398d" name="a8661916968a54e36d76a378d091b398d"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="memdesc:a8661916968a54e36d76a378d091b398d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name. TODO: Document name better. <br /></td></tr>
-<tr class="separator:a8661916968a54e36d76a378d091b398d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35eeac59ec9c91677c936c68d292eadc" id="r_a35eeac59ec9c91677c936c68d292eadc"><td class="memItemLeft" align="right" valign="top"><a id="a35eeac59ec9c91677c936c68d292eadc" name="a35eeac59ec9c91677c936c68d292eadc"></a>
+<a class="el" href="classSharedString.html">SharedString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> = <a class="el" href="def_8hpp.html#ad28f97734d58355a40d01801bca1e2bf">fims::to_string</a>(&quot;NA&quot;)</td></tr>
+<tr class="memdesc:a35eeac59ec9c91677c936c68d292eadc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name for the population. <br /></td></tr>
+<tr class="separator:a35eeac59ec9c91677c936c68d292eadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classPopulationInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classPopulationInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classPopulationInterfaceBase.html">PopulationInterfaceBase</a></td></tr>
 <tr class="memitem:a52bc457332deb78a632d94d94764a2e5 inherit pub_attribs_classPopulationInterfaceBase" id="r_a52bc457332deb78a632d94d94764a2e5"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
@@ -333,6 +389,10 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td><
 <a class="el" href="classSharedBoolean.html">SharedBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><b>initialize_catch_at_age</b></td></tr>
 <tr class="memdesc:af9942742d184f03d04c5cad7450f3710 inherit pub_attribs_classPopulationInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the catch at age model. <br /></td></tr>
 <tr class="separator:af9942742d184f03d04c5cad7450f3710 inherit pub_attribs_classPopulationInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7c559357eccf753f43be733efa7ca5 inherit pub_attribs_classPopulationInterfaceBase" id="r_a4e7c559357eccf753f43be733efa7ca5"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classSharedBoolean.html">SharedBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><b>initialize_surplus_production</b></td></tr>
+<tr class="memdesc:a4e7c559357eccf753f43be733efa7ca5 inherit pub_attribs_classPopulationInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the surplus production model. <br /></td></tr>
+<tr class="separator:a4e7c559357eccf753f43be733efa7ca5 inherit pub_attribs_classPopulationInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
 <tr class="memitem:a44e4e3b1dd18103bf79ccb30a76f5933 inherit pub_attribs_classFIMSRcppInterfaceBase" id="r_a44e4e3b1dd18103bf79ccb30a76f5933"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>finalized</b> = <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">false</a></td></tr>
@@ -469,6 +529,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a633cf3880396e386fc0af6a3e8a2c2fa" name="a633cf3880396e386fc0af6a3e8a2c2fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a633cf3880396e386fc0af6a3e8a2c2fa">&#9670;&#160;</a></span>GetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PopulationInterface::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the name of the population. </p>
+<dl class="section return"><dt>Returns</dt><dd>The name. </dd></dl>
+
+</div>
+</div>
 <a id="ab1a30c8d1e2f2f1f6a98f522068d8e62" name="ab1a30c8d1e2f2f1f6a98f522068d8e62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1a30c8d1e2f2f1f6a98f522068d8e62">&#9670;&#160;</a></span>SetGrowthID()</h2>
 
@@ -537,6 +625,40 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a5f36825cd3bd625457e984131568decb" name="a5f36825cd3bd625457e984131568decb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f36825cd3bd625457e984131568decb">&#9670;&#160;</a></span>SetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a> PopulationInterface::SetName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the name of the population. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afe4f3922a8d7e4c0b503189926015ea0" name="afe4f3922a8d7e4c0b503189926015ea0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe4f3922a8d7e4c0b503189926015ea0">&#9670;&#160;</a></span>SetRecruitmentID()</h2>
 
@@ -568,36 +690,6 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ab602d6441e3705e497faadaac7d17791" name="ab602d6441e3705e497faadaac7d17791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab602d6441e3705e497faadaac7d17791">&#9670;&#160;</a></span>to_json()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> std::string PopulationInterface::to_json </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Converts the data to json representation for the output. </p>
-<dl class="section return"><dt>Returns</dt><dd>A string is returned specifying that the module relates to the population interface. It also returns the ID for each associated module and the values associated with that module. Then it returns several derived quantities. This string is formatted for a json file. </dd></dl>
-
-<p>Reimplemented from <a class="el" href="classFIMSRcppInterfaceBase.html#aa97acd77c0c4d2e193c67cd0662d803c">FIMSRcppInterfaceBase</a>.</p>
 
 </div>
 </div>

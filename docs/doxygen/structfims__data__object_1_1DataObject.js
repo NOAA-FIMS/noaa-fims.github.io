@@ -23,5 +23,6 @@ var structfims__data__object_1_1DataObject =
     [ "jmax", "structfims__data__object_1_1DataObject.html#adeac7e86caf7ed8b6bd891eff87abeb6", null ],
     [ "kmax", "structfims__data__object_1_1DataObject.html#a1f224a8a381eddc0286f044dc087c686", null ],
     [ "lmax", "structfims__data__object_1_1DataObject.html#a0f1903e29547d7e716c6a6c3300b2480", null ],
-    [ "na_value", "structfims__data__object_1_1DataObject.html#a64125aaf71ef4e1ab18ec4a1d6a64b7e", null ]
+    [ "na_value", "structfims__data__object_1_1DataObject.html#a64125aaf71ef4e1ab18ec4a1d6a64b7e", null ],
+    [ "uncertainty", "structfims__data__object_1_1DataObject.html#a2f8a5e4b6a6b203cd1c3539dff660019", null ]
 ];

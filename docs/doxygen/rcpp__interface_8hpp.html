@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <meta name="generator" content="Doxygen 1.9.8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>FIMS: inst/include/interface/rcpp/rcpp_interface.hpp File Reference</title><title>inst/include/interface/rcpp/rcpp_interface.hpp File Reference</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
-    <link rel="icon" type="image/png" href="../images/FIMS_hexlogo.png">
+    <title>FIMS</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="https://noaa-fims.github.io/images/FIMS_hexlogo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-06a8a7a3a18fc17cd2940e96bb351f4a.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-5c5d58904a6a5c707f9a8e5817847b0d.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -42,11 +42,11 @@ MathJax.Hub.Config({
     <div id="titlearea">
         <table cellspacing="0" cellpadding="0">
             <tbody>
-            <tr style="height: 56px;">
+            <tr style="height: 70px;">
                 <td id="projectlogo"><img alt="Logo" src="FIMS_logo3.png"/></td>
                 <td id="projectalign" style="padding-left: 0.5em;">
                     <div id="projectname">FIMS
-                        &#160;<span id="projectnumber">v0.6.3</span></div>
+                        &#160;<span id="projectnumber">v0.7.0</span></div>
                     <div id="projectbrief"></div></td>
                 <td style="padding-left: 0.5em;">
                     <div id="projectbrief"></div>
@@ -73,20 +73,31 @@ MathJax.Hub.Config({
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/about/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">about</span></a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">about</span></a></li>
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/contributors.html"><span class="dropdown-text">fims team</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">overview</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/faq.html"><span class="dropdown-text">faq</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/calendar.html"><span class="dropdown-text">calendar</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="dropdown-text">changelog</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/acknowledgements.html"><span class="dropdown-text">acknowledgements</span></a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://noaa-fims.github.io/fims-weekly/index.html"><span class="menu-text">fims weekly</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">sites and docs</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/projects/index.html"><span class="menu-text">projects</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="menu-text">changelog</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/packages/index.html"><span class="menu-text">packages</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">resources</span></a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/contact/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">contact</span></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/index.html"><span class="dropdown-text">contact FIMS lead</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/contributors.html"><span class="dropdown-text">FIMS team</span></a></li>
+              </ul>
             </li>
             <li class="nav-item compact">
               <a class="nav-link" href="https://github.com/NOAA-FIMS/FIMS"><i class="bi bi-github" role="img"></i><span class="menu-text"></span></a>
@@ -109,8 +120,45 @@ MathJax.Hub.Config({
             </div>
       </div>
     </nav>
-    <!-- end header part -->
-<!-- Generated by Doxygen 1.9.8 -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Only on the cpp_directory_structure page!
+    document.querySelectorAll('.toc a').forEach(function(link) {
+      if (link.href && link.href.indexOf(location.pathname) !== -1) {
+        link.href = link.hash; // Just use the fragment
+      }
+    });
+  });
+  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function updateTocActive() {
+    var links = Array.from(document.querySelectorAll('.toc a'));
+    var anchors = links.map(link => document.getElementById(link.getAttribute('href').replace('#', '')));
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var offset = 150; // Match your scroll-margin-top
+    let currentActive = -1;
+    for (let i = anchors.length - 1; i >= 0; i--) {
+      if (anchors[i] && (anchors[i].getBoundingClientRect().top + window.scrollY - offset) <= scrollTop) {
+        currentActive = i;
+        break;
+      }
+    }
+    links.forEach((link, i) => {
+      link.classList.remove('active', 'aboveActive');
+      if (i === currentActive) {
+        link.classList.add('active');
+      } else if (i < currentActive) {
+        link.classList.add('aboveActive');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateTocActive);
+  window.addEventListener('hashchange', updateTocActive);
+  updateTocActive();
+});
+</script>
+    <!-- end header part --><!-- Generated by Doxygen 1.9.8 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -165,13 +213,13 @@ $(document).ready(function(){initNavTree('rcpp__interface_8hpp.html',''); initRe
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="model_8hpp_source.html">../../common/model.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fims__json_8hpp_source.html">../../utilities/fims_json.hpp</a>&quot;</code><br />
-<code>#include &quot;rcpp_objects/rcpp_data.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="rcpp__data_8hpp_source.html">rcpp_objects/rcpp_data.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__distribution_8hpp_source.html">rcpp_objects/rcpp_distribution.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__fleet_8hpp_source.html">rcpp_objects/rcpp_fleet.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__growth_8hpp_source.html">rcpp_objects/rcpp_growth.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__interface__base_8hpp_source.html">rcpp_objects/rcpp_interface_base.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__maturity_8hpp_source.html">rcpp_objects/rcpp_maturity.hpp</a>&quot;</code><br />
-<code>#include &quot;rcpp_objects/rcpp_models.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="rcpp__models_8hpp_source.html">rcpp_objects/rcpp_models.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__natural__mortality_8hpp_source.html">rcpp_objects/rcpp_natural_mortality.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__population_8hpp_source.html">rcpp_objects/rcpp_population.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__recruitment_8hpp_source.html">rcpp_objects/rcpp_recruitment.hpp</a>&quot;</code><br />
@@ -186,11 +234,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a1d0c303c2c44fcb296368608a5f2ff1a" id="r_a1d0c303c2c44fcb296368608a5f2ff1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a1d0c303c2c44fcb296368608a5f2ff1a">CreateTMBModel</a> ()</td></tr>
 <tr class="memdesc:a1d0c303c2c44fcb296368608a5f2ff1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the TMB model object and adds interface objects to it.  <br /></td></tr>
 <tr class="separator:a1d0c303c2c44fcb296368608a5f2ff1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0017eeb763ab859c0a9bcc36fc247bd4" id="r_a0017eeb763ab859c0a9bcc36fc247bd4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a0017eeb763ab859c0a9bcc36fc247bd4">finalize_fims</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">par</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Function</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">fn</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Function</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">gr</a>)</td></tr>
-<tr class="separator:a0017eeb763ab859c0a9bcc36fc247bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc723970498500fa938ca77a1502e25" id="r_aecc723970498500fa938ca77a1502e25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#aecc723970498500fa938ca77a1502e25">set_fixed_parameters</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">par</a>)</td></tr>
+<tr class="memdesc:aecc723970498500fa938ca77a1502e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the fixed parameters vector object. Updates the internal parameter values for the model base of type TMB_FIMS_REAL_TYPE. Typically called before finalize or get_output to ensure the correct values are used.  <br /></td></tr>
+<tr class="separator:aecc723970498500fa938ca77a1502e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd5cf41c12b933a40a5d3808cee44a5" id="r_accd5cf41c12b933a40a5d3808cee44a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#accd5cf41c12b933a40a5d3808cee44a5">get_fixed_parameters_vector</a> ()</td></tr>
 <tr class="memdesc:accd5cf41c12b933a40a5d3808cee44a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the fixed parameters vector object.  <br /></td></tr>
 <tr class="separator:accd5cf41c12b933a40a5d3808cee44a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a602703ef3357097ff34a6751fd13c3f5" id="r_a602703ef3357097ff34a6751fd13c3f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a602703ef3357097ff34a6751fd13c3f5">set_random_parameters</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">par</a>)</td></tr>
+<tr class="memdesc:a602703ef3357097ff34a6751fd13c3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the random parameters vector object. Updates the internal random effects parameter values for the model base of TMB_FIMS_REAL_TYPE. Typically called before finalize or get_output to ensure the correct values are used.  <br /></td></tr>
+<tr class="separator:a602703ef3357097ff34a6751fd13c3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace395771e2a80c98b2ae2e3da4d141dc" id="r_ace395771e2a80c98b2ae2e3da4d141dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#ace395771e2a80c98b2ae2e3da4d141dc">get_random_parameters_vector</a> ()</td></tr>
 <tr class="memdesc:ace395771e2a80c98b2ae2e3da4d141dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the random parameters vector object.  <br /></td></tr>
 <tr class="separator:ace395771e2a80c98b2ae2e3da4d141dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,50 +386,6 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
-<a id="a0017eeb763ab859c0a9bcc36fc247bd4" name="a0017eeb763ab859c0a9bcc36fc247bd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0017eeb763ab859c0a9bcc36fc247bd4">&#9670;&#160;</a></span>finalize_fims()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string finalize_fims </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a>&#160;</td>
-          <td class="paramname"><em>par</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Function</a>&#160;</td>
-          <td class="paramname"><em>fn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Function</a>&#160;</td>
-          <td class="paramname"><em>gr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Finalize a model run by populating derived quantities into the Rcpp interface objects and return the output as a JSON string.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">par</td><td>A vector of parameter values. </td></tr>
-    <tr><td class="paramname">fn</td><td>The objective function. </td></tr>
-    <tr><td class="paramname">gr</td><td>The gradient function.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A JSON output string is returned. </dd></dl>
-
-</div>
-</div>
 <a id="accd5cf41c12b933a40a5d3808cee44a5" name="accd5cf41c12b933a40a5d3808cee44a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accd5cf41c12b933a40a5d3808cee44a5">&#9670;&#160;</a></span>get_fixed_parameters_vector()</h2>
 
@@ -487,6 +495,62 @@ template&lt;typename Type &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Initializes the logging system, setting all signal handling. </p>
+
+</div>
+</div>
+<a id="aecc723970498500fa938ca77a1502e25" name="aecc723970498500fa938ca77a1502e25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc723970498500fa938ca77a1502e25">&#9670;&#160;</a></span>set_fixed_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a> set_fixed_parameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a>&#160;</td>
+          <td class="paramname"><em>par</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the fixed parameters vector object. Updates the internal parameter values for the model base of type TMB_FIMS_REAL_TYPE. Typically called before finalize or get_output to ensure the correct values are used. </p>
+<p>Usage example: </p><div class="fragment"><div class="line">set_fixed_parameters(c(1, 2, 3))</div>
+<div class="line">catch_at_age$get_output()</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">par</td><td>A vector of parameter values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a602703ef3357097ff34a6751fd13c3f5" name="a602703ef3357097ff34a6751fd13c3f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a602703ef3357097ff34a6751fd13c3f5">&#9670;&#160;</a></span>set_random_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a> set_random_parameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a>&#160;</td>
+          <td class="paramname"><em>par</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the random parameters vector object. Updates the internal random effects parameter values for the model base of TMB_FIMS_REAL_TYPE. Typically called before finalize or get_output to ensure the correct values are used. </p>
+<p>Usage example: </p><div class="fragment"><div class="line">set_random_parameters(c(1, 2, 3))</div>
+<div class="line">catch_at_age$get_output()</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">par</td><td>A vector of parameter values. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

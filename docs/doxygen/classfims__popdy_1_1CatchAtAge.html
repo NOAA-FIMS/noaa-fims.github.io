@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <meta name="generator" content="Doxygen 1.9.8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>FIMS: fims_popdy::CatchAtAge&lt; Type &gt; Class Template Reference</title><title>fims_popdy::CatchAtAge&lt; Type &gt; Class Template Reference</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
-    <link rel="icon" type="image/png" href="../images/FIMS_hexlogo.png">
+    <title>FIMS</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="https://noaa-fims.github.io/images/FIMS_hexlogo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-06a8a7a3a18fc17cd2940e96bb351f4a.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-5c5d58904a6a5c707f9a8e5817847b0d.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -42,11 +42,11 @@ MathJax.Hub.Config({
     <div id="titlearea">
         <table cellspacing="0" cellpadding="0">
             <tbody>
-            <tr style="height: 56px;">
+            <tr style="height: 70px;">
                 <td id="projectlogo"><img alt="Logo" src="FIMS_logo3.png"/></td>
                 <td id="projectalign" style="padding-left: 0.5em;">
                     <div id="projectname">FIMS
-                        &#160;<span id="projectnumber">v0.6.3</span></div>
+                        &#160;<span id="projectnumber">v0.7.0</span></div>
                     <div id="projectbrief"></div></td>
                 <td style="padding-left: 0.5em;">
                     <div id="projectbrief"></div>
@@ -73,20 +73,31 @@ MathJax.Hub.Config({
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/about/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">about</span></a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">about</span></a></li>
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/contributors.html"><span class="dropdown-text">fims team</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">overview</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/faq.html"><span class="dropdown-text">faq</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/calendar.html"><span class="dropdown-text">calendar</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="dropdown-text">changelog</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/acknowledgements.html"><span class="dropdown-text">acknowledgements</span></a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://noaa-fims.github.io/fims-weekly/index.html"><span class="menu-text">fims weekly</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">sites and docs</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/projects/index.html"><span class="menu-text">projects</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="menu-text">changelog</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/packages/index.html"><span class="menu-text">packages</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">resources</span></a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/contact/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">contact</span></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/index.html"><span class="dropdown-text">contact FIMS lead</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/contributors.html"><span class="dropdown-text">FIMS team</span></a></li>
+              </ul>
             </li>
             <li class="nav-item compact">
               <a class="nav-link" href="https://github.com/NOAA-FIMS/FIMS"><i class="bi bi-github" role="img"></i><span class="menu-text"></span></a>
@@ -109,8 +120,45 @@ MathJax.Hub.Config({
             </div>
       </div>
     </nav>
-    <!-- end header part -->
-<!-- Generated by Doxygen 1.9.8 -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Only on the cpp_directory_structure page!
+    document.querySelectorAll('.toc a').forEach(function(link) {
+      if (link.href && link.href.indexOf(location.pathname) !== -1) {
+        link.href = link.hash; // Just use the fragment
+      }
+    });
+  });
+  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function updateTocActive() {
+    var links = Array.from(document.querySelectorAll('.toc a'));
+    var anchors = links.map(link => document.getElementById(link.getAttribute('href').replace('#', '')));
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var offset = 150; // Match your scroll-margin-top
+    let currentActive = -1;
+    for (let i = anchors.length - 1; i >= 0; i--) {
+      if (anchors[i] && (anchors[i].getBoundingClientRect().top + window.scrollY - offset) <= scrollTop) {
+        currentActive = i;
+        break;
+      }
+    }
+    links.forEach((link, i) => {
+      link.classList.remove('active', 'aboveActive');
+      if (i === currentActive) {
+        link.classList.add('active');
+      } else if (i < currentActive) {
+        link.classList.add('aboveActive');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateTocActive);
+  window.addEventListener('hashchange', updateTocActive);
+  updateTocActive();
+});
+</script>
+    <!-- end header part --><!-- Generated by Doxygen 1.9.8 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -187,12 +235,20 @@ Public Types</h2></td></tr>
 <tr class="separator:a1149caa64c7cb14a93af4f87a3a01149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98f3ae923dc0c7ab2f7f171b1e8873c9" id="r_a98f3ae923dc0c7ab2f7f171b1e8873c9"><td class="memItemLeft" align="right" valign="top"><a id="a98f3ae923dc0c7ab2f7f171b1e8873c9" name="a98f3ae923dc0c7ab2f7f171b1e8873c9"></a>
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typedef</a> std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>fleet_derived_quantities_iterator</b></td></tr>
-<tr class="memdesc:a98f3ae923dc0c7ab2f7f171b1e8873c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate through fleet-based derived quantities. <br /></td></tr>
+<tr class="memdesc:a98f3ae923dc0c7ab2f7f171b1e8873c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to iterate through fleet-based derived quantities. <br /></td></tr>
 <tr class="separator:a98f3ae923dc0c7ab2f7f171b1e8873c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07ed62aee3a3421b83651cc53958d9b" id="r_ad07ed62aee3a3421b83651cc53958d9b"><td class="memItemLeft" align="right" valign="top"><a id="ad07ed62aee3a3421b83651cc53958d9b" name="ad07ed62aee3a3421b83651cc53958d9b"></a>
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typedef</a> std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> &gt; &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>fleet_derived_quantities_dims_iterator</b></td></tr>
+<tr class="memdesc:ad07ed62aee3a3421b83651cc53958d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to iterate through fleet-based derived quantities dimensions. <br /></td></tr>
+<tr class="separator:ad07ed62aee3a3421b83651cc53958d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a5f5b81f887323b99d648956c2f5add" id="r_a9a5f5b81f887323b99d648956c2f5add"><td class="memItemLeft" align="right" valign="top"><a id="a9a5f5b81f887323b99d648956c2f5add" name="a9a5f5b81f887323b99d648956c2f5add"></a>
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typedef</a> std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>population_derived_quantities_iterator</b></td></tr>
-<tr class="memdesc:a9a5f5b81f887323b99d648956c2f5add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate through population-based derived quantities. <br /></td></tr>
+<tr class="memdesc:a9a5f5b81f887323b99d648956c2f5add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to iterate through population-based derived quantities. <br /></td></tr>
 <tr class="separator:a9a5f5b81f887323b99d648956c2f5add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39033cb8a870b03026ed01fb3d2683f1" id="r_a39033cb8a870b03026ed01fb3d2683f1"><td class="memItemLeft" align="right" valign="top"><a id="a39033cb8a870b03026ed01fb3d2683f1" name="a39033cb8a870b03026ed01fb3d2683f1"></a>
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typedef</a> std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> &gt; &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>population_derived_quantities_dims_iterator</b></td></tr>
+<tr class="memdesc:a39033cb8a870b03026ed01fb3d2683f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to iterate through population-based derived quantities dimensions. <br /></td></tr>
+<tr class="separator:a39033cb8a870b03026ed01fb3d2683f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c704d5d6890765f3e0582928c786add" id="r_a3c704d5d6890765f3e0582928c786add"><td class="memItemLeft" align="right" valign="top"><a id="a3c704d5d6890765f3e0582928c786add" name="a3c704d5d6890765f3e0582928c786add"></a>
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typedef</a> std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::shared_ptr&lt; <a class="el" href="structfims__popdy_1_1Fleet.html">fims_popdy::Fleet</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>fleet_iterator</b></td></tr>
 <tr class="memdesc:a3c704d5d6890765f3e0582928c786add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate through fleets. <br /></td></tr>
@@ -206,25 +262,36 @@ Public Types</h2></td></tr>
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typedef</a> std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::shared_ptr&lt; <a class="el" href="structfims__popdy_1_1Fleet.html">fims_popdy::Fleet</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>fleet_iterator</b></td></tr>
 <tr class="memdesc:a80ec8af64c49e7da16332427f4964382 inherit pub_types_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fleet-based iterator. <br /></td></tr>
 <tr class="separator:a80ec8af64c49e7da16332427f4964382 inherit pub_types_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7499d26ff106bb6a49e06bfb389fdf inherit pub_types_classfims__popdy_1_1FisheryModelBase" id="r_a1c7499d26ff106bb6a49e06bfb389fdf"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typedef</a> std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DerivedQuantitiesMap</b></td></tr>
+<tr class="memdesc:a1c7499d26ff106bb6a49e06bfb389fdf inherit pub_types_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definitions for derived quantities and dimension information maps. <br /></td></tr>
+<tr class="separator:a1c7499d26ff106bb6a49e06bfb389fdf inherit pub_types_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06dfbb97663ee69d7eb30823dfdbd481 inherit pub_types_classfims__popdy_1_1FisheryModelBase" id="r_a06dfbb97663ee69d7eb30823dfdbd481"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typedef</a> DerivedQuantitiesMap::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>DerivedQuantitiesMapIterator</b></td></tr>
+<tr class="memdesc:a06dfbb97663ee69d7eb30823dfdbd481 inherit pub_types_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator for the derived quantities map. <br /></td></tr>
+<tr class="separator:a06dfbb97663ee69d7eb30823dfdbd481 inherit pub_types_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d46305b9a669a2e848c260e48380e16 inherit pub_types_classfims__popdy_1_1FisheryModelBase" id="r_a5d46305b9a669a2e848c260e48380e16"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typedef</a> std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::map&lt; std::string, <a class="el" href="structfims__popdy_1_1DimensionInfo.html">DimensionInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DimensionInfoMap</b></td></tr>
+<tr class="memdesc:a5d46305b9a669a2e848c260e48380e16 inherit pub_types_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definitions for dimension information maps. <br /></td></tr>
+<tr class="separator:a5d46305b9a669a2e848c260e48380e16 inherit pub_types_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7040d2c5bdca6bb3789f99bc7fb870f9 inherit pub_types_classfims__popdy_1_1FisheryModelBase" id="r_a7040d2c5bdca6bb3789f99bc7fb870f9"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typedef</a> std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::map&lt; std::string, <a class="el" href="structfims__popdy_1_1UncertaintyReportInfo.html">UncertaintyReportInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>UncertaintyReportInfoMap</b></td></tr>
+<tr class="memdesc:a7040d2c5bdca6bb3789f99bc7fb870f9 inherit pub_types_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definition for the uncertainty report information map. <br /></td></tr>
+<tr class="separator:a7040d2c5bdca6bb3789f99bc7fb870f9 inherit pub_types_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7830c8f82e8a6158f83d4a765379ddf3" id="r_a7830c8f82e8a6158f83d4a765379ddf3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a7830c8f82e8a6158f83d4a765379ddf3">CatchAtAge</a> ()</td></tr>
 <tr class="separator:a7830c8f82e8a6158f83d4a765379ddf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c621a6bc7cada49166db5fc96f32726" id="r_a6c621a6bc7cada49166db5fc96f32726"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a6c621a6bc7cada49166db5fc96f32726">CatchAtAge</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="classfims__popdy_1_1CatchAtAge.html">CatchAtAge</a> &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">other</a>)</td></tr>
+<tr class="memdesc:a6c621a6bc7cada49166db5fc96f32726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for the <a class="el" href="classfims__popdy_1_1CatchAtAge.html" title="CatchAtAge is a class containing a catch-at-age model, which is just one of many potential fishery mo...">CatchAtAge</a> class.  <br /></td></tr>
+<tr class="separator:a6c621a6bc7cada49166db5fc96f32726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a670f526cd413fda8214e14e9cebcc18b" id="r_a670f526cd413fda8214e14e9cebcc18b"><td class="memItemLeft" align="right" valign="top"><a id="a670f526cd413fda8214e14e9cebcc18b" name="a670f526cd413fda8214e14e9cebcc18b"></a>
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><b>~CatchAtAge</b> ()</td></tr>
 <tr class="memdesc:a670f526cd413fda8214e14e9cebcc18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the Catch At Age object. <br /></td></tr>
 <tr class="separator:a670f526cd413fda8214e14e9cebcc18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa9b74e3ec96502d6b74c0b659c278c" id="r_a1aa9b74e3ec96502d6b74c0b659c278c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a1aa9b74e3ec96502d6b74c0b659c278c">Initialize</a> ()</td></tr>
 <tr class="separator:a1aa9b74e3ec96502d6b74c0b659c278c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a4d6bb872d862e597b9a206f2cf41f" id="r_ae0a4d6bb872d862e597b9a206f2cf41f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#ae0a4d6bb872d862e597b9a206f2cf41f">DerivedQuantityToJSON</a> (<a class="el" href="classfims__popdy_1_1CatchAtAge.html#a1149caa64c7cb14a93af4f87a3a01149">derived_quantities_iterator</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">it</a>)</td></tr>
-<tr class="separator:ae0a4d6bb872d862e597b9a206f2cf41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb82c0b519c7fddc89f772246d6ea64e" id="r_aeb82c0b519c7fddc89f772246d6ea64e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#aeb82c0b519c7fddc89f772246d6ea64e">fleet_derived_quantities_to_json</a> (<a class="el" href="classfims__popdy_1_1CatchAtAge.html#a98f3ae923dc0c7ab2f7f171b1e8873c9">fleet_derived_quantities_iterator</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">fdqit</a>)</td></tr>
-<tr class="memdesc:aeb82c0b519c7fddc89f772246d6ea64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the fleet-based derived quantities to the json file.  <br /></td></tr>
-<tr class="separator:aeb82c0b519c7fddc89f772246d6ea64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91fc6f11cf954e6f9eac57d0d619b7c5" id="r_a91fc6f11cf954e6f9eac57d0d619b7c5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a91fc6f11cf954e6f9eac57d0d619b7c5">population_derived_quantities_to_json</a> (<a class="el" href="classfims__popdy_1_1CatchAtAge.html#a9a5f5b81f887323b99d648956c2f5add">population_derived_quantities_iterator</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">pdqit</a>)</td></tr>
-<tr class="memdesc:a91fc6f11cf954e6f9eac57d0d619b7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the population-based derived quantities to the json file.  <br /></td></tr>
-<tr class="separator:a91fc6f11cf954e6f9eac57d0d619b7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d27bcf828a778e839f3a8658c52135" id="r_af0d27bcf828a778e839f3a8658c52135"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#af0d27bcf828a778e839f3a8658c52135">Prepare</a> ()</td></tr>
 <tr class="separator:af0d27bcf828a778e839f3a8658c52135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0b5da9501f105543cdd50f067d11da5" id="r_ac0b5da9501f105543cdd50f067d11da5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#ac0b5da9501f105543cdd50f067d11da5">AddPopulation</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> id)</td></tr>
@@ -273,8 +340,6 @@ std::set&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3
 <tr class="memitem:a498396134f360e7243f0eb5605360a20" id="r_a498396134f360e7243f0eb5605360a20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a498396134f360e7243f0eb5605360a20">CalculateIndexWeightAA</a> (std::shared_ptr&lt; <a class="el" href="structfims__popdy_1_1Population.html">fims_popdy::Population</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">population</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">year</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">age</a>)</td></tr>
 <tr class="memdesc:a498396134f360e7243f0eb5605360a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the weight at age for an index in a population.  <br /></td></tr>
 <tr class="separator:a498396134f360e7243f0eb5605360a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06f538462c7bcd307f91f9cbfdbb8349" id="r_a06f538462c7bcd307f91f9cbfdbb8349"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a06f538462c7bcd307f91f9cbfdbb8349">ComputeProportions</a> ()</td></tr>
-<tr class="separator:a06f538462c7bcd307f91f9cbfdbb8349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b7f463cdd464efc2c056a5b8328cec8" id="r_a4b7f463cdd464efc2c056a5b8328cec8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a4b7f463cdd464efc2c056a5b8328cec8">evaluate_age_comp</a> ()</td></tr>
 <tr class="separator:a4b7f463cdd464efc2c056a5b8328cec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6270771e42f11407eb87b099087b1b55" id="r_a6270771e42f11407eb87b099087b1b55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a6270771e42f11407eb87b099087b1b55">evaluate_length_comp</a> ()</td></tr>
@@ -284,7 +349,10 @@ std::set&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3
 <tr class="memitem:ab529865b281351f69678c6fe31df1607" id="r_ab529865b281351f69678c6fe31df1607"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#ab529865b281351f69678c6fe31df1607">evaluate_landings</a> ()</td></tr>
 <tr class="separator:ab529865b281351f69678c6fe31df1607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c67ee2edf996a8f3cf736801a6eeb6" id="r_a84c67ee2edf996a8f3cf736801a6eeb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a84c67ee2edf996a8f3cf736801a6eeb6">Evaluate</a> ()</td></tr>
+<tr class="memdesc:a84c67ee2edf996a8f3cf736801a6eeb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the model.  <br /></td></tr>
 <tr class="separator:a84c67ee2edf996a8f3cf736801a6eeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf6dab88981668c7bf763590fa2ad43d" id="r_abf6dab88981668c7bf763590fa2ad43d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#abf6dab88981668c7bf763590fa2ad43d">Report</a> ()</td></tr>
+<tr class="separator:abf6dab88981668c7bf763590fa2ad43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfims__popdy_1_1FisheryModelBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfims__popdy_1_1FisheryModelBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfims__popdy_1_1FisheryModelBase.html">fims_popdy::FisheryModelBase&lt; Type &gt;</a></td></tr>
 <tr class="memitem:a0e02fc17d15175fae2381ff6be0a05a9 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a0e02fc17d15175fae2381ff6be0a05a9"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>FisheryModelBase</b> ()</td></tr>
@@ -297,13 +365,50 @@ std::set&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><b>~FisheryModelBase</b> ()</td></tr>
 <tr class="memdesc:a5e4291cd1b6aa8835e005299659053a7 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the Fishery Model Base object. <br /></td></tr>
 <tr class="separator:a5e4291cd1b6aa8835e005299659053a7 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe755b41ad6ecca946b27b7f8701f630 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_abe755b41ad6ecca946b27b7f8701f630"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#abe755b41ad6ecca946b27b7f8701f630">ShowPopulation</a> (std::shared_ptr&lt; <a class="el" href="structfims__popdy_1_1Population.html">fims_popdy::Population</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">p</a>)</td></tr>
-<tr class="memdesc:abe755b41ad6ecca946b27b7f8701f630 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the Catch At Age model derived quantities.  <br /></td></tr>
-<tr class="separator:abe755b41ad6ecca946b27b7f8701f630 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c41c577d4ac7f905008e51382bdeff0 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a5c41c577d4ac7f905008e51382bdeff0"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Show</b> ()</td></tr>
-<tr class="memdesc:a5c41c577d4ac7f905008e51382bdeff0 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the populations in the fishery model. <br /></td></tr>
-<tr class="separator:a5c41c577d4ac7f905008e51382bdeff0 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08a3a60d70f76854d53a4c5feac3db8 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_ae08a3a60d70f76854d53a4c5feac3db8"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::map&lt; std::string, <a class="el" href="structfims__popdy_1_1DimensionInfo.html">DimensionInfo</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#ae08a3a60d70f76854d53a4c5feac3db8">GetFleetDimensionInfo</a> ()</td></tr>
+<tr class="memdesc:ae08a3a60d70f76854d53a4c5feac3db8 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fleet dimension information.  <br /></td></tr>
+<tr class="separator:ae08a3a60d70f76854d53a4c5feac3db8 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75833099950f2296ffb1bec7342e5833 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a75833099950f2296ffb1bec7342e5833"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::map&lt; std::string, <a class="el" href="structfims__popdy_1_1DimensionInfo.html">DimensionInfo</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a75833099950f2296ffb1bec7342e5833">GetPopulationDimensionInfo</a> ()</td></tr>
+<tr class="memdesc:a75833099950f2296ffb1bec7342e5833 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the population dimension information.  <br /></td></tr>
+<tr class="separator:a75833099950f2296ffb1bec7342e5833 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4572a21c5fbcbe2e53a282c4aeed36dc inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a4572a21c5fbcbe2e53a282c4aeed36dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a1c7499d26ff106bb6a49e06bfb389fdf">DerivedQuantitiesMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a4572a21c5fbcbe2e53a282c4aeed36dc">GetFleetDerivedQuantities</a> ()</td></tr>
+<tr class="memdesc:a4572a21c5fbcbe2e53a282c4aeed36dc inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fleet derived quantities.  <br /></td></tr>
+<tr class="separator:a4572a21c5fbcbe2e53a282c4aeed36dc inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983f8cfc4b5d370a2c79cec270734fda inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a983f8cfc4b5d370a2c79cec270734fda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a1c7499d26ff106bb6a49e06bfb389fdf">DerivedQuantitiesMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a983f8cfc4b5d370a2c79cec270734fda">GetPopulationDerivedQuantities</a> ()</td></tr>
+<tr class="memdesc:a983f8cfc4b5d370a2c79cec270734fda inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the population derived quantities.  <br /></td></tr>
+<tr class="separator:a983f8cfc4b5d370a2c79cec270734fda inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4baf2334e5a8320f46dddbb10ed66240 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a4baf2334e5a8320f46dddbb10ed66240"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a4baf2334e5a8320f46dddbb10ed66240">GetFleetDerivedQuantities</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">fleet_id</a>)</td></tr>
+<tr class="memdesc:a4baf2334e5a8320f46dddbb10ed66240 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fleet derived quantities for a specified fleet.  <br /></td></tr>
+<tr class="separator:a4baf2334e5a8320f46dddbb10ed66240 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490871dc32791518446e9ae8945e7975 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a490871dc32791518446e9ae8945e7975"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a490871dc32791518446e9ae8945e7975">InitializeFleetDerivedQuantities</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">fleet_id</a>)</td></tr>
+<tr class="memdesc:a490871dc32791518446e9ae8945e7975 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the derived quantities map for a fleet.  <br /></td></tr>
+<tr class="separator:a490871dc32791518446e9ae8945e7975 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417287180a5d40eb17282a190c3ac8db inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a417287180a5d40eb17282a190c3ac8db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a417287180a5d40eb17282a190c3ac8db">InitializePopulationDerivedQuantities</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">population_id</a>)</td></tr>
+<tr class="memdesc:a417287180a5d40eb17282a190c3ac8db inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the derived quantities map for a population.  <br /></td></tr>
+<tr class="separator:a417287180a5d40eb17282a190c3ac8db inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f154744d1e34692b7db06fd43fed8c9 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a4f154744d1e34692b7db06fd43fed8c9"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a4f154744d1e34692b7db06fd43fed8c9">GetPopulationDerivedQuantities</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">population_id</a>)</td></tr>
+<tr class="memdesc:a4f154744d1e34692b7db06fd43fed8c9 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the population derived quantities for a specified population.  <br /></td></tr>
+<tr class="separator:a4f154744d1e34692b7db06fd43fed8c9 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea0d2740b2cac0ec4d54401fbd52c8c inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a5ea0d2740b2cac0ec4d54401fbd52c8c"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="structfims__popdy_1_1DimensionInfo.html">DimensionInfo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a5ea0d2740b2cac0ec4d54401fbd52c8c">GetFleetDimensionInfo</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">fleet_id</a>)</td></tr>
+<tr class="memdesc:a5ea0d2740b2cac0ec4d54401fbd52c8c inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fleet dimension information for a specified fleet.  <br /></td></tr>
+<tr class="separator:a5ea0d2740b2cac0ec4d54401fbd52c8c inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526ba6a0d8c53287ef6a78bf832b5139 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a526ba6a0d8c53287ef6a78bf832b5139"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="structfims__popdy_1_1DimensionInfo.html">DimensionInfo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a526ba6a0d8c53287ef6a78bf832b5139">GetPopulationDimensionInfo</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">population_id</a>)</td></tr>
+<tr class="memdesc:a526ba6a0d8c53287ef6a78bf832b5139 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the population dimension information for a specified population.  <br /></td></tr>
+<tr class="separator:a526ba6a0d8c53287ef6a78bf832b5139 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8531a3a6bfe251523a7fb103cc66639 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_ae8531a3a6bfe251523a7fb103cc66639"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a7040d2c5bdca6bb3789f99bc7fb870f9">UncertaintyReportInfoMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFleetUncertaintyReportInfo</b> ()</td></tr>
+<tr class="memdesc:ae8531a3a6bfe251523a7fb103cc66639 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fleet uncertainty report information. <br /></td></tr>
+<tr class="separator:ae8531a3a6bfe251523a7fb103cc66639 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04cf695f64cf2f900f82ba2a66a9f1d2 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a04cf695f64cf2f900f82ba2a66a9f1d2"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a7040d2c5bdca6bb3789f99bc7fb870f9">UncertaintyReportInfoMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPopulationUncertaintyReportInfo</b> ()</td></tr>
+<tr class="memdesc:a04cf695f64cf2f900f82ba2a66a9f1d2 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the population uncertainty report information. <br /></td></tr>
+<tr class="separator:a04cf695f64cf2f900f82ba2a66a9f1d2 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89bd7b7543f648441e8051046fb616f9 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a89bd7b7543f648441e8051046fb616f9"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="structfims__popdy_1_1UncertaintyReportInfo.html">UncertaintyReportInfo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a89bd7b7543f648441e8051046fb616f9">GetFleetUncertaintyReportInfo</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">fleet_id</a>)</td></tr>
+<tr class="memdesc:a89bd7b7543f648441e8051046fb616f9 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fleet uncertainty report information for a specified fleet.  <br /></td></tr>
+<tr class="separator:a89bd7b7543f648441e8051046fb616f9 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f00fd7c32fdd75cc11e3aede8a41cfc inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_a7f00fd7c32fdd75cc11e3aede8a41cfc"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="structfims__popdy_1_1UncertaintyReportInfo.html">UncertaintyReportInfo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a7f00fd7c32fdd75cc11e3aede8a41cfc">GetPopulationUncertaintyReportInfo</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">population_id</a>)</td></tr>
+<tr class="memdesc:a7f00fd7c32fdd75cc11e3aede8a41cfc inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the population uncertainty report information for a specified population.  <br /></td></tr>
+<tr class="separator:a7f00fd7c32fdd75cc11e3aede8a41cfc inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab755a0916428375053ade26191ff76a0 inherit pub_methods_classfims__popdy_1_1FisheryModelBase" id="r_ab755a0916428375053ade26191ff76a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1FisheryModelBase.html#ab755a0916428375053ade26191ff76a0">ResetVector</a> (<a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">v</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> value=0.0)</td></tr>
 <tr class="memdesc:ab755a0916428375053ade26191ff76a0 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset a vector from start to end with a value.  <br /></td></tr>
 <tr class="separator:ab755a0916428375053ade26191ff76a0 inherit pub_methods_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,6 +423,12 @@ std::set&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3
 <tr class="memitem:a81239daf538745bbb96c56f627edc781 inherit pub_methods_structfims__model__object_1_1FIMSObject" id="r_a81239daf538745bbb96c56f627edc781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__model__object_1_1FIMSObject.html#a81239daf538745bbb96c56f627edc781">CheckDimensions</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">actual</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">expected</a>)</td></tr>
 <tr class="memdesc:a81239daf538745bbb96c56f627edc781 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the dimensions of an object.  <br /></td></tr>
 <tr class="separator:a81239daf538745bbb96c56f627edc781 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7809cb0987940a515163b95ef7d330f9 inherit pub_methods_structfims__model__object_1_1FIMSObject" id="r_a7809cb0987940a515163b95ef7d330f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__model__object_1_1FIMSObject.html#a7809cb0987940a515163b95ef7d330f9">create_report_vectors</a> (std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt; &amp;report_vectors)</td></tr>
+<tr class="memdesc:a7809cb0987940a515163b95ef7d330f9 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a map of report vectors for the object. used to populate the report_vectors map in FisheryModelBase.  <br /></td></tr>
+<tr class="separator:a7809cb0987940a515163b95ef7d330f9 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d848a3fb69a0c4928b7afa5ce845d2 inherit pub_methods_structfims__model__object_1_1FIMSObject" id="r_a63d848a3fb69a0c4928b7afa5ce845d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__model__object_1_1FIMSObject.html#a63d848a3fb69a0c4928b7afa5ce845d2">get_report_vector_count</a> (std::map&lt; std::string, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">report_vector_count</a>)</td></tr>
+<tr class="memdesc:a63d848a3fb69a0c4928b7afa5ce845d2 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the report vector count object. used to get the length of each report vector for populating the UncertaintyReportInfo struct in FisheryModelBase.  <br /></td></tr>
+<tr class="separator:a63d848a3fb69a0c4928b7afa5ce845d2 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -325,17 +436,17 @@ Public Attributes</h2></td></tr>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name_m</b></td></tr>
 <tr class="memdesc:a85beced6c3db3298b38f5d9e6c95472e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the model. <br /></td></tr>
 <tr class="separator:a85beced6c3db3298b38f5d9e6c95472e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa445ff78a3e71ebc976fbd702d2bcaee" id="r_aa445ff78a3e71ebc976fbd702d2bcaee"><td class="memItemLeft" align="right" valign="top"><a id="aa445ff78a3e71ebc976fbd702d2bcaee" name="aa445ff78a3e71ebc976fbd702d2bcaee"></a>
-std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fleet_derived_quantities</b></td></tr>
-<tr class="memdesc:aa445ff78a3e71ebc976fbd702d2bcaee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The derived quantities for all fleets, indexed by fleet id. <br /></td></tr>
-<tr class="separator:aa445ff78a3e71ebc976fbd702d2bcaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cb9b1d27fbc0e890ed11d1888b74ffd" id="r_a8cb9b1d27fbc0e890ed11d1888b74ffd"><td class="memItemLeft" align="right" valign="top"><a id="a8cb9b1d27fbc0e890ed11d1888b74ffd" name="a8cb9b1d27fbc0e890ed11d1888b74ffd"></a>
-std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>population_derived_quantities</b></td></tr>
-<tr class="memdesc:a8cb9b1d27fbc0e890ed11d1888b74ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The derived quantities for all populations, indexed by population id. <br /></td></tr>
-<tr class="separator:a8cb9b1d27fbc0e890ed11d1888b74ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30de85a9a907124a9a57243eccaa2a23" id="r_a30de85a9a907124a9a57243eccaa2a23"><td class="memItemLeft" align="right" valign="top"><a id="a30de85a9a907124a9a57243eccaa2a23" name="a30de85a9a907124a9a57243eccaa2a23"></a>
+std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>report_vectors</b></td></tr>
+<tr class="memdesc:a30de85a9a907124a9a57243eccaa2a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of report vectors for the object. used to populate the report_vectors map in for submodule parameters. <br /></td></tr>
+<tr class="separator:a30de85a9a907124a9a57243eccaa2a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25dc53adfee64cb0e8526e776e15bb0a" id="r_a25dc53adfee64cb0e8526e776e15bb0a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a25dc53adfee64cb0e8526e776e15bb0a">ages</a></td></tr>
 <tr class="separator:a25dc53adfee64cb0e8526e776e15bb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classfims__popdy_1_1FisheryModelBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classfims__popdy_1_1FisheryModelBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classfims__popdy_1_1FisheryModelBase.html">fims_popdy::FisheryModelBase&lt; Type &gt;</a></td></tr>
+<tr class="memitem:a447bcdf764fc22206d311aa7e36e5c8f inherit pub_attribs_classfims__popdy_1_1FisheryModelBase" id="r_a447bcdf764fc22206d311aa7e36e5c8f"><td class="memItemLeft" align="right" valign="top">
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>model_type_m</b></td></tr>
+<tr class="memdesc:a447bcdf764fc22206d311aa7e36e5c8f inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string specifying the model type. <br /></td></tr>
+<tr class="separator:a447bcdf764fc22206d311aa7e36e5c8f inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a544df4aaafba610711af17a8327a4b inherit pub_attribs_classfims__popdy_1_1FisheryModelBase" id="r_a4a544df4aaafba610711af17a8327a4b"><td class="memItemLeft" align="right" valign="top">
 std::set&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>population_ids</b></td></tr>
 <tr class="memdesc:a4a544df4aaafba610711af17a8327a4b inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique identifier for the fishery model. <br /></td></tr>
@@ -348,6 +459,30 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="structfims__popdy_1_1Pop
 std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>, std::shared_ptr&lt; <a class="el" href="structfims__popdy_1_1Fleet.html">fims_popdy::Fleet</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fleets</b></td></tr>
 <tr class="memdesc:a0613bad21950ad03cf6e8a97077ee667 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of fleets in the fishery model, indexed by fleet id. Unique instances to eliminate duplicate initialization. <br /></td></tr>
 <tr class="separator:a0613bad21950ad03cf6e8a97077ee667 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6c66b78cf5afc3c6508ae383d33bc4 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase" id="r_a8e6c66b78cf5afc3c6508ae383d33bc4"><td class="memItemLeft" align="right" valign="top">
+std::shared_ptr&lt; <a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a1c7499d26ff106bb6a49e06bfb389fdf">DerivedQuantitiesMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fleet_derived_quantities</b></td></tr>
+<tr class="memdesc:a8e6c66b78cf5afc3c6508ae383d33bc4 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer for the fleet derived quantities map. <br /></td></tr>
+<tr class="separator:a8e6c66b78cf5afc3c6508ae383d33bc4 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573b075bdd228855c49527a4efd9fc05 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase" id="r_a573b075bdd228855c49527a4efd9fc05"><td class="memItemLeft" align="right" valign="top">
+std::shared_ptr&lt; <a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a1c7499d26ff106bb6a49e06bfb389fdf">DerivedQuantitiesMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>population_derived_quantities</b></td></tr>
+<tr class="memdesc:a573b075bdd228855c49527a4efd9fc05 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer for the population derived quantities map. <br /></td></tr>
+<tr class="separator:a573b075bdd228855c49527a4efd9fc05 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6b0921b0c4800371e4833ccc52c7be inherit pub_attribs_classfims__popdy_1_1FisheryModelBase" id="r_a8e6b0921b0c4800371e4833ccc52c7be"><td class="memItemLeft" align="right" valign="top">
+std::shared_ptr&lt; <a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a5d46305b9a669a2e848c260e48380e16">DimensionInfoMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fleet_dimension_info</b></td></tr>
+<tr class="memdesc:a8e6b0921b0c4800371e4833ccc52c7be inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer for the fleet dimension information map. <br /></td></tr>
+<tr class="separator:a8e6b0921b0c4800371e4833ccc52c7be inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0272c60bb2e8298ca55e35ce0af5e4db inherit pub_attribs_classfims__popdy_1_1FisheryModelBase" id="r_a0272c60bb2e8298ca55e35ce0af5e4db"><td class="memItemLeft" align="right" valign="top">
+std::shared_ptr&lt; <a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a5d46305b9a669a2e848c260e48380e16">DimensionInfoMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>population_dimension_info</b></td></tr>
+<tr class="memdesc:a0272c60bb2e8298ca55e35ce0af5e4db inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer for the population dimension information map. <br /></td></tr>
+<tr class="separator:a0272c60bb2e8298ca55e35ce0af5e4db inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56eb1b72eaa9c95cb831fe050b0e8232 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase" id="r_a56eb1b72eaa9c95cb831fe050b0e8232"><td class="memItemLeft" align="right" valign="top">
+std::shared_ptr&lt; <a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a7040d2c5bdca6bb3789f99bc7fb870f9">UncertaintyReportInfoMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fleet_uncertainty_report_info</b></td></tr>
+<tr class="memdesc:a56eb1b72eaa9c95cb831fe050b0e8232 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer for the uncertainty report information map. <br /></td></tr>
+<tr class="separator:a56eb1b72eaa9c95cb831fe050b0e8232 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b5a176c06fad191401e5c327ae88b15 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase" id="r_a3b5a176c06fad191401e5c327ae88b15"><td class="memItemLeft" align="right" valign="top">
+std::shared_ptr&lt; <a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a7040d2c5bdca6bb3789f99bc7fb870f9">UncertaintyReportInfoMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>population_uncertainty_report_info</b></td></tr>
+<tr class="memdesc:a3b5a176c06fad191401e5c327ae88b15 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared pointer for the population uncertainty report information map. <br /></td></tr>
+<tr class="separator:a3b5a176c06fad191401e5c327ae88b15 inherit pub_attribs_classfims__popdy_1_1FisheryModelBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structfims__model__object_1_1FIMSObject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structfims__model__object_1_1FIMSObject')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structfims__model__object_1_1FIMSObject.html">fims_model_object::FIMSObject&lt; Type &gt;</a></td></tr>
 <tr class="memitem:a3922946642efc5ec4309149f1e0b188a inherit pub_attribs_structfims__model__object_1_1FIMSObject" id="r_a3922946642efc5ec4309149f1e0b188a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__model__object_1_1FIMSObject.html#a3922946642efc5ec4309149f1e0b188a">id</a></td></tr>
 <tr class="separator:a3922946642efc5ec4309149f1e0b188a inherit pub_attribs_structfims__model__object_1_1FIMSObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,7 +498,7 @@ std::map&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3
 class fims_popdy::CatchAtAge&lt; Type &gt;</div><p><a class="el" href="classfims__popdy_1_1CatchAtAge.html" title="CatchAtAge is a class containing a catch-at-age model, which is just one of many potential fishery mo...">CatchAtAge</a> is a class containing a catch-at-age model, which is just one of many potential fishery models that can be used in FIMS. The <a class="el" href="classfims__popdy_1_1CatchAtAge.html" title="CatchAtAge is a class containing a catch-at-age model, which is just one of many potential fishery mo...">CatchAtAge</a> class inherits from the <a class="el" href="classfims__popdy_1_1FisheryModelBase.html" title="FisheryModelBase is a base class for fishery models in FIMS.">FisheryModelBase</a> class and can be used to fit both age and length data even though it is called <a class="el" href="classfims__popdy_1_1CatchAtAge.html" title="CatchAtAge is a class containing a catch-at-age model, which is just one of many potential fishery mo...">CatchAtAge</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7830c8f82e8a6158f83d4a765379ddf3" name="a7830c8f82e8a6158f83d4a765379ddf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7830c8f82e8a6158f83d4a765379ddf3">&#9670;&#160;</a></span>CatchAtAge()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7830c8f82e8a6158f83d4a765379ddf3">&#9670;&#160;</a></span>CatchAtAge() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,6 +522,42 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
 </table>
 </div><div class="memdoc">
 <p>Constructor for the <a class="el" href="classfims__popdy_1_1CatchAtAge.html" title="CatchAtAge is a class containing a catch-at-age model, which is just one of many potential fishery mo...">CatchAtAge</a> class. This constructor initializes the name of the model and sets the id of the model. </p>
+
+</div>
+</div>
+<a id="a6c621a6bc7cada49166db5fc96f32726" name="a6c621a6bc7cada49166db5fc96f32726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c621a6bc7cada49166db5fc96f32726">&#9670;&#160;</a></span>CatchAtAge() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typename</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfims__popdy_1_1CatchAtAge.html">fims_popdy::CatchAtAge</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::CatchAtAge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="classfims__popdy_1_1CatchAtAge.html">CatchAtAge</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy constructor for the <a class="el" href="classfims__popdy_1_1CatchAtAge.html" title="CatchAtAge is a class containing a catch-at-age model, which is just one of many potential fishery mo...">CatchAtAge</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The other <a class="el" href="classfims__popdy_1_1CatchAtAge.html" title="CatchAtAge is a class containing a catch-at-age model, which is just one of many potential fishery mo...">CatchAtAge</a> object to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1373,63 +1544,6 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
 
 </div>
 </div>
-<a id="a06f538462c7bcd307f91f9cbfdbb8349" name="a06f538462c7bcd307f91f9cbfdbb8349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06f538462c7bcd307f91f9cbfdbb8349">&#9670;&#160;</a></span>ComputeProportions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typename</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a> <a class="el" href="classfims__popdy_1_1CatchAtAge.html">fims_popdy::CatchAtAge</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::ComputeProportions </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>This method is used to calculate the proportions for a population. It takes a population object, the index of the age in the current year, the age as input and calculates the proportions for that population. </p>
-
-</div>
-</div>
-<a id="ae0a4d6bb872d862e597b9a206f2cf41f" name="ae0a4d6bb872d862e597b9a206f2cf41f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0a4d6bb872d862e597b9a206f2cf41f">&#9670;&#160;</a></span>DerivedQuantityToJSON()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typename</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string <a class="el" href="classfims__popdy_1_1CatchAtAge.html">fims_popdy::CatchAtAge</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::DerivedQuantityToJSON </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a1149caa64c7cb14a93af4f87a3a01149">derived_quantities_iterator</a>&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>This function is used to convert the derived quantities of a population or fleet to a JSON string. This function is used to create the JSON output for the <a class="el" href="classfims__popdy_1_1CatchAtAge.html" title="CatchAtAge is a class containing a catch-at-age model, which is just one of many potential fishery mo...">CatchAtAge</a> model. </p>
-
-</div>
-</div>
 <a id="a84c67ee2edf996a8f3cf736801a6eeb6" name="a84c67ee2edf996a8f3cf736801a6eeb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84c67ee2edf996a8f3cf736801a6eeb6">&#9670;&#160;</a></span>Evaluate()</h2>
 
@@ -1454,9 +1568,8 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
   </tr>
 </table>
 </div><div class="memdoc">
-<ul>
-<li>This method is used to evaluate the population dynamics model. </li>
-</ul>
+
+<p>Evaluate the model. </p>
 
 <p>Reimplemented from <a class="el" href="classfims__popdy_1_1FisheryModelBase.html#a259bb2cc579b7b7710a0b5573968383c">fims_popdy::FisheryModelBase&lt; Type &gt;</a>.</p>
 
@@ -1574,37 +1687,6 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
 
 </div>
 </div>
-<a id="aeb82c0b519c7fddc89f772246d6ea64e" name="aeb82c0b519c7fddc89f772246d6ea64e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb82c0b519c7fddc89f772246d6ea64e">&#9670;&#160;</a></span>fleet_derived_quantities_to_json()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typename</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string <a class="el" href="classfims__popdy_1_1CatchAtAge.html">fims_popdy::CatchAtAge</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::fleet_derived_quantities_to_json </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a98f3ae923dc0c7ab2f7f171b1e8873c9">fleet_derived_quantities_iterator</a>&#160;</td>
-          <td class="paramname"><em>fdqit</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Send the fleet-based derived quantities to the json file. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
-
-</div>
-</div>
 <a id="aca027997da78686a12f60bd6f26f40ea" name="aca027997da78686a12f60bd6f26f40ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca027997da78686a12f60bd6f26f40ea">&#9670;&#160;</a></span>GetPopulations()</h2>
 
@@ -1663,37 +1745,6 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
 
 </div>
 </div>
-<a id="a91fc6f11cf954e6f9eac57d0d619b7c5" name="a91fc6f11cf954e6f9eac57d0d619b7c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91fc6f11cf954e6f9eac57d0d619b7c5">&#9670;&#160;</a></span>population_derived_quantities_to_json()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typename</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string <a class="el" href="classfims__popdy_1_1CatchAtAge.html">fims_popdy::CatchAtAge</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::population_derived_quantities_to_json </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classfims__popdy_1_1CatchAtAge.html#a9a5f5b81f887323b99d648956c2f5add">population_derived_quantities_iterator</a>&#160;</td>
-          <td class="paramname"><em>pdqit</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Send the population-based derived quantities to the json file. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
-
-</div>
-</div>
 <a id="af0d27bcf828a778e839f3a8658c52135" name="af0d27bcf828a778e839f3a8658c52135"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af0d27bcf828a778e839f3a8658c52135">&#9670;&#160;</a></span>Prepare()</h2>
 
@@ -1721,6 +1772,38 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
 <p>This function is used to reset the derived quantities of a population or fleet to a given value. </p>
 
 <p>Reimplemented from <a class="el" href="classfims__popdy_1_1FisheryModelBase.html#ae9f5db1ab4ec1337f4221a4cd2ad67c9">fims_popdy::FisheryModelBase&lt; Type &gt;</a>.</p>
+
+</div>
+</div>
+<a id="abf6dab88981668c7bf763590fa2ad43d" name="abf6dab88981668c7bf763590fa2ad43d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf6dab88981668c7bf763590fa2ad43d">&#9670;&#160;</a></span>Report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typename</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a> <a class="el" href="classfims__popdy_1_1CatchAtAge.html">fims_popdy::CatchAtAge</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::Report </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<ul>
+<li>This method is used to generate TMB reports from the population dynamics model. </li>
+</ul>
+
+<p>Reimplemented from <a class="el" href="classfims__popdy_1_1FisheryModelBase.html#abeb7bd84d2c45be018cc41549eeb65d5">fims_popdy::FisheryModelBase&lt; Type &gt;</a>.</p>
 
 </div>
 </div>

@@ -12,7 +12,8 @@ var searchData=
   ['registerrandomeffectname_9',['RegisterRandomEffectName',['../classfims__info_1_1Information.html#a17b83c06fd67ff15f52c851426de5f41',1,'fims_info::Information']]],
   ['removewhitespace_10',['removeWhitespace',['../classfims_1_1JsonParser.html#aa376edce137153ad7db370db5f0750d4',1,'fims::JsonParser']]],
   ['rend_11',['rend',['../classfims_1_1Vector.html#a1b420e6d1d0898afb90b127a06bb11e6',1,'fims::Vector::rend()'],['../classfims_1_1Vector.html#a864f6aaa6466ce9ea6723e6decd880df',1,'fims::Vector::rend() const']]],
-  ['reserve_12',['reserve',['../classfims_1_1Vector.html#a254cc7fdb1dc247fae2216726cc720e7',1,'fims::Vector']]],
-  ['resetvector_13',['ResetVector',['../classfims__popdy_1_1FisheryModelBase.html#ab755a0916428375053ade26191ff76a0',1,'fims_popdy::FisheryModelBase']]],
-  ['resize_14',['resize',['../classfims_1_1Vector.html#a971eba3d10861eaabaf2b0252182fed9',1,'fims::Vector::resize()'],['../classParameterVector.html#a098cdfbbf65f58ee93ffc76090a80e92',1,'ParameterVector::resize()'],['../classRealVector.html#a56c89a02cdc713619a20e68563545be8',1,'RealVector::resize()']]]
+  ['report_12',['report',['../classfims__popdy_1_1CatchAtAge.html#abf6dab88981668c7bf763590fa2ad43d',1,'fims_popdy::CatchAtAge::Report()'],['../classfims__popdy_1_1FisheryModelBase.html#abeb7bd84d2c45be018cc41549eeb65d5',1,'fims_popdy::FisheryModelBase::Report()']]],
+  ['reserve_13',['reserve',['../classfims_1_1Vector.html#a254cc7fdb1dc247fae2216726cc720e7',1,'fims::Vector']]],
+  ['resetvector_14',['ResetVector',['../classfims__popdy_1_1FisheryModelBase.html#ab755a0916428375053ade26191ff76a0',1,'fims_popdy::FisheryModelBase']]],
+  ['resize_15',['resize',['../classfims_1_1Vector.html#a971eba3d10861eaabaf2b0252182fed9',1,'fims::Vector::resize()'],['../classParameterVector.html#a098cdfbbf65f58ee93ffc76090a80e92',1,'ParameterVector::resize()'],['../classRealVector.html#a56c89a02cdc713619a20e68563545be8',1,'RealVector::resize()']]]
 ];
