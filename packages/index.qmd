@@ -8,7 +8,6 @@ listing:
     - "title"
   type: grid
   image-height: 250px
-  width: 300px
   grid-columns: 3
   fields: [image, title, description, categories]
 header-includes: >
@@ -17,6 +16,7 @@ header-includes: >
 
 ::: {#fims-packages-listing}
 :::
+
 
 
 
