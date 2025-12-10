@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['wd_0',['wd',['../structfims_1_1LogEntry.html#a035f661c2f0a1c9d0b0f50b1ff01c394',1,'fims::LogEntry']]],
-  ['weight_5fat_5fage_1',['weight_at_age',['../structfims__popdy_1_1Population.html#aa6b0b2a00411f9c5a7dbdc4bb4c45095',1,'fims_popdy::Population']]],
-  ['weights_2',['weights',['../classEWAAGrowthInterface.html#ab8265890b9f73d9f75f80c0eb81f561f',1,'EWAAGrowthInterface']]],
-  ['write_5fon_5fexit_3',['write_on_exit',['../classfims_1_1FIMSLog.html#a1f92030e24364caa377ca4ba1174a1be',1,'fims::FIMSLog']]]
+  ['x_0',['x',['../structfims__distributions_1_1DistributionElementObject.html#aa2a9965625057a2fe696710b74113775',1,'fims_distributions::DistributionElementObject::x'],['../classDnormDistributionsInterface.html#a12310c938c2b7e57425947f39cd0ebd4',1,'DnormDistributionsInterface::x'],['../classDlnormDistributionsInterface.html#aab25846177b7941148b2c589771192da',1,'DlnormDistributionsInterface::x'],['../classDmultinomDistributionsInterface.html#a48a0a46a8a38f71c167bdaba657b9ba7',1,'DmultinomDistributionsInterface::x']]]
 ];

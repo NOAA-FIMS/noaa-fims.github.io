@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['data_5fobject_2ehpp_0',['data_object.hpp',['../data__object_8hpp.html',1,'']]],
-  ['def_2ehpp_1',['def.hpp',['../def_8hpp.html',1,'']]],
-  ['density_5fcomponents_5fbase_2ehpp_2',['density_components_base.hpp',['../density__components__base_8hpp.html',1,'']]],
-  ['distributions_2ehpp_3',['distributions.hpp',['../distributions_8hpp.html',1,'']]]
+  ['catch_5fat_5fage_2ehpp_0',['catch_at_age.hpp',['../catch__at__age_8hpp.html',1,'']]]
 ];

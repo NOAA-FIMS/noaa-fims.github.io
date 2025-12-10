@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <meta name="generator" content="Doxygen 1.9.8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>FIMS: fims_popdy::LogR&lt; Type &gt; Struct Template Reference</title><title>fims_popdy::LogR&lt; Type &gt; Struct Template Reference</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
-    <link rel="icon" type="image/png" href="../images/FIMS_hexlogo.png">
+    <title>FIMS</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="https://noaa-fims.github.io/images/FIMS_hexlogo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-06a8a7a3a18fc17cd2940e96bb351f4a.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-5c5d58904a6a5c707f9a8e5817847b0d.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -42,11 +42,11 @@ MathJax.Hub.Config({
     <div id="titlearea">
         <table cellspacing="0" cellpadding="0">
             <tbody>
-            <tr style="height: 56px;">
+            <tr style="height: 70px;">
                 <td id="projectlogo"><img alt="Logo" src="FIMS_logo3.png"/></td>
                 <td id="projectalign" style="padding-left: 0.5em;">
                     <div id="projectname">FIMS
-                        &#160;<span id="projectnumber">v0.6.3</span></div>
+                        &#160;<span id="projectnumber">v0.7.0</span></div>
                     <div id="projectbrief"></div></td>
                 <td style="padding-left: 0.5em;">
                     <div id="projectbrief"></div>
@@ -73,20 +73,31 @@ MathJax.Hub.Config({
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/about/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">about</span></a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">about</span></a></li>
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/contributors.html"><span class="dropdown-text">fims team</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">overview</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/faq.html"><span class="dropdown-text">faq</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/calendar.html"><span class="dropdown-text">calendar</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="dropdown-text">changelog</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/acknowledgements.html"><span class="dropdown-text">acknowledgements</span></a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://noaa-fims.github.io/fims-weekly/index.html"><span class="menu-text">fims weekly</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">sites and docs</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/projects/index.html"><span class="menu-text">projects</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="menu-text">changelog</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/packages/index.html"><span class="menu-text">packages</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">resources</span></a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/contact/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">contact</span></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/index.html"><span class="dropdown-text">contact FIMS lead</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/contributors.html"><span class="dropdown-text">FIMS team</span></a></li>
+              </ul>
             </li>
             <li class="nav-item compact">
               <a class="nav-link" href="https://github.com/NOAA-FIMS/FIMS"><i class="bi bi-github" role="img"></i><span class="menu-text"></span></a>
@@ -109,8 +120,45 @@ MathJax.Hub.Config({
             </div>
       </div>
     </nav>
-    <!-- end header part -->
-<!-- Generated by Doxygen 1.9.8 -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Only on the cpp_directory_structure page!
+    document.querySelectorAll('.toc a').forEach(function(link) {
+      if (link.href && link.href.indexOf(location.pathname) !== -1) {
+        link.href = link.hash; // Just use the fragment
+      }
+    });
+  });
+  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function updateTocActive() {
+    var links = Array.from(document.querySelectorAll('.toc a'));
+    var anchors = links.map(link => document.getElementById(link.getAttribute('href').replace('#', '')));
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var offset = 150; // Match your scroll-margin-top
+    let currentActive = -1;
+    for (let i = anchors.length - 1; i >= 0; i--) {
+      if (anchors[i] && (anchors[i].getBoundingClientRect().top + window.scrollY - offset) <= scrollTop) {
+        currentActive = i;
+        break;
+      }
+    }
+    links.forEach((link, i) => {
+      link.classList.remove('active', 'aboveActive');
+      if (i === currentActive) {
+        link.classList.add('active');
+      } else if (i < currentActive) {
+        link.classList.add('aboveActive');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateTocActive);
+  window.addEventListener('hashchange', updateTocActive);
+  updateTocActive();
+});
+</script>
+    <!-- end header part --><!-- Generated by Doxygen 1.9.8 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -195,7 +243,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a66e5676c8b301c0bde423b89aff8b1cf inherit pub_methods_structfims__popdy_1_1RecruitmentBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b5b378ec529600bf29803017641d042 inherit pub_methods_structfims__popdy_1_1RecruitmentBase" id="r_a5b5b378ec529600bf29803017641d042"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareConstrainedDeviations</b> ()</td></tr>
-<tr class="memdesc:a5b5b378ec529600bf29803017641d042 inherit pub_methods_structfims__popdy_1_1RecruitmentBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare constrained recruitment deviations. Based on ADMB sum-to-zero constraint implementation. We still need to adde an additional penalty to the PrepareConstrainedDeviations method. More discussion can be found here: <a href="https://groups.google.com/a/admb-project.org/g/users/c/63YJmYGEPuE">https://groups.google.com/a/admb-project.org/g/users/c/63YJmYGEPuE</a>. <br /></td></tr>
+<tr class="memdesc:a5b5b378ec529600bf29803017641d042 inherit pub_methods_structfims__popdy_1_1RecruitmentBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare constrained recruitment deviations. Based on ADMB sum-to-zero constraint implementation. We still need to add an additional penalty to the PrepareConstrainedDeviations method. More discussion can be found here: <a href="https://groups.google.com/a/ADMB-project.org/g/users/c/63YJmYGEPuE">https://groups.google.com/a/ADMB-project.org/g/users/c/63YJmYGEPuE</a>. <br /></td></tr>
 <tr class="separator:a5b5b378ec529600bf29803017641d042 inherit pub_methods_structfims__popdy_1_1RecruitmentBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structfims__model__object_1_1FIMSObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structfims__model__object_1_1FIMSObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structfims__model__object_1_1FIMSObject.html">fims_model_object::FIMSObject&lt; Type &gt;</a></td></tr>
 <tr class="memitem:a7f1a6d1474f8ad7d8b460ce889ee6ebd inherit pub_methods_structfims__model__object_1_1FIMSObject" id="r_a7f1a6d1474f8ad7d8b460ce889ee6ebd"><td class="memItemLeft" align="right" valign="top">
@@ -205,6 +253,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a81239daf538745bbb96c56f627edc781 inherit pub_methods_structfims__model__object_1_1FIMSObject" id="r_a81239daf538745bbb96c56f627edc781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__model__object_1_1FIMSObject.html#a81239daf538745bbb96c56f627edc781">CheckDimensions</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">actual</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">expected</a>)</td></tr>
 <tr class="memdesc:a81239daf538745bbb96c56f627edc781 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the dimensions of an object.  <br /></td></tr>
 <tr class="separator:a81239daf538745bbb96c56f627edc781 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7809cb0987940a515163b95ef7d330f9 inherit pub_methods_structfims__model__object_1_1FIMSObject" id="r_a7809cb0987940a515163b95ef7d330f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__model__object_1_1FIMSObject.html#a7809cb0987940a515163b95ef7d330f9">create_report_vectors</a> (std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt; &amp;report_vectors)</td></tr>
+<tr class="memdesc:a7809cb0987940a515163b95ef7d330f9 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a map of report vectors for the object. used to populate the report_vectors map in FisheryModelBase.  <br /></td></tr>
+<tr class="separator:a7809cb0987940a515163b95ef7d330f9 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d848a3fb69a0c4928b7afa5ce845d2 inherit pub_methods_structfims__model__object_1_1FIMSObject" id="r_a63d848a3fb69a0c4928b7afa5ce845d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__model__object_1_1FIMSObject.html#a63d848a3fb69a0c4928b7afa5ce845d2">get_report_vector_count</a> (std::map&lt; std::string, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">report_vector_count</a>)</td></tr>
+<tr class="memdesc:a63d848a3fb69a0c4928b7afa5ce845d2 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the report vector count object. used to get the length of each report vector for populating the UncertaintyReportInfo struct in FisheryModelBase.  <br /></td></tr>
+<tr class="separator:a63d848a3fb69a0c4928b7afa5ce845d2 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <meta name="generator" content="Doxygen 1.9.8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>FIMS: Class Members - Functions</title><title>Class Members - Functions</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
-    <link rel="icon" type="image/png" href="../images/FIMS_hexlogo.png">
+    <title>FIMS</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="https://noaa-fims.github.io/images/FIMS_hexlogo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-06a8a7a3a18fc17cd2940e96bb351f4a.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-5c5d58904a6a5c707f9a8e5817847b0d.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -42,11 +42,11 @@ MathJax.Hub.Config({
     <div id="titlearea">
         <table cellspacing="0" cellpadding="0">
             <tbody>
-            <tr style="height: 56px;">
+            <tr style="height: 70px;">
                 <td id="projectlogo"><img alt="Logo" src="FIMS_logo3.png"/></td>
                 <td id="projectalign" style="padding-left: 0.5em;">
                     <div id="projectname">FIMS
-                        &#160;<span id="projectnumber">v0.6.3</span></div>
+                        &#160;<span id="projectnumber">v0.7.0</span></div>
                     <div id="projectbrief"></div></td>
                 <td style="padding-left: 0.5em;">
                     <div id="projectbrief"></div>
@@ -73,20 +73,31 @@ MathJax.Hub.Config({
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/about/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">about</span></a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">about</span></a></li>
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/contributors.html"><span class="dropdown-text">fims team</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">overview</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/faq.html"><span class="dropdown-text">faq</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/calendar.html"><span class="dropdown-text">calendar</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="dropdown-text">changelog</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/acknowledgements.html"><span class="dropdown-text">acknowledgements</span></a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://noaa-fims.github.io/fims-weekly/index.html"><span class="menu-text">fims weekly</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">sites and docs</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/projects/index.html"><span class="menu-text">projects</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="menu-text">changelog</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/packages/index.html"><span class="menu-text">packages</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">resources</span></a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/contact/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">contact</span></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/index.html"><span class="dropdown-text">contact FIMS lead</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/contributors.html"><span class="dropdown-text">FIMS team</span></a></li>
+              </ul>
             </li>
             <li class="nav-item compact">
               <a class="nav-link" href="https://github.com/NOAA-FIMS/FIMS"><i class="bi bi-github" role="img"></i><span class="menu-text"></span></a>
@@ -109,8 +120,45 @@ MathJax.Hub.Config({
             </div>
       </div>
     </nav>
-    <!-- end header part -->
-<!-- Generated by Doxygen 1.9.8 -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Only on the cpp_directory_structure page!
+    document.querySelectorAll('.toc a').forEach(function(link) {
+      if (link.href && link.href.indexOf(location.pathname) !== -1) {
+        link.href = link.hash; // Just use the fragment
+      }
+    });
+  });
+  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function updateTocActive() {
+    var links = Array.from(document.querySelectorAll('.toc a'));
+    var anchors = links.map(link => document.getElementById(link.getAttribute('href').replace('#', '')));
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var offset = 150; // Match your scroll-margin-top
+    let currentActive = -1;
+    for (let i = anchors.length - 1; i >= 0; i--) {
+      if (anchors[i] && (anchors[i].getBoundingClientRect().top + window.scrollY - offset) <= scrollTop) {
+        currentActive = i;
+        break;
+      }
+    }
+    links.forEach((link, i) => {
+      link.classList.remove('active', 'aboveActive');
+      if (i === currentActive) {
+        link.classList.add('active');
+      } else if (i < currentActive) {
+        link.classList.add('aboveActive');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateTocActive);
+  window.addEventListener('hashchange', updateTocActive);
+  updateTocActive();
+});
+</script>
+    <!-- end header part --><!-- Generated by Doxygen 1.9.8 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -163,11 +211,14 @@ $(document).ready(function(){initNavTree('functions_func_d.html',''); initResiza
 <li>DataObject()&#160;:&#160;<a class="el" href="structfims__data__object_1_1DataObject.html#a6c63a636143aa724ed44992ff3866464">fims_data_object::DataObject&lt; Type &gt;</a></li>
 <li>debug_message()&#160;:&#160;<a class="el" href="classfims_1_1FIMSLog.html#a0242c7f16fb0bc047dad9f51d6ddee2c">fims::FIMSLog</a></li>
 <li>DensityComponentBase()&#160;:&#160;<a class="el" href="structfims__distributions_1_1DensityComponentBase.html#a7a2908958732ab755caccc7a65b0a514">fims_distributions::DensityComponentBase&lt; Type &gt;</a></li>
-<li>DerivedQuantityToJSON()&#160;:&#160;<a class="el" href="classfims__popdy_1_1CatchAtAge.html#ae0a4d6bb872d862e597b9a206f2cf41f">fims_popdy::CatchAtAge&lt; Type &gt;</a></li>
+<li>derived_quantities_component_to_json()&#160;:&#160;<a class="el" href="classCatchAtAgeInterface.html#a9b3d2ac87f0322e9b45b7be4bde8d504">CatchAtAgeInterface</a></li>
+<li>derived_quantity_to_json()&#160;:&#160;<a class="el" href="classCatchAtAgeInterface.html#a2d23ba483f90d70ed3c7068539ecd912">CatchAtAgeInterface</a></li>
+<li>DimensionInfo()&#160;:&#160;<a class="el" href="structfims__popdy_1_1DimensionInfo.html#a460fe99e6af190d53e8fd2747b65729e">fims_popdy::DimensionInfo</a></li>
 <li>DistributionsInterfaceBase()&#160;:&#160;<a class="el" href="classDistributionsInterfaceBase.html#afd3dd648eca4947c794973ef184e6b70">DistributionsInterfaceBase</a></li>
 <li>DlnormDistributionsInterface()&#160;:&#160;<a class="el" href="classDlnormDistributionsInterface.html#a3084fde7dbe5abb05e1c4ae037e827ba">DlnormDistributionsInterface</a></li>
 <li>DmultinomDistributionsInterface()&#160;:&#160;<a class="el" href="classDmultinomDistributionsInterface.html#ac1ed630a79958943010b5d8dd43b3a18">DmultinomDistributionsInterface</a></li>
 <li>DnormDistributionsInterface()&#160;:&#160;<a class="el" href="classDnormDistributionsInterface.html#a32d211998d5283f1898688d2b8914ac9">DnormDistributionsInterface</a></li>
+<li>DoReporting()&#160;:&#160;<a class="el" href="classCatchAtAgeInterface.html#a34b10a041e691c72d7ac5cacc2411a73">CatchAtAgeInterface</a></li>
 <li>DoubleLogisticSelectivityInterface()&#160;:&#160;<a class="el" href="classDoubleLogisticSelectivityInterface.html#a3a1319f3bec34a62e106839824fb0454">DoubleLogisticSelectivityInterface</a></li>
 </ul>
 </div><!-- contents -->

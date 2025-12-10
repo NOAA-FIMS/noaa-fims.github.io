@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "fims_popdy::DimensionInfo", "structfims__popdy_1_1DimensionInfo.html", null ],
     [ "fims_distributions::DistributionElementObject< Type >", "structfims__distributions_1_1DistributionElementObject.html", [
       [ "fims_distributions::DensityComponentBase< Type >", "structfims__distributions_1_1DensityComponentBase.html", [
         [ "fims_distributions::LogNormalLPDF< Type >", "structfims__distributions_1_1LogNormalLPDF.html", null ],
@@ -16,7 +17,7 @@ var hierarchy =
       ] ],
       [ "fims_popdy::Fleet< Type >", "structfims__popdy_1_1Fleet.html", null ],
       [ "fims_popdy::GrowthBase< Type >", "structfims__popdy_1_1GrowthBase.html", [
-        [ "fims_popdy::EWAAgrowth< Type >", "structfims__popdy_1_1EWAAgrowth.html", null ]
+        [ "fims_popdy::EWAAGrowth< Type >", "structfims__popdy_1_1EWAAGrowth.html", null ]
       ] ],
       [ "fims_popdy::MaturityBase< Type >", "structfims__popdy_1_1MaturityBase.html", [
         [ "fims_popdy::LogisticMaturity< Type >", "structfims__popdy_1_1LogisticMaturity.html", null ]
@@ -82,7 +83,10 @@ var hierarchy =
     [ "SharedReal", "classSharedReal.html", null ],
     [ "SharedString", "classSharedString.html", null ],
     [ "fims_popdy::Subpopulation< Type >", "classfims__popdy_1_1Subpopulation.html", null ],
+    [ "fims_popdy::UncertaintyReportInfo", "structfims__popdy_1_1UncertaintyReportInfo.html", null ],
     [ "fims::Vector< Type >", "classfims_1_1Vector.html", null ],
     [ "fims::Vector< double >", "classfims_1_1Vector.html", null ],
-    [ "fims::Vector< size_t >", "classfims_1_1Vector.html", null ]
+    [ "fims::Vector< int >", "classfims_1_1Vector.html", null ],
+    [ "fims::Vector< size_t >", "classfims_1_1Vector.html", null ],
+    [ "fims::Vector< std::string >", "classfims_1_1Vector.html", null ]
 ];

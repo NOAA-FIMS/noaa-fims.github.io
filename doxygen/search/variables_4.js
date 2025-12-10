@@ -1,11 +1,22 @@
 var searchData=
 [
-  ['estimate_5flog_5frecruit_5fdevs_0',['estimate_log_recruit_devs',['../structfims__popdy_1_1RecruitmentBase.html#a847ffa3b1acbb5b5fe44d6816e67cd1b',1,'fims_popdy::RecruitmentBase']]],
-  ['estimated_5flog_5fdevs_1',['estimated_log_devs',['../classBevertonHoltRecruitmentInterface.html#aba2cd8724255cb55b9d341927471bd60',1,'BevertonHoltRecruitmentInterface']]],
-  ['estimated_5flog_5frzero_2',['estimated_log_rzero',['../classBevertonHoltRecruitmentInterface.html#a45acebd04427172c6029ea391f2ffcb2',1,'BevertonHoltRecruitmentInterface']]],
-  ['estimated_5flogit_5fsteep_3',['estimated_logit_steep',['../classBevertonHoltRecruitmentInterface.html#ad6571c3071fbf8bc78d197180fc5eb2e',1,'BevertonHoltRecruitmentInterface']]],
-  ['estimation_5ftype_5fm_4',['estimation_type_m',['../classParameter.html#a839d8bf94d52f664af583c61ab9a4284',1,'Parameter']]],
-  ['ewaa_5',['ewaa',['../classEWAAGrowthInterface.html#a2dcfee273a60cfbf8473c32b50c3639e',1,'EWAAGrowthInterface::ewaa'],['../structfims__popdy_1_1EWAAgrowth.html#a23e2638b21a6c6ecba17244a3db3e871',1,'fims_popdy::EWAAgrowth::ewaa']]],
-  ['expected_5frecruitment_6',['expected_recruitment',['../structfims__popdy_1_1Population.html#ab511a48f536af2b22e6a18a2220fe615',1,'fims_popdy::Population']]],
-  ['expected_5fvalues_7',['expected_values',['../structfims__distributions_1_1DistributionElementObject.html#aba452dcc2e5019a053dffbe018261a7b',1,'fims_distributions::DistributionElementObject::expected_values'],['../classDnormDistributionsInterface.html#a52b505e82789482f43f8be3462cf73d0',1,'DnormDistributionsInterface::expected_values'],['../classDlnormDistributionsInterface.html#a34ff4c41bc72eab179e3a8b617354cba',1,'DlnormDistributionsInterface::expected_values'],['../classDmultinomDistributionsInterface.html#a63619adb012ab0dd45742eb125654b06',1,'DmultinomDistributionsInterface::expected_values']]]
+  ['file_0',['file',['../structfims_1_1LogEntry.html#a443d1be9aed07b8284c32dfbb2a389e0',1,'fims::LogEntry']]],
+  ['fims_5finformation_1',['fims_information',['../classfims__info_1_1Information.html#af21bebe91662251ada5ac37feaac1af5',1,'fims_info::Information::fims_information'],['../classfims__model_1_1Model.html#addfa06809f60c7b5ef64c03c4cd204a9',1,'fims_model::Model::fims_information']]],
+  ['fims_5finterface_5fobjects_2',['fims_interface_objects',['../classFIMSRcppInterfaceBase.html#a66ae9ad9c0adae77184eefa59e283c5e',1,'FIMSRcppInterfaceBase']]],
+  ['fims_5flog_3',['fims_log',['../classfims_1_1FIMSLog.html#a942fd5b6d134573af288c0a986831ffd',1,'fims::FIMSLog']]],
+  ['fims_5fmodel_4',['fims_model',['../classfims__model_1_1Model.html#a9b1e4383331085750c40db5bbc5590e6',1,'fims_model::Model']]],
+  ['final_5fvalue_5fm_5',['final_value_m',['../classParameter.html#a801f5573fedaf0530ecd90530323446f',1,'Parameter']]],
+  ['finalized_6',['finalized',['../classFIMSRcppInterfaceBase.html#a44e4e3b1dd18103bf79ccb30a76f5933',1,'FIMSRcppInterfaceBase']]],
+  ['fixed_5feffects_5fparameters_7',['fixed_effects_parameters',['../classfims__info_1_1Information.html#ad4f84b2d8e58abddbc6408344bbc1f96',1,'fims_info::Information::fixed_effects_parameters'],['../structfims__model__object_1_1FIMSObject.html#aca6a96ab8e6a4cca573daa5f52e71c67',1,'fims_model_object::FIMSObject::fixed_effects_parameters']]],
+  ['fleet_5fderived_5fquantities_8',['fleet_derived_quantities',['../classfims__popdy_1_1FisheryModelBase.html#a8e6c66b78cf5afc3c6508ae383d33bc4',1,'fims_popdy::FisheryModelBase']]],
+  ['fleet_5fdimension_5finfo_9',['fleet_dimension_info',['../classfims__popdy_1_1FisheryModelBase.html#a8e6b0921b0c4800371e4833ccc52c7be',1,'fims_popdy::FisheryModelBase']]],
+  ['fleet_5fids_10',['fleet_ids',['../classPopulationInterface.html#a0402c6e36b1987376d293e44aae2eeaa',1,'PopulationInterface::fleet_ids'],['../structfims__popdy_1_1Population.html#ad3088db5680dac891e0b4f972fa925a4',1,'fims_popdy::Population::fleet_ids']]],
+  ['fleet_5fobserved_5fagecomp_5fdata_5fid_5fm_11',['fleet_observed_agecomp_data_id_m',['../structfims__popdy_1_1Fleet.html#a650c1f21f4efce9a78472408e4abd2d2',1,'fims_popdy::Fleet']]],
+  ['fleet_5fobserved_5findex_5fdata_5fid_5fm_12',['fleet_observed_index_data_id_m',['../structfims__popdy_1_1Fleet.html#ab8fa4db5de7dba45fece778e182d4e27',1,'fims_popdy::Fleet']]],
+  ['fleet_5fobserved_5flandings_5fdata_5fid_5fm_13',['fleet_observed_landings_data_id_m',['../structfims__popdy_1_1Fleet.html#accf7e5aec5b184c87b9f6e9d022a5348',1,'fims_popdy::Fleet']]],
+  ['fleet_5fobserved_5flengthcomp_5fdata_5fid_5fm_14',['fleet_observed_lengthcomp_data_id_m',['../structfims__popdy_1_1Fleet.html#a33da0d3b4445a9407bd1d22ba1c7e31f',1,'fims_popdy::Fleet']]],
+  ['fleet_5fselectivity_5fid_5fm_15',['fleet_selectivity_id_m',['../structfims__popdy_1_1Fleet.html#a3bfbbc0bf021aa8f6f2730d42027d17d',1,'fims_popdy::Fleet']]],
+  ['fleet_5funcertainty_5freport_5finfo_16',['fleet_uncertainty_report_info',['../classfims__popdy_1_1FisheryModelBase.html#a56eb1b72eaa9c95cb831fe050b0e8232',1,'fims_popdy::FisheryModelBase']]],
+  ['fleets_17',['fleets',['../classfims__info_1_1Information.html#a4d544f7e8c08032dd12ef14961e40822',1,'fims_info::Information::fleets'],['../classfims__popdy_1_1FisheryModelBase.html#a0613bad21950ad03cf6e8a97077ee667',1,'fims_popdy::FisheryModelBase::fleets'],['../structfims__popdy_1_1Population.html#a6eaaea0428208feb8fdb2a71a2f86557',1,'fims_popdy::Population::fleets']]],
+  ['fmort_18',['Fmort',['../structfims__popdy_1_1Fleet.html#a78cadc41e2e95ece2282873ad8e3b2b4',1,'fims_popdy::Fleet']]]
 ];

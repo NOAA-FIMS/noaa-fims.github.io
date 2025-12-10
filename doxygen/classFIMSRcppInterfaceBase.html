@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <meta name="generator" content="Doxygen 1.9.8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>FIMS: FIMSRcppInterfaceBase Class Reference</title><title>FIMSRcppInterfaceBase Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
-    <link rel="icon" type="image/png" href="../images/FIMS_hexlogo.png">
+    <title>FIMS</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="https://noaa-fims.github.io/images/FIMS_hexlogo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-06a8a7a3a18fc17cd2940e96bb351f4a.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-5c5d58904a6a5c707f9a8e5817847b0d.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -42,11 +42,11 @@ MathJax.Hub.Config({
     <div id="titlearea">
         <table cellspacing="0" cellpadding="0">
             <tbody>
-            <tr style="height: 56px;">
+            <tr style="height: 70px;">
                 <td id="projectlogo"><img alt="Logo" src="FIMS_logo3.png"/></td>
                 <td id="projectalign" style="padding-left: 0.5em;">
                     <div id="projectname">FIMS
-                        &#160;<span id="projectnumber">v0.6.3</span></div>
+                        &#160;<span id="projectnumber">v0.7.0</span></div>
                     <div id="projectbrief"></div></td>
                 <td style="padding-left: 0.5em;">
                     <div id="projectbrief"></div>
@@ -73,20 +73,31 @@ MathJax.Hub.Config({
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/about/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">about</span></a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">about</span></a></li>
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/contributors.html"><span class="dropdown-text">fims team</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">overview</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/faq.html"><span class="dropdown-text">faq</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/calendar.html"><span class="dropdown-text">calendar</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="dropdown-text">changelog</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/acknowledgements.html"><span class="dropdown-text">acknowledgements</span></a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://noaa-fims.github.io/fims-weekly/index.html"><span class="menu-text">fims weekly</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">sites and docs</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/projects/index.html"><span class="menu-text">projects</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="menu-text">changelog</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/packages/index.html"><span class="menu-text">packages</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">resources</span></a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/contact/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">contact</span></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/index.html"><span class="dropdown-text">contact FIMS lead</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/contributors.html"><span class="dropdown-text">FIMS team</span></a></li>
+              </ul>
             </li>
             <li class="nav-item compact">
               <a class="nav-link" href="https://github.com/NOAA-FIMS/FIMS"><i class="bi bi-github" role="img"></i><span class="menu-text"></span></a>
@@ -109,8 +120,45 @@ MathJax.Hub.Config({
             </div>
       </div>
     </nav>
-    <!-- end header part -->
-<!-- Generated by Doxygen 1.9.8 -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Only on the cpp_directory_structure page!
+    document.querySelectorAll('.toc a').forEach(function(link) {
+      if (link.href && link.href.indexOf(location.pathname) !== -1) {
+        link.href = link.hash; // Just use the fragment
+      }
+    });
+  });
+  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function updateTocActive() {
+    var links = Array.from(document.querySelectorAll('.toc a'));
+    var anchors = links.map(link => document.getElementById(link.getAttribute('href').replace('#', '')));
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var offset = 150; // Match your scroll-margin-top
+    let currentActive = -1;
+    for (let i = anchors.length - 1; i >= 0; i--) {
+      if (anchors[i] && (anchors[i].getBoundingClientRect().top + window.scrollY - offset) <= scrollTop) {
+        currentActive = i;
+        break;
+      }
+    }
+    links.forEach((link, i) => {
+      link.classList.remove('active', 'aboveActive');
+      if (i === currentActive) {
+        link.classList.add('active');
+      } else if (i < currentActive) {
+        link.classList.add('aboveActive');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateTocActive);
+  window.addEventListener('hashchange', updateTocActive);
+  updateTocActive();
+});
+</script>
+    <!-- end header part --><!-- Generated by Doxygen 1.9.8 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -197,6 +245,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa97acd77c0c4d2e193c67cd0662d803c" id="r_aa97acd77c0c4d2e193c67cd0662d803c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#aa97acd77c0c4d2e193c67cd0662d803c">to_json</a> ()</td></tr>
 <tr class="memdesc:aa97acd77c0c4d2e193c67cd0662d803c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the data to json representation for the output.  <br /></td></tr>
 <tr class="separator:aa97acd77c0c4d2e193c67cd0662d803c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fc17f2f76b60a82db50167b1cde83d" id="r_a72fc17f2f76b60a82db50167b1cde83d"><td class="memItemLeft" align="right" valign="top"><a id="a72fc17f2f76b60a82db50167b1cde83d" name="a72fc17f2f76b60a82db50167b1cde83d"></a>
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_se_values</b> (std::string name, std::map&lt; std::string, std::vector&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt; &amp;se_values, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">values</a>)</td></tr>
+<tr class="memdesc:a72fc17f2f76b60a82db50167b1cde83d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to extract standard error values from the se_values working map. <br /></td></tr>
+<tr class="separator:a72fc17f2f76b60a82db50167b1cde83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e19680aa5d84f270939435588bce03b" id="r_a5e19680aa5d84f270939435588bce03b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a5e19680aa5d84f270939435588bce03b">set_uncertainty</a> (std::map&lt; std::string, std::vector&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt; &amp;se_values)</td></tr>
+<tr class="memdesc:a5e19680aa5d84f270939435588bce03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set uncertainty values for the interface object.  <br /></td></tr>
+<tr class="separator:a5e19680aa5d84f270939435588bce03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e0ce655ef707a6c66e863aa4f0b374" id="r_a46e0ce655ef707a6c66e863aa4f0b374"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a46e0ce655ef707a6c66e863aa4f0b374">value_to_string</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> value)</td></tr>
+<tr class="memdesc:a46e0ce655ef707a6c66e863aa4f0b374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the parameter value as a string.  <br /></td></tr>
+<tr class="separator:a46e0ce655ef707a6c66e863aa4f0b374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa6e0deb883a921fe70b328cdd30fee" id="r_a1fa6e0deb883a921fe70b328cdd30fee"><td class="memItemLeft" align="right" valign="top"><a id="a1fa6e0deb883a921fe70b328cdd30fee" name="a1fa6e0deb883a921fe70b328cdd30fee"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>make_dimensions</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">start</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> end, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">rep</a>=1)</td></tr>
 <tr class="memdesc:a1fa6e0deb883a921fe70b328cdd30fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a string of dimensions for the model. <br /></td></tr>
@@ -277,6 +335,43 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5e19680aa5d84f270939435588bce03b" name="a5e19680aa5d84f270939435588bce03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e19680aa5d84f270939435588bce03b">&#9670;&#160;</a></span>set_uncertainty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a> FIMSRcppInterfaceBase::set_uncertainty </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, std::vector&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>se_values</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set uncertainty values for the interface object. </p>
+<p>This virtual method is intended to be overridden in derived classes to set uncertainty (standard error) values for model parameters or quantities using the provided map of standard error values. The default implementation logs a warning.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">se_values</td><td>A map from parameter names to vectors of standard error values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classLogisticMaturityInterface.html#af4487f1ed44f5a1a38b6fd97436ec107">LogisticMaturityInterface</a>, <a class="el" href="classBevertonHoltRecruitmentInterface.html#a0b4d4cd3a3ef120aa49e466bed475cf9">BevertonHoltRecruitmentInterface</a>, <a class="el" href="classLogisticSelectivityInterface.html#ae6099926f8bfad6f8b460c6b786d1562">LogisticSelectivityInterface</a>, and <a class="el" href="classDoubleLogisticSelectivityInterface.html#a8e11bab0b8c530e960f57a2f58ee4701">DoubleLogisticSelectivityInterface</a>.</p>
+
+</div>
+</div>
 <a id="aa97acd77c0c4d2e193c67cd0662d803c" name="aa97acd77c0c4d2e193c67cd0662d803c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa97acd77c0c4d2e193c67cd0662d803c">&#9670;&#160;</a></span>to_json()</h2>
 
@@ -302,7 +397,42 @@ Static Public Attributes</h2></td></tr>
 
 <p>Convert the data to json representation for the output. </p>
 
-<p>Reimplemented in <a class="el" href="classAgeCompDataInterface.html#a2ff550b84e84b05fac80726c92944ba6">AgeCompDataInterface</a>, <a class="el" href="classLengthCompDataInterface.html#adbd93e1f4c9087f10b3b32975cd10bd8">LengthCompDataInterface</a>, <a class="el" href="classIndexDataInterface.html#a1ad722d8f82198700a3dd72f9d11613c">IndexDataInterface</a>, <a class="el" href="classLandingsDataInterface.html#a6664332e0918bb63b119f8717c647458">LandingsDataInterface</a>, <a class="el" href="classDnormDistributionsInterface.html#a3ac41c008229d455fc81b9893decd3a7">DnormDistributionsInterface</a>, <a class="el" href="classDlnormDistributionsInterface.html#a36b83f73e6bef702b5435cd3471e92ee">DlnormDistributionsInterface</a>, <a class="el" href="classDmultinomDistributionsInterface.html#ac41624db2ed049445240e0b83793ae21">DmultinomDistributionsInterface</a>, <a class="el" href="classFleetInterface.html#aa7684fe7ee60637e1f185b9454344b36">FleetInterface</a>, <a class="el" href="classEWAAGrowthInterface.html#ae879683aa137986bded7572f0d4d4095">EWAAGrowthInterface</a>, <a class="el" href="classLogisticMaturityInterface.html#ad239da2246abb3476ff179540fad8d7c">LogisticMaturityInterface</a>, <a class="el" href="classFisheryModelInterfaceBase.html#acda4ae1beacd1cd075898b5b09c1ed81">FisheryModelInterfaceBase</a>, <a class="el" href="classCatchAtAgeInterface.html#a1c4ce93749a4b7a8375f077b3d134657">CatchAtAgeInterface</a>, <a class="el" href="classPopulationInterface.html#ab602d6441e3705e497faadaac7d17791">PopulationInterface</a>, <a class="el" href="classBevertonHoltRecruitmentInterface.html#a3fe268ea362772d045c4fe7618bcf8fc">BevertonHoltRecruitmentInterface</a>, <a class="el" href="classLogisticSelectivityInterface.html#a6868e2168d5ebb91931548e9a3b508bc">LogisticSelectivityInterface</a>, and <a class="el" href="classDoubleLogisticSelectivityInterface.html#a99e6d2a07db1738ad10e33b7c786a881">DoubleLogisticSelectivityInterface</a>.</p>
+<p>Reimplemented in <a class="el" href="classAgeCompDataInterface.html#a2ff550b84e84b05fac80726c92944ba6">AgeCompDataInterface</a>, <a class="el" href="classLengthCompDataInterface.html#adbd93e1f4c9087f10b3b32975cd10bd8">LengthCompDataInterface</a>, <a class="el" href="classIndexDataInterface.html#a1ad722d8f82198700a3dd72f9d11613c">IndexDataInterface</a>, <a class="el" href="classLandingsDataInterface.html#a6664332e0918bb63b119f8717c647458">LandingsDataInterface</a>, <a class="el" href="classDnormDistributionsInterface.html#a3ac41c008229d455fc81b9893decd3a7">DnormDistributionsInterface</a>, <a class="el" href="classDlnormDistributionsInterface.html#a36b83f73e6bef702b5435cd3471e92ee">DlnormDistributionsInterface</a>, <a class="el" href="classDmultinomDistributionsInterface.html#ac41624db2ed049445240e0b83793ae21">DmultinomDistributionsInterface</a>, <a class="el" href="classEWAAGrowthInterface.html#ae879683aa137986bded7572f0d4d4095">EWAAGrowthInterface</a>, <a class="el" href="classLogisticMaturityInterface.html#ad239da2246abb3476ff179540fad8d7c">LogisticMaturityInterface</a>, <a class="el" href="classFisheryModelInterfaceBase.html#acda4ae1beacd1cd075898b5b09c1ed81">FisheryModelInterfaceBase</a>, <a class="el" href="classCatchAtAgeInterface.html#a1c4ce93749a4b7a8375f077b3d134657">CatchAtAgeInterface</a>, <a class="el" href="classBevertonHoltRecruitmentInterface.html#a3fe268ea362772d045c4fe7618bcf8fc">BevertonHoltRecruitmentInterface</a>, <a class="el" href="classLogisticSelectivityInterface.html#a6868e2168d5ebb91931548e9a3b508bc">LogisticSelectivityInterface</a>, and <a class="el" href="classDoubleLogisticSelectivityInterface.html#a99e6d2a07db1738ad10e33b7c786a881">DoubleLogisticSelectivityInterface</a>.</p>
+
+</div>
+</div>
+<a id="a46e0ce655ef707a6c66e863aa4f0b374" name="a46e0ce655ef707a6c66e863aa4f0b374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e0ce655ef707a6c66e863aa4f0b374">&#9670;&#160;</a></span>value_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FIMSRcppInterfaceBase::value_to_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Report the parameter value as a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
 
 </div>
 </div>

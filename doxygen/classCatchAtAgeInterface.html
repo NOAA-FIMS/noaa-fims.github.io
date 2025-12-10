@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9"/>
     <meta name="generator" content="Doxygen 1.9.8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>FIMS: CatchAtAgeInterface Class Reference</title><title>CatchAtAgeInterface Class Reference</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
-    <link rel="icon" type="image/png" href="../images/FIMS_hexlogo.png">
+    <title>FIMS</title><link href="tabs.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="https://noaa-fims.github.io/images/FIMS_hexlogo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-06a8a7a3a18fc17cd2940e96bb351f4a.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+    <link href="https://noaa-fims.github.io/site_libs/bootstrap/bootstrap-5c5d58904a6a5c707f9a8e5817847b0d.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -42,11 +42,11 @@ MathJax.Hub.Config({
     <div id="titlearea">
         <table cellspacing="0" cellpadding="0">
             <tbody>
-            <tr style="height: 56px;">
+            <tr style="height: 70px;">
                 <td id="projectlogo"><img alt="Logo" src="FIMS_logo3.png"/></td>
                 <td id="projectalign" style="padding-left: 0.5em;">
                     <div id="projectname">FIMS
-                        &#160;<span id="projectnumber">v0.6.3</span></div>
+                        &#160;<span id="projectnumber">v0.7.0</span></div>
                     <div id="projectbrief"></div></td>
                 <td style="padding-left: 0.5em;">
                     <div id="projectbrief"></div>
@@ -73,20 +73,31 @@ MathJax.Hub.Config({
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/about/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">about</span></a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">about</span></a></li>
-                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/contributors.html"><span class="dropdown-text">fims team</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/index.html"><span class="dropdown-text">overview</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/faq.html"><span class="dropdown-text">faq</span></a></li>
                 <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/calendar.html"><span class="dropdown-text">calendar</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="dropdown-text">changelog</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/about/acknowledgements.html"><span class="dropdown-text">acknowledgements</span></a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://noaa-fims.github.io/fims-weekly/index.html"><span class="menu-text">fims weekly</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">sites and docs</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/projects/index.html"><span class="menu-text">projects</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://noaa-fims.github.io/changelog/FIMS_CHANGELOG.html"><span class="menu-text">changelog</span></a>
+              <a class="nav-link" href="https://noaa-fims.github.io/packages/index.html"><span class="menu-text">packages</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://noaa-fims.github.io/sites/sites_index.html"><span class="menu-text">resources</span></a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="https://noaa-fims.github.io/contact/index.html" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-text">contact</span></a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/index.html"><span class="dropdown-text">contact FIMS lead</span></a></li>
+                <li><a class="dropdown-item" href="https://noaa-fims.github.io/contact/contributors.html"><span class="dropdown-text">FIMS team</span></a></li>
+              </ul>
             </li>
             <li class="nav-item compact">
               <a class="nav-link" href="https://github.com/NOAA-FIMS/FIMS"><i class="bi bi-github" role="img"></i><span class="menu-text"></span></a>
@@ -109,8 +120,45 @@ MathJax.Hub.Config({
             </div>
       </div>
     </nav>
-    <!-- end header part -->
-<!-- Generated by Doxygen 1.9.8 -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Only on the cpp_directory_structure page!
+    document.querySelectorAll('.toc a').forEach(function(link) {
+      if (link.href && link.href.indexOf(location.pathname) !== -1) {
+        link.href = link.hash; // Just use the fragment
+      }
+    });
+  });
+  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function updateTocActive() {
+    var links = Array.from(document.querySelectorAll('.toc a'));
+    var anchors = links.map(link => document.getElementById(link.getAttribute('href').replace('#', '')));
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var offset = 150; // Match your scroll-margin-top
+    let currentActive = -1;
+    for (let i = anchors.length - 1; i >= 0; i--) {
+      if (anchors[i] && (anchors[i].getBoundingClientRect().top + window.scrollY - offset) <= scrollTop) {
+        currentActive = i;
+        break;
+      }
+    }
+    links.forEach((link, i) => {
+      link.classList.remove('active', 'aboveActive');
+      if (i === currentActive) {
+        link.classList.add('active');
+      } else if (i < currentActive) {
+        link.classList.add('aboveActive');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateTocActive);
+  window.addEventListener('hashchange', updateTocActive);
+  updateTocActive();
+});
+</script>
+    <!-- end header part --><!-- Generated by Doxygen 1.9.8 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
@@ -188,13 +236,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaf96c4d0495946bba753752bd9a36e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e9d0477888fd0520a23121641f6a52" id="r_a29e9d0477888fd0520a23121641f6a52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a29e9d0477888fd0520a23121641f6a52">AddPopulation</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="classFisheryModelInterfaceBase.html#ab21552139e7bd8abfa512bcd1871ab53">id</a>)</td></tr>
 <tr class="separator:a29e9d0477888fd0520a23121641f6a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b10a041e691c72d7ac5cacc2411a73" id="r_a34b10a041e691c72d7ac5cacc2411a73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a34b10a041e691c72d7ac5cacc2411a73">DoReporting</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">report</a>)</td></tr>
+<tr class="memdesc:a34b10a041e691c72d7ac5cacc2411a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable reporting for the CatchAtAge model.  <br /></td></tr>
+<tr class="separator:a34b10a041e691c72d7ac5cacc2411a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ababc562cfa4f58d4ca39be9cd2967256" id="r_ababc562cfa4f58d4ca39be9cd2967256"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#ababc562cfa4f58d4ca39be9cd2967256">IsReporting</a> ()</td></tr>
+<tr class="memdesc:ababc562cfa4f58d4ca39be9cd2967256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if reporting is enabled for the CatchAtAge model.  <br /></td></tr>
+<tr class="separator:ababc562cfa4f58d4ca39be9cd2967256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bdfe469de81b88c082b37fe36dab1d6" id="r_a7bdfe469de81b88c082b37fe36dab1d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a7bdfe469de81b88c082b37fe36dab1d6">get_id</a> ()</td></tr>
-<tr class="memdesc:a7bdfe469de81b88c082b37fe36dab1d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the population id.  <br /></td></tr>
+<tr class="memdesc:a7bdfe469de81b88c082b37fe36dab1d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get this id.  <br /></td></tr>
 <tr class="separator:a7bdfe469de81b88c082b37fe36dab1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a665c742f8fca424da760f93d4ac3a40a" id="r_a665c742f8fca424da760f93d4ac3a40a"><td class="memItemLeft" align="right" valign="top"><a id="a665c742f8fca424da760f93d4ac3a40a" name="a665c742f8fca424da760f93d4ac3a40a"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Show</b> ()</td></tr>
-<tr class="memdesc:a665c742f8fca424da760f93d4ac3a40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to get the population ids. <br /></td></tr>
-<tr class="separator:a665c742f8fca424da760f93d4ac3a40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2db07cca50b03739a4fb0872a7e95c4b" id="r_a2db07cca50b03739a4fb0872a7e95c4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a2db07cca50b03739a4fb0872a7e95c4b">finalize</a> ()</td></tr>
 <tr class="memdesc:a2db07cca50b03739a4fb0872a7e95c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts derived quantities back to the Rcpp interface object from the Information object.  <br /></td></tr>
 <tr class="separator:a2db07cca50b03739a4fb0872a7e95c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,10 +252,24 @@ Public Member Functions</h2></td></tr>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>population_to_json</b> (<a class="el" href="classPopulationInterface.html">PopulationInterface</a> *<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">population_interface</a>)</td></tr>
 <tr class="memdesc:aa60e84b3fd7627c4bfd45ba172c051f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to convert a population to a JSON string. <br /></td></tr>
 <tr class="separator:aa60e84b3fd7627c4bfd45ba172c051f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d23ba483f90d70ed3c7068539ecd912" id="r_a2d23ba483f90d70ed3c7068539ecd912"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a2d23ba483f90d70ed3c7068539ecd912">derived_quantity_to_json</a> (std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt;::iterator <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">it</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="structfims__popdy_1_1DimensionInfo.html">fims_popdy::DimensionInfo</a> &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">dim_info</a>)</td></tr>
+<tr class="separator:a2d23ba483f90d70ed3c7068539ecd912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3d2ac87f0322e9b45b7be4bde8d504" id="r_a9b3d2ac87f0322e9b45b7be4bde8d504"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a9b3d2ac87f0322e9b45b7be4bde8d504">derived_quantities_component_to_json</a> (std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">dqs</a>, std::map&lt; std::string, <a class="el" href="structfims__popdy_1_1DimensionInfo.html">fims_popdy::DimensionInfo</a> &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">dim_info</a>)</td></tr>
+<tr class="memdesc:a9b3d2ac87f0322e9b45b7be4bde8d504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the fleet-based derived quantities to the json file.  <br /></td></tr>
+<tr class="separator:a9b3d2ac87f0322e9b45b7be4bde8d504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f08bf8a25a002f967b9ef4db74947b3" id="r_a8f08bf8a25a002f967b9ef4db74947b3"><td class="memItemLeft" align="right" valign="top"><a id="a8f08bf8a25a002f967b9ef4db74947b3" name="a8f08bf8a25a002f967b9ef4db74947b3"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>fleet_to_json</b> (<a class="el" href="classFleetInterface.html">FleetInterface</a> *<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">fleet_interface</a>)</td></tr>
 <tr class="memdesc:a8f08bf8a25a002f967b9ef4db74947b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to convert a fleet to a JSON string. <br /></td></tr>
 <tr class="separator:a8f08bf8a25a002f967b9ef4db74947b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c139251081b749729f017d5ecb535e" id="r_a22c139251081b749729f017d5ecb535e"><td class="memItemLeft" align="right" valign="top">Rcpp::NumericVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a22c139251081b749729f017d5ecb535e">get_fixed_parameters_vector</a> ()</td></tr>
+<tr class="memdesc:a22c139251081b749729f017d5ecb535e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vector of fixed effect parameters for the CatchAtAge model.  <br /></td></tr>
+<tr class="separator:a22c139251081b749729f017d5ecb535e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a340253924262689b1ed3882034a96d6f" id="r_a340253924262689b1ed3882034a96d6f"><td class="memItemLeft" align="right" valign="top">Rcpp::NumericVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a340253924262689b1ed3882034a96d6f">get_random_parameters_vector</a> ()</td></tr>
+<tr class="memdesc:a340253924262689b1ed3882034a96d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vector of random effect parameters for the CatchAtAge model.  <br /></td></tr>
+<tr class="separator:a340253924262689b1ed3882034a96d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c109f2ee0be05f275f92655f3555ea" id="r_ae9c109f2ee0be05f275f92655f3555ea"><td class="memItemLeft" align="right" valign="top">Rcpp::List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#ae9c109f2ee0be05f275f92655f3555ea">get_report</a> ()</td></tr>
+<tr class="memdesc:ae9c109f2ee0be05f275f92655f3555ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the report output for the CatchAtAge model.  <br /></td></tr>
+<tr class="separator:ae9c109f2ee0be05f275f92655f3555ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c4ce93749a4b7a8375f077b3d134657" id="r_a1c4ce93749a4b7a8375f077b3d134657"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a1c4ce93749a4b7a8375f077b3d134657">to_json</a> ()</td></tr>
 <tr class="memdesc:a1c4ce93749a4b7a8375f077b3d134657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to convert the model to a JSON string.  <br /></td></tr>
 <tr class="separator:a1c4ce93749a4b7a8375f077b3d134657"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,17 +280,11 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>fleet_to_json<
 <tr class="memdesc:a8b4c7cb01b8a29290780f96b23bbda1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sum method for a vector of doubles.  <br /></td></tr>
 <tr class="separator:a8b4c7cb01b8a29290780f96b23bbda1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0baf4fd50416fb2d4392c1b76ed8cc0d" id="r_a0baf4fd50416fb2d4392c1b76ed8cc0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a0baf4fd50416fb2d4392c1b76ed8cc0d">min</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> std::valarray&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">v</a>)</td></tr>
-<tr class="memdesc:a0baf4fd50416fb2d4392c1b76ed8cc0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimimum method to calculate the minimum of an array or vector of doubles.  <br /></td></tr>
+<tr class="memdesc:a0baf4fd50416fb2d4392c1b76ed8cc0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum method to calculate the minimum of an array or vector of doubles.  <br /></td></tr>
 <tr class="separator:a0baf4fd50416fb2d4392c1b76ed8cc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c4b575301f99466df4b54a0c070cf9e" id="r_a9c4b575301f99466df4b54a0c070cf9e"><td class="memItemLeft" align="right" valign="top">std::valarray&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a9c4b575301f99466df4b54a0c070cf9e">fabs</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> std::valarray&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">v</a>)</td></tr>
-<tr class="memdesc:a9c4b575301f99466df4b54a0c070cf9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: document this method.  <br /></td></tr>
+<tr class="memdesc:a9c4b575301f99466df4b54a0c070cf9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to compute the absolute value of a value array of floating-point values. It is a wrapper around std::fabs.  <br /></td></tr>
 <tr class="separator:a9c4b575301f99466df4b54a0c070cf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60154cd3032918b4d845ae44f643f093" id="r_a60154cd3032918b4d845ae44f643f093"><td class="memItemLeft" align="right" valign="top">Rcpp::List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a60154cd3032918b4d845ae44f643f093">calculate_reference_points_population</a> (<a class="el" href="classPopulationInterface.html">PopulationInterface</a> *<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">population_interface</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">maxF</a>=1.0, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">step</a>=0.01)</td></tr>
-<tr class="memdesc:a60154cd3032918b4d845ae44f643f093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to calculate reference points for a population.  <br /></td></tr>
-<tr class="separator:a60154cd3032918b4d845ae44f643f093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5500065aa758185636b6e8a72e236309" id="r_a5500065aa758185636b6e8a72e236309"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> Rcpp::List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatchAtAgeInterface.html#a5500065aa758185636b6e8a72e236309">calculate_reference_points</a> ()</td></tr>
-<tr class="memdesc:a5500065aa758185636b6e8a72e236309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to calculate reference points for the model.  <br /></td></tr>
-<tr class="separator:a5500065aa758185636b6e8a72e236309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classFisheryModelInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFisheryModelInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFisheryModelInterfaceBase.html">FisheryModelInterfaceBase</a></td></tr>
 <tr class="memitem:a8b382c1cc43d0343d8da46487f4c9693 inherit pub_methods_classFisheryModelInterfaceBase" id="r_a8b382c1cc43d0343d8da46487f4c9693"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>FisheryModelInterfaceBase</b> ()</td></tr>
@@ -239,10 +297,23 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>fleet_to_json<
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><b>~FisheryModelInterfaceBase</b> ()</td></tr>
 <tr class="memdesc:afc875cceae839ade097b065a0dfdf930 inherit pub_methods_classFisheryModelInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor. <br /></td></tr>
 <tr class="separator:afc875cceae839ade097b065a0dfdf930 inherit pub_methods_classFisheryModelInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9323cb82817da7d6061b562cbf1b9d0c inherit pub_methods_classFisheryModelInterfaceBase" id="r_a9323cb82817da7d6061b562cbf1b9d0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> Rcpp::List&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFisheryModelInterfaceBase.html#a9323cb82817da7d6061b562cbf1b9d0c">calculate_reference_points</a> ()</td></tr>
+<tr class="memdesc:a9323cb82817da7d6061b562cbf1b9d0c inherit pub_methods_classFisheryModelInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to calculate reference points for the fishery model.  <br /></td></tr>
+<tr class="separator:a9323cb82817da7d6061b562cbf1b9d0c inherit pub_methods_classFisheryModelInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
 <tr class="memitem:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a9183d9379777d8be70ab66af1a07f94c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a> ()</td></tr>
 <tr class="memdesc:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual method to inherit to add objects to the TMB model.  <br /></td></tr>
 <tr class="separator:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fc17f2f76b60a82db50167b1cde83d inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a72fc17f2f76b60a82db50167b1cde83d"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_se_values</b> (std::string name, std::map&lt; std::string, std::vector&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt; &amp;se_values, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">values</a>)</td></tr>
+<tr class="memdesc:a72fc17f2f76b60a82db50167b1cde83d inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to extract standard error values from the se_values working map. <br /></td></tr>
+<tr class="separator:a72fc17f2f76b60a82db50167b1cde83d inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e19680aa5d84f270939435588bce03b inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a5e19680aa5d84f270939435588bce03b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a5e19680aa5d84f270939435588bce03b">set_uncertainty</a> (std::map&lt; std::string, std::vector&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt; &amp;se_values)</td></tr>
+<tr class="memdesc:a5e19680aa5d84f270939435588bce03b inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set uncertainty values for the interface object.  <br /></td></tr>
+<tr class="separator:a5e19680aa5d84f270939435588bce03b inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e0ce655ef707a6c66e863aa4f0b374 inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a46e0ce655ef707a6c66e863aa4f0b374"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a46e0ce655ef707a6c66e863aa4f0b374">value_to_string</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> value)</td></tr>
+<tr class="memdesc:a46e0ce655ef707a6c66e863aa4f0b374 inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the parameter value as a string.  <br /></td></tr>
+<tr class="separator:a46e0ce655ef707a6c66e863aa4f0b374 inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa6e0deb883a921fe70b328cdd30fee inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a1fa6e0deb883a921fe70b328cdd30fee"><td class="memItemLeft" align="right" valign="top">
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>make_dimensions</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">start</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> end, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">rep</a>=1)</td></tr>
 <tr class="memdesc:a1fa6e0deb883a921fe70b328cdd30fee inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a string of dimensions for the model. <br /></td></tr>
@@ -336,12 +407,12 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Metthod to add a population id to the set of population ids. </p>
+<p>Method to add a population id to the set of population ids. </p>
 
 </div>
 </div>
-<a id="a5500065aa758185636b6e8a72e236309" name="a5500065aa758185636b6e8a72e236309"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5500065aa758185636b6e8a72e236309">&#9670;&#160;</a></span>calculate_reference_points()</h2>
+<a id="a9b3d2ac87f0322e9b45b7be4bde8d504" name="a9b3d2ac87f0322e9b45b7be4bde8d504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b3d2ac87f0322e9b45b7be4bde8d504">&#9670;&#160;</a></span>derived_quantities_component_to_json()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,51 +421,16 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> Rcpp::List CatchAtAgeInterface::calculate_reference_points </td>
+          <td class="memname">std::string CatchAtAgeInterface::derived_quantities_component_to_json </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Method to calculate reference points for the model. </p>
-
-<p>Reimplemented from <a class="el" href="classFisheryModelInterfaceBase.html#a9323cb82817da7d6061b562cbf1b9d0c">FisheryModelInterfaceBase</a>.</p>
-
-</div>
-</div>
-<a id="a60154cd3032918b4d845ae44f643f093" name="a60154cd3032918b4d845ae44f643f093"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60154cd3032918b4d845ae44f643f093">&#9670;&#160;</a></span>calculate_reference_points_population()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Rcpp::List CatchAtAgeInterface::calculate_reference_points_population </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classPopulationInterface.html">PopulationInterface</a> *&#160;</td>
-          <td class="paramname"><em>population_interface</em>, </td>
+          <td class="paramtype">std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dqs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td>
-          <td class="paramname"><em>maxF</em> = <code>1.0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td>
-          <td class="paramname"><em>step</em> = <code>0.01</code>&#160;</td>
+          <td class="paramtype">std::map&lt; std::string, <a class="el" href="structfims__popdy_1_1DimensionInfo.html">fims_popdy::DimensionInfo</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dim_info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -409,16 +445,79 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Method to calculate reference points for a population. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Send the fleet-based derived quantities to the json file. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
+
+</div>
+</div>
+<a id="a2d23ba483f90d70ed3c7068539ecd912" name="a2d23ba483f90d70ed3c7068539ecd912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d23ba483f90d70ed3c7068539ecd912">&#9670;&#160;</a></span>derived_quantity_to_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CatchAtAgeInterface::derived_quantity_to_json </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> &gt; &gt;::iterator&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="structfims__popdy_1_1DimensionInfo.html">fims_popdy::DimensionInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>dim_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function is used to convert the derived quantities of a population or fleet to a JSON string. This function is used to create the JSON output for the CatchAtAge model. </p>
+
+</div>
+</div>
+<a id="a34b10a041e691c72d7ac5cacc2411a73" name="a34b10a041e691c72d7ac5cacc2411a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34b10a041e691c72d7ac5cacc2411a73">&#9670;&#160;</a></span>DoReporting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a> CatchAtAgeInterface::DoReporting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td>
+          <td class="paramname"><em>report</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable or disable reporting for the CatchAtAge model. </p>
+<p>This method is used to control whether reporting is performed for the CatchAtAge model. The implementation may depend on TMB_MODEL. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">population_interface</td><td></td></tr>
-    <tr><td class="paramname">maxF</td><td>The maximum fishing mortality to calculate reference points for. </td></tr>
-    <tr><td class="paramname">step</td><td>The step size for the fishing mortality. </td></tr>
+    <tr><td class="paramname">report</td><td>Boolean flag to enable (true) or disable (false) reporting. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A list of reference points for the population. </dd></dl>
 
 </div>
 </div>
@@ -446,10 +545,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>TODO: document this method. </p>
+<p>A function to compute the absolute value of a value array of floating-point values. It is a wrapper around std::fabs. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td></td></tr>
+    <tr><td class="paramname">v</td><td>A value array of floating-point values, where floating-point values is anything with decimals. </td></tr>
   </table>
   </dd>
 </dl>
@@ -486,6 +585,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a22c139251081b749729f017d5ecb535e" name="a22c139251081b749729f017d5ecb535e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c139251081b749729f017d5ecb535e">&#9670;&#160;</a></span>get_fixed_parameters_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rcpp::NumericVector CatchAtAgeInterface::get_fixed_parameters_vector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the vector of fixed effect parameters for the CatchAtAge model. </p>
+<p>Returns a numeric vector containing the fixed effect parameters used in the model. </p><dl class="section return"><dt>Returns</dt><dd>Rcpp::NumericVector of fixed effect parameters. </dd></dl>
+
+</div>
+</div>
 <a id="a7bdfe469de81b88c082b37fe36dab1d6" name="a7bdfe469de81b88c082b37fe36dab1d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7bdfe469de81b88c082b37fe36dab1d6">&#9670;&#160;</a></span>get_id()</h2>
 
@@ -509,9 +636,93 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Method to get the population id. </p>
+<p>Method to get this id. </p>
 
 <p>Implements <a class="el" href="classFisheryModelInterfaceBase.html#a57c422df7fa5a40495e1fe21496c4830">FisheryModelInterfaceBase</a>.</p>
+
+</div>
+</div>
+<a id="a340253924262689b1ed3882034a96d6f" name="a340253924262689b1ed3882034a96d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a340253924262689b1ed3882034a96d6f">&#9670;&#160;</a></span>get_random_parameters_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rcpp::NumericVector CatchAtAgeInterface::get_random_parameters_vector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the vector of random effect parameters for the CatchAtAge model. </p>
+<p>Returns a numeric vector containing the random effect parameters used in the model. </p><dl class="section return"><dt>Returns</dt><dd>Rcpp::NumericVector of random effect parameters. </dd></dl>
+
+</div>
+</div>
+<a id="ae9c109f2ee0be05f275f92655f3555ea" name="ae9c109f2ee0be05f275f92655f3555ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9c109f2ee0be05f275f92655f3555ea">&#9670;&#160;</a></span>get_report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rcpp::List CatchAtAgeInterface::get_report </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the report output for the CatchAtAge model. </p>
+<p>Returns a list containing the report results for the CatchAtAge model, including derived quantities and diagnostics. </p><dl class="section return"><dt>Returns</dt><dd>Rcpp::List containing the report output. </dd></dl>
+
+</div>
+</div>
+<a id="ababc562cfa4f58d4ca39be9cd2967256" name="ababc562cfa4f58d4ca39be9cd2967256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ababc562cfa4f58d4ca39be9cd2967256">&#9670;&#160;</a></span>IsReporting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a> CatchAtAgeInterface::IsReporting </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if reporting is enabled for the CatchAtAge model. </p>
+<p>Returns true if reporting is enabled, false otherwise. The implementation may depend on TMB_MODEL. </p><dl class="section return"><dt>Returns</dt><dd>Boolean indicating reporting status. </dd></dl>
 
 </div>
 </div>
@@ -539,7 +750,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Minimimum method to calculate the minimum of an array or vector of doubles. </p>
+<p>Minimum method to calculate the minimum of an array or vector of doubles. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td></td></tr>

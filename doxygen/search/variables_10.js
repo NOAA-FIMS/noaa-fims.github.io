@@ -1,15 +1,12 @@
 var searchData=
 [
-  ['random_5feffects_5fnames_0',['random_effects_names',['../classfims__info_1_1Information.html#acae6ee10137877bb3a4d3f353bd2b49a',1,'fims_info::Information']]],
-  ['random_5feffects_5fparameters_1',['random_effects_parameters',['../classfims__info_1_1Information.html#af78de7edc3287ccc7b047cea2275db8d',1,'fims_info::Information::random_effects_parameters'],['../structfims__model__object_1_1FIMSObject.html#a9d8ddb11af5bb51a811f7d4c855f49b3',1,'fims_model_object::FIMSObject::random_effects_parameters']]],
-  ['rank_2',['rank',['../structfims_1_1LogEntry.html#a2db0d4c1a68442562f1a33d845ed89ad',1,'fims::LogEntry']]],
-  ['re_3',['re',['../structfims__distributions_1_1DistributionElementObject.html#a7e58c13fb66f45a86e4190755036f396',1,'fims_distributions::DistributionElementObject']]],
-  ['re_5fexpected_5fvalues_4',['re_expected_values',['../structfims__distributions_1_1DistributionElementObject.html#a90489663aa2d07a312895e85c4f74ca0',1,'fims_distributions::DistributionElementObject']]],
-  ['recruitment_5',['recruitment',['../structfims__popdy_1_1Population.html#a962dbda1d550245a364674b7b0aefc53',1,'fims_popdy::Population::recruitment'],['../structfims__popdy_1_1RecruitmentBase.html#acf427056522e39bbc0d714473c4789ce',1,'fims_popdy::RecruitmentBase::recruitment']]],
-  ['recruitment_5ferr_5fid_6',['recruitment_err_id',['../classPopulationInterface.html#a876ce3ce52884649b59f30d7df7ebf91',1,'PopulationInterface']]],
-  ['recruitment_5fid_7',['recruitment_id',['../classPopulationInterface.html#ac29b9cd4342fce77b72213d7a448bdf6',1,'PopulationInterface::recruitment_id'],['../structfims__popdy_1_1Population.html#a935b36af9b2596470bd0ab1f15f9973a',1,'fims_popdy::Population::recruitment_id']]],
-  ['recruitment_5fmodels_8',['recruitment_models',['../classfims__info_1_1Information.html#af84f12390187dbdf6864fdf5d052b499',1,'fims_info::Information']]],
-  ['recruitment_5fprocess_5fmodels_9',['recruitment_process_models',['../classfims__info_1_1Information.html#a2ef86120762c7b017f3db7edbb929364',1,'fims_info::Information']]],
-  ['report_5flpdf_5fvec_10',['report_lpdf_vec',['../structfims__distributions_1_1DensityComponentBase.html#a367e5731b7daf234896a653c03ecaa3e',1,'fims_distributions::DensityComponentBase']]],
-  ['routine_11',['routine',['../structfims_1_1LogEntry.html#a47814f40499111f33bed9fa4da6fa619',1,'fims::LogEntry']]]
+  ['se_5fvalues_5fm_0',['se_values_m',['../structfims__popdy_1_1DimensionInfo.html#a80f1d3b5124c10c8b7091cdc6b9ead3b',1,'fims_popdy::DimensionInfo']]],
+  ['selectivity_1',['selectivity',['../structfims__popdy_1_1Fleet.html#a260427acb5128fa3303459de353c048c',1,'fims_popdy::Fleet']]],
+  ['selectivity_5fmodels_2',['selectivity_models',['../classfims__info_1_1Information.html#a85b08dfc5ad664cb9a655fab6285952c',1,'fims_info::Information']]],
+  ['simulate_5fflag_3',['simulate_flag',['../structfims__distributions_1_1DensityComponentBase.html#a1890ac36bc9150d388a6976965423a83',1,'fims_distributions::DensityComponentBase']]],
+  ['slope_4',['slope',['../classLogisticMaturityInterface.html#a70646d633dee4a9a6c8a594cd6832e9e',1,'LogisticMaturityInterface::slope'],['../classLogisticSelectivityInterface.html#ad68100be3ce5eddf84819939c5c7785c',1,'LogisticSelectivityInterface::slope'],['../structfims__popdy_1_1LogisticMaturity.html#a093279afe623d32412bd1b0a2beb8c84',1,'fims_popdy::LogisticMaturity::slope'],['../structfims__popdy_1_1LogisticSelectivity.html#a47d008ca4b862abca4f361d68b07d4f0',1,'fims_popdy::LogisticSelectivity::slope']]],
+  ['slope_5fasc_5',['slope_asc',['../classDoubleLogisticSelectivityInterface.html#a4571cc0b0713c0f9a8c5078dbe5b1033',1,'DoubleLogisticSelectivityInterface::slope_asc'],['../structfims__popdy_1_1DoubleLogisticSelectivity.html#aa0d98542e054ce41349747abcbedff13',1,'fims_popdy::DoubleLogisticSelectivity::slope_asc']]],
+  ['slope_5fdesc_6',['slope_desc',['../classDoubleLogisticSelectivityInterface.html#a11333991775c1771dcdbb80704a90972',1,'DoubleLogisticSelectivityInterface::slope_desc'],['../structfims__popdy_1_1DoubleLogisticSelectivity.html#ac4c70f550f23d0a4cd97c402f6e3fff3',1,'fims_popdy::DoubleLogisticSelectivity::slope_desc']]],
+  ['start_5fm_7',['start_m',['../structfims__popdy_1_1UncertaintyReportInfo.html#ae4ed34a7d070e61374f3f8b6ed779922',1,'fims_popdy::UncertaintyReportInfo']]],
+  ['storage_5fm_8',['storage_m',['../classParameterVector.html#ae05fb87cd78344afb0dcfd9f2ade7791',1,'ParameterVector::storage_m'],['../classRealVector.html#a60f12148f4f54adbf68fc515db662e89',1,'RealVector::storage_m']]]
 ];

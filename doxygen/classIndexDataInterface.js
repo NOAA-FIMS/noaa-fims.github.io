@@ -6,5 +6,6 @@ var classIndexDataInterface =
     [ "get_id", "classIndexDataInterface.html#ad739a24893879a34146fa1d8bb217d00", null ],
     [ "to_json", "classIndexDataInterface.html#a1ad722d8f82198700a3dd72f9d11613c", null ],
     [ "index_data", "classIndexDataInterface.html#a7d1976a7500b57c1de6b4886c1d37581", null ],
+    [ "uncertainty", "classIndexDataInterface.html#ab5c23fa0684e53cb39a1293fa7eda105", null ],
     [ "ymax", "classIndexDataInterface.html#a2a5d036232d8031664908e6f2a7ba027", null ]
 ];

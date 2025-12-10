@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['population_2ehpp_0',['population.hpp',['../population_8hpp.html',1,'']]]
+  ['normal_5flpdf_2ehpp_0',['normal_lpdf.hpp',['../normal__lpdf_8hpp.html',1,'']]]
 ];

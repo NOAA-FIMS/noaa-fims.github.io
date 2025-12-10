@@ -25,12 +25,16 @@
 var NAVTREE =
 [
   [ "FIMS", "index.html", [
-    [ "Common", "md_inst_2include_2common_2README.html", null ],
-    [ "Distributions", "md_inst_2include_2distributions_2README.html", null ],
-    [ "Interface", "md_inst_2include_2interface_2README.html", null ],
-    [ "Population Dynamics", "md_inst_2include_2population__dynamics_2README.html", null ],
-    [ "FIMS C++ Code", "md_inst_2include_2README.html", null ],
-    [ "Utilities", "md_inst_2include_2utilities_2README.html", null ],
+    [ "C++ Directory Structure", "md_inst_2include_2README.html", [
+      [ "inst/include/", "md_inst_2include_2README.html#autotoc_md1", [
+        [ "inst/include/common/", "md_inst_2include_2README.html#autotoc_md2", null ],
+        [ "inst/include/distributions/", "md_inst_2include_2README.html#autotoc_md3", null ],
+        [ "inst/include/interface/", "md_inst_2include_2README.html#autotoc_md4", null ],
+        [ "inst/include/models/", "md_inst_2include_2README.html#autotoc_md5", null ],
+        [ "inst/include/population_dynamics/", "md_inst_2include_2README.html#autotoc_md6", null ],
+        [ "inst/include/utilities/", "md_inst_2include_2README.html#autotoc_md7", null ]
+      ] ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -51,6 +55,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -60,11 +65,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classLogisticMaturityInterface.html#ab8f3bf35c6aa55a9f079018ccccc3f6f",
-"classSharedReal.html#afcce29f9d176c19bed365f8ff60574ca",
-"classfims__popdy_1_1CatchAtAge.html#addf4f18252cba85c7b770a215d828f02",
-"rcpp__growth_8hpp_source.html",
-"structfims__popdy_1_1Fleet.html#ad5f69e99a81800ae0d5b904192eb2ab7"
+"classLogDevsRecruitmentInterface.html#a6fc28f680373a23cb13cad45b963cf09",
+"classSharedReal.html#a72fccf69775cf0ee72b7d030cf20f459",
+"classfims__popdy_1_1CatchAtAge.html#a901059284bb502abd0f6a8f9252a275d",
+"functions_vars_k.html",
+"structfims__popdy_1_1DimensionInfo.html#a32f714baf402d3afb686e860ac4cd78d",
+"structfims__popdy_1_1UncertaintyReportInfo.html#a491bb060bb5c8fdb8e29753a54259f00"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
