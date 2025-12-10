@@ -149,12 +149,26 @@ pre > code,
   color: var(--bs-body-color);
 }
 
-.listing-card {
-  width: 400px !important;    /* adjust as needed */
-  margin: 10px !important;
+.quarto-listing-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1em;
 }
 
-.listing-grid {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important; /* matches card width */
-  gap: 10px !important; /* adds more space between cards */
+.card h5 {
+	margin-top: 1em;
+}
+
+.card {
+  --bs-card-spacer-y: 0.75rem;  /* vertical padding inside card */
+  --bs-card-spacer-x: 0.75rem;  /* horizontal padding inside card */
+}
+
+.card-body {
+  padding: 0.75rem;
+}
+
+img.thumbnail-image.card-img {
+  height: 180px !important;   /* or your preferred height */
+  width: auto !important;     /* maintain aspect ratio */
+  object-fit: unset !important; /* disables cover/crop effect */
 }
