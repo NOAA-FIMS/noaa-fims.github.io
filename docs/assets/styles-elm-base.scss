@@ -172,6 +172,13 @@ pre > code,
   padding: 0.75rem;
 }
 
+.card-img-top {
+  text-align: center;
+}
+.card-img-top img {
+  display: inline-block;
+}
+
 img.thumbnail-image.card-img {
   height: 120px !important;   /* or your preferred height */
   width: auto !important;     /* maintain aspect ratio */
