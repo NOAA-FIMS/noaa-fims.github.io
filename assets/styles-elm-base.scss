@@ -148,3 +148,8 @@ pre > code,
 .code-with-filename-file strong {
   color: var(--bs-body-color);
 }
+
+.listing-card {
+  width: 350px;    /* adjust as needed */
+  margin: 10px;
+}
