@@ -9,13 +9,14 @@ listing:
   type: grid
   image-height: 150px
   grid-columns: 3
-  fields: [image, title, description, categories]
+  fields: [image, title, description, categories, repository-website]
 header-includes: >
   <link rel="stylesheet" href="../assets/index.css">
 ---
 
 ::: {#fims-packages-listing}
 :::
+
 
 
 
