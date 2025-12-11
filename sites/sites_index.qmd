@@ -59,6 +59,22 @@ listing:
       description: >
         A tutorial that was originally presented as part of a 3-day intensive Data Science Workshop at UMass Amherst in June 2015 on using Rcpp.
       categories: [Rcpp, training]
+    - path: https://noaa-fims.github.io/r4MAS/
+      title: r4MAS
+      description: >
+        Package to translate stock synthesis input files into MAS inputs
+    - path: https://noaa-fims.github.io/FIMS_training/
+      title: FIMS_training
+      description: >
+        A repository for FIMS training materials
+    - path: https://noaa-fims.github.io/FIMSdiags/
+      title: FIMSdiags
+      description: >
+        R package to run model diagnostics on FIMS models
+    - path: https://noaa-fims.github.io/FIMSRTMB/
+      title: FIMSRTMB
+      description: >
+        The repository for development of the RTMB branch of FIMS
   type: default
   categories: true
   sort-ui: true
