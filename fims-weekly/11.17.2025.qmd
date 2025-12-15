@@ -38,7 +38,7 @@ Online: [Google meet](MEETING LINK)
 -->
 
 ::: {#photo-code}
-<i class="fa-solid fa-rectangle-terminal"></i> Developer<br>
+<i class="fa-solid fa-laptop-code"></i> Developer<br>
 <i class="fa-solid fa-user-plus"></i> New User<br>
 <i class="fa-solid fa-bolt"></i> Power User<br>
 <i class="fa-solid fa-chart-line"></i> Receiver of Results<br>
