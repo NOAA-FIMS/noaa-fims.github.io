@@ -11,7 +11,7 @@
 <description>Websites associated with FIMS.
 </description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Mon, 15 Dec 2025 22:21:53 GMT</lastBuildDate>
+<lastBuildDate>Tue, 16 Dec 2025 16:04:19 GMT</lastBuildDate>
 <item>
   <title>&lt;i class=&quot;fab fa-r-project&quot;&gt;&lt;/i&gt; FIMS R Documentation</title>
   <link>https://noaa-fims.github.io/</link>
@@ -19,7 +19,27 @@
 </description>
   <category>R</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Mon, 15 Dec 2025 22:21:53 GMT</pubDate>
+  <pubDate>Tue, 16 Dec 2025 16:04:19 GMT</pubDate>
+</item>
+<item>
+  <title>FIMSdiags</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>R package to run model diagnostics on FIMS models
+</description>
+  <category>R</category>
+  <category>diagnostics</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 16 Dec 2025 16:04:19 GMT</pubDate>
+</item>
+<item>
+  <title>FIMSRTMB</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>The repository for development of the RTMB branch of FIMS
+</description>
+  <category>R</category>
+  <category>TMB</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 16 Dec 2025 16:04:19 GMT</pubDate>
 </item>
 </channel>
 </rss>
