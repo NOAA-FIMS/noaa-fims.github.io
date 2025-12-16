@@ -63,18 +63,17 @@ listing:
       title: r4MAS
       description: >
         Package to translate stock synthesis input files into MAS inputs
-    - path: https://noaa-fims.github.io/FIMS_training/
-      title: FIMS_training
-      description: >
-        A repository for FIMS training materials
+      categories: [SS3]
     - path: https://noaa-fims.github.io/FIMSdiags/
       title: FIMSdiags
       description: >
         R package to run model diagnostics on FIMS models
+      categories: [R, diagnostics]
     - path: https://noaa-fims.github.io/FIMSRTMB/
       title: FIMSRTMB
       description: >
         The repository for development of the RTMB branch of FIMS
+      categories: [R, TMB]
   type: default
   categories: true
   sort-ui: true
