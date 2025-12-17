@@ -107,6 +107,7 @@ var NAVTREEINDEX4 =
 "rcpp__interface_8hpp_source.html":[3,0,0,0,2,0,1],
 "rcpp__interface__base_8hpp.html":[3,0,0,0,2,0,0,4],
 "rcpp__interface__base_8hpp.html#a0bd065ea931f82a169ebf53822c29d57":[3,0,0,0,2,0,0,4,4],
+"rcpp__interface__base_8hpp.html#a18721bca590fa172ea797a55c6ae10e3":[3,0,0,0,2,0,0,4,6],
 "rcpp__interface__base_8hpp.html#aa89b8163b657a51e656e119c1af6153f":[3,0,0,0,2,0,0,4,5],
 "rcpp__interface__base_8hpp_source.html":[3,0,0,0,2,0,0,4],
 "rcpp__math_8hpp.html":[3,0,0,0,2,0,0,5],
@@ -247,7 +248,6 @@ var NAVTREEINDEX4 =
 "structfims__model__object_1_1FIMSObject.html#aca6a96ab8e6a4cca573daa5f52e71c67":[2,0,5,0,4],
 "structfims__popdy_1_1DimensionInfo.html":[1,0,0,1],
 "structfims__popdy_1_1DimensionInfo.html":[2,0,6,1],
-"structfims__popdy_1_1DimensionInfo.html#a273540d1f3d941e7b7fbb03adc4a09f1":[2,0,6,1,5],
 "structfims__popdy_1_1DimensionInfo.html#a273540d1f3d941e7b7fbb03adc4a09f1":[1,0,0,1,5],
-"structfims__popdy_1_1DimensionInfo.html#a32f714baf402d3afb686e860ac4cd78d":[2,0,6,1,6]
+"structfims__popdy_1_1DimensionInfo.html#a273540d1f3d941e7b7fbb03adc4a09f1":[2,0,6,1,5]
 };
