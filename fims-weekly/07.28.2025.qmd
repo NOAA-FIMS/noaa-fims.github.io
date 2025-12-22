@@ -41,3 +41,6 @@ Online: [Google meet](MEETING LINK)
 -->
 
 :::
+
+::: {#photo-code}
+:::
