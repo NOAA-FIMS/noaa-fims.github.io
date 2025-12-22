@@ -43,7 +43,7 @@ Online: [Google meet](MEETING LINK)
 
 :::
 
-<!--
+
 ::: {#photo-code}
 ```
 # Install the CRAN version
@@ -56,5 +56,4 @@ install.packages("fastverse", repos = "https://fastverse.r-universe.dev")
 remotes::install_github("fastverse/fastverse")
 ```
 :::
--->
         
