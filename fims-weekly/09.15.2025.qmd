@@ -26,7 +26,7 @@ photo:
   text: "Thanks to Bai's recent PR that revamped the lists of lists for running a model into a tibble the amount of code needed to run a default model is even less. Check out the revamped fims-demo-minimal below!"
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "_fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - 50 days until the CIE Review

@@ -27,7 +27,7 @@ photo:
   alt-text: "The linkages between modules in the C++ source code of FIMS, which can be seen on [Deep Wiki](https://deepwiki.com/NOAA-FIMS/FIMS#population-dynamics-system)"
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "_fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - 71 calendar days until the FIMS CIE Review, we still need a chair.

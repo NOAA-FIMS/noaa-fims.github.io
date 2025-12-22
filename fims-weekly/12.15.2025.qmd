@@ -24,7 +24,7 @@ photo:
   text: "Has anyone heard of {fastverse} before? It appears to be a {tidyverse} style group of packages built on C++ code that is meant for quick analyses of data, unlike traditional tidyverse packages that are known to be easy to understand but slow. See the code below for installation and feel free to start a [Discussion on GitHub](https://github.com/orgs/NOAA-FIMS/discussions) about the packages if they seem useful, especially as our input and output data frames become larger."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "_fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - Please welcome 👋 Erik Williams to FIMS.

@@ -20,7 +20,7 @@ photo:
   text: "As we update our website to be the best 'community playbook' that it can be, we will be adding some icons to titles to help users of all types navigate the pages. Look for each of the icons throughout this site based on which type of information you are looking for."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "_fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - The ICES Methods Group Working Group is convening this week at the University of Washington and remotely. Please contact Andrea Havron if you are interested in participating.

@@ -23,7 +23,7 @@ photo:
   text: "doxygen use to be so foreign to me and I wished we could just use roxygen😒. Now, I feel more at home with doxygen and have even learned some tips (see below) to making it better and feel more roxygen like✅."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "_fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - 43 more days until the CIE Review; a big thanks to 👏Aaron Berger (NWFSC)👏 for stepping up to the be the chair of the CIE Review
