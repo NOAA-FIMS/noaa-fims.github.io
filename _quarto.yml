@@ -6,7 +6,7 @@ project:
     - "sites/*.qmd"
     - "about/*.qmd"
     - "changelog/*.qmd"
-    - "fims-weekly/*.qmd"
+    - "blog/*.qmd"
 
   resources:
     - images/

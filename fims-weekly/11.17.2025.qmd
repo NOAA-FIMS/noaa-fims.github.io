@@ -37,6 +37,8 @@ Location: VIRTUAL/IN-PERSON
 Online: [Google meet](MEETING LINK)
 -->
 
+:::
+
 ::: {#photo-code}
 <i class="fa-solid fa-laptop-code"></i> Developer<br>
 <i class="fa-solid fa-user-plus"></i> New User<br>
@@ -45,6 +47,5 @@ Online: [Google meet](MEETING LINK)
 :::
 
         
-:::
 
 
