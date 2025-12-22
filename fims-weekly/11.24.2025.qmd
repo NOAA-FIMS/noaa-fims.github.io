@@ -1,5 +1,5 @@
 ---
-title: "November 24–28, 2025"
+title: "FIMS Weekly - November 24–28, 2025"
 date: "November 24, 2025"
 # Change the following categories accordingly
 categories: 
