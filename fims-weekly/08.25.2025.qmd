@@ -35,16 +35,9 @@ photo:
     
 ::: {#additional-events}
       
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
 :::
 
-        
+::: {#photo-code}
+:::
 
 

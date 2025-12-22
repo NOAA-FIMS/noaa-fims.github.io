@@ -28,19 +28,10 @@ photo:
 ::: 
     
 ::: {#additional-events}
-      
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-
 :::
 
 ::: {#photo-code}
+
 ```
 testthat::expect_shape()
 
@@ -55,6 +46,7 @@ df <- data.frame(a = 1:4, b = 5:8)
 # Passes: df has 4 rows and 2 columns
 testthat::expect_shape(df, c(4, 2))
 ```
+
 :::
 
         
