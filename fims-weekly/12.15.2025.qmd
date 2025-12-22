@@ -41,6 +41,8 @@ Location: VIRTUAL/IN-PERSON
 Online: [Google meet](MEETING LINK)
 -->
 
+:::
+
 <!--
 ::: {#photo-code}
 ```
@@ -56,4 +58,3 @@ remotes::install_github("fastverse/fastverse")
 :::
 -->
         
-:::

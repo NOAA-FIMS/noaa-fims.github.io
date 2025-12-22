@@ -22,7 +22,7 @@
 #'
 #' @examples
 #' # Source function
-#' source(here::here("fims-weekly/create-weekly-newsletter.R"))
+#' source(here::here("blog/create-weekly-newsletter.R"))
 #' 
 #' # Create a newsletter for the current week (ending on Friday)
 #' create_weekly_qmd()
@@ -104,7 +104,7 @@ photo:
   alt-text: ""
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "_fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - ANNOUNCEMENT 1
@@ -121,6 +121,8 @@ Location: VIRTUAL/IN-PERSON
 Online: [Google meet](MEETING LINK)
 -->
 
+:::
+
 <!--
 ::: {#photo-code}
 ```
@@ -129,7 +131,6 @@ PUT CODE HERE
 :::
 -->
         
-:::
 
 ',
     week_range, format(week_start, "%B %d, %Y")
