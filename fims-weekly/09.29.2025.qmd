@@ -31,7 +31,7 @@ photo:
   alt-text: "A screenshot of https://noaa-fims.github.io/doxygen/."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "_fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - 36 more days until the CIE Review
