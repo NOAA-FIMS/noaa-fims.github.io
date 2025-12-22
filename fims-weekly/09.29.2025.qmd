@@ -48,5 +48,8 @@ Location: Virtual
 Online: [Google meet](https://meet.google.com/unsupported?meetingCode=kbz-ccew-iij&ref=https://meet.google.com/kbz-ccew-iij)
         
 :::
+
+::: {#photo-code}
+:::
         
 
