@@ -40,13 +40,6 @@ Online: [Google meet](https://meet.google.com/unsupported?meetingCode=kbz-ccew-i
 
 :::
 
-<!--
-::: {#photo-code}
-```
-PUT CODE HERE
-```
-:::
--->
         
 
 
