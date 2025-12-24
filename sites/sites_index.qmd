@@ -74,6 +74,10 @@ listing:
       description: >
         The repository for development of the RTMB branch of FIMS
       categories: [R, TMB]
+    - path: https://noaa-fims.github.io/FIMS_training/
+      title: FIMS_training
+      description: >
+        A repository for FIMS training materials
   type: default
   categories: true
   sort-ui: true
