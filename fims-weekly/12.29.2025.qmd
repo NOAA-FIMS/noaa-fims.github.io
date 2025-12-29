@@ -20,7 +20,7 @@ upcoming-events:
 photo:
   text: "As a great way to visually show off code to create a {ggplot2} figure, there is a newer package out called [ggram](https://github.com/EvaMaeRey/ggram) that displays the code used to create a figure alongside the figure itself using {patchwork}. This could be a unique way to display figures in training materials such as vignettes, especially vignettes that are meant to be displayed as presentations."
   include-photo: true
-  path: "https://github.com/EvaMaeRey/ggram/blob/main/a_ggram0.png"
+  path: "images/a_ggram0.png"
   alt-text: "A ggplot2 example of a scatter plot with a line where it shows the code to create the ggplot2 image on the left. The code appears to be written in a notebook page in a three-ring spiral binder."
 ---
   
