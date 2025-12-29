@@ -19,3 +19,9 @@ page-layout: full
 title-block-banner: false
 comments: false
 ---
+
+```{=html}
+$for(categories)$
+  <span class="articleCategory">$categories$</span>
+$endfor$
+```
