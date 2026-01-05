@@ -1,6 +1,11 @@
 ![](images/fims_weekly.png){fig-alt="FIMS hex icon and noaa logo with text saying FIMS Weekly"}
 
-<i class="fa-solid fa-tags"></i> Tags: {{< contents tags >}}
+## <i class="fa-solid fa-tags"></i> Tags:
+$for(categories)$
+  $if(categories != "fims-weekly" and categories != "deep-dive")$
+    $categories$$sep$, $endsep$
+  $endif$
+$endfor$
 
 <div style="height:3em;"></div>
 
@@ -71,4 +76,3 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 ```
 :::
 
-{{< contents photo-code >}}
