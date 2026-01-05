@@ -2,11 +2,12 @@
 title: FIMS Weekly - July 21–25, 2025
 date: 'July 21, 2025'
 categories: 
-  - testing
-  - selectivity
-  - projections
+  - fims-weekly
 ---
 ![](images/fims_weekly.png){fig-alt="FIMS hex icon and noaa logo with text saying FIMS Weekly"}
+
+<i class="fa-solid fa-tags"></i> Tags:
+<a href="/tags/R/">R</a>, <a href="/tags/TMB/">TMB</a>, <a href="/tags/testing/">testing</a>
 
 <div style="height:3em;"></div>
 

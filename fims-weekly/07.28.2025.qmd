@@ -25,6 +25,9 @@ photo:
 
 {{< include "_fims-weekly-template.qmd" >}}
 
+<i class="fa-solid fa-tags"></i> Tags:
+<a href="/tags/R/">R</a>, <a href="/tags/TMB/">TMB</a>, <a href="/tags/testing/">testing</a>
+
 ::: {#announcements}
 - Version 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.
 - We need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday.
