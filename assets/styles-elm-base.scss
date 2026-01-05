@@ -195,12 +195,20 @@ img.thumbnail-image.card-img {
   line-height: 1.2rem;
 }
 
+.quarto-listing-category .category {
+  display: none !important;
+}
+
 /* "All" category (example: fa-list) */
 .quarto-listing-category .category[data-category=""] {
   display: none !important;
 }
 
 /* deep-dive (example: fa-microscope) */
+.quarto-listing-category .category[data-category="ZGVlcC1kaXZl="] {
+  display: flex !important; /* or block/inline-block, whatever fits your styling */
+  align-items: center;
+}
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl"]::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -210,6 +218,10 @@ img.thumbnail-image.card-img {
 }
 
 /* fims-weekly */
+.quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="] {
+  display: flex !important; /* or block/inline-block, whatever fits your styling */
+  align-items: center;
+}
 .quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="]::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
