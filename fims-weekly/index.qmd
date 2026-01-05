@@ -11,7 +11,7 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
-  fields: [title, description, author, categories]
+  fields: [title, date, description, author, categories]
 page-layout: full
 title-block-banner: false
 comments: false
