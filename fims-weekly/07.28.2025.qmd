@@ -25,8 +25,11 @@ photo:
 
 {{< include "_fims-weekly-template.qmd" >}}
 
-<i class="fa-solid fa-tags"></i> Tags:
+::: {#tags}
+
 <a href="/tags/R/">R</a>, <a href="/tags/TMB/">TMB</a>, <a href="/tags/testing/">testing</a>
+
+:::
 
 ::: {#announcements}
 - Version 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.

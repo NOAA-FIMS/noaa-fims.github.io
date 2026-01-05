@@ -217,3 +217,20 @@ img.thumbnail-image.card-img {
   margin-right: 0.5em;
   display: inline-block;
 }
+
+.quarto-category a[href*="category=fims-weekly"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1ea"; /* fa-newspaper */
+  margin-right: 0.4em;
+  display: inline-block;
+}
+
+div.quarto-post {
+    gap: 1em;       /* Or 0.5em for even closer */
+}
+
+div.quarto-post .metadata {
+    flex-basis: 10%;       /* Try 10% or even 0 if you want it to size to fit */
+    min-width: 3em;        /* Optional: ensure it doesn't get too tiny */
+}
