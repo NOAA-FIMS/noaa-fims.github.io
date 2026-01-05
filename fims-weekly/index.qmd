@@ -15,4 +15,6 @@ listing:
 page-layout: full
 title-block-banner: false
 comments: false
+filters:
+  - ../assets/filter-categories.lua
 ---
