@@ -12,7 +12,7 @@ listing:
   sort-ui: true
   filter-ui: true
   fields: [title, description, author, categories]
-  template: ../assets/blog.html 
+  template: ../assets/blog.ejs 
 page-layout: full
 title-block-banner: false
 comments: false
