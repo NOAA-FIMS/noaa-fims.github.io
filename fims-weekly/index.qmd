@@ -6,22 +6,14 @@ listing:
   contents:
     - "*.qmd"
     - "!fims-weekly-template.qmd"
-  template: ../assets/blog.html
   sort: "date desc"
   type: default
   categories: true
   sort-ui: true
   filter-ui: true
-  fields: [date, title, categories]
-  feed:
-    categories: [R]
+  fields: [title, description, author, categories]
+  template: ../assets/blog.html 
 page-layout: full
 title-block-banner: false
 comments: false
 ---
-
-```{=html}
-$for(categories)$
-  <span class="articleCategory">$categories$</span>
-$endfor$
-```
