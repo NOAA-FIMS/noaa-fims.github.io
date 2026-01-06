@@ -212,7 +212,7 @@ img.thumbnail-image.card-img {
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl="]::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f773"; /* fa-water */
+  content: "\f002"; /* fa-magnifying glass */
   margin-right: 0.5em;
   display: inline-block;
 }
@@ -220,7 +220,7 @@ img.thumbnail-image.card-img {
 .listing-category[onclick*="ZGVlcC1kaXZl="]::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f773"; 
+  content: "\f002"; 
   margin-right: 0.5em;
   display: inline-block;
 }
@@ -228,7 +228,7 @@ img.thumbnail-image.card-img {
 .quarto-category a[href*="category=deep-dive"]::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f773"; /* fa-water */
+  content: "\f002"; /* fa-magnifying glass */
   margin-right: 0.4em;
   display: inline-block;
 }
