@@ -1,0 +1,12 @@
+---
+title: "Test Deep Dive"
+subtitle: "Subject about deep dive"
+author: "Elizabeth Perl"
+date: "January 06, 2026"
+categories:
+  - deep-dive      # will show in sidebar and filters
+  - testing # will NOT show in sidebar, but CAN be filtered/searched
+---
+
+## Test
+

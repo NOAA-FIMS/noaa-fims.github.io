@@ -6,12 +6,13 @@ listing:
   contents:
     - "*.qmd"
     - "!fims-weekly-template.qmd"
+    - "!blog-template.qmd"
   sort: "date desc"
   type: default
   categories: true
   sort-ui: true
   filter-ui: true
-  fields: [title, date, description, author, categories]
+  fields: [title, subtitle, date, author, categories]
 page-layout: full
 title-block-banner: false
 comments: false
