@@ -208,6 +208,7 @@ img.thumbnail-image.card-img {
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl="] {
   display: flex !important; /* or block/inline-block, whatever fits your styling */
   align-items: center;
+  background-color: #4896a1 !important; 
 }
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl"]::before {
   font-family: "Font Awesome 5 Free";
@@ -221,6 +222,7 @@ img.thumbnail-image.card-img {
 .quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="] {
   display: flex !important; /* or block/inline-block, whatever fits your styling */
   align-items: center;
+  background-color: #4896a1 !important; 
 }
 .quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="]::before {
   font-family: "Font Awesome 5 Free";
@@ -230,6 +232,13 @@ img.thumbnail-image.card-img {
   display: inline-block;
 }
 
+.listing-category[onclick*="Zmltcy13ZWVrbHk="]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1ea";   /* Unicode for fa-newspaper, for example */
+  margin-right: 0.5em;
+  display: inline-block;
+}
 .quarto-category a[href*="category=fims-weekly"]::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;

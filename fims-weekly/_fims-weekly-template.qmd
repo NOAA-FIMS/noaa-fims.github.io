@@ -1,9 +1,5 @@
 ![](images/fims_weekly.png){fig-alt="FIMS hex icon and noaa logo with text saying FIMS Weekly"}
 
-## <i class="fa-solid fa-tags"></i> Tags:
-
-{{< meta filtered_categories >}}
-
 <div style="height:3em;"></div>
 
 ::: {.columns .equal-h2-cols}
