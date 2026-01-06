@@ -1,0 +1,27 @@
+---
+# Copy this to create a blog post
+title: "Test Learn"
+# Using subtitle for brief description instead of the "description" listing item
+# because if you don't have a description then it just shows your starting text
+# and I don't want that for the fims-weekly ones.
+subtitle: "Brief subtitle about content"
+author: "Your Name"
+date: "Month 01, 2026"
+categories:
+  # Choose one of the following categories. If you decide that you want to add a
+  # category, that is fine, but you need to let Elizabeth know because it has to be
+  # added in assets/styles-elm-base.scss file to match the others. 
+  # These categories will show up in the sidebar
+
+  # - learn
+  # - deep-dive
+  # - other
+
+  # Choose any other categories you would like to add. Examples are below
+  
+  # - R
+  # - TMB
+  # - testing
+---
+
+## Text

@@ -1,0 +1,11 @@
+---
+title: "Test Other"
+subtitle: "Subject about other"
+author: "Elizabeth Perl"
+date: "January 06, 2026"
+categories:
+  - other      # will show in sidebar and filters
+  - R # will NOT show in sidebar, but CAN be filtered/searched
+---
+
+## Test

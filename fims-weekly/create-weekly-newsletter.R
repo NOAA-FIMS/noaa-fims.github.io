@@ -75,10 +75,9 @@ title: "FIMS Weekly - %s"
 date: "%s"
 # Change the following categories accordingly
 categories: 
-  - testing
-  - selectivity
-  - diagnostics
-  - projections
+  # This one will show up in the sidebar, any other categories you add will not
+  # but are clickable to sort.
+  - fims-weekly
 three-big-things:
   bt1: ""
   bt2: ""
