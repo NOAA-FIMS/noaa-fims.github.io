@@ -206,7 +206,7 @@ img.thumbnail-image.card-img {
 
 /* deep-dive */
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl"] {
-  display: inline-flex !important;    /* Horizontally align icon and text */
+  display: flex !important;    /* Horizontally align icon and text */
   align-items: center;      /* Vertically center both */
   gap: 0.5em;  
 }
@@ -242,7 +242,7 @@ div.quarto-post .listing-categories .listing-category[onclick*="ZGVlcC1kaXZl"] {
 
 /* fims-weekly */
 .quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="] {
-  display: inline-flex !important;    /* Horizontally align icon and text */
+  display: flex !important;    /* Horizontally align icon and text */
   align-items: center;      /* Vertically center both */
   gap: 0.5em;  
 }
@@ -279,7 +279,7 @@ div.quarto-post .listing-categories .listing-category[onclick*="Zmltcy13ZWVrbHk=
 
 /* learn */
 .quarto-listing-category .category[data-category="bGVhcm4="] {
-  display: inline-flex !important;    /* Horizontally align icon and text */
+  display: flex !important;    /* Horizontally align icon and text */
   align-items: center;      /* Vertically center both */
   gap: 0.5em;  
 }
@@ -316,7 +316,7 @@ div.quarto-post .listing-categories .listing-category[onclick*="bGVhcm4="] {
 
 /* other */
 .quarto-listing-category .category[data-category="b3RoZXI="] {
-  display: inline-flex !important;    /* Horizontally align icon and text */
+  display: flex !important;    /* Horizontally align icon and text */
   align-items: center;      /* Vertically center both */
   gap: 0.5em;  
 }
