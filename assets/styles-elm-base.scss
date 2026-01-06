@@ -206,8 +206,9 @@ img.thumbnail-image.card-img {
 
 /* deep-dive */
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl"] {
-  display: flex !important; /* or block/inline-block, whatever fits your styling */
-  align-items: center;
+  display: inline-flex !important;    /* Horizontally align icon and text */
+  align-items: center;      /* Vertically center both */
+  gap: 0.5em;  
 }
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl"]::before {
   font-family: "Font Awesome 5 Free";
@@ -236,13 +237,14 @@ img.thumbnail-image.card-img {
 div.quarto-post .listing-categories .listing-category[onclick*="ZGVlcC1kaXZl"] {
     border-color: #4896a1;
     color: #0e6876;
-    background-color: #bed9de;
+    background-color: #e4f0f1;
 }
 
 /* fims-weekly */
 .quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="] {
-  display: flex !important; /* or block/inline-block, whatever fits your styling */
-  align-items: center;
+  display: inline-flex !important;    /* Horizontally align icon and text */
+  align-items: center;      /* Vertically center both */
+  gap: 0.5em;  
 }
 
 .quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="]::before {
@@ -272,13 +274,14 @@ div.quarto-post .listing-categories .listing-category[onclick*="ZGVlcC1kaXZl"] {
 div.quarto-post .listing-categories .listing-category[onclick*="Zmltcy13ZWVrbHk="] {
     border-color: #4896a1;
     color: #0e6876;
-    background-color: #bed9de;
+    background-color: #e4f0f1;
 }
 
 /* learn */
 .quarto-listing-category .category[data-category="bGVhcm4="] {
-  display: flex !important; /* or block/inline-block, whatever fits your styling */
-  align-items: center;
+  display: inline-flex !important;    /* Horizontally align icon and text */
+  align-items: center;      /* Vertically center both */
+  gap: 0.5em;  
 }
 
 .quarto-listing-category .category[data-category="bGVhcm4="]::before {
@@ -308,13 +311,14 @@ div.quarto-post .listing-categories .listing-category[onclick*="Zmltcy13ZWVrbHk=
 div.quarto-post .listing-categories .listing-category[onclick*="bGVhcm4="] {
     border-color: #4896a1;
     color: #0e6876;
-    background-color: #bed9de;
+    background-color: #e4f0f1;
 }
 
 /* other */
 .quarto-listing-category .category[data-category="b3RoZXI="] {
-  display: flex !important; /* or block/inline-block, whatever fits your styling */
-  align-items: center;
+  display: inline-flex !important;    /* Horizontally align icon and text */
+  align-items: center;      /* Vertically center both */
+  gap: 0.5em;  
 }
 
 .quarto-listing-category .category[data-category="b3RoZXI="]::before {
@@ -344,7 +348,7 @@ div.quarto-post .listing-categories .listing-category[onclick*="bGVhcm4="] {
 div.quarto-post .listing-categories .listing-category[onclick*="b3RoZXI="] {
     border-color: #4896a1;
     color: #0e6876;
-    background-color: #bed9de;
+    background-color: #e4f0f1;
 }
 
 div.quarto-post {
