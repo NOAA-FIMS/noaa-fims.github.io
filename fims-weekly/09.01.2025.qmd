@@ -3,6 +3,7 @@ title: "FIMS Weekly - September 01–05, 2025"
 date: "September 01, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - json
   - projections
 three-big-things:

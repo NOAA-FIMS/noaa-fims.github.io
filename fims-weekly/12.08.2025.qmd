@@ -3,6 +3,7 @@ title: "FIMS Weekly - December 08–12, 2025"
 date: "December 08, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - releases
   - projections
 three-big-things:

@@ -6,7 +6,7 @@ listing:
   contents:
     - "*.qmd"
     - "!fims-weekly-template.qmd"
-    - "!blog-template.qmd"
+    - "!blog_template.qmd"
   sort: "date desc"
   type: default
   categories: true

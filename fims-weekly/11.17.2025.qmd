@@ -3,6 +3,7 @@ title: "FIMS Weekly - November 17–21, 2025"
 date: "November 17, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - community playbook
   - schedule
 three-big-things:

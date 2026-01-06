@@ -3,6 +3,7 @@ title: "FIMS Weekly - September 29–October 03, 2025"
 date: "September 29, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - testing
   - documentation
   - doxygen

@@ -3,6 +3,7 @@ title: "FIMS Weekly - September 08–12, 2025"
 date: "September 08, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - json
   - purrr
 three-big-things:

@@ -3,6 +3,7 @@ title: "FIMS Weekly - August 18–22, 2025"
 date: "August 18, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - testing
 three-big-things:
   bt1: "Extra attention will be on the json output this week as we look to add the Surplus Production Model and finish the implementation of model families."
