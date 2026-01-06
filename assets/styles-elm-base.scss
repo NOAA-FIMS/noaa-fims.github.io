@@ -208,7 +208,6 @@ img.thumbnail-image.card-img {
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl="] {
   display: flex !important; /* or block/inline-block, whatever fits your styling */
   align-items: center;
-  background-color: #4896a1 !important; 
 }
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl"]::before {
   font-family: "Font Awesome 5 Free";
@@ -218,11 +217,16 @@ img.thumbnail-image.card-img {
   display: inline-block;
 }
 
+div.quarto-post .listing-categories .listing-category[onclick*="ZGVlcC1kaXZl="] {
+    border-color: #4896a1;
+    color: #1c7d8b;
+    background-color: #bed9de;
+}
+
 /* fims-weekly */
 .quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="] {
   display: flex !important; /* or block/inline-block, whatever fits your styling */
   align-items: center;
-  background-color: #4896a1 !important; 
 }
 .quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="]::before {
   font-family: "Font Awesome 5 Free";
@@ -245,6 +249,12 @@ img.thumbnail-image.card-img {
   content: "\f1ea"; /* fa-newspaper */
   margin-right: 0.4em;
   display: inline-block;
+}
+
+div.quarto-post .listing-categories .listing-category[onclick*="Zmltcy13ZWVrbHk="] {
+    border-color: #4896a1;
+    color: #1c7d8b;
+    background-color: #bed9de;
 }
 
 div.quarto-post {
