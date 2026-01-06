@@ -3,6 +3,7 @@ title: "FIMS Weekly - August 25–29, 2025"
 date: "August 25, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - documentation
   - interface
 three-big-things:

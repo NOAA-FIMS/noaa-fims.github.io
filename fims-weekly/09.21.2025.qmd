@@ -3,6 +3,7 @@ title: "FIMS Weekly - September 21–26, 2025"
 date: "September 21, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - doxygen
 three-big-things:
   bt1: "A new release of FIMS will come out this week that contains the PRs brought in last week thanks to Bai and Eric as well as improvements to the documentation thanks to those that showed up to Code Club and the extra design document meetings. Everyone's work is greatly appreciated. Check out the issues listed in the [CIE cleanup milestone](https://github.com/NOAA-FIMS/FIMS/milestone/14) for more tasks to work on."

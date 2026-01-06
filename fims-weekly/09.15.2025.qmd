@@ -3,6 +3,7 @@ title: "FIMS Weekly - September 15–19, 2025"
 date: "September 15, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - vignettes
 three-big-things:
   bt1: "After two weeks of not merging in any PRs, I switched it up and merged in Bai's first so now we just have one outstanding PR left, which we have made a lot of progress on but still need some more progress to get it into dev. Mainly, matching the TMB estimates of uncertainty with the estimates tibble."

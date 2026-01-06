@@ -3,9 +3,10 @@ title: FIMS Weekly - July 28–August 1, 2025
 date: "July 28, 2025"
 categories: 
   - fims-weekly
-  - R
   - testing
-  - TMB
+  - selectivity
+  - diagnostics
+  - projections
 three-big-things:
   bt1: "Writing tests 🧪 for length-based selectivity and finding the remaining 🐛."
   bt2: "Meg and Ian are working on FIMSdiags. If you are interested in joining them, watch the FIMS Calendar for meetings or ask Meg specifically to be invited."

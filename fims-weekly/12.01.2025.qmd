@@ -3,6 +3,7 @@ title: "FIMS Weekly - December 01–05, 2025"
 date: "December 01, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - testing
 three-big-things:
   bt1: "Our number one goal this week is to get a new release out, which involves trudging through the 13 open Pull Requests and prioritizing which ones will be a part of 0.8.0 and need rebased and which ones will wait for the next release."
