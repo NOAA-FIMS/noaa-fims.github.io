@@ -10,8 +10,8 @@ categories:
   - open-science
 format:
   closeread-html:
-    code-fold: true
     theme: lux
+    code-fold: true
 ---
 
 ## What is Code Club?
@@ -42,6 +42,7 @@ to engage, and to grow the community."
 Whether you are a C++ expert or just getting started with documentation, there is a room for you.
 
 An example of a past code club's "rooms" is below:
+
 | Room | Focus Area | Skill Level |
 |------|------------|-------------|
 | **The Engine Room** | C++ & TMB Debugging | Advanced/Intermediate/Curious |
@@ -68,7 +69,8 @@ I didn't just help fix code during Code Club; I gained a new skills, learned a l
 tidbits, and feel more connected to the FIMS community!
 
 :::{#cr-rooms}
-![Breakout Rooms](https://img.icons8.com/illustrations/social-merging.png)
+![Breakout Rooms](images/cherry-online-work-meeting.png)
+Illustration by <a href="https://icons8.com/illustrations/author/u7l2K4BCiAa9">Natasha Remarchuk Ouch!</a>
 :::
 
 :::{#cr-my-story}
