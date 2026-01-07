@@ -20,7 +20,9 @@ barrier to entry so that every user feels like an owner, and every 'newbie' beco
 
 :::{.cr-section}
 
-[The FIMS Code Club is built on the idea that **people matter more than pull requests.**]
+[The FIMS Code Club is built on the idea that **people matter more than pull requests.**] @cr-philosophy
+
+@cr-logic
 
 :::{#cr-philosophy}
 ### The Core Mission
@@ -46,13 +48,12 @@ An example of a past code club's "rooms" is below:
 | **The Logic Lab** | Unit Testing & Logic | Advanced/Intermediate/Curious |
 | **The Gateway** | Vignettes & Accessibility | Beginner/All |
 
-
 @cr-rooms We had three distinct rooms. One tackled complex scalar vector errors in C++, another built robust 
 new tests, and a third focused on making our documentation accessible to everyone. 
 
 ### My Journey: Overcoming the Fear 
 
-[@cr-my-story] 
+@cr-my-story
 
 When I first joined, I stayed in the **Vignettes Room**. I felt like I didn't have the skills 
 to contribute elsewhere. I was intimidated by C++ and TMB. I was afraid of "getting in the way" or 
@@ -60,13 +61,13 @@ asking a question that seemed too basic. I contributed to that room, and even ta
 better at TMB and C++ than I am, how to add alt text in Rmarkdown and markdown files and how to 
 navigate _pkgdown.yml files.
 
-[@cr-realization] 
+@cr-realization
 
 But then I remembered: **This club is the solution to that fear.** It exists specifically 
 to bridge that gap. I moved to both of the other C++/TMB coding rooms, asked those "dumb" 
 questions, and watched how experts debug.
 
-[@cr-result] 
+@cr-result 
 
 **The result?** Debugging some of the C++/TMB code in FIMS feels a lot less scary now. 
 I didn't just help fix code during Code Club; I gained a new skills, learned a lot of helpful tools and 
