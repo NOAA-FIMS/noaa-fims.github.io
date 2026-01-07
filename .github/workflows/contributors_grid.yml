@@ -11,6 +11,10 @@ name: Contributors list
 #   - Authorship section
 # 
 # The workflow only updates the "## Contributors" section with the latest contributor list
+#
+# BEHAVIOR:
+#   - On push to main: Updates and commits changes to contributors.qmd
+#   - On pull_request: Validates the workflow but does not commit/push changes
 on:
   push:
     branches:
@@ -28,6 +32,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Pull any changes (useful when there is an auto PR)
+        if: github.event_name == 'push'
         run: git pull --rebase origin main
 
       - name: Fetch contributors from NOAA-FIMS/FIMS and write avatar grid to qmd with text
@@ -190,6 +195,7 @@ jobs:
             fs.writeFileSync(filePath, finalContent);
 
       - name: Commit and push if contributors.qmd changed
+        if: github.event_name == 'push'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
