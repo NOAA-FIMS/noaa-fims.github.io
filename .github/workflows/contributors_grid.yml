@@ -144,7 +144,7 @@ jobs:
               const existingContent = fs.readFileSync(filePath, 'utf8');
               
               // Find the Contributors section - we'll replace only this section
-              const contributorsMatch = existingContent.match(/^## Contributors\s*\n/m);
+              const contributorsMatch = existingContent.match(/^## Contributors\b\s*\n/m);
               
               if (contributorsMatch) {
                 // Contributors section exists - preserve content before it
@@ -153,7 +153,7 @@ jobs:
                 
                 // Find the next section after Contributors (e.g., ## Roles) to preserve it
                 const afterContributorsText = existingContent.substring(startIndex);
-                const nextSectionMatch = afterContributorsText.match(/\n## (?!Contributors)/);
+                const nextSectionMatch = afterContributorsText.match(/\n## (?!Contributors\b)/);
                 
                 let afterContributors;
                 if (nextSectionMatch) {
@@ -169,7 +169,7 @@ jobs:
                 finalContent = beforeContributors + contributorsGrid + afterContributors;
               } else {
                 // Contributors section not found - insert it before Roles section
-                const rolesMatch = existingContent.match(/\n## Roles/);
+                const rolesMatch = existingContent.match(/\n## Roles\b/);
                 if (rolesMatch) {
                   const beforeRoles = existingContent.substring(0, rolesMatch.index);
                   const afterRoles = existingContent.substring(rolesMatch.index);
