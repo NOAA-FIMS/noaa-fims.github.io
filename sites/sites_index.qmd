@@ -78,22 +78,27 @@ listing:
       title: Rcpp in Advanced R
       description: >
         High performance functions with Rcpp within the Advanced R online resource by Hadley Wickham
-      categories: [Rcpp, R, C++]
+      categories: [Rcpp]
     - path: https://www.jstatsoft.org/article/view/v040i08
       title: "Rcpp: Seamless R and C++ Integration"
       description: >
         "Eddelbuettel, D., & Francois, R. (2011). Rcpp: Seamless R and C++ Integration. Journal of Statistical Software, 40(8), 1–18. [10.18637/jss.v040.i08](https://doi.org/10.18637/jss.v040.i08)"
-      categories: [Rcpp, R, C++]
+      categories: [Rcpp]
     - path: https://teuder.github.io/rcpp4everyone_en/
       title: Rcpp for everyone
       description: >
         `Rcpp` for everyone by Masaki E. Tsuda focuses on providing necessary information to users who are not familiar with C++
-      categories: [Rcpp, R, C++]
+      categories: [Rcpp]
     - path: https://cran.rstudio.com/web/packages/Rcpp/vignettes/Rcpp-modules.pdf
       title: Exposing C++ functions and classes with Rcpp modules
       description: >
         'Exposing C++ functions and classes with Rcpp modules' by Dirk Eddelbuettel and Romain François focuses on Rcpp modules that allow programmers to expose C++ functions and classes to R with relative ease
-      categories: [Rcpp, R, C++]
+      categories: [Rcpp]
+    - path: https://dirk.eddelbuettel.com/code/rcpp/Rcpp-quickref.pdf
+      title: Rcpp quick reference
+      description: >
+        A short pdf produced by the authors of the Rcpp package that is analogous to a tidyverse cheat sheet
+      categories: [Rcpp]
   type: default
   categories: true
   sort-ui: true
