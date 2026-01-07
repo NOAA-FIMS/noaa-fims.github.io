@@ -38,18 +38,33 @@ jobs:
               if (res.data.length < per_page) break;
               page++;
             }
+
+            // Contributors grid (avatars above usernames, both linked)
+            const imageSize = 80;
+            let contributorsGrid = "## Contributors\n\n";
+            contributorsGrid += '<table><tr>';
+            let count = 0;
+            for (const c of contributors) {
+              contributorsGrid += `<td align="center" valign="top" style="padding:12px"><a href="${c.html_url}"><img src="${c.avatar_url}" width="${imageSize}" alt="${c.login}" style="border-radius:8px"/><br/><sub>${c.login}</sub></a></td>`;
+              count++;
+              if (count % 6 === 0) contributorsGrid += '</tr><tr>';
+            }
+            contributorsGrid += '</tr></table>\n';
+
+            const fs = require('fs');
+            const filePath = 'contact/contributors.qmd';
             
-            // Text above contributors grid
-            const aboveContributors = `# FIMS Team
-            
+            // Default content if file doesn't exist
+            const defaultContent = `# FIMS Team
+
             FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.
-            
+
             ## Project Lead
-            
+
             * Kelli F. Johnson (OST)
-            
+
             ## Core Developers
-            
+
             * Jon K. T. Brodziak (PIFSC)
             * Kathryn L. Doering (OST)
             * Andrea M. Havron (OST)
@@ -66,27 +81,14 @@ jobs:
             * Ian G. Taylor (NWFSC)
             * Nathan R. Vaughan (Vaughan Analytics)
             * Eric J. Ward (NWFSC)
-            
+
             ## Subject-Matter Experts
-            
+
             * Lisa Pfeiffer (NWFSC)
             * Patrick D. Lynch (OST)
             * Richard D. Methot (NWFSC)`;
 
-            // Contributors grid (avatars above usernames, both linked)
-            const imageSize = 80;
-            let contributorsGrid = "## Contributors\n\n";
-            contributorsGrid += '<table><tr>';
-            let count = 0;
-            for (const c of contributors) {
-              contributorsGrid += `<td align="center" valign="top" style="padding:12px"><a href="${c.html_url}"><img src="${c.avatar_url}" width="${imageSize}" alt="${c.login}" style="border-radius:8px"/><br/><sub>${c.login}</sub></a></td>`;
-              count++;
-              if (count % 6 === 0) contributorsGrid += '</tr><tr>';
-            }
-            contributorsGrid += '</tr></table>\n';
-
-            // Roles and authorship section
-            const rolesAndAuthorship = `## Roles
+            const defaultRolesAndAuthorship = `## Roles
 
             ### Project Lead
 
@@ -120,12 +122,57 @@ jobs:
 
             Current developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., [FIMS DESCRIPTION](https://github.com/NOAA-FIMS/FIMS/blob/main/DESCRIPTION). When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit.
             `;
-
-            const fs = require('fs');
-            fs.mkdirSync('contact', { recursive: true });
-            fs.writeFileSync('contact/contributors.qmd',
-              `${aboveContributors}\n\n${contributorsGrid}\n${rolesAndAuthorship}`
-            );
+            
+            let finalContent;
+            
+            // Check if file exists
+            if (fs.existsSync(filePath)) {
+              // Read existing file
+              const existingContent = fs.readFileSync(filePath, 'utf8');
+              
+              // Find the Contributors section and preserve everything before and after it
+              const contributorsMatch = existingContent.match(/^## Contributors\s*\n/m);
+              
+              if (contributorsMatch) {
+                // Find where Contributors section starts
+                const startIndex = contributorsMatch.index;
+                const beforeContributors = existingContent.substring(0, startIndex);
+                
+                // Find where the next ## section starts after Contributors (e.g., ## Roles)
+                const afterContributorsText = existingContent.substring(startIndex);
+                const nextSectionMatch = afterContributorsText.match(/\n## (?!Contributors)/);
+                
+                let afterContributors;
+                if (nextSectionMatch) {
+                  // Extract content after the Contributors section
+                  const afterContributorsStart = startIndex + nextSectionMatch.index;
+                  afterContributors = existingContent.substring(afterContributorsStart);
+                } else {
+                  // No section after Contributors, use default
+                  afterContributors = '\n' + defaultRolesAndAuthorship;
+                }
+                
+                // Combine: preserved before + new contributors grid + preserved after
+                finalContent = beforeContributors + contributorsGrid + afterContributors;
+              } else {
+                // Contributors section not found, append it before any Roles/Authorship section
+                const rolesMatch = existingContent.match(/\n## Roles/);
+                if (rolesMatch) {
+                  const beforeRoles = existingContent.substring(0, rolesMatch.index);
+                  const afterRoles = existingContent.substring(rolesMatch.index);
+                  finalContent = beforeRoles + '\n' + contributorsGrid + afterRoles;
+                } else {
+                  // No Roles section either, just append
+                  finalContent = existingContent + '\n\n' + contributorsGrid + '\n' + defaultRolesAndAuthorship;
+                }
+              }
+            } else {
+              // File doesn't exist, create with default content
+              fs.mkdirSync('contact', { recursive: true });
+              finalContent = defaultContent + '\n\n' + contributorsGrid + '\n' + defaultRolesAndAuthorship;
+            }
+            
+            fs.writeFileSync(filePath, finalContent);
 
       - name: Commit and push if contributors.qmd changed
         run: |
