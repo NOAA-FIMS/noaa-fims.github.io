@@ -1,4 +1,16 @@
 name: Contributors list
+# This workflow automatically updates the Contributors section in contact/contributors.qmd
+# It fetches contributors from the NOAA-FIMS/FIMS repository and generates an avatar grid
+# 
+# IMPORTANT: This workflow PRESERVES manual changes to other sections of contributors.qmd
+# You can safely edit:
+#   - Project Lead section
+#   - Core Developers section
+#   - Subject-Matter Experts section
+#   - Roles section
+#   - Authorship section
+# 
+# The workflow only updates the "## Contributors" section with the latest contributor list
 on:
   push:
     branches:
@@ -22,6 +34,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            // Fetch all contributors from NOAA-FIMS/FIMS repository
             const owner = 'NOAA-FIMS';
             const repo = 'FIMS';
             const per_page = 100;
@@ -39,7 +52,7 @@ jobs:
               page++;
             }
 
-            // Contributors grid (avatars above usernames, both linked)
+            // Generate Contributors grid with avatars and usernames
             const imageSize = 80;
             let contributorsGrid = "## Contributors\n\n";
             contributorsGrid += '<table><tr>';
@@ -125,37 +138,37 @@ jobs:
             
             let finalContent;
             
-            // Check if file exists
+            // Check if file exists to preserve manual changes
             if (fs.existsSync(filePath)) {
-              // Read existing file
+              // Read existing file to preserve manual edits
               const existingContent = fs.readFileSync(filePath, 'utf8');
               
-              // Find the Contributors section and preserve everything before and after it
+              // Find the Contributors section - we'll replace only this section
               const contributorsMatch = existingContent.match(/^## Contributors\s*\n/m);
               
               if (contributorsMatch) {
-                // Find where Contributors section starts
+                // Contributors section exists - preserve content before it
                 const startIndex = contributorsMatch.index;
                 const beforeContributors = existingContent.substring(0, startIndex);
                 
-                // Find where the next ## section starts after Contributors (e.g., ## Roles)
+                // Find the next section after Contributors (e.g., ## Roles) to preserve it
                 const afterContributorsText = existingContent.substring(startIndex);
                 const nextSectionMatch = afterContributorsText.match(/\n## (?!Contributors)/);
                 
                 let afterContributors;
                 if (nextSectionMatch) {
-                  // Extract content after the Contributors section
+                  // Preserve content after the Contributors section
                   const afterContributorsStart = startIndex + nextSectionMatch.index;
                   afterContributors = existingContent.substring(afterContributorsStart);
                 } else {
-                  // No section after Contributors, use default
+                  // No section found after Contributors, use default Roles/Authorship
                   afterContributors = '\n' + defaultRolesAndAuthorship;
                 }
                 
                 // Combine: preserved before + new contributors grid + preserved after
                 finalContent = beforeContributors + contributorsGrid + afterContributors;
               } else {
-                // Contributors section not found, append it before any Roles/Authorship section
+                // Contributors section not found - insert it before Roles section
                 const rolesMatch = existingContent.match(/\n## Roles/);
                 if (rolesMatch) {
                   const beforeRoles = existingContent.substring(0, rolesMatch.index);
