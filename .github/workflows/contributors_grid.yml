@@ -60,7 +60,7 @@ jobs:
             for (const c of contributors) {
               contributorsGrid += `<td align="center" valign="top" style="padding:12px"><a href="${c.html_url}"><img src="${c.avatar_url}" width="${imageSize}" alt="${c.login}" style="border-radius:8px"/><br/><sub>${c.login}</sub></a></td>`;
               count++;
-              if (count % 6 === 0) contributorsGrid += '</tr><tr>';
+              if (count % 6 === 0 && count < contributors.length) contributorsGrid += '</tr><tr>';
             }
             contributorsGrid += '</tr></table>\n';
 
@@ -144,7 +144,8 @@ jobs:
               const existingContent = fs.readFileSync(filePath, 'utf8');
               
               // Find the Contributors section - we'll replace only this section
-              const contributorsMatch = existingContent.match(/^## Contributors\b\s*\n/m);
+              // Pattern handles both with and without trailing newline
+              const contributorsMatch = existingContent.match(/^## Contributors\b\s*$/m);
               
               if (contributorsMatch) {
                 // Contributors section exists - preserve content before it
@@ -169,11 +170,12 @@ jobs:
                 finalContent = beforeContributors + contributorsGrid + afterContributors;
               } else {
                 // Contributors section not found - insert it before Roles section
-                const rolesMatch = existingContent.match(/\n## Roles\b/);
+                // Pattern handles Roles section at beginning or after newline
+                const rolesMatch = existingContent.match(/(^|\n)(## Roles\b)/m);
                 if (rolesMatch) {
-                  const beforeRoles = existingContent.substring(0, rolesMatch.index);
-                  const afterRoles = existingContent.substring(rolesMatch.index);
-                  finalContent = beforeRoles + '\n' + contributorsGrid + afterRoles;
+                  const beforeRoles = existingContent.substring(0, rolesMatch.index + rolesMatch[1].length);
+                  const afterRoles = existingContent.substring(rolesMatch.index + rolesMatch[1].length);
+                  finalContent = beforeRoles + contributorsGrid + '\n' + afterRoles;
                 } else {
                   // No Roles section either, just append
                   finalContent = existingContent + '\n\n' + contributorsGrid + '\n' + defaultRolesAndAuthorship;
