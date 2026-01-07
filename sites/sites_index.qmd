@@ -99,6 +99,10 @@ listing:
       description: >
         A short pdf produced by the authors of the Rcpp package that is analogous to a tidyverse cheat sheet
       categories: [Rcpp]
+    - path: https://noaa-fims.github.io/FIMS_training/
+      title: FIMS_training
+      description: >
+        A repository for FIMS training materials
   type: default
   categories: true
   sort-ui: true
