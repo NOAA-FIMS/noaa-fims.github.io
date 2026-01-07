@@ -11,7 +11,7 @@
 <description>Websites associated with FIMS.
 </description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Tue, 06 Jan 2026 19:48:24 GMT</lastBuildDate>
+<lastBuildDate>Wed, 07 Jan 2026 18:36:56 GMT</lastBuildDate>
 <item>
   <title>&lt;i class=&quot;fab fa-r-project&quot;&gt;&lt;/i&gt; FIMS R Documentation</title>
   <link>https://noaa-fims.github.io/</link>
@@ -19,7 +19,7 @@
 </description>
   <category>R</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 06 Jan 2026 19:48:24 GMT</pubDate>
+  <pubDate>Wed, 07 Jan 2026 18:36:56 GMT</pubDate>
 </item>
 <item>
   <title>FIMSdiags</title>
@@ -29,7 +29,7 @@
   <category>R</category>
   <category>diagnostics</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 06 Jan 2026 19:48:24 GMT</pubDate>
+  <pubDate>Wed, 07 Jan 2026 18:36:56 GMT</pubDate>
 </item>
 <item>
   <title>FIMSRTMB</title>
@@ -39,51 +39,7 @@
   <category>R</category>
   <category>TMB</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 06 Jan 2026 19:48:24 GMT</pubDate>
-</item>
-<item>
-  <title>Rcpp in Advanced R</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>High performance functions with Rcpp within the Advanced R online resource by Hadley Wickham
-</description>
-  <category>Rcpp</category>
-  <category>R</category>
-  <category>C++</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 06 Jan 2026 19:48:24 GMT</pubDate>
-</item>
-<item>
-  <title>Rcpp: Seamless R and C++ Integration</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>&quot;Eddelbuettel, D., &amp; Francois, R. (2011). Rcpp: Seamless R and C++ Integration. Journal of Statistical Software, 40(8), 1–18. [10.18637/jss.v040.i08](https://doi.org/10.18637/jss.v040.i08)&quot;
-</description>
-  <category>Rcpp</category>
-  <category>R</category>
-  <category>C++</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 06 Jan 2026 19:48:24 GMT</pubDate>
-</item>
-<item>
-  <title>Rcpp for everyone</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>`Rcpp` for everyone by Masaki E. Tsuda focuses on providing necessary information to users who are not familiar with C++
-</description>
-  <category>Rcpp</category>
-  <category>R</category>
-  <category>C++</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 06 Jan 2026 19:48:24 GMT</pubDate>
-</item>
-<item>
-  <title>Exposing C++ functions and classes with Rcpp modules</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>&#39;Exposing C++ functions and classes with Rcpp modules&#39; by Dirk Eddelbuettel and Romain François focuses on Rcpp modules that allow programmers to expose C++ functions and classes to R with relative ease
-</description>
-  <category>Rcpp</category>
-  <category>R</category>
-  <category>C++</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Tue, 06 Jan 2026 19:48:24 GMT</pubDate>
+  <pubDate>Wed, 07 Jan 2026 18:36:56 GMT</pubDate>
 </item>
 </channel>
 </rss>
