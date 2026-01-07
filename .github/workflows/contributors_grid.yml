@@ -1,4 +1,20 @@
 name: Contributors list
+# This workflow automatically updates the Contributors section in contact/contributors.qmd
+# It fetches contributors from the NOAA-FIMS/FIMS repository and generates an avatar grid
+# 
+# IMPORTANT: This workflow PRESERVES manual changes to other sections of contributors.qmd
+# You can safely edit:
+#   - Project Lead section
+#   - Core Developers section
+#   - Subject-Matter Experts section
+#   - Roles section
+#   - Authorship section
+# 
+# The workflow only updates the "## Contributors" section with the latest contributor list
+#
+# BEHAVIOR:
+#   - On push to main: Updates and commits changes to contributors.qmd
+#   - On pull_request: Validates the workflow but does not commit/push changes
 on:
   push:
     branches:
@@ -16,12 +32,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Pull any changes (useful when there is an auto PR)
+        if: github.event_name == 'push'
         run: git pull --rebase origin main
 
       - name: Fetch contributors from NOAA-FIMS/FIMS and write avatar grid to qmd with text
         uses: actions/github-script@v7
         with:
           script: |
+            // Fetch all contributors from NOAA-FIMS/FIMS repository
             const owner = 'NOAA-FIMS';
             const repo = 'FIMS';
             const per_page = 100;
@@ -38,18 +56,33 @@ jobs:
               if (res.data.length < per_page) break;
               page++;
             }
+
+            // Generate Contributors grid with avatars and usernames
+            const imageSize = 80;
+            let contributorsGrid = "## Contributors\n\n";
+            contributorsGrid += '<table><tr>';
+            let count = 0;
+            for (const c of contributors) {
+              contributorsGrid += `<td align="center" valign="top" style="padding:12px"><a href="${c.html_url}"><img src="${c.avatar_url}" width="${imageSize}" alt="${c.login}" style="border-radius:8px"/><br/><sub>${c.login}</sub></a></td>`;
+              count++;
+              if (count % 6 === 0 && count < contributors.length) contributorsGrid += '</tr><tr>';
+            }
+            contributorsGrid += '</tr></table>\n';
+
+            const fs = require('fs');
+            const filePath = 'contact/contributors.qmd';
             
-            // Text above contributors grid
-            const aboveContributors = `# FIMS Team
-            
+            // Default content if file doesn't exist
+            const defaultContent = `# FIMS Team
+
             FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.
-            
+
             ## Project Lead
-            
+
             * Kelli F. Johnson (OST)
-            
+
             ## Core Developers
-            
+
             * Jon K. T. Brodziak (PIFSC)
             * Kathryn L. Doering (OST)
             * Andrea M. Havron (OST)
@@ -66,27 +99,14 @@ jobs:
             * Ian G. Taylor (NWFSC)
             * Nathan R. Vaughan (Vaughan Analytics)
             * Eric J. Ward (NWFSC)
-            
+
             ## Subject-Matter Experts
-            
+
             * Lisa Pfeiffer (NWFSC)
             * Patrick D. Lynch (OST)
             * Richard D. Methot (NWFSC)`;
 
-            // Contributors grid (avatars above usernames, both linked)
-            const imageSize = 80;
-            let contributorsGrid = "## Contributors\n\n";
-            contributorsGrid += '<table><tr>';
-            let count = 0;
-            for (const c of contributors) {
-              contributorsGrid += `<td align="center" valign="top" style="padding:12px"><a href="${c.html_url}"><img src="${c.avatar_url}" width="${imageSize}" alt="${c.login}" style="border-radius:8px"/><br/><sub>${c.login}</sub></a></td>`;
-              count++;
-              if (count % 6 === 0) contributorsGrid += '</tr><tr>';
-            }
-            contributorsGrid += '</tr></table>\n';
-
-            // Roles and authorship section
-            const rolesAndAuthorship = `## Roles
+            const defaultRolesAndAuthorship = `## Roles
 
             ### Project Lead
 
@@ -120,14 +140,62 @@ jobs:
 
             Current developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., [FIMS DESCRIPTION](https://github.com/NOAA-FIMS/FIMS/blob/main/DESCRIPTION). When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit.
             `;
-
-            const fs = require('fs');
-            fs.mkdirSync('contact', { recursive: true });
-            fs.writeFileSync('contact/contributors.qmd',
-              `${aboveContributors}\n\n${contributorsGrid}\n${rolesAndAuthorship}`
-            );
+            
+            let finalContent;
+            
+            // Check if file exists to preserve manual changes
+            if (fs.existsSync(filePath)) {
+              // Read existing file to preserve manual edits
+              const existingContent = fs.readFileSync(filePath, 'utf8');
+              
+              // Find the Contributors section - we'll replace only this section
+              // Pattern handles both with and without trailing newline
+              const contributorsMatch = existingContent.match(/^## Contributors\b\s*$/m);
+              
+              if (contributorsMatch) {
+                // Contributors section exists - preserve content before it
+                const startIndex = contributorsMatch.index;
+                const beforeContributors = existingContent.substring(0, startIndex);
+                
+                // Find the next section after Contributors (e.g., ## Roles) to preserve it
+                const afterContributorsText = existingContent.substring(startIndex);
+                const nextSectionMatch = afterContributorsText.match(/\n## (?!Contributors\b)/);
+                
+                let afterContributors;
+                if (nextSectionMatch) {
+                  // Preserve content after the Contributors section
+                  const afterContributorsStart = startIndex + nextSectionMatch.index;
+                  afterContributors = existingContent.substring(afterContributorsStart);
+                } else {
+                  // No section found after Contributors, use default Roles/Authorship
+                  afterContributors = '\n' + defaultRolesAndAuthorship;
+                }
+                
+                // Combine: preserved before + new contributors grid + preserved after
+                finalContent = beforeContributors + contributorsGrid + afterContributors;
+              } else {
+                // Contributors section not found - insert it before Roles section
+                // Pattern handles Roles section at beginning or after newline
+                const rolesMatch = existingContent.match(/(^|\n)(## Roles\b)/m);
+                if (rolesMatch) {
+                  const beforeRoles = existingContent.substring(0, rolesMatch.index + rolesMatch[1].length);
+                  const afterRoles = existingContent.substring(rolesMatch.index + rolesMatch[1].length);
+                  finalContent = beforeRoles + contributorsGrid + '\n' + afterRoles;
+                } else {
+                  // No Roles section either, just append
+                  finalContent = existingContent + '\n\n' + contributorsGrid + '\n' + defaultRolesAndAuthorship;
+                }
+              }
+            } else {
+              // File doesn't exist, create with default content
+              fs.mkdirSync('contact', { recursive: true });
+              finalContent = defaultContent + '\n\n' + contributorsGrid + '\n' + defaultRolesAndAuthorship;
+            }
+            
+            fs.writeFileSync(filePath, finalContent);
 
       - name: Commit and push if contributors.qmd changed
+        if: github.event_name == 'push'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
