@@ -26,10 +26,16 @@ Welcome to the FIMS Code Club, where we don't just build software; we build deve
 
 ### A Space for Everyone 
 
-![Breakout Rooms](images/cherry-online-work-meeting.png)
-Illustration by <a href="https://icons8.com/illustrations/author/u7l2K4BCiAa9">Natasha Remarchuk Ouch!</a>
-
+::: {.columns}
+::: {.column width="60%"}
 During Code Club, we use breakout rooms to takle issues based on specific topics. Whether you are a C++ expert or just getting started with documentation, there is a room for you.
+:::
+
+::: {.column width="40%"}
+![Breakout Rooms](images/cherry-online-work-meeting.png){width=100%}
+Illustration by <a href="https://icons8.com/illustrations/author/u7l2K4BCiAa9">Natasha Remarchuk Ouch!</a>
+:::
+:::
 
 An example of a past Code Club's "rooms" is below:
 
@@ -38,6 +44,7 @@ An example of a past Code Club's "rooms" is below:
 | **The Engine Room** | C++ & TMB Debugging | Advanced/Intermediate/Curious |
 | **The Logic Lab** | Unit Testing & Logic | Advanced/Intermediate/Curious |
 | **The Gateway** | Vignettes & Accessibility | Beginner/All |
+
 
 > In a past Code Club, we had three distinct rooms. One tackled complex scalar vector errors in C++, another built robust new tests, and a third focused on making our documentation accessible to everyone. 
 
