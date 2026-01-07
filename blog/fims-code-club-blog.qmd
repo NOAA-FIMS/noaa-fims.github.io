@@ -8,10 +8,7 @@ categories:
   - code-club
   - community
   - open-science
-format:
-  closeread-html:
-    theme: lux
-    code-fold: true
+format: closeread-html
 ---
 
 ## What is Code Club?
@@ -21,9 +18,9 @@ we gather to tackle GitHub issues in a space where **curiosity is more important
 Team provides the framework, but you provide the future. Our goal for these Code Clubs is to lower the 
 barrier to entry so that every user feels like an owner, and every 'newbie' becomes a contributor.
 
-:::{.closeread}
+:::{.cr-section}
 
-[The FIMS Code Club is built on the idea that **people matter more than pull requests.**]{.cr-section}
+[The FIMS Code Club is built on the idea that **people matter more than pull requests.**]
 
 :::{#cr-philosophy}
 ### The Core Mission
@@ -37,7 +34,7 @@ barrier to entry so that every user feels like an owner, and every 'newbie' beco
 to engage, and to grow the community."
 :::
 
-### A Space for Everyone {cr-active="cr-rooms"}
+### A Space for Everyone 
 
 Whether you are a C++ expert or just getting started with documentation, there is a room for you.
 
@@ -49,22 +46,29 @@ An example of a past code club's "rooms" is below:
 | **The Logic Lab** | Unit Testing & Logic | Advanced/Intermediate/Curious |
 | **The Gateway** | Vignettes & Accessibility | Beginner/All |
 
-[@cr-rooms] We had three distinct rooms. One tackled complex scalar vector errors in C++, another built robust 
+
+@cr-rooms We had three distinct rooms. One tackled complex scalar vector errors in C++, another built robust 
 new tests, and a third focused on making our documentation accessible to everyone. 
 
-### My Journey: Overcoming the Fear {cr-active="cr-my-story"}
+### My Journey: Overcoming the Fear 
 
-[@cr-my-story] When I first joined, I stayed in the **Vignettes Room**. I felt like I didn't have the skills 
+[@cr-my-story] 
+
+When I first joined, I stayed in the **Vignettes Room**. I felt like I didn't have the skills 
 to contribute elsewhere. I was intimidated by C++ and TMB. I was afraid of "getting in the way" or 
 asking a question that seemed too basic. I contributed to that room, and even taught others, who are 
 better at TMB and C++ than I am, how to add alt text in Rmarkdown and markdown files and how to 
 navigate _pkgdown.yml files.
 
-[@cr-realization] But then I remembered: **This club is the solution to that fear.** It exists specifically 
+[@cr-realization] 
+
+But then I remembered: **This club is the solution to that fear.** It exists specifically 
 to bridge that gap. I moved to both of the other C++/TMB coding rooms, asked those "dumb" 
 questions, and watched how experts debug.
 
-[@cr-result] **The result?** Debugging some of the C++/TMB code in FIMS feels a lot less scary now. 
+[@cr-result] 
+
+**The result?** Debugging some of the C++/TMB code in FIMS feels a lot less scary now. 
 I didn't just help fix code during Code Club; I gained a new skills, learned a lot of helpful tools and 
 tidbits, and feel more connected to the FIMS community!
 
