@@ -33,7 +33,7 @@ During Code Club, we use breakout rooms to takle issues based on specific topics
 :::
 
 ::: {.column width="70%"}
-![Illustration by [Natasha Remarchuk Ouch!](https://icons8.com/illustrations/author/u7l2K4BCiAa9)](images/cherry-online-work-meeting.png){fig-alt="Illustration of breakout rooms."}
+![Illustration by [Natasha Remarchuk Ouch!](https://icons8.com/illustrations/author/u7l2K4BCiAa9)](images/cherry-online-work-meeting.png){fig-alt="Illustration of breakout rooms." width=40%}
 :::
 
 :::
