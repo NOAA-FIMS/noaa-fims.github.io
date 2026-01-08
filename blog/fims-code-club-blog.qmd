@@ -27,17 +27,15 @@ Welcome to the FIMS Code Club, where we don't just build software; we build deve
 ### A Space for Everyone 
 
 ::: {.columns}
+
 ::: {.column width="60%"}
 During Code Club, we use breakout rooms to takle issues based on specific topics. Whether you are a C++ expert or just getting started with documentation, there is a room for you.
 :::
 
 ::: {.column width="40%"}
-```{figure} images/cherry-online-work-meeting.png
-:fig-cap: "Breakout Rooms. Illustration by [Natasha Remarchuk Ouch!](https://icons8.com/illustrations/author/u7l2K4BCiAa9)"
-:width: 300px
-:fig-align: center
-```
+![Breakout Rooms. Illustration by [Natasha Remarchuk Ouch!](https://icons8.com/illustrations/author/u7l2K4BCiAa9)](images/cherry-online-work-meeting.png){fig-alt="Illustration of breakout rooms."}
 :::
+
 :::
 
 An example of a past Code Club's "rooms" is below:
