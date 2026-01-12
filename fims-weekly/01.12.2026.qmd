@@ -4,9 +4,6 @@ date: "January 12, 2026"
 # Change the following categories accordingly
 categories: 
   - trainings
-  - selectivity
-  - diagnostics
-  - projections
 three-big-things:
   bt1: "We will freeze development in main on January 19, 2026 for two weeks because of the training at the National Stock Assessment Workshop. All this means is that there will be no releases for that two-week period."
   bt2: "There are several outstanding pull requests that need reviewed. Thank you for all of the contributions. The bug fixes will be merged into a hot fix and the remaining pull requests will make it into version 0.8.0 this week."
