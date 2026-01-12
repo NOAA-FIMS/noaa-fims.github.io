@@ -1,0 +1,55 @@
+---
+title: "January 12–16, 2026"
+date: "January 12, 2026"
+# Change the following categories accordingly
+categories: 
+  - trainings
+  - selectivity
+  - diagnostics
+  - projections
+three-big-things:
+  bt1: "We will freeze development in main on January 19, 2026 for two weeks because of the training at the National Stock Assessment Workshop. All this means is that there will be no releases for that two-week period."
+  bt2: "There are several outstanding pull requests that need reviewed. Thank you for all of the contributions. The bug fixes will be merged into a hot fix and the remaining pull requests will make it into version 0.8.0 this week."
+  bt3: "Length-based selectivity work is ramping back up as we wind down work on projections."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "When you are installing packages in R there are several ways to go about doing this but we recommend using [{pak}](https://pak.r-lib.org/reference/features.html) because it is one of the few methods that automatically installs packages in parallel, which can considerably speed up the process. You can set up `install.packages()` to use parallel methods but it will not be able to optimize things based on the mutual dependencies found across a set of packages that you wish to install, like {pak} can."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- The first in-person FIMS training is in 14 days! We have over 40 people signed up.
+::: 
+    
+::: {#additional-events}
+      
+<!--
+### DAY DATE
+**NAME**
+
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+
+::: {#photo-code}
+```
+# To install a vector of packages
+pak::pkg_install(c("dplyr", "ggplot2", "data.table"))
+# The following is a wrapper around pak::pkg_install()
+pak::pak()
+```
+:::
+
+        
+:::
+
+
