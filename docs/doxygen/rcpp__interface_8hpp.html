@@ -516,7 +516,7 @@ template&lt;typename Type &gt; </div>
 
 <p>Sets the fixed parameters vector object. Updates the internal parameter values for the model base of type TMB_FIMS_REAL_TYPE. Typically called before finalize or get_output to ensure the correct values are used. </p>
 <p>Usage example: </p><div class="fragment"><div class="line">set_fixed_parameters(c(1, 2, 3))</div>
-<div class="line">catch_at_age$get_output()</div>
+<div class="line">catch_at_age$get_output(do_sd_report = FALSE)</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">par</td><td>A vector of parameter values. </td></tr>
@@ -544,7 +544,7 @@ template&lt;typename Type &gt; </div>
 
 <p>Sets the random parameters vector object. Updates the internal random effects parameter values for the model base of TMB_FIMS_REAL_TYPE. Typically called before finalize or get_output to ensure the correct values are used. </p>
 <p>Usage example: </p><div class="fragment"><div class="line">set_random_parameters(c(1, 2, 3))</div>
-<div class="line">catch_at_age$get_output()</div>
+<div class="line">catch_at_age$get_output(do_sd_report = FALSE)</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">par</td><td>A vector of parameter values. </td></tr>
