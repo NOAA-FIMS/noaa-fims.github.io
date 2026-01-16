@@ -10,7 +10,7 @@
 <atom:link href="https://noaa-fims.github.io/fims-weekly/index-r.xml" rel="self" type="application/rss+xml"/>
 <description>FIMS weekly blog.
 </description>
-<generator>quarto-1.8.26</generator>
+<generator>quarto-1.8.27</generator>
 <lastBuildDate>Mon, 22 Dec 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>December 22–26, 2025</title>
