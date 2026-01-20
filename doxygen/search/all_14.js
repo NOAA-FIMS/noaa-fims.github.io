@@ -4,6 +4,8 @@ var searchData=
   ['uncertainty_5fm_1',['uncertainty_m',['../classParameter.html#a1ef2aa4e09ab76983ade45219a68989f',1,'Parameter']]],
   ['uncertaintyreportinfo_2',['uncertaintyreportinfo',['../structfims__popdy_1_1UncertaintyReportInfo.html',1,'fims_popdy::UncertaintyReportInfo'],['../structfims__popdy_1_1UncertaintyReportInfo.html#a56caaf3ace2d8a2ba90060c1c0734c7f',1,'fims_popdy::UncertaintyReportInfo::UncertaintyReportInfo()'],['../structfims__popdy_1_1UncertaintyReportInfo.html#abac86d638e7a014e8bf4456e0664cdff',1,'fims_popdy::UncertaintyReportInfo::UncertaintyReportInfo(const std::string &amp;name, uint32_t id, size_t start, size_t length)'],['../structfims__popdy_1_1UncertaintyReportInfo.html#a017a8c8dbc1f39dd5a69aee9885159eb',1,'fims_popdy::UncertaintyReportInfo::UncertaintyReportInfo(const UncertaintyReportInfo &amp;other)']]],
   ['uncertaintyreportinfomap_3',['UncertaintyReportInfoMap',['../classfims__popdy_1_1FisheryModelBase.html#a7040d2c5bdca6bb3789f99bc7fb870f9',1,'fims_popdy::FisheryModelBase']]],
-  ['user_4',['user',['../structfims_1_1LogEntry.html#af918075584df32b11182b0406b84fd48',1,'fims::LogEntry']]],
-  ['utilities_5',['inst/include/utilities/',['../md_inst_2include_2README.html#autotoc_md7',1,'']]]
+  ['use_5fmean_4',['use_mean',['../structfims__distributions_1_1DistributionElementObject.html#ab75eeb719d00a50170583c9e524ffee9',1,'fims_distributions::DistributionElementObject']]],
+  ['use_5fmean_5fm_5',['use_mean_m',['../classDistributionsInterfaceBase.html#ad3be554775b37d5cb817af2c50e0fc60',1,'DistributionsInterfaceBase']]],
+  ['user_6',['user',['../structfims_1_1LogEntry.html#af918075584df32b11182b0406b84fd48',1,'fims::LogEntry']]],
+  ['utilities_7',['inst/include/utilities/',['../md_inst_2include_2README.html#autotoc_md7',1,'']]]
 ];

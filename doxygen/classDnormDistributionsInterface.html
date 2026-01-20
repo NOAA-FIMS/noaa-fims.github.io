@@ -245,8 +245,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2234ef63d314d70a9367053042c23a0" id="r_ab2234ef63d314d70a9367053042c23a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#ab2234ef63d314d70a9367053042c23a0">set_observed_data</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">int</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">observed_data_id</a>)</td></tr>
 <tr class="memdesc:ab2234ef63d314d70a9367053042c23a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the unique ID for the observed data object.  <br /></td></tr>
 <tr class="separator:ab2234ef63d314d70a9367053042c23a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe721b78cee521cf61f350f1523749ec" id="r_abe721b78cee521cf61f350f1523749ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#abe721b78cee521cf61f350f1523749ec">set_distribution_mean</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">input_value</a>)</td></tr>
+<tr class="memdesc:abe721b78cee521cf61f350f1523749ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the expected mean value for the distribution.    <br /></td></tr>
+<tr class="separator:abe721b78cee521cf61f350f1523749ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5d27b7117db5c5308eff738689f43e4" id="r_ae5d27b7117db5c5308eff738689f43e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#ae5d27b7117db5c5308eff738689f43e4">set_distribution_links</a> (std::string input_type, Rcpp::IntegerVector <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">ids</a>)</td></tr>
-<tr class="memdesc:ae5d27b7117db5c5308eff738689f43e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets pointers for data observations, random effects, or priors.  <br /></td></tr>
+<tr class="memdesc:ae5d27b7117db5c5308eff738689f43e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets pointers for data observations, random effects, or priors.    <br /></td></tr>
 <tr class="separator:ae5d27b7117db5c5308eff738689f43e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51741d62c5fef4c1ba89d6f9a40584aa" id="r_a51741d62c5fef4c1ba89d6f9a40584aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#a51741d62c5fef4c1ba89d6f9a40584aa">evaluate</a> ()</td></tr>
 <tr class="memdesc:a51741d62c5fef4c1ba89d6f9a40584aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate normal probability density function (pdf). The natural log of the pdf is returned.  <br /></td></tr>
@@ -298,6 +301,10 @@ Public Attributes</h2></td></tr>
 <a class="el" href="classParameterVector.html">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>expected_values</b></td></tr>
 <tr class="memdesc:a52b505e82789482f43f8be3462cf73d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The expected values, which would be the mean of x for this distribution. <br /></td></tr>
 <tr class="separator:a52b505e82789482f43f8be3462cf73d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9c2c77c88f5130b7bfffc2422e0d63" id="r_a2a9c2c77c88f5130b7bfffc2422e0d63"><td class="memItemLeft" align="right" valign="top"><a id="a2a9c2c77c88f5130b7bfffc2422e0d63" name="a2a9c2c77c88f5130b7bfffc2422e0d63"></a>
+<a class="el" href="classParameterVector.html">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>expected_mean</b></td></tr>
+<tr class="memdesc:a2a9c2c77c88f5130b7bfffc2422e0d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">The expected mean, which would be the mean of x for this distribution. <br /></td></tr>
+<tr class="separator:a2a9c2c77c88f5130b7bfffc2422e0d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaaca1b7c950e10ab4be5ca3ba25e0a6" id="r_adaaca1b7c950e10ab4be5ca3ba25e0a6"><td class="memItemLeft" align="right" valign="top"><a id="adaaca1b7c950e10ab4be5ca3ba25e0a6" name="adaaca1b7c950e10ab4be5ca3ba25e0a6"></a>
 <a class="el" href="classParameterVector.html">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>log_sd</b></td></tr>
 <tr class="memdesc:adaaca1b7c950e10ab4be5ca3ba25e0a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The uncertainty, which would be the standard deviation of x for the normal distribution. <br /></td></tr>
@@ -318,6 +325,9 @@ std::shared_ptr&lt; std::vector&lt; <a class="el" href="rcpp__interface_8hpp.htm
 <a class="el" href="classSharedString.html">SharedString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>input_type_m</b></td></tr>
 <tr class="memdesc:af64d56001f37f47acef0684814d50a5a inherit pub_attribs_classDistributionsInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of density input. The options are prior, re, or data. <br /></td></tr>
 <tr class="separator:af64d56001f37f47acef0684814d50a5a inherit pub_attribs_classDistributionsInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3be554775b37d5cb817af2c50e0fc60 inherit pub_attribs_classDistributionsInterfaceBase" id="r_ad3be554775b37d5cb817af2c50e0fc60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSharedString.html">SharedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDistributionsInterfaceBase.html#ad3be554775b37d5cb817af2c50e0fc60">use_mean_m</a> = <a class="el" href="def_8hpp.html#ad28f97734d58355a40d01801bca1e2bf">fims::to_string</a>(&quot;no&quot;)</td></tr>
+<tr class="memdesc:ad3be554775b37d5cb817af2c50e0fc60 inherit pub_attribs_classDistributionsInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control flag indicating whether to use the expected mean in the distribution calculations.  <br /></td></tr>
+<tr class="separator:ad3be554775b37d5cb817af2c50e0fc60 inherit pub_attribs_classDistributionsInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0bcce99577896f4a18c7f1099cd6145 inherit pub_attribs_classDistributionsInterfaceBase" id="r_ae0bcce99577896f4a18c7f1099cd6145"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>interface_observed_data_id_m</b> = -999</td></tr>
 <tr class="memdesc:ae0bcce99577896f4a18c7f1099cd6145 inherit pub_attribs_classDistributionsInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of the observed data object, which is set to -999. <br /></td></tr>
@@ -510,16 +520,56 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets pointers for data observations, random effects, or priors. </p>
+<p>Sets pointers for data observations, random effects, or priors.   </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input_type</td><td>String that sets whether the distribution type is for priors, random effects, or data. </td></tr>
-    <tr><td class="paramname">ids</td><td>Vector of unique ids for each linked parameter(s), derived value(s), or observed data vector. </td></tr>
+    <tr><td class="paramname">ids</td><td>Vector of unique ids for each linked parameter(s), derived value(s), or observed data vector.   </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Reimplemented from <a class="el" href="classDistributionsInterfaceBase.html#ae8e42238a8b6e6cffbfbd9ac5a04d821">DistributionsInterfaceBase</a>.</p>
+
+</div>
+</div>
+<a id="abe721b78cee521cf61f350f1523749ec" name="abe721b78cee521cf61f350f1523749ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe721b78cee521cf61f350f1523749ec">&#9670;&#160;</a></span>set_distribution_mean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a> DnormDistributionsInterface::set_distribution_mean </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td>
+          <td class="paramname"><em>input_value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the expected mean value for the distribution.   </p>
+<p>This virtual function provides an interface for setting a fixed mean value for distribution objects. When overridden in derived classes, this method typically stores the provided mean value as a fixed effect parameter and marks the distribution to use the mean in its calculations.</p>
+<p>The base class implementation returns false to indicate the operation is not supported. Derived classes that support mean specification should override this method to implement the actual functionality.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_value</td><td>The numeric value to set as the distribution's expected mean. This value will be treated as a fixed effect parameter (not estimated) in derived class implementations.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Returns true if the mean was successfully set, false otherwise. The base class implementation always returns false to indicate the operation is not supported by default.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classDnormDistributionsInterface.html#abe721b78cee521cf61f350f1523749ec" title="Set the expected mean value for the distribution.">DnormDistributionsInterface::set_distribution_mean</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">for</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">an</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">example</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">implementation</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">that</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">sets</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">the</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">mean</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">as</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">a</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">fixed</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">effect</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">parameter</a>.   </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classDistributionsInterfaceBase.html#ae5ee1ee2b9d117aecc7396e442b48b2f">DistributionsInterfaceBase</a>.</p>
 
 </div>
 </div>

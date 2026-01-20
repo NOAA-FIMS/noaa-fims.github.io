@@ -8,6 +8,5 @@ var searchData=
   ['name_5',['name',['../classFleetInterface.html#a8c3947a5383186df7855801fd2fdd9fe',1,'FleetInterface::name'],['../classPopulationInterface.html#a35eeac59ec9c91677c936c68d292eadc',1,'PopulationInterface::name'],['../structfims__popdy_1_1DimensionInfo.html#a32f714baf402d3afb686e860ac4cd78d',1,'fims_popdy::DimensionInfo::name'],['../structfims__popdy_1_1UncertaintyReportInfo.html#a018365fe6f56de3683a56a61ce6a724c',1,'fims_popdy::UncertaintyReportInfo::name']]],
   ['name_5fm_6',['name_m',['../classfims__popdy_1_1CatchAtAge.html#a85beced6c3db3298b38f5d9e6c95472e',1,'fims_popdy::CatchAtAge']]],
   ['ndims_7',['ndims',['../structfims__popdy_1_1DimensionInfo.html#a7f807a516506e8358ba3ffa4aa1e6fcc',1,'fims_popdy::DimensionInfo']]],
-  ['notes_8',['notes',['../classDmultinomDistributionsInterface.html#a126a9417e1c95bd2261ad41fbfdce06e',1,'DmultinomDistributionsInterface']]],
-  ['numbers_5fat_5fage_9',['numbers_at_age',['../classPopulationInterface.html#ab068a23b8ce87a598e185a2c83ad792f',1,'PopulationInterface']]]
+  ['notes_8',['notes',['../classDmultinomDistributionsInterface.html#a126a9417e1c95bd2261ad41fbfdce06e',1,'DmultinomDistributionsInterface']]]
 ];
