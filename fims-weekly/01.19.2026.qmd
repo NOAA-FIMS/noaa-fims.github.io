@@ -1,0 +1,51 @@
+---
+title: "January 19–23, 2026"
+date: "January 19, 2026"
+# Change the following categories accordingly
+categories: 
+  - releases
+  - testing
+three-big-things:
+  bt1: "Version v0.8.0 was released early this morning! Thank you to everyone who worked on this release, especially Nathan for seeing the projections branch through to to the bitter end."
+  bt2: "Next week we will be giving at least three presentations and one training session that touch on FIMS at the National Stock Assessment Workshop and authors will be working on their presentations this week."
+  bt3: "The case studies need to be updated, which will be a major undertaking this week."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "Codecov has had some recent development that allows you to [use copilot to generate tests](https://about.codecov.io/product/feature/codecov-ai/) for your Pull Request. It uses context from your test report to generate unit tests that target exactly what is missing so you can boost patch coverage. You can add the following comment on a Pull Request to make this happen. This feature has yet to be tried yet on a NOAA-FIMS repository."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- 90 days until the CIE Review (April 20--23, 2026)
+::: 
+    
+::: {#additional-events}
+      
+<!--
+### DAY DATE
+**NAME**
+
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+
+
+::: {#photo-code}
+```bash
+@codecov-ai-reviewer test
+```
+:::
+
+        
+:::
+
+
