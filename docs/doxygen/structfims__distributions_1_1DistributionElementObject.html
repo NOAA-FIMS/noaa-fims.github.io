@@ -235,6 +235,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acd8e6a05f539e78f73ea32d21b139c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079418141629bad2136d5995568eae9c" id="r_a079418141629bad2136d5995568eae9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__distributions_1_1DistributionElementObject.html#a079418141629bad2136d5995568eae9c">get_n_x</a> ()</td></tr>
 <tr class="separator:a079418141629bad2136d5995568eae9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300a3706fecd5714d34353a40633746b" id="r_a300a3706fecd5714d34353a40633746b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__distributions_1_1DistributionElementObject.html#a300a3706fecd5714d34353a40633746b">get_n_expected</a> ()</td></tr>
+<tr class="separator:a300a3706fecd5714d34353a40633746b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -254,6 +256,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2cd9421895a01e7f12f1eccdab1dbb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a9965625057a2fe696710b74113775" id="r_aa2a9965625057a2fe696710b74113775"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__distributions_1_1DistributionElementObject.html#aa2a9965625057a2fe696710b74113775">x</a></td></tr>
 <tr class="separator:aa2a9965625057a2fe696710b74113775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a09816731aaad149cb2272768e59b6" id="r_ad4a09816731aaad149cb2272768e59b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__distributions_1_1DistributionElementObject.html#ad4a09816731aaad149cb2272768e59b6">expected_mean</a></td></tr>
+<tr class="separator:ad4a09816731aaad149cb2272768e59b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75eeb719d00a50170583c9e524ffee9" id="r_ab75eeb719d00a50170583c9e524ffee9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__distributions_1_1DistributionElementObject.html#ab75eeb719d00a50170583c9e524ffee9">use_mean</a> = <a class="el" href="def_8hpp.html#ad28f97734d58355a40d01801bca1e2bf">fims::to_string</a>(&quot;no&quot;)</td></tr>
+<tr class="separator:ab75eeb719d00a50170583c9e524ffee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typename</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a>&gt;<br />
@@ -291,6 +297,34 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the reference to the value of the vector or pointer at position i </dd></dl>
+
+</div>
+</div>
+<a id="a300a3706fecd5714d34353a40633746b" name="a300a3706fecd5714d34353a40633746b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a300a3706fecd5714d34353a40633746b">&#9670;&#160;</a></span>get_n_expected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typename</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> <a class="el" href="structfims__distributions_1_1DistributionElementObject.html">fims_distributions::DistributionElementObject</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::get_n_expected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieve expected value element size given data, random effect, or prior. </p><dl class="section return"><dt>Returns</dt><dd>The size of the element. </dd></dl>
 
 </div>
 </div>
@@ -421,6 +455,23 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
 
 </div>
 </div>
+<a id="ad4a09816731aaad149cb2272768e59b6" name="ad4a09816731aaad149cb2272768e59b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a09816731aaad149cb2272768e59b6">&#9670;&#160;</a></span>expected_mean</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typename</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a>&gt; <a class="el" href="structfims__distributions_1_1DistributionElementObject.html">fims_distributions::DistributionElementObject</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::expected_mean</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>the expected mean of the distribution, overrides expected values </p>
+
+</div>
+</div>
 <a id="aba452dcc2e5019a053dffbe018261a7b" name="aba452dcc2e5019a053dffbe018261a7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba452dcc2e5019a053dffbe018261a7b">&#9670;&#160;</a></span>expected_values</h2>
 
@@ -523,6 +574,23 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
 <div class="line">      <a class="code hl_function" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">NULL</a></div>
 <div class="ttc" id="arcpp__interface_8hpp_html_a9f5a235582e7cc0f29e3431fc89ef10d"><div class="ttname"><a href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">clear_internal</a></div><div class="ttdeci">void clear_internal()</div><div class="ttdoc">Clears the internal objects.</div><div class="ttdef"><b>Definition</b> rcpp_interface.hpp:242</div></div>
 </div><!-- fragment --><p>expected value of random effects </p>
+
+</div>
+</div>
+<a id="ab75eeb719d00a50170583c9e524ffee9" name="ab75eeb719d00a50170583c9e524ffee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab75eeb719d00a50170583c9e524ffee9">&#9670;&#160;</a></span>use_mean</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typename</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="structfims__distributions_1_1DistributionElementObject.html">fims_distributions::DistributionElementObject</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::use_mean = <a class="el" href="def_8hpp.html#ad28f97734d58355a40d01801bca1e2bf">fims::to_string</a>(&quot;no&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>should expected_mean be used over expected values </p>
 
 </div>
 </div>

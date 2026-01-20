@@ -12,6 +12,5 @@ var searchData=
   ['normallpdf_9',['normallpdf',['../structfims__distributions_1_1NormalLPDF.html',1,'fims_distributions::NormalLPDF&lt; Type &gt;'],['../structfims__distributions_1_1NormalLPDF.html#a232feebfe9cb238f1f11fae46417a615',1,'fims_distributions::NormalLPDF::NormalLPDF()']]],
   ['notes_10',['notes',['../classDmultinomDistributionsInterface.html#a126a9417e1c95bd2261ad41fbfdce06e',1,'DmultinomDistributionsInterface']]],
   ['null_11',['Null',['../fims__json_8hpp.html#a8f5bb0bd78e59255dc0ddeee42215cfcac1b6531ac83ad8d08eb62daf6813288f',1,'fims']]],
-  ['number_12',['Number',['../fims__json_8hpp.html#a8f5bb0bd78e59255dc0ddeee42215cfca4784ff245b93787bbe9f4771c8f4b5b7',1,'fims']]],
-  ['numbers_5fat_5fage_13',['numbers_at_age',['../classPopulationInterface.html#ab068a23b8ce87a598e185a2c83ad792f',1,'PopulationInterface']]]
+  ['number_12',['Number',['../fims__json_8hpp.html#a8f5bb0bd78e59255dc0ddeee42215cfca4784ff245b93787bbe9f4771c8f4b5b7',1,'fims']]]
 ];
