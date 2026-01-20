@@ -3,7 +3,7 @@ title: "December 29, 2025–January 02, 2026"
 date: "December 29, 2025"
 # Change the following categories accordingly
 categories: 
-  - release
+  - releases
   - training
 three-big-things:
   bt1: "We are still working on the hot-fix release to 0.7.0 that fixes a few 🐛🐛."
