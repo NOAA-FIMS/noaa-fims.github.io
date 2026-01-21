@@ -27,7 +27,7 @@ The feature set of some of the currently available assessment platforms have gro
 
 ### When will FIMS be ready to transition to?
 
-FIMS will have many of the features stock assessment analysts expect in a beta format sometime in 2025. We expect a fully tested and documented alpha release to be available in 2026. This includes implementation of fitting to length-composition data, random effects, Bayesian estimation, and SPR-based reference points in 2026.
+FIMS will have many of the features stock assessment analysts expect in a beta format sometime in 2025. We expect a fully tested and documented stable release to be available in 2026. This includes implementation of fitting to length-composition data, random effects, Bayesian estimation, and SPR-based reference points in 2026.
 
 ### I need a new model. Should I wait for FIMS or use WHAM?
 
@@ -35,7 +35,7 @@ WHAM is likely to have a fuller complement of features available sooner than FIM
 
 ### When will FIMS trainings be offered?
 
-We will be offering FIMS trainings in 2025. These initial trainings offered in 2025 will be targeted at early adopters and power users who are willing to debug and file issues when they encounter them. This will allow for the incorporation of user feedback in the code base during 2025–2026 development and release of a usable alpha version in 2026. In 2026, training will be offered at different levels from novice to expert users, including students.
+We will be offering FIMS trainings in 2025. These initial trainings offered in 2025 will be targeted at early adopters and power users who are willing to debug and file issues when they encounter them. This will allow for the incorporation of user feedback in the code base during 2025–2026 development and release of the first stable version in 2026. In 2026, training will be offered at different levels from novice to expert users, including students.
 
 ### How can I prepare for the transition to FIMS?
 
