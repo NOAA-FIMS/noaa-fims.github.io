@@ -2,7 +2,7 @@
 title: "FIMS Code Club"
 subtitle: "Beyond the Code: Building a Community"
 author: "Elizabeth Perl"
-date: "January 07, 2026"
+date: "January 20, 2026"
 categories:
   - learn   
   - code-club
@@ -71,4 +71,3 @@ But then I remembered: **This club is the solution to that fear.** It exists spe
 
 ### Ready to Contribute?
 [View the FIMS Code Club Project Board on GitHub](https://github.com/orgs/NOAA-FIMS/projects/28)
-

@@ -1,6 +1,6 @@
 ---
 # Copy this to create a blog post
-title: "Test Learn"
+title: "Title"
 # Using subtitle for brief description instead of the "description" listing item
 # because if you don't have a description then it just shows your starting text
 # and I don't want that for the fims-weekly ones.
