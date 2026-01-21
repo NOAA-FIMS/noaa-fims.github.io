@@ -43,12 +43,14 @@ website:
             href: about/acknowledgements.qmd
       - text: blog
         href: blog/index.qmd
-      - text: projects
-        href: projects/index.qmd
-      - text: packages
-        href: packages/index.qmd
       - text: resources
-        href: sites/sites_index.qmd
+        menu:
+          - text: resources
+            href: resources/resources.qmd
+          - text: R packages
+            href: resources/packages.qmd
+          - text: projects
+            href: resources/projects.qmd
       - text: contact
         menu:
           - text: contact FIMS lead
