@@ -17,3 +17,31 @@ page-layout: full
 title-block-banner: false
 comments: false
 ---
+
+<!-- The section below creates a collpase/expand all button -->
+<div id="expand-collapse-buttons" style="margin-bottom: 20px;">
+  <button onclick="expandAll()" class="btn btn-primary">Expand All</button>
+  <button onclick="collapseAll()" class="btn btn-secondary">Collapse All</button>
+</div>
+
+<script>
+function expandAll() {
+  const details = document.querySelectorAll('details');
+  details.forEach((detail) => {
+    detail.setAttribute('open', 'true');
+  });
+}
+
+function collapseAll() {
+  const details = document.querySelectorAll('details');
+  details.forEach((detail) => {
+    detail.removeAttribute('open');
+  });
+}
+</script>
+
+<!--
+<details>
+<summary><strong>What you want in the area that you click to drop down</strong></summary>
+<\details>
+-->
