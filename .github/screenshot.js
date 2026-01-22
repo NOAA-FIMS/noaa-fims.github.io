@@ -8,7 +8,7 @@ if (!pagePath) {
 }
 
 // Build the URL based on the repo's GitHub Pages domain
-const baseUrl = 'https://noaa-fims.github.io/fims-weekly/';
+const baseUrl = 'https://noaa-fims.github.io/blog/';
 const fileName = pagePath.split('/').pop();
 const url = `${baseUrl}${fileName}`;
 
