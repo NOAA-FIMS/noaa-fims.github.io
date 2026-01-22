@@ -59,15 +59,15 @@ jobs:
             e-perl-NOAA 
             ${{ env.TOP_CONTRIB }}
           body: |
-            :sparkles: **Automated update to `packages/fims-packages.yaml`** :sparkles:
+            :sparkles: **Automated update to `resources/fims-packages.yaml`** :sparkles:
               
             Hey 👋 ${{ env.TOP_CONTRIB }}, your package’s pkgdown site has been added!
   
-            Please add appropriate **categories** to the newly listed pkgdown site in `packages/fims-packages.yaml` to help with site indexing and discovery.
+            Please add appropriate **categories** to the newly listed pkgdown site in `resources/fims-packages.yaml` to help with site indexing and discovery.
             Also, please add your package's hex logo to the images folder.
   
-            - Edit this pull request to add or update categories as needed.
-            - Once reviewed, you may merge this PR.
+            - Edit this pull request to add or update categories and package hex logo as needed.
+            - Once reviewed,  merge this PR.
 
   weekly-update-changelog:
     runs-on: ubuntu-latest
@@ -95,7 +95,7 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git add changelog/FIMS_CHANGELOG.qmd
+          git add about/FIMS_CHANGELOG.qmd
           git diff --cached --ignore-space-at-eol --quiet || echo "changed=true" >> $GITHUB_OUTPUT
   
       - name: Create Pull Request for updated changelog

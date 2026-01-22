@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - changelog/FIMS_CHANGELOG.qmd
+      - about/FIMS_CHANGELOG.qmd
 
 concurrency:
   group: ${{ github.workflow}}-${{ github.ref }}
@@ -28,14 +28,8 @@ jobs:
       - name: Get latest version from changelog
         id: changelog_version
         run: |
-          VERSION_HEADING=$(grep -m1 '^## v' changelog/FIMS_CHANGELOG.qmd | sed -E 's/^## (v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?).*/\1/')
+          VERSION_HEADING=$(grep -m1 '^## v' about/FIMS_CHANGELOG.qmd | sed -E 's/^## (v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?).*/\1/')
           echo "version_heading=$VERSION_HEADING" >> $GITHUB_OUTPUT
-      
-      # - name: Set environment variable
-      #   id: set_env
-      #   run: |
-      #     VERSION=$(echo "${{ steps.changelog_version.outputs.version_heading }}" | sed 's/^v//')
-      #     echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Get latest FIMS release tag
         id: fims_release
@@ -59,21 +53,6 @@ jobs:
           VERSION=$(echo "${{ steps.changelog_version.outputs.version_heading }}" | sed 's/^v//')
           sed -i -E "s/Version [0-9]+\.[0-9]+\.[0-9]+/Version $VERSION/" index.qmd
           cat index.qmd
-          
-      # - name: Archive current site to archives folder
-      #   if: steps.should_archive.outputs.should_archive == 'true'
-      #   run: |
-      #     ARCHIVE_DIR="_archives/${{ steps.get_fims_release.outputs.fims_website_tag }}"
-      #     mkdir -p "$ARCHIVE_DIR"
-      #     cp -rv docs/. "$ARCHIVE_DIR"/
-      #     ls _archives
-          
-      # - name: Commit & Push changes
-      #   if: steps.should_archive.outputs.should_archive == 'true'
-      #   uses: actions-js/push@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-
 
       - name: Render Quarto Project
         if: steps.release_updated.outputs.release_updated == 'true'
@@ -89,14 +68,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit and push rendered site to main
-        if: steps.release_updated.outputs.release_updated == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/
-          git commit -m "Update rendered site"
-          git push origin main
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          path: docs
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

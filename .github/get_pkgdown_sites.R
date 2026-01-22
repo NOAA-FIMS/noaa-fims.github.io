@@ -40,7 +40,7 @@ results <- map_dfr(repo_names, function(repo) {
 
 results_filt <- results %>% filter(has_pkgdown, !is.na(github_pages_url))
 
-lines <- readLines("packages/fims-packages.yaml")
+lines <- readLines("resources/fims-packages.yaml")
 
 # Find all existing URL lines and extract URLs to compare
 existing_urls <- grep("^- path:", trimws(lines), value = TRUE)
@@ -63,7 +63,7 @@ for (i in seq_len(nrow(results_filt))) {
       sprintf('    - [Website](%s) <br>', site),
       sprintf('    - [Repository](%s)', repo_url),
       sprintf("  path: %s", site),
-      sprintf("  image: ../images/FIMS_hexlogo"),
+      sprintf("  image: ../images/FIMS_hexlogo.png"),
       sprintf("  categories: [R]")
     )
     new_blocks <- c(new_blocks, block)
@@ -88,7 +88,7 @@ insert_line <- if (length(type_line) > 0) type_line[1] - 1 else length(lines)
 
 if (length(new_blocks) > 0) {
   lines <- append(lines, new_blocks, after = insert_line)
-  writeLines(lines, "packages/fims-packages.yaml")
+  writeLines(lines, "resources/fims-packages.yaml")
 }
 
 # Save unique contributors

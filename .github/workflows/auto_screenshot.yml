@@ -27,7 +27,7 @@ jobs:
       - name: Find newly added weekly HTML files
         id: added_html
         run: |
-          ADDED_FILES=$(git diff --name-status HEAD~1 HEAD | awk '/^A/ && $2 ~ /^docs\/fims-weekly\/.*\.html$/ {print $2}')
+          ADDED_FILES=$(git diff --name-status HEAD~1 HEAD | awk '/^A/ && $2 ~ /^blog\/[0-9]{2}-[0-9]{2}-[0-9]{4}\.html$/ {print $2}')
           echo "ADDED_FILES=$ADDED_FILES" >> $GITHUB_ENV
           echo "$ADDED_FILES" > added_html.txt
           echo "$ADDED_FILES"
