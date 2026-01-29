@@ -23,7 +23,7 @@ photo:
 {{< include "fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
-- Meg and Ian will be doing a [training next week](https://meet.google.com/yhu-xrvw-yqn) on [FIMSdiags](https://github.com/NOAA-FIMS/FIMSdiags).
+- Meg and Ian will be doing a [training next week](https://meet.google.com/unsupported?meetingCode=yhu-xrvw-yqn&ref=https://meet.google.com/yhu-xrvw-yqn) on [FIMSdiags](https://github.com/NOAA-FIMS/FIMSdiags).
 - Please encourage your peers to use the [Discussion Board](https://github.com/orgs/NOAA-FIMS/discussions) to ask questions about FIMS and propose features so we can talk about them in a public forum.
 - If you attended the FIMS Training on Monday, please fill out the survey on [Google Cloud Workstations](https://docs.google.com/forms/d/e/1FAIpQLSehj6N1ka568ohEsakRQZbHxrduf1EswkYbVavhPXYBuruM7A/viewform).
 ::: 
