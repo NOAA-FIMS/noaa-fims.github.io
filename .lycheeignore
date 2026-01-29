@@ -16,3 +16,6 @@ https://academic.oup.com/icesjms/article/.*
 
 # Ignore doxygen link (it is valid but lychee thinks it's broken)
 https://www.doxygen.org/index.html
+
+# Ignore links to forms in google docs
+https://docs.google.com/forms/*
