@@ -41,6 +41,37 @@ The project is constantly under development 🔨. Check out our progress so far 
 | Total issues | ![Total issues](https://img.shields.io/github/issues-raw/noaa-fims/noaa-fims.github.io)|
 | Closed Issues| ![Closed issues](https://img.shields.io/github/issues-closed/noaa-fims/noaa-fims.github.io)|
 
+## Comparison to other frameworks
+
+| Feature | SS3 | FIMS | RCEATTLE | SPoRC | WHAM | Multi-WHAM |
+|---|---|---|---|---|---|---|
+| Software | ADMB | TMB and C++ | TMB/RTMB | RTMB | TMB | TMB |
+| Operational ready | Yes | No | Yes | No | Yes | Yes |
+| Prior specification? | Yes | Yes | M, Q, and SRR | M, h, Tag Reporting, Movement, Q, selectivity | Q only | Q only |
+| CAAL | Yes | No | In dev | No | Yes (deprecated) | No |
+| Split sex | Yes | No | Yes | Yes | No | Maybe |
+| Age-error | Yes | No | Yes | TV but not fleet specific | In branch | No |
+| Fleet Age-error | Yes | No | Yes | No | No | No |
+| TV Age-error | Yes | No | In branch | Yes | No | No |
+| Variety of selectivity | Yes | No | Yes | Yes | Yes | Yes |
+| TV selectivity | Yes | In branch | Yes (random walks, random deviates, blocks) | Yes (blocks, iid and random walks, semi-parametric 3d and 2d) | Yes | Yes |
+| Growth estimation | Yes | No | Yes | No | Yes | No |
+| Marginal lengths | Yes | Yes | Yes | Yes | Yes | No |
+| DM compositions | Yes | No | Yes | Yes | Yes | Yes |
+| Additive logistic-normal compositions | No | No | No | Yes | No | No |
+| Environmental linkages | Yes | No | M, Q, SRR (any number of indices) | Q | Yes | Yes |
+| Multi-area | Yes | No | No | Yes | No | Yes |
+| Population Structures | global SRR | No | No | global or local SRR | No | Natal homing, local SRR |
+| Multi species | No | No | Yes | No | No | Yes |
+| Multi-variate indices | No | No | No | No | No | No |
+| Multi-seasonal | Yes | No | No | In branch | No | Yes |
+| NAA or M state-space | No | No | M | Will be in dev | NAA and M | NAA and M |
+| DSEM-ready | Never | Long-term | Yes | Yes | Harder | Harder |
+| Internal OSA | No | No | In dev | No | Yes | Yes |
+| Internal AFSC proj scenarios | Yes | No | Yes | Yes | No | No |
+| Reference point estimation | Yes | No | Yes | Yes | Yes | Yes |
+| MSE tools | Yes | No | Yes | Yes | Yes | Yes |
+
 ## Release  
 
  The current release can be found on the [FIMS release page](https://github.com/NOAA-FIMS/FIMS/releases). A list of all releases and their corresponding changes can be found on our [changelog page](../changelog/FIMS_CHANGELOG.qmd).
