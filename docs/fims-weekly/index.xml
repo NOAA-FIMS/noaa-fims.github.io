@@ -113,7 +113,6 @@ like_fit &lt;- FIMSdiags::run_fims_likelihood(
   length = 5
 )</code></pre>
 </div>
-<p>:::</p>
 
 
 </section>
