@@ -1,0 +1,80 @@
+---
+title: "February 02–06, 2026"
+date: "February 02, 2026"
+# Change the following categories accordingly
+categories: 
+  - SIS
+  - case-studies
+  - diagnostics
+three-big-things:
+  bt1: "All of the case studies have been worked on but the advanced one is still having some trouble. We will be working on both the advanced and Pacific Hake case studies this week."
+  bt2: "Google Summer of Code ideas need to be submitted today! We have two submitted so far, one related to turning on and off uncertainty for derived quantities and one related to adding Empirical Dynamic Modeling (EDM) to FIMS. EDM models were presented last week for brown shrimp at NSAW."
+  bt3: "We have an Implementation Team Meeting and a tutorial on FIMSdiags this week. Please attend both and spread the news about the tutorial."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "We have diagnostics thanks to Meg and Ian. Below is some sample code for running a likelihood profile over R_zero. Attend the tutorial on Thursday to learn more about [{FIMSdiags}](https://noaa-fims.github.io/FIMSdiags/)."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- If you attended the FIMS Training on Monday, please fill out the survey on [Google Cloud Workstations](https://docs.google.com/forms/d/e/1FAIpQLSehj6N1ka568ohEsakRQZbHxrduf1EswkYbVavhPXYBuruM7A/viewform).
+::: 
+    
+::: {#additional-events}
+### Wednesday, February 04
+**FIMS Implementation Team Meeting (Priorities)**
+
+Time: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=kbz-ccew-iij&ref=https://meet.google.com/kbz-ccew-iij)
+
+### Thursday, February 05
+**FIMSdiags Tutorial**
+
+Time: 14:00–15:00 E; 11:00–12:00 P; 10:00–11:00 AK; 8:00–9:00 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=yhu-xrvw-yqn&ref=https://meet.google.com/yhu-xrvw-yqn)
+:::
+
+
+::: {#photo-code}
+```
+# data
+data("data1", package = "FIMS")
+data_4_model <- FIMS::FIMSFrame(data1)
+
+# Create parameters
+parameters <- data_4_model |>
+  FIMS::create_default_configurations() |>
+  FIMS::create_default_parameters(data = data_4_model)
+
+# Run the  model with optimization
+base_model <- parameters |>
+  FIMS::initialize_fims(data = data_4_model) |>
+  FIMS::fit_fims(optimize = TRUE)
+FIMS::clear()
+
+# Run a likelihood profile on R_zero
+like_fit <- FIMSdiags::run_fims_likelihood(
+  model = base_model,
+  parameters = parameters,
+  parameter_name = "log_rzero", 
+  data = data1,
+  n_cores = 1,
+  min = -1,
+  max = 1,
+  length = 5
+)
+```
+:::
+
+        
+:::
