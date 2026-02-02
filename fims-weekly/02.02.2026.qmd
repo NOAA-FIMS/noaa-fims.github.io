@@ -75,6 +75,3 @@ like_fit <- FIMSdiags::run_fims_likelihood(
 )
 ```
 :::
-
-        
-:::
