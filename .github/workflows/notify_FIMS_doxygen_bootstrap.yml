@@ -3,7 +3,7 @@ name: Notify FIMS on Bootstrap File Change in FIMS Website Repo
 on:
   push:
     paths:
-      - docs/site_libs/bootstrap/**
+      - site_libs/bootstrap/**
 
 jobs:
   notify:
