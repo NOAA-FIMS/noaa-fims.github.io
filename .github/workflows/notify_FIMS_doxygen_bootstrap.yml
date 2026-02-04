@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - site_libs/bootstrap/**
+  workflow_dispatch:
 
 jobs:
   notify:
