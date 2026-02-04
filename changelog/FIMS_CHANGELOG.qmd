@@ -2,6 +2,30 @@
 title: FIMS Change Log
 ---
 
+## v0.8.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.8.0))
+## What's Changed
+
+- Model time series can now include projections
+- Vignette on sparsity with random effects given the parameterization of the model
+
+
+**Full Changelog**: https://github.com/NOAA-FIMS/FIMS/compare/v0.7.1...v0.8.0
+
+---
+
+## v0.7.1 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.7.1))
+## What's Changed
+
+- fix(doxygen): adds the correct header to doxygen website in [#1062](https://github.com/NOAA-FIMS/FIMS/pull/1062)
+- fix(doxygen): locations in [#1064](https://github.com/NOAA-FIMS/FIMS/pull/1064)
+- fix(json): allow for mixed types with NA by @msupernaw in [#1070](https://github.com/NOAA-FIMS/FIMS/pull/1070)
+- fix: tibble print formatting issue in vignettes #1012 by @awilnoaa in [#1087](https://github.com/NOAA-FIMS/FIMS/pull/1087)
+- fix(do_sd_report): Skips the sdreport calculation when optimize=FALSE to prevent NaN warning in [#1102](https://github.com/NOAA-FIMS/FIMS/pull/1102)
+
+**Full Changelog**: https://github.com/NOAA-FIMS/FIMS/compare/v0.7.0...v0.7.1
+
+---
+
 ## v0.7.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.7.0))
 ## What's Changed
 
