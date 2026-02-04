@@ -29,6 +29,6 @@ jobs:
         if: env.TARGET != ''
         uses: peter-evans/repository-dispatch@v3
         with:
-          token: ${{ secrets.FIMS_REPO_PAT }}
-          repository: e-perl-NOAA/FIMS
+          token: ${{ secrets.REPO_A_PAT }} #need to change back
+          repository: e-perl-NOAA/FIMS #need to change back
           event-type: file-updated
