@@ -109,6 +109,7 @@ var NAVTREEINDEX4 =
 "rcpp__interface_8hpp_source.html":[3,0,0,0,2,0,1],
 "rcpp__interface__base_8hpp.html":[3,0,0,0,2,0,0,4],
 "rcpp__interface__base_8hpp.html#a0bd065ea931f82a169ebf53822c29d57":[3,0,0,0,2,0,0,4,4],
+"rcpp__interface__base_8hpp.html#a18721bca590fa172ea797a55c6ae10e3":[3,0,0,0,2,0,0,4,6],
 "rcpp__interface__base_8hpp.html#aa89b8163b657a51e656e119c1af6153f":[3,0,0,0,2,0,0,4,5],
 "rcpp__interface__base_8hpp_source.html":[3,0,0,0,2,0,0,4],
 "rcpp__math_8hpp.html":[3,0,0,0,2,0,0,5],
