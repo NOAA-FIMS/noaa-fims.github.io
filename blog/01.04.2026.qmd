@@ -3,6 +3,7 @@ title: "January 05–09, 2026"
 date: "January 05, 2026"
 # Change the following categories accordingly
 categories:
+  - fims-weekly
   - Surplus Production
   - DSEM
   - codespaces

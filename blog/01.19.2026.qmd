@@ -3,6 +3,7 @@ title: "January 19–23, 2026"
 date: "January 19, 2026"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - releases
   - testing
 three-big-things:
