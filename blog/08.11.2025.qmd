@@ -27,7 +27,7 @@ photo:
   alt-text: "Image of multiple branches checked out on in the FIMS repository using git worktrees."
 ---
   
-{{< include "_fims-weekly-template.qmd" >}}
+{{< include "fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - This will be the last FIMS Weekly in Google Doc form because Elizabeth created a way to distribute this via html on our FIMS Website 🎉. Emails will still go out but they will just link to where you can find the weekly and maybe a screen shot. I am not sure. Please feel free to email me suggestions.
