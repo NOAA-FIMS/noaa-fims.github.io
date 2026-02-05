@@ -18,12 +18,19 @@ jobs:
       - name: Check for target .css file
         id: target_file
         run: |
-          FILE=$(ls site_libs/bootstrap | grep '^bootstrap-[0-9a-f]\+\.min\.css$' | grep -v 'dark' | head -n 1 || true)
-          echo "TARGET=$FILE" >> $GITHUB_ENV
-          if [ -z "$FILE" ]; then
-            echo "No matching file found"
+          LIGHT=$(ls site_libs/bootstrap | grep -E '^bootstrap-[0-9a-f]+\.min\.css$' | grep -v 'dark' | head -n 1 || true)
+          DARK=$(ls site_libs/bootstrap | grep -E '^bootstrap-dark-[0-9a-f]+\.min\.css$' | head -n 1 || true)
+
+          echo "TARGET_LIGHT=$LIGHT" >> "$GITHUB_ENV"
+          echo "TARGET_DARK=$DARK" >> "$GITHUB_ENV"
+
+          if [ -z "$LIGHT" ] && [ -z "$DARK" ]; then
+            echo "No matching light or dark bootstrap css file found"
             exit 0
           fi
+
+          echo "Found light: ${LIGHT:-<none>}"
+          echo "Found dark:  ${DARK:-<none>}"
 
       - name: Repository Dispatch
         if: env.TARGET != ''
