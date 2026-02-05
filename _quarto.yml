@@ -12,6 +12,7 @@ project:
     - images/
     - assets/
     - about/FIMS_TOR_08.26.2021.pdf
+    - fims-weekly/*.html
   post-render:
     - "cp -r _static/. docs/"
     - "cp -r doxygen docs/"
