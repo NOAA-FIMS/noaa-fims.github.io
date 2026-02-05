@@ -1,11 +1,11 @@
 ---
 title: FIMS Blog
 description: >
-  **Categories**
+  **Category Definitions**
   <br>
   <i class="fa-solid fa-magnifying-glass"></i> deep-dive: learning about hard concepts in stock assessment modeling, academic exercises, and statistical best practices <br>
-  <i class="fa-solid fa-graduation-cap"></i> learn: learning about the packages within FIMS, geared towards the beginner or average user <br>
   <i class="fa-solid fa-newspaper"></i> fims-weekly: fims weekly newsletter <br>
+  <i class="fa-solid fa-graduation-cap"></i> learn: learning about the packages within FIMS, geared towards the beginner or average user <br>
   <i class="fa-solid fa-circle"></i> other: posts that do not fit the other categories<br>
 listing:
   contents:
