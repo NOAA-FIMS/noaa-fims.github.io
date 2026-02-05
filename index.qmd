@@ -34,7 +34,7 @@ listing:
             FIMS calendar.
           display-order: 4
     sort: "display-order"
-  - id: fims-sites-listing
+  - id: fims-resources-listing
     type: grid
     max-items: 9
     page-size: 3
@@ -43,18 +43,23 @@ listing:
     filter-ui: false
     fields: [title, description]
     contents:
-        - path: https://noaa-fims.github.io/case-studies/
-          title: 🔍 FIMS case studies
+        - path: resources/resources.qmd
+          title: 🔍 FIMS resources
           description: >
-            Test cases, based on regional assessments, to illustrate use of FIMS.
-        - path: https://noaa-fims.github.io/FIMS/
-          title: <i class="fab fa-r-project"></i> FIMS Packagedown
+            Case studies, C++ tutorial, etc. 
+        - path: resources/packages.qmd
+          title: <i class="fab fa-r-project"></i> FIMS packages
           description: >
             Packagedown site for FIMS package.
         - path: doxygen/index.html
           title: <i class="fa-solid fa-plus"></i> FIMS Doxygen
           description: >
             Doxygen documentation for FIMS C++ functions.
+        - path: resources/projects.qmd
+          title: <i class="fa-solid fa-folder-open"></i> FIMS projects
+          description: >
+            Current and related FIMS projects.
+          
 header-includes: >
   <link rel="stylesheet" href="assets/index.css">
 resources:
@@ -136,7 +141,7 @@ resources:
 ::: {#fims-about-listing}
 :::
 
-## [useful FIMS sites](sites/sites_index.qmd)
+## [useful FIMS resources](resources/resources.qmd)
 
-::: {#fims-sites-listing}
+::: {#fims-resources-listing}
 :::

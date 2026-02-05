@@ -3,6 +3,7 @@ title: "January 12–16, 2026"
 date: "January 12, 2026"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - trainings
 three-big-things:
   bt1: "We will freeze development in main on January 19, 2026 for two weeks because of the training at the National Stock Assessment Workshop. All this means is that there will be no releases for that two-week period."
