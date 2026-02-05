@@ -20,7 +20,7 @@ photo:
   text: "Below is a glimpse of what the new json output looks like, where dimensions are provided both in name and in length. Please contact Matthew if you have feedback on this structure."
 ---
   
-{{< include "_fims-weekly-template.qmd" >}}
+{{< include "fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - 64 calendar days until the FIMS CIE Review, we still need a chair.

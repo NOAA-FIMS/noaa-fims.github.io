@@ -24,7 +24,7 @@ photo:
   alt-text: "A screenshot of the table that is created when running FIMS::create_default_parameters()."
 ---
   
-{{< include "_fims-weekly-template.qmd" >}}
+{{< include "fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - 👋Welcome👋 Grant Adams (AFSC) to FIMS!

@@ -27,7 +27,7 @@ photo:
   alt-text: "A screen shot of No Status and In Progress issues from the project board."
 ---
   
-{{< include "_fims-weekly-template.qmd" >}}
+{{< include "fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - The CIE Review will be November 04--06, 2025 and **all** materials must be delivered to the reviewers four weeks prior to this, i.e., October 07, 2025.
