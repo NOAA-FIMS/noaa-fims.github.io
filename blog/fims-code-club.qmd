@@ -2,7 +2,7 @@
 title: "FIMS Code Club"
 subtitle: "Beyond the Code: Building a Community"
 author: "Elizabeth Perl"
-date: "January 20, 2026"
+date: "February 5, 2026"
 categories:
   - learn   
   - code-club
