@@ -22,7 +22,7 @@ photo:
   text: "A new expectation `expect_shape()` is available from {testthat} which checks the dimensions of the object of interest, e.g., number of rows or number of columns! This function could be helpful for FIMS where we expect the model results to have a certain number of rows."
 ---
   
-{{< include "_fims-weekly-template.qmd" >}}
+{{< include "fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
 - Consider attending the [CAPAM workshop](https://www.populationassessment.com/tuna/next-gen-model) on tuna models this week.
