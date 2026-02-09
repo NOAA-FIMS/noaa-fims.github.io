@@ -1,8 +1,9 @@
 ---
-title: "December 22–26, 2025"
+title: "FIMS Weekly - December 22–26, 2025"
 date: "December 22, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - releases
   - R
   - bash

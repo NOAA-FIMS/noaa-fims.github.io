@@ -1,8 +1,9 @@
 ---
-title: "December 29, 2025–January 02, 2026"
+title: "FIMS Weekly - December 29, 2025–January 02, 2026"
 date: "December 29, 2025"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - releases
   - training
 three-big-things:
