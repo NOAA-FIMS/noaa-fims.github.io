@@ -12,9 +12,9 @@ project:
     - images/
     - assets/
     - about/FIMS_TOR_08.26.2021.pdf
-  post-render:
-    - "cp -r _static/. docs/"
-    - "cp -r doxygen docs/"
+  # post-render:
+  #   - "cp -r _static/. docs/"
+  #   - "cp -r doxygen docs/"
 
 website:
   favicon: images/FIMS_hexlogo.png
