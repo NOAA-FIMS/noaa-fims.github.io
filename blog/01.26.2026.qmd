@@ -1,8 +1,9 @@
 ---
-title: "January 26–30, 2026"
+title: "FIMS Weekly - January 26–30, 2026"
 date: "January 26, 2026"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - training
 three-big-things:
   bt1: "We gave one training session and presented three talks this week at the National Stock Assessment Workshop!"
