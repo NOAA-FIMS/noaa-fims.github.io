@@ -1,9 +1,9 @@
 - title: "FIMS"
   description: >
     The primary package of FIMS <br>
-    - [Website](https://noaa-fims.github.io/) <br>
+    - [Website](https://noaa-fims.github.io/FIMS/) <br>
     - [Repository](https://github.com/noaa-fims/fims)
-  path: "https://noaa-fims.github.io/"
+  path: "https://noaa-fims.github.io/FIMS/"
   image: ../images/FIMS_hexlogo.png
   categories: [experimental]
 
