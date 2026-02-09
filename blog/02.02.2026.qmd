@@ -1,8 +1,9 @@
 ---
-title: "February 02–06, 2026"
+title: "FIMS Weekly - February 02–06, 2026"
 date: "February 02, 2026"
 # Change the following categories accordingly
 categories: 
+  - fims-weekly
   - SIS
   - case-studies
   - diagnostics
