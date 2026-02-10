@@ -5,7 +5,7 @@ project:
     - "*.qmd"
     - "sites/*.qmd"
     - "about/*.qmd"
-    - "changelog/*.qmd"
+    - "contact/*.qmd"
     - "blog/*.qmd"
 
   resources:
@@ -38,7 +38,7 @@ website:
           - text: calendar
             href: about/calendar.qmd
           - text: changelog
-            href: changelog/FIMS_CHANGELOG.qmd
+            href: about/FIMS_CHANGELOG.qmd
           - text: acknowledgements
             href: about/acknowledgements.qmd
       - text: blog
