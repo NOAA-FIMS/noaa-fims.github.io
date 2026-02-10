@@ -34,7 +34,7 @@ jobs:
       - name: Get latest version from changelog
         id: changelog_version
         run: |
-          VERSION=$(grep -m1 '^## v' changelog/FIMS_CHANGELOG.qmd | sed -E 's/^## (v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?).*/\1/')
+          VERSION=$(grep -m1 '^## v' about/FIMS_CHANGELOG.qmd | sed -E 's/^## (v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?).*/\1/')
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Set up Quarto
