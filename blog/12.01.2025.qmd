@@ -1,0 +1,46 @@
+---
+title: "FIMS Weekly - December 01–05, 2025"
+date: "December 01, 2025"
+# Change the following categories accordingly
+categories: 
+  - fims-weekly
+  - testing
+three-big-things:
+  bt1: "Our number one goal this week is to get a new release out, which involves trudging through the 13 open Pull Requests and prioritizing which ones will be a part of 0.8.0 and need rebased and which ones will wait for the next release."
+  bt2: "Bai is working hard on sorting out the differences between FIMS and other software in an effort to ramp up the testing in FIMS."
+  bt3: "Effort on the Surplus Production Model is ramping back up. Again, testing has revealed differences between FIMS and other frameworks that needs to be sorted out."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "Thank you to Alex and Peter for helping fix up the FIMS cheat sheet last week. Below is a screen shot of the updates made with respect to what the table of parameters looks like."
+  include-photo: true
+  path: "images/cheat_sheet_2025-12-01.png"
+  alt-text: "A screenshot of the table that is created when running FIMS::create_default_parameters()."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- 👋Welcome👋 Grant Adams (AFSC) to FIMS!
+::: 
+    
+::: {#additional-events}
+
+### Wednesday, December 03
+**FIMS Implementation Team Meeting (Timeline)**
+
+Time: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=kbz-ccew-iij&ref=https://meet.google.com/kbz-ccew-iij)
+
+:::
+
+::: {#photo-code}
+:::
+

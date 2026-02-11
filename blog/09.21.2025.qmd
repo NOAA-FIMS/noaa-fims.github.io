@@ -1,0 +1,67 @@
+---
+title: "FIMS Weekly - September 21–26, 2025"
+date: "September 21, 2025"
+# Change the following categories accordingly
+categories: 
+  - fims-weekly
+  - doxygen
+three-big-things:
+  bt1: "A new release of FIMS will come out this week that contains the PRs brought in last week thanks to Bai and Eric as well as improvements to the documentation thanks to those that showed up to Code Club and the extra design document meetings. Everyone's work is greatly appreciated. Check out the issues listed in the [CIE cleanup milestone](https://github.com/NOAA-FIMS/FIMS/milestone/14) for more tasks to work on."
+  bt2: "Once a bug in the likelihood calculations is fixed in dev-json-caa, this branch will be merged into dev. By the end of the day today though it will be rebased and Nathan can branch off it to start adding projections and Meg and Ian can use it for their diagnostic work."
+  bt3: "The case studies are mid-stream in an update to use {asar} and {stockplotr} for plotting. Thanks to help from Kyle and Sam we have two case studies nearly complete and we hope to get some help porting over the remaining ones this week."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+  code-club: true
+  code-club-date: "Tuesday, {stockplotr}"
+  code-club-name: "FIMS Code Club"
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "doxygen use to be so foreign to me and I wished we could just use roxygen😒. Now, I feel more at home with doxygen and have even learned some tips (see below) to making it better and feel more roxygen like✅."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- 43 more days until the CIE Review; a big thanks to 👏Aaron Berger (NWFSC)👏 for stepping up to the be the chair of the CIE Review
+- The design documents have been moved to `inst/include/design.md` and it is live in the [dev-document branch](https://github.com/NOAA-FIMS/FIMS/blob/6cef68f5a584a52672153ad0d7a76ea6ea66f1be/inst/include/design.md). A big thank you to Kathryn, Bai, Andrea, and Adrianne for your help getting to this point.
+::: 
+    
+::: {#additional-events}
+
+### Thursday, September 25
+**Using {stockplotr}**
+
+Time: 16:00–17:00 E; 13:00–14:00 P; 12:00–13:00 AK; 10:00–11:00 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=jzu-xbnf-bzm&ref=https://meet.google.com/jzu-xbnf-bzm)
+
+### Friday, September 26
+**Using {stockplotr}**
+
+Time: 10:00–11:00 E; 07:00–08:00 P; 06:00–07:00 AK; 04:00–05:00 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=jzu-xbnf-bzm&ref=https://meet.google.com/jzu-xbnf-bzm)
+
+:::
+
+::: {#photo-code}
+```
+// To make a table of contents in a .md file
+[TOC]
+
+// Copy documentation from another function
+@copydoc MyFunctionName
+
+// Link to a function or file
+`FunctionName()` `my_file.hpp`
+
+// Insert an inline or block equation
+\f$a-b=c/f$
+\f[ \text{best} = \alpha - \beta \f]
+```
+:::

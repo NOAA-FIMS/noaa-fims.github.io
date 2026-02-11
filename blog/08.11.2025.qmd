@@ -1,0 +1,53 @@
+---
+title: "FIMS Weekly - August 11–15, 2025"
+date: "August 11, 2025"
+# Change the following categories accordingly
+categories: 
+  - fims-weekly
+  - releases
+  - git/GitHub
+  - VSCode
+three-big-things:
+  bt1: "Sorry for the late FIMS Weekly but I have been sick 🤕 and just haven’t been able to muster enough 🔥to get one together. I am doing better today but still don’t have much of a voice so there is no seaside chat this week."
+  bt2: "v0.6.3 will be released this week, thanks to Andrea finding an intermittent bug when using TMBad on Windows regarding how we were implementing operators in fims_math.hpp."
+  bt3: 
+    - "Lots of work is co-occurring in several branches, I will be missing some in the following list but I hope this helps people get a pulse 💓 on what is going on: (a) Matthew - dev-length-selectivity-rebased trying to find 🐛 in length likelihood, (b) Alex - dev-dbl-norm implementing double normal selectivity, (c) Andrea - dev-osa adding one-step-ahead residuals, (d) Nathan & Andrea - dev-projections-[nathan|andrea] projections, (e) Bai - dev-refactor-nested-parameter-list updating R side of model input, and (f) Kathryn - in ghactions4r allowing /document to work."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+  code-club: true
+  code-club-date: "Tuesday, August 12"
+  code-club-name: "FIMS Code Club (WSL and docker)"
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text and the template will handle it for you. If there is code instead, please uncomment the section below named photo-code.
+photo:
+  text: "During our GitHub training with Microsoft, Bai asked a ❓about git worktrees that kind of blew my mind. I had yet to understand the full question or the response but last week with the [new version of VS Code](https://code.visualstudio.com/updates/v1_103) that was released it started to make sense. VS Code now has [support for git worktrees](https://code.visualstudio.com/updates/v1_103#_git-worktree-support), where worktrees let you check out multiple branches at once within a single clone. This stops the need for having multiple clones of the same repository on a single computer. IMO this is genius. I am constantly making bogus commits or stashing things that I later forgot that I stashed so I can check out a different branch, do one thing, and then switch back to the other branch. Or worse yet, I am on a branch and want to see a file in a different branch so I go online copy and paste the raw text from the “other” branch that I am interested in and then put it in a new file in VS Code. All of these alternates are suboptimal and have led to 🧨, which is obviously not good. I am excited to check out the use of worktrees and if it goes well maybe we can get Jonathan to do a GitHub training on them. First, I had to click on the three dots to the right of “SOURCE CONTROL” and add “Repositories” to what was being shown in my “SOURCE CONTROL” section of VS Code. Second, I clicked the three dots to the left of REPOSITORIES/FIMS, where I currently have dev-fix-exp-TMBad checked out, which brought up a list where I selected Worktrees -> Create Worktree and let me select an additional branch. I chose dev. Now you can see dev is a worktree in the list under FIMS. This is as far as I have gotten in my 🛣️."
+  include-photo: true
+  path: "images/git-worktrees.png"
+  alt-text: "Image of multiple branches checked out on in the FIMS repository using git worktrees."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- This will be the last FIMS Weekly in Google Doc form because Elizabeth created a way to distribute this via html on our FIMS Website 🎉. Emails will still go out but they will just link to where you can find the weekly and maybe a screen shot. I am not sure. Please feel free to email me suggestions.
+- The collaborative workflow repository will be removed once the material is migrated to our beautiful [FIMS website](https://noaa-fims.github.io/). Stay tuned.
+::: 
+    
+::: {#additional-events}
+      
+<!--
+### DAY DATE
+**NAME**
+
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+:::
+
+::: {#photo-code}
+:::
+        
+
+

@@ -1,0 +1,46 @@
+---
+title: "FIMS Weekly - November 24–28, 2025"
+date: "November 24, 2025"
+# Change the following categories accordingly
+categories: 
+  - fims-weekly
+  - Posit
+  - releases
+three-big-things:
+  bt1: "This week's Code Club will be our first installment of a 3-hour time window for coding. You can think of this as a monthly hackathon now instead of our weekly sessions. We will work on (1) reviewing the outstanding Pull Requests to dev, (2) writing a log statement for the newest version that is about to be released, and (3) updating the cheat sheet given the changes to the R interface. Breakout rooms will allow you to work on things in a quiet space or in small groups if desired."
+  bt2: "With the shortened week because of the holiday, I am not certain we will be able to get a release out but we will at least work towards that goal."
+  bt3: "Now that the ICES Methods Group Working Group is over, we will resume forward progress on the Surplus Production Model, which will be our second release from now."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+  code-club: true
+  code-club-date: "Tuesday, "
+  code-club-name: "FIMS Code Club"
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "A few months ago, Posit introduced [Databot](https://posit.co/blog/introducing-databot/) to help explore your data. This is not really of direct interest to FIMS but I think the concept is. Our figures and tables should with a FIMS data object should be relatively similar where we build a command such as `summarize()` to give similar summaries."
+  include-photo: true
+  path: "https://posit.co/wp-content/uploads/2025/08/databot-blog.pdf.jpg"
+  alt-text: "Collaborate and automate with Databot."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- Happy 🦃Thanksgiving Day🦃 to you and your friends and family this holiday season.
+- The FIMS CIE Review has been rescheduled to April 21–23, 2026.
+::: 
+    
+::: {#additional-events}
+:::
+
+::: {#photo-code}
+:::
+
+        
+
+

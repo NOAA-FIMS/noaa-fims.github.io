@@ -1,0 +1,61 @@
+---
+title: "FIMS Weekly - January 05–09, 2026"
+date: "January 05, 2026"
+# Change the following categories accordingly
+categories:
+  - fims-weekly
+  - Surplus Production
+  - DSEM
+  - codespaces
+three-big-things:
+  bt1: "Andrea has been working on the Surplus Production model and is making great strides with respect to making comparisons to other Surplus Production models. There are some kinks with the Bayesian estimation that she is currently working out, which will also help the Catch-At-Age model, before we can release it."
+  bt2: "We are still working on rebasing the dev-projections-caa branch to dev. Once this is complete, the vignette needs to be finished and then the branch can be merged into dev for a new release."
+  bt3: "Bai is working on adding diet and ecosystem data to simulated data sets available from Ecopath with Ecosim models to facilitate testing of the use of Dynamic Structural Equation Modeling (DSEM) within FIMS."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+  code-club: true
+  code-club-date: "Tuesday, January 06"
+  code-club-name: "FIMS Code Club"
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "The theme set of 'Celebrating a century of marine science' within ICES Journal of Marine Science is about to close on January 30, 2026. We submitted our FIMS manuscript to this special issue but we are still waiting on receiving reviews."
+  include-photo: true
+  path: "images/ICESJMS+100+Image-+white+BG.jpg"
+  alt-text: "A drawing with marine life and 100 years ICES Journal of Marine Science in the center."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- If you were affected by the shortage of funds in our codespaces account please reply to the Google Chat that was started last week indicating regarding the inability to use codespaces after we reached 100 percent of our funding limit.
+::: 
+    
+::: {#additional-events}
+      
+
+### Wednesday, January 07
+**FIMS Implementation Team Meeting (Trainings)**
+
+Time: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=kbz-ccew-iij&ref=https://meet.google.com/kbz-ccew-iij)
+
+
+:::
+
+<!--
+::: {#photo-code}
+```
+PUT CODE HERE
+```
+:::
+-->
+        
+:::
+
+

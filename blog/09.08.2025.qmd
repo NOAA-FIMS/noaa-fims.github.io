@@ -1,0 +1,83 @@
+---
+title: "FIMS Weekly - September 08–12, 2025"
+date: "September 08, 2025"
+# Change the following categories accordingly
+categories: 
+  - fims-weekly
+  - json
+  - purrr
+three-big-things:
+  bt1: "On Wednesday, the Science Board will be given an update and we will discuss creating a formal FIMS Transition Plan. Thank you Jane for volunteering to attend the presentation to help take notes."
+  bt2: "None of the PRs that I wanted to merge in last week happened so merging those is a goal again. Attend Code Club on Tuesday if you are interested in helping write R code to read in the json output."
+  bt3: "By the end of the day on Wednesday there will be a prioritized list of issues that need completed before October 01, 2025 because they are needed for the documentation that will be sent to the CIE Reviewers."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+  code-club: true
+  code-club-date: "Tuesday, json in R"
+  code-club-name: "FIMS Code Club"
+  seaside-chat: true
+  seaside-chat-date: "Thursday, data and seasonality"
+  seaside-chat-name: "FIMS Seaside Chat"
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text and the template will handle it for you. If there is code instead, please uncomment the section below named photo-code.
+photo:
+  text: "Last week I showed the json output for dimensionality, this week I show the tidyverse code to create a tibble from that same information."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- Please welcome 👋 Adrianne Wilson 👋 to the FIMS Team!
+- 57 calendar days until the FIMS CIE Review, we now have a chair.
+::: 
+    
+::: {#additional-events}
+      
+<!--
+### DAY DATE
+**NAME**
+
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+        
+:::
+
+::: {#photo-code}
+
+```
+#' Covert the dimension information from a FIMS json output into a tibble
+#'
+#' Dimensions in the json output are stored as a list of length two, with the
+#' header information containing the name of the dimension and the dimensions
+#' containing integers specifying the length for each dimension. The result
+#' helps interpret how the FIMS output is structured given it is dimension
+#' folded into a single vector in the json output.
+#'
+#' @param data A list containing the header and dimensions information from a
+#'   FIMS json output object.
+#' @return
+#' A tibble containing ordered rows for each combination of the dimensions.
+#' @examples
+#' dummy_dimensions <- list(
+#'   header = list("nyears", "nages"),
+#'   dimensions = list(30L, 12L)
+#' )
+#' dimensions_to_tibble(dummy_dimensions)
+dimensions_to_tibble <- function(data) {
+  # Create names that are informative for columns b/c nyears is not helpful
+  better_names <- unlist(data[["header"]]) |>
+    gsub(pattern = "^n(.+)s$", replacement = "\\1_ids")
+  names(data[["dimensions"]]) <- better_names
+  # Create the returned tibble by first sequencing from 1:n for each dimension
+  data[["dimensions"]] |>
+    purrr::map(seq) |>
+    expand.grid() |>
+    tibble::as_tibble() |>
+    dplyr::arrange(!!! rlang::syms(better_names))
+}
+```   
+
+:::
