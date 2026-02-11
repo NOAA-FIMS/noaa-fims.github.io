@@ -102,9 +102,6 @@ format:
       light: assets/syntax-elm-light.theme
       dark: assets/syntax-elm-dark.theme
     code-block-bg: false
-    # If we want analystics we can add them through this code and creating a counter.dev dashboard
-    # include-in-header:
-    #   text: <script src="https://cdn.counter.dev/script.js" data-id="10454114-dc3f-4c23-a4da-87e7f2c7c58d" data-utcoffset="-4"></script>
 
 execute:
   freeze: auto
