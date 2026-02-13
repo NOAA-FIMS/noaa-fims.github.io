@@ -284,6 +284,34 @@
     "href": "changelog/FIMS_CHANGELOG.html#whats-changed",
     "title": "FIMS Change Log",
     "section": "What’s Changed",
+    "text": "What’s Changed\n\nModel time series can now include projections\nVignette on sparsity with random effects given the parameterization of the model\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.7.1…v0.8.0"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.7.1-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.7.1-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.7.1 (release notes)",
+    "text": "v0.7.1 (release notes)"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#whats-changed-1",
+    "href": "changelog/FIMS_CHANGELOG.html#whats-changed-1",
+    "title": "FIMS Change Log",
+    "section": "What’s Changed",
+    "text": "What’s Changed\n\nfix(doxygen): adds the correct header to doxygen website in #1062\nfix(doxygen): locations in #1064\nfix(json): allow for mixed types with NA by @msupernaw in #1070\nfix: tibble print formatting issue in vignettes #1012 by @awilnoaa in #1087\nfix(do_sd_report): Skips the sdreport calculation when optimize=FALSE to prevent NaN warning in #1102\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.7.0…v0.7.1"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.7.0-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.7.0-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.7.0 (release notes)",
+    "text": "v0.7.0 (release notes)"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#whats-changed-2",
+    "href": "changelog/FIMS_CHANGELOG.html#whats-changed-2",
+    "title": "FIMS Change Log",
+    "section": "What’s Changed",
     "text": "What’s Changed\n\nTurns on the code for model families that allows for more model types in the future than just the catch-at-age model that is currently implemented through the use of FisheryModelBase, which is a unified parent class for all model families. Moved derived quantities (e.g., numbers at age, spawning biomass, catch at age) from Fleet and Population objects into FisheryModelBase. Refactored Population and Fleet classes to be trait only objects.\nConverts nested list of lists used for model control to a tibble with one line per parameter that can be un-nested and nested.\nIncreased the documentation of FIMS by using formulas in doxygen, building the doxygen on the NOAA-FIMS github.io site instead of its own web page, writing more information in the testing README, etc.\nRemoves seasonality logic given it was not being used.\nRemoves date columns in input data in exchange for timing.\nUses {stockplotr} for the figures in the “fims-demo” vignette.\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.6.3…v0.7.0"
   },
   {
@@ -357,8 +385,8 @@
     "text": "v0.3.0 (release notes)"
   },
   {
-    "objectID": "changelog/FIMS_CHANGELOG.html#whats-changed-1",
-    "href": "changelog/FIMS_CHANGELOG.html#whats-changed-1",
+    "objectID": "changelog/FIMS_CHANGELOG.html#whats-changed-3",
+    "href": "changelog/FIMS_CHANGELOG.html#whats-changed-3",
     "title": "FIMS Change Log",
     "section": "What’s Changed",
     "text": "What’s Changed\nSummary of high level/breaking changes:\n\nFits to length data using an age-to-length-conversion matrix, data1 includes the necessary information needed to fit to both ages and lengths.\nAdds C++ ParameterVector to allow for the estimation of time-varying parameters.\nImplements R wrapper functions to facilitate\ncreating the input model specifications with create_default_*(), update_parameters(), and initialize_*();\nadding -999 to the missing fleet, year, age, length, etc. combinations;\nrunning the model with a user-supplied argument of n_of_loops, where the default is three, to restart the optimizer from the previous run of nlmimb;\nsummarizing the output with the FIMSFit() function and class.\nImplements a switch for global verbosity within FIMS through the use of {cli} messages and warnings.\nUpdates the logging system complete with a vignette about how to use it, the logging system can be used for both R and C++ errors, warnings, and information.\nCreates the initial infrastructure to implement random effects with density functions.\nImplements a helper function to get the parameter names from the C++ code and populate the results with those names.\nMakes lpdf_vec return 0 if data is missing.\n\nMore detail: See the commit message for this release or the full changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.2.0…v0.3.0."
@@ -371,8 +399,8 @@
     "text": "v0.2.0 (release notes)"
   },
   {
-    "objectID": "changelog/FIMS_CHANGELOG.html#whats-changed-2",
-    "href": "changelog/FIMS_CHANGELOG.html#whats-changed-2",
+    "objectID": "changelog/FIMS_CHANGELOG.html#whats-changed-4",
+    "href": "changelog/FIMS_CHANGELOG.html#whats-changed-4",
     "title": "FIMS Change Log",
     "section": "What’s Changed",
     "text": "What’s Changed\nSummary of high level/breaking changes: - Added a pkgdown site for FIMS - Add code cov tests and site link - Remove recruitment bias correction and adjustment because we plan to use TMB (#185) - Improve logging coverage and separate logs into multiple files - Put recruitment deviations on the log scale when input - Report more values with standard errors - Code cleanup, documentation, and consistency improvements - Remove rapidjson dependence - Add start_year and end_year as slots to FIMSFrame - Make log_obs_error a vector - Load the Rcpp module upon package install so components don’t need to be prefaced by fims$ - Refactor vectors to use fims::Vector class - Add Newton steps to FIMS integration test to improve convergence in integration test\nMore detail: - Update issue forms by @k-doering-NOAA in #426 - Update DESCRIPTION to match release number by @ChristineStawitz-NOAA in #425 - resolved issues causing warnings by @MOshima-PIFSC in #430 - #307: export age comp function by @k-doering-NOAA in #438 - 368 convert fims to a pkgdown site by @Bai-Li-NOAA in #437 - #242 fix codecov calc and upload by @k-doering-NOAA in #436 - 391 feature find a file parser for c++ tests by @msupernaw in #434 - fix: deploying pkgdown by @k-doering-NOAA in #448 - fix: remove set() by @KyleShertzer-NOAA in #451 - Update DESCRIPTION by @peterkuriyama-NOAA in #435 - Remove bias correction/adjustment by @Bai-Li-NOAA in #452 - doc: error and progress logging for information.hpp by @nathanvaughan-NOAA in #424 - fix: refactor parameter constructor by @Bai-Li-NOAA in #455 - doc: logit_steep correction by @ChristineStawitz-NOAA in #463 - refactor add_tmb_to_fims_internal by @msupernaw in #459 - Created get-gtest-codecov to create coverage.xml report for issue #242 by @MOshima-PIFSC in #470 - #441: fix reviewer checklist build trigger, edit checklist by @k-doering-NOAA in #474 - 377 refactor call report f from modelhpp instead of fleet and population by @Andrea-Havron-NOAA in #466 - Changed  to  by @MOshima-PIFSC in #487 - 411 refactor naming convention of member and local variables in the fleet class by @Bai-Li-NOAA in #476 - Remove test data from fims deterministic folder by @Bai-Li-NOAA in #481 - Update GHA workflows to enforce FIMS installation by @Bai-Li-NOAA in #489 - renamed dimension folded indices to be clearer by @peterkuriyama-NOAA in #480 - rm acomp/index nll tests objects by @ChristineStawitz-NOAA in #491 - Delete test files by @ChristineStawitz-NOAA in #492 - fix: update windows-2019 to windows-latest by @Bai-Li-NOAA in #495 - Create multiple namespaces in FIMS by @k-doering-NOAA in #479 - fix: use expect_equal() for deterministic tests by @Bai-Li-NOAA in #496 - fix: build trigger only on pr being opened by @k-doering-NOAA in #498 - 407 updating log files by @nathanvaughan-NOAA in #499 - Name refactoring for tests, growth, and median by @nathanvaughan-NOAA in #503 - Fix the test for population.CalculateRecruitment() by @Bai-Li-NOAA in #508 - fix: update run google test to use windows latest by @k-doering-NOAA in #511 - refactor: move duplicated code into the test fixture section by @Bai-Li-NOAA in #497 - Fims concurrent by @ChristineStawitz-NOAA in #520 - Remove third party library rapidjson by @Bai-Li-NOAA in #519 - Make Doxygen comment style the same by @k-doering-NOAA in #518 - refactor recruitment deviations to log space by @Andrea-Havron-NOAA in #514 - add documentation to test-fims-estimation by @Andrea-Havron-NOAA in #515 - Added start_year and end_year as slots to FIMSFrame by @kellijohnson-NOAA in #501 - New 464 load module by @Andrea-Havron-NOAA in #526 - make log_obs_error a vector by @ChristineStawitz-NOAA in #532 - Fims vector by @ChristineStawitz-NOAA in #517 - Release mq by @ChristineStawitz-NOAA in #533"
