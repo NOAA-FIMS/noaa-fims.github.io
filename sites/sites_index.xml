@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>FIMS</title>
+<link>https://noaa-fims.github.io/sites/sites_index.html</link>
+<atom:link href="https://noaa-fims.github.io/sites/sites_index.xml" rel="self" type="application/rss+xml"/>
+<description>Websites associated with FIMS.
+</description>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Tue, 17 Feb 2026 15:06:07 GMT</lastBuildDate>
+<item>
+  <title>🔍 FIMS case studies</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>Test cases, based on regional assessments, to illustrate use of FIMS.
+</description>
+  <category>WHAM</category>
+  <category>SS3</category>
+  <category>ASAP</category>
+  <category>TMB</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>&lt;i class=&quot;fab fa-r-project&quot;&gt;&lt;/i&gt; FIMS R Documentation</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>Packagedown site for FIMS package.
+</description>
+  <category>R</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>&lt;i class=&quot;fa-solid fa-plus&quot;&gt;&lt;/i&gt; FIMS C++ Documentation</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>Documentation for FIMS C++ functions, written using doxygen.
+</description>
+  <category>C++</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>cplusplus.com</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>A fast-paced, self-teaching tutorial covering the modern concepts of C++.
+</description>
+  <category>C++</category>
+  <category>training</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>geeksforgeeks.org</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>Free online tutorials for many computer programming languages, including C++.
+</description>
+  <category>C++</category>
+  <category>training</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>learncpp.com</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>Skill up with free C++ tutorials.
+</description>
+  <category>C++</category>
+  <category>training</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>positioniseverything.net</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>The latest coding and computing news &amp; tips for C++.
+</description>
+  <category>C++</category>
+  <category>training</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>docs.microsoft.com</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>Documentation for the C++ Standard Library, which contains functions that perform services such as input and output and provide efficient implementations of frequently used operations.
+</description>
+  <category>C++</category>
+  <category>documentation</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>rcpp.org</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>Numerous examples, as well as extensive documentation, to facilitate the use of Rcpp.
+</description>
+  <category>Rcpp</category>
+  <category>training</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>github.com/RcppCore</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>Source code for Rcpp.
+</description>
+  <category>Rcpp</category>
+  <category>github</category>
+  <category>documentation</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>mjdenny.com</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>A tutorial that was originally presented as part of a 3-day intensive Data Science Workshop at UMass Amherst in June 2015 on using Rcpp.
+</description>
+  <category>Rcpp</category>
+  <category>training</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>r4MAS</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>Package to translate stock synthesis input files into MAS inputs
+</description>
+  <category>SS3</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>FIMSdiags</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>R package to run model diagnostics on FIMS models
+</description>
+  <category>R</category>
+  <category>diagnostics</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>FIMSRTMB</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>The repository for development of the RTMB branch of FIMS
+</description>
+  <category>R</category>
+  <category>TMB</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>Rcpp in Advanced R</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>High performance functions with Rcpp within the Advanced R online resource by Hadley Wickham
+</description>
+  <category>Rcpp</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>Rcpp: Seamless R and C++ Integration</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>&quot;Eddelbuettel, D., &amp; Francois, R. (2011). Rcpp: Seamless R and C++ Integration. Journal of Statistical Software, 40(8), 1–18. [10.18637/jss.v040.i08](https://www.jstatsoft.org/article/view/v040i08)&quot;
+</description>
+  <category>Rcpp</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>Rcpp for everyone</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>`Rcpp` for everyone by Masaki E. Tsuda focuses on providing necessary information to users who are not familiar with C++
+</description>
+  <category>Rcpp</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>Exposing C++ functions and classes with Rcpp modules</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>&#39;Exposing C++ functions and classes with Rcpp modules&#39; by Dirk Eddelbuettel and Romain François focuses on Rcpp modules that allow programmers to expose C++ functions and classes to R with relative ease
+</description>
+  <category>Rcpp</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+<item>
+  <title>Rcpp quick reference</title>
+  <link>https://noaa-fims.github.io/</link>
+  <description>A short pdf produced by the authors of the Rcpp package that is analogous to a tidyverse cheat sheet
+</description>
+  <category>Rcpp</category>
+  <guid>https://noaa-fims.github.io/</guid>
+  <pubDate>Tue, 17 Feb 2026 15:06:07 GMT</pubDate>
+</item>
+</channel>
+</rss>

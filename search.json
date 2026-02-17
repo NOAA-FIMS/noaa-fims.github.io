@@ -1,0 +1,849 @@
+[
+  {
+    "objectID": "sites/sites_index.html",
+    "href": "sites/sites_index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n🔍 FIMS case studies\n\n\n\nWHAM\n\nSS3\n\nASAP\n\nTMB\n\n\n\nTest cases, based on regional assessments, to illustrate use of FIMS.\n\n\n\n\n\n\n\n\n\n\n FIMS R Documentation\n\n\n\nR\n\n\n\nPackagedown site for FIMS package.\n\n\n\n\n\n\n\n\n\n\n FIMS C++ Documentation\n\n\n\nC++\n\n\n\nDocumentation for FIMS C++ functions, written using doxygen.\n\n\n\n\n\n\n\n\n\n\ncplusplus.com\n\n\n\nC++\n\ntraining\n\n\n\nA fast-paced, self-teaching tutorial covering the modern concepts of C++.\n\n\n\n\n\n\n\n\n\n\ngeeksforgeeks.org\n\n\n\nC++\n\ntraining\n\n\n\nFree online tutorials for many computer programming languages, including C++.\n\n\n\n\n\n\n\n\n\n\nlearncpp.com\n\n\n\nC++\n\ntraining\n\n\n\nSkill up with free C++ tutorials.\n\n\n\n\n\n\n\n\n\n\npositioniseverything.net\n\n\n\nC++\n\ntraining\n\n\n\nThe latest coding and computing news & tips for C++.\n\n\n\n\n\n\n\n\n\n\ndocs.microsoft.com\n\n\n\nC++\n\ndocumentation\n\n\n\nDocumentation for the C++ Standard Library, which contains functions that perform services such as input and output and provide efficient implementations of frequently used operations.\n\n\n\n\n\n\n\n\n\n\nrcpp.org\n\n\n\nRcpp\n\ntraining\n\n\n\nNumerous examples, as well as extensive documentation, to facilitate the use of Rcpp.\n\n\n\n\n\n\n\n\n\n\ngithub.com/RcppCore\n\n\n\nRcpp\n\ngithub\n\ndocumentation\n\n\n\nSource code for Rcpp.\n\n\n\n\n\n\n\n\n\n\nmjdenny.com\n\n\n\nRcpp\n\ntraining\n\n\n\nA tutorial that was originally presented as part of a 3-day intensive Data Science Workshop at UMass Amherst in June 2015 on using Rcpp.\n\n\n\n\n\n\n\n\n\n\nr4MAS\n\n\n\nSS3\n\n\n\nPackage to translate stock synthesis input files into MAS inputs\n\n\n\n\n\n\n\n\n\n\nFIMSdiags\n\n\n\nR\n\ndiagnostics\n\n\n\nR package to run model diagnostics on FIMS models\n\n\n\n\n\n\n\n\n\n\nFIMSRTMB\n\n\n\nR\n\nTMB\n\n\n\nThe repository for development of the RTMB branch of FIMS\n\n\n\n\n\n\n\n\n\n\nRcpp in Advanced R\n\n\n\nRcpp\n\n\n\nHigh performance functions with Rcpp within the Advanced R online resource by Hadley Wickham\n\n\n\n\n\n\n\n\n\n\nRcpp: Seamless R and C++ Integration\n\n\n\nRcpp\n\n\n\n“Eddelbuettel, D., & Francois, R. (2011). Rcpp: Seamless R and C++ Integration. Journal of Statistical Software, 40(8), 1–18. 10.18637/jss.v040.i08”\n\n\n\n\n\n\n\n\n\n\nRcpp for everyone\n\n\n\nRcpp\n\n\n\nRcpp for everyone by Masaki E. Tsuda focuses on providing necessary information to users who are not familiar with C++\n\n\n\n\n\n\n\n\n\n\nExposing C++ functions and classes with Rcpp modules\n\n\n\nRcpp\n\n\n\n‘Exposing C++ functions and classes with Rcpp modules’ by Dirk Eddelbuettel and Romain François focuses on Rcpp modules that allow programmers to expose C++ functions and classes to R with relative ease\n\n\n\n\n\n\n\n\n\n\nRcpp quick reference\n\n\n\nRcpp\n\n\n\nA short pdf produced by the authors of the Rcpp package that is analogous to a tidyverse cheat sheet\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "packages/index.html",
+    "href": "packages/index.html",
+    "title": "FIMS Packages",
+    "section": "",
+    "text": "FIMS\n\n\n\nexperimental\n\n\n\nThe primary package of FIMS  - Link to website  - Link to repository\n\n\n\n\n\n\n\n\n\n\nFIMSdiags\n\n\n\nexperimental\n\n\n\nRun common diagnostic analyses on FIMS models  - Link to website  - [Link to…\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fims-weekly/index.html",
+    "href": "fims-weekly/index.html",
+    "title": "FIMS Weekly",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nFebruary 16–20, 2026\n\n\n\nreleases\n\n\n\n\n\n\nFeb 16, 2026\n\n\n\n\n\n\n\nFebruary 09–13, 2026\n\n\n\ntesting\n\ncase-studies\n\n\n\n\n\n\nFeb 9, 2026\n\n\n\n\n\n\n\nFebruary 02–06, 2026\n\n\n\nSIS\n\ncase-studies\n\ndiagnostics\n\n\n\n\n\n\nFeb 2, 2026\n\n\n\n\n\n\n\nJanuary 26–30, 2026\n\n\n\ntraining\n\n\n\n\n\n\nJan 26, 2026\n\n\n\n\n\n\n\nJanuary 19–23, 2026\n\n\n\nreleases\n\ntesting\n\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\nJanuary 12–16, 2026\n\n\n\ntrainings\n\n\n\n\n\n\nJan 12, 2026\n\n\n\n\n\n\n\nJanuary 05–09, 2026\n\n\n\nSurplus Production\n\nDSEM\n\ncodespaces\n\n\n\n\n\n\nJan 5, 2026\n\n\n\n\n\n\n\nDecember 29, 2025–January 02, 2026\n\n\n\nreleases\n\ntraining\n\n\n\n\n\n\nDec 29, 2025\n\n\n\n\n\n\n\nDecember 22–26, 2025\n\n\n\nreleases\n\nR\n\nbash\n\n\n\n\n\n\nDec 22, 2025\n\n\n\n\n\n\n\nDecember 15–19, 2025\n\n\n\nreleases\n\nR\n\n\n\n\n\n\nDec 15, 2025\n\n\n\n\n\n\n\nDecember 08–12, 2025\n\n\n\nreleases\n\nprojections\n\n\n\n\n\n\nDec 8, 2025\n\n\n\n\n\n\n\nDecember 01–05, 2025\n\n\n\ntesting\n\n\n\n\n\n\nDec 1, 2025\n\n\n\n\n\n\n\nNovember 24–28, 2025\n\n\n\nPosit\n\nreleases\n\n\n\n\n\n\nNov 24, 2025\n\n\n\n\n\n\n\nNovember 17–21, 2025\n\n\n\ncommunity playbook\n\nschedule\n\n\n\n\n\n\nNov 17, 2025\n\n\n\n\n\n\n\nSeptember 29–October 03, 2025\n\n\n\ntesting\n\ndocumentation\n\ndoxygen\n\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nSeptember 21–26, 2025\n\n\n\ndoxygen\n\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nSeptember 15–19, 2025\n\n\n\nvignettes\n\n\n\n\n\n\nSep 15, 2025\n\n\n\n\n\n\n\nSeptember 08–12, 2025\n\n\n\njson\n\npurrr\n\n\n\n\n\n\nSep 8, 2025\n\n\n\n\n\n\n\nSeptember 01–05, 2025\n\n\n\njson\n\nprojections\n\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nAugust 25–29, 2025\n\n\n\ndocumentation\n\ninterface\n\n\n\n\n\n\nAug 25, 2025\n\n\n\n\n\n\n\nAugust 18–22, 2025\n\n\n\ntesting\n\n\n\n\n\n\nAug 18, 2025\n\n\n\n\n\n\n\nAugust 11–15, 2025\n\n\n\nreleases\n\ngit/GitHub\n\nVSCode\n\n\n\n\n\n\nAug 11, 2025\n\n\n\n\n\n\n\nAugust 04–08, 2025\n\n\n\ncase studies\n\nprojections\n\n\n\n\n\n\nAug 4, 2025\n\n\n\n\n\n\n\nJuly 28–August 1, 2025\n\n\n\ntesting\n\nselectivity\n\ndiagnostics\n\nprojections\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\nJuly 21–25, 2025\n\n\n\ntesting\n\nselectivity\n\nprojections\n\n\n\n\n\n\nJul 21, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fims-weekly/12.29.2025.html#fims-announcements",
+    "href": "fims-weekly/12.29.2025.html#fims-announcements",
+    "title": "December 29, 2025–January 02, 2026",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThere will be a FIMS training at the National Stock Assessment Workshop in La Jolla, California on January 26th in the afternoon. The training will focus on how to run a simple FIMS model on a Google Cloud workstation and providing assistance for fitting data sets brought by attendees with FIMS.\nPlease welcome 👋 Dan Goethel to FIMS."
+  },
+  {
+    "objectID": "fims-weekly/12.29.2025.html#upcoming-events",
+    "href": "fims-weekly/12.29.2025.html#upcoming-events",
+    "title": "December 29, 2025–January 02, 2026",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "fims-weekly/12.29.2025.html#photo-of-the-week",
+    "href": "fims-weekly/12.29.2025.html#photo-of-the-week",
+    "title": "December 29, 2025–January 02, 2026",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nAs a great way to visually show off code to create a {ggplot2} figure, there is a newer package out called ggram that displays the code used to create a figure alongside the figure itself using {patchwork}. This could be a unique way to display figures in training materials such as vignettes, especially vignettes that are meant to be displayed as presentations."
+  },
+  {
+    "objectID": "fims-weekly/12.15.2025.html#fims-announcements",
+    "href": "fims-weekly/12.15.2025.html#fims-announcements",
+    "title": "December 15–19, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nPlease welcome 👋 Erik Williams to FIMS."
+  },
+  {
+    "objectID": "fims-weekly/12.15.2025.html#upcoming-events",
+    "href": "fims-weekly/12.15.2025.html#upcoming-events",
+    "title": "December 15–19, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nWednesday,\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
+  },
+  {
+    "objectID": "fims-weekly/12.15.2025.html#photo-of-the-week",
+    "href": "fims-weekly/12.15.2025.html#photo-of-the-week",
+    "title": "December 15–19, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nHas anyone heard of {fastverse} before? It appears to be a {tidyverse} style group of packages built on C++ code that is meant for quick analyses of data, unlike traditional tidyverse packages that are known to be easy to understand but slow. See the code below for installation and feel free to start a Discussion on GitHub about the packages if they seem useful, especially as our input and output data frames become larger."
+  },
+  {
+    "objectID": "fims-weekly/12.01.2025.html#fims-announcements",
+    "href": "fims-weekly/12.01.2025.html#fims-announcements",
+    "title": "December 01–05, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\n👋Welcome👋 Grant Adams (AFSC) to FIMS!"
+  },
+  {
+    "objectID": "fims-weekly/12.01.2025.html#upcoming-events",
+    "href": "fims-weekly/12.01.2025.html#upcoming-events",
+    "title": "December 01–05, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\n\nWednesday, December 03\nFIMS Implementation Team Meeting (Timeline)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
+  },
+  {
+    "objectID": "fims-weekly/12.01.2025.html#photo-of-the-week",
+    "href": "fims-weekly/12.01.2025.html#photo-of-the-week",
+    "title": "December 01–05, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nThank you to Alex and Peter for helping fix up the FIMS cheat sheet last week. Below is a screen shot of the updates made with respect to what the table of parameters looks like.\n\n\n:::"
+  },
+  {
+    "objectID": "fims-weekly/11.17.2025.html#fims-announcements",
+    "href": "fims-weekly/11.17.2025.html#fims-announcements",
+    "title": "November 17–21, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThe ICES Methods Group Working Group is convening this week at the University of Washington and remotely. Please contact Andrea Havron if you are interested in participating."
+  },
+  {
+    "objectID": "fims-weekly/11.17.2025.html#upcoming-events",
+    "href": "fims-weekly/11.17.2025.html#upcoming-events",
+    "title": "November 17–21, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "fims-weekly/11.17.2025.html#photo-of-the-week",
+    "href": "fims-weekly/11.17.2025.html#photo-of-the-week",
+    "title": "November 17–21, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nAs we update our website to be the best ‘community playbook’ that it can be, we will be adding some icons to titles to help users of all types navigate the pages. Look for each of the icons throughout this site based on which type of information you are looking for.\n\n Developer  New User  Power User  Receiver of Results"
+  },
+  {
+    "objectID": "fims-weekly/09.21.2025.html#fims-announcements",
+    "href": "fims-weekly/09.21.2025.html#fims-announcements",
+    "title": "September 21–26, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\n43 more days until the CIE Review; a big thanks to 👏Aaron Berger (NWFSC)👏 for stepping up to the be the chair of the CIE Review\nThe design documents have been moved to inst/include/design.md and it is live in the dev-document branch. A big thank you to Kathryn, Bai, Andrea, and Adrianne for your help getting to this point."
+  },
+  {
+    "objectID": "fims-weekly/09.21.2025.html#upcoming-events",
+    "href": "fims-weekly/09.21.2025.html#upcoming-events",
+    "title": "September 21–26, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday, {stockplotr}\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\n\nThursday, September 25\nUsing {stockplotr}\nTime: 16:00–17:00 E; 13:00–14:00 P; 12:00–13:00 AK; 10:00–11:00 H Location: Virtual Online: Google meet\n\n\nFriday, September 26\nUsing {stockplotr}\nTime: 10:00–11:00 E; 07:00–08:00 P; 06:00–07:00 AK; 04:00–05:00 H Location: Virtual Online: Google meet"
+  },
+  {
+    "objectID": "fims-weekly/09.21.2025.html#photo-of-the-week",
+    "href": "fims-weekly/09.21.2025.html#photo-of-the-week",
+    "title": "September 21–26, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\ndoxygen use to be so foreign to me and I wished we could just use roxygen😒. Now, I feel more at home with doxygen and have even learned some tips (see below) to making it better and feel more roxygen like✅.\n\n// To make a table of contents in a .md file\n[TOC]\n\n// Copy documentation from another function\n@copydoc MyFunctionName\n\n// Link to a function or file\n`FunctionName()` `my_file.hpp`\n\n// Insert an inline or block equation\n\\f$a-b=c/f$\n\\f[ \\text{best} = \\alpha - \\beta \\f]"
+  },
+  {
+    "objectID": "fims-weekly/09.08.2025.html#fims-announcements",
+    "href": "fims-weekly/09.08.2025.html#fims-announcements",
+    "title": "September 08–12, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nPlease welcome 👋 Adrianne Wilson 👋 to the FIMS Team!\n57 calendar days until the FIMS CIE Review, we now have a chair."
+  },
+  {
+    "objectID": "fims-weekly/09.08.2025.html#upcoming-events",
+    "href": "fims-weekly/09.08.2025.html#upcoming-events",
+    "title": "September 08–12, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday, json in R\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, data and seasonality\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
+  },
+  {
+    "objectID": "fims-weekly/09.08.2025.html#photo-of-the-week",
+    "href": "fims-weekly/09.08.2025.html#photo-of-the-week",
+    "title": "September 08–12, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nLast week I showed the json output for dimensionality, this week I show the tidyverse code to create a tibble from that same information.\n\n#' Covert the dimension information from a FIMS json output into a tibble\n#'\n#' Dimensions in the json output are stored as a list of length two, with the\n#' header information containing the name of the dimension and the dimensions\n#' containing integers specifying the length for each dimension. The result\n#' helps interpret how the FIMS output is structured given it is dimension\n#' folded into a single vector in the json output.\n#'\n#' @param data A list containing the header and dimensions information from a\n#'   FIMS json output object.\n#' @return\n#' A tibble containing ordered rows for each combination of the dimensions.\n#' @examples\n#' dummy_dimensions &lt;- list(\n#'   header = list(\"nyears\", \"nages\"),\n#'   dimensions = list(30L, 12L)\n#' )\n#' dimensions_to_tibble(dummy_dimensions)\ndimensions_to_tibble &lt;- function(data) {\n  # Create names that are informative for columns b/c nyears is not helpful\n  better_names &lt;- unlist(data[[\"header\"]]) |&gt;\n    gsub(pattern = \"^n(.+)s$\", replacement = \"\\\\1_ids\")\n  names(data[[\"dimensions\"]]) &lt;- better_names\n  # Create the returned tibble by first sequencing from 1:n for each dimension\n  data[[\"dimensions\"]] |&gt;\n    purrr::map(seq) |&gt;\n    expand.grid() |&gt;\n    tibble::as_tibble() |&gt;\n    dplyr::arrange(!!! rlang::syms(better_names))\n}"
+  },
+  {
+    "objectID": "fims-weekly/08.25.2025.html#fims-announcements",
+    "href": "fims-weekly/08.25.2025.html#fims-announcements",
+    "title": "August 25–29, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\n71 calendar days until the FIMS CIE Review, we still need a chair."
+  },
+  {
+    "objectID": "fims-weekly/08.25.2025.html#upcoming-events",
+    "href": "fims-weekly/08.25.2025.html#upcoming-events",
+    "title": "August 25–29, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday, document SPM\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, Tutorial\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
+  },
+  {
+    "objectID": "fims-weekly/08.25.2025.html#photo-of-the-week",
+    "href": "fims-weekly/08.25.2025.html#photo-of-the-week",
+    "title": "August 25–29, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nI recently learned about Deep Wiki where you can view a Wiki about any repository that is available on GitHub. I looked to see what Deep Wiki had to say about FIMS and first found it was not indexed but all it took to change that was proving my email. Within minutes, FIMS had its own page. Several diagrams were generated but the one that I thought was the most helpful (see below) summarized what is available in the main branch for the C++ code. I think this image will be extremely helpful as FIMS becomes more complex. I just wish I knew how we can create it dynamically ☹️"
+  },
+  {
+    "objectID": "fims-weekly/08.11.2025.html#fims-announcements",
+    "href": "fims-weekly/08.11.2025.html#fims-announcements",
+    "title": "August 11–15, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThis will be the last FIMS Weekly in Google Doc form because Elizabeth created a way to distribute this via html on our FIMS Website 🎉. Emails will still go out but they will just link to where you can find the weekly and maybe a screen shot. I am not sure. Please feel free to email me suggestions.\nThe collaborative workflow repository will be removed once the material is migrated to our beautiful FIMS website. Stay tuned."
+  },
+  {
+    "objectID": "fims-weekly/08.11.2025.html#upcoming-events",
+    "href": "fims-weekly/08.11.2025.html#upcoming-events",
+    "title": "August 11–15, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday, August 12\nFIMS Code Club (WSL and docker) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
+  },
+  {
+    "objectID": "fims-weekly/08.11.2025.html#photo-of-the-week",
+    "href": "fims-weekly/08.11.2025.html#photo-of-the-week",
+    "title": "August 11–15, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nDuring our GitHub training with Microsoft, Bai asked a ❓about git worktrees that kind of blew my mind. I had yet to understand the full question or the response but last week with the new version of VS Code that was released it started to make sense. VS Code now has support for git worktrees, where worktrees let you check out multiple branches at once within a single clone. This stops the need for having multiple clones of the same repository on a single computer. IMO this is genius. I am constantly making bogus commits or stashing things that I later forgot that I stashed so I can check out a different branch, do one thing, and then switch back to the other branch. Or worse yet, I am on a branch and want to see a file in a different branch so I go online copy and paste the raw text from the “other” branch that I am interested in and then put it in a new file in VS Code. All of these alternates are suboptimal and have led to 🧨, which is obviously not good. I am excited to check out the use of worktrees and if it goes well maybe we can get Jonathan to do a GitHub training on them. First, I had to click on the three dots to the right of “SOURCE CONTROL” and add “Repositories” to what was being shown in my “SOURCE CONTROL” section of VS Code. Second, I clicked the three dots to the left of REPOSITORIES/FIMS, where I currently have dev-fix-exp-TMBad checked out, which brought up a list where I selected Worktrees -&gt; Create Worktree and let me select an additional branch. I chose dev. Now you can see dev is a worktree in the list under FIMS. This is as far as I have gotten in my 🛣️."
+  },
+  {
+    "objectID": "fims-weekly/07.28.2025.html#fims-announcements",
+    "href": "fims-weekly/07.28.2025.html#fims-announcements",
+    "title": "July 28–August 1, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nVersion 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.\nWe need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday."
+  },
+  {
+    "objectID": "fims-weekly/07.28.2025.html#upcoming-events",
+    "href": "fims-weekly/07.28.2025.html#upcoming-events",
+    "title": "July 28–August 1, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "fims-weekly/07.28.2025.html#photo-of-the-week",
+    "href": "fims-weekly/07.28.2025.html#photo-of-the-week",
+    "title": "July 28–August 1, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
+  },
+  {
+    "objectID": "fims-weekly/02.16.2026.html#fims-announcements",
+    "href": "fims-weekly/02.16.2026.html#fims-announcements",
+    "title": "February 16–20, 2026",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
+  },
+  {
+    "objectID": "fims-weekly/02.16.2026.html#upcoming-events",
+    "href": "fims-weekly/02.16.2026.html#upcoming-events",
+    "title": "February 16–20, 2026",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "fims-weekly/02.16.2026.html#photo-of-the-week",
+    "href": "fims-weekly/02.16.2026.html#photo-of-the-week",
+    "title": "February 16–20, 2026",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nWe are using copilot to help with some changes related to integers in C++ in [PR #1199] to remove many of the compiler warnings when you compile on a Windows machine. These warnings are helpful when developing and this effort will make it even more helpful because you will not have to sift through hundreds of non-helpful warnings to get to the ones that you want.\n\n# old code\nRealVector(Rcpp::NumericVector x, size_t size) {\n  this-&gt;id_m = RealVector::id_g++;\n  this-&gt;storage_m = std::make_shared&lt;std::vector&lt;double&gt;&gt;();\n  this-&gt;resize(x.size());\n  for (size_t i = 0; i &lt; x.size(); i++) {\n    storage_m-&gt;at(i) = x[i];\n  }\n}\n\n# new code\nRealVector(Rcpp::NumericVector x, size_t size) {\n  this-&gt;id_m = RealVector::id_g++;\n  this-&gt;storage_m = std::make_shared&lt;std::vector&lt;double&gt;&gt;();\n  this-&gt;storage_m-&gt;assign(x.begin(), x.end());\n}"
+  },
+  {
+    "objectID": "fims-weekly/02.02.2026.html#fims-announcements",
+    "href": "fims-weekly/02.02.2026.html#fims-announcements",
+    "title": "February 02–06, 2026",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
+  },
+  {
+    "objectID": "fims-weekly/02.02.2026.html#upcoming-events",
+    "href": "fims-weekly/02.02.2026.html#upcoming-events",
+    "title": "February 02–06, 2026",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\n\nWednesday, February 04\nFIMS Implementation Team Meeting (Priorities)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet\n\n\nThursday, February 05\nFIMSdiags Tutorial\nTime: 14:00–15:00 E; 11:00–12:00 P; 10:00–11:00 AK; 8:00–9:00 H Location: Virtual Online: Google meet"
+  },
+  {
+    "objectID": "fims-weekly/02.02.2026.html#photo-of-the-week",
+    "href": "fims-weekly/02.02.2026.html#photo-of-the-week",
+    "title": "February 02–06, 2026",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nWe have diagnostics thanks to Meg and Ian. Below is some sample code for running a likelihood profile over R_zero. Attend the tutorial on Thursday to learn more about {FIMSdiags}.\n\n# data\ndata(\"data1\", package = \"FIMS\")\ndata_4_model &lt;- FIMS::FIMSFrame(data1)\n\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  FIMS::create_default_configurations() |&gt;\n  FIMS::create_default_parameters(data = data_4_model)\n\n# Run the  model with optimization\nbase_model &lt;- parameters |&gt;\n  FIMS::initialize_fims(data = data_4_model) |&gt;\n  FIMS::fit_fims(optimize = TRUE)\nFIMS::clear()\n\n# Run a likelihood profile on R_zero\nlike_fit &lt;- FIMSdiags::run_fims_likelihood(\n  model = base_model,\n  parameters = parameters,\n  parameter_name = \"log_rzero\", \n  data = data1,\n  n_cores = 1,\n  min = -1,\n  max = 1,\n  length = 5\n)"
+  },
+  {
+    "objectID": "fims-weekly/01.19.2026.html#fims-announcements",
+    "href": "fims-weekly/01.19.2026.html#fims-announcements",
+    "title": "January 19–23, 2026",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\n90 days until the CIE Review (April 20–23, 2026)"
+  },
+  {
+    "objectID": "fims-weekly/01.19.2026.html#upcoming-events",
+    "href": "fims-weekly/01.19.2026.html#upcoming-events",
+    "title": "January 19–23, 2026",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "fims-weekly/01.19.2026.html#photo-of-the-week",
+    "href": "fims-weekly/01.19.2026.html#photo-of-the-week",
+    "title": "January 19–23, 2026",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nCodecov has had some recent development that allows you to use copilot to generate tests for your Pull Request. It uses context from your test report to generate unit tests that target exactly what is missing so you can boost patch coverage. You can add the following comment on a Pull Request to make this happen. This feature has yet to be tried yet on a NOAA-FIMS repository.\n\n@codecov-ai-reviewer test"
+  },
+  {
+    "objectID": "fims-weekly/01.04.2026.html#fims-announcements",
+    "href": "fims-weekly/01.04.2026.html#fims-announcements",
+    "title": "January 05–09, 2026",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nIf you were affected by the shortage of funds in our codespaces account please reply to the Google Chat that was started last week indicating regarding the inability to use codespaces after we reached 100 percent of our funding limit."
+  },
+  {
+    "objectID": "fims-weekly/01.04.2026.html#upcoming-events",
+    "href": "fims-weekly/01.04.2026.html#upcoming-events",
+    "title": "January 05–09, 2026",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday, January 06\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\n\nWednesday, January 07\nFIMS Implementation Team Meeting (Trainings)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
+  },
+  {
+    "objectID": "fims-weekly/01.04.2026.html#photo-of-the-week",
+    "href": "fims-weekly/01.04.2026.html#photo-of-the-week",
+    "title": "January 05–09, 2026",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nThe theme set of ‘Celebrating a century of marine science’ within ICES Journal of Marine Science is about to close on January 30, 2026. We submitted our FIMS manuscript to this special issue but we are still waiting on receiving reviews.\n\n\n:::"
+  },
+  {
+    "objectID": "contact/contributors.html",
+    "href": "contact/contributors.html",
+    "title": "FIMS Team",
+    "section": "",
+    "text": "FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.\n\n\n\nKelli F. Johnson (OST)\n\n\n\n\n\nJon K. T. Brodziak (PIFSC)\nKathryn L. Doering (OST)\nAndrea M. Havron (OST)\nAlexander J. Jensen (SWFSC)\nRonald Klasky (T and T Consulting Services, Inc.)\nPeter T. Kuriyama (SWFSC)\nChristopher M. Legault (NEFSC)\nBai Li (OST)\nTimothy J. Miller (NEFSC)\nCole C. Monnahan (AFSC)\nMegumi C. Oshima (PIFSC)\nJane Y. Sullivan (AFSC)\nMatthew Supernaw (OST)\nIan G. Taylor (NWFSC)\nNathan R. Vaughan (Vaughan Analytics)\nEric J. Ward (NWFSC)\n\n\n\n\n\nLisa Pfeiffer (NWFSC)\nPatrick D. Lynch (OST)\nRichard D. Methot (NWFSC)\n\n\n\n\n\n\n\nChristineStawitz-NOAA\n\n\nAndrea-Havron-NOAA\n\n\nBai-Li-NOAA\n\n\nmsupernaw\n\n\nk-doering-NOAA\n\n\nkellijohnson-NOAA\n\n\n\n\ngithub-actions[bot]\n\n\nnathanvaughan-NOAA\n\n\nJaneSullivan-NOAA\n\n\nCopilot\n\n\nawilnoaa\n\n\nJonBrodziak\n\n\n\n\ndependabot[bot]\n\n\nMOshima-PIFSC\n\n\niantaylor-NOAA\n\n\ntimjmiller\n\n\njimianelli\n\n\npeterkuriyama-NOAA\n\n\n\n\ne-perl-NOAA\n\n\nabhinav-1305\n\n\nKyleShertzer-NOAA\n\n\nalexjensen-NOAA\n\n\nericward-noaa\n\n\nmciechanumich\n\n\n\n\nRicardoYin01\n\n\nSrajald\n\n\n\n\n\n\n\n\nThe Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the Terms of Reference and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the Github Projects and GitHub Milestones.\n\n\n\nThe Lead Software Architect is responsible for advising the architecture of FIMS to maximize portability and extensibility; manage technical risks and opportunities; advise the Project Lead on software design, refactor, and implementation decisions; and guarantee quality of deliveries via code review. The Lead Software Architect also educates the team on technical best practices.\n\n\n\nThe Lead Test Engineer is responsible for designing and driving test objectives, test strategies, and test plans of the FIMS product at subsequent milestones. The Lead Test Engineer will identify the tools for test reporting, management and automation, guide and monitor the design, implementation, and execution of test cases and test procedures. The Lead Test Engineer will train and mentor implementation team members on how to effectively write and debug tests.\n\n\n\nThe Lead Statistical Computing Engineer is responsible for designing the FIMS statistical architecture that maximizes statistical accuracy and ensures the implementation of statistical good practices. The Lead Statistical Computing Engineer will advise the Project Lead on design and implementation decisions and will work closely with the Lead Software Architect to ensure a balance between computation and statistical efficiency and with the Lead Test Engineer to develop tests that check the statistical accuracy of model design.\n\n\n\nThe Outreach and Transition Coordinator communicates with policy-makers, NOAA leadership, and regional offices on transition plans from existing assessment models and processes to FIMS. This coordinator works with academic partners to develop and coordinate training on using FIMS.\n\n\n\nThe Lead of Workflows, Accessibility, and Integration is responsible for designing and driving workflows and automation to support the reliability and robustness of the FIMS. The Lead of Workflows, Accessibility, and Integration ensures FIMS aligns with expected standards for accessibility and quality control in accordance with guidelines set by the Fisheries Integrated Toolbox. This lead coordinates with the Lead Test Engineer to ensure test cases are automated and successfully run by GitHub Actions and coordinates with the Lead Statistical Computing Engineer to identify opportunities to expand FIMS across related disciplines.\n\n\n\nRegional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations.\n\n\n\n\nCurrent developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., FIMS DESCRIPTION. When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit."
+  },
+  {
+    "objectID": "contact/contributors.html#project-lead",
+    "href": "contact/contributors.html#project-lead",
+    "title": "FIMS Team",
+    "section": "",
+    "text": "Kelli F. Johnson (OST)"
+  },
+  {
+    "objectID": "contact/contributors.html#core-developers",
+    "href": "contact/contributors.html#core-developers",
+    "title": "FIMS Team",
+    "section": "",
+    "text": "Jon K. T. Brodziak (PIFSC)\nKathryn L. Doering (OST)\nAndrea M. Havron (OST)\nAlexander J. Jensen (SWFSC)\nRonald Klasky (T and T Consulting Services, Inc.)\nPeter T. Kuriyama (SWFSC)\nChristopher M. Legault (NEFSC)\nBai Li (OST)\nTimothy J. Miller (NEFSC)\nCole C. Monnahan (AFSC)\nMegumi C. Oshima (PIFSC)\nJane Y. Sullivan (AFSC)\nMatthew Supernaw (OST)\nIan G. Taylor (NWFSC)\nNathan R. Vaughan (Vaughan Analytics)\nEric J. Ward (NWFSC)"
+  },
+  {
+    "objectID": "contact/contributors.html#subject-matter-experts",
+    "href": "contact/contributors.html#subject-matter-experts",
+    "title": "FIMS Team",
+    "section": "",
+    "text": "Lisa Pfeiffer (NWFSC)\nPatrick D. Lynch (OST)\nRichard D. Methot (NWFSC)"
+  },
+  {
+    "objectID": "contact/contributors.html#contributors",
+    "href": "contact/contributors.html#contributors",
+    "title": "FIMS Team",
+    "section": "",
+    "text": "ChristineStawitz-NOAA\n\n\nAndrea-Havron-NOAA\n\n\nBai-Li-NOAA\n\n\nmsupernaw\n\n\nk-doering-NOAA\n\n\nkellijohnson-NOAA\n\n\n\n\ngithub-actions[bot]\n\n\nnathanvaughan-NOAA\n\n\nJaneSullivan-NOAA\n\n\nCopilot\n\n\nawilnoaa\n\n\nJonBrodziak\n\n\n\n\ndependabot[bot]\n\n\nMOshima-PIFSC\n\n\niantaylor-NOAA\n\n\ntimjmiller\n\n\njimianelli\n\n\npeterkuriyama-NOAA\n\n\n\n\ne-perl-NOAA\n\n\nabhinav-1305\n\n\nKyleShertzer-NOAA\n\n\nalexjensen-NOAA\n\n\nericward-noaa\n\n\nmciechanumich\n\n\n\n\nRicardoYin01\n\n\nSrajald"
+  },
+  {
+    "objectID": "contact/contributors.html#roles",
+    "href": "contact/contributors.html#roles",
+    "title": "FIMS Team",
+    "section": "",
+    "text": "The Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the Terms of Reference and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the Github Projects and GitHub Milestones.\n\n\n\nThe Lead Software Architect is responsible for advising the architecture of FIMS to maximize portability and extensibility; manage technical risks and opportunities; advise the Project Lead on software design, refactor, and implementation decisions; and guarantee quality of deliveries via code review. The Lead Software Architect also educates the team on technical best practices.\n\n\n\nThe Lead Test Engineer is responsible for designing and driving test objectives, test strategies, and test plans of the FIMS product at subsequent milestones. The Lead Test Engineer will identify the tools for test reporting, management and automation, guide and monitor the design, implementation, and execution of test cases and test procedures. The Lead Test Engineer will train and mentor implementation team members on how to effectively write and debug tests.\n\n\n\nThe Lead Statistical Computing Engineer is responsible for designing the FIMS statistical architecture that maximizes statistical accuracy and ensures the implementation of statistical good practices. The Lead Statistical Computing Engineer will advise the Project Lead on design and implementation decisions and will work closely with the Lead Software Architect to ensure a balance between computation and statistical efficiency and with the Lead Test Engineer to develop tests that check the statistical accuracy of model design.\n\n\n\nThe Outreach and Transition Coordinator communicates with policy-makers, NOAA leadership, and regional offices on transition plans from existing assessment models and processes to FIMS. This coordinator works with academic partners to develop and coordinate training on using FIMS.\n\n\n\nThe Lead of Workflows, Accessibility, and Integration is responsible for designing and driving workflows and automation to support the reliability and robustness of the FIMS. The Lead of Workflows, Accessibility, and Integration ensures FIMS aligns with expected standards for accessibility and quality control in accordance with guidelines set by the Fisheries Integrated Toolbox. This lead coordinates with the Lead Test Engineer to ensure test cases are automated and successfully run by GitHub Actions and coordinates with the Lead Statistical Computing Engineer to identify opportunities to expand FIMS across related disciplines.\n\n\n\nRegional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations."
+  },
+  {
+    "objectID": "contact/contributors.html#authorship",
+    "href": "contact/contributors.html#authorship",
+    "title": "FIMS Team",
+    "section": "",
+    "text": "Current developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., FIMS DESCRIPTION. When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit."
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About FIMS",
+    "section": "",
+    "text": "The mission of the Fisheries Integrated Modeling System (FIMS) is to enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs.\nWe aim to accomplish our mission with a user-friendly stock assessment tool that streamlines the development and application of scientific advice to inform current and future management needs of NOAA Fisheries’ regions."
+  },
+  {
+    "objectID": "about/index.html#get-involved",
+    "href": "about/index.html#get-involved",
+    "title": "About FIMS",
+    "section": "Get involved ",
+    "text": "Get involved \nUsers and developers are welcome to join the Discussions board or submit bug reports using GitHub Issues. Please use the issues under collaborative workflow to make suggestions about the developer guide and the issues under the FIMS software repository for software design and development feedback."
+  },
+  {
+    "objectID": "about/index.html#comparison-to-other-frameworks",
+    "href": "about/index.html#comparison-to-other-frameworks",
+    "title": "About FIMS",
+    "section": "Comparison to other frameworks",
+    "text": "Comparison to other frameworks\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nSS3\nFIMS\nRCEATTLE\nSPoRC\nWHAM\nMulti-WHAM\n\n\n\n\nSoftware\nADMB\nTMB and C++\nTMB/RTMB\nRTMB\nTMB\nTMB\n\n\nOperational ready\nYes\nNo\nYes\nNo\nYes\nYes\n\n\nPrior specification?\nYes\nYes\nM, Q, and SRR\nM, h, Tag Reporting, Movement, Q, selectivity\nQ only\nQ only\n\n\nCAAL\nYes\nNo\nIn dev\nNo\nYes (deprecated)\nNo\n\n\nSplit sex\nYes\nNo\nYes\nYes\nNo\nMaybe\n\n\nAge-error\nYes\nNo\nYes\nTV but not fleet specific\nIn branch\nNo\n\n\nFleet Age-error\nYes\nNo\nYes\nNo\nNo\nNo\n\n\nTV Age-error\nYes\nNo\nIn branch\nYes\nNo\nNo\n\n\nVariety of selectivity\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nTV selectivity\nYes\nIn branch\nYes (random walks, random deviates, blocks)\nYes (blocks, iid and random walks, semi-parametric 3d and 2d)\nYes\nYes\n\n\nGrowth estimation\nYes\nNo\nYes\nNo\nYes\nNo\n\n\nMarginal lengths\nYes\nYes\nYes\nYes\nYes\nNo\n\n\nDM compositions\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nAdditive logistic-normal compositions\nNo\nNo\nNo\nYes\nNo\nNo\n\n\nEnvironmental linkages\nYes\nNo\nM, Q, SRR (any number of indices)\nQ\nYes\nYes\n\n\nMulti-area\nYes\nNo\nNo\nYes\nNo\nYes\n\n\nPopulation Structures\nglobal SRR\nNo\nNo\nglobal or local SRR\nNo\nNatal homing, local SRR\n\n\nMulti species\nNo\nNo\nYes\nNo\nNo\nYes\n\n\nMulti-variate indices\nNo\nNo\nNo\nNo\nNo\nNo\n\n\nMulti-seasonal\nYes\nNo\nNo\nIn branch\nNo\nYes\n\n\nNAA or M state-space\nNo\nNo\nM\nWill be in dev\nNAA and M\nNAA and M\n\n\nDSEM-ready\nNever\nLong-term\nYes\nYes\nHarder\nHarder\n\n\nInternal OSA\nNo\nNo\nIn dev\nNo\nYes\nYes\n\n\nInternal AFSC proj scenarios\nYes\nNo\nYes\nYes\nNo\nNo\n\n\nReference point estimation\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nMSE tools\nYes\nNo\nYes\nYes\nYes\nYes"
+  },
+  {
+    "objectID": "about/index.html#release",
+    "href": "about/index.html#release",
+    "title": "About FIMS",
+    "section": "Release",
+    "text": "Release\nThe current release can be found on the FIMS release page. A list of all releases and their corresponding changes can be found on our changelog page."
+  },
+  {
+    "objectID": "about/acknowledgements.html",
+    "href": "about/acknowledgements.html",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "The development of this playbook was supported by FIMS’s participation in the Birdaro training program, which included access to the Center for Scientific Collaboration and Community Engagement (CSCCE)’s online training course Creating Community Playbooks."
+  },
+  {
+    "objectID": "about/faq.html",
+    "href": "about/faq.html",
+    "title": "Frequently Asked Questions",
+    "section": "",
+    "text": "This document is meant to help answer questions that are frequently asked regarding the Fisheries Integrated Modeling System (FIMS). Should your question not be answered here, we recommend that you navigate to the GitHub Discussion page to see if your question has already been asked but just might not have been asked frequently enough to make it here."
+  },
+  {
+    "objectID": "about/faq.html#why",
+    "href": "about/faq.html#why",
+    "title": "Frequently Asked Questions",
+    "section": "Why",
+    "text": "Why\n\nWhy is FIMS being created?\nFIMS was created to increase the pool of developers, designers, and testers that contribute to a commonly-used stock assessment modeling system that can be used across regions. The commitment to build FIMS was made by the National Marine Fisheries Service (NMFS) Science Board in 2020 partly in response to the Center for the Advancement of Population Assessment Methodology (CAPAM) workshop on Next Generation Models. New good practices in assessment methods, such as random effects, one-step ahead residuals, and new statistical distributions, can be difficult to add in a performant way to older software systems. FIMS will be written in a way that these new best practices are included at the onset rather than as an afterthought.\n\n\nWhy build FIMS now?\nAD Model Builder (ADMB) is no longer being supported so the ability to compile existing models that use ADMB, e.g., Age Structured Assessment Program (ASAP), Assessment Model for Alaska (AMAK), Beaufort Assessment Model (BAM), and Stock Synthesis 3 (SS3), will be compromised with future operating system upgrades. Furthermore, development of these models that rely on ADMB to include best practices, such as random effects, is not feasible."
+  },
+  {
+    "objectID": "about/faq.html#transitioning-to-fims",
+    "href": "about/faq.html#transitioning-to-fims",
+    "title": "Frequently Asked Questions",
+    "section": "Transitioning to FIMS",
+    "text": "Transitioning to FIMS\n\nWill FIMS have all the features of current assessment models?\nThe feature set of some of the currently available assessment platforms have grown organically over several decades and certainly contain unused features, awkward conventions, and other aspects needing attention. For example, the last major refresh of the SS3 concept was more than twenty years ago (2004) when it was converted from FORTRAN to ADMB. All software needs a refresh and FIMS will be that for several assessment platforms. FIMS certainly will start with the major capabilities that are currently available such as simultaneously modeling fish growth and population numbers and to use both age and length and other data. FIMS will also start with some more advanced capabilities, particularly the ability to flexibly model time variation in parameters using random effects. Also, FIMS is being written in a more modular way to reduce duplication and facilitate robust testing of each individual part, following best-practice guides for coding. This has resulted in 78% test coverage, which is unmatched in most assessment software. A defined process for testing, model validation, and code review will support integrating future innovations after they have been proven in research sandboxes.\n\n\nWhen will FIMS be ready to transition to?\nFIMS will have many of the features stock assessment analysts expect in a beta format sometime in 2025. We expect a fully tested and documented stable release to be available in 2026. This includes implementation of fitting to length-composition data, random effects, Bayesian estimation, and SPR-based reference points in 2026.\n\n\nI need a new model. Should I wait for FIMS or use WHAM?\nWHAM is likely to have a fuller complement of features available sooner than FIMS. WHAM is currently available for operational use and approved within the Northeast Region. However, in the future, we expect a subset of models currently using WHAM to transition to FIMS as the FIMS feature set becomes more complete, so using FIMS from the beginning may save time in the long-run. We leave the decision up to you because only you know your timeline and resources available. We highly encourage you to consider FIMS because the knowledge and comradery associated with FIMS will be unlike that found with any previously available platform given that it is the first to start with input from scientists within every center in NOAA Fisheries.\n\n\nWhen will FIMS trainings be offered?\nWe will be offering FIMS trainings in 2025. These initial trainings offered in 2025 will be targeted at early adopters and power users who are willing to debug and file issues when they encounter them. This will allow for the incorporation of user feedback in the code base during 2025–2026 development and release of the first stable version in 2026. In 2026, training will be offered at different levels from novice to expert users, including students.\n\n\nHow can I prepare for the transition to FIMS?\nYou can conduct sensitivity analyses on the model you use for operational assessments to identify which model features have a large impact on model fit and which are included for historical consistency. Documenting the impact missing features have on model fit will help the FIMS team prioritize feature requests. If you haven’t worked with a random effects model, there are a number of papers and course material created by Andrea Havron available to learn more about when and how random effects should be applied in stock assessment models.\n\n\nHow long will existing assessment platforms be maintained, and at what level?\nSupport for existing models written in ADMB will phase out in stages. The first stage has already occurred for some, e.g., SS3, with a commitment to not add major new features in deference to their future consideration by FIMS. The second stage could be cessation of any releases of minor modifications or bug fixes but that may be just a gradual slowdown until re-compiling the code becomes impossible. The third will be relegation of help desk support entirely to the community as crowd sourcing.\nWe recognize that the community often continues use of older models long after new models or model versions are available so the currently available platforms will remain downloadable as an executable from the NMFS Fisheries Integrated Toolbox. Additionally, if the code is publicly available, its code will remain available in its GitHub site.\nThe following factors will affect the stages of SS3 succession: availability in FIMS of capability to address more assessment situations currently addressed by SS3; retirement of the main SS3 developer, Richard Methot; and changes in computer operating systems such that SS3 cannot be re-compiled because ADMB no longer works with those windows, ioS and/or unix compilers. All three of these transition triggers will occur, in no designable order, in 1 to 5 years. We are attempting to future-proof SS3 by building a dev_container for compiling with ADMB and the current suite of operating systems and creating a GoogleGroup user forum to bolster the generality of the help-desk support now provided by the core SS3 developers.\nASAP is currently transitioning to WHAM in the Northeast Region. A research track on WHAM was reviewed in February 2024. The Northeast Regional Coordinating Committee is expected to approve a recommendation from the Research Track Steering Committee to allow stock assessments to transition from ASAP to WHAM during a management track assessment. This is an exception to the rule in the region that all model transitions must be made in a research track. It is not known whether a similar exception will be made for the transition from WHAM to FIMS, nor whether a research track on FIMS will be required in the region. All development on ASAP has stopped with the focus shifted to WHAM.\n\n\nWill there be translators from current platforms to FIMS?\nFor model settings, we recommend using the default model configuration function that will be built into FIMS as a starting point. Then, customizing the model can be done in R as it would not be efficient to programmatically translate the model configurations, e.g., SS3 control file, given the large number of options for settings that will not be provided for FIMS. An R function is currently available to translate SS3 data inputs to the dataframe needed to run a FIMS model, and this data translator will be improved in the next few years as the range of data types used by FIMS is expanded.\nAll ASAP models will likely be converted to WHAM before transitioning to FIMS. There are currently no plans to create a translator from WHAM to FIMS but both packages use R objects to define their models. This might allow future translations of configuration objects to be relatively simple. However, it would likely not be worth the effort to maintain a translator until the input and output format of WHAM and/or FIMS are static.\nDevelopers of BAM have discussed the desirability of translating BAM input files for compatibility with FIMS. This will likely be pursued after FIMS has matured enough for operational use.\n\n\nHow far will FIMS scale towards data-poor models?\nFIMS is primarily designed as an age-structured model. Right now, FIMS can run without age-composition data but estimates are poor. The ability to model data-moderate and data-limited cases is planned for addition in later milestones to facilitate the use of one modeling platform regardless of the amount of data available."
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#whats-changed",
+    "href": "changelog/FIMS_CHANGELOG.html#whats-changed",
+    "title": "FIMS Change Log",
+    "section": "What’s Changed",
+    "text": "What’s Changed\n\nModel time series can now include projections\nVignette on sparsity with random effects given the parameterization of the model\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.7.1…v0.8.0"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.7.1-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.7.1-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.7.1 (release notes)",
+    "text": "v0.7.1 (release notes)"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#whats-changed-1",
+    "href": "changelog/FIMS_CHANGELOG.html#whats-changed-1",
+    "title": "FIMS Change Log",
+    "section": "What’s Changed",
+    "text": "What’s Changed\n\nfix(doxygen): adds the correct header to doxygen website in #1062\nfix(doxygen): locations in #1064\nfix(json): allow for mixed types with NA by @msupernaw in #1070\nfix: tibble print formatting issue in vignettes #1012 by @awilnoaa in #1087\nfix(do_sd_report): Skips the sdreport calculation when optimize=FALSE to prevent NaN warning in #1102\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.7.0…v0.7.1"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.7.0-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.7.0-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.7.0 (release notes)",
+    "text": "v0.7.0 (release notes)"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#whats-changed-2",
+    "href": "changelog/FIMS_CHANGELOG.html#whats-changed-2",
+    "title": "FIMS Change Log",
+    "section": "What’s Changed",
+    "text": "What’s Changed\n\nTurns on the code for model families that allows for more model types in the future than just the catch-at-age model that is currently implemented through the use of FisheryModelBase, which is a unified parent class for all model families. Moved derived quantities (e.g., numbers at age, spawning biomass, catch at age) from Fleet and Population objects into FisheryModelBase. Refactored Population and Fleet classes to be trait only objects.\nConverts nested list of lists used for model control to a tibble with one line per parameter that can be un-nested and nested.\nIncreased the documentation of FIMS by using formulas in doxygen, building the doxygen on the NOAA-FIMS github.io site instead of its own web page, writing more information in the testing README, etc.\nRemoves seasonality logic given it was not being used.\nRemoves date columns in input data in exchange for timing.\nUses {stockplotr} for the figures in the “fims-demo” vignette.\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.6.3…v0.7.0"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.6.3-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.6.3-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.6.3 (release notes)",
+    "text": "v0.6.3 (release notes)\n\nFix bugs in fims_math.hpp by @Andrea-Havron-NOAA in #946"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.6.2-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.6.2-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.6.2 (release notes)",
+    "text": "v0.6.2 (release notes)\n\nFix TMBad windows make file by @Andrea-Havron-NOAA in #935\nFix bug with uninitialized unfished_biomass by @Andrea-Havron-NOAA in #935\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.6.1…v0.6.2"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.6.1-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.6.1-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.6.1 (release notes)",
+    "text": "v0.6.1 (release notes)\nThanks to work from @Andrea-Havron-NOAA, @msupernaw, and @Bai-Li-NOAA for investigating the bug that has been persistent since v0.3.0 leading to failed builds on R-universe. This fix, implemented by @Andrea-Havron-NOAA, allows for user and operating system information to be found on more operating systems then we had previously implemented."
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.6.0-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.6.0-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.6.0 (release notes)",
+    "text": "v0.6.0 (release notes)\nClang-formatted code to initialize the changes needed for model families. Other than the changes to the names of a few derived quantities and the ungrouped output of get_estimates() users should not see any differences between v0.6.0 and v0.5.3."
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.5.3-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.5.3-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.5.3 (release notes)",
+    "text": "v0.5.3 (release notes)\nHotfix to 0.5.2 to fix bug in reshape_output() where there are now fewer rows in the results from get_estimates() because the output from FIMS (via the json file) is now better matched to the output from TMB. Thanks to @KyleShertzer-NOAA for having a plot of selectivity in the scamp case study that was not working correctly anymore, which led to finding this 🐛."
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.5.1-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.5.1-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.5.1 (release notes)",
+    "text": "v0.5.1 (release notes)\nHotfix to v0.5.0 to fix pr-commands.yml file, which was leading to a failed GitHub action and emails being sent out to everyone without meaning."
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.5.0-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.5.0-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.5.0 (release notes)",
+    "text": "v0.5.0 (release notes)\nRelease 0.5.0 contains two major features, random effects for the power user and a fits tibble found in the results, e.g., get_fits(fit). See below or the commit messages for more details. - Switch to TMBad from CppAD - Checks that length data has the correct dimension in R - Adds SB to model output - Adds README files to the C++ code - Exports logit functions to R - Functionality was also added to the workflows to allow for better maintenance of the software via GitHub actions"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.4.0-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.4.0-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.4.0 (release notes)",
+    "text": "v0.4.0 (release notes)\nRelease 0.4.0 contains two major features, allowance of catch-per-unit-effort data for fisheries and more information in the estimates tibble found in the results, e.g., get_estimates(fit). See below for more details. - Allows for CPUE data and landings within a single fleet and changes the composition data to be separate from the catch. If there are catches, compositions are based on F, if you have survey compositions those are scaled by q, and you can also have composition data without catch or CPUE and those match the population. - Fixes bug in finalize() where variables were going out of scope by using a shared pointer and RealVector, which allows for estimates tibble to return more. Output is integrated between json and TMB using reshape_tmb_estimates(), reshape_json_estimates(), and reshape_json_derived_quantities(). ParameterVector are now set using resize() and purrr::walk() rather than methods::new(). - Increases code coverage - Restructures R tests using use_testthat_template() - Starts to use Rcpp::Rcerr instead of Rcpp::Rcout - Skips parallel and distribution rcpp test - Adds FIMS_dmultinom() distribution to match TMB - Fixes bug in get_number_of_parameters(). - Uses static_cast([-0-9.]+) to wrap constant variables. - Fixes cmake_minimum_required to use a range and updates googletest version. - Adds minimal fims-demo vignette. - Removes unused estimated_log_M and estimated_log_init_naa from inst/include/interface/rcpp/rcpp_objects/rcpp_population.hpp. - Adds gdb to the devcontainer.json file. - Fixes broken model comparison project links. - Adds dependabot.yml file to update GitHub actions. - Combine initialize_comp() functions."
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.3.0.1-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.3.0.1-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.3.0.1 (release notes)",
+    "text": "v0.3.0.1 (release notes)\nFixes errors in the R code found while working on the case studies.\n\ncli::cli_abort() messages were not formatted correctly when using pluralism capability\nuncertainty in the multinomial is multiplied by value within the wrapper functions, which lead to non -999 values. Now, if a -999 is present, it is multiplied by 1 and if not then value is multiplied by uncertainty."
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.3.0-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.3.0-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.3.0 (release notes)",
+    "text": "v0.3.0 (release notes)"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#whats-changed-3",
+    "href": "changelog/FIMS_CHANGELOG.html#whats-changed-3",
+    "title": "FIMS Change Log",
+    "section": "What’s Changed",
+    "text": "What’s Changed\nSummary of high level/breaking changes:\n\nFits to length data using an age-to-length-conversion matrix, data1 includes the necessary information needed to fit to both ages and lengths.\nAdds C++ ParameterVector to allow for the estimation of time-varying parameters.\nImplements R wrapper functions to facilitate\ncreating the input model specifications with create_default_*(), update_parameters(), and initialize_*();\nadding -999 to the missing fleet, year, age, length, etc. combinations;\nrunning the model with a user-supplied argument of n_of_loops, where the default is three, to restart the optimizer from the previous run of nlmimb;\nsummarizing the output with the FIMSFit() function and class.\nImplements a switch for global verbosity within FIMS through the use of {cli} messages and warnings.\nUpdates the logging system complete with a vignette about how to use it, the logging system can be used for both R and C++ errors, warnings, and information.\nCreates the initial infrastructure to implement random effects with density functions.\nImplements a helper function to get the parameter names from the C++ code and populate the results with those names.\nMakes lpdf_vec return 0 if data is missing.\n\nMore detail: See the commit message for this release or the full changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.2.0…v0.3.0."
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.2.0-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.2.0-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.2.0 (release notes)",
+    "text": "v0.2.0 (release notes)"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#whats-changed-4",
+    "href": "changelog/FIMS_CHANGELOG.html#whats-changed-4",
+    "title": "FIMS Change Log",
+    "section": "What’s Changed",
+    "text": "What’s Changed\nSummary of high level/breaking changes: - Added a pkgdown site for FIMS - Add code cov tests and site link - Remove recruitment bias correction and adjustment because we plan to use TMB (#185) - Improve logging coverage and separate logs into multiple files - Put recruitment deviations on the log scale when input - Report more values with standard errors - Code cleanup, documentation, and consistency improvements - Remove rapidjson dependence - Add start_year and end_year as slots to FIMSFrame - Make log_obs_error a vector - Load the Rcpp module upon package install so components don’t need to be prefaced by fims$ - Refactor vectors to use fims::Vector class - Add Newton steps to FIMS integration test to improve convergence in integration test\nMore detail: - Update issue forms by @k-doering-NOAA in #426 - Update DESCRIPTION to match release number by @ChristineStawitz-NOAA in #425 - resolved issues causing warnings by @MOshima-PIFSC in #430 - #307: export age comp function by @k-doering-NOAA in #438 - 368 convert fims to a pkgdown site by @Bai-Li-NOAA in #437 - #242 fix codecov calc and upload by @k-doering-NOAA in #436 - 391 feature find a file parser for c++ tests by @msupernaw in #434 - fix: deploying pkgdown by @k-doering-NOAA in #448 - fix: remove set() by @KyleShertzer-NOAA in #451 - Update DESCRIPTION by @peterkuriyama-NOAA in #435 - Remove bias correction/adjustment by @Bai-Li-NOAA in #452 - doc: error and progress logging for information.hpp by @nathanvaughan-NOAA in #424 - fix: refactor parameter constructor by @Bai-Li-NOAA in #455 - doc: logit_steep correction by @ChristineStawitz-NOAA in #463 - refactor add_tmb_to_fims_internal by @msupernaw in #459 - Created get-gtest-codecov to create coverage.xml report for issue #242 by @MOshima-PIFSC in #470 - #441: fix reviewer checklist build trigger, edit checklist by @k-doering-NOAA in #474 - 377 refactor call report f from modelhpp instead of fleet and population by @Andrea-Havron-NOAA in #466 - Changed  to  by @MOshima-PIFSC in #487 - 411 refactor naming convention of member and local variables in the fleet class by @Bai-Li-NOAA in #476 - Remove test data from fims deterministic folder by @Bai-Li-NOAA in #481 - Update GHA workflows to enforce FIMS installation by @Bai-Li-NOAA in #489 - renamed dimension folded indices to be clearer by @peterkuriyama-NOAA in #480 - rm acomp/index nll tests objects by @ChristineStawitz-NOAA in #491 - Delete test files by @ChristineStawitz-NOAA in #492 - fix: update windows-2019 to windows-latest by @Bai-Li-NOAA in #495 - Create multiple namespaces in FIMS by @k-doering-NOAA in #479 - fix: use expect_equal() for deterministic tests by @Bai-Li-NOAA in #496 - fix: build trigger only on pr being opened by @k-doering-NOAA in #498 - 407 updating log files by @nathanvaughan-NOAA in #499 - Name refactoring for tests, growth, and median by @nathanvaughan-NOAA in #503 - Fix the test for population.CalculateRecruitment() by @Bai-Li-NOAA in #508 - fix: update run google test to use windows latest by @k-doering-NOAA in #511 - refactor: move duplicated code into the test fixture section by @Bai-Li-NOAA in #497 - Fims concurrent by @ChristineStawitz-NOAA in #520 - Remove third party library rapidjson by @Bai-Li-NOAA in #519 - Make Doxygen comment style the same by @k-doering-NOAA in #518 - refactor recruitment deviations to log space by @Andrea-Havron-NOAA in #514 - add documentation to test-fims-estimation by @Andrea-Havron-NOAA in #515 - Added start_year and end_year as slots to FIMSFrame by @kellijohnson-NOAA in #501 - New 464 load module by @Andrea-Havron-NOAA in #526 - make log_obs_error a vector by @ChristineStawitz-NOAA in #532 - Fims vector by @ChristineStawitz-NOAA in #517 - Release mq by @ChristineStawitz-NOAA in #533"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#new-contributors",
+    "href": "changelog/FIMS_CHANGELOG.html#new-contributors",
+    "title": "FIMS Change Log",
+    "section": "New Contributors",
+    "text": "New Contributors\n\n@peterkuriyama-NOAA made their first contribution in #435\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.1.0…v0.2.0"
+  },
+  {
+    "objectID": "changelog/FIMS_CHANGELOG.html#v0.1.0.0-release-notes",
+    "href": "changelog/FIMS_CHANGELOG.html#v0.1.0.0-release-notes",
+    "title": "FIMS Change Log",
+    "section": "v0.1.0.0 (release notes)",
+    "text": "v0.1.0.0 (release notes)\nThis is the first version of the Fisheries Integrated Modeling System (FIMS). At this stage, FIMS can be used to estimate a simple age-structured population model such as case 0 in Li et al. (2021)’s manuscript. Please refer to the collaborative workflow for a description of the model functionality and completeness. Documentation can be found here.\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/commits/v0.1.0"
+  },
+  {
+    "objectID": "contact/index.html",
+    "href": "contact/index.html",
+    "title": "Contact",
+    "section": "",
+    "text": "If you have questions or comments about FIMS please contact the FIMS Project Lead or use the form below.\n\n\nLoading…"
+  },
+  {
+    "objectID": "fims-weekly/01.12.2026.html#fims-announcements",
+    "href": "fims-weekly/01.12.2026.html#fims-announcements",
+    "title": "January 12–16, 2026",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThe first in-person FIMS training is in 14 days! We have over 40 people signed up."
+  },
+  {
+    "objectID": "fims-weekly/01.12.2026.html#upcoming-events",
+    "href": "fims-weekly/01.12.2026.html#upcoming-events",
+    "title": "January 12–16, 2026",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "fims-weekly/01.12.2026.html#photo-of-the-week",
+    "href": "fims-weekly/01.12.2026.html#photo-of-the-week",
+    "title": "January 12–16, 2026",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nWhen you are installing packages in R there are several ways to go about doing this but we recommend using {pak} because it is one of the few methods that automatically installs packages in parallel, which can considerably speed up the process. You can set up install.packages() to use parallel methods but it will not be able to optimize things based on the mutual dependencies found across a set of packages that you wish to install, like {pak} can.\n\n# To install a vector of packages\npak::pkg_install(c(\"dplyr\", \"ggplot2\", \"data.table\"))\n# The following is a wrapper around pak::pkg_install()\npak::pak()"
+  },
+  {
+    "objectID": "fims-weekly/01.26.2026.html#fims-announcements",
+    "href": "fims-weekly/01.26.2026.html#fims-announcements",
+    "title": "January 26–30, 2026",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nMeg and Ian will be doing a training next week on FIMSdiags.\nPlease encourage your peers to use the Discussion Board to ask questions about FIMS and propose features so we can talk about them in a public forum.\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
+  },
+  {
+    "objectID": "fims-weekly/01.26.2026.html#upcoming-events",
+    "href": "fims-weekly/01.26.2026.html#upcoming-events",
+    "title": "January 26–30, 2026",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "fims-weekly/01.26.2026.html#photo-of-the-week",
+    "href": "fims-weekly/01.26.2026.html#photo-of-the-week",
+    "title": "January 26–30, 2026",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nTo add ten years of projections onto your time series you can use FIMS::FIMSFrame() to add -999 to all of your data streams by just adding a single year of -999 for any type with the maximum year that you want to project to. See the code below for an example, which was taken from the projections vignette. Now we need to think carefully about the default uncertainty values for the -999 in each type.\n\ndata(\"data1\", package = \"FIMS\")\nyears_of_projections &lt;- 10\ndata1_with_extra_year &lt;- dplyr::add_row(\n  data1,\n  type = \"landings\",\n  timing = get_end_year(data_4_model) + years_of_projection,\n  name = \"fleet1\",\n  value = -999,\n  unit = \"mt\"\n) |&gt;\n  # Make a FIMSFrame object out of this data frame with the extra row to add all\n  # of the other missing years for each data type\n  FIMSFrame()"
+  },
+  {
+    "objectID": "fims-weekly/02.09.2026.html#fims-announcements",
+    "href": "fims-weekly/02.09.2026.html#fims-announcements",
+    "title": "February 09–13, 2026",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nPlease look at the FIMS calendar on a regular basis. There are lots of meetings happening that you can attend but global announcements are no longer going out in an attempt to save your inboxes from overload. One of those such meetings is the Code Club happening this Friday.\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
+  },
+  {
+    "objectID": "fims-weekly/02.09.2026.html#upcoming-events",
+    "href": "fims-weekly/02.09.2026.html#upcoming-events",
+    "title": "February 09–13, 2026",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\n\nFriday, February 13\nFIMS Code Club\nTime: 12:00–15:00 E; 09:00–12:00 P; 08:00–11:00 AK; 06:00-09:00 H Location: Virtual Online: Google meet"
+  },
+  {
+    "objectID": "fims-weekly/02.09.2026.html#photo-of-the-week",
+    "href": "fims-weekly/02.09.2026.html#photo-of-the-week",
+    "title": "February 09–13, 2026",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nIn the dev-hake branch, we now have the ability to estimate parameters using a time-varying vector. Below is code to set the initial values and estimation type. We need to decide as a group what would be the best way for non-power users to interact with time-varying parameters.\n\n# Resize the parameter vector\nfleet_selectivity$inflection_point$resize(get_n_years(data_4_model))\n# Set the initial value of each element of the vector to be one and\n# estimate it as a fixed effect\nfor (ii in seq(get_n_years(data_4_model))) {\n  fleet_selectivity$inflection_point[ii]$value &lt;- 1\n  fleet_selectivity$inflection_point[ii]$estimation_type$set(\"fixed_effects\")\n}"
+  },
+  {
+    "objectID": "fims-weekly/07.21.2025.html#fims-announcements",
+    "href": "fims-weekly/07.21.2025.html#fims-announcements",
+    "title": "July 21–25, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS"
+  },
+  {
+    "objectID": "fims-weekly/07.21.2025.html#upcoming-events",
+    "href": "fims-weekly/07.21.2025.html#upcoming-events",
+    "title": "July 21–25, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday, July 22\nFIMS Code Club (Tackling TODO: items in code)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet\n\n\nThursday, July 24\nFIMS Seaside Chat (🤷)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet"
+  },
+  {
+    "objectID": "fims-weekly/07.21.2025.html#photo-of-the-week",
+    "href": "fims-weekly/07.21.2025.html#photo-of-the-week",
+    "title": "July 21–25, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nR-opensci has guidance on writing tests for packages submitted that Bai is looking into. But, it was pretty mind blowing to learn that there is a way to add comments to a commit message that can invoke “extended” tests, i.e., tests that do not need to be run on every commit. It was nice to know that others have been thinking about this as FIMS has struggled to find a resource or advice on what to do, see Discussion #870. Feel free to add any thoughts about the system below or other insights to running large tests on the Discussion board. Thank you in advance for taking the time to contribute 😊."
+  },
+  {
+    "objectID": "fims-weekly/08.04.2025.html#fims-announcements",
+    "href": "fims-weekly/08.04.2025.html#fims-announcements",
+    "title": "August 04–08, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nFIMS website is now newly updated thanks to Elizabeth 🥇!\nThe CIE Review has been approved and will be held November 04–06, 2025 using an online platform."
+  },
+  {
+    "objectID": "fims-weekly/08.04.2025.html#upcoming-events",
+    "href": "fims-weekly/08.04.2025.html#upcoming-events",
+    "title": "August 04–08, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday, August 05\nFIMS Code Club (json) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\n\nWednesday, August 06\nFIMS Implementation Team Meeting (Projections)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
+  },
+  {
+    "objectID": "fims-weekly/08.04.2025.html#photo-of-the-week",
+    "href": "fims-weekly/08.04.2025.html#photo-of-the-week",
+    "title": "August 04–08, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nDuring last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example:\n\n{\n  \"@context\": \"https://schema.org/\",\n  \"@type\": \"Dataset\",\n  \"name\": \"Human Genome Assembly GRCh38\",\n  \"description\": \"The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.\",\n  \"url\": \"https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/\",\n  \"identifier\": \"GCF_000001405.26\",\n  \"creator\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Genome Reference Consortium\"\n  },\n  \"citation\": \"Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.\",\n  \"keywords\": [\n    \"Human Genome\",\n    \"GRCh38\",\n    \"Genomics\",\n    \"Reference Assembly\"\n  ],\n  \"license\": \"https://creativecommons.org/licenses/by/4.0/\",\n  \"datePublished\": \"2013-12-17\",\n  \"distribution\": [\n    {\n      \"@type\": \"DataDownload\",\n      \"name\": \"GRCh38 FASTA file\",\n      \"contentUrl\": \"ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz\",\n      \"encodingFormat\": \"application/x-fasta\"\n    }\n  ],\n  \"measurementTechnique\": \"Next-Generation Sequencing\",\n  \"inLanguage\": \"en\"\n}"
+  },
+  {
+    "objectID": "fims-weekly/08.18.2025.html#fims-announcements",
+    "href": "fims-weekly/08.18.2025.html#fims-announcements",
+    "title": "August 18–22, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThe CIE Review will be November 04–06, 2025 and all materials must be delivered to the reviewers four weeks prior to this, i.e., October 07, 2025.\nMuch of the collaborative workflow guide has been moved to this website and to CONTRIBUTING.md. Three files are left to migrate, the model specifications, hpp templates, and testing information. The testing information will move to Bai’s new test README.md file."
+  },
+  {
+    "objectID": "fims-weekly/08.18.2025.html#upcoming-events",
+    "href": "fims-weekly/08.18.2025.html#upcoming-events",
+    "title": "August 18–22, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday,\nFIMS Code Club (json output) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday,\nFIMS Seaside Chat (cheat sheet) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
+  },
+  {
+    "objectID": "fims-weekly/08.18.2025.html#photo-of-the-week",
+    "href": "fims-weekly/08.18.2025.html#photo-of-the-week",
+    "title": "August 18–22, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nThanks to my GitHub Project Board mentors, Andrea and Kathryn, I have revitalized the Issue Triage Board and I will be working on getting the, currently, 104 un-triaged issues assigned to someone or placed in the parking lot. It took me a while but I think Project Boards might be growing on me."
+  },
+  {
+    "objectID": "fims-weekly/09.01.2025.html#fims-announcements",
+    "href": "fims-weekly/09.01.2025.html#fims-announcements",
+    "title": "September 01–05, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\n64 calendar days until the FIMS CIE Review, we still need a chair."
+  },
+  {
+    "objectID": "fims-weekly/09.01.2025.html#upcoming-events",
+    "href": "fims-weekly/09.01.2025.html#upcoming-events",
+    "title": "September 01–05, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nThursday, Projections\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n\n\n\nWednesday, September 03\nFIMS Implementation Team Meeting (Documentation)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
+  },
+  {
+    "objectID": "fims-weekly/09.01.2025.html#photo-of-the-week",
+    "href": "fims-weekly/09.01.2025.html#photo-of-the-week",
+    "title": "September 01–05, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nBelow is a glimpse of what the new json output looks like, where dimensions are provided both in name and in length. Please contact Matthew if you have feedback on this structure.\n\n{\n                    \"name\": \"age_to_length_conversion\",\n                    \"dimensionality\": {\n                        \"header\": [\n                            \"year\",\n                            \"length\"\n                        ],\n                        \"dimensions\": [\n                            31,\n                            24\n                        ]\n                    },\n                    \"values\": [\n                        1.26174e-16,\n                        8.38582e-11,\n                        2.29736e-06,\n                        0.00274388,\n                        0.163077,"
+  },
+  {
+    "objectID": "fims-weekly/09.15.2025.html#fims-announcements",
+    "href": "fims-weekly/09.15.2025.html#fims-announcements",
+    "title": "September 15–19, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\n50 days until the CIE Review"
+  },
+  {
+    "objectID": "fims-weekly/09.15.2025.html#upcoming-events",
+    "href": "fims-weekly/09.15.2025.html#upcoming-events",
+    "title": "September 15–19, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday, Cleanup\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, FIMS and RTMB\nFIMS Tutorial Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
+  },
+  {
+    "objectID": "fims-weekly/09.15.2025.html#photo-of-the-week",
+    "href": "fims-weekly/09.15.2025.html#photo-of-the-week",
+    "title": "September 15–19, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nThanks to Bai’s recent PR that revamped the lists of lists for running a model into a tibble the amount of code needed to run a default model is even less. Check out the revamped fims-demo-minimal below!\n\ndata_4_model &lt;- FIMSFrame(data1)\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  create_default_configurations() |&gt;\n  create_default_parameters(data = data_4_model)\n# Run the  model with optimization\nfit &lt;- parameters |&gt;\n  initialize_fims(data = data_4_model) |&gt;\n  fit_fims(optimize = TRUE)"
+  },
+  {
+    "objectID": "fims-weekly/09.29.2025.html#fims-announcements",
+    "href": "fims-weekly/09.29.2025.html#fims-announcements",
+    "title": "September 29–October 03, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\n36 more days until the CIE Review\nMeg and Ian have made excellent progress on FIMSdiags, complete with a pkgdown site"
+  },
+  {
+    "objectID": "fims-weekly/09.29.2025.html#upcoming-events",
+    "href": "fims-weekly/09.29.2025.html#upcoming-events",
+    "title": "September 29–October 03, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday, tests\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, cleanup\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet\n\n\n\nWednesday, October 01\nFIMS Implementation Team Meeting (CIE Review)\nTime: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: Google meet"
+  },
+  {
+    "objectID": "fims-weekly/09.29.2025.html#photo-of-the-week",
+    "href": "fims-weekly/09.29.2025.html#photo-of-the-week",
+    "title": "September 29–October 03, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nI am truly impressed by the perseverance of Elizabeth Perl 😮. She was able to get our doxygen site to render with the same headers as our noaa-fims.github.io site. This was no easy feat, and it looks beautiful. If you have any suggestions feel free to fill out an issue.\n\n:::"
+  },
+  {
+    "objectID": "fims-weekly/11.24.2025.html#fims-announcements",
+    "href": "fims-weekly/11.24.2025.html#fims-announcements",
+    "title": "November 24–28, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nHappy 🦃Thanksgiving Day🦃 to you and your friends and family this holiday season.\nThe FIMS CIE Review has been rescheduled to April 21–23, 2026."
+  },
+  {
+    "objectID": "fims-weekly/11.24.2025.html#upcoming-events",
+    "href": "fims-weekly/11.24.2025.html#upcoming-events",
+    "title": "November 24–28, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\nTuesday,\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
+  },
+  {
+    "objectID": "fims-weekly/11.24.2025.html#photo-of-the-week",
+    "href": "fims-weekly/11.24.2025.html#photo-of-the-week",
+    "title": "November 24–28, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nA few months ago, Posit introduced Databot to help explore your data. This is not really of direct interest to FIMS but I think the concept is. Our figures and tables should with a FIMS data object should be relatively similar where we build a command such as summarize() to give similar summaries."
+  },
+  {
+    "objectID": "fims-weekly/12.08.2025.html#fims-announcements",
+    "href": "fims-weekly/12.08.2025.html#fims-announcements",
+    "title": "December 08–12, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nConsider attending the CAPAM workshop on tuna models this week."
+  },
+  {
+    "objectID": "fims-weekly/12.08.2025.html#upcoming-events",
+    "href": "fims-weekly/12.08.2025.html#upcoming-events",
+    "title": "December 08–12, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "fims-weekly/12.08.2025.html#photo-of-the-week",
+    "href": "fims-weekly/12.08.2025.html#photo-of-the-week",
+    "title": "December 08–12, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nA new expectation expect_shape() is available from {testthat} which checks the dimensions of the object of interest, e.g., number of rows or number of columns! This function could be helpful for FIMS where we expect the model results to have a certain number of rows.\n\ntestthat::expect_shape()\n\nargs(testthat::expect_shape)\n# function (object, ..., nrow, ncol, dim)\n\nmat &lt;- matrix(1:6, nrow = 2, ncol = 3)\n# Passes: mat has 2 rows and 3 columns\ntestthat::expect_shape(mat, c(2, 3))\n\ndf &lt;- data.frame(a = 1:4, b = 5:8)\n# Passes: df has 4 rows and 2 columns\ntestthat::expect_shape(df, c(4, 2))"
+  },
+  {
+    "objectID": "fims-weekly/12.22.2025.html#fims-announcements",
+    "href": "fims-weekly/12.22.2025.html#fims-announcements",
+    "title": "December 22–26, 2025",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS"
+  },
+  {
+    "objectID": "fims-weekly/12.22.2025.html#upcoming-events",
+    "href": "fims-weekly/12.22.2025.html#upcoming-events",
+    "title": "December 22–26, 2025",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "fims-weekly/12.22.2025.html#photo-of-the-week",
+    "href": "fims-weekly/12.22.2025.html#photo-of-the-week",
+    "title": "December 22–26, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nx %notin% table is currently in the development version of R and is an idiom for !(x %in% table) and provided almost entirely for convenience and code readability, from an R-devel suggestion, after many years of private definitions mostly hidden in packages, including in R’s {tools}.\n\nx &lt;- 1\nmy_vector &lt;- 1:10\nx %notin% my_vector"
+  },
+  {
+    "objectID": "fims-weekly/fims-weekly-template.html#fims-announcements",
+    "href": "fims-weekly/fims-weekly-template.html#fims-announcements",
+    "title": "FIMS",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS"
+  },
+  {
+    "objectID": "fims-weekly/fims-weekly-template.html#upcoming-events",
+    "href": "fims-weekly/fims-weekly-template.html#upcoming-events",
+    "title": "FIMS",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
+  },
+  {
+    "objectID": "fims-weekly/fims-weekly-template.html#photo-of-the-week",
+    "href": "fims-weekly/fims-weekly-template.html#photo-of-the-week",
+    "title": "FIMS",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\n?meta:photo.text"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\n      NOAA Fisheries Integrated Modeling System\n    ",
+    "section": "",
+    "text": "Welcome to the Fisheries Integrated Modeling System (FIMS) community playbook, your source of information for all members of the FIMS community--developers, users, and receivers of stock assessments. We welcome both those that are new and seasoned to the field to join us as we work to fulfill our mission! \n      \n      We use the following icons to help each type of community member find relevant information quickly within this playbook:\n\n       Developer\n      An active developer of FIMS that is wanting information on how to change the codebase or update the documentation. \n       New User\n      Someone who wants to use FIMS but is uncertain how to start or is more comfortable using the wrapper functions in R rather than specifying the model line by line with lists. \n       Power User\n      A repeat user of FIMS who wants to dig into the source code to see how it is connected to R or someone who wants more control of their model than what the wrapper functions in R provide. \n       Receiver of Results\n      Typically a manager or stakeholder who has a desire to explore the model output without wanting to use FIMS themselves. \n    \n    See the overview page for more! →"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "\n      NOAA Fisheries Integrated Modeling System\n    ",
+    "section": "about",
+    "text": "about\n\n\n\n\n\n\n\n💡 About FIMS\n\n\nGeneral information about FIMS.\n\n\n\n\n\n\n\n\n\n👥 FIMS Team\n\n\nList of all contributors to FIMS.\n\n\n\n\n\n\n\n\n\n❓ FAQs\n\n\nFrequently asked questions.\n\n\n\n\n\n\n\n\n\n📅 Calendar\n\n\nFIMS calendar.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#useful-fims-sites",
+    "href": "index.html#useful-fims-sites",
+    "title": "\n      NOAA Fisheries Integrated Modeling System\n    ",
+    "section": "useful FIMS sites",
+    "text": "useful FIMS sites\n\n\n\n\n\n\n\n🔍 FIMS case studies\n\n\nTest cases, based on regional assessments, to illustrate use of FIMS.\n\n\n\n\n\n\n\n\n\n FIMS Packagedown\n\n\nPackagedown site for FIMS package.\n\n\n\n\n\n\n\n\n\n FIMS Doxygen\n\n\nDoxygen documentation for FIMS C++ functions.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "FIMS Projects",
+    "section": "",
+    "text": "Current projects\n\n{stockplotr}\nCenter for Independent Experts (CIE) Review\nOnce a month training opportunities via Google Meet\nManuscript on random effects\nManuscript on Dirichlet-multinomial distribution for composition data\nInternal versus external estimation of growth\n\n\n\nRelated projects\n\nThe Fisheries Integrated Toolbox\nStock Assessment Dictionary Project\nPartially Automated Stock Assessment Reporting {asar}"
+  }
+]
