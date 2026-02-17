@@ -1,0 +1,58 @@
+---
+title: "February 16–20, 2026"
+date: "February 16, 2026"
+# Change the following categories accordingly
+categories:
+  - releases
+three-big-things:
+  bt1: "We plan on releasing a version 0.9.0 this week once a few PR are completed."
+  bt2: "Our NOAA-FIMS website will have an official blog later today that will include blog posts and the FIMS Weekly. Additionally, some changes will be made to accommodate dark mode."
+  bt3: "Ron has done some great work on cleaning up the surplus production model and that work will continue this week."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "We are using copilot to help with some changes related to integers in C++ in [[PR #1199](https://github.com/NOAA-FIMS/FIMS/pull/1199)] to remove many of the compiler warnings when you compile on a Windows machine. These warnings are helpful when developing and this effort will make it even more helpful because you will not have to sift through hundreds of non-helpful warnings to get to the ones that you want."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- If you attended the FIMS Training on Monday, please fill out the survey on [Google Cloud Workstations](https://docs.google.com/forms/d/e/1FAIpQLSehj6N1ka568ohEsakRQZbHxrduf1EswkYbVavhPXYBuruM7A/viewform).
+::: 
+    
+<!--
+### DAY DATE
+**NAME**
+
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+
+
+::: {#photo-code}
+```
+# old code
+RealVector(Rcpp::NumericVector x, size_t size) {
+  this->id_m = RealVector::id_g++;
+  this->storage_m = std::make_shared<std::vector<double>>();
+  this->resize(x.size());
+  for (size_t i = 0; i < x.size(); i++) {
+    storage_m->at(i) = x[i];
+  }
+}
+
+# new code
+RealVector(Rcpp::NumericVector x, size_t size) {
+  this->id_m = RealVector::id_g++;
+  this->storage_m = std::make_shared<std::vector<double>>();
+  this->storage_m->assign(x.begin(), x.end());
+}
+```
+:::
