@@ -1,5 +1,5 @@
 # Code to get the names and urls of repos that have pkgdown sites and GitHub pages
-# enabled and put them in the `sites_index.qmd` file.
+# enabled and put them in the `fims-packages.yaml` file.
 library(dplyr)
 library(purrr)
 library(gh)
