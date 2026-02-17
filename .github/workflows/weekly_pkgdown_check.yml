@@ -39,7 +39,7 @@ jobs:
         run: |
           git config --global user.email "gh-actions@github.com"
           git config --global user.name "GitHub Actions"
-          git add sites/sites_index.qmd
+          git add resources/fims-packages.yaml
           git diff --cached --quiet || echo "changed=true" >> $GITHUB_OUTPUT
           
       - name: Get top contributor username
@@ -48,7 +48,7 @@ jobs:
           echo "TOP_CONTRIB=$(cat top_contributors.txt)" >> $GITHUB_ENV
           rm top_contributors.txt
           
-      - name: Create Pull Request for updated sites_index.qmd
+      - name: Create Pull Request for updated fims-packages.yaml
         if: steps.git-check.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
