@@ -1,40 +1,41 @@
 [
   {
-    "listing": "/sites/sites_index.html",
+    "listing": "/resources/resources.html",
     "items": []
   },
   {
-    "listing": "/packages/index.html",
+    "listing": "/resources/packages.html",
     "items": []
   },
   {
-    "listing": "/fims-weekly/index.html",
+    "listing": "/blog/index.html",
     "items": [
-      "/fims-weekly/02.16.2026.html",
-      "/fims-weekly/02.09.2026.html",
-      "/fims-weekly/02.02.2026.html",
-      "/fims-weekly/01.26.2026.html",
-      "/fims-weekly/01.19.2026.html",
-      "/fims-weekly/01.12.2026.html",
-      "/fims-weekly/01.04.2026.html",
-      "/fims-weekly/12.29.2025.html",
-      "/fims-weekly/12.22.2025.html",
-      "/fims-weekly/12.15.2025.html",
-      "/fims-weekly/12.08.2025.html",
-      "/fims-weekly/12.01.2025.html",
-      "/fims-weekly/11.24.2025.html",
-      "/fims-weekly/11.17.2025.html",
-      "/fims-weekly/09.29.2025.html",
-      "/fims-weekly/09.21.2025.html",
-      "/fims-weekly/09.15.2025.html",
-      "/fims-weekly/09.08.2025.html",
-      "/fims-weekly/09.01.2025.html",
-      "/fims-weekly/08.25.2025.html",
-      "/fims-weekly/08.18.2025.html",
-      "/fims-weekly/08.11.2025.html",
-      "/fims-weekly/08.04.2025.html",
-      "/fims-weekly/07.28.2025.html",
-      "/fims-weekly/07.21.2025.html"
+      "/blog/fims-code-club.html",
+      "/blog/02.16.2026.html",
+      "/blog/02.09.2026.html",
+      "/blog/02.02.2026.html",
+      "/blog/01.26.2026.html",
+      "/blog/01.19.2026.html",
+      "/blog/01.12.2026.html",
+      "/blog/01.04.2026.html",
+      "/blog/12.29.2025.html",
+      "/blog/12.22.2025.html",
+      "/blog/12.15.2025.html",
+      "/blog/12.08.2025.html",
+      "/blog/12.01.2025.html",
+      "/blog/11.24.2025.html",
+      "/blog/11.17.2025.html",
+      "/blog/09.29.2025.html",
+      "/blog/09.21.2025.html",
+      "/blog/09.15.2025.html",
+      "/blog/09.08.2025.html",
+      "/blog/09.01.2025.html",
+      "/blog/08.25.2025.html",
+      "/blog/08.18.2025.html",
+      "/blog/08.11.2025.html",
+      "/blog/08.04.2025.html",
+      "/blog/07.28.2025.html",
+      "/blog/07.21.2025.html"
     ]
   },
   {
@@ -43,7 +44,10 @@
       "/about/index.html",
       "/contact/contributors.html",
       "/about/faq.html",
-      "/about/calendar.html"
+      "/about/calendar.html",
+      "/resources/projects.html",
+      "/resources/packages.html",
+      "/resources/resources.html"
     ]
   }
 ]

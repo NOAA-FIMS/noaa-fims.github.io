@@ -148,3 +148,214 @@ pre > code,
 .code-with-filename-file strong {
   color: var(--bs-body-color);
 }
+
+.quarto-listing-cols-3 {
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 0.75em;
+}
+
+.card h5 {
+  margin-top: 0.75em;
+}
+
+.card {
+  --bs-card-spacer-y: 0.75rem;  /* vertical padding inside card */
+  --bs-card-spacer-x: 0.75rem;  /* horizontal padding inside card */
+}
+
+.card-body {
+  padding: 0.75rem;
+}
+
+.card-img {
+  text-align: center !important;
+  padding: 0.75rem;
+}
+
+.card-img-top {
+  text-align: center;
+}
+.card-img-top img {
+  display: inline-block;
+}
+
+img.thumbnail-image.card-img {
+  height: 120px !important;   /* or your preferred height */
+  width: auto !important;     /* maintain aspect ratio */
+  object-fit: unset !important; /* disables cover/crop effect */
+}
+
+.articleCategory {
+  font-size: 15px;
+  line-height: 35px;
+  padding-left: 33px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-bottom: 1.2em; /* Not padding so icons align w/ text */
+  line-height: 1.2rem;
+}
+
+.quarto-listing-category .category {
+  display: none !important;
+}
+
+/* "All" category (example: fa-list) */
+.quarto-listing-category .category[data-category=""] {
+  display: none !important;
+}
+
+/* deep-dive */
+.quarto-listing-category .category[data-category="ZGVlcC1kaXZl"] {
+  display: flex !important;    /* Horizontally align icon and text */
+  align-items: center;      /* Vertically center both */
+  gap: 0.5em;  
+}
+.quarto-listing-category .category[data-category="ZGVlcC1kaXZl"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002"; /* fa-magnifying glass */
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.listing-category[onclick*="ZGVlcC1kaXZl"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002"; 
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.quarto-category a[href*="category=deep-dive"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002"; /* fa-magnifying glass */
+  margin-right: 0.4em;
+  display: inline-block;
+}
+
+div.quarto-post .listing-categories .listing-category[onclick*="ZGVlcC1kaXZl"] {
+    border-color: #4896a1;
+    color: #0e6876;
+    background-color: #e4f0f1;
+}
+
+/* fims-weekly */
+.quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="] {
+  display: flex !important;    /* Horizontally align icon and text */
+  align-items: center;      /* Vertically center both */
+  gap: 0.5em;  
+}
+
+.quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1ea"; /* fa-newpaper */
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.listing-category[onclick*="Zmltcy13ZWVrbHk="]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1ea";
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.quarto-category a[href*="category=fims-weekly"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1ea"; /* fa-newspaper */
+  margin-right: 0.4em;
+  display: inline-block;
+}
+
+div.quarto-post .listing-categories .listing-category[onclick*="Zmltcy13ZWVrbHk="] {
+    border-color: #4896a1;
+    color: #0e6876;
+    background-color: #e4f0f1;
+}
+
+/* learn */
+.quarto-listing-category .category[data-category="bGVhcm4="] {
+  display: flex !important;    /* Horizontally align icon and text */
+  align-items: center;      /* Vertically center both */
+  gap: 0.5em;  
+}
+
+.quarto-listing-category .category[data-category="bGVhcm4="]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f19d"; /* fa-graduation cap */
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.listing-category[onclick*="bGVhcm4="]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f19d"; 
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.quarto-category a[href*="category=learn"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f19d"; /* fa-graduation-cap */
+  margin-right: 0.4em;
+  display: inline-block;
+}
+
+div.quarto-post .listing-categories .listing-category[onclick*="bGVhcm4="] {
+    border-color: #4896a1;
+    color: #0e6876;
+    background-color: #e4f0f1;
+}
+
+/* other */
+.quarto-listing-category .category[data-category="b3RoZXI="] {
+  display: flex !important;    /* Horizontally align icon and text */
+  align-items: center;      /* Vertically center both */
+  gap: 0.5em;  
+}
+
+.quarto-listing-category .category[data-category="b3RoZXI="]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f111"; /* fa-circle */
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.listing-category[onclick*="b3RoZXI="]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f111"; 
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.quarto-category a[href*="category=other"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f111"; /* fa-circle */
+  margin-right: 0.4em;
+  display: inline-block;
+}
+
+div.quarto-post .listing-categories .listing-category[onclick*="b3RoZXI="] {
+    border-color: #4896a1;
+    color: #0e6876;
+    background-color: #e4f0f1;
+}
+
+div.quarto-post {
+    gap: 1em;       /* Or 0.5em for even closer */
+}
+
+div.quarto-post .metadata {
+    flex-basis: 10%;       /* Try 10% or even 0 if you want it to size to fit */
+    min-width: 3em;        /* Optional: ensure it doesn't get too tiny */
+}
