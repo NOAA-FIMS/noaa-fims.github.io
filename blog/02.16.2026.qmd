@@ -1,8 +1,9 @@
 ---
-title: "February 16–20, 2026"
+title: "FIMS Weekly - February 16–20, 2026"
 date: "February 16, 2026"
 # Change the following categories accordingly
 categories:
+  - fims-weekly
   - releases
 three-big-things:
   bt1: "We plan on releasing a version 0.9.0 this week once a few PR are completed."
