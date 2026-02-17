@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      
+
       - name: Pull any changes (e.g. if release_and_archive.yml was recently run)
         run: git pull --rebase origin main
 
@@ -34,7 +34,7 @@ jobs:
       - name: Get latest version from changelog
         id: changelog_version
         run: |
-          VERSION=$(grep -m1 '^## v' changelog/FIMS_CHANGELOG.qmd | sed -E 's/^## (v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?).*/\1/')
+          VERSION=$(grep -m1 '^## v' about/FIMS_CHANGELOG.qmd | sed -E 's/^## (v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?).*/\1/')
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Set up Quarto
@@ -45,21 +45,12 @@ jobs:
         with:
           to: html
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
-          path: 'docs/'
+          target: gh-pages
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit and push rendered site to main
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/
-          git commit -m "Update rendered site"
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-          

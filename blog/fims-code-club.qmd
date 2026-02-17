@@ -1,0 +1,73 @@
+---
+title: "FIMS Code Club"
+subtitle: "Beyond the Code: Building a Community"
+author: "Elizabeth Perl"
+date: "February 17, 2026"
+categories:
+  - other   
+  - code-club
+  - community
+  - open-science
+---
+
+## What is Code Club?
+
+Welcome to the FIMS Code Club, where we don't just build software; we build developers. Every month, we gather to tackle GitHub issues in a space where **curiosity is more important than expertise**. The FIMS Team provides the framework, but you provide the future. Our goal for these Code Clubs is to lower the barrier to entry so that every user feels like an owner, and every 'newbie' becomes a contributor.
+
+[The FIMS Code Club is built on the idea that **people matter more than pull requests.**]
+
+### The Core Mission
+
+1. **Lower the Barrier:** Make contributing to FIMS less intimidating.
+2. **Teach the "Hidden" Skills:** Debugging, Quarto, C++, and TMB.
+3. **Collaborate:** Use Pair Programming/Buddy Coding to learn and solve issues.
+
+> "It may take longer to resolve issues this way, but resolving issues isn't truly the point. The point is to teach, to engage, and to grow the community."
+
+### A Space for Everyone 
+
+::: {.columns}
+
+::: {.column width="40%"}
+During Code Club, we use breakout rooms to takle issues based on specific topics. Whether you are a C++ expert or just getting started with documentation, there is a room for you.
+:::
+
+::: {.column width="60%"}
+![Illustration by [Natasha Remarchuk Ouch!](https://icons8.com/illustrations/author/u7l2K4BCiAa9)](images/cherry-online-work-meeting.png){fig-alt="Illustration of breakout rooms." width=40%}
+:::
+
+:::
+
+An example of a past Code Club's "rooms" is below:
+
+| Room | Focus Area | Skill Level |
+|------|------------|-------------|
+| **The Engine Room** | C++ & TMB Debugging | Advanced/Intermediate/Curious |
+| **The Logic Lab** | Unit Testing & Logic | Advanced/Intermediate/Curious |
+| **The Gateway** | Vignettes & Accessibility | Beginner/All |
+
+
+> In a past Code Club, we had three distinct rooms. One tackled complex scalar vector errors in C++, another built robust new tests, and a third focused on making our documentation accessible to everyone. 
+
+### My Journey: Overcoming the Fear 
+
+#### I felt like I could only contribute to vignettes...
+When I first joined, I stayed in the **Vignettes Room**. I felt like I didn't have the skills to contribute elsewhere. I was intimidated by C++ and TMB. I was afraid of "getting in the way" or asking a question that seemed too basic. I contributed to that room, and even taught others, who are better at TMB and C++ than I am, how to add alt text in Rmarkdown and markdown files and how to navigate _pkgdown.yml files.
+
+#### Fear of not knowing is preventing me from learning...
+But then I remembered: **This club is the solution to that fear.** It exists specifically to bridge that gap. I moved to both of the other C++/TMB coding rooms, asked those "dumb" questions, and watched how experts debug.
+
+#### Debugging feels a lot less scary now...
+**The result?** Debugging some of the C++/TMB code in FIMS feels a lot less scary now. I didn't just help fix code during Code Club; I gained a new skills, learned a lot of helpful tools and tidbits, and feel more connected to the FIMS community!
+
+
+## Join Us at the Next Session
+
+**You don't need to be an expert to walk through the door. You just need to be curious.**
+
+* **When:** Monthly (Check the [FIMS Calendar](https://noaa-fims.github.io/about/calendar.html))
+* **Where:** Virtual Breakout Rooms via Google Meet
+* **Tooling:** We recommend having **VS Code** and the **Live Share** extension installed. *Even if you don't, you are still able to interact with the Live Share coding in your browser.*
+
+### Ready to Contribute?
+[View the FIMS Code Club Project Board on GitHub](https://github.com/orgs/NOAA-FIMS/projects/28)
