@@ -140,12 +140,10 @@ resources:
 ### about {.visually-hidden}
 #### about {.visually-hidden}
 
-::: {#fims-about-listing}
-:::
+{{< listing fims-about-listing >}}
 
 ## useful FIMS resources
 ### resources {.visually-hidden}
 #### resources {.visually-hidden}
 
-::: {#fims-resources-listing}
-:::
+{{< listing fims-resources-listing >}}
