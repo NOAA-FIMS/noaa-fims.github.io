@@ -851,14 +851,14 @@
     "href": "index.html#about",
     "title": "\n      NOAA Fisheries Integrated Modeling System\n    ",
     "section": "about",
-    "text": "about\n\nabout\n\nabout\n\n\n\n\n\n\n\n💡 About FIMS\n\n\nGeneral information about FIMS.\n\n\n\n\n\n\n\n\n\n👥 FIMS Team\n\n\nList of all contributors to FIMS.\n\n\n\n\n\n\n\n\n\n❓ FAQs\n\n\nFrequently asked questions.\n\n\n\n\n\n\n\n\n\n📅 Calendar\n\n\nFIMS calendar.\n\n\n\n\n\nNo matching items"
+    "text": "about\n\nabout\n\nabout\n{{&lt; listing fims-about-listing &gt;}}"
   },
   {
     "objectID": "index.html#useful-fims-resources",
     "href": "index.html#useful-fims-resources",
     "title": "\n      NOAA Fisheries Integrated Modeling System\n    ",
     "section": "useful FIMS resources",
-    "text": "useful FIMS resources\n\nresources\n\nresources\n\n\n\n\n\n\n\n FIMS projects\n\n\nCurrent and related FIMS projects.\n\n\n\n\n\n\n\n\n\n FIMS Doxygen\n\n\nDoxygen documentation for FIMS C++ functions.\n\n\n\n\n\n\n\n\n\n FIMS packages\n\n\nPackagedown site for FIMS package.\n\n\n\n\n\n\n\n\n\n🔍 FIMS resources\n\n\nCase studies, C++ tutorial, etc.\n\n\n\n\n\nNo matching items"
+    "text": "useful FIMS resources\n\nresources\n\nresources\n{{&lt; listing fims-resources-listing &gt;}}"
   },
   {
     "objectID": "resources/projects.html",
