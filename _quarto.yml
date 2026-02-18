@@ -28,36 +28,51 @@ website:
     background: light
     right:
       - text: home
+        aria-label: link to home
         href: index.qmd
       - text: about
         menu:
           - text: overview
+            aria-label: link to about page
             href: about/index.qmd
           - text: faq
+            aria-label: link to faq page
             href: about/faq.qmd
           - text: calendar
+            aria-label: link to FIMS calendar
             href: about/calendar.qmd
           - text: changelog
+            aria-label: link to changelog
             href: about/FIMS_CHANGELOG.qmd
           - text: acknowledgements
+            aria-label: link to acknowledgements
             href: about/acknowledgements.qmd
       - text: blog
+        aria-label: link to blog
         href: blog/index.qmd
       - text: resources
+        aria-label: dropdown for resources
         menu:
           - text: resources
+            aria-label: link to resources
             href: resources/resources.qmd
           - text: R packages
+            aria-label: link to R packages associated with FIMS
             href: resources/packages.qmd
           - text: projects
+            aria-label: link to FIMS projects
             href: resources/projects.qmd
       - text: contact
+        aria-label: link to contacts
         menu:
           - text: contact FIMS lead
+            aria-label: link to FIMS lead contact info
             href: contact/index.qmd
           - text: FIMS team
+            aria-label: link to list of contributors
             href: contact/contributors.qmd
       - icon: github
+        aria-label: github icon
         href: https://github.com/NOAA-FIMS
   page-footer:
     border: false

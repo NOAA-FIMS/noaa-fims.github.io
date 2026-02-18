@@ -131,17 +131,21 @@ resources:
   </div>
 
   <div class="site-logo">
-    <img src="images/FIMS_logo3.png" alt="FIMS Logo">
+    <img src="images/FIMS_logo3.png" alt="FIMS half page logo">
   </div>
 </div>
 ```
 
 ## about
+### about {.visually-hidden}
+#### about {.visually-hidden}
 
 ::: {#fims-about-listing}
 :::
 
 ## useful FIMS resources
+### resources {.visually-hidden}
+#### resources {.visually-hidden}
 
 ::: {#fims-resources-listing}
 :::
