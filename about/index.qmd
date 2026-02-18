@@ -23,7 +23,7 @@ A team of [experts](../contact/contributors.qmd) within NOAA Fisheries is design
 
 Contributions from individuals of all skill levels are welcome. The codebase and documentation heavily relies of contributions from volunteers and it is imperative that we receive both feedback and contributions from users to ensure the user experience remains true to our aim of being user friendly. The roles of internal and external collaborators are outlined in the [roles section](../contact/contributors.qmd#roles) of this community playbook. 
 
-## Get involved <i class="fa-solid fa-user-plus"></i>
+## Get involved <i class="fa-solid fa-user-plus" aria-hidden="true"></i>
 
 Users and developers are welcome to join the [Discussions board](https://github.com/orgs/NOAA-FIMS/discussions) or submit bug reports using GitHub Issues. Please use the issues under [collaborative workflow](https://github.com/NOAA-FIMS/collaborative_workflow/issues) to make suggestions about the developer guide and the issues under the FIMS software [repository](https://github.com/NOAA-FIMS/FIMS/issues) for software design and development feedback.
 
