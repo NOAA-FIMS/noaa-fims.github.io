@@ -34,16 +34,16 @@ The project is constantly under development 🔨. Check out our progress so far 
 | Metric                 | Status| 
 |------------------------|-------|
 | **Development** | **Status**|
-| Total Issues           |  ![Total Issues](https://raster.shields.io/github/issues-raw/noaa-fims/fims.png)|
-| Closed Issues           | ![Closed Issues](https://raster.shields.io/github/issues-closed/noaa-fims/fims.png)|
-| Issues that Need Triage | ![Issues needing triage](https://raster.shields.io/github/issues-raw/noaa-fims/fims/status:%20triage_needed.png)|
-| Pull Requests           | ![Pull requests](https://raster.shields.io/github/issues-pr/NOAA-FIMS/FIMS.png)|
-| Calculate test coverage | [![call-calc_coverage](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml)|
-| `R cmd check` | ![r-cmd-check](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg)|
-| Google tests | ![googletest](https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg)|
+| Total Issues           |  ![Badge showing total open issues in FIMS repository](https://raster.shields.io/github/issues-raw/noaa-fims/fims.png)|
+| Closed Issues           | ![Badge showing total closed issues in FIMS repository](https://raster.shields.io/github/issues-closed/noaa-fims/fims.png)|
+| Issues that Need Triage | ![Badge showing issues needing triage in FIMS repository](https://raster.shields.io/github/issues-raw/noaa-fims/fims/status:%20triage_needed.png)|
+| Pull Requests           | ![Badge showing open pull requests in FIMS repository](https://raster.shields.io/github/issues-pr/NOAA-FIMS/FIMS.png)|
+| Calculate test coverage | [![Badge showing test coverage calculation workflow status](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml)|
+| `R cmd check` | ![Badge showing R CMD check workflow status](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg)|
+| Google tests | ![Badge showing Google test workflow status](https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg)|
 | **Community Playbook** | **Status**|
-| Total issues | ![Total issues](https://img.shields.io/github/issues-raw/noaa-fims/noaa-fims.github.io)|
-| Closed Issues| ![Closed issues](https://img.shields.io/github/issues-closed/noaa-fims/noaa-fims.github.io)|
+| Total issues | ![Badge showing total open issues in community playbook repository](https://img.shields.io/github/issues-raw/noaa-fims/noaa-fims.github.io)|
+| Closed Issues| ![Badge showing total closed issues in community playbook repository](https://img.shields.io/github/issues-closed/noaa-fims/noaa-fims.github.io)|
 
 ## Comparison to other frameworks
 
