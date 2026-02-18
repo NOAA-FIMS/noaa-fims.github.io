@@ -137,13 +137,11 @@ resources:
 ```
 
 ## about
-### about {.visually-hidden}
-#### about {.visually-hidden}
 
-{{< listing fims-about-listing >}}
+::: {#fims-about-listing}
+:::
 
 ## useful FIMS resources
-### resources {.visually-hidden}
-#### resources {.visually-hidden}
 
-{{< listing fims-resources-listing >}}
+::: {#fims-resources-listing}
+:::
