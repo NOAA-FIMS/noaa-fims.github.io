@@ -1,6 +1,5 @@
 project:
   type: website
-  output-dir: docs
   render:
     - "*.qmd"
     - "sites/*.qmd"
@@ -25,6 +24,7 @@ website:
   navbar:
     title: "FIMS <small>{{< env VERSION >}}</small>"
     logo: images/FIMS_logo3.png
+    logo-alt: "FIMS logo"
     background: light
     right:
       - text: home

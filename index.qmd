@@ -136,12 +136,12 @@ resources:
 </div>
 ```
 
-## [about](about/index.qmd)
+## about
 
 ::: {#fims-about-listing}
 :::
 
-## [useful FIMS resources](resources/resources.qmd)
+## useful FIMS resources
 
 ::: {#fims-resources-listing}
 :::
