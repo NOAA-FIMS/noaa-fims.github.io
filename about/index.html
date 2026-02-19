@@ -370,7 +370,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#why-fims" id="toc-why-fims" class="nav-link" data-scroll-target="#why-fims">Why FIMS?</a></li>
   <li><a href="#community" id="toc-community" class="nav-link" data-scroll-target="#community">Community</a>
   <ul class="collapse">
-  <li><a href="#get-involved" id="toc-get-involved" class="nav-link" data-scroll-target="#get-involved">Get involved <i class="fa-solid fa-user-plus"></i></a></li>
+  <li><a href="#get-involved" id="toc-get-involved" class="nav-link" data-scroll-target="#get-involved">Get involved <i class="fa-solid fa-user-plus" aria-hidden="true"></i></a></li>
   </ul></li>
   <li><a href="#current-project-status" id="toc-current-project-status" class="nav-link" data-scroll-target="#current-project-status">Current project status</a>
   <ul class="collapse">
@@ -387,6 +387,28 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<!-- Skip to main content link for keyboard accessibility -->
+<a href="#quarto-content" class="skip-link">Skip to main content</a>
+<style>
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  z-index: 10000;
+  border-radius: 0 0 4px 0;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #4896a1; /* Using FIMS blue */
+  outline-offset: 2px;
+}
+</style>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -421,7 +443,7 @@ ul.task-list li input[type="checkbox"] {
 <p>A team of <a href="../contact/contributors.html">experts</a> within NOAA Fisheries is designing and developing the system, and we are advised by the <a href="../contact/contributors.html#fims-council">FIMS Council</a> which includes academic, industry, and international partners.</p>
 <p>Contributions from individuals of all skill levels are welcome. The codebase and documentation heavily relies of contributions from volunteers and it is imperative that we receive both feedback and contributions from users to ensure the user experience remains true to our aim of being user friendly. The roles of internal and external collaborators are outlined in the <a href="../contact/contributors.html#roles">roles section</a> of this community playbook.</p>
 <section id="get-involved" class="level2">
-<h2 class="anchored" data-anchor-id="get-involved">Get involved <i class="fa-solid fa-user-plus"></i></h2>
+<h2 class="anchored" data-anchor-id="get-involved">Get involved <i class="fa-solid fa-user-plus" aria-hidden="true"></i></h2>
 <p>Users and developers are welcome to join the <a href="https://github.com/orgs/NOAA-FIMS/discussions">Discussions board</a> or submit bug reports using GitHub Issues. Please use the issues under <a href="https://github.com/NOAA-FIMS/collaborative_workflow/issues">collaborative workflow</a> to make suggestions about the developer guide and the issues under the FIMS software <a href="https://github.com/NOAA-FIMS/FIMS/issues">repository</a> for software design and development feedback.</p>
 </section>
 </section>
@@ -442,31 +464,31 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>Total Issues</td>
-<td><img src="https://raster.shields.io/github/issues-raw/noaa-fims/fims.png" class="img-fluid" alt="Total Issues"></td>
+<td><img src="https://raster.shields.io/github/issues-raw/noaa-fims/fims.png" class="img-fluid" alt="Badge showing total open issues in FIMS repository"></td>
 </tr>
 <tr class="odd">
 <td>Closed Issues</td>
-<td><img src="https://raster.shields.io/github/issues-closed/noaa-fims/fims.png" class="img-fluid" alt="Closed Issues"></td>
+<td><img src="https://raster.shields.io/github/issues-closed/noaa-fims/fims.png" class="img-fluid" alt="Badge showing total closed issues in FIMS repository"></td>
 </tr>
 <tr class="even">
 <td>Issues that Need Triage</td>
-<td><img src="https://raster.shields.io/github/issues-raw/noaa-fims/fims/status:%20triage_needed.png" class="img-fluid" alt="Issues needing triage"></td>
+<td><img src="https://raster.shields.io/github/issues-raw/noaa-fims/fims/status:%20triage_needed.png" class="img-fluid" alt="Badge showing issues needing triage in FIMS repository"></td>
 </tr>
 <tr class="odd">
 <td>Pull Requests</td>
-<td><img src="https://raster.shields.io/github/issues-pr/NOAA-FIMS/FIMS.png" class="img-fluid" alt="Pull requests"></td>
+<td><img src="https://raster.shields.io/github/issues-pr/NOAA-FIMS/FIMS.png" class="img-fluid" alt="Badge showing open pull requests in FIMS repository"></td>
 </tr>
 <tr class="even">
 <td>Calculate test coverage</td>
-<td><a href="https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml"><img src="https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml/badge.svg" class="img-fluid" alt="call-calc_coverage"></a></td>
+<td><a href="https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml"><img src="https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml/badge.svg" class="img-fluid" alt="Badge showing test coverage calculation workflow status"></a></td>
 </tr>
 <tr class="odd">
 <td><code>R cmd check</code></td>
-<td><img src="https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg" class="img-fluid" alt="r-cmd-check"></td>
+<td><img src="https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg" class="img-fluid" alt="Badge showing R CMD check workflow status"></td>
 </tr>
 <tr class="even">
 <td>Google tests</td>
-<td><img src="https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg" class="img-fluid" alt="googletest"></td>
+<td><img src="https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg" class="img-fluid" alt="Badge showing Google test workflow status"></td>
 </tr>
 <tr class="odd">
 <td><strong>Community Playbook</strong></td>
@@ -474,11 +496,11 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>Total issues</td>
-<td><img src="https://img.shields.io/github/issues-raw/noaa-fims/noaa-fims.github.io" class="img-fluid" alt="Total issues"></td>
+<td><img src="https://img.shields.io/github/issues-raw/noaa-fims/noaa-fims.github.io" class="img-fluid" alt="Badge showing total open issues in community playbook repository"></td>
 </tr>
 <tr class="odd">
 <td>Closed Issues</td>
-<td><img src="https://img.shields.io/github/issues-closed/noaa-fims/noaa-fims.github.io" class="img-fluid" alt="Closed issues"></td>
+<td><img src="https://img.shields.io/github/issues-closed/noaa-fims/noaa-fims.github.io" class="img-fluid" alt="Badge showing total closed issues in community playbook repository"></td>
 </tr>
 </tbody>
 </table>
@@ -760,6 +782,24 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!link.href.includes(window.location.hostname)) {
       link.setAttribute('target', '_blank');
       link.setAttribute('rel', 'noopener');
+      
+      // Add accessibility attributes to inform screen reader users
+      var ariaLabel = link.getAttribute('aria-label');
+      if (ariaLabel) {
+        link.setAttribute('aria-label', ariaLabel + ' (opens in new window)');
+      } else {
+        var linkText = link.textContent || link.innerText;
+        link.setAttribute('aria-label', linkText + ' (opens in new window)');
+      }
+      
+      // Add a visual indicator (external link icon) for sighted users
+      if (!link.querySelector('.external-link-icon')) {
+        var icon = document.createElement('span');
+        icon.className = 'external-link-icon';
+        icon.setAttribute('aria-hidden', 'true');
+        icon.innerHTML = ' <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 0.2em;"></i>';
+        link.appendChild(icon);
+      }
     }
   });
 });
@@ -1187,7 +1227,7 @@ document.addEventListener("DOMContentLoaded", function() {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="github" target="_blank" rel="noopener"><i class="fab fa-github"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="r-project" target="_blank" rel="noopener"><i class="fab fa-r-project"></i></a></p>
+<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="FIMS on GitHub" aria-label="Visit FIMS on GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="FIMS R Universe" aria-label="Visit FIMS R Universe repository" target="_blank" rel="noopener"><i class="fab fa-r-project" aria-hidden="true"></i></a></p>
 </div>
   </div>
 </footer>
