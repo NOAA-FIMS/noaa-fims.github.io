@@ -518,23 +518,6 @@ document.addEventListener("DOMContentLoaded", function() {
       link.setAttribute('target', '_blank');
       link.setAttribute('rel', 'noopener');
       
-      // Add accessibility attributes to inform screen reader users
-      var ariaLabel = link.getAttribute('aria-label');
-      if (ariaLabel) {
-        link.setAttribute('aria-label', ariaLabel + ' (opens in new window)');
-      } else {
-        var linkText = link.textContent || link.innerText;
-        link.setAttribute('aria-label', linkText + ' (opens in new window)');
-      }
-      
-      // Add a visual indicator (external link icon) for sighted users
-      if (!link.querySelector('.external-link-icon')) {
-        var icon = document.createElement('span');
-        icon.className = 'external-link-icon';
-        icon.setAttribute('aria-hidden', 'true');
-        icon.innerHTML = ' <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 0.2em;"></i>';
-        link.appendChild(icon);
-      }
     }
   });
 });
