@@ -25,7 +25,6 @@ results <- map_dfr(repo_names, function(repo) {
   }
   pages <- tryCatch(gh::gh("/repos/{owner}/{repo}/pages", owner = org, repo = repo), error = function(e) NULL)
   pages_enabled <- !is.null(pages)
-  pages_source_docs <- pages_enabled && !is.null(pages$source) && pages$source$path == "docs"
   pages_url <- if (!is.null(pages$html_url)) pages$html_url else NA
   tibble(
     repo = repo,
@@ -33,8 +32,8 @@ results <- map_dfr(repo_names, function(repo) {
     has_pkgdown = pkgdown_exists,
     pkgdown_path = pkgdown_path,
     pages_enabled = pages_enabled,
-    pages_source_docs = pages_source_docs,
-    github_pages_url = pages_url
+    github_pages_url = pages_url,
+    repo_url = if (!is.null(repo_meta)) repo_meta$html_url else NA_character_
   )
 })
 
@@ -54,6 +53,7 @@ for (i in seq_len(nrow(results_filt))) {
   site <- results_filt$github_pages_url[i]
   repo <- results_filt$repo[i]
   desc <- results_filt$description[i]
+  repo_url <- results_filt$repo_url[i]
   found <- site %in% existing_urls
   if (!is.na(site) && !found) {
     block <- c(
