@@ -10,12 +10,12 @@ listing:
         Test cases, based on regional assessments, to illustrate use of FIMS.
       categories: [WHAM, SS3, ASAP, TMB]
     - path: https://noaa-fims.github.io/FIMS/
-      title: <i class="fab fa-r-project"></i> FIMS R Documentation
+      title: <i class="fab fa-r-project" aria-hidden="true"></i> FIMS R Documentation
       description: >
         Packagedown site for FIMS package.
       categories: [R]
     - path: ../doxygen/index.html
-      title: <i class="fa-solid fa-plus"></i> FIMS C++ Documentation
+      title: <i class="fa-solid fa-plus" aria-hidden="true"></i> FIMS C++ Documentation
       description: >
         Documentation for FIMS C++ functions, written using doxygen.
       categories: [C++]

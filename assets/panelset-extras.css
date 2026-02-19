@@ -9,7 +9,7 @@
   --panel-tab-hover-background: unset;
   --panel-tab-active-border-color: var(--blue-30);
   --panel-tab-hover-border-color: var(--red-50);
-  --panel-tab-inactive-opacity: 0.5;
+  --panel-tab-inactive-opacity: 0.7; /* Improved from 0.5 for better contrast */
   --panel-tab-font-family: inherit;
 }
 
@@ -53,7 +53,7 @@
   --panel-tab-active-background: #132026;
   --panel-tab-hover-foreground: var(--slate-60);
   --panel-tab-hover-border-color: var(--red-50);
-  --panel-tab-inactive-opacity: 0.66;
+  --panel-tab-inactive-opacity: 0.75; /* Improved from 0.66 for better contrast */
 }
 
 .quarto-dark .content .panelset.panelset--bordered .panel {
