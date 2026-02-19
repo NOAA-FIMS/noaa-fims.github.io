@@ -48,15 +48,15 @@ listing:
           description: >
             Case studies, C++ tutorial, etc. 
         - path: resources/packages.qmd
-          title: <i class="fab fa-r-project"></i> FIMS packages
+          title: <i class="fab fa-r-project" aria-hidden="true"></i> FIMS packages
           description: >
             Packagedown site for FIMS package.
         - path: doxygen/index.html
-          title: <i class="fa-solid fa-plus"></i> FIMS Doxygen
+          title: <i class="fa-solid fa-plus" aria-hidden="true"></i> FIMS Doxygen
           description: >
             Doxygen documentation for FIMS C++ functions.
         - path: resources/projects.qmd
-          title: <i class="fa-solid fa-folder-open"></i> FIMS projects
+          title: <i class="fa-solid fa-folder-open" aria-hidden="true"></i> FIMS projects
           description: >
             Current and related FIMS projects.
           
@@ -81,7 +81,8 @@ resources:
       <a
         class="link-primary"
         href="https://github.com/NOAA-FIMS"
-        title="github"
+        title="FIMS on GitHub"
+        aria-label="Visit FIMS on GitHub"
         target="_blank"
         rel="noopener"
       >
@@ -91,7 +92,8 @@ resources:
       <a
         class="link-primary"
         href="https://noaa-fims.r-universe.dev"
-        title="r-project"
+        title="FIMS R Universe"
+        aria-label="Visit FIMS R Universe repository"
         target="_blank"
         rel="noopener"
       >
@@ -101,7 +103,8 @@ resources:
       <a
         class="link-primary"
         href="https://nmfs-ost.github.io/noaa-fit/"
-        title="FIT"
+        title="NOAA Fisheries Integrated Toolbox"
+        aria-label="Visit NOAA Fisheries Integrated Toolbox"
         target="_blank"
         rel="noopener"
       >
