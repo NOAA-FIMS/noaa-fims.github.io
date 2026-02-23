@@ -40,6 +40,6 @@ Online: [Google meet](https://meet.google.com/unsupported?meetingCode=ica-ieta-n
 
 ::: {#photo-code}
 ```{=html}
-<img src="https://github.com/NOAA-FIMS/FIMS/raw/main/pkgdown/assets/fims-cheatsheet-thumb.png" alt="An infographic containing information on how to format data and the basics for fitting a FIMS model. See the vignettes for the code explained in this infographic." style="height:50%;">
+<img src="https://raw.githubusercontent.com/NOAA-FIMS/FIMS/main/pkgdown/assets/fims-cheatsheet-thumb.png" alt="An infographic containing information on how to format data and the basics for fitting a FIMS model. See the vignettes for the code explained in this infographic." style="height:50%;">
 ```
 :::
