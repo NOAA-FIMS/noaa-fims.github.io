@@ -48,7 +48,7 @@ jobs:
             git diff --name-status HEAD^..HEAD \
               | tr -d '\r' \
               | awk -v re="$STATUS_RE" '$1 ~ re {print $2}' \
-              | grep -E '^blog/[0-9]{2}[-.][0-9]{2}[-.][0-0-9]{4}\.html$' \
+              | grep -E '^blog/[0-9]{2}[-.][0-9]{2}[-.][0-9]{4}\.html$' \
               | head -n 1 \
               || true
           )"
