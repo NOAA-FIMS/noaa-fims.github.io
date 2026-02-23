@@ -62,7 +62,7 @@ jobs:
           node .github/screenshot.js "${{ steps.added_html.outputs.weekly_html }}"
 
       - name: Check that png was created
-        if: if: steps.added_html.outputs.weekly_html != ''
+        if: steps.added_html.outputs.weekly_html != ''
         run: |
           echo "Listing only the generated .png files..."
           ls -l *.png
