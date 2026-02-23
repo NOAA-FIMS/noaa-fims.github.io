@@ -1,7 +1,8 @@
 ---
+# The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - February 23–27, 2026"
 date: "February 23, 2026"
-# Change the following categories accordingly, but you MUST keep the fims-weekly
+# Change the following categories accordingly, but you MUST keep fims-weekly
 categories:
   - fims-weekly
   - releases
@@ -25,7 +26,7 @@ photo:
 {{< include "fims-weekly-template.qmd" >}}
 
 ::: {#announcements}
-- Please consider submitting an entry to the FIMS blog, Elizabeth made this handy [template](https://github.com/NOAA-FIMS/noaa-fims.github.io/blob/main/blog/blog_template.qmd) to make it as painless as possible.
+- Please consider submitting an entry to the [FIMS blog](https://noaa-fims.github.io/blog/), Elizabeth made this handy [template](https://github.com/NOAA-FIMS/noaa-fims.github.io/blob/main/blog/blog_template.qmd) to make it as painless as possible.
 - Version 0.8.1 was released TODAY! Two small fixes and lots of great documentation.
 ::: 
     
