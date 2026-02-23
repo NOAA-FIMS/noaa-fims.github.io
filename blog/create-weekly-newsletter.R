@@ -71,9 +71,10 @@ create_weekly_qmd <- function(date = NULL, week_end_date = NULL, file_name = NUL
 
   yaml <- sprintf(
 '---
+# The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - %s"
 date: "%s"
-# Change the following categories accordingly
+# Change the following categories accordingly, but you MUST keep the fims-weekly one
 categories:
   # This one will show up in the sidebar, any other categories you add will not
   # but are clickable to sort.

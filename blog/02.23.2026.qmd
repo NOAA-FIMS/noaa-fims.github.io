@@ -1,7 +1,8 @@
 ---
+# The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - February 23–27, 2026"
 date: "February 23, 2026"
-# Change the following categories accordingly
+# Change the following categories accordingly, but you MUST keep the fims-weekly one
 categories:
   - fims-weekly
   - releases
