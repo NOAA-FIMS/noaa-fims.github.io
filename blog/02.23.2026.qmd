@@ -1,0 +1,43 @@
+---
+title: "February 23–27, 2026"
+date: "February 23, 2026"
+# Change the following categories accordingly
+categories:
+  - releases
+  - blog
+three-big-things:
+  bt1: "We have a few open PRs this week to review from new contributors and one from Matthew (fixing a memory leak)."
+  bt2: "Bai is working on ecosystemdata to [extract selectivity parameters from EWE output](https://github.com/NOAA-FIMS/ecosystemdata/pull/15)."
+  bt3: "Matthew is working ALL WEEK on [translational units](https://github.com/NOAA-FIMS/FIMS/issues/981) to decrease the number of cores that we need to build FIMS."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "Our [cheatsheet](https://github.com/NOAA-FIMS/FIMS/raw/main/pkgdown/assets/fims-cheatsheet-thumb.png) is now live in the FIMS package."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- Please consider submitting an entry to the FIMS blog, Elizabeth made this handy [template](https://github.com/NOAA-FIMS/noaa-fims.github.io/blob/main/blog/blog_template.qmd) to make it as painless as possible.
+- Version 0.8.1 was released TODAY! Two small fixes and lots of great documentation.
+::: 
+    
+::: {#additional-events}
+### Wednesday, February 25
+**FIMS Code Club**
+
+Time: 16:00–19:00 E; 13:00–16:00 P; 12:00–15:00 AK; 09:00-12:00 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&ref=https://meet.google.com/ica-ieta-ndu)
+:::
+
+
+::: {#photo-code}
+![An infographic containing information on how to format data and the basics for fitting a FIMS model. See the vignettes for the code explained in this infographic.](https://github.com/NOAA-FIMS/FIMS/raw/main/pkgdown/assets/fims-cheatsheet-thumb.png)
+:::
