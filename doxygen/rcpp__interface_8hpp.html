@@ -233,16 +233,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ad8bf2ebe714bdb6a1e216ed7d9efa7a3" id="r_ad8bf2ebe714bdb6a1e216ed7d9efa7a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#ad8bf2ebe714bdb6a1e216ed7d9efa7a3">init_logging</a> ()</td></tr>
 <tr class="separator:ad8bf2ebe714bdb6a1e216ed7d9efa7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d0c303c2c44fcb296368608a5f2ff1a" id="r_a1d0c303c2c44fcb296368608a5f2ff1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a1d0c303c2c44fcb296368608a5f2ff1a">CreateTMBModel</a> ()</td></tr>
-<tr class="memdesc:a1d0c303c2c44fcb296368608a5f2ff1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the TMB model object and adds interface objects to it.  <br /></td></tr>
+<tr class="memdesc:a1d0c303c2c44fcb296368608a5f2ff1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize and construct the FIMS model using TMB.  <br /></td></tr>
 <tr class="separator:a1d0c303c2c44fcb296368608a5f2ff1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecc723970498500fa938ca77a1502e25" id="r_aecc723970498500fa938ca77a1502e25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#aecc723970498500fa938ca77a1502e25">set_fixed_parameters</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">par</a>)</td></tr>
-<tr class="memdesc:aecc723970498500fa938ca77a1502e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the fixed parameters vector object. Updates the internal parameter values for the model base of type TMB_FIMS_REAL_TYPE. Typically called before finalize or get_output to ensure the correct values are used.  <br /></td></tr>
+<tr class="memdesc:aecc723970498500fa938ca77a1502e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update fixed parameters in the tape, so the output is correct.  <br /></td></tr>
 <tr class="separator:aecc723970498500fa938ca77a1502e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd5cf41c12b933a40a5d3808cee44a5" id="r_accd5cf41c12b933a40a5d3808cee44a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#accd5cf41c12b933a40a5d3808cee44a5">get_fixed_parameters_vector</a> ()</td></tr>
 <tr class="memdesc:accd5cf41c12b933a40a5d3808cee44a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the fixed parameters vector object.  <br /></td></tr>
 <tr class="separator:accd5cf41c12b933a40a5d3808cee44a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a602703ef3357097ff34a6751fd13c3f5" id="r_a602703ef3357097ff34a6751fd13c3f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a602703ef3357097ff34a6751fd13c3f5">set_random_parameters</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">par</a>)</td></tr>
-<tr class="memdesc:a602703ef3357097ff34a6751fd13c3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the random parameters vector object. Updates the internal random effects parameter values for the model base of TMB_FIMS_REAL_TYPE. Typically called before finalize or get_output to ensure the correct values are used.  <br /></td></tr>
+<tr class="memdesc:a602703ef3357097ff34a6751fd13c3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update random effect parameters in the tape, so the output is correct.  <br /></td></tr>
 <tr class="separator:a602703ef3357097ff34a6751fd13c3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace395771e2a80c98b2ae2e3da4d141dc" id="r_ace395771e2a80c98b2ae2e3da4d141dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#ace395771e2a80c98b2ae2e3da4d141dc">get_random_parameters_vector</a> ()</td></tr>
 <tr class="memdesc:ace395771e2a80c98b2ae2e3da4d141dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the random parameters vector object.  <br /></td></tr>
@@ -355,8 +355,27 @@ template&lt;typename Type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Creates the TMB model object and adds interface objects to it. </p>
-<p>This function is called within <code><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d" title="Clears the internal objects.">initialize_fims()</a></code> from R and is not typically called by the user directly. </p>
+<p>Initialize and construct the FIMS model using TMB. </p>
+<p>This function sets up the core C++ objects required for building the objective function with TMB before optimizing a FIMS model. The main steps of the function are as follows:</p><ul>
+<li>The logging system is initialized and any existing model structures are cleared, ensuring a clean slate for a new model.</li>
+<li>It resets and prepares the main model information objects (<a class="el" href="classfims__info_1_1Information.html" title="Stores FIMS model information and creates model. Contains all objects and data pre-model construction...">fims_info::Information</a> singletons), ensuring all internal data and settings are cleared and ready for a new model run. This step is essential for both initializing the model structure and avoiding conflicts from previous runs.</li>
+<li>It iterates over all registered FIMS interface objects and adds them to the TMB model context.</li>
+<li>After all of the objects are registered, it calls <a class="el" href="classfims__info_1_1Information.html#a87a3d2d9a1575dbba625398e7cadd904" title="Create the generalized stock assessment model that will evaluate the objective function....">fims_info::Information::CreateModel()</a> and <a class="el" href="classfims__info_1_1Information.html#a7fa2c6cc68de26e26b6c1085600675bc" title="Checks to make sure all required modules are present for specified model.">fims_info::Information::CheckModel()</a> on the base <a class="el" href="classfims__info_1_1Information.html" title="Stores FIMS model information and creates model. Contains all objects and data pre-model construction...">fims_info::Information</a> object.</li>
+<li>It instantiates the singleton <a class="el" href="classfims__model_1_1Model.html" title="Model class. FIMS objective function.">fims_model::Model</a> object which represents the constructed TMB model.</li>
+</ul>
+<p>Typically the average user does not interact with this function because it is called within <a href="https://noaa-fims.github.io/FIMS/reference/initialize_fims.html"><code>initialize_fims</code></a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="rcpp__interface_8hpp.html#ad8bf2ebe714bdb6a1e216ed7d9efa7a3">init_logging()</a> </dd>
+<dd>
+<a class="el" href="classfims__info_1_1Information.html#a8b9e6bc88cfee7e80b360eea2d2853b5" title="Clears all containers.">fims_info::Information::Clear()</a> </dd>
+<dd>
+<a class="el" href="classfims__info_1_1Information.html#a87a3d2d9a1575dbba625398e7cadd904" title="Create the generalized stock assessment model that will evaluate the objective function....">fims_info::Information::CreateModel()</a> </dd>
+<dd>
+<a class="el" href="classfims__info_1_1Information.html#a7fa2c6cc68de26e26b6c1085600675bc" title="Checks to make sure all required modules are present for specified model.">fims_info::Information::CheckModel()</a> </dd>
+<dd>
+<a class="el" href="classfims__info_1_1Information.html#aea0008a9935a78fe17f5ec217ac4c621" title="Returns a singleton Information object for type T.">fims_info::Information::GetInstance()</a> </dd>
+<dd>
+<a href="https://noaa-fims.github.io/FIMS/reference/initialize_fims.html" target="_blank"><code>initialize_fims()</code></a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A boolean is returned, where true indicates that the model was successfully created. </dd></dl>
 
 </div>
 </div>
@@ -515,15 +534,19 @@ template&lt;typename Type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the fixed parameters vector object. Updates the internal parameter values for the model base of type TMB_FIMS_REAL_TYPE. Typically called before finalize or get_output to ensure the correct values are used. </p>
-<p>Usage example: </p><div class="fragment"><div class="line">set_fixed_parameters(c(1, 2, 3))</div>
+<p>Update fixed parameters in the tape, so the output is correct. </p>
+<p>Updates the internal parameter values for the model base of type TMB_FIMS_REAL_TYPE. It is typically called before finalize() or <a class="el" href="classCatchAtAgeInterface.html#aa1879000c24be96ab99dd36baf58f92d">`get_output()`</a> to ensure the correct values are used because TMB doesn't always keep the updated parameters in the "double" version of the tape. So we need to update those first. <br  />
+<br  />
+Usage example in R: </p><div class="fragment"><div class="line">set_fixed_parameters(c(1, 2, 3))</div>
+<div class="line">set_random_parameters(c(1, 2, 3))</div>
 <div class="line">catch_at_age$get_output(do_sd_report = FALSE)</div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+</div><!-- fragment -->  <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">par</td><td>A vector of parameter values. </td></tr>
   </table>
   </dd>
 </dl>
+ </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="rcpp__interface_8hpp.html#a602703ef3357097ff34a6751fd13c3f5" title="Update random effect parameters in the tape, so the output is correct.">set_random_parameters()</a> </dd></dl>
 
 </div>
 </div>
@@ -543,15 +566,19 @@ template&lt;typename Type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the random parameters vector object. Updates the internal random effects parameter values for the model base of TMB_FIMS_REAL_TYPE. Typically called before finalize or get_output to ensure the correct values are used. </p>
-<p>Usage example: </p><div class="fragment"><div class="line">set_random_parameters(c(1, 2, 3))</div>
+<p>Update random effect parameters in the tape, so the output is correct. </p>
+<p>Updates the internal parameter values for the model base of type TMB_FIMS_REAL_TYPE. It is typically called before finalize() or <a class="el" href="classCatchAtAgeInterface.html#aa1879000c24be96ab99dd36baf58f92d">`get_output()`</a> to ensure the correct values are used because TMB doesn't always keep the updated parameters in the "double" version of the tape. So we need to update those first. <br  />
+<br  />
+Usage example in R: </p><div class="fragment"><div class="line">set_fixed_parameters(c(1, 2, 3))</div>
+<div class="line">set_random_parameters(c(1, 2, 3))</div>
 <div class="line">catch_at_age$get_output(do_sd_report = FALSE)</div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+</div><!-- fragment -->  <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">par</td><td>A vector of parameter values. </td></tr>
   </table>
   </dd>
 </dl>
+ </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="rcpp__interface_8hpp.html#aecc723970498500fa938ca77a1502e25" title="Update fixed parameters in the tape, so the output is correct.">set_fixed_parameters()</a> </dd></dl>
 
 </div>
 </div>

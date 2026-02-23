@@ -233,7 +233,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7e5e73a7689cefb1949cb844d12307b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method of the logistic selectivity class that implements the logistic function from FIMS math.  <br /></td></tr>
 <tr class="separator:a7e5e73a7689cefb1949cb844d12307b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9abf9caf9ba8c003ebb2dfa9c2184207" id="r_a9abf9caf9ba8c003ebb2dfa9c2184207"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1LogisticSelectivity.html#a9abf9caf9ba8c003ebb2dfa9c2184207">evaluate</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &amp;x, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">pos</a>)</td></tr>
-<tr class="memdesc:a9abf9caf9ba8c003ebb2dfa9c2184207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method of the logistic selectivity class that implements the logistic function from FIMS math.  <br /></td></tr>
+<tr class="memdesc:a9abf9caf9ba8c003ebb2dfa9c2184207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method of the logistic selectivity class that implements the logistic function from FIMS math.    <br /></td></tr>
 <tr class="separator:a9abf9caf9ba8c003ebb2dfa9c2184207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af32927aa592435bbe04ba86da3bfcb57" id="r_af32927aa592435bbe04ba86da3bfcb57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1LogisticSelectivity.html#af32927aa592435bbe04ba86da3bfcb57">create_report_vectors</a> (std::map&lt; std::string, <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt; &gt; &amp;report_vectors)</td></tr>
 <tr class="memdesc:af32927aa592435bbe04ba86da3bfcb57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a map of report vectors for the object. used to populate the report_vectors map in <a class="el" href="classfims__popdy_1_1FisheryModelBase.html" title="FisheryModelBase is a base class for fishery models in FIMS.">FisheryModelBase</a>.  <br /></td></tr>
@@ -280,6 +280,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">typename</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a>&gt;<br />
 struct fims_popdy::LogisticSelectivity&lt; Type &gt;</div><p><a class="el" href="structfims__popdy_1_1LogisticSelectivity.html" title="LogisticSelectivity class that returns the logistic function value from fims_math.">LogisticSelectivity</a> class that returns the logistic function value from fims_math. </p>
+<p>The logistic selectivity function can produce either an ascending or descending curve based on the sign of the slope parameter. A positive slope creates an ascending logistic curve (selectivity increases from 0 to 1 with increasing x), while a negative slope creates a descending logistic curve (selectivity decreases from 1 to 0 with increasing x). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af32927aa592435bbe04ba86da3bfcb57" name="af32927aa592435bbe04ba86da3bfcb57"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af32927aa592435bbe04ba86da3bfcb57">&#9670;&#160;</a></span>create_report_vectors()</h2>
@@ -343,6 +344,10 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
 <p class="formulaDsp">
 \[ \frac{1.0}{ 1.0 + exp(-1.0 * slope (x - inflection\_point))} \]
 </p>
+<p>The selectivity curve can be either ascending or descending depending on the sign of the slope parameter:</p><ul>
+<li>Positive slope: ascending curve (selectivity increases from 0 to 1)</li>
+<li>Negative slope: descending curve (selectivity decreases from 1 to 0)</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>The independent variable in the logistic function (e.g., age or size in selectivity). </td></tr>
@@ -390,13 +395,17 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
 </table>
 </div><div class="memdoc">
 
-<p>Method of the logistic selectivity class that implements the logistic function from FIMS math. </p>
+<p>Method of the logistic selectivity class that implements the logistic function from FIMS math.   </p>
 <p class="formulaDsp">
-\[ \frac{1.0}{ 1.0 + exp(-1.0 * slope_t (x - {inflection\_point}_t))} \]
+\[ \frac{1.0}{ 1.0 + exp(-1.0 * slope (x - inflection\_point))} \]
 </p>
+<p>The selectivity curve can be either ascending or descending depending on the sign of the slope parameter:</p><ul>
+<li>Positive slope: ascending curve (selectivity increases from 0 to 1)</li>
+<li>Negative slope: descending curve (selectivity decreases from 1 to 0)</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The independent variable in the logistic function (e.g., age or size in selectivity). </td></tr>
+    <tr><td class="paramname">x</td><td>The independent variable in the logistic function (e.g., age or size in selectivity).   </td></tr>
     <tr><td class="paramname">pos</td><td>Position index, e.g., which year. </td></tr>
   </table>
   </dd>
@@ -469,7 +478,7 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
         </tr>
       </table>
 </div><div class="memdoc">
-<p>scalar multiplier of difference between quantity of interest value (x) and inflection_point </p>
+<p>scalar multiplier of difference between quantity of interest value (x) and inflection_point. Positive values create an ascending curve (0 to 1), negative values create a descending curve (1 to 0). </p>
 
 </div>
 </div>

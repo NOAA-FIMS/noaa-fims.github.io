@@ -15,7 +15,7 @@ var classfims__popdy_1_1CatchAtAge =
     [ "CalculateIndex", "classfims__popdy_1_1CatchAtAge.html#a901059284bb502abd0f6a8f9252a275d", null ],
     [ "CalculateIndexNumbersAA", "classfims__popdy_1_1CatchAtAge.html#adfbcd55d8179b561d3d4e788fa63e661", null ],
     [ "CalculateIndexWeightAA", "classfims__popdy_1_1CatchAtAge.html#a498396134f360e7243f0eb5605360a20", null ],
-    [ "CalculateInitialNumbersAA", "classfims__popdy_1_1CatchAtAge.html#a46665850e0e38b03f45f03629d9bc246", null ],
+    [ "CalculateInitialNumbersAA", "classfims__popdy_1_1CatchAtAge.html#aef21eca36133b6a5769ec676050a73d2", null ],
     [ "CalculateLandings", "classfims__popdy_1_1CatchAtAge.html#ad8e81e9a6d6f819a2c3fb78367ecfea4", null ],
     [ "CalculateLandingsNumbersAA", "classfims__popdy_1_1CatchAtAge.html#aa01ecd33d4d19d03cc4b31b3049f87d9", null ],
     [ "CalculateLandingsWeightAA", "classfims__popdy_1_1CatchAtAge.html#ac1003ebcd348e09e945cb4f55fce4ae9", null ],
