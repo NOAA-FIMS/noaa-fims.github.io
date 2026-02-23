@@ -5,6 +5,7 @@ on:
     workflows: ["pages-build-deployment"]
     types:
       - completed
+  workflow_dispatch: {}
 
 jobs:
   screenshot_and_email:
@@ -25,33 +26,49 @@ jobs:
       - name: Install dependencies
         run: npm install puppeteer
 
-      - name: Find newly added weekly HTML files
+      - name: Find newly added or modified weekly HTML files
         id: added_html
+        shell: bash
         run: |
-          ADDED_FILES=$(git diff --name-status HEAD~1 HEAD | awk '/^A/ && $2 ~ /^blog\/[0-9]{2}-[0-9]{2}-[0-9]{4}\.html$/ {print $2}')
-          echo "ADDED_FILES=$ADDED_FILES" >> $GITHUB_ENV
-          echo "$ADDED_FILES" > added_html.txt
-          echo "$ADDED_FILES"
+          set -euo pipefail
+
+          # workflow_run => Added files only
+          # workflow_dispatch => Modified files only
+          if [ "${{ github.event_name }}" = "workflow_run" ]; then
+            STATUS_RE='^A$'
+            MODE_DESC="added"
+          else
+            STATUS_RE='^M$'
+            MODE_DESC="modified"
+          fi
+
+          echo "Detecting ${MODE_DESC} weekly HTML file(s) in last commit..."
+
+          ADDED_HTML="$(
+            git diff --name-status HEAD^..HEAD \
+              | tr -d '\r' \
+              | awk -v re="$STATUS_RE" '$1 ~ re {print $2}' \
+              | grep -E '^blog/[0-9]{2}[-.][0-9]{2}[-.][0-0-9]{4}\.html$' \
+              | head -n 1 \
+              || true
+          )"
+
+          echo "weekly_html=$ADDED_HTML" >> "$GITHUB_OUTPUT"
+          echo "Detected new or modified weekly HTML: ${ADDED_HTML:-<none>}"
 
       - name: Screenshot new weekly page
-        if: env.ADDED_FILES != ''
+        if: steps.added_html.outputs.weekly_html != ''
         run: |
-          while read html_file; do
-            if [ -f "$html_file" ]; then
-              node .github/screenshot.js "$html_file"
-            else
-              echo "HTML file $html_file not found."
-            fi
-          done < added_html.txt
+          node .github/screenshot.js "${{ steps.added_html.outputs.weekly_html }}"
 
       - name: Check that png was created
-        if: env.ADDED_FILES != ''
+        if: if: steps.added_html.outputs.weekly_html != ''
         run: |
           echo "Listing only the generated .png files..."
           ls -l *.png
 
       - name: Send email
-        if: env.ADDED_FILES != ''
+        if: steps.added_html.outputs.weekly_html != ''
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
