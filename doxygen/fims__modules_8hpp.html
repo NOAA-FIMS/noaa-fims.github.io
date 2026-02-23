@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('fims__modules_8hpp.html',''); initResi
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a869139fcd54621818b4dfba7a47f89e4" id="r_a869139fcd54621818b4dfba7a47f89e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fims__modules_8hpp.html#a869139fcd54621818b4dfba7a47f89e4">RCPP_MODULE</a> (fims)</td></tr>
-<tr class="memdesc:a869139fcd54621818b4dfba7a47f89e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>fims</code> Rcpp module construct, providing declarative code of what the module exposes to R.  <br /></td></tr>
+<tr class="memdesc:a869139fcd54621818b4dfba7a47f89e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define fims C++ functions and classes exposed in R.  <br /></td></tr>
 <tr class="separator:a869139fcd54621818b4dfba7a47f89e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -253,8 +253,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The <code>fims</code> Rcpp module construct, providing declarative code of what the module exposes to R. </p>
-<p>Each element included in the module should have a name, a pointer, and a description separated by commas in that order. Both the name and the description should be wrapped in quotes. The description is printed to the screen when the R function <code>methods::show()</code> is used on the object. The available description should exactly match the information found in the brief tag where the function, class, etc. is documented. See the Rcpp vignette for more information on documenting modules, particularly how to include lists for parameters to a function. Each of the functions included in this module should be exported by manually exporting them in R/FIMS-package.R. </p>
+<p>Define fims C++ functions and classes exposed in R. </p>
+<p>The use of <code><a class="el" href="fims__modules_8hpp.html#a869139fcd54621818b4dfba7a47f89e4" title="Define fims C++ functions and classes exposed in R.">RCPP_MODULE()</a></code> allows for exporting of specific C++ code to the R environment, making it callable from R, i.e., providing declarative code of what the module exposes to R.</p>
+<p>Each element included in the module should have a name, a pointer, and a description separated by commas in that order. Elements can be functions or classes. Within an element, both the name and the description should be wrapped in quotes.</p>
+<p>The description is printed to the in R when users run <code>methods::show()</code> on a function or class within the RCPP_MODULE, e.g., <code>methods::show(Parameter)</code>. Thus, information in the description should either link to the relevant doxygen documentation for the C++ class or function or exactly duplicate what is written in the doxygen.</p>
+<p>Each of the functions included in this module should be exported by manually exporting them in R/FIMS-package.R. Typically, R packages that use C++ would take care a lot of this stuff automatically using <code>Rcpp::export</code> calls in the C++ documentation but we cannot do that within FIMS because of how the package is compiled. </p>
 
 </div>
 </div>

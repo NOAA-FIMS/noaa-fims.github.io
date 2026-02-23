@@ -580,11 +580,12 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
 </div><div class="memdoc">
 
 <p>The general logistic function. </p>
+<p>The logistic function can range from zero to one or one to zero, depending on the slope parameter, but it is not normalized to force values to reach those ranges.</p>
 <p>\( \frac{1.0}{ 1.0 + exp(-1.0 * slope (x - inflection_point))} \)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inflection_point</td><td>the inflection point of the logistic function </td></tr>
-    <tr><td class="paramname">slope</td><td>the slope of the logistic function </td></tr>
+    <tr><td class="paramname">slope</td><td>the slope of the logistic function. A positive slope results in an ascending logistic curve (0 to 1), while a negative slope results in a descending logistic curve (1 to 0). </td></tr>
     <tr><td class="paramname">x</td><td>the index the logistic function should be evaluated at </td></tr>
   </table>
   </dd>
