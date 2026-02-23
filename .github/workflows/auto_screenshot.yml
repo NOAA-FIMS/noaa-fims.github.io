@@ -12,11 +12,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout main (for screenshot script)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Checkout gh-pages (rendered site) into subdir
         uses: actions/checkout@v4
         with:
           ref: gh-pages
           fetch-depth: 0
+          path: gh-pages
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -31,6 +38,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+
+          cd gh-pages
 
           # workflow_run => Added files only
           # workflow_dispatch => Modified files only
