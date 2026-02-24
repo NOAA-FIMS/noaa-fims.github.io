@@ -4,8 +4,10 @@ subtitle: "How we use {renv} to keep the FIMS ecosystem reproducible and collabo
 author: "Meg Oshima"
 date: "February 20, 2026"
 categories:
+   - learn
    - R
    - open-science
+   - FIMSdiags
 ---
 ## Why we use {renv}  
 Typically, when you install an R package, you are installing it into a central library that is accessible for all R sessions on that computer. This generally will work but what happens when you are working on a project with someone else and they write some code but when you try to run it on your computer it doesn’t work. You get a confusing error message and spend hours trying to debug it, only to realize you are using an older version of a package than they are and an argument has changed in a function. You update that package to the newest version and everything runs fine. But, the next time you work on a different project, you realize that you actually need the older version of that package. This leads to a lot of frustration and having to remember to install and uninstall different versions of r packages or having to change your code. As the {FIMS} ecosystem grows and we encounter or anticipate these and similar situations, we have begun incorporating {renv} into our workflows to address certain challenges. The [{renv}](https://rstudio.github.io/renv/) R package is a package manager that tracks and records all R packages used within a project and creates a project-specific package library. It makes each of your projects their own isolated, portable, and reproducible environment that can be shared easily with others. In our experience, three challenges in particular pushed us toward using {renv} for {[FIMSdiags](https://github.com/NOAA-FIMS/FIMSdiags)} and the [case studies]( https://github.com/NOAA-FIMS/case-studies/tree/main). The three challenges we faced were:  
@@ -13,6 +15,8 @@ Typically, when you install an R package, you are installing it into a central l
    1.	Collaborating across different machines and operating systems  
    2.	Managing multiple versions of {FIMS}  
    3.	Integrating {renv} into automated environments  
+
+![Without {renv}, each environment maintains its own independent R library with no shared source of truth, leading to version conflicts across developers and machines. With {renv}, a single renv.lock file records exact package versions, keeping all environments in sync.](images/renv_diagram.png)
 
 ### Multi-developer and multi-platform collaboration  
 Because both projects are worked on by multiple developers on their local machines as well as in a codespace, we needed an easy way to make sure that each person is using the same version of all packages used when writing/running the code, without them having to change the version they have on their local machine. Before we started writing any code for {FIMSdiags}, we initialized an empty {renv} project (`renv::init()`). This created the key files needed to make everything work, namely the `renv.lock` file, `activate.R`, and the {renv} library. The `renv.lock` file contains all of the metadata for every package that is used in the project and is what is shared in the repository to make everything “work”. We decided later on to add {renv} to the case studies but the initial set up was generally the same. The only difference was that some packages used in the codebase were difficult to install automatically, so we installed those manually using `renv::install()`.  
@@ -25,6 +29,8 @@ Once a {renv} project has been initialized in a project, at the start of each wo
 
 ### Managing multiple versions of {FIMS}  
 {FIMS} is continuously in active development and since both projects rely heavily on {FIMS}, it’s really important that we are keeping track of what version of {FIMS} we are using. For example, when we are writing functions for {FIMSdiags} and find a bug in {FIMS}, we can switch to using the version with the fix until that fix is merged into the dev or main branch at a later time. Using the {renv} functions to install and update the lockfile with the specific version of {FIMS} makes this really easy to do. For the case studies, this challenge was more complex. We wanted to ensure there was always a version of the case studies that works with the stable version of {FIMS}, but we also want to be able to test them with features being added into the development branch of {FIMS}. To do this, we took advantage of its profiles feature to be able to seamlessly switch between multiple versions of {FIMS} for the case studies. We created two {renv} profiles, each with their own R libraries. The profiles are determined by which branch of the case studies repository you are working on. If your R session detects "main" in the branch name it will automatically use the default profile which uses the stable version of {FIMS}. Otherwise, it will activate the dev profile and therefore, the user will be using the development version of {FIMS}.
+
+![When an R session starts in the case-studies repository, the .Rprofile detects the current branch and routes automatically to the matching {renv} profile — the default profile for the stable version of {FIMS}, or the dev profile for the development version.](images/renv_profiles.png)
 
 ### Integrating {renv} into automated environments
 Reducing friction for both developers and users was a priority. Ideally, {renv} should just work in the background without requiring anyone to think about it. We achieved this in three ways: automating profile switching, setting up the codespace to install packages on startup, and keeping the {renv} files out of the package build.  
