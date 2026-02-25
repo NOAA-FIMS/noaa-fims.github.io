@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Meg Oshima">
+<meta name="dcterms.date" content="2026-02-20">
 
-<title>Contact – FIMS</title>
+<title>R Package Chaos, Solved – FIMS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -85,11 +122,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
-<meta property="og:title" content="Contact – FIMS">
-<meta property="og:image" content="https://noaa-fims.github.io/images/FIMS_logo3.png">
+<meta property="og:title" content="R Package Chaos, Solved – FIMS">
+<meta property="og:description" content="How we use {renv} to keep the FIMS ecosystem reproducible and collaborative">
+<meta property="og:image" content="https://noaa-fims.github.io/blog/images/renv_diagram.png">
 <meta property="og:site_name" content="FIMS">
-<meta property="og:image:height" content="1433">
-<meta property="og:image:width" content="2711">
+<meta property="og:image:height" content="577">
+<meta property="og:image:width" content="1411">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -257,7 +295,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -358,12 +396,47 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">R Package Chaos, Solved</h1>
+            <p class="subtitle lead">How we use {renv} to keep the FIMS ecosystem reproducible and collaborative</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">learn</div>
+                <div class="quarto-category">R</div>
+                <div class="quarto-category">open-science</div>
+                <div class="quarto-category">FIMSdiags</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Meg Oshima </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 20, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 <!-- Skip to main content link for keyboard accessibility -->
 <a href="#quarto-content" class="skip-link">Skip to main content</a>
@@ -388,33 +461,89 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Contact</h1>
+
+
+
+
+<section id="why-we-use-renv" class="level2">
+<h2 class="anchored" data-anchor-id="why-we-use-renv">Why we use {renv}</h2>
+<p>Typically, when you install an R package, you are installing it into a central library that is accessible for all R sessions on that computer. This generally will work but what happens when you are working on a project with someone else and they write some code but when you try to run it on your computer it doesn’t work. You get a confusing error message and spend hours trying to debug it, only to realize you are using an older version of a package than they are and an argument has changed in a function. You update that package to the newest version and everything runs fine. But, the next time you work on a different project, you realize that you actually need the older version of that package. This leads to a lot of frustration and having to remember to install and uninstall different versions of r packages or having to change your code. As the {FIMS} ecosystem grows and we encounter or anticipate these and similar situations, we have begun incorporating {renv} into our workflows to address certain challenges. The <a href="https://rstudio.github.io/renv/">{renv}</a> R package is a package manager that tracks and records all R packages used within a project and creates a project-specific package library. It makes each of your projects their own isolated, portable, and reproducible environment that can be shared easily with others. In our experience, three challenges in particular pushed us toward using {renv} for {<a href="https://github.com/NOAA-FIMS/FIMSdiags">FIMSdiags</a>} and the <a href="https://github.com/NOAA-FIMS/case-studies/tree/main">case studies</a>. The three challenges we faced were:</p>
+<ol type="1">
+<li>Collaborating across different machines and operating systems<br>
+</li>
+<li>Managing multiple versions of {FIMS}<br>
+</li>
+<li>Integrating {renv} into automated environments</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/renv_diagram.png" class="img-fluid figure-img"></p>
+<figcaption>Without {renv}, each environment maintains its own independent R library with no shared source of truth, leading to version conflicts across developers and machines. With {renv}, a single renv.lock file records exact package versions, keeping all environments in sync.</figcaption>
+</figure>
 </div>
+<section id="multi-developer-and-multi-platform-collaboration" class="level3">
+<h3 class="anchored" data-anchor-id="multi-developer-and-multi-platform-collaboration">Multi-developer and multi-platform collaboration</h3>
+<p>Because both projects are worked on by multiple developers on their local machines as well as in a codespace, we needed an easy way to make sure that each person is using the same version of all packages used when writing/running the code, without them having to change the version they have on their local machine. Before we started writing any code for {FIMSdiags}, we initialized an empty {renv} project (<code>renv::init()</code>). This created the key files needed to make everything work, namely the <code>renv.lock</code> file, <code>activate.R</code>, and the {renv} library. The <code>renv.lock</code> file contains all of the metadata for every package that is used in the project and is what is shared in the repository to make everything “work”. We decided later on to add {renv} to the case studies but the initial set up was generally the same. The only difference was that some packages used in the codebase were difficult to install automatically, so we installed those manually using <code>renv::install()</code>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A benefit of using the <code>install</code> function through {renv} is that you can install packages from a variety of sources, including CRAN or Github, with the a single function.</p>
+</div>
+</div>
+<p>Once a {renv} project has been initialized in a project, at the start of each work session, the developer makes sure their package library is up-to-date by running <code>renv::status()</code>. If no changes have been made to any of the R packages used, they will get a message saying their project is up to date, otherwise, they will see a message about it being out of sync. To fix this, they have two options, 1) if it is out of sync because they are missing some packages that are in the lockfile or have a different version, then they can use <code>renv::restore()</code> to install those missing packages or 2) if they have packages in their environment that aren’t recorded in the lockfile, they can use <code>renv::snapshot()</code> to add them into the lockfile. Think of restore as pulling from the lockfile and snapshot as writing to it. At the end of each session, any changes to the lockfile are pushed to the repository so that the next time someone is working on the code, they are using the same environment.</p>
+</section>
+<section id="managing-multiple-versions-of-fims" class="level3">
+<h3 class="anchored" data-anchor-id="managing-multiple-versions-of-fims">Managing multiple versions of {FIMS}</h3>
+<p>{FIMS} is continuously in active development and since both projects rely heavily on {FIMS}, it’s really important that we are keeping track of what version of {FIMS} we are using. For example, when we are writing functions for {FIMSdiags} and find a bug in {FIMS}, we can switch to using the version with the fix until that fix is merged into the dev or main branch at a later time. Using the {renv} functions to install and update the lockfile with the specific version of {FIMS} makes this really easy to do. For the case studies, this challenge was more complex. We wanted to ensure there was always a version of the case studies that works with the stable version of {FIMS}, but we also want to be able to test them with features being added into the development branch of {FIMS}. To do this, we took advantage of its profiles feature to be able to seamlessly switch between multiple versions of {FIMS} for the case studies. We created two {renv} profiles, each with their own R libraries. The profiles are determined by which branch of the case studies repository you are working on. If your R session detects “main” in the branch name it will automatically use the default profile which uses the stable version of {FIMS}. Otherwise, it will activate the dev profile and therefore, the user will be using the development version of {FIMS}.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/renv_profiles.png" class="img-fluid figure-img"></p>
+<figcaption>When an R session starts in the case-studies repository, the .Rprofile detects the current branch and routes automatically to the matching {renv} profile — the default profile for the stable version of {FIMS}, or the dev profile for the development version.</figcaption>
+</figure>
+</div>
+</section>
+<section id="integrating-renv-into-automated-environments" class="level3">
+<h3 class="anchored" data-anchor-id="integrating-renv-into-automated-environments">Integrating {renv} into automated environments</h3>
+<p>Reducing friction for both developers and users was a priority. Ideally, {renv} should just work in the background without requiring anyone to think about it. We achieved this in three ways: automating profile switching, setting up the codespace to install packages on startup, and keeping the {renv} files out of the package build.<br>
+Since the case studies are primarily for testing and educational purposes, we want the users to be able to focus on how to setup the {FIMS} model and the features they can use in them, not struggling with what version of {FIMS} (or other packages) they are using. The profile setting and switching happen automatically in the background, all done through the <code>.Rprofile</code> as shown below:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>branch <span class="ot">&lt;-</span> <span class="fu">Sys.getenv</span>(<span class="st">"GITHUB_REF_NAME"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (branch <span class="sc">==</span> <span class="st">""</span>) {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  branch <span class="ot">&lt;-</span> <span class="fu">system</span>(<span class="st">"git rev-parse --abbrev-ref HEAD"</span>, <span class="at">intern =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>profile <span class="ot">&lt;-</span> <span class="cf">if</span> (<span class="fu">grepl</span>(<span class="st">"main"</span>, branch)) <span class="st">"default"</span> <span class="cf">else</span> <span class="st">"dev"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">RENV_PROFILE =</span> profile)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"renv/activate.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>This also will recognize if the user has switched branches of the case studies and the {renv} profile will automatically change in their R session. Another example of reducing friction for developers is that when we are working on {FIMSdiags} in a codespace, we want the R packages to automatically be installed at the startup. To do this, in the <code>devcontainer.json</code> file we added</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="er">"postCreateCommand":</span> <span class="er">"Rscript</span> <span class="er">.devcontainer/setup.r"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>and then the <code>setup.r</code> script is just:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Restore the renv packages on container build</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">restore</span>(<span class="at">prompt=</span><span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Lastly, once we started building the package, we realized that the lockfile and other information were being included in the package during the <code>R CMD build</code>. We didn’t want this to happen because it will clutter the package and when a user installs the package, it will install the Dependencies for them which should be enough. To keep our {renv} library separate from the actual package, we just needed to add</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="sc">^</span>renv<span class="sc">$</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="er">^</span>renv\.lock<span class="sc">$</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>to the <code>.Rbuildignore</code> file.</p>
+</section>
+</section>
+<section id="takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
+<p>By incorporating {renv} into our workflows, we’ve tackled three challenges that are common in collaborative, multi-platform development: keeping environments consistent across developers and operating systems, managing multiple versions of an actively-developing dependency, and making all of this happen automatically so that developers and users can focus on the work itself. The result is a codebase that is easier to share, easier to reproduce, and easier to maintain as both projects continue to grow.</p>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<blockquote class="blockquote">
-<p>If you have questions or comments about FIMS please <a href="mailto:kelli.johnson@noaa.gov">contact the FIMS Project Lead</a> or use the form below.</p>
-</blockquote>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHxV5rz593_Qxf0VjxwDVOmD1BrjKJKGTO9vKiAmKBA0El5Q/viewform?embedded=true" width="640" height="893" frameborder="0" marginheight="0" marginwidth="0" title="FIMS Contact Form">
-Loading…
-</iframe>
-
-
+</section>
 
 </main> <!-- /main -->
 <script>
