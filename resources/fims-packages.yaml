@@ -17,3 +17,35 @@
   categories: [dignostics]
 
 
+- title: r4MAS
+  description: >
+    Package to translate stock synthesis input files into MAS inputs <br>
+    - [Website](https://noaa-fims.github.io/r4MAS/) <br>
+    - [Repository](https://github.com/NOAA-FIMS/r4MAS)
+  path: https://noaa-fims.github.io/r4MAS/
+  image: ../images/FIMS_hexlogo.png
+  categories: [R]
+- title: FIMS
+  description: >
+    The repository for development of FIMS <br>
+    - [Website](https://noaa-fims.github.io/FIMS/) <br>
+    - [Repository](https://github.com/NOAA-FIMS/FIMS)
+  path: https://noaa-fims.github.io/FIMS/
+  image: ../images/FIMS_hexlogo.png
+  categories: [R]
+- title: FIMSdiags
+  description: >
+    R package to run model diagnostics on FIMS models <br>
+    - [Website](https://noaa-fims.github.io/FIMSdiags/) <br>
+    - [Repository](https://github.com/NOAA-FIMS/FIMSdiags)
+  path: https://noaa-fims.github.io/FIMSdiags/
+  image: ../images/FIMS_hexlogo.png
+  categories: [R]
+- title: FIMSRTMB
+  description: >
+    The repository for development of the RTMB branch of FIMS <br>
+    - [Website](https://noaa-fims.github.io/FIMSRTMB/) <br>
+    - [Repository](https://github.com/NOAA-FIMS/FIMSRTMB)
+  path: https://noaa-fims.github.io/FIMSRTMB/
+  image: ../images/FIMS_hexlogo.png
+  categories: [R]
