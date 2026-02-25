@@ -2,6 +2,17 @@
 title: FIMS Change Log
 ---
 
+## v0.8.1 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.8.1))
+## What's Changed
+- Two 🐛 were fixed relating to getting the names of the random-effect parameters and not turning off sd reporting.
+- The uncertainty of the length-to-age-conversion matrix is no longer being calculated because it is a fixed input as of right now
+- Lots of documentation was improved and compiler warnings were decreased by making the code more robust
+
+
+**Full Changelog**: https://github.com/NOAA-FIMS/FIMS/compare/v0.8.0...v0.8.1
+
+---
+
 ## v0.8.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.8.0))
 ## What's Changed
 
