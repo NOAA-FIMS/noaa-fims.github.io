@@ -1,0 +1,73 @@
+---
+title: "FIMS Weekly - March 02–06, 2026"
+date: "March 02, 2026"
+# Change the following categories accordingly
+categories:
+  # This one will show up in the sidebar, any other categories you add will not
+  # but are clickable to sort.
+  - fims-weekly
+  - testing
+three-big-things:
+  bt1: "Bai is working on figures and tables to summarize the results of adding FIMS to the model-comparison project."
+  bt2: "Several pull requests from potential Google Summer of Code Contributors were submitted late last week and over the weekend that will be merged into dev. We have Contributors actively working on four separate proposals that will be submitted, reviewed, and ranked this month! Additionally, we will be talking internally about the capability of using 'populations' to include sex in FIMS."
+  bt3: "We need more good first issues on FIMS, see [Apache's take](https://community.apache.org/committers/good-first-issues.html) on what it means to create a "good first issue". Please consider adding more to any of the NOAA-FIMS repositories."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text
+# and the template will handle it for you.
+# If there is code instead, please uncomment the section below named photo-code
+# but still include the text portion under photo.
+photo:
+  text: "While trying to find an example of `rlang::arg_match()` I came across the [tidyverse design principles](https://design.tidyverse.org/), which has some great content, and was reminded that many R developers do not know or understand `match.arg()` or `rlang::arg_match()`. These functions can be game changes when you want the options within a function argument to be clear to users and I believe that we should be using them more in FIMS. See a small example below and read the [relevant section of design.tidyverse.org](https://design.tidyverse.org/enumerate-options.html#how-do-i-use-this-pattern) for more information."
+---
+
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- 50 days until the CIE Review.
+- We will be paring the rendered case studies down to just three, or four, examples for the CIE Review to ensure that they are fully developed and provide well-explained examples of comparisons of FIMS models to existing platforms. The remainder of the examples will stay in the repository but will not be showcased on the resulting website.
+:::
+
+::: {#additional-events}
+
+<!--
+### DAY DATE
+**NAME**
+
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+
+:::
+
+
+::: {#photo-code}
+```
+# Base R function trimws uses match.arg() on the which argument
+# both is the default
+trimws
+# function (x, which = c("both", "left", "right"), whitespace = "[ \t\r\n]") 
+# {
+#     which <- match.arg(which)
+#     mysub <- function(re, x) sub(re, "", x, perl = TRUE)
+#     switch(which, left = mysub(paste0("^", whitespace, "+"),
+#         x), right = mysub(paste0(whitespace, "+$"), x), both = mysub(paste0(whitespace,
+#         "+$"), mysub(paste0("^", whitespace, "+"), x)))
+# }
+# <bytecode: 0x0000024f9a563858>
+# <environment: namespace:base>
+
+trimws(x = " My bad formatting ")
+# [1] "My bad formatting"
+
+trimws(x = " My bad formatting ", which = "right")
+# [1] " My bad formatting"
+```
+:::
+
+
+
+
