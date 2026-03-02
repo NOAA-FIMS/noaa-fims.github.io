@@ -1,20 +1,18 @@
 name: Contributors list
-# This workflow automatically updates the Contributors section in contact/contributors.qmd
+# This workflow automatically updates the Contributors grid in contact/contributors.qmd
 # It fetches contributors from the NOAA-FIMS/FIMS repository and generates an avatar grid
 # 
-# IMPORTANT: This workflow PRESERVES manual changes to other sections of contributors.qmd
-# You can safely edit:
-#   - Project Lead section
-#   - Core Developers section
-#   - Subject-Matter Experts section
-#   - Roles section
-#   - Authorship section
+# IMPORTANT: This workflow uses explicit markers to preserve all content in contributors.qmd
+# Only the content between these markers is updated:
+#   <!-- BEGIN AUTO CONTRIBUTORS GRID -->
+#   <!-- END AUTO CONTRIBUTORS GRID -->
 # 
-# The workflow only updates the "## Contributors" section with the latest contributor list
+# All other content in the file (headers, manual sections, formatting) is preserved exactly as-is.
 #
 # BEHAVIOR:
-#   - On push to main: Updates and commits changes to contributors.qmd
+#   - On push to main: Updates the grid and commits changes to contributors.qmd if content changed
 #   - On pull_request: Validates the workflow but does not commit/push changes
+#   - Fails if the marker block is missing from contributors.qmd
 on:
   push:
     branches:
@@ -35,7 +33,7 @@ jobs:
         if: github.event_name == 'push'
         run: git pull --rebase origin main
 
-      - name: Fetch contributors from NOAA-FIMS/FIMS and write avatar grid to qmd with text
+      - name: Fetch contributors from NOAA-FIMS/FIMS and update avatar grid
         uses: actions/github-script@v7
         with:
           script: |
@@ -57,140 +55,61 @@ jobs:
               page++;
             }
 
-            // Generate Contributors grid with avatars and usernames
+            // Generate Contributors grid with avatars and usernames (no header)
             const imageSize = 80;
-            let contributorsGrid = "## Contributors\n\n";
-            contributorsGrid += '<table><tr>';
+            let contributorsGrid = '<table><tr>';
             let count = 0;
             for (const c of contributors) {
               contributorsGrid += `<td align="center" valign="top" style="padding:12px"><a href="${c.html_url}"><img src="${c.avatar_url}" width="${imageSize}" alt="${c.login}" style="border-radius:8px"/><br/><sub>${c.login}</sub></a></td>`;
               count++;
               if (count % 6 === 0 && count < contributors.length) contributorsGrid += '</tr><tr>';
             }
-            contributorsGrid += '</tr></table>\n';
+            contributorsGrid += '</tr></table>';
 
             const fs = require('fs');
             const filePath = 'contact/contributors.qmd';
             
-            // Default content if file doesn't exist
-            const defaultContent = `# FIMS Team
-
-            FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.
-
-            ## Project Lead
-
-            * Kelli F. Johnson (OST)
-
-            ## Core Developers
-
-            * Jon K. T. Brodziak (PIFSC)
-            * Kathryn L. Doering (OST)
-            * Andrea M. Havron (OST)
-            * Alexander J. Jensen (SWFSC)
-            * Ronald Klasky (T and T Consulting Services, Inc.)
-            * Peter T. Kuriyama (SWFSC)
-            * Christopher M. Legault (NEFSC)
-            * Bai Li (OST)
-            * Timothy J. Miller (NEFSC)
-            * Cole C. Monnahan (AFSC)
-            * Megumi C. Oshima (PIFSC)
-            * Jane Y. Sullivan (AFSC)
-            * Matthew Supernaw (OST)
-            * Ian G. Taylor (NWFSC)
-            * Nathan R. Vaughan (Vaughan Analytics)
-            * Eric J. Ward (NWFSC)
-
-            ## Subject-Matter Experts
-
-            * Lisa Pfeiffer (NWFSC)
-            * Patrick D. Lynch (OST)
-            * Richard D. Methot (NWFSC)`;
-
-            const defaultRolesAndAuthorship = `## Roles
-
-            ### Project Lead
-
-            The Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the [Terms of Reference](/about/FIMS_TOR_08.26.2021.pdf) and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the [Github Projects](https://github.com/orgs/NOAA-FIMS/projects?query=is%3Aopen) and [GitHub Milestones](https://github.com/NOAA-FIMS/FIMS/milestones).
-
-            ### Lead Software Architect
-
-            The Lead Software Architect is responsible for advising the architecture of FIMS to maximize portability and extensibility; manage technical risks and opportunities; advise the Project Lead on software design, refactor, and implementation decisions; and guarantee quality of deliveries via code review. The Lead Software Architect also educates the team on technical best practices.
-
-            ### Lead Test Engineer
-
-            The Lead Test Engineer is responsible for designing and driving test objectives, test strategies, and test plans of the FIMS product at subsequent milestones. The Lead Test Engineer will identify the tools for test reporting, management and automation, guide and monitor the design, implementation, and execution of test cases and test procedures. The Lead Test Engineer will train and mentor implementation team members on how to effectively write and debug tests.
-
-            ### Lead Statistical Computing Engineer
-
-            The Lead Statistical Computing Engineer is responsible for designing the FIMS statistical architecture that maximizes statistical accuracy and ensures the implementation of statistical good practices. The Lead Statistical Computing Engineer will advise the Project Lead on design and implementation decisions and will work closely with the Lead Software Architect to ensure a balance between computation and statistical efficiency and with the Lead Test Engineer to develop tests that check the statistical accuracy of model design. 
-
-            ### Outreach and Transition Coordinator
-
-            The Outreach and Transition Coordinator communicates with policy-makers, NOAA leadership, and regional offices on transition plans from existing assessment models and processes to FIMS. This coordinator works with academic partners to develop and coordinate training on using FIMS.
-
-            ### Lead of Workflows, Accessibility, and Integration
-
-            The Lead of Workflows, Accessibility, and Integration is responsible for designing and driving workflows and automation to support the reliability and robustness of the FIMS. The Lead of Workflows, Accessibility, and Integration ensures FIMS aligns with expected standards for accessibility and quality control in accordance with guidelines set by the Fisheries Integrated Toolbox. This lead coordinates with the Lead Test Engineer to ensure test cases are automated and successfully run by GitHub Actions and coordinates with the Lead Statistical Computing Engineer to identify opportunities to expand FIMS across related disciplines. 
-
-            ### Regional Representatives
-
-            Regional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations.
-
-            ## Authorship
-
-            Current developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., [FIMS DESCRIPTION](https://github.com/NOAA-FIMS/FIMS/blob/main/DESCRIPTION). When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit.
-            `;
-            
-            let finalContent;
-            
-            // Check if file exists to preserve manual changes
-            if (fs.existsSync(filePath)) {
-              // Read existing file to preserve manual edits
-              const existingContent = fs.readFileSync(filePath, 'utf8');
-              
-              // Find the Contributors section - we'll replace only this section
-              // Pattern handles both with and without trailing newline
-              const contributorsMatch = existingContent.match(/^## Contributors\b\s*$/m);
-              
-              if (contributorsMatch) {
-                // Contributors section exists - preserve content before it
-                const startIndex = contributorsMatch.index;
-                const beforeContributors = existingContent.substring(0, startIndex);
-                
-                // Find the next section after Contributors (e.g., ## Roles) to preserve it
-                const afterContributorsText = existingContent.substring(startIndex);
-                const nextSectionMatch = afterContributorsText.match(/\n## (?!Contributors\b)/);
-                
-                let afterContributors;
-                if (nextSectionMatch) {
-                  // Preserve content after the Contributors section
-                  const afterContributorsStart = startIndex + nextSectionMatch.index;
-                  afterContributors = existingContent.substring(afterContributorsStart);
-                } else {
-                  // No section found after Contributors, use default Roles/Authorship
-                  afterContributors = '\n' + defaultRolesAndAuthorship;
-                }
-                
-                // Combine: preserved before + new contributors grid + preserved after
-                finalContent = beforeContributors + contributorsGrid + afterContributors;
-              } else {
-                // Contributors section not found - insert it before Roles section
-                // Pattern handles Roles section at beginning or after newline
-                const rolesMatch = existingContent.match(/(^|\n)(## Roles\b)/m);
-                if (rolesMatch) {
-                  const beforeRoles = existingContent.substring(0, rolesMatch.index + rolesMatch[1].length);
-                  const afterRoles = existingContent.substring(rolesMatch.index + rolesMatch[1].length);
-                  finalContent = beforeRoles + contributorsGrid + '\n' + afterRoles;
-                } else {
-                  // No Roles section either, just append
-                  finalContent = existingContent + '\n\n' + contributorsGrid + '\n' + defaultRolesAndAuthorship;
-                }
-              }
-            } else {
-              // File doesn't exist, create with default content
-              fs.mkdirSync('contact', { recursive: true });
-              finalContent = defaultContent + '\n\n' + contributorsGrid + '\n' + defaultRolesAndAuthorship;
+            // Read the existing file
+            if (!fs.existsSync(filePath)) {
+              core.setFailed(`File ${filePath} does not exist. Please create it with the required marker block.`);
+              return;
             }
+            
+            const existingContent = fs.readFileSync(filePath, 'utf8');
+            
+            // Check for required markers
+            const beginMarker = '<!-- BEGIN AUTO CONTRIBUTORS GRID -->';
+            const endMarker = '<!-- END AUTO CONTRIBUTORS GRID -->';
+            
+            if (!existingContent.includes(beginMarker) || !existingContent.includes(endMarker)) {
+              core.setFailed(
+                `Missing required markers in ${filePath}.\n` +
+                `Please add the following markers around the contributors grid:\n` +
+                `  ${beginMarker}\n` +
+                `  ${endMarker}\n\n` +
+                `Example:\n` +
+                `## Contributors\n\n` +
+                `${beginMarker}\n` +
+                `<table>...</table>\n` +
+                `${endMarker}`
+              );
+              return;
+            }
+            
+            // Extract content before and after markers
+            const beginIndex = existingContent.indexOf(beginMarker);
+            const endIndex = existingContent.indexOf(endMarker);
+            
+            if (beginIndex >= endIndex) {
+              core.setFailed(`Markers are in wrong order in ${filePath}. BEGIN marker must come before END marker.`);
+              return;
+            }
+            
+            const beforeMarker = existingContent.substring(0, beginIndex + beginMarker.length);
+            const afterMarker = existingContent.substring(endIndex);
+            
+            // Construct new content: before + newline + grid + newline + after
+            const finalContent = beforeMarker + '\n' + contributorsGrid + '\n' + afterMarker;
             
             fs.writeFileSync(filePath, finalContent);
 
