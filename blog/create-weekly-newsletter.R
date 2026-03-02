@@ -67,7 +67,7 @@ create_weekly_qmd <- function(date = NULL, week_end_date = NULL, file_name = NUL
       )
     }
     file_name <- paste0(format(week_start, "%m.%d.%Y"), ".qmd")
-    if (!is.null(file_name)) file_path <- file.path(here::here("fims-weekly"), file_name)
+    if (!is.null(file_name)) file_path <- file.path(here::here("blog"), file_name)
 
   yaml <- sprintf(
 '---
