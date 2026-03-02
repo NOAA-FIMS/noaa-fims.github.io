@@ -26,7 +26,8 @@ photo:
 ::: {#announcements}
 - If you attended the FIMS Training on Monday, please fill out the survey on [Google Cloud Workstations](https://docs.google.com/forms/d/e/1FAIpQLSehj6N1ka568ohEsakRQZbHxrduf1EswkYbVavhPXYBuruM7A/viewform).
 ::: 
-    
+
+::: {#additional-events}
 <!--
 ### DAY DATE
 **NAME**
@@ -35,7 +36,7 @@ Time: TIME
 Location: VIRTUAL/IN-PERSON
 Online: [Google meet](MEETING LINK)
 -->
-
+:::
 
 ::: {#photo-code}
 ```
