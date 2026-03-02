@@ -22,9 +22,6 @@ photo:
   
 {{< include "fims-weekly-template.qmd" >}}
 
-<i class="fa-solid fa-tags"></i> Tags:
-<a href="/tags/R/">R</a>, <a href="/tags/TMB/">TMB</a>, <a href="/tags/testing/">testing</a>
-
 ::: {#announcements}
 - [FIMS website](https://noaa-fims.github.io/) is now newly updated thanks to Elizabeth 🥇!
 - The CIE Review has been approved and will be held November 04–06, 2025 using an online platform.
