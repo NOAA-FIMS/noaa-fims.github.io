@@ -42,8 +42,10 @@ results_filt <- results %>% filter(has_pkgdown, !is.na(github_pages_url))
 lines <- readLines("resources/fims-packages.yaml")
 
 # Find all existing URL lines and extract URLs to compare
-existing_urls <- grep("^- path:", trimws(lines), value = TRUE)
-existing_urls <- sub("^- path:\\s+", "", existing_urls)
+existing_urls <- grep("path:", trimws(lines), value = TRUE)
+existing_urls <- sub("path:\\s+", "", existing_urls)
+existing_urls_trimmed <- sub('^(\\\\")|^(")', "", existing_urls)
+existing_urls_trimmed <- sub('(\\\\")$|("$)', "", existing_urls_trimmed)
 
 # Prepare new blocks for new sites only
 new_blocks <- character(0)
@@ -54,7 +56,7 @@ for (i in seq_len(nrow(results_filt))) {
   repo <- results_filt$repo[i]
   desc <- results_filt$description[i]
   repo_url <- results_filt$repo_url[i]
-  found <- site %in% existing_urls
+  found <- site %in% existing_urls_trimmed
   if (!is.na(site) && !found) {
     block <- c(
       sprintf("- title: %s", repo),
