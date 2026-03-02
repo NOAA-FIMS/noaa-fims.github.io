@@ -1103,21 +1103,28 @@
     "href": "contact/contributors.html#core-developers",
     "title": "FIMS Team",
     "section": "Core Developers",
-    "text": "Core Developers\n\nJon K. T. Brodziak (PIFSC)\nKathryn L. Doering (OST)\nAndrea M. Havron (OST)\nAlexander J. Jensen (SWFSC)\nRonald Klasky (T and T Consulting Services, Inc.)\nPeter T. Kuriyama (SWFSC)\nChristopher M. Legault (NEFSC)\nBai Li (OST)\nTimothy J. Miller (NEFSC)\nCole C. Monnahan (AFSC)\nMegumi C. Oshima (PIFSC)\nJane Y. Sullivan (AFSC)\nMatthew Supernaw (OST)\nIan G. Taylor (NWFSC)\nNathan R. Vaughan (Vaughan Analytics)\nEric J. Ward (NWFSC)"
+    "text": "Core Developers\n\nGrant D. Adams (AFSC)\nJon K. T. Brodziak (PIFSC)\nKathryn L. Doering (OST)\nDaniel R. Goethel (AFSC)\nAndrea M. Havron (OST)\nAlexander J. Jensen (SWFSC)\nRonald Klasky (T and T Consulting Services, Inc.)\nPeter T. Kuriyama (SWFSC)\nBai Li (OST)\nEmily M. Liljestrand (NEFSC)\nTimothy J. Miller (NEFSC)\nMegumi C. Oshima (PIFSC)\nMatthew Supernaw (OST)\nIan G. Taylor (NWFSC)\nNathan R. Vaughan (Vaughan Analytics)\nEric J. Ward (NWFSC)\nErik H. Williams (SEFSC)"
   },
   {
-    "objectID": "contact/contributors.html#subject-matter-experts",
-    "href": "contact/contributors.html#subject-matter-experts",
+    "objectID": "contact/contributors.html#supporting-developers",
+    "href": "contact/contributors.html#supporting-developers",
     "title": "FIMS Team",
-    "section": "Subject-Matter Experts",
-    "text": "Subject-Matter Experts\n\nLisa Pfeiffer (NWFSC)\nPatrick D. Lynch (OST)\nRichard D. Methot (NWFSC)"
+    "section": "Supporting Developers",
+    "text": "Supporting Developers\n\nJennifer S. Bigman (University of Delaware)\nKristan Blackhart (NEFSC)\nEdward J. Dick (SWFSC)\nAlan C. Haynie (ICES)\nJames N. Ianelli (AFSC)\nHui-hua Lee (SWFSC)\nChristopher M. Legault (NEFSC)\nPatrick D. Lynch (OST)\nRichard D. Methot (NWFSC)\nCole C. Monnahan (AFSC)\nLisa Pfeiffer (NWFSC)\nKyle W. Shertzer (SEFSC)\nChristine C. Stawitz (University of Birmingham)\nJane Y. Sullivan (AFSC)\nHoward Townsend (OST)"
   },
   {
     "objectID": "contact/contributors.html#contributors",
     "href": "contact/contributors.html#contributors",
     "title": "FIMS Team",
     "section": "Contributors",
-    "text": "Contributors\n\n\n\nChristineStawitz-NOAA\n\n\nAndrea-Havron-NOAA\n\n\nBai-Li-NOAA\n\n\nmsupernaw\n\n\nk-doering-NOAA\n\n\nkellijohnson-NOAA\n\n\n\n\ngithub-actions[bot]\n\n\nnathanvaughan-NOAA\n\n\nJaneSullivan-NOAA\n\n\nCopilot\n\n\nawilnoaa\n\n\niantaylor-NOAA\n\n\n\n\nMOshima-PIFSC\n\n\ndependabot[bot]\n\n\nJonBrodziak\n\n\njimianelli\n\n\ne-perl-NOAA\n\n\ntimjmiller\n\n\n\n\npeterkuriyama-NOAA\n\n\nabhinav-1305\n\n\nericward-noaa\n\n\nKyleShertzer-NOAA\n\n\nszu-yun-ko\n\n\nalexjensen-NOAA\n\n\n\n\nLNo-cz\n\n\nmciechanumich\n\n\nRicardoYin01\n\n\nSrajald"
+    "text": "Contributors\n\n\n\n\nChristineStawitz-NOAA\n\n\nAndrea-Havron-NOAA\n\n\nBai-Li-NOAA\n\n\nmsupernaw\n\n\nk-doering-NOAA\n\n\nkellijohnson-NOAA\n\n\n\n\ngithub-actions[bot]\n\n\nnathanvaughan-NOAA\n\n\nJaneSullivan-NOAA\n\n\nCopilot\n\n\nawilnoaa\n\n\niantaylor-NOAA\n\n\n\n\nMOshima-PIFSC\n\n\ndependabot[bot]\n\n\nJonBrodziak\n\n\njimianelli\n\n\ne-perl-NOAA\n\n\ntimjmiller\n\n\n\n\npeterkuriyama-NOAA\n\n\nabhinav-1305\n\n\nericward-noaa\n\n\nKyleShertzer-NOAA\n\n\nszu-yun-ko\n\n\nalexjensen-NOAA\n\n\n\n\nLNo-cz\n\n\nmciechanumich\n\n\nRicardoYin01\n\n\nSrajald"
+  },
+  {
+    "objectID": "contact/contributors.html#fims-council",
+    "href": "contact/contributors.html#fims-council",
+    "title": "FIMS Team",
+    "section": "FIMS Council",
+    "text": "FIMS Council\n\nAnders Nielsen (DTU-Aqua)\nAndré E. Punt (Chair, SAFS UW)\nAnne M. Cooper (ICES)\nBjarki Þ. Elvarsson (MFRI, Gadget)\nCurry J. Cunningham (NPFMC)\nÉva E. Plagányi (CSIRO)\nGeneviève M. Nesslage (Mid-Atlantic)\nHenning Winker (JRC, Jabba)\nJim N. Sanchirico (UC Davis)\nJon R. Weidenmann (Rutgers)\nMark N. Maunder (IATTC)\nZ. Teresa A’mar (Dragonfly Data Science)"
   },
   {
     "objectID": "contact/contributors.html#roles",
