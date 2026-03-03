@@ -55,12 +55,11 @@ jobs:
           fi
 
       # Use this conditional for all release steps
-      - name: Update version in index.qmd
+      - name: Get latest version and put in ENV
         if: steps.release_updated.outputs.release_updated == 'true'
         run: |
-          VERSION=$(echo "${{ steps.changelog_version.outputs.version_heading }}" | sed 's/^v//')
-          sed -i -E "s/Version [0-9]+\.[0-9]+\.[0-9]+/Version $VERSION/" index.qmd
-          cat index.qmd
+          VERSION=$(grep -m1 '^## v' about/FIMS_CHANGELOG.qmd | sed -E 's/^## (v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+)?).*/\1/')
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
 
       - name: Render Quarto Project
         if: steps.release_updated.outputs.release_updated == 'true'
