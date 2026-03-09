@@ -1,3 +1,8 @@
+# Bash script to locally render the doxygen documentation where it looks like the actual website
+# This file needs to either be moved to the root directory then run or a user can 
+# add a line to change the directory as it runs, such as adding the following line before everything else
+# cd ../
+
 EXTERNAL_DOCS_DIR="${EXTERNAL_DOCS_DIR:-external-docs}"
 EXTERNAL_DOCS_REPO="${EXTERNAL_DOCS_REPO:-https://github.com/noaa-fims/noaa-fims.github.io.git}"
 EXTERNAL_DOCS_REF="${EXTERNAL_DOCS_REF:-gh-pages}"
