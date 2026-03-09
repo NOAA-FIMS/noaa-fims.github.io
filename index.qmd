@@ -51,7 +51,7 @@ listing:
           title: <i class="fab fa-r-project" aria-hidden="true"></i> FIMS packages
           description: >
             Packagedown site for FIMS package.
-        - path: doxygen/index.html
+        - path: https://noaa-fims.github.io/FIMS/doxygen/index.html
           title: <i class="fa-solid fa-plus" aria-hidden="true"></i> FIMS Doxygen
           description: >
             Doxygen documentation for FIMS C++ functions.
