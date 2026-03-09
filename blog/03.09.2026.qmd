@@ -9,7 +9,7 @@ categories:
 three-big-things:
   bt1: "All changes to the code that are going to happen for the CIE Review must happen this week. Time-varying selectivity and time-varying weight-at-age inputs might make it in :crossed_fingers:. Next week will be focused on updating the case studies."
   bt2: "Nathan and Andrea are working on a PR to increase the usability of the random effects in FIMS."
-  bt3: "Matthew has decreased the build time to about one minute (from three minutes) using [translational units](https://github.com/NOAA-FIMS/FIMS/issues/981), today will be focused on fixing a segfault and ensuring all the tests still run."
+  bt3: "We have addressed the comments we received on the FIMS manuscript from reviewers and it is time to do a final round of edits. The [manuscript](https://docs.google.com/document/d/1HyLJa4y8fkKML31a636qwozkaYXglT9yzQCmE6bTLa0/edit?usp=drive_link) and the responses to [reviewers](https://docs.google.com/document/d/1t_eju7vqF119ZPgLVU95pQFqjzGRTIMmQo0lucTqEbQ/edit?usp=drive_link) are on Google Drive. Please provide all comments by March 18, 2026 so we can return the manuscript to ICES by March 19, 2026."
 # Announcements go below because of formatting that quarto doesnt transfer over from the yml
 # If there is no code club or seaside chat, just delete those lines and the template will handle it for you
 upcoming-events:
