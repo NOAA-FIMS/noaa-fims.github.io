@@ -27,7 +27,7 @@ jobs:
     name: A job to fetch contribs from NOAA-FIMS/FIMS
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Pull any changes (useful when there is an auto PR)
         if: github.event_name == 'push'

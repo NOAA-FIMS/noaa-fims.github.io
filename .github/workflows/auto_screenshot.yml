@@ -13,13 +13,13 @@ jobs:
 
     steps:
       - name: Checkout main (for screenshot script)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: main
           fetch-depth: 0
 
       - name: Checkout gh-pages (rendered site) into subdir
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: gh-pages
           fetch-depth: 0

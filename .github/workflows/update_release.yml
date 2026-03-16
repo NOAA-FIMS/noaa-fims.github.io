@@ -20,7 +20,7 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       # Checkout the repo
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       # Set up Node (for Quarto, if needed; remove if not using Quarto)
       - uses: quarto-dev/quarto-actions/setup@v2
