@@ -428,6 +428,18 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="why-build-fims-now">Why build FIMS now?</h3>
 <p><a href="https://www.admb-project.org/">AD Model Builder (ADMB)</a> is no longer being supported so the ability to compile existing models that use ADMB, e.g., <a href="https://nmfs-ost.github.io/noaa-fit/ASAP">Age Structured Assessment Program (ASAP)</a>, <a href="https://github.com/afsc-assessments/AMAK">Assessment Model for Alaska (AMAK)</a>, Beaufort Assessment Model (BAM), and <a href="https://github.com/nmfs-ost/ss3-source-code">Stock Synthesis 3 (SS3)</a>, will be compromised with future operating system upgrades. Furthermore, development of these models that rely on ADMB to include best practices, such as random effects, is not feasible.</p>
 </section>
+<section id="why-does-fims-use-tmb-instead-of-rtmb" class="level3">
+<h3 class="anchored" data-anchor-id="why-does-fims-use-tmb-instead-of-rtmb">Why does FIMS use TMB instead of RTMB?</h3>
+<p>The <a href="https://github.com/kaskr/RTMB">RTMB</a> documentation describes RTMB as a native R interface to a substantial <strong>subset</strong> of TMB. RTMB improves accessibility and can speed up prototyping, and we see clear value in that. For FIMS, however, we chose a C++ foundation with TMB because our primary requirement is a long-lived, production modeling platform. In our view, this trade-off better supports maintainability, testing, and portability at the scale we need.</p>
+<ul>
+<li>Strong typing in C++ helps catch classes of errors earlier and supports more predictable behavior in large codebases.</li>
+<li>A C++ core keeps the architecture less tied to any single interface layer and supports future portability across automatic-differentiation backends.</li>
+<li>Components are designed for reuse, including use in RTMB workflows (see <a href="https://github.com/NOAA-FIMS/FIMSRTMB">FIMSRTMB</a> and its <a href="https://noaa-fims.github.io/FIMSRTMB/articles/index.html">vignettes</a>).</li>
+<li>The modular C++ design supports future extensions, including potential machine-learning-assisted components where appropriate.</li>
+<li>Explicit sub-model definitions in C++ improve specification clarity for collaboration, review, and external development support.</li>
+</ul>
+<p>In short, RTMB is useful for many applications, but for FIMS we prioritized a C++ architecture to support long-term reliability and extensibility.</p>
+</section>
 </section>
 <section id="transitioning-to-fims" class="level2">
 <h2 class="anchored" data-anchor-id="transitioning-to-fims">Transitioning to FIMS</h2>
