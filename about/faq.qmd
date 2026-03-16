@@ -19,6 +19,18 @@ FIMS was created to increase the pool of developers, designers, and testers that
 
 [AD Model Builder (ADMB)](https://www.admb-project.org/) is no longer being supported so the ability to compile existing models that use ADMB, e.g., [Age Structured Assessment Program (ASAP)](https://nmfs-ost.github.io/noaa-fit/ASAP), [Assessment Model for Alaska (AMAK)](https://github.com/afsc-assessments/AMAK), Beaufort Assessment Model (BAM), and [Stock Synthesis 3 (SS3)](https://github.com/nmfs-ost/ss3-source-code), will be compromised with future operating system upgrades. Furthermore, development of these models that rely on ADMB to include best practices, such as random effects, is not feasible.
 
+### Why does FIMS use TMB instead of RTMB?
+
+The [RTMB](https://github.com/kaskr/RTMB) documentation describes RTMB as a native R interface to a substantial **subset** of TMB. RTMB improves accessibility and can speed up prototyping, and we see clear value in that. For FIMS, however, we chose a C++ foundation with TMB because our primary requirement is a long-lived, production modeling platform. In our view, this trade-off better supports maintainability, testing, and portability at the scale we need.
+
+* Strong typing in C++ helps catch classes of errors earlier and supports more predictable behavior in large codebases.
+* A C++ core keeps the architecture less tied to any single interface layer and supports future portability across automatic-differentiation backends.
+* Components are designed for reuse, including use in RTMB workflows (see [FIMSRTMB](https://github.com/NOAA-FIMS/FIMSRTMB) and its [vignettes](https://noaa-fims.github.io/FIMSRTMB/articles/index.html)).
+* The modular C++ design supports future extensions, including potential machine-learning-assisted components where appropriate.
+* Explicit sub-model definitions in C++ improve specification clarity for collaboration, review, and external development support.
+
+In short, RTMB is useful for many applications, but for FIMS we prioritized a C++ architecture to support long-term reliability and extensibility.
+
 ## Transitioning to FIMS
 
 ### Will FIMS have all the features of current assessment models?
