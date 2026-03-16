@@ -1,0 +1,59 @@
+---
+# The title MUST start with "FIMS Weekly - "
+title: "FIMS Weekly - March 16–20, 2026"
+date: "March 16, 2026"
+# Change the following categories accordingly, but you MUST keep fims-weekly
+categories:
+  - fims-weekly
+  - case-studies
+  - releases
+three-big-things:
+  bt1: "We will work on getting at least three case studies up and going this week in preparation for the CIE Review."
+  bt2: "All hands on deck 🚨🫡⚓ regarding FIMS documentation. Nothing is too small to submit a pull request for. Please do your part to help ensure the documentation is sufficient."
+  bt3: "Last reminder regarding the FIMS manuscript! The [manuscript](https://docs.google.com/document/d/1HyLJa4y8fkKML31a636qwozkaYXglT9yzQCmE6bTLa0/edit?usp=drive_link) and the responses to [reviewers](https://docs.google.com/document/d/1t_eju7vqF119ZPgLVU95pQFqjzGRTIMmQo0lucTqEbQ/edit?usp=drive_link) will be submitted on March 19, 2026."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "Version 0.9.0 has two breaking changes. (1) If you have time-varying `weight_at_age` data you can use it but you must make a decision for the beginning of the last year after catches. FIMS does not accommodate this need for an additional year of `weight_at_age` data you must decide if you want to put in an average or some kind of projection. But, if you do not have time-varying weight_at_age data you can input just a single year as a power user and everything will be taken care of. (2) All six `m_*()` functions have been renamed to `model_*(). Below we show how a power user can implement (1)."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- 36 days until the CIE Review, main will be frozen by next Monday when we have to turn in all materials to the CIE Reviewers.
+::: 
+    
+::: {#additional-events}
+### Wednesday, March 18
+**FIMS Code Club**
+
+Time: 11:00–14:00 E; 08:00–11:00 P; 09:00–12:00 AK; 05:00-08:00 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&ref=https://meet.google.com/ica-ieta-ndu)
+:::
+
+
+::: {#photo-code}
+```r
+# A vector of weights for each age
+weights <- 1:12
+ewaa_growth <- methods::new(EWAAGrowth)
+ewaa_growth$n_years$set(get_n_years(fims_frame))
+ewaa_growth$ages$resize(get_n_ages(fims_frame))
+purrr::walk(
+  seq_along(get_ages(fims_frame)),
+  \(x) ewaa_growth$ages$set(x - 1, get_ages(fims_frame)[x])
+)
+ewaa_growth$weights$resize(get_n_ages(fims_frame))
+purrr::walk(
+  seq(ewaa_growth$weights$size()),
+  \(x) ewaa_growth$weights$set(x - 1, weights[x])
+)
+```
+:::
