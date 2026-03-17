@@ -9,10 +9,6 @@ org <- "NOAA-FIMS"
 repos <- gh::gh("/orgs/{org}/repos", org = org, .limit = Inf)
 repo_names <- vapply(repos, function(x) x$name, character(1))
 
-message("GH_TOKEN present: ", nzchar(Sys.getenv("GH_TOKEN")))
-message("Org: ", org)
-message("Repos returned: ", length(repos))
-
 results <- map_dfr(repo_names, function(repo) {
   repo_meta <- tryCatch(gh::gh("/repos/{owner}/{repo}", owner = org, repo = repo), error = function(e) NULL)
   branch <- if (!is.null(repo_meta$default_branch)) repo_meta$default_branch else "main"
@@ -21,23 +17,16 @@ results <- map_dfr(repo_names, function(repo) {
   pkgdown_path <- NA
   if (!is.null(tree) && !is.null(tree$tree)) {
     pkgdown_files <- vapply(tree$tree, function(file) file$path, character(1))
-    idx <- grep("(^|/)_?pkgdown\\.yml$", pkgdown_files)
+    idx <- grep("pkgdown.yml$", pkgdown_files)
     if (length(idx) > 0) {
       pkgdown_exists <- TRUE
       pkgdown_path <- pkgdown_files[idx[1]]
     }
   }
-  pages <- tryCatch(
-  gh::gh("/repos/{owner}/{repo}/pages", owner = org, repo = repo),
-  error = function(e) {
-    message("Pages API failed for ", repo, ": ", conditionMessage(e))
-    NULL
-  }
-  )
-  # pages <- tryCatch(gh::gh("/repos/{owner}/{repo}/pages", owner = org, repo = repo), error = function(e) NULL)
+  pages <- tryCatch(gh::gh("/repos/{owner}/{repo}/pages", owner = org, repo = repo), error = function(e) NULL)
   pages_enabled <- !is.null(pages)
   pages_url <- if (!is.null(pages$html_url)) pages$html_url else NA
-  tibble::tibble(
+  tibble(
     repo = repo,
     description = if (!is.null(repo_meta)) repo_meta$description else NA_character_,
     has_pkgdown = pkgdown_exists,
@@ -48,13 +37,7 @@ results <- map_dfr(repo_names, function(repo) {
   )
 })
 
-results_filt_1 <- results %>% filter(has_pkgdown)
-print(results_filt_1)
-
 results_filt <- results %>% filter(has_pkgdown, !is.na(github_pages_url))
-
-message("results rows: ", nrow(results))
-message("results_filt rows: ", nrow(results_filt))
 
 lines <- readLines("resources/fims-packages.yaml")
 
@@ -68,19 +51,12 @@ existing_urls_trimmed <- sub('(\\\\")$|("$)', "", existing_urls_trimmed)
 new_blocks <- character(0)
 new_contributors <- character(0)
 
-norm_url <- function(x) {
-  x <- trimws(x)
-  x <- sub("^http://", "https://", x)
-  x <- sub("/+$", "/", x)   # force exactly one trailing slash
-  x
-}
-
 for (i in seq_len(nrow(results_filt))) {
   site <- results_filt$github_pages_url[i]
   repo <- results_filt$repo[i]
   desc <- results_filt$description[i]
   repo_url <- results_filt$repo_url[i]
-  found <- norm_url(site) %in% norm_url(existing_urls_trimmed)
+  found <- site %in% existing_urls_trimmed
   if (!is.na(site) && !found) {
     block <- c(
       sprintf("- title: %s", repo),

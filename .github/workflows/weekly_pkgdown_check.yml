@@ -7,21 +7,17 @@ concurrency:
   group: ${{ github.workflow}}-${{ github.ref }}
   cancel-in-progress: true
 
-permissions:
-  contents: write
-  pull-requests: write
-
 name: Weekly checks and updates
 
 jobs:
   weekly-pkgdown-list:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
   
       - uses: r-lib/actions/setup-r@v2
   
@@ -38,17 +34,6 @@ jobs:
       - name: Check if pkgdown sites need updating and update
         run: Rscript .github/get_pkgdown_sites.R
   
-      - name: Debug after get_pkgdown_sites.R
-        run: |
-          echo "ref=$GITHUB_REF"
-          echo "sha=$GITHUB_SHA"
-          echo "GH_TOKEN set? $([[ -n \"$GH_TOKEN\" ]] && echo yes || echo no)"
-          git status --porcelain
-          echo "---- changed files (unstaged) ----"
-          git diff --name-only || true
-          echo "---- cached changes ----"
-          git diff --cached --name-only || true
-
       - name: Check for changes to qmd file
         id: git-check
         run: |
@@ -67,7 +52,6 @@ jobs:
         if: steps.git-check.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Update fims-packages.yaml for new pkgdown site in FIMS org"
           branch: auto/pkgdown-update
           title: "Update fims-packages.yaml for new pkgdown site in FIMS org"
@@ -88,13 +72,11 @@ jobs:
   weekly-update-changelog:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
-        with:
-          persist-credentials: false
+        uses: actions/checkout@v4
   
       - uses: r-lib/actions/setup-r@v2
   
@@ -108,12 +90,6 @@ jobs:
       - name: Check if pkgdown sites need updating and update
         run: Rscript .github/change_log.R
 
-      - name: Remove git credential helper
-        run: |
-          git config --global --unset credential.helper || true
-          git config --global --unset-all http.https://github.com/.extraheader || true
-          git config --local  --unset-all http.https://github.com/.extraheader || true
-
       - name: Check for changes to FIMS_CHANGELOG.qmd
         id: git-check
         run: |
@@ -126,7 +102,6 @@ jobs:
         if: steps.git-check.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Update FIMS_CHANGELOG.qmd with latest FIMS releases"
           branch: auto/fims-changelog-update
           title: "Update FIMS_CHANGELOG.qmd"
