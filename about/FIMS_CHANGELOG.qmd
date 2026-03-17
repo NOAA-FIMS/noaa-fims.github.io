@@ -2,6 +2,26 @@
 title: FIMS Change Log
 ---
 
+## v0.9.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.9.0))
+## What's Changed
+- Adds time-varying weight-at-age
+- Adds time-varying selectivity
+- Makes recruitment deviations random effects by default when using the wrapper functions
+- Adds a glossary of mathematical symbols to the doxygen documentation
+- Brings doxygen to the pkgdown site
+- Fixes hidden bug in dimension_folded_to_tibble() in while loop
+- Removes get_log_module
+- Removes calculation of uncertainty within the C++ code
+- Changed package data name to data_big and added helper data
+- Changes m_*() functions to model_*()
+
+**Full Changelog**: https://github.com/NOAA-FIMS/FIMS/compare/v0.8.1...v0.9.0
+
+## Thank You
+We would like to thank the new and continuing contributors that helped with this release, which includes changes from 25 Pull Requests. Way to go team 💪🏅. 
+
+---
+
 ## v0.8.1 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.8.1))
 ## What's Changed
 - Two 🐛 were fixed relating to getting the names of the random-effect parameters and not turning off sd reporting.
