@@ -41,6 +41,12 @@ jobs:
       - name: Check if pkgdown sites need updating and update
         run: Rscript .github/get_pkgdown_sites.R
   
+      - name: Debug changes
+        run: |
+          git status --porcelain
+          git diff --name-only
+          git diff -- resources/fims-pkgdown.yaml || true
+
       - name: Check for changes to qmd file
         id: git-check
         run: |
