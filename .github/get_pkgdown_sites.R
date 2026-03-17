@@ -27,7 +27,14 @@ results <- map_dfr(repo_names, function(repo) {
       pkgdown_path <- pkgdown_files[idx[1]]
     }
   }
-  pages <- tryCatch(gh::gh("/repos/{owner}/{repo}/pages", owner = org, repo = repo), error = function(e) NULL)
+  pages <- tryCatch(
+  gh::gh("/repos/{owner}/{repo}/pages", owner = org, repo = repo),
+  error = function(e) {
+    message("Pages API failed for ", repo, ": ", conditionMessage(e))
+    NULL
+  }
+  )
+  # pages <- tryCatch(gh::gh("/repos/{owner}/{repo}/pages", owner = org, repo = repo), error = function(e) NULL)
   pages_enabled <- !is.null(pages)
   pages_url <- if (!is.null(pages$html_url)) pages$html_url else NA
   tibble::tibble(
