@@ -74,14 +74,13 @@ jobs:
   weekly-update-changelog:
     runs-on: ubuntu-latest
     env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
-      
-      - name: Remove git credential helper
-        run: git config --global --unset credential.helper || true
+        with:
+          persist-credentials: false
   
       - uses: r-lib/actions/setup-r@v2
   
@@ -95,6 +94,12 @@ jobs:
       - name: Check if pkgdown sites need updating and update
         run: Rscript .github/change_log.R
 
+      - name: Remove git credential helper
+        run: |
+          git config --global --unset credential.helper || true
+          git config --global --unset-all http.https://github.com/.extraheader || true
+          git config --local  --unset-all http.https://github.com/.extraheader || true
+
       - name: Check for changes to FIMS_CHANGELOG.qmd
         id: git-check
         run: |
@@ -107,6 +112,7 @@ jobs:
         if: steps.git-check.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Update FIMS_CHANGELOG.qmd with latest FIMS releases"
           branch: auto/fims-changelog-update
           title: "Update FIMS_CHANGELOG.qmd"
