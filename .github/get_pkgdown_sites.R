@@ -41,6 +41,9 @@ results <- map_dfr(repo_names, function(repo) {
   )
 })
 
+results_filt_1 <- results %>% filter(has_pkgdown)
+print(results_filt_1)
+
 results_filt <- results %>% filter(has_pkgdown, !is.na(github_pages_url))
 
 message("results rows: ", nrow(results))

@@ -22,9 +22,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
-
-      - name: Remove git credential helper
-        run: git config --global --unset credential.helper || true
   
       - uses: r-lib/actions/setup-r@v2
   
