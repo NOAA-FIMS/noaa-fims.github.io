@@ -41,11 +41,16 @@ jobs:
       - name: Check if pkgdown sites need updating and update
         run: Rscript .github/get_pkgdown_sites.R
   
-      - name: Debug changes
+      - name: Debug after get_pkgdown_sites.R
         run: |
+          echo "ref=$GITHUB_REF"
+          echo "sha=$GITHUB_SHA"
+          echo "GH_TOKEN set? $([[ -n \"$GH_TOKEN\" ]] && echo yes || echo no)"
           git status --porcelain
-          git diff --name-only
-          git diff -- resources/fims-pkgdown.yaml || true
+          echo "---- changed files (unstaged) ----"
+          git diff --name-only || true
+          echo "---- cached changes ----"
+          git diff --cached --name-only || true
 
       - name: Check for changes to qmd file
         id: git-check

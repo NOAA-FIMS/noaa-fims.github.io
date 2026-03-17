@@ -9,6 +9,10 @@ org <- "NOAA-FIMS"
 repos <- gh::gh("/orgs/{org}/repos", org = org, .limit = Inf)
 repo_names <- vapply(repos, function(x) x$name, character(1))
 
+message("GH_TOKEN present: ", nzchar(Sys.getenv("GH_TOKEN")))
+message("Org: ", org)
+message("Repos returned: ", length(repos))
+
 results <- map_dfr(repo_names, function(repo) {
   repo_meta <- tryCatch(gh::gh("/repos/{owner}/{repo}", owner = org, repo = repo), error = function(e) NULL)
   branch <- if (!is.null(repo_meta$default_branch)) repo_meta$default_branch else "main"
@@ -39,6 +43,9 @@ results <- map_dfr(repo_names, function(repo) {
 
 results_filt <- results %>% filter(has_pkgdown, !is.na(github_pages_url))
 
+message("results rows: ", nrow(results))
+message("results_filt rows: ", nrow(results_filt))
+
 lines <- readLines("resources/fims-packages.yaml")
 
 # Find all existing URL lines and extract URLs to compare
@@ -51,12 +58,19 @@ existing_urls_trimmed <- sub('(\\\\")$|("$)', "", existing_urls_trimmed)
 new_blocks <- character(0)
 new_contributors <- character(0)
 
+norm_url <- function(x) {
+  x <- trimws(x)
+  x <- sub("^http://", "https://", x)
+  x <- sub("/+$", "/", x)   # force exactly one trailing slash
+  x
+}
+
 for (i in seq_len(nrow(results_filt))) {
   site <- results_filt$github_pages_url[i]
   repo <- results_filt$repo[i]
   desc <- results_filt$description[i]
   repo_url <- results_filt$repo_url[i]
-  found <- site %in% existing_urls_trimmed
+  found <- norm_url(site) %in% norm_url(existing_urls_trimmed)
   if (!is.na(site) && !found) {
     block <- c(
       sprintf("- title: %s", repo),
