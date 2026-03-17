@@ -54,6 +54,7 @@ jobs:
         if: steps.git-check.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Update fims-packages.yaml for new pkgdown site in FIMS org"
           branch: auto/pkgdown-update
           title: "Update fims-packages.yaml for new pkgdown site in FIMS org"
