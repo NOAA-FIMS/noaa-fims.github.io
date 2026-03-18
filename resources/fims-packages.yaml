@@ -16,4 +16,11 @@
   image: ../images/FIMSdiags_placeholder.png
   categories: [dignostics]
 
-
+- title: FIMSRTMB
+  description: >
+    The repository for development of the RTMB branch of FIMS <br>
+    - [Website](https://noaa-fims.github.io/FIMSRTMB/) <br>
+    - [Repository](https://github.com/NOAA-FIMS/FIMSRTMB)
+  path: https://noaa-fims.github.io/FIMSRTMB/
+  image: ../images/FIMS_hexlogo.png
+  categories: [R, TMB]
