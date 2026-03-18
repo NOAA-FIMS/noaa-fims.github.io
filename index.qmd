@@ -43,23 +43,22 @@ listing:
     filter-ui: false
     fields: [title, description]
     contents:
-        - path: resources/resources.qmd
-          title: 🔍 FIMS resources
+        - path: https://noaa-fims.github.io/FIMS/
+          title: <i class="fab fa-r-project" aria-hidden="true"></i> FIMS Pkgdown
           description: >
-            Case studies, C++ tutorial, etc. 
-        - path: resources/packages.qmd
-          title: <i class="fab fa-r-project" aria-hidden="true"></i> FIMS packages
-          description: >
-            Packagedown site for FIMS package.
+            Pkgdown site for FIMS package.
         - path: https://noaa-fims.github.io/FIMS/doxygen/index.html
           title: <i class="fa-solid fa-plus" aria-hidden="true"></i> FIMS Doxygen
           description: >
             Doxygen documentation for FIMS C++ functions.
-        - path: resources/projects.qmd
-          title: <i class="fa-solid fa-folder-open" aria-hidden="true"></i> FIMS projects
+        - path: resources/packages.qmd
+          title: <i class="fab fa-r-project" aria-hidden="true"></i> FIMS Packages
           description: >
-            Current and related FIMS projects.
-          
+            Packages associated with FIMS.
+        - path: resources/resources.qmd
+          title: 🔍 FIMS resources
+          description: >
+            Case studies, C++ tutorial, etc. 
 header-includes: >
   <link rel="stylesheet" href="assets/index.css">
 resources:
