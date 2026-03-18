@@ -40,8 +40,6 @@ The project is constantly under development 🔨. Check out our progress so far 
 | Calculate test coverage | [![Badge showing test coverage calculation workflow status](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml/badge.svg)](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-calc-coverage.yml)|
 | `R cmd check` | ![Badge showing R CMD check workflow status](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg)|
 | Google tests | ![Badge showing Google test workflow status](https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg)|
-| Total issues | ![Badge showing total open issues in community playbook repository](https://img.shields.io/github/issues-raw/noaa-fims/noaa-fims.github.io)|
-| Closed Issues| ![Badge showing total closed issues in community playbook repository](https://img.shields.io/github/issues-closed/noaa-fims/noaa-fims.github.io)|
 
 ## Comparison to other frameworks
 
