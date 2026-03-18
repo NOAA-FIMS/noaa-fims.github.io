@@ -697,7 +697,7 @@
     "href": "about/FIMS_CHANGELOG.html#v0.1.0.0-release-notes",
     "title": "FIMS Change Log",
     "section": "v0.1.0.0 (release notes)",
-    "text": "v0.1.0.0 (release notes)\nThis is the first version of the Fisheries Integrated Modeling System (FIMS). At this stage, FIMS can be used to estimate a simple age-structured population model such as case 0 in Li et al. (2021)’s manuscript. Please refer to the collaborative workflow for a description of the model functionality and completeness. Documentation can be found here.\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/commits/v0.1.0"
+    "text": "v0.1.0.0 (release notes)\nThis is the first version of the Fisheries Integrated Modeling System (FIMS). At this stage, FIMS can be used to estimate a simple age-structured population model such as case 0 in Li et al. (2021)’s manuscript. Please refer to the collaborative workflow for a description of the model functionality and completeness. Documentation can be found in the FIMS-docs repository (edit 2026-03-18: this repository has since been deleted now that the doxygen is rendered to the pkgdown site).\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/commits/v0.1.0"
   },
   {
     "objectID": "about/acknowledgements.html",
