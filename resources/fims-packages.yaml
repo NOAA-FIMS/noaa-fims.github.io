@@ -23,4 +23,4 @@
     - [Repository](https://github.com/NOAA-FIMS/FIMSRTMB)
   path: https://noaa-fims.github.io/FIMSRTMB/
   image: ../images/FIMS_hexlogo.png
-  categories: [R, TMB]
+  categories: [TMB, rTMB]
