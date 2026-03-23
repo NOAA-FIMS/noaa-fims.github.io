@@ -1,0 +1,62 @@
+---
+# The title MUST start with "FIMS Weekly - "
+title: "FIMS Weekly - March 23–27, 2026"
+date: "March 16, 2026"
+# Change the following categories accordingly, but you MUST keep fims-weekly
+categories:
+  - fims-weekly
+  - tutorial
+  - testing
+three-big-things:
+  bt1: "Merging in a few final Pull Requests today and tomorrow."
+  bt2: "An email will go out to the CIE Reviewers, Regional SSC participants, FIMS Council, and Science Board regarding review materials for the CIE Review."
+  bt3: "Ian will be giving a seminar on `FIMSFrame`."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "The tests for new convergence functions use a mocking structure so we can test the individual function without having to run a FIMS model. You can read more about mocking on the [testthat github page](https://testthat.r-lib.org/articles/mocking.html). I think that mocking might be helpful for more tests in FIMS to increase coverage but keep the tests running fast."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- 29 days until the CIE Review.
+::: 
+    
+::: {#additional-events}
+### Wednesday, March 25
+**FIMS Tutorial on FIMSFrame**
+
+Time: 14:00–15:00 E; 11:00–12:00 P; 12:00–13:00 AK; 08:00-09:00 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=fst-apme-enz
+&ref=https://meet.google.com/fst-apme-enz
+)
+:::
+
+
+::: {#photo-code}
+```r
+test_that("check_sdreport_convergence() returns correct outputs for edge cases", {
+  #' @description Test that `check_sdreport_convergence()` gracefully handles when summary extraction throws an error.
+  obj <- make_mock_obj(random = 1)
+  opt <- list(par = numeric())
+  sdreport <- make_mock_sdreport(
+    pdHess = TRUE,
+    fail_on = "fixed"
+  )
+  register_mock_sdreport_summary()
+
+  expect_warning(
+    object = FIMS:::check_sdreport_convergence(list(), obj, opt, sdreport),
+    regexp = "Unable to extract summary from sdreport"
+  )
+})
+```
+:::
