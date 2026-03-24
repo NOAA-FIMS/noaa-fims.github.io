@@ -27,7 +27,7 @@
 
 - title: "stockplotr"
   description: >
-    R package that contains general tables and figures such as standard objects in an assessment report, and other important visualizations to interpret results of stock assessment models <br>
+    Tables and figures for the results of stock assessment models <br>
     - [Website](https://nmfs-ost.github.io/stockplotr/) <br>
     - [Repository](https://github.com/nmfs-ost/stockplotr)
   path: https://nmfs-ost.github.io/stockplotr/
@@ -36,7 +36,7 @@
 
 - title: "asar"
   description: >
-    Partially automate a U.S. stock assessment report <br>
+    qmd template files for a U.S. stock assessment report <br>
     - [Website](https://nmfs-ost.github.io/asar/) <br>
     - [Repository](https://github.com/nmfs-ost/asar)
   path: https://nmfs-ost.github.io/asar/
@@ -45,9 +45,9 @@
 
 - title: "SparseNUTS"
   description: >
-    The repository for development of the RTMB branch of FIMS <br>
+    Sparse no-U-turn sampling for TMB and RTMB models <br>
     - [Website](https://noaa-afsc.github.io/SparseNUTS/) <br>
-    - [Repository](  path: https://github.com/noaa-afsc/SparseNUTS/)
+    - [Repository](https://github.com/noaa-afsc/SparseNUTS/)
   path: https://noaa-afsc.github.io/SparseNUTS/
   image: ../images/FIMS_hexlogo.png
-  categories: [MCMC, TMB, rTMB, Stan]
+  categories: [MCMC, TMB, RTMB, Stan]
