@@ -36,7 +36,7 @@
 
 - title: "asar"
   description: >
-    qmd template files for a U.S. stock assessment report <br>
+    Quarto template files for a U.S. stock assessment report <br>
     - [Website](https://nmfs-ost.github.io/asar/) <br>
     - [Repository](https://github.com/nmfs-ost/asar)
   path: https://nmfs-ost.github.io/asar/
