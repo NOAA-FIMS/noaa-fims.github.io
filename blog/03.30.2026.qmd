@@ -1,0 +1,57 @@
+---
+# The title MUST start with "FIMS Weekly - "
+title: "FIMS Weekly - March 30–April 03, 2026"
+date: "March 30, 2026"
+# Change the following categories accordingly, but you MUST keep fims-weekly
+categories:
+  - fims-weekly
+  - tutorial
+three-big-things:
+  bt1: "Continue trying to fix pkgdown site where there is an obscure failure in the testdown or coverage reports."
+  bt2: "An email will actually (:wink:) go out to the CIE Reviewers, Regional SSC participants, FIMS Council, and Science Board regarding review materials for the CIE Review."
+  bt3: "Finalize the Pacific Hake case study."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "I finally figured out how to merge dev into main without changing all of the commit hashes and messing up all of the outstanding Pull Requests to dev. There is not an option within the GitHub user interface to do this. Instead, it must be done from the command line (see below). I think we are coming to a point in our development though where we can think about removing `dev` from our workflow and instead of letting features pile up in dev before they are released, we more thoroughly review them in their feature branches and release them directly to main rather than going to dev first."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- 21 days until the CIE Review.
+- Google Summer of Code applications are due this week, we currently have six applications for four projects.
+::: 
+    
+::: {#additional-events}
+### Wednesday, April 01
+**FIMS Implementation Team Meeting (Tasks)**
+
+Time: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=kbz-ccew-iij&ref=https://meet.google.com/kbz-ccew-iij)
+
+### Thursday, April 02
+**Stock Assessment Seminar**
+
+Time: 15:00–16:00 E; 12:00–13:00 P; 11:00–12:00 AK; 9:00–10:00 H
+Location: Virtual
+Online: [Register here](https://vimeo.com/event/5810113)
+:::
+
+
+::: {#photo-code}
+```bash
+git checkout main
+git fetch -a
+git rebase origin/main
+git merge dev --ff-only
+git push origin main
+```
+:::
