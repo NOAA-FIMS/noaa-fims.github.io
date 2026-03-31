@@ -14,7 +14,7 @@
     - [Repository](https://github.com/NOAA-FIMS/FIMSdiags)
   path: "https://noaa-fims.github.io/FIMSdiags/"
   image: ../images/FIMSdiags_placeholder.png
-  categories: [dignostics]
+  categories: [diagnostics]
 
 - title: "FIMSRTMB"
   description: >
