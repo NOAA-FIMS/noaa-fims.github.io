@@ -68,6 +68,7 @@ jobs:
           to: html
 
       - name: Publish to GitHub Pages (and render)
+        if: steps.release_updated.outputs.release_updated == 'true'
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
