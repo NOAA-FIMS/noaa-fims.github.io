@@ -2,63 +2,6 @@
 pagetitle: "FIMS"
 page-layout: full
 title-block-banner: false
-
-listing:
-  - id: fims-about-listing
-    type: grid
-    max-items: 9
-    page-size: 3
-    categories: false
-    sort-ui: false
-    filter-ui: false
-    fields: [title, description]
-    contents:
-        - path: about/index.qmd
-          title: 💡 About FIMS
-          description: >
-            General information about FIMS.
-          display-order: 1
-        - path: contact/contributors.qmd
-          title: 👥 FIMS Team
-          description: >
-            List of all contributors to FIMS.
-          display-order: 2
-        - path: about/faq.qmd
-          title: ❓ FAQs
-          description: >
-            Frequently asked questions.
-          display-order: 3
-        - path: about/calendar.qmd
-          title: 📅 Calendar
-          description: >
-            FIMS calendar.
-          display-order: 4
-    sort: "display-order"
-  - id: fims-resources-listing
-    type: grid
-    max-items: 9
-    page-size: 3
-    categories: false
-    sort-ui: false
-    filter-ui: false
-    fields: [title, description]
-    contents:
-        - path: https://noaa-fims.github.io/FIMS/
-          title: <i class="fab fa-r-project" aria-hidden="true"></i> FIMS Pkgdown
-          description: >
-            Pkgdown site for FIMS package.
-        - path: https://noaa-fims.github.io/FIMS/doxygen/index.html
-          title: <i class="fa-solid fa-plus" aria-hidden="true"></i> FIMS Doxygen
-          description: >
-            Doxygen documentation for FIMS C++ functions.
-        - path: resources/packages.qmd
-          title: <i class="fab fa-r-project" aria-hidden="true"></i> FIMS Packages
-          description: >
-            Packages associated with FIMS.
-        - path: resources/resources.qmd
-          title: 🔍 FIMS resources
-          description: >
-            Case studies, C++ tutorial, etc. 
 header-includes: >
   <link rel="stylesheet" href="assets/index.css">
 resources:
@@ -110,21 +53,6 @@ resources:
         <i class="fa fa-briefcase fa-lg fa-fw"></i>
       </a>
     </div>
-
-    <p class="site-intro fs-5">
-      Welcome to the <strong>Fisheries Integrated Modeling System (FIMS)</strong> community playbook, your source of information for all members of the FIMS community--developers, users, and receivers of stock assessments. We welcome both those that are new and seasoned to the field to join us as we work to fulfill our <a href="about/index.qmd#mission">mission</a>! <br>
-      <br>
-      We use the following icons to help each type of community member find relevant information quickly within this playbook:<br>
-
-      <i class="fa-solid fa-laptop-code"></i> <strong>Developer</strong><br>
-      An active developer of FIMS that is wanting information on how to change the codebase or update the documentation. <br>
-      <i class="fa-solid fa-user-plus"></i> <strong>New User</strong><br>
-      Someone who wants to use FIMS but is uncertain how to start or is more comfortable using the wrapper functions in R rather than specifying the model line by line with lists. <br>
-      <i class="fa-solid fa-bolt"></i> <strong>Power User</strong><br>
-      A repeat user of FIMS who wants to dig into the source code to see how it is connected to R or someone who wants more control of their model than what the wrapper functions in R provide. <br>
-      <i class="fa-solid fa-chart-line"></i> <strong>Receiver of Results</strong><br>
-      Typically a manager or stakeholder who has a desire to explore the model output without wanting to use FIMS themselves. <br>
-    </p>
     <a class="mt4 action text" href="about/index.qmd">See the <strong>overview page</strong> for more! →</a>
   </div>
 
@@ -134,12 +62,45 @@ resources:
 </div>
 ```
 
-## about
+## FIMS User Pathways
 
-::: {#fims-about-listing}
-:::
+```{=html}
+<div class="fims-graphic-container">
+  <img id="fims-main-img" src="images/fims-user0.png" alt="FIMS User Pathways">
 
-## useful FIMS resources
+  <button class="hotspot" id="hs-user1" onclick="changeImage('images/fims-user1.png', 'Pathway for Interested')" aria-label="Show pathway for Interested"></button>
+  <button class="hotspot" id="hs-user2" onclick="changeImage('images/fims-user2.png', 'Pathway for New User')" aria-label="Show pathway for New User"></button>
+  <button class="hotspot" id="hs-user3" onclick="changeImage('images/fims-user3.png', 'Pathway for Power User')" aria-label="Show pathway for Power User"></button>
+  <button class="hotspot" id="hs-user4" onclick="changeImage('images/fims-user4.png', 'Pathway for Contributor')" aria-label="Show pathway for Contributor"></button>
+  <button class="hotspot" id="hs-user5" onclick="changeImage('images/fims-user5.png', 'Pathway for Receiver of Results')" aria-label="Show pathway for Receiver of Results"></button>
 
-::: {#fims-resources-listing}
-:::
+  <a href="https://noaa-fims.github.io/about/faq.html" class="hotspot link-hotspot" id="link-faq-interested" data-show-on="user1" target="_blank" aria-label="Go to FAQ page"></a>
+  <a href="https://github.com/NOAA-FIMS/FIMS/milestones?sort=due_date&direction=asc" class="hotspot link-hotspot" id="link-planning-interested" data-show-on="user1" target="_blank" aria-label="Go to FIMS Project Milestones"></a>
+  <a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="hotspot link-hotspot" id="link-intro-gh-interested" data-show-on="user1" target="_blank" aria-label="Go to Introductions github discussion"></a>
+  <a href="https://noaa-fims.github.io/about/calendar.html" class="hotspot link-hotspot" id="link-calendar-interested" data-show-on="user1" target="_blank" aria-label="Go to FIMS calendar"></a>
+  <a href="https://noaa-fims.github.io/blog/" class="hotspot link-hotspot" id="link-blog-interested" data-show-on="user1" target="_blank" aria-label="Go to FIMS blog"></a>
+
+  <a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="hotspot link-hotspot" id="link-intro-gh-newuser" data-show-on="user2" target="_blank" aria-label="Go to Introductions github discussion"></a>
+  <a href="https://noaa-fims.github.io/FIMS/articles/fims-demo.html" class="hotspot link-hotspot" id="link-intro-demo-newuser" data-show-on="user2" target="_blank" aria-label="Go to fims introductory vignette"></a>
+  <a href="https://noaa-fims.github.io/resources/packages.html" class="hotspot link-hotspot" id="link-fims-packages-newuser" data-show-on="user2" target="_blank" aria-label="Go to fims-related packages page"></a>
+  <a href="https://noaa-fims.github.io/blog/" class="hotspot link-hotspot" id="link-blog-newuser" data-show-on="user2" target="_blank" aria-label="Go to FIMS blog"></a>
+  <a href="https://noaa-fims.github.io/about/calendar.html" class="hotspot link-hotspot" id="link-calendar-newuser" data-show-on="user2" target="_blank" aria-label="Go to FIMS calendar"></a>
+
+  <a href="https://noaa-fims.github.io/FIMS/articles/fims-logging.html" class="hotspot link-hotspot" id="link-advanced-vignettes-poweruser" data-show-on="user3" target="_blank" aria-label="Go to advanced user vignettes"></a>
+  <a href="https://github.com/orgs/NOAA-FIMS/discussions/" class="hotspot link-hotspot" id="link-gh-discussions-poweruser" data-show-on="user3" target="_blank" aria-label="Go to FIMS github discussions"></a>
+  <a href="https://noaa-fims.github.io/resources/packages.html" class="hotspot link-hotspot" id="link-fims-packages-poweruser" data-show-on="user3" target="_blank" aria-label="Go to fims-related packages page"></a>
+  <a href="https://noaa-fims.github.io/about/calendar.html" class="hotspot link-hotspot" id="link-calendar-poweruser" data-show-on="user3" target="_blank" aria-label="Go to FIMS calendar"></a>
+  <a href="https://noaa-fims.github.io/blog/" class="hotspot link-hotspot" id="link-blog-poweruser" data-show-on="user3" target="_blank" aria-label="Go to FIMS blog"></a>
+
+  <a href="https://noaa-fims.github.io/FIMS/articles/fims-path-maturity.html" class="hotspot link-hotspot" id="link-contributor-vignettes-contributor" data-show-on="user4" target="_blank" aria-label="Go to developer vignettes"></a>
+  <a href="https://github.com/NOAA-FIMS/FIMS/milestones?sort=due_date&direction=asc" class="hotspot link-hotspot" id="link-planning-contributor" data-show-on="user4" target="_blank" aria-label="Go to FIMS Project Milestones"></a>
+  <a href="https://github.com/orgs/NOAA-FIMS/discussions/" class="hotspot link-hotspot" id="link-gh-discussions-contributor" data-show-on="user4" target="_blank" aria-label="Go to FIMS github discussions"></a>
+  <a href="https://noaa-fims.github.io/about/calendar.html" class="hotspot link-hotspot" id="link-calendar-contributor" data-show-on="user4" target="_blank" aria-label="Go to FIMS calendar"></a>
+  <a href="https://noaa-fims.github.io/blog/" class="hotspot link-hotspot" id="link-blog-contributor" data-show-on="user4" target="_blank" aria-label="Go to FIMS blog"></a>
+
+  <a href="https://noaa-fims.github.io/about/faq.html" class="hotspot link-hotspot" id="link-faq-receiver" data-show-on="user5" target="_blank" aria-label="Go to FAQ page"></a>
+  <a href="https://github.com/NOAA-FIMS/FIMS/milestones?sort=due_date&direction=asc" class="hotspot link-hotspot" id="link-planning-receiver" data-show-on="user5" target="_blank" aria-label="Go to FIMS Project Milestones"></a>
+  <a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="hotspot link-hotspot" id="link-intro-gh-receiver" data-show-on="user5" target="_blank" aria-label="Go to Introductions github discussion"></a>
+  <a href="https://noaa-fims.github.io/blog/" class="hotspot link-hotspot" id="link-blog-receiver" data-show-on="user5" target="_blank" aria-label="Go to FIMS blog"></a>
+</div>
+```
