@@ -44,16 +44,5 @@
       "/blog/07.28.2025.html",
       "/blog/07.21.2025.html"
     ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/about/index.html",
-      "/contact/contributors.html",
-      "/about/faq.html",
-      "/about/calendar.html",
-      "/resources/packages.html",
-      "/resources/resources.html"
-    ]
   }
 ]

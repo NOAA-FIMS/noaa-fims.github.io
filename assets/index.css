@@ -61,3 +61,298 @@
     width: 100px;
   }
 }
+
+/* Container must be relative so hotspots stay inside it */
+.fims-graphic-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust to your website's layout */
+  margin: 0 auto;
+}
+
+.fims-graphic-container img {
+  width: 100%;
+  display: block;
+}
+
+/* Base styling for the invisible boxes */
+.hotspot {
+  position: absolute;
+  cursor: pointer;
+
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+
+  background: transparent; 
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  /* Optional: Add slightly rounded corners if it fits your graphic better */
+  border-radius: 8px;
+}
+
+.hotspot,
+.hotspot:visited,
+.hotspot:focus,
+.hotspot:focus-visible,
+.hotspot:active {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* only show highlight on hover */
+.hotspot:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Positioning of user type buttons */
+#hs-user1 {
+  top: 11%;
+  left: 4%;
+  width: 16%;
+  height: 36%;
+}
+
+#hs-user2 {
+  top: 11%;
+  left: 23%;
+  width: 16%;
+  height: 36%;
+}
+
+#hs-user3 {
+  top: 11%;
+  left: 42%;
+  width: 16%;
+  height: 36%;
+}
+
+#hs-user4 {
+  top: 11%;
+  left: 61%;
+  width: 16%;
+  height: 36%;
+}
+
+#hs-user5 {
+  top: 11%;
+  left: 80%;
+  width: 16%;
+  height: 36%;
+}
+
+/* Since anchor tags <a> are inline elements by default, 
+  we just ensure they behave like blocks so the width/height works perfectly. 
+*/
+a.hotspot {
+  display: block; 
+  position: absolute;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 8px;
+}
+
+a.hotspot:hover, 
+.hotspot:focus {
+  /* This creates a semi-transparent white highlight. 
+     Change the 255, 255, 255 (white) or 0.3 (opacity) to fit your design */
+  background-color: rgba(255, 255, 255, 0.3); 
+  /* Optional: Adds a soft glow effect around the edges of the box */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Make sure link hotspots are box-like and clickable when enabled */
+.fims-graphic-container a.link-hotspot {
+  position: absolute;          /* if your hotspot system relies on absolute positioning */
+  display: block;              /* important for empty <a> tags */
+  opacity: 0;                  /* hidden by default */
+  pointer-events: none;        /* not clickable while hidden */
+  /* keep whatever width/height/top/left you already set elsewhere */
+}
+
+.fims-graphic-container a.link-hotspot.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ALL INTERESTED BUTTON LINKS POSITIONING */
+/* Positioning for FAQ */
+#link-faq-interested {
+  top: 58%; /* Pushes it down to the bottom section of the image */
+  left: 3%;
+  width: 18%;
+  height: 38%;
+}
+
+/* Positioning for FIMS Planning GitHub page */
+#link-planning-interested {
+  top: 58%;
+  left: 21%;
+  width: 19%;
+  height: 38%;
+}
+
+/* Positioning for Intro GitHub discussion board */
+#link-intro-gh-interested {
+  top: 58%;
+  left: 41%;
+  width: 18%;
+  height: 38%;
+}
+
+/* Positioning for FIMS calendar */
+#link-calendar-interested {
+  top: 58%;
+  left: 61%;
+  width: 18%;
+  height: 38%;
+}
+
+/* Positioning for FIMS blog */
+#link-blog-interested {
+  top: 58%;
+  left: 79%;
+  width: 18%;
+  height: 38%;
+}
+
+
+/* ALL NEW USER BUTTON LINKS POSITIONING */
+#link-intro-gh-newuser {
+  top: 58%; /* Pushes it down to the bottom section of the image */
+  left: 3%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-intro-demo-newuser {
+  top: 58%;
+  left: 21%;
+  width: 19%;
+  height: 38%;
+}
+
+#link-fims-packages-newuser {
+  top: 58%;
+  left: 41%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-blog-newuser {
+  top: 58%;
+  left: 60%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-calendar-newuser {
+  top: 58%;
+  left: 79%;
+  width: 18%;
+  height: 38%;
+}
+
+/* ALL POWER USER BUTTON LINKS POSITIONING */
+#link-advanced-vignettes-poweruser {
+  top: 58%; /* Pushes it down to the bottom section of the image */
+  left: 3%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-gh-discussions-poweruser {
+  top: 58%;
+  left: 23%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-fims-packages-poweruser {
+  top: 58%;
+  left: 41%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-calendar-poweruser {
+  top: 58%;
+  left: 60%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-blog-poweruser {
+  top: 58%;
+  left: 79%;
+  width: 18%;
+  height: 38%;
+}
+
+/* ALL CONTRIBUTOR BUTTON LINKS POSITIONING */
+#link-contributor-vignettes-contributor {
+  top: 58%; /* Pushes it down to the bottom section of the image */
+  left: 3%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-planning-contributor {
+  top: 58%;
+  left: 19%;
+  width: 21%;
+  height: 38%;
+}
+
+#link-gh-discussions-contributor {
+  top: 58%;
+  left: 40%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-calendar-contributor {
+  top: 58%;
+  left: 60%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-blog-contributor {
+  top: 58%;
+  left: 79%;
+  width: 18%;
+  height: 38%;
+}
+
+/* ALL RECEIVER OF RESULTS BUTTON LINKS POSITIONING */
+#link-faq-receiver {
+  top: 58%; /* Pushes it down to the bottom section of the image */
+  left: 5%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-planning-receiver {
+  top: 58%;
+  left: 27%;
+  width: 19%;
+  height: 38%;
+}
+
+#link-intro-gh-receiver {
+  top: 58%;
+  left: 53%;
+  width: 18%;
+  height: 38%;
+}
+
+#link-blog-receiver {
+  top: 58%;
+  left: 76%;
+  width: 18%;
+  height: 38%;
+}
