@@ -51,19 +51,12 @@
   path: https://noaa-afsc.github.io/SparseNUTS/
   image: ../images/FIMS_hexlogo.png
   categories: [MCMC, TMB, RTMB, Stan]
-- title: r4MAS
+
+- title: "fims-pkgdown-template"
   description: >
-    Package to translate stock synthesis input files into MAS inputs <br>
-    - [Website](https://noaa-fims.github.io/r4MAS/) <br>
-    - [Repository](https://github.com/NOAA-FIMS/r4MAS)
-  path: https://noaa-fims.github.io/r4MAS/
-  image: ../images/FIMS_hexlogo.png
-  categories: [R]
-- title: fims-pkgdown-template
-  description: >
-     <br>
+    Template providing pkgdown theme files for FIMS R packages <br>
     - [Website](https://noaa-fims.github.io/fims-pkgdown-template/) <br>
     - [Repository](https://github.com/NOAA-FIMS/fims-pkgdown-template)
   path: https://noaa-fims.github.io/fims-pkgdown-template/
   image: ../images/FIMS_hexlogo.png
-  categories: [R]
+  categories: [pkgdown, R]
