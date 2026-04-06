@@ -4,6 +4,7 @@ page-layout: full
 title-block-banner: false
 header-includes: >
   <link rel="stylesheet" href="assets/index.css">
+  <script src="assets/scripts.js" defer></script>
 resources:
   - assets/index.css
   - images/case_study.jpg
