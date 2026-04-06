@@ -1,0 +1,44 @@
+---
+# The title MUST start with "FIMS Weekly - "
+title: "FIMS Weekly - April 06–10, 2026"
+date: "April 06, 2026"
+# Change the following categories accordingly, but you MUST keep fims-weekly
+categories:
+  - fims-weekly
+three-big-things:
+  bt1: "Jon is working on bringing more distributions into FIMS, including the Dirichlet-multinomial."
+  bt2: "Make a check-list of final tasks for the Surplus Production model."
+  bt3: "Continue work on the interface for random effects."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "Elizabeth and others worked a few weeks ago on editing an infographic to display user pathways. The work is now live on the FIMS organization website. Please feel to provide comments to Elizabeth if you have more ideas."
+  include-photo: true
+  path: "images/fims_user_pathways.png""
+  alt-text: "Five icons that lead to ideas for websites that would be of interest given what pathway you choose. The links are live and accessible on the noaa-fims website."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- 14 days until the CIE Review.
+- Three case studies are back up and running.
+::: 
+    
+::: {#additional-events}
+### Wednesday, April 01
+**UW SAFS Think Tank with Mark Maunder**
+
+Time: 12:30–13:30 E; 9:30–10:30 P; 8:30–9:30 AK; 6:30–7:30 H
+Location: Virtual
+Online: [Go to webinar](https://register.gotowebinar.com/register/2627838742231839063)
+:::
+
+<!-- ::: {#photo-code}
+::: -->
