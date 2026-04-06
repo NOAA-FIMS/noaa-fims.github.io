@@ -20,7 +20,7 @@ upcoming-events:
 photo:
   text: "Elizabeth and others worked a few weeks ago on editing an infographic to display user pathways. The work is now live on the FIMS organization website. Please feel to provide comments to Elizabeth if you have more ideas."
   include-photo: true
-  path: "images/fims_user_pathways.png""
+  path: "images/fims_user_pathways.png"
   alt-text: "Five icons that lead to ideas for websites that would be of interest given what pathway you choose. The links are live and accessible on the noaa-fims website."
 ---
   
