@@ -10,8 +10,8 @@
 <atom:link href="https://noaa-fims.github.io/resources/resources-r.xml" rel="self" type="application/rss+xml"/>
 <description>Resources for getting started and developing FIMS.
 </description>
-<generator>quarto-1.9.36</generator>
-<lastBuildDate>Mon, 06 Apr 2026 14:56:07 GMT</lastBuildDate>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Thu, 09 Apr 2026 14:22:34 GMT</lastBuildDate>
 <item>
   <title>&lt;i class=&quot;fab fa-r-project&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; FIMS R Documentation</title>
   <link>https://noaa-fims.github.io/</link>
@@ -19,7 +19,7 @@
 </description>
   <category>R</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Mon, 06 Apr 2026 14:56:07 GMT</pubDate>
+  <pubDate>Thu, 09 Apr 2026 14:22:34 GMT</pubDate>
 </item>
 <item>
   <title>FIMSdiags</title>
@@ -29,7 +29,7 @@
   <category>R</category>
   <category>diagnostics</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Mon, 06 Apr 2026 14:56:07 GMT</pubDate>
+  <pubDate>Thu, 09 Apr 2026 14:22:34 GMT</pubDate>
 </item>
 <item>
   <title>FIMSRTMB</title>
@@ -39,7 +39,7 @@
   <category>R</category>
   <category>TMB</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Mon, 06 Apr 2026 14:56:07 GMT</pubDate>
+  <pubDate>Thu, 09 Apr 2026 14:22:34 GMT</pubDate>
 </item>
 </channel>
 </rss>
