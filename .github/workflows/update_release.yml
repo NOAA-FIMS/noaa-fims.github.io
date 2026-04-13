@@ -79,7 +79,7 @@ jobs:
       # Create a release with the same tag as the FIMS repo
       - name: Create Release
         if: steps.release_updated.outputs.release_updated == 'true'
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.changelog_version.outputs.version_heading }}
           name: Release ${{ steps.changelog_version.outputs.version_heading }}
