@@ -1,0 +1,36 @@
+---
+# The title MUST start with "FIMS Weekly - "
+title: "FIMS Weekly - April 13–17, 2026"
+date: "April 13, 2026"
+# Change the following categories accordingly, but you MUST keep fims-weekly
+categories:
+  - fims-weekly
+three-big-things:
+  bt1: "Send presentations for CIE Review to OST for review."
+  bt2: "Make a check-list of final tasks for the Surplus Production model (carry over from last week)."
+  bt3: "Reactivate the FIMS planning repository."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "GitHub released a feature last week allowing users to [sort their notifications](https://github.blog/changelog/2026-04-09-new-sort-by-control-added-to-notifications/) on the web interface. You can look at all of your notifications by navigating to www.github.com/notifications; this interface is great for being able to turn off notifications for specific threads that you are not interested in or honing in on recent notifications from a certain repository."
+  include-photo: true
+  path: "https://github.blog/wp-content/uploads/2026/04/SortBy_Improvements_Header_v02.jpg?w=1536"
+  alt-text: "A screenshot of GitHub showing where to sort your notifications."
+---
+  
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- 7 days until the CIE Review.
+- There are still empty time slots for taking notes during the CIE Review, please sign up in this [Google Doc](https://docs.google.com/document/d/1MfqLOMrkawPrQzdI3ycybxBx2gk8r7tLa44iKIo0taY/edit?tab=t.0).
+::: 
+    
+
+<!-- ::: {#photo-code}
+::: -->
