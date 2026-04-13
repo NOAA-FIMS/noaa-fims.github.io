@@ -34,7 +34,7 @@ jobs:
         run: git pull --rebase origin main
 
       - name: Fetch contributors from NOAA-FIMS/FIMS and update avatar grid
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             // Fetch all contributors from NOAA-FIMS/FIMS repository
