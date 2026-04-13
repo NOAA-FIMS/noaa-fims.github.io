@@ -50,7 +50,7 @@ jobs:
           
       - name: Create Pull Request for updated fims-packages.yaml
         if: steps.git-check.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "Update fims-packages.yaml for new pkgdown site in FIMS org"
           branch: auto/pkgdown-update
@@ -100,7 +100,7 @@ jobs:
   
       - name: Create Pull Request for updated changelog
         if: steps.git-check.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "Update FIMS_CHANGELOG.qmd with latest FIMS releases"
           branch: auto/fims-changelog-update
