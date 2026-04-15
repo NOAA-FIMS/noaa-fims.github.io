@@ -11,7 +11,7 @@ description: >
 
   **Filtering**
   <br>
-  You can filter the blog posts by the major categories above using the option on the left. You can further filter by minor categories (those that aren't one of the major categories) by clicking on the specific category listed in each blog post listing. To unfilter, simply click "Categories" on the left panel.
+  You can filter the blog posts by the major categories defined above using right side navigation. You can also filter by minor categories by clicking on the specific category listed in each blog post listing below. To unfilter, simply click "Categories" on the right panel.
   <br>
 listing:
   contents:
