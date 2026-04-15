@@ -24,7 +24,7 @@ upcoming-events:
 photo:
   text: "A few months ago, Posit introduced [Databot](https://posit.co/blog/introducing-databot/) to help explore your data. This is not really of direct interest to FIMS but I think the concept is. Our figures and tables should with a FIMS data object should be relatively similar where we build a command such as `summarize()` to give similar summaries."
   include-photo: true
-  path: "https://posit.co/wp-content/uploads/2025/08/databot-blog.pdf.jpg"
+  path: "https://posit.co/sites/default/files/styles/x_large_hq/public/migrate/blog/2025/08/databot-blog.pdf.jpg.webp?itok=HdtfJ252"
   alt-text: "Collaborate and automate with Databot."
 ---
   
