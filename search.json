@@ -543,7 +543,7 @@
     "href": "about/index.html#get-involved",
     "title": "About FIMS",
     "section": "Get involved ",
-    "text": "Get involved \nUsers and developers are welcome to join the Discussions board or submit bug reports using GitHub Issues. Please use the issues under collaborative workflow to make suggestions about the developer guide and the issues under the FIMS software repository for software design and development feedback."
+    "text": "Get involved \nUsers and developers are welcome to join the Discussions board or submit bug reports using GitHub Issues. Please use the issues in the NOAA-FIMS github.io repository to make suggestions regarding this website and the issues under the FIMS software repository for software design and development feedback."
   },
   {
     "objectID": "about/index.html#comparison-to-other-frameworks",
