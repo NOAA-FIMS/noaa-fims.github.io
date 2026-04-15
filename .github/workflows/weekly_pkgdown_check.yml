@@ -62,12 +62,11 @@ jobs:
             :sparkles: **Automated update to `resources/fims-packages.yaml`** :sparkles:
               
             Hey 👋 ${{ env.TOP_CONTRIB }}, your package’s pkgdown site has been added!
-  
-            Please add appropriate **categories** to the newly listed pkgdown site in `resources/fims-packages.yaml` to help with site indexing and discovery.
-            Also, please add your package's hex logo to the images folder.
-  
-            - Edit this pull request to add or update categories and package hex logo as needed.
-            - Once reviewed,  merge this PR.
+            
+            **Please do the following:**
+            - Add appropriate **categories** to your newly listed pkgdown site in `resources/fims-packages.yaml` or comment with the categories you would like added.
+            - Add your package's hex logo (if you have one) to the ./images folder and replace `image: ../images/FIMS_hexlogo.png` with the name of the png that you added or comment with a png file of your hex logo.
+            - Once reviewed, merge this PR.
 
   weekly-update-changelog:
     runs-on: ubuntu-latest

@@ -49,18 +49,24 @@ website:
       - text: blog
         aria-label: link to blog
         href: blog/index.qmd
-      - text: resources
-        aria-label: dropdown for resources
+      - text: packages & resources
+        aria-label: link to FIMS resources
         menu:
-          - text: resources
-            aria-label: link to resources
-            href: resources/resources.qmd
-          - text: R packages
-            aria-label: link to R packages associated with FIMS
+          - text: FIMS package
+            aria-label: link to FIMS package site
+            href: https://noaa-fims.github.io/FIMS/
+          - text: FIMS-associated R packages
+            aria-label: link to FIMS R packages
             href: resources/packages.qmd
-          - text: projects
-            aria-label: link to FIMS projects
-            href: resources/projects.qmd
+          - text: case studies
+            href: https://noaa-fims.github.io/case-studies/
+            aria-label: link to FIMS case studies site
+          - text: development resources
+            aria-label: link to development resources
+            href: resources/resources.qmd
+          # - text: projects
+          #   aria-label: link to FIMS projects
+          #   href: resources/projects.qmd
       - text: contact
         aria-label: link to contacts
         menu:

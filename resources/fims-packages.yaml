@@ -1,62 +1,55 @@
 - title: "FIMS"
+  weight: 0
   description: >
-    The primary package of FIMS <br>
-    - [Website](https://noaa-fims.github.io/FIMS/) <br>
-    - [Repository](https://github.com/noaa-fims/fims)
+    The primary package of FIMS
   path: "https://noaa-fims.github.io/FIMS/"
   image: ../images/FIMS_hexlogo.png
-  categories: [vignettes]
+  categories: [vignettes, doxygen, TMB, C++]
 
 - title: "FIMSdiags"
+  weight: 10
   description: > 
-    Run common diagnostic analyses on FIMS models <br>
-    - [Website](https://noaa-fims.github.io/FIMSdiags/) <br>
-    - [Repository](https://github.com/NOAA-FIMS/FIMSdiags)
+    Run common diagnostic analyses on FIMS models
   path: "https://noaa-fims.github.io/FIMSdiags/"
   image: ../images/FIMSdiags_placeholder.png
   categories: [diagnostics]
 
 - title: "FIMSRTMB"
+  weight: 11
   description: >
-    The repository for development of the RTMB branch of FIMS <br>
-    - [Website](https://noaa-fims.github.io/FIMSRTMB/) <br>
-    - [Repository](https://github.com/NOAA-FIMS/FIMSRTMB)
+    The repository for development of the RTMB branch of FIMS
   path: https://noaa-fims.github.io/FIMSRTMB/
   image: ../images/FIMS_hexlogo.png
-  categories: [TMB, rTMB]
+  categories: [TMB, RTMB]
 
 - title: "stockplotr"
+  weight: 12
   description: >
-    Tables and figures for the results of stock assessment models <br>
-    - [Website](https://nmfs-ost.github.io/stockplotr/) <br>
-    - [Repository](https://github.com/nmfs-ost/stockplotr)
+    Tables and figures for the results of stock assessment models
   path: https://nmfs-ost.github.io/stockplotr/
   image: ../images/stockplotr-hex.png
   categories: [tables, figures, reports]
 
 - title: "asar"
+  weight: 13
   description: >
-    Quarto template files for a U.S. stock assessment report <br>
-    - [Website](https://nmfs-ost.github.io/asar/) <br>
-    - [Repository](https://github.com/nmfs-ost/asar)
+    Quarto template files for a U.S. stock assessment report
   path: https://nmfs-ost.github.io/asar/
   image: ../images/asar-hex.png
-  categories: [reports]
+  categories: [reports, Quarto]
 
 - title: "SparseNUTS"
+  weight: 14
   description: >
-    Sparse no-U-turn sampling for TMB and RTMB models <br>
-    - [Website](https://noaa-afsc.github.io/SparseNUTS/) <br>
-    - [Repository](https://github.com/noaa-afsc/SparseNUTS/)
+    Sparse no-U-turn sampling for TMB and RTMB models
   path: https://noaa-afsc.github.io/SparseNUTS/
   image: ../images/FIMS_hexlogo.png
   categories: [MCMC, TMB, RTMB, Stan]
 
 - title: "fims-pkgdown-template"
+  weight: 15
   description: >
-    Template providing pkgdown theme files for FIMS R packages <br>
-    - [Website](https://noaa-fims.github.io/fims-pkgdown-template/) <br>
-    - [Repository](https://github.com/NOAA-FIMS/fims-pkgdown-template)
+    Template providing pkgdown theme files for FIMS R packages
   path: https://noaa-fims.github.io/fims-pkgdown-template/
   image: ../images/FIMS_hexlogo.png
-  categories: [pkgdown, R]
+  categories: [pkgdown, template]

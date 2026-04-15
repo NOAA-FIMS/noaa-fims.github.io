@@ -32,12 +32,13 @@ results <- map_dfr(repo_names, function(repo) {
     has_pkgdown = pkgdown_exists,
     pkgdown_path = pkgdown_path,
     pages_enabled = pages_enabled,
-    github_pages_url = pages_url,
-    repo_url = if (!is.null(repo_meta)) repo_meta$html_url else NA_character_
+    github_pages_url = pages_url
   )
 })
 
-results_filt <- results %>% filter(has_pkgdown, !is.na(github_pages_url))
+results_filt <- results |> 
+      filter(has_pkgdown, !is.na(github_pages_url)) |>
+      filter(repo != "r4MAS") # until told otherwise, I don't see this being used for FIMS directly so I'm excluding it
 
 lines <- readLines("resources/fims-packages.yaml")
 
@@ -51,22 +52,25 @@ existing_urls_trimmed <- sub('(\\\\")$|("$)', "", existing_urls_trimmed)
 new_blocks <- character(0)
 new_contributors <- character(0)
 
+# Get weight so can add for new entries, the weight determines the order of the packages in the list. 
+# This can be changed manually later if you wish for the package order to be different
+next_weight <- max(as.numeric(gsub("weight:\\s+", "", grep("weight:", trimws(lines), value = TRUE))))
+
 for (i in seq_len(nrow(results_filt))) {
   site <- results_filt$github_pages_url[i]
   repo <- results_filt$repo[i]
   desc <- results_filt$description[i]
-  repo_url <- results_filt$repo_url[i]
   found <- site %in% existing_urls_trimmed
   if (!is.na(site) && !found) {
+    next_weight <- next_weight + 1
     block <- c(
       sprintf("- title: %s", repo),
+      sprintf("  weight: %d", next_weight),
       "  description: >",
-      sprintf('    %s <br>', ifelse(is.na(desc), "", desc)),
-      sprintf('    - [Website](%s) <br>', site),
-      sprintf('    - [Repository](%s)', repo_url),
+      sprintf("    %s", ifelse(is.na(desc), "", desc)),
       sprintf("  path: %s", site),
       sprintf("  image: ../images/FIMS_hexlogo.png"),
-      sprintf("  categories: [R]")
+      sprintf("  categories: []")
     )
     new_blocks <- c(new_blocks, block)
     
