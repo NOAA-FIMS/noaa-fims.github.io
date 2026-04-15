@@ -507,14 +507,16 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Select all anchor tags with href starting with http (external links only)
-  document.querySelectorAll("a[href^='http']").forEach(function(link) {
-    // Ignore links to the current site's domain
-    if (!link.href.includes(window.location.hostname)) {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener');
-      
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("a[href]").forEach(function (link) {
+    var href = link.getAttribute("href");
+    if (!href) return;
+
+    var url = new URL(href, window.location.origin);
+
+    if (url.hostname !== window.location.hostname) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
     }
   });
 });
