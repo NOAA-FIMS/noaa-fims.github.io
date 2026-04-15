@@ -8,38 +8,9 @@
 <title>FIMS</title>
 <link>https://noaa-fims.github.io/resources/resources.html#category=R</link>
 <atom:link href="https://noaa-fims.github.io/resources/resources-r.xml" rel="self" type="application/rss+xml"/>
-<description>Resources for getting started and developing FIMS.
+<description>Resources for learning skills to supportdeveloping FIMS.
 </description>
 <generator>quarto-1.9.37</generator>
-<lastBuildDate>Wed, 15 Apr 2026 14:29:07 GMT</lastBuildDate>
-<item>
-  <title>&lt;i class=&quot;fab fa-r-project&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; FIMS R Documentation</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>Packagedown site for FIMS package.
-</description>
-  <category>R</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
-</item>
-<item>
-  <title>FIMSdiags</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>R package to run model diagnostics on FIMS models
-</description>
-  <category>R</category>
-  <category>diagnostics</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
-</item>
-<item>
-  <title>FIMSRTMB</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>The repository for development of the RTMB branch of FIMS
-</description>
-  <category>R</category>
-  <category>TMB</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
-</item>
+<lastBuildDate>Wed, 15 Apr 2026 19:07:25 GMT</lastBuildDate>
 </channel>
 </rss>

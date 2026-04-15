@@ -8,39 +8,18 @@
 <title>FIMS</title>
 <link>https://noaa-fims.github.io/resources/resources.html</link>
 <atom:link href="https://noaa-fims.github.io/resources/resources.xml" rel="self" type="application/rss+xml"/>
-<description>Resources for getting started and developing FIMS.
+<description>Resources for learning skills to supportdeveloping FIMS.
 </description>
 <generator>quarto-1.9.37</generator>
-<lastBuildDate>Wed, 15 Apr 2026 14:29:07 GMT</lastBuildDate>
+<lastBuildDate>Wed, 15 Apr 2026 19:07:25 GMT</lastBuildDate>
 <item>
-  <title>🔍 FIMS case studies</title>
+  <title>r4MAS</title>
   <link>https://noaa-fims.github.io/</link>
-  <description>Test cases, based on regional assessments, to illustrate use of FIMS.
+  <description>Package to translate stock synthesis input files into MAS inputs
 </description>
-  <category>WHAM</category>
   <category>SS3</category>
-  <category>ASAP</category>
-  <category>TMB</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
-</item>
-<item>
-  <title>&lt;i class=&quot;fab fa-r-project&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; FIMS R Documentation</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>Packagedown site for FIMS package.
-</description>
-  <category>R</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
-</item>
-<item>
-  <title>&lt;i class=&quot;fa-solid fa-plus&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; FIMS C++ Documentation</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>Documentation for FIMS C++ functions, written using doxygen.
-</description>
-  <category>C++</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>cplusplus.com</title>
@@ -50,7 +29,7 @@
   <category>C++</category>
   <category>training</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>geeksforgeeks.org</title>
@@ -60,7 +39,7 @@
   <category>C++</category>
   <category>training</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>learncpp.com</title>
@@ -70,7 +49,7 @@
   <category>C++</category>
   <category>training</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>positioniseverything.net</title>
@@ -80,7 +59,7 @@
   <category>C++</category>
   <category>training</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>docs.microsoft.com</title>
@@ -90,7 +69,7 @@
   <category>C++</category>
   <category>documentation</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>rcpp.org</title>
@@ -100,7 +79,7 @@
   <category>Rcpp</category>
   <category>training</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>github.com/RcppCore</title>
@@ -111,7 +90,7 @@
   <category>github</category>
   <category>documentation</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>mjdenny.com</title>
@@ -121,36 +100,7 @@
   <category>Rcpp</category>
   <category>training</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
-</item>
-<item>
-  <title>r4MAS</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>Package to translate stock synthesis input files into MAS inputs
-</description>
-  <category>SS3</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
-</item>
-<item>
-  <title>FIMSdiags</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>R package to run model diagnostics on FIMS models
-</description>
-  <category>R</category>
-  <category>diagnostics</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
-</item>
-<item>
-  <title>FIMSRTMB</title>
-  <link>https://noaa-fims.github.io/</link>
-  <description>The repository for development of the RTMB branch of FIMS
-</description>
-  <category>R</category>
-  <category>TMB</category>
-  <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>Rcpp in Advanced R</title>
@@ -159,7 +109,7 @@
 </description>
   <category>Rcpp</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>Rcpp: Seamless R and C++ Integration</title>
@@ -168,7 +118,7 @@
 </description>
   <category>Rcpp</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>Rcpp for everyone</title>
@@ -177,7 +127,7 @@
 </description>
   <category>Rcpp</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>Exposing C++ functions and classes with Rcpp modules</title>
@@ -186,7 +136,7 @@
 </description>
   <category>Rcpp</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 <item>
   <title>Rcpp quick reference</title>
@@ -195,7 +145,7 @@
 </description>
   <category>Rcpp</category>
   <guid>https://noaa-fims.github.io/</guid>
-  <pubDate>Wed, 15 Apr 2026 14:29:07 GMT</pubDate>
+  <pubDate>Wed, 15 Apr 2026 19:07:25 GMT</pubDate>
 </item>
 </channel>
 </rss>

@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-description","listing-image","listing-categories"],
+      searchColumns: ["listing-title","listing-weight","listing-description","listing-image","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     if (el) el.textContent = '© ' + year;
   });
 </script>
-<link rel="stylesheet" href="../assets/index.css">
+<link rel="stylesheet" href="../assets/packages.css">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -374,21 +374,25 @@ window.Quarto = {
 <span class="menu-text">blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">resources</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-packages--resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">packages &amp; resources</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-packages--resources">    
         <li>
-    <a class="dropdown-item" href="../resources/resources.html">
- <span class="dropdown-text">resources</span></a>
+    <a class="dropdown-item" href="https://noaa-fims.github.io/FIMS/">
+ <span class="dropdown-text">FIMS package</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../resources/packages.html">
- <span class="dropdown-text">R packages</span></a>
+ <span class="dropdown-text">FIMS-associated R packages</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../resources/projects.html">
- <span class="dropdown-text">projects</span></a>
+    <a class="dropdown-item" href="https://noaa-fims.github.io/case-studies/">
+ <span class="dropdown-text">case studies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../resources/resources.html">
+ <span class="dropdown-text">development resources</span></a>
   </li>  
     </ul>
   </li>
@@ -471,7 +475,9 @@ window.Quarto = {
 
 
 <div id="fims-packages-listing">
+<div class="quarto-listing-container">
 
+</div>
 </div>
 
 
@@ -479,13 +485,13 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-fims-packages">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="dmlnbmV0dGVz">
+<div class="g-col-1" data-index="0" data-categories="dmlnbmV0dGVzJTJDZG94eWdlbiUyQ1RNQiUyQ0MlMkIlMkI=">
 <a href="https://noaa-fims.github.io/FIMS/" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="https://noaa-fims.github.io/FIMS/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../images/FIMS_hexlogo.png" class="thumbnail-image card-img" style="height: 250px;">
 </p>
-</a><div class="card-body post-contents"><a href="https://noaa-fims.github.io/FIMS/" class="quarto-grid-link">
+<div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 FIMS
 </h5>
@@ -493,43 +499,26 @@ FIMS
 
 <div class="listing-category" onclick="window.quartoListingCategory('dmlnbmV0dGVz'); return false;">vignettes</div>
 
-</div>
-</a><div class="card-text listing-description delink"><a href="https://noaa-fims.github.io/FIMS/" class="quarto-grid-link">
-</a><p><a href="https://noaa-fims.github.io/FIMS/" class="quarto-grid-link">The primary package of FIMS <br> - </a><a href="https://noaa-fims.github.io/FIMS/">Website</a> <br> - <a href="https://github.com/noaa-fims/fims">Repository</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="g-col-1" data-index="1" data-categories="VE1CJTJDclRNQg==">
-<a href="https://noaa-fims.github.io/FIMSRTMB/" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="https://noaa-fims.github.io/FIMSRTMB/" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="../images/FIMS_hexlogo.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-</a><div class="card-body post-contents"><a href="https://noaa-fims.github.io/FIMSRTMB/" class="quarto-grid-link">
-<h5 class="no-anchor card-title listing-title">
-FIMSRTMB
-</h5>
-<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('ZG94eWdlbg=='); return false;">doxygen</div>
 
 <div class="listing-category" onclick="window.quartoListingCategory('VE1C'); return false;">TMB</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('clRNQg=='); return false;">rTMB</div>
+<div class="listing-category" onclick="window.quartoListingCategory('QyUyQiUyQg=='); return false;">C++</div>
 
 </div>
-</a><div class="card-text listing-description delink"><a href="https://noaa-fims.github.io/FIMSRTMB/" class="quarto-grid-link">
-</a><p><a href="https://noaa-fims.github.io/FIMSRTMB/" class="quarto-grid-link">The repository for development of the RTMB branch of FIMS <br> - </a><a href="https://noaa-fims.github.io/FIMSRTMB/">Website</a> <br> - <a href="https://github.com/NOAA-FIMS/FIMSRTMB">Repository</a></p>
+<div class="card-text listing-description delink">
+<p>The primary package of FIMS</p>
 </div>
 </div>
+</div></a>
 </div>
-</div>
-<div class="g-col-1" data-index="2" data-categories="ZGlhZ25vc3RpY3M=">
+<div class="g-col-1" data-index="1" data-categories="ZGlhZ25vc3RpY3M=">
 <a href="https://noaa-fims.github.io/FIMSdiags/" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="https://noaa-fims.github.io/FIMSdiags/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../images/FIMSdiags_placeholder.png" class="thumbnail-image card-img" style="height: 250px;">
 </p>
-</a><div class="card-body post-contents"><a href="https://noaa-fims.github.io/FIMSdiags/" class="quarto-grid-link">
+<div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 FIMSdiags
 </h5>
@@ -538,19 +527,90 @@ FIMSdiags
 <div class="listing-category" onclick="window.quartoListingCategory('ZGlhZ25vc3RpY3M='); return false;">diagnostics</div>
 
 </div>
-</a><div class="card-text listing-description delink"><a href="https://noaa-fims.github.io/FIMSdiags/" class="quarto-grid-link">
-</a><p><a href="https://noaa-fims.github.io/FIMSdiags/" class="quarto-grid-link">Run common diagnostic analyses on FIMS models <br> - </a><a href="https://noaa-fims.github.io/FIMSdiags/">Website</a> <br> - <a href="https://github.com/NOAA-FIMS/FIMSdiags">Repository</a></p>
+<div class="card-text listing-description delink">
+<p>Run common diagnostic analyses on FIMS models</p>
 </div>
 </div>
+</div></a>
 </div>
-</div>
-<div class="g-col-1" data-index="3" data-categories="TUNNQyUyQ1RNQiUyQ1JUTUIlMkNTdGFu">
-<a href="https://noaa-afsc.github.io/SparseNUTS/" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="https://noaa-afsc.github.io/SparseNUTS/" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="VE1CJTJDUlRNQg==">
+<a href="https://noaa-fims.github.io/FIMSRTMB/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../images/FIMS_hexlogo.png" class="thumbnail-image card-img" style="height: 250px;">
 </p>
-</a><div class="card-body post-contents"><a href="https://noaa-afsc.github.io/SparseNUTS/" class="quarto-grid-link">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+FIMSRTMB
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VE1C'); return false;">TMB</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UlRNQg=='); return false;">RTMB</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>The repository for development of the RTMB branch of FIMS</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="dGFibGVzJTJDZmlndXJlcyUyQ3JlcG9ydHM=">
+<a href="https://nmfs-ost.github.io/stockplotr/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/stockplotr-hex.png" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+stockplotr
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('dGFibGVz'); return false;">tables</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZmlndXJlcw=='); return false;">figures</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmVwb3J0cw=='); return false;">reports</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Tables and figures for the results of stock assessment models</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="cmVwb3J0cyUyQ1F1YXJ0bw==">
+<a href="https://nmfs-ost.github.io/asar/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/asar-hex.png" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+asar
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmVwb3J0cw=='); return false;">reports</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Quarto template files for a U.S. stock assessment report</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="TUNNQyUyQ1RNQiUyQ1JUTUIlMkNTdGFu">
+<a href="https://noaa-afsc.github.io/SparseNUTS/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/FIMS_hexlogo.png" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 SparseNUTS
 </h5>
@@ -565,40 +625,19 @@ SparseNUTS
 <div class="listing-category" onclick="window.quartoListingCategory('U3Rhbg=='); return false;">Stan</div>
 
 </div>
-</a><div class="card-text listing-description delink"><a href="https://noaa-afsc.github.io/SparseNUTS/" class="quarto-grid-link">
-</a><p><a href="https://noaa-afsc.github.io/SparseNUTS/" class="quarto-grid-link">Sparse no-U-turn sampling for TMB and RTMB models <br> - </a><a href="https://noaa-afsc.github.io/SparseNUTS/">Website</a> <br> - <a href="https://github.com/noaa-afsc/SparseNUTS/">Repository</a></p>
+<div class="card-text listing-description delink">
+<p>Sparse no-U-turn sampling for TMB and RTMB models</p>
 </div>
 </div>
+</div></a>
 </div>
-</div>
-<div class="g-col-1" data-index="4" data-categories="cmVwb3J0cw==">
-<a href="https://nmfs-ost.github.io/asar/" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="https://nmfs-ost.github.io/asar/" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="../images/asar-hex.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-</a><div class="card-body post-contents"><a href="https://nmfs-ost.github.io/asar/" class="quarto-grid-link">
-<h5 class="no-anchor card-title listing-title">
-asar
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cmVwb3J0cw=='); return false;">reports</div>
-
-</div>
-</a><div class="card-text listing-description delink"><a href="https://nmfs-ost.github.io/asar/" class="quarto-grid-link">
-</a><p><a href="https://nmfs-ost.github.io/asar/" class="quarto-grid-link">Quarto template files for a U.S. stock assessment report <br> - </a><a href="https://nmfs-ost.github.io/asar/">Website</a> <br> - <a href="https://github.com/nmfs-ost/asar">Repository</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="g-col-1" data-index="5" data-categories="cGtnZG93biUyQ1I=">
+<div class="g-col-1" data-index="6" data-categories="cGtnZG93biUyQ3RlbXBsYXRl">
 <a href="https://noaa-fims.github.io/fims-pkgdown-template/" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="https://noaa-fims.github.io/fims-pkgdown-template/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../images/FIMS_hexlogo.png" class="thumbnail-image card-img" style="height: 250px;">
 </p>
-</a><div class="card-body post-contents"><a href="https://noaa-fims.github.io/fims-pkgdown-template/" class="quarto-grid-link">
+<div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 fims-pkgdown-template
 </h5>
@@ -606,39 +645,14 @@ fims-pkgdown-template
 
 <div class="listing-category" onclick="window.quartoListingCategory('cGtnZG93bg=='); return false;">pkgdown</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dGVtcGxhdGU='); return false;">template</div>
 
 </div>
-</a><div class="card-text listing-description delink"><a href="https://noaa-fims.github.io/fims-pkgdown-template/" class="quarto-grid-link">
-</a><p><a href="https://noaa-fims.github.io/fims-pkgdown-template/" class="quarto-grid-link">Template providing pkgdown theme files for FIMS R packages <br> - </a><a href="https://noaa-fims.github.io/fims-pkgdown-template/">Website</a> <br> -…</p>
+<div class="card-text listing-description delink">
+<p>Template providing pkgdown theme files for FIMS R packages</p>
 </div>
 </div>
-</div>
-</div>
-<div class="g-col-1" data-index="6" data-categories="dGFibGVzJTJDZmlndXJlcyUyQ3JlcG9ydHM=">
-<a href="https://nmfs-ost.github.io/stockplotr/" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="https://nmfs-ost.github.io/stockplotr/" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="../images/stockplotr-hex.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-</a><div class="card-body post-contents"><a href="https://nmfs-ost.github.io/stockplotr/" class="quarto-grid-link">
-<h5 class="no-anchor card-title listing-title">
-stockplotr
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGFibGVz'); return false;">tables</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZmlndXJlcw=='); return false;">figures</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cmVwb3J0cw=='); return false;">reports</div>
-
-</div>
-</a><div class="card-text listing-description delink"><a href="https://nmfs-ost.github.io/stockplotr/" class="quarto-grid-link">
-</a><p><a href="https://nmfs-ost.github.io/stockplotr/" class="quarto-grid-link">Tables and figures for the results of stock assessment models <br> - </a><a href="https://nmfs-ost.github.io/stockplotr/">Website</a> <br> -…</p>
-</div>
-</div>
-</div>
+</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
