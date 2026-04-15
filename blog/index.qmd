@@ -7,6 +7,12 @@ description: >
   <i class="fa-solid fa-newspaper"></i> fims-weekly: fims weekly newsletter <br>
   <i class="fa-solid fa-graduation-cap"></i> learn: learning about the packages within FIMS, geared towards the beginner or average user <br>
   <i class="fa-solid fa-circle"></i> other: posts that do not fit the other categories<br>
+  <br>
+
+  **Filtering**
+  <br>
+  You can filter the blog posts by the major categories above using the option on the left. You can further filter by minor categories (those that aren't one of the major categories) by clicking on the specific category listed in each blog post listing. To unfilter, simply click "Categories" on the left panel.
+  <br>
 listing:
   contents:
     - "*.qmd"

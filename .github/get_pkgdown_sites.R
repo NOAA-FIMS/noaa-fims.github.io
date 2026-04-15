@@ -104,3 +104,31 @@ if (length(new_contributors) > 0) {
 } else {
   cat("", file = "top_contributors.txt")
 }
+
+#### Also append assets/open-in-new-tab.html otherwise it has a hard time differentiating from
+# the website pages like https://noaa-fims.github.io/blog which we don't want to open in a new tab
+# from FIMS packages like https://noaa-fims.github.io/FIMSRTMB which we do want open in a new tab
+newtab_lines <- readLines("assets/open-in-new-tab.html")
+
+start_idx <- grep("^\\s*var forceNewTabPaths = \\[$", newtab_lines)
+end_idx <- grep("^\\s*\\];\\s*$", newtab_lines)
+end_idx <- end_idx[end_idx > start_idx][1]
+
+path_lines <- newtab_lines[(start_idx + 1):(end_idx - 1)]
+
+paths <- trimws(path_lines)
+paths <- sub(",$", "", paths)
+paths <- gsub('^"|"$', "", paths)
+paths <- gsub("^/|/$", "", paths)
+
+new_titles <- grep("^\\s*- title:\\s*", new_blocks, value = TRUE)
+new_titles <- sub("^\\s*- title:\\s*", "", new_titles)
+matches <- sapply(paths, function(path_name) {
+  any(grepl(path_name, new_titles, fixed = TRUE))
+})
+
+if (!any(matches)) {
+  new_titles <- paste0('    "/', tolower(new_titles), '/"')
+  newtab_lines <- append(newtab_lines, new_titles, after = end_idx - 1)
+  writeLines(newtab_lines, "assets/open-in-new-tab.html")
+}
