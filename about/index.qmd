@@ -25,7 +25,7 @@ Contributions from individuals of all skill levels are welcome. The codebase and
 
 ## Get involved <i class="fa-solid fa-user-plus" aria-hidden="true"></i>
 
-Users and developers are welcome to join the [Discussions board](https://github.com/orgs/NOAA-FIMS/discussions) or submit bug reports using GitHub Issues. Please use the issues under [collaborative workflow](https://github.com/NOAA-FIMS/collaborative_workflow/issues) to make suggestions about the developer guide and the issues under the FIMS software [repository](https://github.com/NOAA-FIMS/FIMS/issues) for software design and development feedback.
+Users and developers are welcome to join the [Discussions board](https://github.com/orgs/NOAA-FIMS/discussions) or submit bug reports using GitHub Issues. Please use the issues in the [NOAA-FIMS github.io repository](https://github.com/NOAA-FIMS/noaa-fims.github.io/issues) to make suggestions regarding this website and the issues under the [FIMS software repository](https://github.com/NOAA-FIMS/FIMS/issues) for software design and development feedback.
 
 # Current project status
 
