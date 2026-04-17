@@ -9,9 +9,22 @@ toc-depth: 2
 
 # Mission
 
+## Mission statement
+
 The mission of the Fisheries Integrated Modeling System (FIMS) is to **enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs.**
 
+## Vision statement
+
 We aim to accomplish our mission with a **user-friendly stock assessment tool** that **streamlines** the development and application of scientific advice to inform current and future management needs of NOAA Fisheries' regions.
+
+## Priorities
+
+1. FIMS meets the needs of operational stock assessments across regions, scenarios, and data types and levels to provide scientific advice to management bodies.
+2. FIMS implements practical and robust methods from ecology, statistics, computer science, and mathematical modeling.
+3. FIMS estimates and projects population trajectories and can estimate parameters and uncertainty accurately and reliably in simulated conditions.
+4. Users spanning different levels of expertise can run a model within FIMS.
+5. FIMS welcomes and incorporates user, developer, and community contributions and feedback to shape design decisions and priorities, in accordance with open source principles, and communicates progress, key findings, and advancements back.
+6. FIMS is flexible enough to adapt to future management needs, new technical developments and data sources, and observational data types and supports the NOAA Open Science Initiative.
 
 # Why FIMS?
 
