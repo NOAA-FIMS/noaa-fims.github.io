@@ -1,0 +1,58 @@
+---
+# The title MUST start with "FIMS Weekly - "
+title: "FIMS Weekly - April 20–24, 2026"
+date: "April 20, 2026"
+# Change the following categories accordingly, but you MUST keep fims-weekly
+categories:
+  - fims-weekly
+  - dependencies
+three-big-things:
+  bt1: "CIE Review is this week!"
+  bt2: "Bai is working on further designing slow versus fast tests so failures come quickly and informatively. Please reach out to her if you have ideas or want to implement similar testing strategies in your own projects."
+  bt3: "Continue to work on the FIMS planning repository."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "A recent PR came in that changes our spell checker from the one provided by [ghactions4r](https://github.com/nmfs-ost/ghactions4r/blob/main/.github/workflows/spell-check.yml), which uses {spelling}, to one that uses [cspell](https://cspell.org/) and does not require installing R. This new action requires fewer words in the WORDLIST and will hopefully be easier to maintain given that we have both snake_case and PascalCase code. Locally, you can use the code below to learn more about cspell and how to check your files for spelling errors."
+---
+
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- There are still empty time slots for taking notes during the CIE Review, please sign up in this [Google Doc](https://docs.google.com/document/d/1MfqLOMrkawPrQzdI3ycybxBx2gk8r7tLa44iKIo0taY/edit?tab=t.0).
+::: 
+
+::: {#additional-events}
+### Tuesday, April 21
+**FIMS CIE Review**
+
+Time: 12:00–20:00 E; 9:00–17:00 P; 8:00–16:00 AK; 6:00–14:00 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=cex-grne-bmx&ref=https://meet.google.com/cex-grne-bmx)
+
+### Wednesday, April 22
+**FIMS CIE Review**
+
+Time: 12:00–20:00 E; 9:00–17:00 P; 8:00–16:00 AK; 6:00–14:00 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=cex-grne-bmx&ref=https://meet.google.com/cex-grne-bmx)
+
+### Thursday, April 23
+**FIMS CIE Review**
+
+Time: 12:00–20:00 E; 9:00–17:00 P; 8:00–16:00 AK; 6:00–14:00 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=cex-grne-bmx&ref=https://meet.google.com/cex-grne-bmx)
+:::
+
+::: {#photo-code}
+```bash
+cspell lint --help
+```
+:::
