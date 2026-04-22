@@ -58,7 +58,7 @@ FIMS is a collaborative effort that would not be possible without the generous s
 * Bjarki Þ. Elvarsson (MFRI, Gadget)
 * Curry J. Cunningham (NPFMC)
 * Éva E. Plagányi (CSIRO)
-* Geneviève M. Nesslage (Mid-Atlantic)
+* Geneviève M. Nesslage (UMCES)
 * Henning Winker (JRC, Jabba)
 * Jim N. Sanchirico (UC Davis)
 * Jon R. Weidenmann (Rutgers)
