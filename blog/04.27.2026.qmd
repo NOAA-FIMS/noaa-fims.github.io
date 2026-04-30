@@ -6,7 +6,7 @@ date: "April 27, 2026"
 categories:
   - fims-weekly
 three-big-things:
-  bt1: "There are several Pull Requests that have been in the que for more than a week that need reviewed and brought into dev. We are still thinking about changing our workflow to move away from having a dev branch but more investigation is needed."
+  bt1: "There are several Pull Requests that have been in the queue for more than a week that need reviewed and brought into dev. We are still thinking about changing our workflow to move away from having a dev branch but more investigation is needed."
   bt2: "Adrianne is thinking about how to model variability in length within the new growth module. Feel free to reach out to her if you know of any published papers or have opinions."
   bt3: "Matthew is continuing to work on translational units and getting FIMS to operate more like the RTMB package while compiling. The current road block is with the use of roxygen2 some additional files are added that can cause headaches."
 # Announcements go below because of formatting that quarto doesnt transfer over from the yml
