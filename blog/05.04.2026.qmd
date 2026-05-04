@@ -1,0 +1,52 @@
+---
+# The title MUST start with "FIMS Weekly - "
+title: "FIMS Weekly - May 04–08, 2026"
+date: "May 04, 2026"
+# Change the following categories accordingly, but you MUST keep fims-weekly
+categories:
+  - fims-weekly
+  - CKMR
+  - GSoC
+three-big-things:
+  bt1: "We received slots for two 2026 Google Summer of Code Contributors. One contributor will be working on adding sex and the other will be working on adding Empirical Dynamic Modeling (EDM) with the help of Molly Stevens and Steve Munch. Their FIMS mentors, Adrianne, Andrea, Nathan, Molly, are working on a plan regarding how to welcome them to the FIMS community."
+  bt2: "Bai is working on absorbing {ecosystemdata} into {ecosystemom}. There is also a [Discussion](https://github.com/orgs/NOAA-FIMS/discussions/1445) about absorbing {FIMSdiags} into {FIMS}."
+  bt3: "We received additional comments on the FIMS Manuscript before the CIE Review. Christine started addressing them last week with the hope that the manuscript can be submitted this week."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "Close-kin mark recapture (CKMR) was recently added to the Beaufort Assessment Model (BAM) for the assessment of red snapper, where DNA is used to identify family relationships or next of kin. The photograph below is a DNA sample of red snapper by Liam Kehoe, you can read about Liam's story and view the photo on the [Florida Sea Grant website](https://www.flseagrant.org/its-all-in-the-dna-nmfs-fellow-uses-genetic-tags-to-track-atlantic-red-snapper/). Liam Kehoe is a 2024 NMFS-Sea Grant fellow. Please let me know if you have ideas regarding CKMR and FIMS."
+  include-photo: true
+  path: "https://www.flseagrant.org/wp-content/uploads/2025/02/Adobe-Express-file-30-500x500.jpg"
+  alt-text: "A fin clip of red snapper in a plastic bag that will be used to study the genetics of the fish it was taken from."
+---
+
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- Copilot and codespaces are limited to the free versions for the month of May.
+::: 
+
+::: {#additional-events}
+### Tuesday, May 05
+**UW SAFS Think Tank with Anna Simeon on CKMR**
+
+Time: 12:30–13:30 E; 9:30–10:30 P; 8:30–9:30 AK; 6:30–7:30 H
+Location: Virtual
+Online: [Go to webinar](https://attendee.gotowebinar.com/register/7428607775995901536)
+
+### Wednesday, May 06
+**FIMS Implementation Team Meeting (Tasks)**
+
+Time: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H
+Location: Virtual
+Online: [Google meet](https://meet.google.com/unsupported?meetingCode=kbz-ccew-iij&ref=https://meet.google.com/kbz-ccew-iij)
+:::
+
+<!-- ::: {#photo-code}
+::: -->
