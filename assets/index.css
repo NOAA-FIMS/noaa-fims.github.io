@@ -155,8 +155,7 @@ a.hotspot {
   border-radius: 8px;
 }
 
-a.hotspot:hover, 
-.hotspot:focus {
+a.hotspot:hover, .hotspot:hover {
   /* This creates a semi-transparent white highlight. 
      Change the 255, 255, 255 (white) or 0.3 (opacity) to fit your design */
   background-color: rgba(255, 255, 255, 0.3); 
