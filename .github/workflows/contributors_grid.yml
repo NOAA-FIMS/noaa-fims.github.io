@@ -60,7 +60,7 @@ jobs:
             let contributorsGrid = '<table><tr>';
             let count = 0;
             for (const c of contributors) {
-              contributorsGrid += `<td align="center" valign="top" style="padding:12px"><a href="${c.html_url}"><img src="${c.avatar_url}" width="${imageSize}" alt="${c.login}" style="border-radius:8px"/><br/><sub>${c.login}</sub></a></td>`;
+              contributorsGrid += `<td align="center" valign="top" style="padding:12px"><a href="${c.html_url}"><img src="${c.avatar_url}" width="${imageSize}" alt="${c.login} avatar" style="border-radius:8px"/><br/><sub>${c.login}</sub></a></td>`;
               count++;
               if (count % 6 === 0 && count < contributors.length) contributorsGrid += '</tr><tr>';
             }
