@@ -1,0 +1,153 @@
+name: FIMS Projects Discovery, Report, & Outreach
+
+on:
+  push:
+  schedule:
+    - cron: '0 14 1 * *'
+  workflow_dispatch: 
+
+jobs:
+  discover-and-report:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+          
+      - name: Install required R packages
+        run: |
+          Rscript -e 'install.packages(c("httr", "jsonlite", "base64enc"), repos = "https://cloud.r-project.org")'
+
+      - name: Run Discovery Script (R)
+        id: discovery
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          library(httr)
+          library(jsonlite)
+          library(base64enc)
+
+          token <- Sys.getenv("GITHUB_TOKEN")
+          auth_header <- add_headers(
+            Authorization = paste("Bearer", token), 
+            Accept = "application/vnd.github.v3+json"
+          )
+
+          load_list <- function(file_path) {
+            if (file.exists(file_path)) {
+              lines <- readLines(file_path, warn = FALSE)
+              return(lines[lines != ""])
+            }
+            return(character(0))
+          }
+
+          ignored <- load_list("ignore_repos.txt")
+          contacted <- load_list("contacted_repos.txt")
+          skip_list <- unique(c(ignored, contacted))
+
+          query <- "q=library+FIMS+extension:R+extension:Rmd+extension:qmd"
+          url <- paste0("https://api.github.com/search/code?", query)
+          
+          res <- GET(url, auth_header)
+          stop_for_status(res)
+          search_results <- content(res, as = "parsed", type = "application/json")
+
+          if (length(search_results$items) > 0) {
+            found_repos <- sapply(search_results$items, function(x) x$repository$full_name)
+            found_repos <- unique(found_repos)
+          } else {
+            found_repos <- character(0)
+          }
+
+          new_repos <- setdiff(found_repos, skip_list)
+          final_targets <- list()
+          
+          if (length(new_repos) > 0) {
+            for (repo in new_repos) {
+              # Check if they already have the metadata file
+              check_url <- paste0("https://api.github.com/repos/", repo, "/contents/fims-metadata.yml")
+              if (status_code(GET(check_url, auth_header)) == 404) {
+                
+                # 1. Get Repo Data
+                info <- content(GET(paste0("https://api.github.com/repos/", repo), auth_header), as = "parsed")
+                owner <- if (!is.null(info$owner$login)) info$owner$login else "Unknown"
+                desc <- if (!is.null(info$description)) info$description else "No description provided."
+                
+                # 2. Get Owner Location Data
+                location <- "Unknown"
+                user_res <- GET(paste0("https://api.github.com/users/", owner), auth_header)
+                if (status_code(user_res) == 200) {
+                  user_info <- content(user_res, as = "parsed")
+                  if (!is.null(user_info$location)) location <- user_info$location
+                }
+
+                # 3. Attempt to get FIMS Version (Checking renv.lock)
+                fims_version <- "Unknown (No renv.lock found)"
+                renv_url <- paste0("https://api.github.com/repos/", repo, "/contents/renv.lock")
+                renv_res <- GET(renv_url, auth_header)
+                
+                if (status_code(renv_res) == 200) {
+                  renv_data <- content(renv_res, as = "parsed")
+                  if (!is.null(renv_data$content)) {
+                    # Decode base64 and parse JSON
+                    lock_text <- rawToChar(base64decode(renv_data$content))
+                    lock_json <- tryCatch(fromJSON(lock_text), error = function(e) NULL)
+                    
+                    if (!is.null(lock_json) && !is.null(lock_json$Packages$FIMS$Version)) {
+                      fims_version <- lock_json$Packages$FIMS$Version
+                    } else {
+                      fims_version <- "Unknown (Not specified in renv.lock)"
+                    }
+                  }
+                }
+                
+                final_targets[[length(final_targets) + 1]] <- list(
+                  name = repo, 
+                  owner = owner, 
+                  desc = desc, 
+                  location = location, 
+                  version = fims_version
+                )
+              }
+            }
+          }
+
+          env_file <- Sys.getenv("GITHUB_OUTPUT")
+
+          # 4. Create report of new FIMS repositories
+          if (length(final_targets) == 0) {
+            cat("found_new=false\n", file = env_file, append = TRUE)
+          } else {
+            cat("### 🚀 New FIMS Repositories Discovered!\n\n", file = "report.md")
+            cat("The monthly discovery action found the following repositories using FIMS that do not have a `fims-metadata.yml` file.\n\n", file = "report.md", append = TRUE)
+            
+            for (t in final_targets) {
+              cat(sprintf("**Repository:** [%s](https://github.com/%s)\n", t$name, t$name), file = "report.md", append = TRUE)
+              cat(sprintf("**Owner/Commiter:** @%s\n", t$owner), file = "report.md", append = TRUE)
+              cat(sprintf("**Location:** %s\n", t$location), file = "report.md", append = TRUE)
+              cat(sprintf("**FIMS Version:** %s\n", t$version), file = "report.md", append = TRUE)
+              cat(sprintf("**Description:** %s\n\n", t$desc), file = "report.md", append = TRUE)
+              cat("---\n", file = "report.md", append = TRUE)
+            }
+            
+            cat("found_new=true\n", file = env_file, append = TRUE)
+          }
+        shell: Rscript {0}
+
+      - name: Create GitHub Issue
+        if: steps.discovery.outputs.found_new == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "Monthly FIMS Discovery Report" \
+            --body-file report.md \
+            --label "outreach"
