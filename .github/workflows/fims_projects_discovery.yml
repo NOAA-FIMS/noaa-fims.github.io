@@ -127,7 +127,7 @@ jobs:
 
           env_file <- Sys.getenv("GITHUB_OUTPUT")
 
-          # 4. Create report of new FIMS repositories
+          # 4. Create report of new FIMS repositories if there are any
           if (length(final_targets) == 0) {
             cat("found_new=false\n", file = env_file, append = TRUE)
           } else {
