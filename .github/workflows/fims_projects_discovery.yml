@@ -21,10 +21,17 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: 'release'
-          
-      - name: Install required R packages
-        run: |
-          Rscript -e 'install.packages(c("httr", "jsonlite", "base64enc"), repos = "https://cloud.r-project.org")'
+      
+      - name: Install system dependencies
+        uses: r-lib/actions/setup-system-requirements@v1
+      
+      - name: Install R packages
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            httr
+            jsonlite
+            base64enc
 
       - name: Run Discovery Script (R)
         id: discovery
