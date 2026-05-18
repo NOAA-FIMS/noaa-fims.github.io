@@ -113,7 +113,7 @@ jobs:
             
             cat("found_new=true\n", file = env_file, append = TRUE)
           }
-       shell: Rscript {0}
+        shell: Rscript {0}
 
       - name: Create GitHub Issue
         if: steps.discovery.outputs.found_new == 'true'
