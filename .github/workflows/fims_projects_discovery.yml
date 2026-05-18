@@ -52,6 +52,7 @@ jobs:
           get_val <- function(x, default) if (is.null(x)) default else x
           
           # 1. API Search (Casting the wide net)
+          # 1. API Search (Casting the wide net)
           search_res <- content(GET("https://api.github.com/search/code?q=library+FIMS+extension:R+extension:Rmd+extension:qmd&per_page=100", auth))
           
           targets <- list()
@@ -59,7 +60,8 @@ jobs:
           # 2. Strict Regex Validation (Filtering the net)
           confirmed <- character()
           
-          if (length(search_results$items) > 0) {
+          # FIX 1: Changed search_results to search_res
+          if (length(search_res$items) > 0) {
             for (item in search_res$items) {
               repo <- item$repository$full_name
               if (repo %in% confirmed || repo %in% skip_list) next
@@ -88,7 +90,8 @@ jobs:
                 }
               }
             }
-          }
+          } # FIX 2: Missing closing bracket added right here!
+
           env_file <- Sys.getenv("GITHUB_OUTPUT")
 
           # 3. Create report of new FIMS repositories if there are any
@@ -101,15 +104,15 @@ jobs:
             for (t in targets) {
               cat(sprintf("**Repository:** [%s](https://github.com/%s)\n", t$name, t$name), file = "report.md", append = TRUE)
               cat(sprintf("**Owner/Commiter:** @%s\n", t$owner), file = "report.md", append = TRUE)
-              cat(sprintf("**Location:** %s\n", t$location), file = "report.md", append = TRUE)
-              cat(sprintf("**FIMS Version:** %s\n", t$version), file = "report.md", append = TRUE)
+              # FIX 3 & 4: Changed t$location to t$loc, and t$version to t$ver
+              cat(sprintf("**Location:** %s\n", t$loc), file = "report.md", append = TRUE)
+              cat(sprintf("**FIMS Version:** %s\n", t$ver), file = "report.md", append = TRUE)
               cat(sprintf("**Description:** %s\n\n", t$desc), file = "report.md", append = TRUE)
               cat("---\n", file = "report.md", append = TRUE)
             }
             
             cat("found_new=true\n", file = env_file, append = TRUE)
           }
-        shell: Rscript {0}
 
       - name: Create GitHub Issue
         if: steps.discovery.outputs.found_new == 'true'
