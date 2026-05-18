@@ -102,11 +102,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // javascript for GitHub recent activity feed
-<script>
 async function fetchGitHubActivity() {
-  const owner = 'noaa-fims'; // Replace with your org/user
-  const repo = 'fims';       // Replace with your repo
   const feedContainer = document.getElementById('github-activity-feed');
+  
+  // Safety check: only run this if the container exists on the current page
+  if (!feedContainer) return;
+
+  const owner = 'noaa-nmfs'; // Changed to noaa-nmfs (update if it is actually noaa-fims)
+  const repo = 'fims';       
 
   try {
     // Fetch the latest events from the repository
@@ -120,7 +123,7 @@ async function fetchGitHubActivity() {
       event.type === 'PullRequestEvent' || event.type === 'PushEvent'
     ).slice(0, 3); // Get the top 3
 
-    feedContainer.innerHTML = ''; // Clear the loading state or hardcoded html
+    feedContainer.innerHTML = ''; // Clear the "Loading..." text
 
     relevantEvents.forEach(event => {
       let actionText = '';
@@ -143,17 +146,21 @@ async function fetchGitHubActivity() {
       const diffHours = Math.floor((new Date() - date) / (1000 * 60 * 60));
       const timeAgo = diffHours > 24 ? `${Math.floor(diffHours/24)}d ago` : `${diffHours}h ago`;
 
-      // Construct the HTML snippet
+      // Construct the HTML snippet using Bootstrap classes
       const eventHTML = `
-        <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-surface-container-low transition-colors border border-transparent hover:border-outline-variant">
-          <div class="w-10 h-10 rounded-full bg-surface-dim overflow-hidden flex-shrink-0">
-            <img src="${event.actor.avatar_url}" alt="${event.actor.display_login}" />
+        <div class="d-flex align-items-start gap-3 p-3 rounded-3 border border-transparent custom-hover-bg transition-colors">
+          <div class="rounded-circle bg-light overflow-hidden flex-shrink-0" style="width: 40px; height: 40px;">
+            <img src="${event.actor.avatar_url}" alt="${event.actor.display_login}" class="w-100 h-100 object-fit-cover" />
           </div>
-          <div class="flex-1">
-            <p class="text-sm font-medium"><span class="text-primary font-bold">${event.actor.display_login}</span> ${actionText} <span class="text-accent-red font-code-base font-bold">${branchName}</span></p>
-            <p class="text-xs text-on-surface-variant mt-1 italic">"${detailText}"</p>
+          <div class="flex-grow-1">
+            <p class="mb-1 small">
+              <span class="text-primary fw-bold">${event.actor.display_login}</span> 
+              ${actionText} 
+              <span class="text-danger font-monospace fw-bold">${branchName}</span>
+            </p>
+            <p class="small text-muted mb-0 fst-italic">"${detailText}"</p>
           </div>
-          <span class="text-[10px] text-on-surface-variant font-medium">${timeAgo}</span>
+          <span class="text-muted fw-medium" style="font-size: 0.7rem;">${timeAgo}</span>
         </div>
       `;
       feedContainer.insertAdjacentHTML('beforeend', eventHTML);
@@ -161,10 +168,9 @@ async function fetchGitHubActivity() {
 
   } catch (error) {
     console.error('Error fetching GitHub activity:', error);
-    feedContainer.innerHTML = '<p class="text-sm text-on-surface-variant p-4">Unable to load recent activity.</p>';
+    feedContainer.innerHTML = '<p class="small text-muted p-3">Unable to load recent activity.</p>';
   }
 }
 
 // Run the function when the DOM is ready
 document.addEventListener('DOMContentLoaded', fetchGitHubActivity);
-</script>
