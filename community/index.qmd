@@ -10,29 +10,29 @@ page-layout: full
 <h1 class="display-4 fw-bold mb-4">Collaborating for Sustainable Fisheries</h1>
 
 <p class="lead mb-4 opacity-75">
-  Join a global network of scientists, developers, and researchers building the future of fisheries integrated modeling. Open source, collaborative, and peer-reviewed.
+Join a global network of scientists, developers, and researchers building the future of fisheries integrated modeling. Open source, collaborative, and peer-reviewed.
 </p>
 
 <div class="d-flex flex-wrap gap-3">
-  <button class="btn btn-danger btn-lg fw-bold d-flex align-items-center gap-2 shadow">
-    <span class="material-symbols-outlined">campaign</span> Get Involved Now
-  </button>
-  <button class="btn btn-outline-light btn-lg fw-bold d-flex align-items-center gap-2">
-    <span class="material-symbols-outlined">calendar_month</span> Join Next Meeting
-  </button>
+<button class="btn btn-danger btn-lg fw-bold d-flex align-items-center gap-2 shadow">
+<span class="material-symbols-outlined">campaign</span> Get Involved Now
+</button>
+<button class="btn btn-outline-light btn-lg fw-bold d-flex align-items-center gap-2">
+<span class="material-symbols-outlined">calendar_month</span> Join Next Meeting
+</button>
 </div>
 :::
 :::
 
 ::: {.mb-5}
 <div class="d-flex justify-content-between align-items-end mb-4">
-  <div>
-    <h2 class="fw-bold text-primary mb-1">Ecosystem Pulse</h2>
-    <p class="text-muted mb-0">Live activity across the FIMS development pipeline.</p>
-  </div>
-  <a href="#" class="text-danger fw-bold text-decoration-none d-flex align-items-center hover-underline">
-    <span class="me-1">View Full Dashboard</span> <span class="material-symbols-outlined fs-6">arrow_forward</span>
-  </a>
+<div>
+<h2 class="fw-bold text-primary mb-1">Ecosystem Pulse</h2>
+<p class="text-muted mb-0">Live activity across the FIMS development pipeline.</p>
+</div>
+<a href="#" class="text-danger fw-bold text-decoration-none d-flex align-items-center hover-underline">
+<span class="me-1">View Full Dashboard</span> <span class="material-symbols-outlined fs-6">arrow_forward</span>
+</a>
 </div>
 
 ::: {.row .g-4}
@@ -40,17 +40,17 @@ page-layout: full
 ::: {.card .h-100 .shadow-sm .border-0}
 ::: {.card-body .p-4}
 <div class="d-flex align-items-center justify-content-between mb-4">
-  <div class="d-flex align-items-center gap-3">
-    <div class="bg-dark text-white p-2 rounded-3 d-flex">
-      <span class="material-symbols-outlined">terminal</span>
-    </div>
-    <h3 class="h5 fw-bold mb-0">Recent GitHub Activity</h3>
-  </div>
-  <span class="badge bg-light text-dark font-monospace border">fims / main</span>
+<div class="d-flex align-items-center gap-3">
+<div class="bg-dark text-white p-2 rounded-3 d-flex">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<h3 class="h5 fw-bold mb-0">Recent GitHub Activity</h3>
+</div>
+<span class="badge bg-light text-dark font-monospace border">fims / main</span>
 </div>
 
 <div id="github-activity-feed" class="d-flex flex-column gap-3">
-  <span class="text-muted fst-italic small">Loading recent activity...</span>
+<span class="text-muted fst-italic small">Loading recent activity...</span>
 </div>
 :::
 :::
@@ -60,19 +60,19 @@ page-layout: full
 ::: {.card .h-100 .bg-secondary .text-white .border-0 .shadow-sm}
 ::: {.card-body .p-4 .d-flex .flex-column .justify-content-between}
 <div>
-  <h3 class="h4 fw-bold mb-2">Next Meeting</h3>
-  <p class="mb-4 opacity-75">Technical Working Group: Implementation Specs</p>
+<h3 class="h4 fw-bold mb-2">Next Meeting</h3>
+<p class="mb-4 opacity-75">Technical Working Group: Implementation Specs</p>
 
-  <div class="bg-dark bg-opacity-25 rounded-3 p-3 mb-4">
-    <div class="d-flex align-items-center gap-3 mb-2">
-      <span class="material-symbols-outlined text-danger">event</span>
-      <span class="fw-bold">October 24, 2024</span>
-    </div>
-    <div class="d-flex align-items-center gap-3">
-      <span class="material-symbols-outlined text-danger">schedule</span>
-      <span class="fw-bold">14:00 - 15:30 EST</span>
-    </div>
-  </div>
+<div class="bg-dark bg-opacity-25 rounded-3 p-3 mb-4">
+<div class="d-flex align-items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-danger">event</span>
+<span class="fw-bold">October 24, 2024</span>
+</div>
+<div class="d-flex align-items-center gap-3">
+<span class="material-symbols-outlined text-danger">schedule</span>
+<span class="fw-bold">14:00 - 15:30 EST</span>
+</div>
+</div>
 </div>
 <button class="btn btn-light text-primary fw-bold w-100 py-2">Register for Invite</button>
 :::
@@ -83,25 +83,25 @@ page-layout: full
 
 ::: {.mb-5}
 <div class="text-center mb-5">
-  <h2 class="fw-bold text-primary mb-2">Ways to Contribute</h2>
-  <p class="text-muted mb-0">Whether you're a seasoned modeler or a first-time open-source contributor, there's a place for you in the FIMS community.</p>
+<h2 class="fw-bold text-primary mb-2">Ways to Contribute</h2>
+<p class="text-muted mb-0">Whether you're a seasoned modeler or a first-time open-source contributor, there's a place for you in the FIMS community.</p>
 </div>
 
 ::: {.row .g-4}
 ::: {.col-md-4}
 ::: {.card .h-100 .border .shadow-sm .p-4 .transition-transform .hover-lift}
 <div class="bg-light text-primary rounded-3 p-3 d-inline-flex mb-4" style="width: fit-content;">
-  <span class="material-symbols-outlined fs-2">terminal</span>
+<span class="material-symbols-outlined fs-2">terminal</span>
 </div>
 <h3 class="h5 fw-bold mb-3">Code & Logic</h3>
 <p class="text-muted small mb-4">Help implement new population dynamics features or optimize existing C++ and R libraries.</p>
 <ul class="list-unstyled small text-muted fw-medium mb-0">
-  <li class="d-flex align-items-center gap-2 mb-2">
-    <span class="material-symbols-outlined text-success fs-6">check_circle</span> Good first issues
-  </li>
-  <li class="d-flex align-items-center gap-2">
-    <span class="material-symbols-outlined text-success fs-6">check_circle</span> Bug triaging
-  </li>
+<li class="d-flex align-items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-success fs-6">check_circle</span> Good first issues
+</li>
+<li class="d-flex align-items-center gap-2">
+<span class="material-symbols-outlined text-success fs-6">check_circle</span> Bug triaging
+</li>
 </ul>
 :::
 :::
@@ -109,17 +109,17 @@ page-layout: full
 ::: {.col-md-4}
 ::: {.card .h-100 .border .shadow-sm .p-4 .transition-transform .hover-lift}
 <div class="bg-light text-primary rounded-3 p-3 d-inline-flex mb-4" style="width: fit-content;">
-  <span class="material-symbols-outlined fs-2">description</span>
+<span class="material-symbols-outlined fs-2">description</span>
 </div>
 <h3 class="h5 fw-bold mb-3">Documentation</h3>
 <p class="text-muted small mb-4">Clarify scientific methods, write tutorials, or improve our API documentation and guides.</p>
 <ul class="list-unstyled small text-muted fw-medium mb-0">
-  <li class="d-flex align-items-center gap-2 mb-2">
-    <span class="material-symbols-outlined text-success fs-6">check_circle</span> Wiki updates
-  </li>
-  <li class="d-flex align-items-center gap-2">
-    <span class="material-symbols-outlined text-success fs-6">check_circle</span> Use-case studies
-  </li>
+<li class="d-flex align-items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-success fs-6">check_circle</span> Wiki updates
+</li>
+<li class="d-flex align-items-center gap-2">
+<span class="material-symbols-outlined text-success fs-6">check_circle</span> Use-case studies
+</li>
 </ul>
 :::
 :::
@@ -127,17 +127,17 @@ page-layout: full
 ::: {.col-md-4}
 ::: {.card .h-100 .border .shadow-sm .p-4 .transition-transform .hover-lift}
 <div class="bg-light text-primary rounded-3 p-3 d-inline-flex mb-4" style="width: fit-content;">
-  <span class="material-symbols-outlined fs-2">science</span>
+<span class="material-symbols-outlined fs-2">science</span>
 </div>
 <h3 class="h5 fw-bold mb-3">Scientific Peer Review</h3>
 <p class="text-muted small mb-4">Participate in working groups to validate the mathematical integrity of new modeling modules.</p>
 <ul class="list-unstyled small text-muted fw-medium mb-0">
-  <li class="d-flex align-items-center gap-2 mb-2">
-    <span class="material-symbols-outlined text-success fs-6">check_circle</span> Technical review
-  </li>
-  <li class="d-flex align-items-center gap-2">
-    <span class="material-symbols-outlined text-success fs-6">check_circle</span> Algorithm testing
-  </li>
+<li class="d-flex align-items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-success fs-6">check_circle</span> Technical review
+</li>
+<li class="d-flex align-items-center gap-2">
+<span class="material-symbols-outlined text-success fs-6">check_circle</span> Algorithm testing
+</li>
 </ul>
 :::
 :::
@@ -154,55 +154,55 @@ page-layout: full
 
 ::: {.col-md-7}
 <div class="d-flex flex-column gap-4">
-  <div class="d-flex gap-4">
-    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-      <strong>1</strong>
-    </div>
-    <div>
-      <h4 class="h5 fw-bold mb-1">Create an Account</h4>
-      <p class="text-muted small mb-2">Join the NOAA FIMS community portal to access member-only forums and working groups.</p>
-      <a href="#" class="text-primary fw-bold small text-decoration-none d-flex align-items-center">
-        <span class="me-1">Register Now</span> <span class="material-symbols-outlined fs-6">open_in_new</span>
-      </a>
-    </div>
-  </div>
+<div class="d-flex gap-4">
+<div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+<strong>1</strong>
+</div>
+<div>
+<h4 class="h5 fw-bold mb-1">Create an Account</h4>
+<p class="text-muted small mb-2">Join the NOAA FIMS community portal to access member-only forums and working groups.</p>
+<a href="#" class="text-primary fw-bold small text-decoration-none d-flex align-items-center">
+<span class="me-1">Register Now</span> <span class="material-symbols-outlined fs-6">open_in_new</span>
+</a>
+</div>
+</div>
 
-  <div class="d-flex gap-4">
-    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-      <strong>2</strong>
-    </div>
-    <div>
-      <h4 class="h5 fw-bold mb-1">Review Contribution Guidelines</h4>
-      <p class="text-muted small mb-2">Read our technical and ethical standards for contributing to federal fisheries models.</p>
-      <a href="#" class="text-primary fw-bold small text-decoration-none d-flex align-items-center">
-        <span class="me-1">Read Guidelines</span> <span class="material-symbols-outlined fs-6">description</span>
-      </a>
-    </div>
-  </div>
+<div class="d-flex gap-4">
+<div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+<strong>2</strong>
+</div>
+<div>
+<h4 class="h5 fw-bold mb-1">Review Contribution Guidelines</h4>
+<p class="text-muted small mb-2">Read our technical and ethical standards for contributing to federal fisheries models.</p>
+<a href="#" class="text-primary fw-bold small text-decoration-none d-flex align-items-center">
+<span class="me-1">Read Guidelines</span> <span class="material-symbols-outlined fs-6">description</span>
+</a>
+</div>
+</div>
 
-  <div class="d-flex gap-4">
-    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-      <strong>3</strong>
-    </div>
-    <div>
-      <h4 class="h5 fw-bold mb-1">Join a Working Group</h4>
-      <p class="text-muted small mb-2">Select a technical group that aligns with your expertise (e.g., C++ performance, Stock Assessment).</p>
-      <a href="#" class="text-primary fw-bold small text-decoration-none d-flex align-items-center">
-        <span class="me-1">Browse Groups</span> <span class="material-symbols-outlined fs-6">groups</span>
-      </a>
-    </div>
-  </div>
+<div class="d-flex gap-4">
+<div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+<strong>3</strong>
+</div>
+<div>
+<h4 class="h5 fw-bold mb-1">Join a Working Group</h4>
+<p class="text-muted small mb-2">Select a technical group that aligns with your expertise (e.g., C++ performance, Stock Assessment).</p>
+<a href="#" class="text-primary fw-bold small text-decoration-none d-flex align-items-center">
+<span class="me-1">Browse Groups</span> <span class="material-symbols-outlined fs-6">groups</span>
+</a>
+</div>
+</div>
 
-  <div class="d-flex gap-4">
-    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
-      <strong>4</strong>
-    </div>
-    <div>
-      <h4 class="h5 fw-bold mb-1">Start Small</h4>
-      <p class="text-muted small mb-3">Pick a 'Good First Issue' on GitHub and submit your first pull request for peer review.</p>
-      <button class="btn btn-dark btn-sm px-4 fw-bold">Find First Issue</button>
-    </div>
-  </div>
+<div class="d-flex gap-4">
+<div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px;">
+<strong>4</strong>
+</div>
+<div>
+<h4 class="h5 fw-bold mb-1">Start Small</h4>
+<p class="text-muted small mb-3">Pick a 'Good First Issue' on GitHub and submit your first pull request for peer review.</p>
+<button class="btn btn-dark btn-sm px-4 fw-bold">Find First Issue</button>
+</div>
+</div>
 </div>
 :::
 :::
@@ -216,8 +216,8 @@ page-layout: full
 ::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative .bg-dark}
 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-cover w-100 h-100 opacity-75" alt="People collaborating">
 <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
-  <span class="text-white fw-bold small text-uppercase d-block">Workshop 2024</span>
-  <span class="text-white-50 small">Seattle, WA</span>
+<span class="text-white fw-bold small text-uppercase d-block">Workshop 2024</span>
+<span class="text-white-50 small">Seattle, WA</span>
 </div>
 :::
 :::
@@ -226,8 +226,8 @@ page-layout: full
 ::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative .bg-dark}
 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuALEHjcCGq51fSb8UAdC-qxiQh6gn9AbWbIUe8y1ruwIMktcX5s9vu8w4BhG1PuJrdXf6AsYV8y8dWeuf3BOGzCyVXvQY4UHUsFJq25lydz-VvnO7_oGWVgFWynLsf148U5OSVerFsNyxAyTHJRpCAtOO4dIJqOLrgvw-q_46p1tPYREwt8XVOS7wPqV9JCNEFlD_Kg4BAE3knBs96-8Wpc00VZHQUrd2hB5OpjMIhTo-ZoDs1M07oFB0np_Ii9tSe4ivUdccdTzMI" class="object-fit-cover w-100 h-100 opacity-75" alt="Scientific modeling">
 <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
-  <span class="text-white fw-bold small text-uppercase d-block">Peer Review session</span>
-  <span class="text-white-50 small">Virtual Session</span>
+<span class="text-white fw-bold small text-uppercase d-block">Peer Review session</span>
+<span class="text-white-50 small">Virtual Session</span>
 </div>
 :::
 :::
@@ -236,8 +236,8 @@ page-layout: full
 ::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative .bg-dark}
 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFdml_MmTTcYxa_dCiaXNonHUM88jR1gXLmNGVuU0MENoYKMx7jekOboZbVVd48IjuboTyyA4-OxDmk-BLMkr5zlJoBOffdjEUljrV2PV1DrwbVH67t8eurElXvvUFc0G--edXGQmgb5D9gWdRKO9Sx4pcPU-8Cfh93kuRJ82bNrGbKgS3PpVnEaBTArfGyej7pnBpOGN0VeINug2V544H7CmUeHiBxrJOiF8ANSl5MakM0K8pJ1_pWpCV0Rq-VGkjHmLkk9hie8o" class="object-fit-cover w-100 h-100 opacity-75" alt="Collaborative coding">
 <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
-  <span class="text-white fw-bold small text-uppercase d-block">New Contributor Day</span>
-  <span class="text-white-50 small">Online Event</span>
+<span class="text-white fw-bold small text-uppercase d-block">New Contributor Day</span>
+<span class="text-white-50 small">Online Event</span>
 </div>
 :::
 :::
@@ -246,8 +246,8 @@ page-layout: full
 ::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative .bg-dark}
 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMwOSUSHsoDhRuW0rfVi98D25UysfVmG1WcFwD2YNxJGvjBLEc7Lc3E39U59xG6GuP-pLBZfFiT4j-qs2rcs5asm4ZHgkj34Eq1y72Uv4Fuk464sSSVCaQC-3XXjovwjGrlxq5LvJhhQHaLYfmEtuVzHHpjh8j6Ozsi3ia47ah6OxCFtmfCIhbwUjFan_4-SwA0mz9N_X77aqbvxK0-02QUZ4S6M7Mi_w2vOBILQ9DjucO3LYkWM9y2aEnPQRPxeKUNSIRVG6LQUo" class="object-fit-cover w-100 h-100 opacity-75" alt="Office collaboration">
 <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
-  <span class="text-white fw-bold small text-uppercase d-block">Governance Meeting</span>
-  <span class="text-white-50 small">Washington, DC</span>
+<span class="text-white fw-bold small text-uppercase d-block">Governance Meeting</span>
+<span class="text-white-50 small">Washington, DC</span>
 </div>
 :::
 :::
