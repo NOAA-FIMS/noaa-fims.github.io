@@ -65,6 +65,8 @@ website:
           - text: development resources
             aria-label: link to development resources
             href: resources/resources.qmd
+      - text: community
+        href: community/index.qmd
           # - text: projects
           #   aria-label: link to FIMS projects
           #   href: resources/projects.qmd
