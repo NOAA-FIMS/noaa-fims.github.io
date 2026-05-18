@@ -108,7 +108,7 @@ async function fetchGitHubActivity() {
   // Safety check: only run this if the container exists on the current page
   if (!feedContainer) return;
 
-  const owner = 'noaa-nmfs'; // Changed to noaa-nmfs (update if it is actually noaa-fims)
+  const owner = 'noaa-fims'; // Changed to noaa-nmfs (update if it is actually noaa-fims)
   const repo = 'fims';       
 
   try {
