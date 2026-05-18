@@ -24,14 +24,14 @@ jobs:
       
       - name: Install system dependencies
         run: |
-          sudo apt-get update && sudo apt-get install -y libcurl4-openssl-dev
+          sudo apt-get update && sudo apt-get install -y libcurl4-openssl-dev libxml2-dev
 
       - name: Run Discovery Script (R)
         id: discovery
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          install.packages(c("httr", "jsonlite", "base64enc"), repos = "https://packagemanager.posit.co/cran/latest")
+          install.packages(c("httr", "jsonlite", "xml2"), repos = "https://packagemanager.posit.co/cran/latest")
           library(httr)
           library(jsonlite)
 
