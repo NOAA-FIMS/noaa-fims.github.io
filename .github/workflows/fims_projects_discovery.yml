@@ -24,140 +24,81 @@ jobs:
       
       - name: Install system dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y libcurl4-openssl-dev
-      
-      - name: Install required R packages
-        run: |
-          Rscript -e 'install.packages(c("httr", "jsonlite", "base64enc"), repos = "https://packagemanager.posit.co/cran/latest")'
+          sudo apt-get update && sudo apt-get install -y libcurl4-openssl-dev
 
       - name: Run Discovery Script (R)
         id: discovery
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          install.packages(c("httr", "jsonlite", "base64enc"), repos = "https://packagemanager.posit.co/cran/latest")
           library(httr)
           library(jsonlite)
-          library(base64enc)
 
           token <- Sys.getenv("GITHUB_TOKEN")
-          auth_header <- add_headers(
-            Authorization = paste("Bearer", token), 
-            Accept = "application/vnd.github.v3+json"
-          )
+          auth <- add_headers(
+              Authorization = paste("Bearer", token), 
+              Accept = "application/vnd.github.v3+json"
+            )
+          raw_auth <- add_headers(
+              Authorization = paste("Bearer", token), 
+              Accept = "application/vnd.github.v3.raw"
+            )
 
-          load_list <- function(file_path) {
-            if (file.exists(file_path)) {
-              lines <- readLines(file_path, warn = FALSE)
-              return(lines[lines != ""])
-            }
-            return(character(0))
-          }
-
-          ignored <- load_list("ignore_repos.txt")
-          contacted <- load_list("contacted_repos.txt")
-          skip_list <- unique(c(ignored, contacted))
-                
-          # 1. API Search (Casting the wide net)
-          query <- "q=library+FIMS+extension:R+extension:Rmd+extension:qmd&per_page=100"
-          url <- paste0("https://api.github.com/search/code?", query)
+          read_list <- function(f) if (file.exists(f)) { 
+              l <- readLines(f, warn = FALSE); l[l != ""] 
+            } else character(0)
+          skip_list <- unique(c(read_list("ignore_repos.txt"), read_list("contacted_repos.txt")))
+          get_val <- function(x, default) if (is.null(x)) default else x
           
-          res <- GET(url, auth_header)
-          stop_for_status(res)
-          search_results <- content(res, as = "parsed", type = "application/json")
+          # 1. API Search (Casting the wide net)
+          search_res <- content(GET("https://api.github.com/search/code?q=library+FIMS+extension:R+extension:Rmd+extension:qmd&per_page=100", auth))
+          
+          targets <- list()
 
           # 2. Strict Regex Validation (Filtering the net)
-          confirmed_repos <- character(0)
+          confirmed <- character()
           
           if (length(search_results$items) > 0) {
-            for (item in search_results$items) {
+            for (item in search_res$items) {
               repo <- item$repository$full_name
+              if (repo %in% confirmed || repo %in% skip_list) next
               
-              # Skip if we already confirmed this repo, or if it's on our ignore list
-              if (repo %in% confirmed_repos || repo %in% skip_list) next
+              # Fetch raw text directly instead of JSON + base64 decoding
+              file_txt <- content(GET(item$url, raw_auth), as = "text", encoding = "UTF-8")
               
-              # Download the specific file that GitHub flagged
-              file_res <- GET(item$url, auth_header)
-              if (status_code(file_res) == 200) {
-                file_data <- content(file_res, as = "parsed", type = "application/json")
+              if (grepl("(library|require)\\s*\\(\\s*['\"]?fims['\"]?\\s*\\)", file_txt, ignore.case = TRUE)) {
+                confirmed <- c(confirmed, repo)
                 
-                if (!is.null(file_data$content)) {
-                  file_text <- rawToChar(base64decode(file_data$content))
+                if (status_code(GET(paste0("https://api.github.com/repos/", repo, "/contents/fims-metadata.yml"), auth)) == 404) {
+                  info <- content(GET(paste0("https://api.github.com/repos/", repo), auth))
+                  user <- content(GET(paste0("https://api.github.com/users/", info$owner$login), auth))
                   
-                  # The Strict Regex: Looks ONLY for library(fims) or require(fims)
-                  # Case-insensitive, handles varying whitespace and quotes
-                  pattern <- "(library|require)\\s*\\(\\s*['\"]?fims['\"]?\\s*\\)"
+                  # Fetch raw renv.lock text directly
+                  renv_txt <- content(GET(paste0("https://api.github.com/repos/", repo, "/contents/renv.lock"), raw_auth), as = "text", encoding = "UTF-8")
+                  ver <- tryCatch(fromJSON(renv_txt)$Packages$FIMS$Version, error = function(e) NULL)
                   
-                  if (grepl(pattern, file_text, ignore.case = TRUE)) {
-                    confirmed_repos <- c(confirmed_repos, repo)
-                  }
+                  targets[[length(targets) + 1]] <- list(
+                    name = repo,
+                    owner = get_val(info$owner$login, "Unknown"),
+                    desc = get_val(info$description, "No description provided."),
+                    loc = get_val(user$location, "Unknown"),
+                    ver = get_val(ver, "Unknown (Not specified in renv.lock)")
+                  )
                 }
               }
             }
-          }
-
-          # Now 'confirmed_repos' ONLY contains verified FIMS users
-          final_targets <- list()
-          
-          if (length(confirmed_repos) > 0) {
-            for (repo in confirmed_repos) {
-              # Check if they already have the metadata file
-              check_url <- paste0("https://api.github.com/repos/", repo, "/contents/fims-metadata.yml")
-              if (status_code(GET(check_url, auth_header)) == 404) {
-                
-                # Get Repo Data
-                info <- content(GET(paste0("https://api.github.com/repos/", repo), auth_header), as = "parsed")
-                owner <- if (!is.null(info$owner$login)) info$owner$login else "Unknown"
-                desc <- if (!is.null(info$description)) info$description else "No description provided."
-                
-                # Get Owner Location Data
-                location <- "Unknown"
-                user_res <- GET(paste0("https://api.github.com/users/", owner), auth_header)
-                if (status_code(user_res) == 200) {
-                  user_info <- content(user_res, as = "parsed")
-                  if (!is.null(user_info$location)) location <- user_info$location
-                }
-
-                # Attempt to get FIMS Version (Checking renv.lock)
-                fims_version <- "Unknown (No renv.lock found)"
-                renv_url <- paste0("https://api.github.com/repos/", repo, "/contents/renv.lock")
-                renv_res <- GET(renv_url, auth_header)
-                
-                if (status_code(renv_res) == 200) {
-                  renv_data <- content(renv_res, as = "parsed")
-                  if (!is.null(renv_data$content)) {
-                    lock_text <- rawToChar(base64decode(renv_data$content))
-                    lock_json <- tryCatch(fromJSON(lock_text), error = function(e) NULL)
-                    
-                    if (!is.null(lock_json) && !is.null(lock_json$Packages$FIMS$Version)) {
-                      fims_version <- lock_json$Packages$FIMS$Version
-                    } else {
-                      fims_version <- "Unknown (Not specified in renv.lock)"
-                    }
-                  }
-                }
-                
-                final_targets[[length(final_targets) + 1]] <- list(
-                  name = repo, 
-                  owner = owner, 
-                  desc = desc, 
-                  location = location, 
-                  version = fims_version
-                )
-              }
-            }
-          }
 
           env_file <- Sys.getenv("GITHUB_OUTPUT")
 
-          # 4. Create report of new FIMS repositories if there are any
-          if (length(final_targets) == 0) {
+          # 3. Create report of new FIMS repositories if there are any
+          if (length(targets) == 0) {
             cat("found_new=false\n", file = env_file, append = TRUE)
           } else {
             cat("### 🚀 New FIMS Repositories Discovered!\n\n", file = "report.md")
             cat("The monthly discovery action found the following repositories using FIMS that do not have a `fims-metadata.yml` file.\n\n", file = "report.md", append = TRUE)
             
-            for (t in final_targets) {
+            for (t in targets) {
               cat(sprintf("**Repository:** [%s](https://github.com/%s)\n", t$name, t$name), file = "report.md", append = TRUE)
               cat(sprintf("**Owner/Commiter:** @%s\n", t$owner), file = "report.md", append = TRUE)
               cat(sprintf("**Location:** %s\n", t$location), file = "report.md", append = TRUE)
@@ -179,3 +120,21 @@ jobs:
             --title "Monthly FIMS Discovery Report" \
             --body-file report.md \
             --label "outreach"
+            
+      - name: Save report to .github folder and commit
+        if: steps.discovery.outputs.found_new == 'true'
+        run: |
+          # Create a dated filename so you have a history of reports
+          DATE=$(date +'%Y-%m-%d')
+          FILENAME="discovery_report_${DATE}.txt"
+          
+          # Copy the markdown report to a text file in the .github folder
+          mkdir -p .github
+          cp report.md .github/$FILENAME
+          
+          # Configure git and commit the new file
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/$FILENAME
+          git commit -m "chore: save discovery report for $DATE"
+          git push
