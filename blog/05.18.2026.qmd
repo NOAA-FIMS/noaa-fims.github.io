@@ -1,0 +1,37 @@
+---
+# The title MUST start with "FIMS Weekly - "
+title: "FIMS Weekly - May 18–22, 2026"
+date: "May 18, 2026"
+# Change the following categories accordingly, but you MUST keep fims-weekly
+categories:
+  - fims-weekly
+three-big-things:
+  bt1: "Pull Requests, Pull Requests, and more Pull Requests. We hope to merge in all non-draft PRs this week in preparation for removing the dev branch."
+  bt2: "Reviewing the design document for [modeling variability in growth](https://docs.google.com/document/d/1hDIkqUbHrf9p-FRSNxy-QfbRwaUe8g2FpynYYUiLqIU/edit?tab=t.0#heading=h.ay5ysjx323rp)."
+  bt3: "The restructuring of random effects is underway, led by Nathan and Andrea, where the hope is to make the random-effects structure more generic and allow for priors on all quantities, whether they are parameters or derived quantities."
+# Announcements go below because of formatting that quarto doesnt transfer over from the yml
+# If there is no code club or seaside chat, just delete those lines and the template will handle it for you
+upcoming-events:
+# If you have any additional events, uncomment and fill out the additional events section below.
+# If there is no actual photo you can delete include-photo, path, and alt-text 
+# and the template will handle it for you. 
+# If there is code instead, please uncomment the section below named photo-code 
+# but still include the text portion under photo.
+photo:
+  text: "This will be the last FIMS Weekly for a while as we test out using the GitHub Discussion Board to post weekly summaries. Using GitHub Discussions will allow everyone with a GitHub account to subscribe (or unsubscribe 🙁) to the specific GitHub Discussion Thread without requiring us to set up a list serve. The thread is called [Project Updates](https://github.com/orgs/NOAA-FIMS/discussions/1461) and it exists in the Announcement section. Please navigate to the link and click 'Subscribe' if you aren't already subscribed to all FIMS Discussions. See the image for where the subscribe button is located."
+  include-photo: true
+  path: "images/project_updates_discussion.png"
+  alt-text: "A screenshot of where to find the Subscribe button for GitHub Discussions."
+---
+
+{{< include "fims-weekly-template.qmd" >}}
+
+::: {#announcements}
+- This is the last week of the Google Summer of Code Community Bonding Period, coding starts next week 🎊.
+::: 
+
+<!-- ::: {#additional-events}
+::: -->
+
+<!-- ::: {#photo-code}
+::: -->
