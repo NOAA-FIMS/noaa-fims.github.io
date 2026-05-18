@@ -88,7 +88,7 @@ jobs:
                 }
               }
             }
-
+          }
           env_file <- Sys.getenv("GITHUB_OUTPUT")
 
           # 3. Create report of new FIMS repositories if there are any
