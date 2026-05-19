@@ -1,5 +1,5 @@
 ---
-title: "Community & Collaboration | NOAA FIMS"
+title: "Community & Collaboration"
 page-layout: full
 header-includes: >
   <link rel="stylesheet" href="../assets/community.css">
