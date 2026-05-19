@@ -96,7 +96,9 @@ format:
     lang: en
     body-width: 100%
     anchor-sections: true
-    include-after-body: assets/open-in-new-tab.html
+    include-after-body: 
+      - assets/open-in-new-tab.html
+      - assets/scripts.js
     include-before-body: assets/skip-link.html
     scripts: 
       - assets/scripts.js
