@@ -395,6 +395,120 @@
   color: #a0aec0;
 }
 
+/* ===== FIMS Pulse Layout & Grid ===== */
+
+/* Wraps the entire section (Header + Cards) */
+.fims-pulse-section {
+  margin-bottom: 3rem;
+}
+
+/* Replaces .row, .g-4, .col-lg-8 */
+.fims-pulse-layout {
+  display: grid;
+  gap: 1.5rem;
+  /* On mobile, cards stack on top of each other */
+  grid-template-columns: 1fr; 
+}
+
+@media (min-width: 992px) {
+  .fims-pulse-layout {
+    /* On large screens, split the grid into 3 invisible columns. 
+       The main column takes up 2 spaces (emulating col-lg-8),
+       leaving 1 space for a side column (emulating col-lg-4). */
+    grid-template-columns: 2fr 1fr; 
+  }
+}
+
+/* ===== FIMS GitHub Feed Card ===== */
+
+/* Replaces .card, .h-100, .shadow-sm, .border-0, .p-4 */
+.fims-feed-card {
+  background-color: var(--bs-body-bg, #ffffff);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Replaces .d-flex, .align-items-center, .justify-content-between, .mb-4 */
+.fims-feed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; /* Allows the badge to drop down on tiny screens */
+  gap: 1rem;
+}
+
+/* Replaces .d-flex, .align-items-center, .gap-3 */
+.fims-feed-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Replaces .bg-dark, .text-white, .p-2, .rounded-3 */
+.fims-feed-icon {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* Replaces .h5, .fw-bold, .mb-0 */
+.fims-feed-title-group h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Replaces .badge, .bg-light, .text-dark, .font-monospace, .border */
+.fims-feed-badge {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: 1px solid #dee2e6;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+}
+
+/* Replaces .d-flex, .flex-column, .gap-3 */
+.fims-feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Replaces .text-muted, .fst-italic, .small */
+.fims-feed-loading {
+  color: #6c757d;
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+/* --- Dark Mode Tweaks --- */
+.quarto-dark .fims-feed-card {
+  background-color: #0f161a;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.quarto-dark .fims-feed-badge {
+  background-color: #1a242b;
+  color: #a0aec0;
+  border-color: rgba(255,255,255,0.15);
+}
+
+.quarto-dark .fims-feed-icon {
+  background-color: #1a242b;
+}
+
 /* ===== FIMS Next Meeting Card ===== */
 
 /* Replaces .card, .h-100, .bg-secondary, .text-white, .border-0, .shadow-sm, .p-4 */
