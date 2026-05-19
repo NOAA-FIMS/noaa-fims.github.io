@@ -4,6 +4,7 @@
 .fims-giant-card {
   background-color: var(--bs-primary, #0d6efd);
   color: #ffffff;
+  opacity: 0.5;
   padding: 3rem;
   border-radius: 1.5rem;
   margin-bottom: 3rem;
@@ -19,7 +20,6 @@
   box-shadow: 0 10px 28px rgba(0,0,0,0.15);
 }
 
-/* Creates the vague background image behind the giant card */
 /* Creates the vague background image behind the giant card */
 .fims-giant-card::before {
   content: "";
