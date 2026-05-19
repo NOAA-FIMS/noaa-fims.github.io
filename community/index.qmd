@@ -3,7 +3,7 @@ title: "Community & Collaboration | NOAA FIMS"
 page-layout: full
 header-includes: >
   <link rel="stylesheet" href="../assets/community.css">
-  <script src="assets/community_scripts.js" defer></script>
+  <script src="../assets/community_scripts.js" defer></script>
 ---
 
 ::: {.fims-giant-card}
