@@ -8,7 +8,7 @@ header-includes: >
 
 ::: {.fims-giant-card}
 ::: {.fims-hero-content}
-<span class="fims-badge">FIMS Open Ecosystem</span>
+<span class="fims-badge">FIMS Open Science Ecosystem</span>
 
 <h1 class="fims-title">Collaborating for Sustainable Fisheries</h1>
 
@@ -17,7 +17,7 @@ Join a global network of scientists, developers, and researchers building the fu
 </p>
 
 <div class="fims-actions">
-<button onclick="window.location.href='#get-involved'" class="btn btn-danger fims-btn fims-btn-shadow">
+<button onclick="window.location.href='#getting-involved'" class="btn btn-danger fims-btn fims-btn-shadow">
   <i class="bi bi-megaphone-fill"></i> Get Involved Now
 </button>
 <button onclick="window.location.href='../about/calendar.html'"class="btn btn-outline-light fims-btn">
@@ -251,5 +251,3 @@ Pick a 'Good First Issue' on GitHub and submit your first pull request for peer 
 .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
 .bg-gradient-dark { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); }
 </style>
-
-## Get Involved
