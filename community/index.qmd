@@ -78,14 +78,16 @@ library(dplyr)
 library(lubridate)
 library(glue)
 
-# 1. FIXED: Removed the markdown brackets from the URL
 url <- "[https://calendar.google.com/calendar/ical/c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com/public/basic.ics](https://calendar.google.com/calendar/ical/c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com/public/basic.ics)"
 
 tryCatch({
-  # Download and parse the calendar
-  events <- ical::ical_parse(url)
+  # FIX: Download the file to a temporary location first to bypass HTTPS blocking
+  tmp_ics <- tempfile(fileext = ".ics")
+  download.file(url, destfile = tmp_ics, quiet = TRUE)
   
-  # Filter for future events, convert to Eastern Time, and find the very next one
+  # Parse the downloaded local file
+  events <- ical::ical_parse(tmp_ics)
+  
   next_event <- events %>%
     mutate(dtstart_est = with_tz(dtstart, "America/New_York")) %>%
     filter(dtstart_est > Sys.time()) %>%
@@ -93,13 +95,10 @@ tryCatch({
     slice(1)
     
   if(nrow(next_event) > 0) {
-    # Format the date (e.g., "October 24, 2024") and time (e.g., "14:00 EDT")
     date_str <- format(next_event$dtstart_est, "%B %d, %Y")
     time_str <- format(next_event$dtstart_est, "%H:%M %Z")
     summary_text <- next_event$summary
     
-    # Construct the exact HTML you styled earlier
-    # 2. FIXED: Swapped the <button> for an <a> tag to avoid quotation mark collisions
     html_output <- glue::glue('
     <div class="fims-meeting-card">
       <div class="fims-meeting-content">
@@ -118,15 +117,15 @@ tryCatch({
     </div>
     ')
     
-    # Print the HTML to the Quarto document
     cat(html_output)
     
   } else {
-    cat('<div class="fims-meeting-card"><div class="fims-meeting-content"><h3>Next Meeting</h3><p>No upcoming meetings scheduled.</p></div></div>')
+    cat('<div class="fims-meeting-card"><div class="fims-meeting-content"><h3>Next Meeting</h3><p class="mb-4 opacity-75">No upcoming meetings scheduled.</p></div></div>')
   }
 }, error = function(e) {
-  # Fallback just in case the Google Calendar link goes down during a build
-  cat('<div class="fims-meeting-card"><div class="fims-meeting-content"><h3>Next Meeting</h3><p>Unable to load calendar data.</p></div></div>')
+  # Added the error message inside an HTML comment so you can inspect the webpage to see exactly why it failed!
+  cat(paste0(''))
+  cat('<div class="fims-meeting-card"><div class="fims-meeting-content"><h3>Next Meeting</h3><p class="mb-4 opacity-75">Unable to load calendar data.</p></div></div>')
 })
 ```
 

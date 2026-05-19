@@ -351,6 +351,26 @@
   gap: 1rem; 
 }
 
+.fims-pulse-header section.fims-pulse-titles {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Forces the text below the h2 to behave */
+.fims-pulse-header section p {
+  margin-bottom: 0 !important;
+}
+
+/* Fixes Quarto wrapping your link in a paragraph tag */
+.fims-pulse-header > p {
+  margin: 0 !important;
+  display: flex; /* Ensures the button aligns properly inside the flex header */
+}
+
+.fims-pulse-titles {
+  margin: 0 !important;
+}
+
 /* Replaces .fw-bold, .text-primary, .mb-1 */
 .fims-pulse-titles h2 {
   color: var(--bs-primary, #0d6efd);
@@ -364,6 +384,11 @@
   color: #6c757d;
   margin-bottom: 0;
   font-size: 1rem;
+}
+
+.fims-pulse-header > p {
+  margin: 0 !important;
+  display: flex; 
 }
 
 /* Replaces .text-danger, .fw-bold, .text-decoration-none, .d-flex, .align-items-center */
