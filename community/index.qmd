@@ -67,25 +67,68 @@ Loading recent activity...
 
 :::
 
-::: {.fims-meeting-card}
-::: {.fims-meeting-content}
-### Next Meeting
-Technical Working Group: Implementation Specs
+```{r}
+#| echo: false
+#| results: asis
+#| message: false
+#| warning: false
 
-::: {.fims-meeting-datetime}
-::: {.fims-meeting-row}
-<i class="bi bi-calendar-event-fill fims-icon-danger"></i> **October 24, 2024**
-:::
-::: {.fims-meeting-row}
-<i class="bi bi-clock-fill fims-icon-danger"></i> **14:00 - 15:30 EST**
-:::
-:::
-:::
+library(ical)
+library(dplyr)
+library(lubridate)
+library(glue)
 
-<button class="btn btn-light fims-btn-full">Register for Invite</button>
-:::
-:::
-:::
+# The public iCal link for your specific Google Calendar
+url <- "[https://calendar.google.com/calendar/ical/c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com/public/basic.ics](https://calendar.google.com/calendar/ical/c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com/public/basic.ics)"
+
+tryCatch({
+  # Download and parse the calendar
+  events <- ical::ical_parse(url)
+  
+  # Filter for future events, convert to Eastern Time, and find the very next one
+  next_event <- events %>%
+    mutate(dtstart_est = with_tz(dtstart, "America/New_York")) %>%
+    filter(dtstart_est > Sys.time()) %>%
+    arrange(dtstart_est) %>%
+    slice(1)
+    
+  if(nrow(next_event) > 0) {
+    # Format the date (e.g., "October 24, 2024") and time (e.g., "14:00 EDT")
+    date_str <- format(next_event$dtstart_est, "%B %d, %Y")
+    time_str <- format(next_event$dtstart_est, "%H:%M %Z")
+    summary_text <- next_event$summary
+    
+    # Construct the exact HTML you styled earlier
+    html_output <- glue::glue('
+    <div class="fims-meeting-card">
+      <div class="fims-meeting-content">
+        <h3>Next Meeting</h3>
+        <p class="mb-4 opacity-75">{summary_text}</p>
+        <div class="fims-meeting-datetime">
+          <div class="fims-meeting-row">
+            <i class="bi bi-calendar-event-fill fims-icon-danger"></i> <strong>{date_str}</strong>
+          </div>
+          <div class="fims-meeting-row">
+            <i class="bi bi-clock-fill fims-icon-danger"></i> <strong>{time_str}</strong>
+          </div>
+        </div>
+      </div>
+      <button onclick="window.location.href='https://calendar.google.com/calendar/u/0?cid=Y182ZWx1djFoOG84MzBrN3Z0OGN0Y3M2Z2h0b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t'" class="btn btn-light fims-btn-full">Add to calendar
+      </button>
+    </div>
+    ')
+    
+    # Print the HTML to the Quarto document
+    cat(html_output)
+    
+  } else {
+    cat('<div class="fims-meeting-card"><div class="fims-meeting-content"><h3>Next Meeting</h3><p>No upcoming meetings scheduled.</p></div></div>')
+  }
+}, error = function(e) {
+  # Fallback just in case the Google Calendar link goes down during a build
+  cat('<div class="fims-meeting-card"><div class="fims-meeting-content"><h3>Next Meeting</h3><p>Unable to load calendar data.</p></div></div>')
+})
+```
 
 
 ::: {.fims-contribute-header}
