@@ -85,10 +85,7 @@ url <- paste0("[https://agenda-io.vercel.app/api/calendar/](https://agenda-io.ve
 
 tryCatch({
   tmp_json <- tempfile(fileext = ".json")
-  
-  # FORCED METHOD: Hardcoded 'wget' forces the Ubuntu runner to use its native network utility
   download.file(url, destfile = tmp_json, method = "wget", quiet = TRUE)
-  
   data <- jsonlite::read_json(tmp_json)
   
   if (length(data) > 0 && !is.null(data[[1]]$summary)) {
@@ -99,38 +96,40 @@ tryCatch({
     date_est   <- format(start_time, "%B %d, %Y", tz="America/New_York")
     summary_text <- next_event$summary
     
-    html_output <- glue::glue('
-    <div class="fims-meeting-card">
-      <div class="fims-meeting-content">
-        <h3 class="no-anchor">Next Meeting</h3>
-        <p class="mb-4 opacity-75">{summary_text}</p>
-        <div class="fims-meeting-datetime">
-          <div class="fims-meeting-row">
-            <i class="bi bi-calendar-event-fill fims-icon-danger"></i> <strong>{date_est}</strong>
-          </div>
-          <div class="fims-meeting-row">
-            <i class="bi bi-clock-fill fims-icon-danger"></i> <strong>{start_est}</strong>
-          </div>
-        </div>
-      </div>
-      <a href="[https://calendar.google.com/calendar/u/0?cid=Y182ZWx1djFoOG84MzBrN3Z0OGN0Y3M2Z2h0b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t](https://calendar.google.com/calendar/u/0?cid=Y182ZWx1djFoOG84MzBrN3Z0OGN0Y3M2Z2h0b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)" target="_blank" class="btn btn-light fims-btn-full">Add to calendar</a>
-    </div>
-    ')
+    # Combined into a single flat line string to stop Quarto code-block injection
+    html_output <- paste0(
+      '<div class="fims-meeting-card">',
+        '<div class="fims-meeting-content">',
+          '<h3 class="no-anchor">Next Meeting</h3>',
+          '<p class="mb-4 opacity-75">', summary_text, '</p>',
+          '<div class="fims-meeting-datetime">',
+            '<div class="fims-meeting-row">',
+              '<i class="bi bi-calendar-event-fill fims-icon-danger"></i> <strong>', date_est, '</strong>',
+            '</div>',
+            '<div class="fims-meeting-row">',
+              '<i class="bi bi-clock-fill fims-icon-danger"></i> <strong>', start_est, '</strong>',
+            '</div>',
+          '</div>',
+        '</div>',
+        '<a href="[https://calendar.google.com/calendar/u/0?cid=Y182ZWx1djFoOG84MzBrN3Z0OGN0Y3M2Z2h0b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t](https://calendar.google.com/calendar/u/0?cid=Y182ZWx1djFoOG84MzBrN3Z0OGN0Y3M2Z2h0b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)" target="_blank" class="btn btn-light fims-btn-full">Add to calendar</a>',
+      '</div>'
+    )
     cat(html_output)
     
   } else {
     stop("No events found in payload")
   }
 }, error = function(e) {
-  # Safe, styled fallback card if the GitHub runner fails to pull data
-  cat('
-  <div class="fims-meeting-card">
-    <div class="fims-meeting-content">
-      <h3 class="no-anchor">Next Meeting</h3>
-      <p class="mb-4 opacity-75">No upcoming meetings scheduled.</p>
-    </div>
-  </div>
-  ')
+  # Flat string fallback card
+  fallback_output <- paste0(
+    '<div class="fims-meeting-card">',
+      '<div class="fims-meeting-content">',
+        '<h3 class="no-anchor">Next Meeting</h3>',
+        '<p class="mb-4 opacity-75">No upcoming meetings scheduled.</p>',
+      '</div>',
+    '</div>'
+  )
+  cat(fallback_output)
 })
 ```
 
