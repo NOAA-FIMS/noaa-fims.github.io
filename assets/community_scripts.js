@@ -7,12 +7,10 @@ async function fetchGitHubActivity() {
   const repo = 'fims';       
 
   try {
-    // Let us know the script actually started running!
     feedContainer.innerHTML = '<span class="text-primary fst-italic small">Attempting to contact GitHub...</span>';
     
     const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/events?per_page=10`);
     
-    // If GitHub blocks us, print the exact error code to the screen
     if (!response.ok) {
       throw new Error(`GitHub Error: ${response.status} ${response.statusText}`);
     }
@@ -40,9 +38,12 @@ async function fetchGitHubActivity() {
         detailText = event.payload.pull_request.title;
         branchName = `#${event.payload.number}`;
       } else if (event.type === 'PushEvent') {
-        const commitCount = event.payload.commits.length;
-        actionText = `pushed ${commitCount} commit${commitCount > 1 ? 's' : ''} to`;
-        detailText = event.payload.commits[0]?.message || 'No commit message';
+        // SAFETY CHECK ADDED HERE: default to an empty array if commits are missing
+        const commits = event.payload.commits || []; 
+        const commitCount = commits.length;
+        
+        actionText = `pushed ${commitCount} commit${commitCount !== 1 ? 's' : ''} to`;
+        detailText = commits[0]?.message || 'Branch update / No commit message';
         branchName = event.payload.ref.replace('refs/heads/', '');
       }
 
@@ -71,12 +72,10 @@ async function fetchGitHubActivity() {
 
   } catch (error) {
     console.error(error);
-    // Print the exact error directly to the web page UI
     feedContainer.innerHTML = `<p class="small text-danger p-3 fw-bold">${error.message}</p>`;
   }
 }
 
-// BULLETPROOF LAUNCHER: Checks if the page is already loaded before waiting for the event
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', fetchGitHubActivity);
 } else {
