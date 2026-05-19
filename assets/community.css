@@ -2,7 +2,7 @@
 
 .fims-giant-card {
   /* REMOVED the solid background-color here! */
-  color: #ffffff;
+  color: #ffffff; 
   padding: 3rem;
   border-radius: 1.5rem;
   margin-bottom: 3rem;
@@ -12,7 +12,7 @@
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   
   /* Fallback color just in case the image path is broken */
-  background-color: var(--bs-primary, #0d6efd); 
+  background-color: var(--bs-primary, #0e6876); 
 }
 
 .fims-giant-card:hover {
@@ -31,7 +31,7 @@
     Layer 2 (Bottom): Your ocean image
   */
   background-image: 
-    linear-gradient(to bottom right, rgba(13, 110, 253, 0.85), rgba(3, 43, 48, 0.90)), 
+    linear-gradient(rgba(14, 104, 118, 0.85), rgba(14, 104, 118, 0.85)), 
     url('../images/ocean_image.png'); 
     
   background-size: cover; 
