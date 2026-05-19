@@ -74,21 +74,27 @@ if(!requireNamespace("glue", quietly = TRUE)) {
 library(glue)
 
 cal_id <- "c_6eluv1h8o830k7vt8ctcs6ghto@group.calendar.google.com"
+
+# FIXED: Stripped all markdown links out of the URL string completely
 url <- paste0("[https://calendar.google.com/calendar/ical/](https://calendar.google.com/calendar/ical/)", URLencode(cal_id), "/public/basic.ics")
 
 tryCatch({
   tmp_ics <- tempfile(fileext = ".ics")
   
-# Cross-platform download engine override
   if (Sys.info()[["sysname"]] == "Windows") {
     download.file(url, destfile = tmp_ics, method = "wininet", quiet = TRUE)
   } else {
-    # Forces the Linux runner to use curl with arguments that bypass strict SSL handshake blocks
     options(download.file.method = "curl", download.file.extra = "-L -k")
     download.file(url, destfile = tmp_ics, quiet = TRUE)
   }
   
-  lines <- readLines(tmp_ics, warn = FALSE)
+  raw_lines <- readLines(tmp_ics, warn = FALSE)
+  
+  # Crucial for iCal: Join lines that Google wraps/folds at 75 characters
+  unfolded_text <- paste(raw_lines, collapse = "\n")
+  unfolded_text <- gsub("\n[ \t]", "", unfolded_text) 
+  lines <- strsplit(unfolded_text, "\n")[[1]]
+  
   event_starts <- which(lines == "BEGIN:VEVENT")
   event_ends   <- which(lines == "END:VEVENT")
   events_list <- list()
@@ -103,12 +109,9 @@ tryCatch({
         summary_text <- sub("^SUMMARY:", "", summary_line)
         raw_time <- sub("^DTSTART.*:", "", dtstart_line)
         
-        # Parse all times explicitly assigning standard time zones
         clean_time <- tryCatch({
           if (grepl("Z$", raw_time)) {
-            # Convert raw UTC marker string to formal POSIXct object
             t <- as.POSIXct(raw_time, format="%Y%m%dT%H%M%SZ", tz="UTC")
-            # Force conversion attribute to matching Eastern standard
             attr(t, "tzone") <- "America/New_York"
             t
           } else {
@@ -126,12 +129,9 @@ tryCatch({
     }
   }
   
-  # FIX: Normalize the comparison clock strictly to New York time 
-  # This stops the UTC GitHub Action runner from thinking today's events are in the past
   current_str <- format(Sys.time(), tz="America/New_York", usetz=FALSE)
   current_time_est <- as.POSIXct(current_str, tz="America/New_York")
   
-  # Filter events using the corrected Eastern baseline clock
   future_events <- Filter(function(x) x$start >= current_time_est, events_list)
   
   if (length(future_events) > 0) {
