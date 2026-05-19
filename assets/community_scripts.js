@@ -1,11 +1,7 @@
-// Hardened JavaScript for GitHub Recent Activity Feed
-(async function initGitHubFeed() {
-  // Direct execution block ensures this runs immediately without waiting on state changes
+// JavaScript for GitHub Recent Activity Feed
+async function fetchGitHubActivity() {
   const feedContainer = document.getElementById('github-activity-feed');
-  if (!feedContainer) {
-    console.warn("FIMS Feed Warning: Target element '#github-activity-feed' not found in DOM.");
-    return;
-  }
+  if (!feedContainer) return;
 
   const owner = 'noaa-fims'; 
   const repo = 'fims';       
@@ -13,48 +9,45 @@
   try {
     feedContainer.innerHTML = '<span class="text-primary fst-italic small">Attempting to contact GitHub...</span>';
     
+    // Requesting 30 events to ensure we have enough history to filter through
     const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/events?per_page=30`);
     
     if (!response.ok) {
-      throw new Error(`GitHub Api Error: ${response.status} ${response.statusText}`);
+      throw new Error(`GitHub Error: ${response.status} ${response.statusText}`);
     }
     
     const events = await response.json();
     
-    // Isolate Push and PR actions
-    const allRelevantEvents = events.filter(event => 
-      event.type === 'PullRequestEvent' || event.type === 'PushEvent'
-    );
+    // TIMEZONE-SAFE CUTOFF: Calculate exactly 72 hours ago in milliseconds
+    const threeDaysAgoMs = Date.now() - (3 * 24 * 60 * 60 * 1000);
 
-    if (!allRelevantEvents || allRelevantEvents.length === 0) {
-       feedContainer.innerHTML = '<span class="text-muted small">No recent repository activity found.</span>';
+    // Filter events matching both the actions you want AND the 3-day timeline
+    const relevantEvents = events.filter(event => {
+      const isPushOrPR = event.type === 'PullRequestEvent' || event.type === 'PushEvent';
+      
+      // Converting the event's UTC timestamp string into raw milliseconds for an exact comparison
+      const eventTimeMs = Date.parse(event.created_at); 
+      const isRecent = eventTimeMs >= threeDaysAgoMs;
+      
+      return isPushOrPR && isRecent;
+    });
+
+    if (relevantEvents.length === 0) {
+       feedContainer.innerHTML = '<span class="text-muted small">No recent pushes or PRs found in the past 3 days.</span>';
        return;
     }
 
-    // Evaluate against a relative 3-day time window
-    const threeDaysAgo = new Date(Date.now() - (3 * 24 * 60 * 60 * 1000));
-    let displayEvents = allRelevantEvents.filter(event => new Date(event.created_at) >= threeDaysAgo);
-    
-    let noticeHTML = '';
-    
-    // Smart Fallback: If past 3 days are empty, fallback to last 3 available events
-    if (displayEvents.length === 0) {
-      displayEvents = allRelevantEvents.slice(0, 3);
-      noticeHTML = '<div class="px-3 pb-2 text-muted fst-italic" style="font-size: 0.8rem;">No activity in the last 3 days. Showing latest updates:</div>';
-    } else {
-      displayEvents = displayEvents.slice(0, 3);
-    }
+    feedContainer.innerHTML = ''; 
 
-    feedContainer.innerHTML = noticeHTML; 
-
-    displayEvents.forEach(event => {
+    // Cap the displayed items at 3 total entries
+    relevantEvents.slice(0, 3).forEach(event => {
       let actionText = '';
       let detailText = '';
       let branchName = '';
 
       if (event.type === 'PullRequestEvent') {
         actionText = `${event.payload.action} pull request`;
-        detailText = event.payload.pull_request?.title || 'No title provided';
+        detailText = event.payload.pull_request.title;
         branchName = `#${event.payload.number}`;
       } else if (event.type === 'PushEvent') {
         const commits = event.payload.commits || []; 
@@ -62,24 +55,15 @@
         
         actionText = `pushed ${commitCount} commit${commitCount !== 1 ? 's' : ''} to`;
         detailText = commits[0]?.message || 'Branch update / No commit message';
-        branchName = event.payload.ref ? event.payload.ref.replace('refs/heads/', '') : 'main';
+        branchName = event.payload.ref.replace('refs/heads/', '');
       }
 
       const date = new Date(event.created_at);
       const diffHours = Math.floor((new Date() - date) / (1000 * 60 * 60));
-      let timeAgo = '';
-      
-      if (diffHours < 1) {
-        timeAgo = 'Just now';
-      } else if (diffHours < 24) {
-        timeAgo = `${diffHours}h ago`;
-      } else {
-        timeAgo = `${Math.floor(diffHours / 24)}d ago`;
-      }
+      const timeAgo = diffHours > 24 ? `${Math.floor(diffHours/24)}d ago` : `${diffHours}h ago`;
 
-      // Safe clean bootstrap layout classes used exclusively
       const eventHTML = `
-        <div class="d-flex align-items-start gap-3 p-3 rounded-3 border border-transparent transition-colors" style="background-color: rgba(0,0,0,0.02);">
+        <div class="d-flex align-items-start gap-3 p-3 rounded-3 border border-transparent custom-hover-bg transition-colors">
           <div class="rounded-circle bg-light overflow-hidden flex-shrink-0" style="width: 40px; height: 40px;">
             <img src="${event.actor.avatar_url}" alt="${event.actor.display_login}" class="w-100 h-100 object-fit-cover" />
           </div>
@@ -91,14 +75,20 @@
             </p>
             <p class="small text-muted mb-0 fst-italic">"${detailText}"</p>
           </div>
-          <span class="text-muted fw-medium" style="font-size: 0.7rem; white-space: nowrap;">${timeAgo}</span>
+          <span class="text-muted fw-medium" style="font-size: 0.7rem;">${timeAgo}</span>
         </div>
       `;
       feedContainer.insertAdjacentHTML('beforeend', eventHTML);
     });
 
   } catch (error) {
-    console.error("FIMS Feed Runtime Error:", error);
-    feedContainer.innerHTML = `<p class="small text-danger p-3 fw-bold">Unable to sync activity: ${error.message}</p>`;
+    console.error(error);
+    feedContainer.innerHTML = `<p class="small text-danger p-3 fw-bold">${error.message}</p>`;
   }
-})();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', fetchGitHubActivity);
+} else {
+  fetchGitHubActivity();
+}
