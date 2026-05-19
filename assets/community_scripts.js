@@ -9,7 +9,8 @@ async function fetchGitHubActivity() {
   try {
     feedContainer.innerHTML = '<span class="text-primary fst-italic small">Attempting to contact GitHub...</span>';
     
-    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/events?per_page=10`);
+    // Increased per_page to 30 to make sure we don't miss 2-3 day old events on busy days
+    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/events?per_page=30`);
     
     if (!response.ok) {
       throw new Error(`GitHub Error: ${response.status} ${response.statusText}`);
@@ -17,18 +18,25 @@ async function fetchGitHubActivity() {
     
     const events = await response.json();
     
-    const relevantEvents = events.filter(event => 
-      event.type === 'PullRequestEvent' || event.type === 'PushEvent'
-    ).slice(0, 3);
+    // Calculate our 3-day cutoff window (3 days * 24 hours * 60 mins * 60 secs * 1000 ms)
+    const threeDaysAgo = new Date(Date.now() - (3 * 24 * 60 * 60 * 1000));
+    
+    // Filter events matching both type AND the 3-day age criteria
+    const relevantEvents = events.filter(event => {
+      const isCorrectType = event.type === 'PullRequestEvent' || event.type === 'PushEvent';
+      const isRecentEnough = new Date(event.created_at) >= threeDaysAgo;
+      return isCorrectType && isRecentEnough;
+    });
 
     if (relevantEvents.length === 0) {
-       feedContainer.innerHTML = '<span class="text-muted small">No recent pushes or PRs found.</span>';
+       feedContainer.innerHTML = '<span class="text-muted small">No recent pushes or PRs found in the last 3 days.</span>';
        return;
     }
 
     feedContainer.innerHTML = ''; 
 
-    relevantEvents.forEach(event => {
+    // Loop through filtered events (limit display window to top 3 total items)
+    relevantEvents.slice(0, 3).forEach(event => {
       let actionText = '';
       let detailText = '';
       let branchName = '';
@@ -38,7 +46,6 @@ async function fetchGitHubActivity() {
         detailText = event.payload.pull_request.title;
         branchName = `#${event.payload.number}`;
       } else if (event.type === 'PushEvent') {
-        // SAFETY CHECK ADDED HERE: default to an empty array if commits are missing
         const commits = event.payload.commits || []; 
         const commitCount = commits.length;
         
