@@ -394,3 +394,76 @@
 .quarto-dark .fims-pulse-titles p {
   color: #a0aec0;
 }
+
+/* ===== FIMS Next Meeting Card ===== */
+
+/* Replaces .card, .h-100, .bg-secondary, .text-white, .border-0, .shadow-sm, .p-4 */
+.fims-meeting-card {
+  background-color: var(--bs-secondary, #6c757d);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  
+  /* Flexbox to push the button to the bottom if the card is stretched */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+/* Replaces .h4, .fw-bold, .mb-2 */
+.fims-meeting-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+/* Replaces .mb-4, .opacity-75 */
+.fims-meeting-content > p {
+  opacity: 0.85; /* Slightly bumped from 0.75 for better contrast */
+  margin-bottom: 1.5rem;
+}
+
+/* Replaces .bg-dark, .bg-opacity-25, .rounded-3, .p-3, .mb-4 */
+.fims-meeting-datetime {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Replaces .d-flex, .align-items-center, .gap-3, .mb-2 */
+.fims-meeting-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.fims-meeting-row:last-child {
+  margin-bottom: 0; /* Removes bottom margin from the last item so the box padding stays even */
+}
+
+/* Replaces .text-danger */
+.fims-icon-danger {
+  color: var(--bs-danger, #dc3545);
+  font-size: 1.25rem;
+}
+
+/* Replaces .text-primary, .fw-bold, .w-100, .py-2 */
+.fims-btn-full {
+  width: 100%;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--bs-primary, #0d6efd);
+}
+
+/* --- Dark Mode Tweaks --- */
+.quarto-dark .fims-meeting-card {
+  background-color: #1a242b; /* A darker tone to match your dark mode theme */
+  border: 1px solid rgba(255,255,255,0.08);
+}
