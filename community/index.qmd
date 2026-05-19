@@ -28,7 +28,8 @@ Join a global network of scientists, developers, and researchers building the fu
 :::
 
 
-::: {.mb-5}
+::: {.fims-pulse-section}
+
 ::: {.fims-pulse-header}
 ::: {.fims-pulse-titles}
 ## Ecosystem Pulse
@@ -38,25 +39,32 @@ Live activity across the FIMS development pipeline.
 <a href="https://github.com/orgs/NOAA-FIMS/projects/29" class="fims-pulse-link">View Full Dashboard <i class="bi bi-arrow-right"></i></a>
 :::
 
-::: {.row .g-4}
-::: {.col-lg-8}
-::: {.card .h-100 .shadow-sm .border-0}
-::: {.card-body .p-4}
-<div class="d-flex align-items-center justify-content-between mb-4">
-<div class="d-flex align-items-center gap-3">
-<div class="bg-dark text-white p-2 rounded-3 d-flex">
-<span class="material-symbols-outlined">terminal</span>
-</div>
-<h3 class="h5 fw-bold mb-0">Recent GitHub Activity</h3>
-</div>
-<span class="badge bg-light text-dark font-monospace border">fims / main</span>
-</div>
+::: {.fims-pulse-layout}
+::: {.fims-pulse-main-col}
+::: {.fims-feed-card}
 
-<div id="github-activity-feed" class="d-flex flex-column gap-3">
-<span class="text-muted fst-italic small">Loading recent activity...</span>
-</div>
+::: {.fims-feed-header}
+::: {.fims-feed-title-group}
+::: {.fims-feed-icon}
+<i class="bi bi-terminal-fill"></i>
+:::
+### Recent GitHub Activity
+:::
+::: {.fims-feed-badge}
+fims / main
 :::
 :::
+
+::: {#github-activity-feed .fims-feed-list}
+::: {.fims-feed-loading}
+Loading recent activity...
+:::
+:::
+
+:::
+:::
+:::
+
 :::
 
 ::: {.fims-meeting-card}
