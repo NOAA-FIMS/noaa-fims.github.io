@@ -98,7 +98,6 @@ format:
     anchor-sections: true
     include-after-body: 
       - assets/open-in-new-tab.html
-      - assets/scripts.js
     include-before-body: assets/skip-link.html
     scripts: 
       - assets/scripts.js
