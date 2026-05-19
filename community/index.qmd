@@ -29,15 +29,14 @@ Join a global network of scientists, developers, and researchers building the fu
 
 
 ::: {.mb-5}
-<div class="d-flex justify-content-between align-items-end mb-4">
-<div>
-<h2 class="fw-bold text-primary mb-1">Ecosystem Pulse</h2>
-<p class="text-muted mb-0">Live activity across the FIMS development pipeline.</p>
-</div>
-<a href="#" class="text-danger fw-bold text-decoration-none d-flex align-items-center hover-underline">
-<span class="me-1">View Full Dashboard</span> <span class="material-symbols-outlined fs-6">arrow_forward</span>
-</a>
-</div>
+::: {.fims-pulse-header}
+::: {.fims-pulse-titles}
+## Ecosystem Pulse
+Live activity across the FIMS development pipeline.
+:::
+
+<a href="https://github.com/orgs/NOAA-FIMS/projects/29" class="fims-pulse-link">View Full Dashboard <i class="bi bi-arrow-right"></i></a>
+:::
 
 ::: {.row .g-4}
 ::: {.col-lg-8}

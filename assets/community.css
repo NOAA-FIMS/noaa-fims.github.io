@@ -32,7 +32,7 @@
   */
   background-image: 
     linear-gradient(to bottom right, rgba(13, 110, 253, 0.85), rgba(3, 43, 48, 0.90)), 
-    url('images/ocean_image.png'); 
+    url('../images/ocean_image.png'); 
     
   background-size: cover; 
   background-position: center;
@@ -337,4 +337,60 @@
 
 .quarto-dark .fims-step-number {
   background-color: #0e6876; /* Switch to FIMS teal for dark mode */
+}
+
+
+/* ===== FIMS Pulse Header ===== */
+
+/* Replaces .d-flex, .justify-content-between, .align-items-end, .mb-4 */
+.fims-pulse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+  gap: 1rem; 
+}
+
+/* Replaces .fw-bold, .text-primary, .mb-1 */
+.fims-pulse-titles h2 {
+  color: var(--bs-primary, #0d6efd);
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+/* Replaces .text-muted, .mb-0 */
+.fims-pulse-titles p {
+  color: #6c757d;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+/* Replaces .text-danger, .fw-bold, .text-decoration-none, .d-flex, .align-items-center */
+.fims-pulse-link {
+  color: var(--bs-danger, #dc3545);
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem; /* Replaces the .me-1 margin class */
+  white-space: nowrap; /* Prevents the text and icon from splitting on two lines */
+}
+
+.fims-pulse-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Responsive Layout Adjustments --- */
+/* On very small screens, stack the title and the link vertically */
+@media (max-width: 576px) {
+  .fims-pulse-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* --- Dark Mode Tweaks --- */
+.quarto-dark .fims-pulse-titles p {
+  color: #a0aec0;
 }
