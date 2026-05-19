@@ -75,8 +75,16 @@ library(glue)
 
 cal_id <- "c_6eluv1h8o830k7vt8ctcs6ghto@group.calendar.google.com"
 
-# FIXED: Stripped all markdown links out of the URL string completely
-url <- paste0("[https://calendar.google.com/calendar/ical/](https://calendar.google.com/calendar/ical/)", URLencode(cal_id), "/public/basic.ics")
+# Calculates today's date formatted as a URL-safe text timestamp (e.g., "2026-05-19T00:00:00Z")
+start_bound <- URLencode(format(Sys.time(), "%Y-%m-%dT00:00:00Z", tz="UTC"))
+
+# Forces Google to dump the historical backlog and show up to 100 current/future events
+url <- paste0(
+  "https://calendar.google.com/calendar/ical/", URLencode(cal_id), "/public/basic.ics",
+  "?timeMin=", start_bound,
+  "&maxResults=100",
+  "&singleEvents=true"
+)
 
 tryCatch({
   tmp_ics <- tempfile(fileext = ".ics")
