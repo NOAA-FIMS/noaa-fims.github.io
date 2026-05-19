@@ -9,7 +9,8 @@ async function fetchGitHubActivity() {
   try {
     feedContainer.innerHTML = '<span class="text-primary fst-italic small">Attempting to contact GitHub...</span>';
     
-    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/events?per_page=30`);
+    // MAXED OUT PARAMETER: Requesting 100 events to dig past bot/issue activity noise
+    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/events?per_page=100`);
     
     if (!response.ok) {
       throw new Error(`GitHub Error: ${response.status} ${response.statusText}`);
@@ -17,13 +18,14 @@ async function fetchGitHubActivity() {
     
     const events = await response.json();
     
-    // Extract all Push and PR events from the log
+    // Extract all Push and PR events from the large log
     const allRelevantEvents = events.filter(event => 
       event.type === 'PullRequestEvent' || event.type === 'PushEvent'
     );
 
+    // If even within 100 events there's no code activity, look for a standard fallback
     if (allRelevantEvents.length === 0) {
-       feedContainer.innerHTML = '<span class="text-muted small">No recent repository activity found.</span>';
+       feedContainer.innerHTML = '<span class="text-muted small">No code pushes or PR updates found in recent history.</span>';
        return;
     }
 
@@ -38,9 +40,8 @@ async function fetchGitHubActivity() {
     // SMART FALLBACK: If the past 3 days have been quiet, show the last 3 overall events instead
     if (displayEvents.length === 0) {
       displayEvents = allRelevantEvents.slice(0, 3);
-      noticeHTML = '<div class="px-3 pb-2 text-muted fst-italic" style="font-size: 0.8rem;">No activity in the last 3 days. Latest project updates:</div>';
+      noticeHTML = '<div class="px-3 pb-2 text-muted fst-italic" style="font-size: 0.8rem;">No code updates in the last 3 days. Latest project updates:</div>';
     } else {
-      // If we found events in the last 3 days, still cap the layout view at the top 3
       displayEvents = displayEvents.slice(0, 3);
     }
 
