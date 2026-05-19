@@ -95,9 +95,39 @@
 }
 
 .btn-outline-light {
-    color: #ffffff !important;
-    background-color: #213f4b !important; 
-    border-color: none !important;
+  /* 1. Base Colors (Idle State) */
+  --bs-btn-bg: #0e6876;                  /* Change this to your desired background color */
+  --bs-btn-border-color: none;          /* Change this to your desired outline/border color */
+  --bs-btn-color: #ffffff;                 /* Change this to your desired text color */
+
+  /* 2. Hover Colors (When user mouses over the button) */
+  --bs-btn-hover-bg: #0c5460;            /* Background color on hover */
+  --bs-btn-hover-border-color: #0b4b56;   /* Border color on hover */
+  --bs-btn-hover-color: #ffffff;          /* Text color on hover */
+
+  /* 3. Active Colors (When the button is clicked) */
+  --bs-btn-active-bg: #0a434d;           /* Background color on click */
+  --bs-btn-active-border-color: #093b44;  /* Border color on click */
+  --bs-btn-active-color: #ffffff;         /* Text color on click */
+
+  /* 4. Strict Overrides for Quarto themes */
+  background-color: var(--bs-btn-bg) !important;
+  border-color: var(--bs-btn-border-color) !important;
+  color: var(--bs-btn-color) !important;
+}
+
+/* 5. Force text color on hover and active states to bypass theme locks */
+.btn-outline-light:hover {
+  color: var(--bs-btn-hover-color) !important;
+  background-color: var(--bs-btn-hover-bg) !important;
+  border-color: var(--bs-btn-hover-border-color) !important;
+}
+
+.btn-outline-light:active, 
+.btn-outline-light.active {
+  color: var(--bs-btn-active-color) !important;
+  background-color: var(--bs-btn-active-bg) !important;
+  border-color: var(--bs-btn-active-border-color) !important;
 }
 
 /* Replaces .shadow */
