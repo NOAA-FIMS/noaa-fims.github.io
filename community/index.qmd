@@ -39,9 +39,9 @@ Live activity across the FIMS development pipeline.
 :::
 
 ::: {.fims-pulse-layout}
+
 ::: {.fims-pulse-main-col}
 ::: {.fims-feed-card}
-
 ::: {.fims-feed-header}
 ::: {.fims-feed-title-group}
 ::: {.fims-feed-icon}
@@ -59,11 +59,7 @@ fims / main
 Loading recent activity...
 :::
 :::
-
 :::
-:::
-:::
-
 :::
 
 ```{r}
@@ -72,42 +68,92 @@ Loading recent activity...
 #| message: false
 #| warning: false
 
-# Automated package loader for headless GitHub Action environments
-required_packages <- c("jsonlite", "glue")
-new_packages <- required_packages[!(required_packages %in% installed.packages()[,"Package"])]
-if(length(new_packages)) install.packages(new_packages, repos = "[https://cloud.r-project.org](https://cloud.r-project.org)")
-
-library(jsonlite)
+# We only need the core 'glue' package for HTML assembly
+if(!requireNamespace("glue", quietly = TRUE)) {
+  install.packages("glue", repos = "[https://cloud.r-project.org](https://cloud.r-project.org)")
+}
 library(glue)
 
 cal_id <- "c_6eluv1h8o830k7vt8ctcs6ghto@group.calendar.google.com"
-url <- paste0("[https://agenda-io.vercel.app/api/calendar/](https://agenda-io.vercel.app/api/calendar/)", cal_id)
+url <- paste0("[https://calendar.google.com/calendar/ical/](https://calendar.google.com/calendar/ical/)", URLencode(cal_id), "/public/basic.ics")
 
 tryCatch({
-  tmp_json <- tempfile(fileext = ".json")
-  download.file(url, destfile = tmp_json, method = "wget", quiet = TRUE)
-  data <- jsonlite::read_json(tmp_json)
+  tmp_ics <- tempfile(fileext = ".ics")
   
-  if (length(data) > 0 && !is.null(data[[1]]$summary)) {
-    next_event <- data[[1]]
+  # Cross-platform download engine
+  if (Sys.info()[["sysname"]] == "Windows") {
+    download.file(url, destfile = tmp_ics, method = "wininet", quiet = TRUE)
+  } else {
+    download.file(url, destfile = tmp_ics, method = "wget", quiet = TRUE)
+  }
+  
+  lines <- readLines(tmp_ics, warn = FALSE)
+  
+  # Parse individual VEVENT blocks from the raw iCal text
+  event_starts <- which(lines == "BEGIN:VEVENT")
+  event_ends   <- which(lines == "END:VEVENT")
+  
+  events_list <- list()
+  
+  if (length(event_starts) > 0) {
+    for (i in seq_along(event_starts)) {
+      ev_lines <- lines[event_starts[i]:event_ends[i]]
+      
+      # Extract key attributes out of the raw text strings
+      summary_line <- ev_lines[grep("^SUMMARY:", ev_lines)]
+      dtstart_line <- ev_lines[grep("^DTSTART([;:])", ev_lines)]
+      
+      if (length(summary_line) > 0 && length(dtstart_line) > 0) {
+        summary_text <- sub("^SUMMARY:", "", summary_line)
+        
+        # Pull out raw timestamp strings (e.g., "20261024T180000Z")
+        raw_time <- sub("^DTSTART.*:", "", dtstart_line)
+        
+        # Parse timestamp into a formal R time object
+        clean_time <- tryCatch({
+          if (grepl("Z$", raw_time)) {
+            as.POSIXct(raw_time, format="%Y%m%dT%H%M%SZ", tz="UTC")
+          } else {
+            as.POSIXct(sub("T.*", "", raw_time), format="%Y%m%d", tz="America/New_York")
+          }
+        }, error = function(e) NULL)
+        
+        if (!is.null(clean_time)) {
+          events_list[[length(events_list) + 1]] <- list(
+            summary = summary_text,
+            start = clean_time
+          )
+        }
+      }
+    }
+  }
+  
+  # Filter out events in the past and grab the nearest future entry
+  current_time <- Sys.time()
+  future_events <- Filter(function(x) x$start >= current_time, events_list)
+  
+  if (length(future_events) > 0) {
+    # Sort events chronologically
+    future_events <- future_events[order(sapply(future_events, function(x) x$start))]
+    next_event <- future_events[[1]]
     
-    start_time <- as.POSIXct(next_event$start, format="%Y-%m-%dT%H:%M:%S", tz="UTC")
-    start_est  <- format(start_time, "%H:%M EST", tz="America/New_York")
-    date_est   <- format(start_time, "%B %d, %Y", tz="America/New_York")
-    summary_text <- next_event$summary
+    # Format dates/times beautifully in Eastern Time
+    date_est  <- format(next_event$start, "%B %d, %Y", tz="America/New_York")
+    time_est  <- format(next_event$start, "%H:%M %Z", tz="America/New_York")
+    summary_txt <- next_event$summary
     
-    # Combined into a single flat line string to stop Quarto code-block injection
+    # Render the compact HTML directly without nested code blocks
     html_output <- paste0(
       '<div class="fims-meeting-card">',
         '<div class="fims-meeting-content">',
           '<h3 class="no-anchor">Next Meeting</h3>',
-          '<p class="mb-4 opacity-75">', summary_text, '</p>',
+          '<p class="mb-4 opacity-75">', summary_txt, '</p>',
           '<div class="fims-meeting-datetime">',
             '<div class="fims-meeting-row">',
               '<i class="bi bi-calendar-event-fill fims-icon-danger"></i> <strong>', date_est, '</strong>',
             '</div>',
             '<div class="fims-meeting-row">',
-              '<i class="bi bi-clock-fill fims-icon-danger"></i> <strong>', start_est, '</strong>',
+              '<i class="bi bi-clock-fill fims-icon-danger"></i> <strong>', time_est, '</strong>',
             '</div>',
           '</div>',
         '</div>',
@@ -117,10 +163,11 @@ tryCatch({
     cat(html_output)
     
   } else {
-    stop("No events found in payload")
+    stop("No future events found")
   }
+  
 }, error = function(e) {
-  # Flat string fallback card
+  # Universal fallback card if no meetings are returned or network glitches
   fallback_output <- paste0(
     '<div class="fims-meeting-card">',
       '<div class="fims-meeting-content">',
@@ -132,6 +179,9 @@ tryCatch({
   cat(fallback_output)
 })
 ```
+
+:::
+:::
 
 ::: {.fims-contribute-header}
 ## Ways to Contribute

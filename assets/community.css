@@ -429,17 +429,31 @@
 .fims-pulse-layout {
   display: grid;
   gap: 1.5rem;
-  /* On mobile, cards stack on top of each other */
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr; /* Default to single column for mobile stacks */
 }
 
 @media (min-width: 992px) {
   .fims-pulse-layout {
-    /* On large screens, split the grid into 3 invisible columns. 
-       The main column takes up 2 spaces (emulating col-lg-8),
-       leaving 1 space for a side column (emulating col-lg-4). */
+    /* Main column gets 2/3 space, side column gets 1/3 space */
     grid-template-columns: 2fr 1fr; 
+    align-items: stretch; /* Forces both boxes to look exactly the same height */
   }
+}
+
+.fims-pulse-main-col {
+  width: 100%;
+}
+
+.fims-pulse-side-col {
+  width: 100%;
+  height: 100%;
+}
+
+/* Adjust heading styles when .no-anchor is present to bypass Quarto layout rules */
+h3.no-anchor {
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+  padding: 0 !important;
 }
 
 /* ===== FIMS GitHub Feed Card ===== */
