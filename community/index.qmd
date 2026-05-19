@@ -79,69 +79,6 @@ Technical Working Group: Implementation Specs
 :::
 :::
 
-::: {.mb-5}
-<div class="text-center mb-5">
-<h2 class="fw-bold text-primary mb-2">Ways to Contribute</h2>
-<p class="text-muted mb-0">Whether you're a seasoned modeler or a first-time open-source contributor, there's a place for you in the FIMS community.</p>
-</div>
-
-::: {.row .g-4}
-::: {.col-md-4}
-::: {.card .h-100 .border .shadow-sm .p-4 .transition-transform .hover-lift}
-<div class="bg-light text-primary rounded-3 p-3 d-inline-flex mb-4" style="width: fit-content;">
-<span class="material-symbols-outlined fs-2">terminal</span>
-</div>
-<h3 class="h5 fw-bold mb-3">Code & Logic</h3>
-<p class="text-muted small mb-4">Help implement new population dynamics features or optimize existing C++ and R libraries.</p>
-<ul class="list-unstyled small text-muted fw-medium mb-0">
-<li class="d-flex align-items-center gap-2 mb-2">
-<span class="material-symbols-outlined text-success fs-6">check_circle</span> Good first issues
-</li>
-<li class="d-flex align-items-center gap-2">
-<span class="material-symbols-outlined text-success fs-6">check_circle</span> Bug triaging
-</li>
-</ul>
-:::
-:::
-
-::: {.col-md-4}
-::: {.card .h-100 .border .shadow-sm .p-4 .transition-transform .hover-lift}
-<div class="bg-light text-primary rounded-3 p-3 d-inline-flex mb-4" style="width: fit-content;">
-<span class="material-symbols-outlined fs-2">description</span>
-</div>
-<h3 class="h5 fw-bold mb-3">Documentation</h3>
-<p class="text-muted small mb-4">Clarify scientific methods, write tutorials, or improve our API documentation and guides.</p>
-<ul class="list-unstyled small text-muted fw-medium mb-0">
-<li class="d-flex align-items-center gap-2 mb-2">
-<span class="material-symbols-outlined text-success fs-6">check_circle</span> Wiki updates
-</li>
-<li class="d-flex align-items-center gap-2">
-<span class="material-symbols-outlined text-success fs-6">check_circle</span> Use-case studies
-</li>
-</ul>
-:::
-:::
-
-::: {.col-md-4}
-::: {.card .h-100 .border .shadow-sm .p-4 .transition-transform .hover-lift}
-<div class="bg-light text-primary rounded-3 p-3 d-inline-flex mb-4" style="width: fit-content;">
-<span class="material-symbols-outlined fs-2">science</span>
-</div>
-<h3 class="h5 fw-bold mb-3">Scientific Peer Review</h3>
-<p class="text-muted small mb-4">Participate in working groups to validate the mathematical integrity of new modeling modules.</p>
-<ul class="list-unstyled small text-muted fw-medium mb-0">
-<li class="d-flex align-items-center gap-2 mb-2">
-<span class="material-symbols-outlined text-success fs-6">check_circle</span> Technical review
-</li>
-<li class="d-flex align-items-center gap-2">
-<span class="material-symbols-outlined text-success fs-6">check_circle</span> Algorithm testing
-</li>
-</ul>
-:::
-:::
-:::
-:::
-
 
 ::: {.fims-contribute-header}
 ## Ways to Contribute
