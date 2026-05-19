@@ -193,7 +193,7 @@ Participate in working groups to validate the mathematical integrity of new mode
 ## Getting Involved
 Follow these 4 simple steps to start contributing to the FIMS project today.
 
-![]![](images/fims_dashboard.png){.fims-steps-img}
+![](images/fims_dashboard.png){.fims-steps-img}
 :::
 
 ::: {.fims-steps-list}
