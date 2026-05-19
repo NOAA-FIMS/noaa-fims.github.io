@@ -9,7 +9,6 @@ async function fetchGitHubActivity() {
   try {
     feedContainer.innerHTML = '<span class="text-primary fst-italic small">Attempting to contact GitHub...</span>';
     
-    // Requesting 30 events to ensure we have enough history to filter through
     const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/events?per_page=30`);
     
     if (!response.ok) {
@@ -18,29 +17,36 @@ async function fetchGitHubActivity() {
     
     const events = await response.json();
     
-    // TIMEZONE-SAFE CUTOFF: Calculate exactly 72 hours ago in milliseconds
-    const threeDaysAgoMs = Date.now() - (3 * 24 * 60 * 60 * 1000);
+    // Extract all Push and PR events from the log
+    const allRelevantEvents = events.filter(event => 
+      event.type === 'PullRequestEvent' || event.type === 'PushEvent'
+    );
 
-    // Filter events matching both the actions you want AND the 3-day timeline
-    const relevantEvents = events.filter(event => {
-      const isPushOrPR = event.type === 'PullRequestEvent' || event.type === 'PushEvent';
-      
-      // Converting the event's UTC timestamp string into raw milliseconds for an exact comparison
-      const eventTimeMs = Date.parse(event.created_at); 
-      const isRecent = eventTimeMs >= threeDaysAgoMs;
-      
-      return isPushOrPR && isRecent;
-    });
-
-    if (relevantEvents.length === 0) {
-       feedContainer.innerHTML = '<span class="text-muted small">No recent pushes or PRs found in the past 3 days.</span>';
+    if (allRelevantEvents.length === 0) {
+       feedContainer.innerHTML = '<span class="text-muted small">No recent repository activity found.</span>';
        return;
     }
 
-    feedContainer.innerHTML = ''; 
+    // Calculate our 3-day cutoff window in milliseconds
+    const threeDaysAgoMs = Date.now() - (3 * 24 * 60 * 60 * 1000);
+    
+    // Filter for events strictly inside the 3-day window
+    let displayEvents = allRelevantEvents.filter(event => Date.parse(event.created_at) >= threeDaysAgoMs);
+    
+    let noticeHTML = '';
+    
+    // SMART FALLBACK: If the past 3 days have been quiet, show the last 3 overall events instead
+    if (displayEvents.length === 0) {
+      displayEvents = allRelevantEvents.slice(0, 3);
+      noticeHTML = '<div class="px-3 pb-2 text-muted fst-italic" style="font-size: 0.8rem;">No activity in the last 3 days. Latest project updates:</div>';
+    } else {
+      // If we found events in the last 3 days, still cap the layout view at the top 3
+      displayEvents = displayEvents.slice(0, 3);
+    }
 
-    // Cap the displayed items at 3 total entries
-    relevantEvents.slice(0, 3).forEach(event => {
+    feedContainer.innerHTML = noticeHTML; 
+
+    displayEvents.forEach(event => {
       let actionText = '';
       let detailText = '';
       let branchName = '';
@@ -75,7 +81,7 @@ async function fetchGitHubActivity() {
             </p>
             <p class="small text-muted mb-0 fst-italic">"${detailText}"</p>
           </div>
-          <span class="text-muted fw-medium" style="font-size: 0.7rem;">${timeAgo}</span>
+          <span class="text-muted fw-medium" style="font-size: 0.7rem; white-space: nowrap;">${timeAgo}</span>
         </div>
       `;
       feedContainer.insertAdjacentHTML('beforeend', eventHTML);
