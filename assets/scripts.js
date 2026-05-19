@@ -104,26 +104,34 @@ document.addEventListener("DOMContentLoaded", () => {
 // javascript for GitHub recent activity feed
 async function fetchGitHubActivity() {
   const feedContainer = document.getElementById('github-activity-feed');
-  
-  // Safety check: only run this if the container exists on the current page
   if (!feedContainer) return;
 
-  const owner = 'noaa-fims'; // Changed to noaa-nmfs (update if it is actually noaa-fims)
+  const owner = 'noaa-fims'; 
   const repo = 'fims';       
 
   try {
-    // Fetch the latest events from the repository
+    // Let us know the script actually started running!
+    feedContainer.innerHTML = '<span class="text-primary fst-italic small">Attempting to contact GitHub...</span>';
+    
     const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/events?per_page=10`);
-    if (!response.ok) throw new Error('Network response was not ok');
+    
+    // If GitHub blocks us, print the exact error code to the screen
+    if (!response.ok) {
+      throw new Error(`GitHub Error: ${response.status} ${response.statusText}`);
+    }
     
     const events = await response.json();
     
-    // Filter for Pull Requests and Pushes
     const relevantEvents = events.filter(event => 
       event.type === 'PullRequestEvent' || event.type === 'PushEvent'
-    ).slice(0, 3); // Get the top 3
+    ).slice(0, 3);
 
-    feedContainer.innerHTML = ''; // Clear the "Loading..." text
+    if (relevantEvents.length === 0) {
+       feedContainer.innerHTML = '<span class="text-muted small">No recent pushes or PRs found.</span>';
+       return;
+    }
+
+    feedContainer.innerHTML = ''; 
 
     relevantEvents.forEach(event => {
       let actionText = '';
@@ -141,12 +149,10 @@ async function fetchGitHubActivity() {
         branchName = event.payload.ref.replace('refs/heads/', '');
       }
 
-      // Calculate time ago
       const date = new Date(event.created_at);
       const diffHours = Math.floor((new Date() - date) / (1000 * 60 * 60));
       const timeAgo = diffHours > 24 ? `${Math.floor(diffHours/24)}d ago` : `${diffHours}h ago`;
 
-      // Construct the HTML snippet using Bootstrap classes
       const eventHTML = `
         <div class="d-flex align-items-start gap-3 p-3 rounded-3 border border-transparent custom-hover-bg transition-colors">
           <div class="rounded-circle bg-light overflow-hidden flex-shrink-0" style="width: 40px; height: 40px;">
@@ -167,10 +173,15 @@ async function fetchGitHubActivity() {
     });
 
   } catch (error) {
-    console.error('Error fetching GitHub activity:', error);
-    feedContainer.innerHTML = '<p class="small text-muted p-3">Unable to load recent activity.</p>';
+    console.error(error);
+    // Print the exact error directly to the web page UI
+    feedContainer.innerHTML = `<p class="small text-danger p-3 fw-bold">${error.message}</p>`;
   }
 }
 
-// Run the function when the DOM is ready
-document.addEventListener('DOMContentLoaded', fetchGitHubActivity);
+// BULLETPROOF LAUNCHER: Checks if the page is already loaded before waiting for the event
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', fetchGitHubActivity);
+} else {
+  fetchGitHubActivity();
+}
