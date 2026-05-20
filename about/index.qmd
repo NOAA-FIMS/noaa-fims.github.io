@@ -3,7 +3,7 @@ title: About FIMS
 image: ../images/FIMS_logo3.png
 include-after-body: ../assets/open-in-new-tab.html
 toc: true
-toc-location: left
+toc-location: right
 toc-depth: 3
 ---
 ## Mission
@@ -27,7 +27,7 @@ We aim to accomplish our mission with a **user-friendly stock assessment tool** 
 
 ## Why FIMS?
 
-Learn more on the [FAQ page](/about/faq.qmd#why).
+Learn more on the [FAQ page](/about/faq.qmd#why). If you would like to learn more about transitioning your model to FIMS, please see the [transitioning to FIMS page under Getting Started](../getting-started/transitioning.qmd).
 
 ## Community
 
