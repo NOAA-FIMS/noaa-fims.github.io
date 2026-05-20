@@ -1,0 +1,9 @@
+---
+title: Transitioning to FIMS
+include-after-body: ../assets/open-in-new-tab.html
+toc: true
+toc-location: right
+toc-depth: 2
+---
+
+Placeholder content for transitioning to FIMS page. This page will include information about how to transition your model to FIMS, including resources, vignettes, and support available to help with the transition.

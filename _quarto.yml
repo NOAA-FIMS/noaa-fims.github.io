@@ -74,9 +74,10 @@ website:
       collapse-level: 2
       align: left
       contents:
-        - text: "{{< fa info-circle >}} about"
+        - text: {{< fa info-circle >}} about
           href: about/index.qmd
         - text: "{{< fa clipboard-question >}} faq"
+          icon: question
           href: about/faq.qmd
         - text: "{{< fa sitemap >}} model architecture"
           href: about/architecture.qmd
