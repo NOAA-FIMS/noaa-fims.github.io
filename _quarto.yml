@@ -31,22 +31,7 @@ website:
         aria-label: link to home
         href: index.qmd
       - text: about
-        menu:
-          - text: overview
-            aria-label: link to about page
-            href: about/index.qmd
-          - text: faq
-            aria-label: link to faq page
-            href: about/faq.qmd
-          - text: calendar
-            aria-label: link to FIMS calendar
-            href: about/calendar.qmd
-          - text: changelog
-            aria-label: link to changelog
-            href: about/FIMS_CHANGELOG.qmd
-          - text: acknowledgements
-            aria-label: link to acknowledgements
-            href: about/acknowledgements.qmd
+        href: about/index.qmd
       - text: blog
         aria-label: link to blog
         href: blog/index.qmd
@@ -82,6 +67,41 @@ website:
       - icon: github
         aria-label: github icon
         href: https://github.com/NOAA-FIMS
+  sidebar:
+    - id: about
+      title: "About"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - text: "{{< fa info-circle >}} about"
+          href: about/index.qmd
+        - text: "{{< fa clipboard-question >}} faq"
+          href: about/faq.qmd
+        - text: "{{< fa sitemap >}} model architecture"
+          href: about/architecture.qmd
+        - text: "{{< fa calendar >}} calendar"
+          href: about/calendar.qmd
+        - text: "{{< fa clock-rotate-left >}} changelog"
+          href: about/FIMS_CHANGELOG.qmd
+        - text: "{{< fa phone >}} contact"
+          href: about/contact.qmd
+        - text: "{{< fa users >}} contributors"
+          href: about/contributors.qmd
+    # - id: get-started
+    #   title: "Get Started"
+    #   style: "floating"
+    #   collapse-level: 2
+    #   align: left
+    #   contents:
+    #     - docs/get-started/index.qmd
+    #     - text: "Tutorial: Hello, Quarto"
+    #       href: docs/get-started/hello/
+    #     - text: "Tutorial: Computations"
+    #       href: docs/get-started/computations/
+    #     - text: "Tutorial: Authoring"
+    #       href: docs/get-started/authoring/
+
   page-footer:
     border: false
     background: light

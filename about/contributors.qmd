@@ -1,0 +1,100 @@
+# FIMS Team
+
+FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.
+
+## Project Lead
+
+* Kelli F. Johnson (OST)
+
+## Core Developers
+
+* Grant D. Adams (AFSC)
+* Jon K. T. Brodziak (PIFSC)
+* Kathryn L. Doering (OST)
+* Daniel R. Goethel (AFSC)
+* Andrea M. Havron (OST)
+* Alexander J. Jensen (SWFSC)
+* Ronald Klasky (T and T Consulting Services, Inc.)
+* Peter T. Kuriyama (SWFSC)
+* Bai Li (OST)
+* Emily M. Liljestrand (NEFSC)
+* Timothy J. Miller (NEFSC)
+* Megumi C. Oshima (PIFSC)
+* Matthew Supernaw (OST)
+* Ian G. Taylor (NWFSC)
+* Nathan R. Vaughan (Vaughan Analytics)
+* Eric J. Ward (NWFSC)
+* Erik H. Williams (SEFSC)
+
+## Supporting Developers
+
+* Jennifer S. Bigman (University of Delaware)
+* Kristan Blackhart (NEFSC)
+* Edward J. Dick (SWFSC)
+* Alan C. Haynie (ICES)
+* James N. Ianelli (AFSC)
+* Hui-hua Lee (SWFSC)
+* Christopher M. Legault (NEFSC)
+* Patrick D. Lynch (OST)
+* Richard D. Methot (NWFSC)
+* Cole C. Monnahan (AFSC)
+* Lisa Pfeiffer (NWFSC)
+* Kyle W. Shertzer (SEFSC)
+* Christine C. Stawitz (University of Birmingham)
+* Jane Y. Sullivan (AFSC)
+* Howard Townsend (OST)
+
+## Contributors
+
+<!-- BEGIN AUTO CONTRIBUTORS GRID -->
+<table><tr><td align="center" valign="top" style="padding:12px"><a href="https://github.com/ChristineStawitz-NOAA"><img src="https://avatars.githubusercontent.com/u/47904621?v=4" width="80" alt="ChristineStawitz-NOAA avatar" style="border-radius:8px"/><br/><sub>ChristineStawitz-NOAA</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/Andrea-Havron-NOAA"><img src="https://avatars.githubusercontent.com/u/85530309?v=4" width="80" alt="Andrea-Havron-NOAA avatar" style="border-radius:8px"/><br/><sub>Andrea-Havron-NOAA</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/Bai-Li-NOAA"><img src="https://avatars.githubusercontent.com/u/59936250?v=4" width="80" alt="Bai-Li-NOAA avatar" style="border-radius:8px"/><br/><sub>Bai-Li-NOAA</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/msupernaw"><img src="https://avatars.githubusercontent.com/u/4933904?v=4" width="80" alt="msupernaw avatar" style="border-radius:8px"/><br/><sub>msupernaw</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/kellijohnson-NOAA"><img src="https://avatars.githubusercontent.com/u/4108564?v=4" width="80" alt="kellijohnson-NOAA avatar" style="border-radius:8px"/><br/><sub>kellijohnson-NOAA</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/k-doering-NOAA"><img src="https://avatars.githubusercontent.com/u/48930335?v=4" width="80" alt="k-doering-NOAA avatar" style="border-radius:8px"/><br/><sub>k-doering-NOAA</sub></a></td></tr><tr><td align="center" valign="top" style="padding:12px"><a href="https://github.com/apps/github-actions"><img src="https://avatars.githubusercontent.com/in/15368?v=4" width="80" alt="github-actions[bot] avatar" style="border-radius:8px"/><br/><sub>github-actions[bot]</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/nathanvaughan-NOAA"><img src="https://avatars.githubusercontent.com/u/53061482?v=4" width="80" alt="nathanvaughan-NOAA avatar" style="border-radius:8px"/><br/><sub>nathanvaughan-NOAA</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/JaneSullivan-NOAA"><img src="https://avatars.githubusercontent.com/u/68303089?v=4" width="80" alt="JaneSullivan-NOAA avatar" style="border-radius:8px"/><br/><sub>JaneSullivan-NOAA</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/apps/copilot-swe-agent"><img src="https://avatars.githubusercontent.com/in/1143301?v=4" width="80" alt="Copilot avatar" style="border-radius:8px"/><br/><sub>Copilot</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/apps/dependabot"><img src="https://avatars.githubusercontent.com/in/29110?v=4" width="80" alt="dependabot[bot] avatar" style="border-radius:8px"/><br/><sub>dependabot[bot]</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/Eshaan-byte"><img src="https://avatars.githubusercontent.com/u/146680427?v=4" width="80" alt="Eshaan-byte avatar" style="border-radius:8px"/><br/><sub>Eshaan-byte</sub></a></td></tr><tr><td align="center" valign="top" style="padding:12px"><a href="https://github.com/awilnoaa"><img src="https://avatars.githubusercontent.com/u/167116769?v=4" width="80" alt="awilnoaa avatar" style="border-radius:8px"/><br/><sub>awilnoaa</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/iantaylor-NOAA"><img src="https://avatars.githubusercontent.com/u/4992918?v=4" width="80" alt="iantaylor-NOAA avatar" style="border-radius:8px"/><br/><sub>iantaylor-NOAA</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/MOshima-PIFSC"><img src="https://avatars.githubusercontent.com/u/78562167?v=4" width="80" alt="MOshima-PIFSC avatar" style="border-radius:8px"/><br/><sub>MOshima-PIFSC</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/JonBrodziak"><img src="https://avatars.githubusercontent.com/u/11236454?v=4" width="80" alt="JonBrodziak avatar" style="border-radius:8px"/><br/><sub>JonBrodziak</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/szu-yun-ko"><img src="https://avatars.githubusercontent.com/u/210009874?v=4" width="80" alt="szu-yun-ko avatar" style="border-radius:8px"/><br/><sub>szu-yun-ko</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/jimianelli"><img src="https://avatars.githubusercontent.com/u/2715618?v=4" width="80" alt="jimianelli avatar" style="border-radius:8px"/><br/><sub>jimianelli</sub></a></td></tr><tr><td align="center" valign="top" style="padding:12px"><a href="https://github.com/timjmiller"><img src="https://avatars.githubusercontent.com/u/17852156?v=4" width="80" alt="timjmiller avatar" style="border-radius:8px"/><br/><sub>timjmiller</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/Rohith-1717"><img src="https://avatars.githubusercontent.com/u/200062616?v=4" width="80" alt="Rohith-1717 avatar" style="border-radius:8px"/><br/><sub>Rohith-1717</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/alexjensen-NOAA"><img src="https://avatars.githubusercontent.com/u/168662602?v=4" width="80" alt="alexjensen-NOAA avatar" style="border-radius:8px"/><br/><sub>alexjensen-NOAA</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/peterkuriyama-NOAA"><img src="https://avatars.githubusercontent.com/u/103060418?v=4" width="80" alt="peterkuriyama-NOAA avatar" style="border-radius:8px"/><br/><sub>peterkuriyama-NOAA</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/abhinav-1305"><img src="https://avatars.githubusercontent.com/u/113254225?v=4" width="80" alt="abhinav-1305 avatar" style="border-radius:8px"/><br/><sub>abhinav-1305</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/ericward-noaa"><img src="https://avatars.githubusercontent.com/u/5046884?v=4" width="80" alt="ericward-noaa avatar" style="border-radius:8px"/><br/><sub>ericward-noaa</sub></a></td></tr><tr><td align="center" valign="top" style="padding:12px"><a href="https://github.com/KyleShertzer-NOAA"><img src="https://avatars.githubusercontent.com/u/81244856?v=4" width="80" alt="KyleShertzer-NOAA avatar" style="border-radius:8px"/><br/><sub>KyleShertzer-NOAA</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/e-perl-NOAA"><img src="https://avatars.githubusercontent.com/u/118312785?v=4" width="80" alt="e-perl-NOAA avatar" style="border-radius:8px"/><br/><sub>e-perl-NOAA</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/LNo-cz"><img src="https://avatars.githubusercontent.com/u/174143032?v=4" width="80" alt="LNo-cz avatar" style="border-radius:8px"/><br/><sub>LNo-cz</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/mciechanumich"><img src="https://avatars.githubusercontent.com/u/110423309?v=4" width="80" alt="mciechanumich avatar" style="border-radius:8px"/><br/><sub>mciechanumich</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/Nimra-Arshad51"><img src="https://avatars.githubusercontent.com/u/264476531?v=4" width="80" alt="Nimra-Arshad51 avatar" style="border-radius:8px"/><br/><sub>Nimra-Arshad51</sub></a></td><td align="center" valign="top" style="padding:12px"><a href="https://github.com/RicardoYin01"><img src="https://avatars.githubusercontent.com/u/123024031?v=4" width="80" alt="RicardoYin01 avatar" style="border-radius:8px"/><br/><sub>RicardoYin01</sub></a></td></tr><tr><td align="center" valign="top" style="padding:12px"><a href="https://github.com/Srajald"><img src="https://avatars.githubusercontent.com/u/99940237?v=4" width="80" alt="Srajald avatar" style="border-radius:8px"/><br/><sub>Srajald</sub></a></td></tr></table>
+<!-- END AUTO CONTRIBUTORS GRID -->
+
+## FIMS Council
+
+* Anders Nielsen (DTU-Aqua)
+* André E. Punt (Chair, SAFS UW)
+* Anne M. Cooper (ICES)
+* Bjarki Þ. Elvarsson (MFRI, Gadget)
+* Curry J. Cunningham (NPFMC)
+* Éva E. Plagányi (CSIRO)
+* Geneviève M. Nesslage (UMCES)
+* Henning Winker (JRC, Jabba)
+* Jim N. Sanchirico (UC Davis)
+* Jon R. Weidenmann (Rutgers)
+* Mark N. Maunder (IATTC)
+* Z. Teresa A'mar (Dragonfly Data Science)
+
+## Roles
+
+### Project Lead
+
+The Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the [Terms of Reference](/about/FIMS_TOR_08.26.2021.pdf) and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the [Github Projects](https://github.com/orgs/NOAA-FIMS/projects) and [GitHub Milestones](https://github.com/NOAA-FIMS/FIMS/milestones).
+
+### Lead Software Architect
+
+The Lead Software Architect is responsible for advising the architecture of FIMS to maximize portability and extensibility; manage technical risks and opportunities; advise the Project Lead on software design, refactor, and implementation decisions; and guarantee quality of deliveries via code review. The Lead Software Architect also educates the team on technical best practices.
+
+### Lead Test Engineer
+
+The Lead Test Engineer is responsible for designing and driving test objectives, test strategies, and test plans of the FIMS product at subsequent milestones. The Lead Test Engineer will identify the tools for test reporting, management and automation, guide and monitor the design, implementation, and execution of test cases and test procedures. The Lead Test Engineer will train and mentor implementation team members on how to effectively write and debug tests.
+
+### Lead Statistical Computing Engineer
+
+The Lead Statistical Computing Engineer is responsible for designing the FIMS statistical architecture that maximizes statistical accuracy and ensures the implementation of statistical good practices. The Lead Statistical Computing Engineer will advise the Project Lead on design and implementation decisions and will work closely with the Lead Software Architect to ensure a balance between computation and statistical efficiency and with the Lead Test Engineer to develop tests that check the statistical accuracy of model design. 
+
+### Outreach and Transition Coordinator
+
+The Outreach and Transition Coordinator communicates with policy-makers, NOAA leadership, and regional offices on transition plans from existing assessment models and processes to FIMS. This coordinator works with academic partners to develop and coordinate training on using FIMS.
+
+### Lead of Workflows, Accessibility, and Integration
+
+The Lead of Workflows, Accessibility, and Integration is responsible for designing and driving workflows and automation to support the reliability and robustness of the FIMS. The Lead of Workflows, Accessibility, and Integration ensures FIMS aligns with expected standards for accessibility and quality control in accordance with guidelines set by the Fisheries Integrated Toolbox. This lead coordinates with the Lead Test Engineer to ensure test cases are automated and successfully run by GitHub Actions and coordinates with the Lead Statistical Computing Engineer to identify opportunities to expand FIMS across related disciplines. 
+
+### Regional Representatives
+
+Regional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations.
+
+## Authorship
+
+Current developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., [FIMS DESCRIPTION](https://github.com/NOAA-FIMS/FIMS/blob/main/DESCRIPTION). When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit.
