@@ -32,6 +32,8 @@ website:
         href: index.qmd
       - text: about
         href: about/index.qmd
+      - text: getting started
+        href: getting-started/index.qmd
       - text: blog
         aria-label: link to blog
         href: blog/index.qmd
@@ -74,34 +76,36 @@ website:
       collapse-level: 2
       align: left
       contents:
-        - text: {{< fa info-circle >}} about
+        - text: About
           href: about/index.qmd
-        - text: "{{< fa clipboard-question >}} faq"
-          icon: question
+        - text: "{{< fa clipboard-question >}} FAQ"
+          icon: question-circle
           href: about/faq.qmd
-        - text: "{{< fa sitemap >}} model architecture"
+        - text: "{{< fa sitemap >}} Model Architecture"
           href: about/architecture.qmd
-        - text: "{{< fa calendar >}} calendar"
+        - text: "{{< fa calendar >}} Calendar"
           href: about/calendar.qmd
-        - text: "{{< fa clock-rotate-left >}} changelog"
+        - text: "{{< fa clock-rotate-left >}} Changelog"
           href: about/FIMS_CHANGELOG.qmd
-        - text: "{{< fa phone >}} contact"
+        - text: "{{< fa phone >}} Contact"
           href: about/contact.qmd
-        - text: "{{< fa users >}} contributors"
+        - text: "{{< fa users >}} Contributors"
           href: about/contributors.qmd
-    # - id: get-started
-    #   title: "Get Started"
+    # - id: getting-started
+    #   title: "Getting Started"
     #   style: "floating"
     #   collapse-level: 2
     #   align: left
     #   contents:
-    #     - docs/get-started/index.qmd
-    #     - text: "Tutorial: Hello, Quarto"
-    #       href: docs/get-started/hello/
-    #     - text: "Tutorial: Computations"
-    #       href: docs/get-started/computations/
-    #     - text: "Tutorial: Authoring"
-    #       href: docs/get-started/authoring/
+    # #     - getting-started/index.qmd
+    # #     - text: "Documentation"
+    # #       href: getting-started/documentation.qmd
+    # #     - text: "Tutorials"
+    # #       href: getting-started/tutorials.qmd
+    #       # - text: "User Hub"
+    #       #   href: getting-started/user-hub.qmd
+    #       # - text: "Contributor Hub"
+    #       #   href: getting-started/contributor-hub.qmd
 
   page-footer:
     border: false
