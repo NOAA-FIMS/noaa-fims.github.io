@@ -1,0 +1,64 @@
+on:
+  push:
+    branches-ignore:
+      - main
+      - gh-pages
+  workflow_dispatch:
+
+concurrency:
+  group: preview-${{ github.ref_name }}
+  cancel-in-progress: true
+
+name: Render Preview
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    env:
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - uses: r-lib/actions/setup-r@v2
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages:
+            any::knitr
+            any::rmarkdown
+            any::ical
+            any::lubridate
+            any::dplyr
+            any::glue
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+
+      - name: Make safe branch name
+        id: vars
+        run: |
+          SAFE_BRANCH=$(echo "${GITHUB_REF_NAME}" | sed 's#[^A-Za-z0-9._-]#-#g')
+          echo "safe_branch=$SAFE_BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Prepare preview in subdirectory
+        run: |
+          mkdir -p _site/preview/${{ steps.vars.outputs.safe_branch }}
+          # If your render output is in _site, copy to subdirectory
+          # Adjust the source path based on where Quarto renders your output
+          cp -r _site/* _site/preview/${{ steps.vars.outputs.safe_branch }}/ || true
+
+      - name: Publish preview to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          render: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
