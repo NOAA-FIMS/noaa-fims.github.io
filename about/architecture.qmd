@@ -1,0 +1,9 @@
+---
+title: Model Architecture
+include-after-body: ../assets/open-in-new-tab.html
+toc: true
+toc-location: right
+toc-depth: 2
+---
+
+Placeholder content for model architecture page. This page will include information about the FIMS model architecture, including diagrams and descriptions of the different components of the model and how they interact with each other.

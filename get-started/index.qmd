@@ -1,0 +1,87 @@
+---
+title: Getting Started
+include-after-body: ../assets/open-in-new-tab.html
+toc: true
+toc-location: right
+toc-depth: 2
+header-includes: >
+  <link rel="stylesheet" href="../assets/community.css">
+---
+
+
+## Unsure where to start? Choose your path!
+Select the user pathway that best describes your goals. Some of the resources for that pathway are listed but click on the button for each pathway to see all of the resources available.
+
+::: {.fims-card-grid}
+::: {.fims-card}
+::: {.fims-card-icon}
+<i class="bi bi-person-plus"></i>
+:::
+### I am want to learn how to use FIMS
+Learn how to create your own model in FIMS.
+
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Introductory vignette
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Diagnostics
+* <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS functions overview
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Transitioning to FIMS
+
+::: {.fims-card-footer}
+[Start New User Path <i class="bi bi-arrow-right"></i>](#){.fims-btn-full}
+:::
+
+:::
+
+::: {.fims-card}
+::: {.fims-card-icon}
+<i class="bi bi-lightning"></i>
+:::
+### I am a power user interested in going beyond the FIMS helper functions
+Learn how to use FIMS beyond the helper functions, including how to use TMB and C++ to configure your models in FIMS.
+
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Advanced vignettes
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Case studies
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Deep dive blog posts
+* <i class="bi bi-check-circle-fill fims-text-success"></i> C++ documentation
+
+::: {.fims-card-footer}
+[Start Power User Path <i class="bi bi-arrow-right"></i>](#){.fims-btn-full}
+:::
+
+:::
+
+::: {.fims-card}
+::: {.fims-card-icon}
+<i class="bi bi-code-square"></i>
+:::
+### I want to learn how to contribute to FIMS
+Learn how to contribute to FIMS, including how to contribute code, documentation, testing, etc.! Everyone can contribute to FIMS in some way, and we welcome contributions of all kinds.
+
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Contributor guidelines
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Code club blog post
+* <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS good first issues
+* <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS project board
+
+::: {.fims-card-footer}
+[Start Contributor Path <i class="bi bi-arrow-right"></i>](#){.fims-btn-full}
+:::
+
+:::
+
+::: {.fims-card}
+::: {.fims-card-icon}
+<i class="bi bi-file-bar-graph"></i>
+:::
+### I am a decision maker or manager interested in learning how to interpret FIMS outputs
+Learn how to interpret FIMS outputs and use them to inform decision making.
+
+* <i class="bi bi-check-circle-fill fims-text-success"></i> FAQ
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Project milestones
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Diagnostics
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Projects & publications
+
+::: {.fims-card-footer}
+[Start Decision Maker Path <i class="bi bi-arrow-right"></i>](#){.fims-btn-full}
+:::
+
+:::
+:::

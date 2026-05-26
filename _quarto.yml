@@ -32,8 +32,8 @@ website:
         href: index.qmd
       - text: about
         href: about/index.qmd
-      - text: getting started
-        href: getting-started/index.qmd
+      - text: get started
+        href: get-started/index.qmd
       - text: blog
         aria-label: link to blog
         href: blog/index.qmd
@@ -78,30 +78,55 @@ website:
       contents:
         - text: About
           href: about/index.qmd
-        - text: "{{< fa clipboard-question >}} FAQ"
+          icon: info-circle
+        - text: "FAQ"
           icon: question-circle
           href: about/faq.qmd
-        - text: "{{< fa sitemap >}} Model Architecture"
+        - text: "Model Architecture"
           href: about/architecture.qmd
-        - text: "{{< fa calendar >}} Calendar"
+          icon: diagram-3
+        - text: "Calendar"
           href: about/calendar.qmd
-        - text: "{{< fa clock-rotate-left >}} Changelog"
+          icon: calendar
+        - text: "Changelog"
           href: about/FIMS_CHANGELOG.qmd
-        - text: "{{< fa phone >}} Contact"
+          icon: clock-history
+        - text: "Contact"
           href: about/contact.qmd
-        - text: "{{< fa users >}} Contributors"
+          icon: envelope-arrow-up
+        - text: "Contributors"
           href: about/contributors.qmd
-    # - id: getting-started
-    #   title: "Getting Started"
-    #   style: "floating"
-    #   collapse-level: 2
-    #   align: left
-    #   contents:
-    # #     - getting-started/index.qmd
-    # #     - text: "Documentation"
-    # #       href: getting-started/documentation.qmd
-    # #     - text: "Tutorials"
-    # #       href: getting-started/tutorials.qmd
+          icon: people
+    - id: get-started
+      title: "Get Started"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - get-started/index.qmd
+        - text: "Documentation"
+          href: get-started/documentation.qmd
+        - text: "Tutorials"
+          href: get-started/tutorials.qmd
+    - id: community
+      title: "Community"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+        - text: "Community Hub"
+          href: community/index.qmd
+          icon: people
+        - text: "FIMS Blog"
+          href: blog/index.qmd
+          icon: layout-text-window
+        # - text: "Events"
+        #   href: 
+        #   icon: calendar-event
+        - text: "Projects & Publications"
+          href: community/projects.qmd
+          icon: book
+           
     #       # - text: "User Hub"
     #       #   href: getting-started/user-hub.qmd
     #       # - text: "Contributor Hub"

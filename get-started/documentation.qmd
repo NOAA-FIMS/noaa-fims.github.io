@@ -1,0 +1,7 @@
+---
+title: Documentation
+include-after-body: ../assets/open-in-new-tab.html
+toc: true
+toc-location: right
+toc-depth: 2
+---
