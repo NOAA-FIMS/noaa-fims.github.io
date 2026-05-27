@@ -54,7 +54,7 @@ Learn how to use FIMS beyond the R helper functions to configure your models in 
 Learn how to contribute to FIMS, including how to contribute code, documentation, testing, etc.! 
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Contributor guidelines
-* <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS good first issues
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Good first issues
 * <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS project board
 
 ::: {.fims-card-footer}
