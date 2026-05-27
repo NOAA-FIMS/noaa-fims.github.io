@@ -27,6 +27,7 @@ Learn how to create your own model in FIMS.
 
 ::: {.fims-card-footer}
 [Start New User Path <i class="bi bi-arrow-right"></i>](new-user.qmd){.fims-btn-full}
+<!-- <a href="https://github.com/NOAA-FIMS/FIMS/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22" class="btn btn-dark fims-btn-small">Find First Issue</a> -->
 :::
 
 :::
