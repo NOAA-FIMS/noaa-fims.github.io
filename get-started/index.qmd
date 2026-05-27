@@ -21,7 +21,6 @@ Learn how to create your own model in FIMS using R.
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Introductory vignette
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Diagnostics
-* <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS functions overview
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Transitioning to FIMS
 
 ::: {.fims-card-footer}
@@ -39,7 +38,6 @@ Learn how to use FIMS beyond the R helper functions to configure your models in 
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Advanced vignettes
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Case studies
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Deep dive blog posts
 * <i class="bi bi-check-circle-fill fims-text-success"></i> C++ documentation
 
 ::: {.fims-card-footer}
@@ -56,7 +54,6 @@ Learn how to use FIMS beyond the R helper functions to configure your models in 
 Learn how to contribute to FIMS, including how to contribute code, documentation, testing, etc.! 
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Contributor guidelines
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Code club blog post
 * <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS good first issues
 * <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS project board
 
@@ -75,7 +72,6 @@ Learn how to interpret FIMS outputs and use them to inform decision making.
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> FAQ
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Project milestones
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Diagnostics
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Projects & publications
 
 ::: {.fims-card-footer}
