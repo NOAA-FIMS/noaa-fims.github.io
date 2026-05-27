@@ -2,9 +2,40 @@
 
 FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.
 
-## Project Lead
+## Roles
 
-* Kelli F. Johnson (OST)
+### Project Lead - Kelli Johnson <img src="https://avatars.githubusercontent.com/u/59936250?v=4" width="80" alt="Bai-Li-NOAA avatar" style="border-radius:8px"/> [{{< fa brands github >}}](https://github.com/kellijohnson-NOAA) [{{< fa solid envelope >}}](mailto:kelli.johnson@noaa.gov)
+
+The Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the [Terms of Reference](/about/FIMS_TOR_08.26.2021.pdf) and discussions with the Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status to the Teamvia maintenance of the [Github Projects](https://github.com/orgs/NOAA-FIMS/projects) and [GitHub Milestones](https://github.com/NOAA-FIMS/FIMS/milestones) and to Leadership via talking points and presentations.
+
+### Lead Software Architect - Matthew Supernaw <img src="https://avatars.githubusercontent.com/u/4108564?v=4" width="80" alt="kellijohnson-NOAA avatar" style="border-radius:8px"/>[{{< fa brands github >}}](https://github.com/msupernaw) [{{< fa solid envelope >}}](mailto:matthew.supernaw@noaa.gov)
+
+The Lead Software Architect is responsible for advising the architecture of FIMS to maximize portability and extensibility; manage technical risks and opportunities; advise the Project Lead on software design, refactor, and implementation decisions; and guarantee quality of deliveries via code review. The Lead Software Architect also educates the team on technical best practices.
+
+### Lead Test Engineer - Bai Li <img src="https://avatars.githubusercontent.com/u/59936250?v=4" width="80" alt="Bai-Li-NOAA avatar" style="border-radius:8px"/>[{{< fa brands github >}}](https://github.com/Bai-Li-NOAA) [{{< fa solid envelope >}}](mailto:bai.li@noaa.gov)
+
+The Lead Test Engineer is responsible for the testing lifecycle by developing test strategies for key milestones and identifying tools for test automation and reporting. The Lead Test Engineer supports success by maintaining templates for testing procedures, ensuring code coverage of at least 80 percent, continually researching best practices, and conducting quarterly reviews of tests.
+
+### Lead Statistical Computing Engineer - Andrea Havron <img src="https://avatars.githubusercontent.com/u/85530309?v=4" width="80" alt="Andrea-Havron-NOAA avatar" style="border-radius:8px"/>[{{< fa brands github >}}](https://github.com/Andrea-Havron-NOAA) [{{< fa solid envelope >}}](mailto:andrea.havron@noaa.gov)
+
+The Lead Statistical Computing Engineer is responsible for designing the FIMS statistical architecture that maximizes statistical accuracy and ensures the implementation of statistical good practices. The Lead Statistical Computing Engineer will advise the Project Lead on design and implementation decisions and will work closely with the Lead Software Architect to ensure a balance between computation and statistical efficiency and with the Lead Test Engineer to develop tests that check the statistical accuracy of model design. 
+
+### Lead of User Engagement - Elizabeth Perl <img src="https://avatars.githubusercontent.com/u/118312785?v=4" width="80" alt="e-perl-NOAA avatar" style="border-radius:8px"/>[{{< fa brands github >}}](https://github.com/e-perl-NOAA) [{{< fa solid envelope >}}](mailto:elizabeth.perl@noaa.gov)
+
+The Lead of User Engagement bridges the gap between FIMS development and its user community. This role is responsible for driving user adoption by designing the FIMS website, strategizing community-building activities, and coordinating the transition from legacy models. Additionally, this role actively enables user success by setting up cloud computing environments, leading ad-hoc exploratory development, and researching practical solutions that help users integrate FIMS into their own projects.
+
+### Lead of Workflows and Integration - Kathryn Doering <img src="https://avatars.githubusercontent.com/u/48930335?v=4" width="80" alt="k-doering-NOAA avatar" style="border-radius:8px"/>[{{< fa brands github >}}](https://github.com/k-doering-NOAA) [{{< fa solid envelope >}}](mailto:kathryn.doering@noaa.gov)
+
+The Lead of Workflows and Integration is responsible for designing and driving workflows and automation to support the reliability and robustness of the FIMS. The Lead of Workflows and Integration ensures FIMS aligns with expected standards for accessibility and quality control in accordance with guidelines set by the Fisheries Integrated Toolbox. This lead coordinates with the Lead Test Engineer to ensure test cases are automated and successfully run by GitHub Actions and coordinates with the Lead Statistical Computing Engineer to identify opportunities to expand FIMS across related disciplines. 
+
+### Regional Representatives
+
+Regional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations. If you would like to become a Regional Representative, please contact the Project Lead. We particularly encourage state, university, and international partners to consider this role. 
+
+## Authorship
+
+Current developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., [FIMS DESCRIPTION](https://github.com/NOAA-FIMS/FIMS/blob/main/DESCRIPTION). When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit.
+
 
 ## Core Developers
 
@@ -64,37 +95,3 @@ FIMS is a collaborative effort that would not be possible without the generous s
 * Jon R. Weidenmann (Rutgers)
 * Mark N. Maunder (IATTC)
 * Z. Teresa A'mar (Dragonfly Data Science)
-
-## Roles
-
-### Project Lead
-
-The Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the [Terms of Reference](/about/FIMS_TOR_08.26.2021.pdf) and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the [Github Projects](https://github.com/orgs/NOAA-FIMS/projects) and [GitHub Milestones](https://github.com/NOAA-FIMS/FIMS/milestones).
-
-### Lead Software Architect
-
-The Lead Software Architect is responsible for advising the architecture of FIMS to maximize portability and extensibility; manage technical risks and opportunities; advise the Project Lead on software design, refactor, and implementation decisions; and guarantee quality of deliveries via code review. The Lead Software Architect also educates the team on technical best practices.
-
-### Lead Test Engineer
-
-The Lead Test Engineer is responsible for designing and driving test objectives, test strategies, and test plans of the FIMS product at subsequent milestones. The Lead Test Engineer will identify the tools for test reporting, management and automation, guide and monitor the design, implementation, and execution of test cases and test procedures. The Lead Test Engineer will train and mentor implementation team members on how to effectively write and debug tests.
-
-### Lead Statistical Computing Engineer
-
-The Lead Statistical Computing Engineer is responsible for designing the FIMS statistical architecture that maximizes statistical accuracy and ensures the implementation of statistical good practices. The Lead Statistical Computing Engineer will advise the Project Lead on design and implementation decisions and will work closely with the Lead Software Architect to ensure a balance between computation and statistical efficiency and with the Lead Test Engineer to develop tests that check the statistical accuracy of model design. 
-
-### Outreach and Transition Coordinator
-
-The Outreach and Transition Coordinator communicates with policy-makers, NOAA leadership, and regional offices on transition plans from existing assessment models and processes to FIMS. This coordinator works with academic partners to develop and coordinate training on using FIMS.
-
-### Lead of Workflows, Accessibility, and Integration
-
-The Lead of Workflows, Accessibility, and Integration is responsible for designing and driving workflows and automation to support the reliability and robustness of the FIMS. The Lead of Workflows, Accessibility, and Integration ensures FIMS aligns with expected standards for accessibility and quality control in accordance with guidelines set by the Fisheries Integrated Toolbox. This lead coordinates with the Lead Test Engineer to ensure test cases are automated and successfully run by GitHub Actions and coordinates with the Lead Statistical Computing Engineer to identify opportunities to expand FIMS across related disciplines. 
-
-### Regional Representatives
-
-Regional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations.
-
-## Authorship
-
-Current developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., [FIMS DESCRIPTION](https://github.com/NOAA-FIMS/FIMS/blob/main/DESCRIPTION). When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit.
