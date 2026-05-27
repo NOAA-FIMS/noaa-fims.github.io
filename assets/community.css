@@ -189,7 +189,7 @@
 .fims-card {
   background: var(--bs-body-bg, #fff);
   border: 1px solid rgba(0,0,0,0.1);
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   padding: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   transition: transform 120ms ease, box-shadow 120ms ease;
@@ -204,12 +204,12 @@
 
 .fims-card-icon {
   background-color: #f8f9fa;
-  color: var(--bs-primary, #0d6efd);
+  color: var(--bs-primary) !important;
   display: inline-flex;
   padding: 0.75rem;
-  border-radius: 0.4rem;
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 1.75rem !important;
+  margin-bottom: 0.4rem;
   align-self: flex-start;
 }
 

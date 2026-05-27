@@ -92,7 +92,7 @@ header-includes: >
 <i class="bi bi-box-seam"></i>
 :::
 <h4>FIMSRTMB</h4>
-<p>Explore the RTMB extension for FIMS</p>
+<p>RTMB extension for FIMS</p>
 :::
 
 ::: {.fims-card .position-relative}
