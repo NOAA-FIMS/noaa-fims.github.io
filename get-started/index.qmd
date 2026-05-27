@@ -30,8 +30,8 @@ Learn how to create your own model in FIMS using R.
 :::
 
 ::: {.fims-card .position-relative}
-::: {.fims-card-icon}
-<i class="bi bi-lightning"></i>
+::: {.fims-card-icon .bi .bi-lightning}
+<!-- <i class="bi bi-lightning"></i> -->
 :::
 ### I am a power user
 Learn how to use FIMS beyond the R helper functions to configure your models.
