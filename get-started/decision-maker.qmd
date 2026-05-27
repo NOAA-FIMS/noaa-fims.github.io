@@ -1,5 +1,4 @@
 ---
-title: "Decision Maker"
 page-layout: full
 header-includes: >
   <link rel="stylesheet" href="../assets/community.css">
