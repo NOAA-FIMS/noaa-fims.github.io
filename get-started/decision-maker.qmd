@@ -82,12 +82,12 @@ header-includes: >
 :::
 
 ::: {.fims-kb-header}
-<h3>Additional Resources</h3>
+<h3>Additional Resources & Links</h3>
 :::
 
 ::: {.fims-horizontal-scroll}
 
-::: {.fims-card}
+::: {.fims-card .position-relative}
 <a href="https://noaa-fims.github.io/FIMSRTMB/" class="stretched-link"></a>
 ::: {.fims-card-icon}
 <i class="bi bi-box-seam"></i>
@@ -96,7 +96,7 @@ header-includes: >
 <p>Explore the RTMB extension for FIMS</p>
 :::
 
-::: {.fims-card}
+::: {.fims-card .position-relative}
 <a href="https://noaa-fims.github.io/about/calendar.html" class="stretched-link"></a>
 ::: {.fims-card-icon}
 <i class="bi bi-calendar-event"></i>
