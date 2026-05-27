@@ -17,8 +17,8 @@ Select the user pathway that best describes your goals. Some of the resources fo
 ::: {.fims-card-icon}
 <i class="bi bi-person-plus"></i>
 :::
-### I am want to learn how to use FIMS
-Learn how to create your own model in FIMS.
+### I am a new(er) user to FIMS
+Learn how to create your own model in FIMS using R.
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Introductory vignette
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Diagnostics
@@ -36,7 +36,7 @@ Learn how to create your own model in FIMS.
 ::: {.fims-card-icon}
 <i class="bi bi-lightning"></i>
 :::
-### I am a power user interested in going beyond the FIMS helper functions
+### I am a power user
 Learn how to use FIMS beyond the helper functions, including how to use TMB and C++ to configure your models in FIMS.
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Advanced vignettes
@@ -54,7 +54,7 @@ Learn how to use FIMS beyond the helper functions, including how to use TMB and 
 ::: {.fims-card-icon}
 <i class="bi bi-code-square"></i>
 :::
-### I want to learn how to contribute to FIMS
+### I want to contribute to FIMS
 Learn how to contribute to FIMS, including how to contribute code, documentation, testing, etc.! Everyone can contribute to FIMS in some way, and we welcome contributions of all kinds.
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Contributor guidelines
@@ -72,7 +72,7 @@ Learn how to contribute to FIMS, including how to contribute code, documentation
 ::: {.fims-card-icon}
 <i class="bi bi-file-bar-graph"></i>
 :::
-### I am a decision maker or manager interested in learning how to interpret FIMS outputs
+### I am a decision maker or manager
 Learn how to interpret FIMS outputs and use them to inform decision making.
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> FAQ
