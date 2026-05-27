@@ -26,7 +26,7 @@ Learn how to create your own model in FIMS.
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Transitioning to FIMS
 
 ::: {.fims-card-footer}
-[Start New User Path <i class="bi bi-arrow-right"></i>](#){.fims-btn-full}
+[Start New User Path <i class="bi bi-arrow-right"></i>](new-user.qmd){.fims-btn-full}
 :::
 
 :::
