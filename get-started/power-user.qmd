@@ -82,7 +82,7 @@ header-includes: >
 :::
 
 ::: {.fims-kb-header}
-<h3>Additional Resources</h3>
+<h3>Additional Resources & Links</h3>
 :::
 
 ::: {.fims-horizontal-scroll}
