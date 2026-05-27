@@ -1,5 +1,5 @@
 ---
-title: "New User"
+title: "Power User"
 page-layout: full
 header-includes: >
   <link rel="stylesheet" href="../assets/community.css">
@@ -10,16 +10,16 @@ header-includes: >
 ::: {.fims-onboarding-container}
 
 ::: {.fims-pathway-pills}
-[<i class="bi bi-person-plus"></i> New User]{new-user.qmd}{.fims-pill .is-active}
-[<i class="bi bi-lightning"></i> Power User](power-user.qmd){.fims-pill}
+[<i class="bi bi-person-plus"></i> New User](new-user.qmd){.fims-pill}
+[<i class="bi bi-lightning"></i> Power User](power-user.qmd){.fims-pill .is-active}
 [<i class="bi bi-code-square"></i> Contributor](contributor.qmd){.fims-pill}
 [<i class="bi bi-file-bar-graph"></i> Decision Maker](decision-maker.qmd){.fims-pill}
 :::
 
 ::: {.fims-onboarding-header}
 ## Welcome!
-<p>Let's get you set up to run your first model in FIMS.</p>
-<h3><i class="bi bi-signpost-split"></i> New User Pathway</h3>
+<p>Let's get you ready to dive deeper into FIMS.</p>
+<h3><i class="bi bi-signpost-split"></i> Power User Pathway</h3>
 :::
 
 ::: {.fims-timeline}
@@ -30,7 +30,7 @@ header-includes: >
 :::
 ::: {.fims-step-content}
 <h4>Introduce Yourself</h4>
-<p>Join the community and tell us about your research.</p>
+<p>Join the community and tell us about your research if you haven't done so already.</p>
 <a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
 :::
 :::
@@ -40,9 +40,9 @@ header-includes: >
 02
 :::
 ::: {.fims-step-content}
-<h4>Complete the Introductory Vignette</h4>
-<p>Walk through the initial setup and familiarize yourself with the interface.</p>
-<a href="https://noaa-fims.github.io/FIMS/articles/fims-demo.html" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
+<h4>Advanced Vignettes</h4>
+<p>Explore advanced features in FIMS through these vignettes.</p>
+<a href="https://noaa-fims.github.io/FIMS/articles/adding-new-module.html" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
 :::
 :::
 
@@ -51,9 +51,9 @@ header-includes: >
 03
 :::
 ::: {.fims-step-content}
-<h4>Diagnostics</h4>
-<p>Run diagnostic checks to ensure your model is properly configured.</p>
-<a href="https://noaa-fims.github.io/FIMSdiags/articles/index.html" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
+<h4>Case Studies</h4>
+<p>Learn from real-world applications of FIMS using our case studies.</p>
+<a href="https://noaa-fims.github.io/case-studies/" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
 :::
 :::
 
@@ -62,9 +62,9 @@ header-includes: >
 04
 :::
 ::: {.fims-step-content}
-<h4>FIMS Functions Overview</h4>
+<h4>Deep Dive Blog Posts</h4>
 <p>Learn about the different functions available in FIMS and how to use them.</p>
-<a href="https://noaa-fims.github.io/FIMS/reference/index.html" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
+<a href="https://noaa-fims.github.io/blog/#deep-dive" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
 :::
 :::
 
@@ -73,9 +73,9 @@ header-includes: >
 05
 :::
 ::: {.fims-step-content}
-<h4>Transition to FIMS</h4>
-<p>Learn about transitioning to FIMS from other frameworks and how to adapt your workflow.</p>
-<a href="transitioning.qmd" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
+<h4>C++ Documentation</h4>
+<p>Explore the C++ documentation for advanced FIMS development.</p>
+<a href="https://noaa-fims.github.io/FIMS/doxygen/index.html" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
 :::
 :::
 
@@ -88,21 +88,12 @@ header-includes: >
 ::: {.fims-horizontal-scroll}
 
 ::: {.fims-card}
-<a href="https://noaa-fims.github.io/resources/packages.html" class="stretched-link"></a>
+<a href="https://noaa-fims.github.io/FIMSRTMB/" class="stretched-link"></a>
 ::: {.fims-card-icon}
 <i class="bi bi-box-seam"></i>
 :::
-<h4>FIMS R Packages</h4>
-<p>Other useful R packages for FIMS.</p>
-:::
-
-::: {.fims-card}
-<a href="https://noaa-fims.github.io/blog/" class="stretched-link"></a>
-::: {.fims-card-icon}
-<i class="bi bi-layout-text-window"></i>
-:::
-<h4>FIMS Blog</h4>
-<p>Latest FIMS news and updates.</p>
+<h4>FIMSRTMB</h4>
+<p>Explore the RTMB extension for FIMS</p>
 :::
 
 ::: {.fims-card}
