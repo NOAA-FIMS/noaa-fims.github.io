@@ -1,5 +1,5 @@
 ---
-title: "New User Onboarding"
+title: "New User"
 page-layout: full
 header-includes: >
   <link rel="stylesheet" href="../assets/community.css">
@@ -10,10 +10,10 @@ header-includes: >
 ::: {.fims-onboarding-container}
 
 ::: {.fims-pathway-pills}
-[<i class="bi bi-person-plus"></i> New User](#){.fims-pill .is-active}
-[<i class="bi bi-lightning"></i> Power User](#){.fims-pill}
-[<i class="bi bi-code-square"></i> Contributor](#){.fims-pill}
-[<i class="bi bi-file-bar-graph"></i> Decision Maker](#){.fims-pill}
+[<i class="bi bi-person-plus"></i> New User]{new-user.qmd}{.fims-pill .is-active}
+[<i class="bi bi-lightning"></i> Power User](power-user.qmd){.fims-pill}
+[<i class="bi bi-code-square"></i> Contributor](contributor.qmd){.fims-pill}
+[<i class="bi bi-file-bar-graph"></i> Decision Maker](decision-maker.qmd){.fims-pill}
 :::
 
 ::: {.fims-onboarding-header}
@@ -31,7 +31,7 @@ header-includes: >
 ::: {.fims-step-content}
 <h4>Introduce Yourself</h4>
 <p>Join the community and tell us about your research.</p>
-<button class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></button>
+<a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
 :::
 :::
 
@@ -42,7 +42,7 @@ header-includes: >
 ::: {.fims-step-content}
 <h4>Complete the Introductory Vignette</h4>
 <p>Walk through the initial setup and familiarize yourself with the interface.</p>
-<button class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></button>
+<a href="https://noaa-fims.github.io/FIMS/articles/fims-demo.html" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
 :::
 :::
 
@@ -53,7 +53,7 @@ header-includes: >
 ::: {.fims-step-content}
 <h4>Diagnostics</h4>
 <p>Run diagnostic checks to ensure your model is properly configured.</p>
-<button class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></button>
+<a href="https://noaa-fims.github.io/FIMSdiags/articles/index.html" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
 :::
 :::
 
@@ -64,7 +64,7 @@ header-includes: >
 ::: {.fims-step-content}
 <h4>FIMS Functions Overview</h4>
 <p>Learn about the different functions available in FIMS and how to use them.</p>
-<button class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></button>
+<a href="https://noaa-fims.github.io/FIMS/reference/index.html" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
 :::
 :::
 
@@ -75,7 +75,7 @@ header-includes: >
 ::: {.fims-step-content}
 <h4>Transition to FIMS</h4>
 <p>Learn about transitioning to FIMS from other frameworks and how to adapt your workflow.</p>
-<button class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></button>
+<a href="transitioning.qmd" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
 :::
 :::
 
@@ -88,6 +88,7 @@ header-includes: >
 ::: {.fims-horizontal-scroll}
 
 ::: {.fims-card}
+<a href="https://noaa-fims.github.io/resources/packages.html" class="stretched-link"></a>
 ::: {.fims-card-icon}
 <i class="bi bi-box-seam"></i>
 :::
@@ -96,6 +97,7 @@ header-includes: >
 :::
 
 ::: {.fims-card}
+<a href="https://noaa-fims.github.io/blog/" class="stretched-link"></a>
 ::: {.fims-card-icon}
 <i class="bi bi-layout-text-window"></i>
 :::
@@ -104,6 +106,7 @@ header-includes: >
 :::
 
 ::: {.fims-card}
+<a href="https://noaa-fims.github.io/about/calendar.html" class="stretched-link"></a>
 ::: {.fims-card-icon}
 <i class="bi bi-calendar-event"></i>
 :::
