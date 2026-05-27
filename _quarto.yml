@@ -34,9 +34,9 @@ website:
         href: about/index.qmd
       - text: get started
         href: get-started/index.qmd
-      - text: blog
-        aria-label: link to blog
-        href: blog/index.qmd
+      # - text: blog
+      #   aria-label: link to blog
+      #   href: blog/index.qmd
       - text: packages & resources
         aria-label: link to FIMS resources
         menu:

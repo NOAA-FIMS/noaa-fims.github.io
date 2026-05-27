@@ -10,10 +10,10 @@ header-includes: >
 ::: {.fims-onboarding-container}
 
 ::: {.fims-pathway-pills}
-[<i class="bi bi-person-plus"></i> New User]{new-user.qmd}{.fims-pill .is-active}
-[<i class="bi bi-lightning"></i> Power User](power-user.qmd){.fims-pill}
-[<i class="bi bi-code-square"></i> Contributor](contributor.qmd){.fims-pill}
-[<i class="bi bi-file-bar-graph"></i> Decision Maker](decision-maker.qmd){.fims-pill}
+[<i class="bi bi-person-plus"></i> New User](/new-user.qmd){.fims-pill .is-active}
+[<i class="bi bi-lightning"></i> Power User](/power-user.qmd){.fims-pill}
+[<i class="bi bi-code-square"></i> Contributor](/contributor.qmd){.fims-pill}
+[<i class="bi bi-file-bar-graph"></i> Decision Maker](/decision-maker.qmd){.fims-pill}
 :::
 
 ::: {.fims-onboarding-header}
@@ -87,32 +87,42 @@ header-includes: >
 
 ::: {.fims-horizontal-scroll}
 
-::: {.fims-card}
+::: {.fims-card .position-relative}
+
 <a href="https://noaa-fims.github.io/resources/packages.html" class="stretched-link"></a>
+
 ::: {.fims-card-icon}
 <i class="bi bi-box-seam"></i>
 :::
+
 <h4>FIMS R Packages</h4>
 <p>Other useful R packages for FIMS.</p>
+
 :::
 
-::: {.fims-card}
-<a href="https://noaa-fims.github.io/blog/" class="stretched-link"></a>
+::: {.fims-card .position-relative}
+
+<a href="https://noaa-fims.github.io/blog/index.html" class="stretched-link"></a>
+
 ::: {.fims-card-icon}
 <i class="bi bi-layout-text-window"></i>
 :::
+
 <h4>FIMS Blog</h4>
 <p>Latest FIMS news and updates.</p>
+
 :::
 
-::: {.fims-card}
+::: {.fims-card .position-relative}
+
 <a href="https://noaa-fims.github.io/about/calendar.html" class="stretched-link"></a>
+
 ::: {.fims-card-icon}
 <i class="bi bi-calendar-event"></i>
 :::
+
 <h4>FIMS Calendar</h4>
 <p>Upcoming events like Code Clubs, tutorials, etc.</p>
-:::
 
 :::
 
