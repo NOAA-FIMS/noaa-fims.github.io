@@ -87,42 +87,27 @@ header-includes: >
 ::: {.fims-horizontal-scroll}
 
 ::: {.fims-card .position-relative}
-
 <a href="https://noaa-fims.github.io/resources/packages.html" class="stretched-link"></a>
-
-::: {.fims-card-icon}
-<i class="bi bi-box-seam"></i>
+::: {.fims-card-icon .bi .bi-box-seam}
 :::
-
 <h4>FIMS R Packages</h4>
 <p>Other R packages for FIMS.</p>
-
 :::
 
 ::: {.fims-card .position-relative}
-
 <a href="https://noaa-fims.github.io/blog/index.html" class="stretched-link"></a>
-
-::: {.fims-card-icon}
-<i class="bi bi-layout-text-window"></i>
+::: {.fims-card-icon .bi .bi-layout-text-window}
 :::
-
 <h4>FIMS Blog</h4>
 <p>Latest FIMS news and updates.</p>
-
 :::
 
 ::: {.fims-card .position-relative}
-
 <a href="https://noaa-fims.github.io/about/calendar.html" class="stretched-link"></a>
-
-::: {.fims-card-icon}
-<i class="bi bi-calendar-event"></i>
+::: {.fims-card-icon .bi .bi-calendar-event}
 :::
-
 <h4>FIMS Calendar</h4>
 <p>Upcoming events like Code Clubs, tutorials, etc.</p>
-
 :::
 
 :::
