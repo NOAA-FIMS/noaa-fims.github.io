@@ -16,7 +16,7 @@ Select the user pathway that best describes your goals. Click on the button for 
 ::: {.fims-card-icon}
 <i class="bi bi-person-plus"></i>
 :::
-### I am a new(er) user to FIMS
+### I am a new(er) user
 Learn how to create your own model in FIMS using R.
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Introductory vignette
@@ -34,7 +34,7 @@ Learn how to create your own model in FIMS using R.
 <i class="bi bi-lightning"></i>
 :::
 ### I am a power user
-Learn how to use FIMS beyond the R helper functions to configure your models in FIMS.
+Learn how to use FIMS beyond the R helper functions to configure your models.
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Advanced vignettes
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Case studies
@@ -50,8 +50,8 @@ Learn how to use FIMS beyond the R helper functions to configure your models in 
 ::: {.fims-card-icon}
 <i class="bi bi-code-square"></i>
 :::
-### I want to contribute to FIMS
-Learn how to contribute to FIMS, including how to contribute code, documentation, testing, etc.! 
+### I want to contribute
+Learn how to contribute contribute code, documentation, testing, etc. to FIMS! 
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Contributor guidelines
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Good first issues
