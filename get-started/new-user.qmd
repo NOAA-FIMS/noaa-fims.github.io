@@ -95,7 +95,7 @@ header-includes: >
 :::
 
 <h4>FIMS R Packages</h4>
-<p>Other useful R packages for FIMS.</p>
+<p>Other R packages for FIMS.</p>
 
 :::
 
