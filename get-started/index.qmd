@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Get Started
 include-after-body: ../assets/open-in-new-tab.html
 toc: true
 toc-location: right
@@ -7,13 +7,12 @@ toc-depth: 2
 header-includes: >
   <link rel="stylesheet" href="../assets/community.css">
 ---
+<h2>Unsure where to start? Choose your path!</h2>
 
-
-## Unsure where to start? Choose your path!
-Select the user pathway that best describes your goals. Some of the resources for that pathway are listed but click on the button for each pathway to see all of the resources available.
+Select the user pathway that best describes your goals. Click on the button for each pathway to see all of the resources available.
 
 ::: {.fims-card-grid}
-::: {.fims-card}
+::: {.fims-card .position-relative}
 ::: {.fims-card-icon}
 <i class="bi bi-person-plus"></i>
 :::
@@ -26,13 +25,12 @@ Learn how to create your own model in FIMS using R.
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Transitioning to FIMS
 
 ::: {.fims-card-footer}
-[Start New User Path <i class="bi bi-arrow-right"></i>](new-user.qmd){.fims-btn-full}
-<!-- <a href="https://github.com/NOAA-FIMS/FIMS/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22" class="btn btn-dark fims-btn-small">Find First Issue</a> -->
+[Start New User Path <i class="bi bi-arrow-right"></i>](new-user.qmd){.fims-btn-full .stretched-link}
 :::
 
 :::
 
-::: {.fims-card}
+::: {.fims-card .position-relative}
 ::: {.fims-card-icon}
 <i class="bi bi-lightning"></i>
 :::
@@ -45,12 +43,12 @@ Learn how to use FIMS beyond the R helper functions to configure your models in 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> C++ documentation
 
 ::: {.fims-card-footer}
-[Start Power User Path <i class="bi bi-arrow-right"></i>](#){.fims-btn-full}
+[Start Power User Path <i class="bi bi-arrow-right"></i>](power-user.qmd){.fims-btn-full .stretched-link}
 :::
 
 :::
 
-::: {.fims-card}
+::: {.fims-card .position-relative}
 ::: {.fims-card-icon}
 <i class="bi bi-code-square"></i>
 :::
@@ -63,12 +61,12 @@ Learn how to contribute to FIMS, including how to contribute code, documentation
 * <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS project board
 
 ::: {.fims-card-footer}
-[Start Contributor Path <i class="bi bi-arrow-right"></i>](#){.fims-btn-full}
+[Start Contributor Path <i class="bi bi-arrow-right"></i>](contributor.qmd){.fims-btn-full .stretched-link}
 :::
 
 :::
 
-::: {.fims-card}
+::: {.fims-card .position-relative}
 ::: {.fims-card-icon}
 <i class="bi bi-file-bar-graph"></i>
 :::
@@ -81,7 +79,7 @@ Learn how to interpret FIMS outputs and use them to inform decision making.
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Projects & publications
 
 ::: {.fims-card-footer}
-[Start Decision Maker Path <i class="bi bi-arrow-right"></i>](#){.fims-btn-full}
+[Start Decision Maker Path <i class="bi bi-arrow-right"></i>](decision-maker.qmd){.fims-btn-full .stretched-link}
 :::
 
 :::
