@@ -181,7 +181,7 @@
 /* ===== FIMS Cards Grid ===== */
 .fims-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-bottom: 4rem;
 }
@@ -190,7 +190,7 @@
   background: var(--bs-body-bg, #fff);
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   transition: transform 120ms ease, box-shadow 120ms ease;
   display: flex;
@@ -223,7 +223,6 @@
 .fims-card p {
   color: #6c757d;
   font-size: 0.9rem;
-  margin-bottom: 1.5rem;
   line-height: 1.5;
 }
 
