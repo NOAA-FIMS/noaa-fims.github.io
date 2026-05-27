@@ -1,16 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- 1. Interactive Pathway Pills ---
-    const pathwayPills = document.querySelectorAll('.fims-pill');
-    pathwayPills.forEach(pill => {
-        pill.addEventListener('click', (e) => {
-            e.preventDefault(); 
-            pathwayPills.forEach(el => el.classList.remove('is-active'));
-            pill.classList.add('is-active');
-        });
-    });
-
-    // --- 2. Interactive Timeline Logic ---
+    // --- 1. Interactive Timeline Logic ---
     const timelineItems = document.querySelectorAll('.fims-timeline-item');
     if (timelineItems.length > 0 && !document.querySelector('.fims-timeline-item.is-active')) {
         timelineItems[0].classList.add('is-active');
@@ -23,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- 3. Horizontal Scroll Dragging ---
+    // --- 2. Horizontal Scroll Dragging ---
     const scrollContainer = document.querySelector('.fims-horizontal-scroll');
     if (scrollContainer) {
         let isDown = false;

@@ -13,10 +13,9 @@ Select the user pathway that best describes your goals. Click on the button for 
 
 ::: {.fims-card-grid}
 ::: {.fims-card .position-relative}
-::: {.fims-card-icon}
-<i class="bi bi-person-plus"></i>
+::: {.fims-card-icon .bi .bi-person-plus}
 :::
-### I am a new(er) user
+### I am a new user
 Learn how to create your own model in FIMS using R.
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Introductory vignette
@@ -31,10 +30,9 @@ Learn how to create your own model in FIMS using R.
 
 ::: {.fims-card .position-relative}
 ::: {.fims-card-icon .bi .bi-lightning}
-<!-- <i class="bi bi-lightning"></i> -->
 :::
 ### I am a power user
-Learn how to use FIMS beyond the R helper functions to configure your models.
+Learn how to use FIMS beyond the R helper functions.
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Advanced vignettes
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Case studies
@@ -47,8 +45,7 @@ Learn how to use FIMS beyond the R helper functions to configure your models.
 :::
 
 ::: {.fims-card .position-relative}
-::: {.fims-card-icon}
-<i class="bi bi-code-square"></i>
+::: {.fims-card-icon .bi .bi-code-square}
 :::
 ### I want to contribute
 Learn how to contribute contribute code, documentation, testing, etc. to FIMS! 
@@ -64,8 +61,7 @@ Learn how to contribute contribute code, documentation, testing, etc. to FIMS!
 :::
 
 ::: {.fims-card .position-relative}
-::: {.fims-card-icon}
-<i class="bi bi-file-bar-graph"></i>
+::: {.fims-card-icon .bi .bi-file-bar-graph}
 :::
 ### I am a decision maker or manager
 Learn how to interpret FIMS outputs and use them to inform decision making.
