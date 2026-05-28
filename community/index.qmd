@@ -123,24 +123,19 @@ tryCatch({
         if (length(desc_line) > 0) {
             desc_text <- sub("^DESCRIPTION:", "", desc_line[1])
             
-            # 1. Aggressively chop off Google Meet and Zoom boilerplate and EVERYTHING after it
-            desc_text <- sub("\\\\nGoogle Meet joining info.*", "", desc_text)
-            desc_text <- sub("Google Meet joining info.*", "", desc_text)
-            desc_text <- sub("\\\\nVideo call link:.*", "", desc_text)
-            desc_text <- sub("\\\\nJoin Zoom Meeting.*", "", desc_text)
+            # 1. THE FOOLPROOF CHOP: 
+            # Finds HTML breaks/newlines immediately followed by the boilerplate, and deletes ALL of it to the end of the string.
+            desc_text <- sub("(<br>|\\\\n|\\\\N|\\s)*(Join with Google Meet|Google Meet joining info|This event has a video call|Join Zoom Meeting|-::~:~::~:~:~).*$", "", desc_text, ignore.case = TRUE)
             
-            # 2. Chop off Google's weird visual divider (if present)
-            desc_text <- sub("-::~:~::~:~:~.*", "", desc_text)
-            
-            # 3. Convert remaining iCal newlines to HTML breaks
+            # 2. Convert any leftover iCal literal newlines to HTML breaks
             desc_text <- gsub("\\\\n|\\\\N", "<br>", desc_text)
             
-            # 4. Clean up trailing breaks that might be left over from the chop
-            desc_text <- sub("(<br>)+$", "", desc_text)
-            
-            # 5. Fix escaped commas and semicolons
+            # 3. Fix escaped commas and semicolons
             desc_text <- gsub("\\\\,", ",", desc_text)
             desc_text <- gsub("\\\\;", ";", desc_text)
+            
+            # 4. Clean up any leftover breaks or spaces at the absolute end of the newly chopped string
+            desc_text <- gsub("(<br>|\\s)+$", "", desc_text)
             desc_text <- trimws(desc_text)
         }
         
@@ -179,10 +174,10 @@ tryCatch({
     summary_txt <- next_event$summary
     desc_txt <- next_event$description
     
-    # Format description HTML (Now set to 5 lines max)
+    # Format description HTML (Hides completely if empty, clamps at 5 lines)
     desc_html <- ""
     if (nchar(desc_txt) > 0) {
-      desc_html <- paste0('<p class="mb-4 small opacity-75" style="display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">', desc_txt, '</p>')
+      desc_html <- paste0('<div class="mb-4 small opacity-75" style="display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">', desc_txt, '</div>')
     } else {
       desc_html <- '<div class="mb-4"></div>' 
     }
