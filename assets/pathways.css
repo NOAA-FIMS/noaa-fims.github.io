@@ -56,50 +56,60 @@
 }
 
 /* --- Timeline Logic (Extending .fims-step from community.css) --- */
-/* --- Curved Map Path Logic --- */
+/* --- Winding S-Curve Map Logic --- */
 .fims-timeline { 
   display: flex; 
   flex-direction: column; 
   gap: 1.5rem; 
-  position: relative; /* Anchors the dashed curve */
+  position: relative; 
 }
 
-/* 1. Draw the dashed C-Curve behind the items */
-.fims-timeline::before {
-  content: '';
-  position: absolute;
-  top: 36px;       /* Starts exactly at the center of the first pin */
-  bottom: 36px;    /* Ends exactly at the center of the last pin */
-  left: 24px;      /* Centers on the pins (Assuming 48px width) */
-  width: 120px;    /* How far the path bows out to the right */
-  border: 3px dashed var(--slate-60);
-  border-left: none; /* Hide the flat left side */
-  border-radius: 0 100% 100% 0 / 0 50% 50% 0; /* Mathematical magic for a perfect semi-ellipse */
-  z-index: 0;
-  opacity: 0.5;
-}
-
-/* 2. Stagger the timeline items to follow the curve */
 .fims-timeline-item { 
   position: relative; 
   cursor: pointer; 
-  opacity: 0.6; 
   transition: all 0.3s ease; 
+  /* Prevents shifted items from breaking the page width */
+  max-width: calc(100% - 60px); 
 }
 
-/* Leave Step 1 and Step 5 at the starting line (0px) */
-/* Push Step 2 and Step 4 out slightly to follow the curve */
-.fims-timeline-item:nth-child(2),
-.fims-timeline-item:nth-child(4) {
-  transform: translateX(95px); 
+/* 1. Weave back and forth: Shift every Even item 60px to the right */
+.fims-timeline-item:nth-child(even) {
+  transform: translateX(60px); 
 }
 
-/* Push Step 3 all the way to the peak of the curve */
-.fims-timeline-item:nth-child(3) {
-  transform: translateX(120px); 
+/* --- Dynamic SVG S-Curves --- */
+
+/* Path 1: Odd to Even (Curves Left to Right) */
+.fims-timeline-item:nth-child(odd):not(.is-last)::after {
+  content: '';
+  position: absolute;
+  top: 48px; /* Starts exactly at the bottom of your 48px step-number circle */
+  left: 22px; /* Centered exactly under the icon */
+  width: 60px; /* Bridges the exact 60px gap to the shifted item */
+  height: calc(100% + 1.5rem - 48px); /* Dynamically stretches to the top of the next item */
+  
+  /* Draws the right-facing S-curve */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M 2,0 C 2,50 98,50 98,100' fill='none' stroke='%2399a6ac' stroke-width='4' stroke-dasharray='8,8'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  z-index: -1;
+  opacity: 0.5;
 }
 
-.fims-timeline-item:hover { opacity: 1; }
+/* Path 2: Even to Odd (Curves Right to Left) */
+.fims-timeline-item:nth-child(even):not(.is-last)::after {
+  content: '';
+  position: absolute;
+  top: 48px;
+  left: -38px; /* Reaches exactly 60px backwards to the left-aligned item */
+  width: 60px;
+  height: calc(100% + 1.5rem - 48px);
+  
+  /* Draws the left-facing S-curve */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M 98,0 C 98,50 2,50 2,100' fill='none' stroke='%2399a6ac' stroke-width='4' stroke-dasharray='8,8'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
 
 /* Hide task button by default */
 .fims-timeline-item .fims-task-btn { 
@@ -107,13 +117,6 @@
   margin-top: 0.5rem; 
 }
 
-/* --- Map Pin Icon Styling --- */
-.fims-timeline-item .fims-step-number i {
-  font-size: 1.2rem;
-}
-
-/* --- Active State Overrides --- */
-.fims-timeline-item.is-active { opacity: 1; }
 .fims-timeline-item.is-active .fims-step-number { 
   background-color: var(--bs-primary);
   color: white;
