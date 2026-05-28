@@ -69,7 +69,7 @@ Loading recent activity...
 #| warning: false
 
 if(!requireNamespace("glue", quietly = TRUE)) {
-  install.packages("glue", repos = "[https://cloud.r-project.org](https://cloud.r-project.org)")
+  install.packages("glue", repos = "https://cloud.r-project.org")
 }
 library(glue)
 
@@ -112,10 +112,20 @@ tryCatch({
       ev_lines <- lines[event_starts[i]:event_ends[i]]
       summary_line <- ev_lines[grep("^SUMMARY:", ev_lines)]
       dtstart_line <- ev_lines[grep("^DTSTART([;:])", ev_lines)]
+      desc_line    <- ev_lines[grep("^DESCRIPTION:", ev_lines)] # Find the description
       
       if (length(summary_line) > 0 && length(dtstart_line) > 0) {
-        summary_text <- sub("^SUMMARY:", "", summary_line)
-        raw_time <- sub("^DTSTART.*:", "", dtstart_line)
+        summary_text <- sub("^SUMMARY:", "", summary_line[1])
+        raw_time <- sub("^DTSTART.*:", "", dtstart_line[1])
+        
+        # Clean up the description (convert iCal newlines to HTML breaks, fix commas)
+        desc_text <- ""
+        if (length(desc_line) > 0) {
+            desc_text <- sub("^DESCRIPTION:", "", desc_line[1])
+            desc_text <- gsub("\\\\n|\\\\N", "<br>", desc_text)
+            desc_text <- gsub("\\\\,", ",", desc_text)
+            desc_text <- gsub("\\\\;", ";", desc_text)
+        }
         
         clean_time <- tryCatch({
           if (grepl("Z$", raw_time)) {
@@ -130,7 +140,8 @@ tryCatch({
         if (!is.null(clean_time)) {
           events_list[[length(events_list) + 1]] <- list(
             summary = summary_text,
-            start = clean_time
+            start = clean_time,
+            description = desc_text
           )
         }
       }
@@ -149,13 +160,23 @@ tryCatch({
     date_est  <- format(next_event$start, "%B %d, %Y", tz="America/New_York")
     time_est  <- format(next_event$start, "%H:%M %Z", tz="America/New_York")
     summary_txt <- next_event$summary
+    desc_txt <- next_event$description
+    
+    # Format description HTML (uses CSS line-clamp to prevent massive descriptions from breaking the card)
+    desc_html <- ""
+    if (nchar(desc_txt) > 0) {
+      desc_html <- paste0('<p class="mb-4 small opacity-75" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">', desc_txt, '</p>')
+    } else {
+      desc_html <- '<div class="mb-4"></div>' # Keeps spacing consistent if there is no description
+    }
     
     html_output <- paste0(
       '<div class="fims-pulse-side-col">',
         '<div class="fims-meeting-card">',
           '<div class="fims-meeting-content">',
             '<h3 class="no-anchor">Next Meeting</h3>',
-            '<p class="mb-4 opacity-75">', summary_txt, '</p>',
+            '<p class="mb-1 fw-bold">', summary_txt, '</p>',
+            desc_html,
             '<div class="fims-meeting-datetime">',
               '<div class="fims-meeting-row">',
                 '<i class="bi bi-calendar-event-fill fims-icon-danger"></i> <strong>', date_est, '</strong>',
@@ -165,30 +186,8 @@ tryCatch({
               '</div>',
             '</div>',
           '</div>',
-          '<a href="[https://calendar.google.com/calendar/u/0?cid=Y182ZWx1djFoOG84MzBrN3Z0OGN0Y3M2Z2h0b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t](https://calendar.google.com/calendar/u/0?cid=Y182ZWx1djFoOG84MzBrN3Z0OGN0Y3M2Z2h0b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)" target="_blank" class="btn btn-light fims-btn-full">Add to calendar</a>',
+          '<a href="https://calendar.google.com/calendar/u/0?cid=Y182ZWx1djFoOG84MzBrN3Z0OGN0Y3M2Z2h0b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank" class="btn btn-light fims-btn-full">Add to calendar</a>',
         '</div>',
-      '</div>'
-    )
-    cat(html_output)
-    
-  } else {
-    stop("No future events found")
-  }
-  
-}, error = function(e) {
-  # Universal fallback card if no meetings match or network drops out
-  fallback_output <- paste0(
-    '<div class="fims-pulse-side-col">',
-      '<div class="fims-meeting-card">',
-        '<div class="fims-meeting-content">',
-          '<h3 class="no-anchor">Next Meeting</h3>',
-          '<p class="mb-4 opacity-75">No upcoming meetings scheduled.</p>',
-        '</div>',
-      '</div>',
-    '</div>'
-  )
-  cat(fallback_output)
-})
 ```
 
 :::

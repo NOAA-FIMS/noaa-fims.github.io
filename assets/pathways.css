@@ -56,49 +56,81 @@
 }
 
 /* --- Timeline Logic (Extending .fims-step from community.css) --- */
+/* --- Curved Map Path Logic --- */
 .fims-timeline { 
-    display: flex; 
-    flex-direction: column; 
-    gap: 1.5rem; }
-.fims-timeline-item { 
-    position: relative; 
-    cursor: pointer; 
-    opacity: 0.6; 
-    transition: opacity 0.2s ease; 
-}
-.fims-timeline-item:hover { 
-    opacity: 1; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1.5rem; 
+  position: relative; /* Anchors the dashed curve */
 }
 
-/* The connecting vertical line */
-.fims-timeline-item:not(.is-last)::after { 
-  content: ''; 
-  position: absolute; 
-  top: 48px; 
-  left: 23px; /* Centered under the 48px step-number from community.css */
-  width: 2px; 
-  height: calc(100% - 16px); 
-  background-color: var(--slate-80); 
-  z-index: 0; 
+/* 1. Draw the dashed C-Curve behind the items */
+.fims-timeline::before {
+  content: '';
+  position: absolute;
+  top: 36px;       /* Starts exactly at the center of the first pin */
+  bottom: 36px;    /* Ends exactly at the center of the last pin */
+  left: 24px;      /* Centers on the pins (Assuming 48px width) */
+  width: 120px;    /* How far the path bows out to the right */
+  border: 3px dashed var(--slate-60);
+  border-left: none; /* Hide the flat left side */
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0; /* Mathematical magic for a perfect semi-ellipse */
+  z-index: 0;
+  opacity: 0.5;
 }
+
+/* 2. Stagger the timeline items to follow the curve */
+.fims-timeline-item { 
+  position: relative; 
+  cursor: pointer; 
+  opacity: 0.6; 
+  transition: all 0.3s ease; 
+}
+
+/* Leave Step 1 and Step 5 at the starting line (0px) */
+/* Push Step 2 and Step 4 out slightly to follow the curve */
+.fims-timeline-item:nth-child(2),
+.fims-timeline-item:nth-child(4) {
+  transform: translateX(95px); 
+}
+
+/* Push Step 3 all the way to the peak of the curve */
+.fims-timeline-item:nth-child(3) {
+  transform: translateX(120px); 
+}
+
+.fims-timeline-item:hover { opacity: 1; }
 
 /* Hide task button by default */
 .fims-timeline-item .fims-task-btn { 
   display: none; 
   margin-top: 0.5rem; 
-  background-color: var(--bs-primary); 
-  color: white; 
-  border: none; 
-  border-radius: 0.25rem; 
 }
 
-/* Active State Overrides */
-.fims-timeline-item.is-active { opacity: 1; }
-.fims-timeline-item.is-active .fims-step-number { box-shadow: 0 0 0 4px rgba(14, 104, 118, 0.2); }
-.fims-timeline-item.is-active .fims-step-content { 
-  background-color: rgba(14, 104, 118, 0.05); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--bs-primary); 
+/* --- Map Pin Icon Styling --- */
+.fims-timeline-item .fims-step-number i {
+  font-size: 1.2rem;
 }
-.fims-timeline-item.is-active .fims-task-btn { display: inline-flex; align-items: center; gap: 0.4rem; }
+
+/* --- Active State Overrides --- */
+.fims-timeline-item.is-active { opacity: 1; }
+.fims-timeline-item.is-active .fims-step-number { 
+  background-color: var(--bs-primary);
+  color: white;
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 6px rgba(14, 104, 118, 0.15); 
+}
+.fims-timeline-item.is-active .fims-step-content { 
+  background-color: rgba(14, 104, 118, 0.05); 
+  padding: 1rem; 
+  border-radius: 0.5rem; 
+  border: 1px solid var(--bs-primary); 
+}
+.fims-timeline-item.is-active .fims-task-btn { 
+  display: inline-flex; 
+  align-items: center; 
+  gap: 0.4rem; 
+}
 
 /* --- Horizontal Scroll (Extending .fims-card from community.css) --- */
 .fims-horizontal-scroll { 
