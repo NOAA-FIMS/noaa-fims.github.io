@@ -134,7 +134,97 @@ tryCatch({
             desc_text <- sub("<br>Join with Google Meet.*", "", desc_text)
             desc_text <- sub("<br>Join Zoom Meeting.*", "", desc_text)
             
-            # 4. Clean up any lingering trailing breaks from
+            # 4. Clean up any lingering trailing breaks from chopping off the links
+            desc_text <- sub("(<br>)+$", "", desc_text)
+            
+            # 5. Fix escaped commas and semicolons
+            desc_text <- gsub("\\\\,", ",", desc_text)
+            desc_text <- gsub("\\\\;", ";", desc_text)
+            desc_text <- trimws(desc_text)
+        }
+        
+        clean_time <- tryCatch({
+          if (grepl("Z$", raw_time)) {
+            t <- as.POSIXct(raw_time, format="%Y%m%dT%H%M%SZ", tz="UTC")
+            attr(t, "tzone") <- "America/New_York"
+            t
+          } else {
+            as.POSIXct(sub("T.*", "", raw_time), format="%Y%m%d", tz="America/New_York")
+          }
+        }, error = function(e) NULL)
+        
+        if (!is.null(clean_time)) {
+          events_list[[length(events_list) + 1]] <- list(
+            summary = summary_text,
+            start = clean_time,
+            description = desc_text
+          )
+        }
+      }
+    }
+  }
+  
+  current_str <- format(Sys.time(), tz="America/New_York", usetz=FALSE)
+  current_time_est <- as.POSIXct(current_str, tz="America/New_York")
+  
+  future_events <- Filter(function(x) x$start >= current_time_est, events_list)
+  
+  if (length(future_events) > 0) {
+    future_events <- future_events[order(sapply(future_events, function(x) x$start))]
+    next_event <- future_events[[1]]
+    
+    date_est  <- format(next_event$start, "%B %d, %Y", tz="America/New_York")
+    time_est  <- format(next_event$start, "%H:%M %Z", tz="America/New_York")
+    summary_txt <- next_event$summary
+    desc_txt <- next_event$description
+    
+    # Format description HTML (Now set to 5 lines max)
+    desc_html <- ""
+    if (nchar(desc_txt) > 0) {
+      desc_html <- paste0('<p class="mb-4 small opacity-75" style="display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">', desc_txt, '</p>')
+    } else {
+      desc_html <- '<div class="mb-4"></div>' 
+    }
+    
+    html_output <- paste0(
+      '<div class="fims-pulse-side-col">',
+        '<div class="fims-meeting-card">',
+          '<div class="fims-meeting-content">',
+            '<h3 class="no-anchor">Next Meeting</h3>',
+            '<p class="mb-1 fw-bold">', summary_txt, '</p>',
+            desc_html,
+            '<div class="fims-meeting-datetime">',
+              '<div class="fims-meeting-row">',
+                '<i class="bi bi-calendar-event-fill fims-icon-danger"></i> <strong>', date_est, '</strong>',
+              '</div>',
+              '<div class="fims-meeting-row">',
+                '<i class="bi bi-clock-fill fims-icon-danger"></i> <strong>', time_est, '</strong>',
+              '</div>',
+            '</div>',
+          '</div>',
+          '<a href="https://calendar.google.com/calendar/u/0?cid=Y182ZWx1djFoOG84MzBrN3Z0OGN0Y3M2Z2h0b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank" class="btn btn-light fims-btn-full">Add to calendar</a>',
+        '</div>',
+      '</div>'
+    )
+    cat(html_output)
+    
+  } else {
+    stop("No future events found")
+  }
+  
+}, error = function(e) {
+  fallback_output <- paste0(
+    '<div class="fims-pulse-side-col">',
+      '<div class="fims-meeting-card">',
+        '<div class="fims-meeting-content">',
+          '<h3 class="no-anchor">Next Meeting</h3>',
+          '<p class="mb-4 opacity-75">No upcoming meetings scheduled.</p>',
+        '</div>',
+      '</div>',
+    '</div>'
+  )
+  cat(fallback_output)
+})
 ```
 
 :::
