@@ -25,59 +25,57 @@ header-includes: >
 
 ::: {.fims-step .fims-timeline-item}
 ::: {.fims-step-number}
-01
+<i class="bi bi-geo-alt-fill"></i>
 :::
 ::: {.fims-step-content}
 <h4>Introduce Yourself</h4>
 <p>Join the community and tell us about your research.</p>
-<a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
+[Start <i class="bi bi-arrow-right"></i>](https://github.com/orgs/NOAA-FIMS/discussions/801){.fims-btn-small .fims-task-btn target="_blank"}
 :::
 :::
 
 ::: {.fims-step .fims-timeline-item}
 ::: {.fims-step-number}
-02
+<i class="bi bi-geo-alt-fill"></i>
 :::
 ::: {.fims-step-content}
 <h4>Complete the Introductory Vignette</h4>
 <p>Walk through the initial setup and familiarize yourself with the interface.</p>
-<a href="https://noaa-fims.github.io/FIMS/articles/fims-demo.html" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
+[Start <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMS/articles/fims-demo.html){.fims-btn-small .fims-task-btn target="_blank"}
 :::
 :::
 
 ::: {.fims-step .fims-timeline-item}
 ::: {.fims-step-number}
-03
+<i class="bi bi-geo-alt-fill"></i>
 :::
 ::: {.fims-step-content}
 <h4>Diagnostics</h4>
 <p>Run diagnostic checks to ensure your model is properly configured.</p>
-<a href="https://noaa-fims.github.io/FIMSdiags/articles/index.html" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
+[Start <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMSdiags/articles/index.html){.fims-btn-small .fims-task-btn target="_blank"}
 :::
 :::
 
 ::: {.fims-step .fims-timeline-item}
 ::: {.fims-step-number}
-04
+<i class="bi bi-geo-alt-fill"></i>
 :::
 ::: {.fims-step-content}
 <h4>FIMS Functions Overview</h4>
 <p>Learn about the different functions available in FIMS and how to use them.</p>
-<a href="https://noaa-fims.github.io/FIMS/reference/index.html" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
+[Start <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMS/reference/index.html){.fims-btn-small .fims-task-btn target="_blank"}
 :::
 :::
 
 ::: {.fims-step .fims-timeline-item .is-last}
 ::: {.fims-step-number}
-05
+<i class="bi bi-geo-alt-fill"></i>
 :::
 ::: {.fims-step-content}
 <h4>Transition to FIMS</h4>
 <p>Learn about transitioning to FIMS from other frameworks and how to adapt your workflow.</p>
-<a href="transitioning.qmd" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
+[Start <i class="bi bi-arrow-right"></i>](https://e-perl-noaa.github.io/noaa-fims.github.io/get-started/transitioning.html){.fims-btn-small .fims-task-btn target="_blank"}
 :::
-:::
-
 :::
 
 ::: {.fims-kb-header}
@@ -87,25 +85,34 @@ header-includes: >
 ::: {.fims-horizontal-scroll}
 
 ::: {.fims-card .position-relative}
+
 <a href="https://noaa-fims.github.io/resources/packages.html" class="stretched-link"></a>
+
 ::: {.fims-card-icon .bi .bi-box-seam}
 :::
+
 <h4>FIMS R Packages</h4>
 <p>Other R packages for FIMS.</p>
 :::
 
 ::: {.fims-card .position-relative}
+
 <a href="https://noaa-fims.github.io/blog/index.html" class="stretched-link"></a>
+
 ::: {.fims-card-icon .bi .bi-layout-text-window}
 :::
+
 <h4>FIMS Blog</h4>
 <p>Latest FIMS news and updates.</p>
 :::
 
 ::: {.fims-card .position-relative}
+
 <a href="https://noaa-fims.github.io/about/calendar.html" class="stretched-link"></a>
+
 ::: {.fims-card-icon .bi .bi-calendar-event}
 :::
+
 <h4>FIMS Calendar</h4>
 <p>Upcoming events like Code Clubs, tutorials, etc.</p>
 :::
