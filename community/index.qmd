@@ -123,18 +123,19 @@ tryCatch({
         if (length(desc_line) > 0) {
             desc_text <- sub("^DESCRIPTION:", "", desc_line[1])
             
-            # 1. Chop off Google's weird visual divider and everything after it
+            # 1. Aggressively chop off Google Meet and Zoom boilerplate and EVERYTHING after it
+            desc_text <- sub("\\\\nGoogle Meet joining info.*", "", desc_text)
+            desc_text <- sub("Google Meet joining info.*", "", desc_text)
+            desc_text <- sub("\\\\nVideo call link:.*", "", desc_text)
+            desc_text <- sub("\\\\nJoin Zoom Meeting.*", "", desc_text)
+            
+            # 2. Chop off Google's weird visual divider (if present)
             desc_text <- sub("-::~:~::~:~:~.*", "", desc_text)
             
-            # 2. Convert iCal newlines to HTML breaks
+            # 3. Convert remaining iCal newlines to HTML breaks
             desc_text <- gsub("\\\\n|\\\\N", "<br>", desc_text)
             
-            # 3. Chop off standard meeting link text (just in case the divider was missing)
-            desc_text <- sub("<br>This event has a video call.*", "", desc_text)
-            desc_text <- sub("<br>Join with Google Meet.*", "", desc_text)
-            desc_text <- sub("<br>Join Zoom Meeting.*", "", desc_text)
-            
-            # 4. Clean up any lingering trailing breaks from chopping off the links
+            # 4. Clean up trailing breaks that might be left over from the chop
             desc_text <- sub("(<br>)+$", "", desc_text)
             
             # 5. Fix escaped commas and semicolons
