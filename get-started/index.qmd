@@ -11,6 +11,7 @@ header-includes: >
 
 Select the user pathway that best describes your goals. Click on the button for each pathway to see all of the resources available.
 
+::: {.fims-horizontal-scroll}
 ::: {.fims-card-grid}
 ::: {.fims-card .position-relative}
 ::: {.fims-card-icon .bi .bi-person-plus}
@@ -74,5 +75,6 @@ Learn how to interpret FIMS outputs and use them to inform decision making.
 [Start Decision Maker Path <i class="bi bi-arrow-right"></i>](decision-maker.qmd){.fims-btn-full .stretched-link}
 :::
 
+:::
 :::
 :::

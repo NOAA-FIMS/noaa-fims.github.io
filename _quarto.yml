@@ -37,6 +37,11 @@ website:
       # - text: blog
       #   aria-label: link to blog
       #   href: blog/index.qmd
+      - text: community
+        href: community/index.qmd
+          # - text: projects
+          #   aria-label: link to FIMS projects
+          #   href: resources/projects.qmd
       - text: packages & resources
         aria-label: link to FIMS resources
         menu:
@@ -52,20 +57,6 @@ website:
           - text: development resources
             aria-label: link to development resources
             href: resources/resources.qmd
-      - text: community
-        href: community/index.qmd
-          # - text: projects
-          #   aria-label: link to FIMS projects
-          #   href: resources/projects.qmd
-      - text: contact
-        aria-label: link to contacts
-        menu:
-          - text: contact FIMS lead
-            aria-label: link to FIMS lead contact info
-            href: contact/index.qmd
-          - text: FIMS team
-            aria-label: link to list of contributors
-            href: contact/contributors.qmd
       - icon: github
         aria-label: github icon
         href: https://github.com/NOAA-FIMS
@@ -103,11 +94,15 @@ website:
       collapse-level: 2
       align: left
       contents:
-        - get-started/index.qmd
+        - text: "Get Started"
+          href: get-started/index.qmd
+          icon: rocket
         - text: "Documentation"
           href: get-started/documentation.qmd
+          icon: book
         - text: "Tutorials"
           href: get-started/tutorials.qmd
+          icon: mortarboard
     - id: community
       title: "Community"
       style: "floating"

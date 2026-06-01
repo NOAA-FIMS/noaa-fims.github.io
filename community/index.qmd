@@ -343,43 +343,16 @@ Pick a 'Good First Issue' on GitHub and submit your first pull request for peer 
 ::: {.row .g-3}
 ::: {.col-6 .col-md-3}
 ::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative .bg-dark}
-<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-cover w-100 h-100 opacity-75" alt="People collaborating">
-<div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
-<span class="text-white fw-bold small text-uppercase d-block">Workshop 2024</span>
-<span class="text-white-50 small">Seattle, WA</span>
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-cover w-80 h-60 opacity-75" alt="People collaborating">
+<div class="position-absolute bottom-0 start-0 w-80 p-3 bg-gradient-dark">
+<span class="text-white fw-bold small text-uppercase d-block">Fisheries & Oceans Canada Training</span>
+<span class="text-white-50 small">Nanaimo, BC</span>
+<span class="text-white-50 small">October 5-8, 2026</span>
+<span class="text-white-50 small">Private training</span>
 </div>
 :::
 :::
 
-::: {.col-6 .col-md-3}
-::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative .bg-dark}
-<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuALEHjcCGq51fSb8UAdC-qxiQh6gn9AbWbIUe8y1ruwIMktcX5s9vu8w4BhG1PuJrdXf6AsYV8y8dWeuf3BOGzCyVXvQY4UHUsFJq25lydz-VvnO7_oGWVgFWynLsf148U5OSVerFsNyxAyTHJRpCAtOO4dIJqOLrgvw-q_46p1tPYREwt8XVOS7wPqV9JCNEFlD_Kg4BAE3knBs96-8Wpc00VZHQUrd2hB5OpjMIhTo-ZoDs1M07oFB0np_Ii9tSe4ivUdccdTzMI" class="object-fit-cover w-100 h-100 opacity-75" alt="Scientific modeling">
-<div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
-<span class="text-white fw-bold small text-uppercase d-block">Peer Review session</span>
-<span class="text-white-50 small">Virtual Session</span>
-</div>
-:::
-:::
-
-::: {.col-6 .col-md-3}
-::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative .bg-dark}
-<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFdml_MmTTcYxa_dCiaXNonHUM88jR1gXLmNGVuU0MENoYKMx7jekOboZbVVd48IjuboTyyA4-OxDmk-BLMkr5zlJoBOffdjEUljrV2PV1DrwbVH67t8eurElXvvUFc0G--edXGQmgb5D9gWdRKO9Sx4pcPU-8Cfh93kuRJ82bNrGbKgS3PpVnEaBTArfGyej7pnBpOGN0VeINug2V544H7CmUeHiBxrJOiF8ANSl5MakM0K8pJ1_pWpCV0Rq-VGkjHmLkk9hie8o" class="object-fit-cover w-100 h-100 opacity-75" alt="Collaborative coding">
-<div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
-<span class="text-white fw-bold small text-uppercase d-block">New Contributor Day</span>
-<span class="text-white-50 small">Online Event</span>
-</div>
-:::
-:::
-
-::: {.col-6 .col-md-3}
-::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative .bg-dark}
-<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMwOSUSHsoDhRuW0rfVi98D25UysfVmG1WcFwD2YNxJGvjBLEc7Lc3E39U59xG6GuP-pLBZfFiT4j-qs2rcs5asm4ZHgkj34Eq1y72Uv4Fuk464sSSVCaQC-3XXjovwjGrlxq5LvJhhQHaLYfmEtuVzHHpjh8j6Ozsi3ia47ah6OxCFtmfCIhbwUjFan_4-SwA0mz9N_X77aqbvxK0-02QUZ4S6M7Mi_w2vOBILQ9DjucO3LYkWM9y2aEnPQRPxeKUNSIRVG6LQUo" class="object-fit-cover w-100 h-100 opacity-75" alt="Office collaboration">
-<div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
-<span class="text-white fw-bold small text-uppercase d-block">Governance Meeting</span>
-<span class="text-white-50 small">Washington, DC</span>
-</div>
-:::
-:::
 :::
 :::
 
