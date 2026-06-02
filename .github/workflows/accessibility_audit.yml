@@ -38,6 +38,8 @@ jobs:
       - name: Run Accessibility Audit
         continue-on-error: true
         id: a11y_audit
+        env:
+            PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "false"
         run: |
             # Install serve, pa11y-ci, and the HTML reporter
             npm install -g serve wait-on pa11y-ci pa11y-ci-reporter-html
@@ -54,16 +56,18 @@ jobs:
             # Create pa11y config with Puppeteer sandbox disabled
             cat > .pa11yci.json << 'EOF'
             {
-            "runners": [
+                "runners": [
                 "axe",
                 "htmlcs"
-            ],
-            "chromeLaunchConfig": {
+                ],
+                "chromeLaunchConfig": {
                 "args": [
-                "--no-sandbox",
-                "--disable-setuid-sandbox"
-                ]
-            }
+                    "--no-sandbox",
+                    "--disable-setuid-sandbox",
+                    "--disable-gpu"
+                ],
+                "ignoreHTTPSErrors": true
+                }
             }
             EOF
             
