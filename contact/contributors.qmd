@@ -30,7 +30,25 @@ The Lead of Workflows and Integration is responsible for designing and driving w
 
 ### Regional Representatives
 
-Regional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations. If you would like to become a Regional Representative, please contact the Project Lead. We particularly encourage state, university, and international partners to consider this role. 
+Regional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations. If you would like to become a Regional Representative, please contact the Project Lead. We also encourage state, university, and international partners to consider this role. 
+
+#### Southeast Fisheries Science Center
+The Southeast Fisheries Science Center provides support for transitioning from the Beaufort Assessment Model (BAM) to FIMS. [Erik Williams](https://github.com/erikhwilliams) will serve as the liaison to the BAM model and its transition to FIMS. Additional SEFSC representatives include [Nikolai Klibansky](https://github.com/Nikolai-Klibansky) and [Matt Vincent](https://github.com/mtvincent-NOAA).
+
+#### Northeast Fisheries Science Center
+The Northeast Fisheries Science Center contributes expertise from the Woods Hole Assessment Model (WHAM) whose key features include spatial dynamics, random effects, and environmental covariates on catch-at-age models with multiple abundance indices. The current representatives are [Emily Liljestrand](https://github.com/emilyliljestrand) and [Tim Miller](https://github.com/timjmiller).
+
+#### Northwest Fisheries Science Center
+The Northwest Fisheries Science Center Representatives are contributing expertise with Stock Synthesis and modeling growth as well as helping develop tools to generate priors for models, explore model results, and run model diagnostics. The current representatives are [Ian Taylor](https://github.com/iantaylor-NOAA) and [Eric Ward](https://github.com/ericward-noaa).
+
+#### Southwest Fisheries Science Center
+The Southwest Fisheries Science Center provides expertise with Stock Synthesis (SS3) and modeling time-varying model processes including growth and selectivity. Additionally, these representatives are implementing more flexible specifications for age-based selectivity. The current representatives are [Alex Jensen](https://github.com/alexjensen-NOAA) and [Peter Kuriyama](https://github.com/peterkuriyama-NOAA).
+
+#### Alaska Fisheries Science Center
+
+#### Pacific Islands Fisheries Science Center
+
+
 
 ## Authorship
 
