@@ -39,53 +39,59 @@ jobs:
         continue-on-error: true
         id: a11y_audit
         env:
-            PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "false"
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "false"
         run: |
-            # Install serve, pa11y-ci, and the HTML reporter
-            npm install -g serve wait-on pa11y-ci pa11y-ci-reporter-html
-            
-            # Serve the site locally
-            serve -p 3000 _site &
-            wait-on http://localhost:3000
-            
-            # Generate URLs for all generated HTML files
-            find _site -name "*.html" | sed 's|^_site/|http://localhost:3000/|' > local-urls.txt
-            
-            mkdir -p a11y-reports
-            
-            # Create pa11y config with Puppeteer sandbox disabled
-            cat > .pa11yci.json << 'EOF'
-            {
-                "runners": [
+          # Install serve, pa11y-ci, and the HTML reporter
+          npm install -g serve wait-on pa11y-ci pa11y-ci-reporter-html
+          
+          # Serve the site locally
+          serve -p 3000 _site &
+          wait-on http://localhost:3000
+          
+          # Generate URLs for all generated HTML files
+          find _site -name "*.html" | sed 's|^_site/|http://localhost:3000/|' > local-urls.txt
+          
+          # Create pa11y config (Notice everything is nested inside "defaults")
+          cat > .pa11yci.json << 'EOF'
+          {
+            "defaults": {
+              "runners": [
                 "axe",
                 "htmlcs"
-                ],
-                "chromeLaunchConfig": {
+              ],
+              "reporters": [
+                "cli",
+                ["pa11y-ci-reporter-html", {
+                  "destination": "./a11y-reports",
+                  "includeZeroIssues": true
+                }]
+              ],
+              "chromeLaunchConfig": {
                 "args": [
-                    "--no-sandbox",
-                    "--disable-setuid-sandbox",
-                    "--disable-gpu"
+                  "--no-sandbox",
+                  "--disable-setuid-sandbox",
+                  "--disable-gpu"
                 ],
                 "ignoreHTTPSErrors": true
-                }
+              }
             }
-            EOF
-            
-            # Run Pa11y using the HTML reporter and save it to a file
-            PA11Y_CI_REPORTER=html pa11y-ci --config .pa11yci.json $(cat local-urls.txt) > a11y-reports/accessibility-report.html
-            
-            # Run again strictly to capture the exit code for GitHub Actions Pass/Fail status
-            pa11y-ci --config .pa11yci.json $(cat local-urls.txt)
+          }
+          EOF
+          
+          # Run Pa11y. This single command prints to the Actions console AND generates the HTML folder.
+          pa11y-ci --config .pa11yci.json $(cat local-urls.txt)
 
       - name: Upload Accessibility Report
         uses: actions/upload-artifact@v4
         with:
           name: Accessibility-HTML-Report
-          path: a11y-reports/accessibility-report.html
+          # Upload the ENTIRE folder, not just a single file
+          path: a11y-reports/
           retention-days: 14
 
       - name: Fail workflow if audit failed
         if: steps.a11y_audit.outcome == 'failure'
         run: |
-          echo "Accessibility violations found. Please download the 'Accessibility-HTML-Report' artifact from the Actions tab for details."
+          echo "Accessibility violations found. Please download the 'Accessibility-HTML-Report' artifact, extract the ZIP, and open 'index.html' in your web browser for a detailed breakdown."
           exit 1
+          
