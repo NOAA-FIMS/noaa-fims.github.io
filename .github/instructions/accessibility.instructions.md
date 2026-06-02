@@ -1,5 +1,5 @@
 ---
-applyTo: **/*.qmd, **/*.scss, **/*.css, **/*.js, _quarto.yml
+applyTo: "**/*.qmd, **/*.scss, **/*.css, **/*.js, _quarto.yml"
 ---
 
 When generating or reviewing code or content for this Quarto project, ensure accessibility compliance by following these priorities, remembering that the workflow of this repository is to render and publish from `main` to the `gh-pages` branch:
