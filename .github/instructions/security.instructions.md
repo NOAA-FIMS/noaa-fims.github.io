@@ -1,5 +1,5 @@
 ---
-applyTo: **/*.js, **/*.qmd, **/*.html, .github/workflows/*.yml
+applyTo: "**/*.js, **/*.qmd, **/*.html, .github/workflows/*.yml"
 ---
 
 When generating code, reviewing pull requests, or analyzing this repository, you must strictly enforce the following security standards to prevent vulnerabilities in our Quarto-generated site and CI/CD pipelines.
