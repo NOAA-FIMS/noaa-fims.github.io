@@ -19,3 +19,6 @@ https://www.doxygen.org/index.html
 
 # Ignore links to forms in google docs
 https://docs.google.com/forms/*
+
+# Ignore this C++ resources link, it works, it just keeps giving 403 error
+https://www.positioniseverything.net/category/coding/c/
