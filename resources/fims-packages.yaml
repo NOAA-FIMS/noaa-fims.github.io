@@ -60,4 +60,4 @@
     Ecosystem operating model. Generates data sets from ecosystem model scenarios for stock assessment models.
   path: https://noaa-fims.github.io/ecosystemom/
   image: ../images/FIMS_hexlogo.png
-  categories: [simulation, ecosystem-to-stock-assessment]
+  categories: [simulation, ecosystem]
