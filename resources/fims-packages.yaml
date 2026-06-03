@@ -53,10 +53,11 @@
   path: https://noaa-fims.github.io/fims-pkgdown-template/
   image: ../images/FIMS_hexlogo.png
   categories: [pkgdown, template]
+
 - title: ecosystemom
   weight: 16
   description: >
     Ecosystem operating model. Generates data sets from ecosystem model scenarios for stock assessment models.
   path: https://noaa-fims.github.io/ecosystemom/
   image: ../images/FIMS_hexlogo.png
-  categories: []
+  categories: [simulation, ecosystem-to-stock-assessment]
