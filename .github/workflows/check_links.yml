@@ -40,5 +40,5 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: true
-          args: --accept 403,503 _site/
+          args: --accept 200,403,503 _site/
       
