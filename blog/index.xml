@@ -97,10 +97,14 @@ HELPFUL RESOURCES
 <h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
 <p>This will be the last FIMS Weekly for a while as we test out using the GitHub Discussion Board to post weekly summaries. Using GitHub Discussions will allow everyone with a GitHub account to subscribe (or unsubscribe 🙁) to the specific GitHub Discussion Thread without requiring us to set up a list serve. The thread is called <a href="https://github.com/orgs/NOAA-FIMS/discussions/1461">Project Updates</a> and it exists in the Announcement section. Please navigate to the link and click ‘Subscribe’ if you aren’t already subscribed to all FIMS Discussions. See the image for where the subscribe button is located.</p>
 <img src="https://noaa-fims.github.io/blog/images/project_updates_discussion.png" alt="A screenshot of where to find the Subscribe button for GitHub Discussions." style="height:150%;">
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 <!-- ::: {#additional-events}
 ::: -->
 <!-- ::: {#photo-code}
 ::: -->
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -206,6 +210,8 @@ HELPFUL RESOURCES
 <h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
 <p>Just this morning I learned that issues associated with a milestone can be ordered to show users which issues will be worked on first. This should help communicate how work will be prioritized within FIMS.</p>
 <img src="https://github.blog/wp-content/uploads/2016/07/6629b442-42c7-11e6-954b-88a57821a36a.gif?resize=1600%2C850" alt="A movie clip showing the drag and drop feature of prioritizing issues within a Milestone." style="height:150%;">
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 <!-- ::: {#photo-code}
 ::: -->
 
@@ -313,6 +319,8 @@ HELPFUL RESOURCES
 <h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
 <p>Close-kin mark recapture (CKMR) was recently added to the Beaufort Assessment Model (BAM) for the assessment of red snapper, where DNA is used to identify family relationships or next of kin. The photograph below is a DNA sample of red snapper by Liam Kehoe, you can read about Liam’s story and view the photo on the <a href="https://www.flseagrant.org/its-all-in-the-dna-nmfs-fellow-uses-genetic-tags-to-track-atlantic-red-snapper/">Florida Sea Grant website</a>. Liam Kehoe is a 2024 NMFS-Sea Grant fellow. Please let me know if you have ideas regarding CKMR and FIMS.</p>
 <img src="https://www.flseagrant.org/wp-content/uploads/2025/02/Adobe-Express-file-30-500x500.jpg" alt="A fin clip of red snapper in a plastic bag that will be used to study the genetics of the fish it was taken from." style="height:150%;">
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 <!-- ::: {#photo-code}
 ::: -->
 
@@ -413,6 +421,8 @@ HELPFUL RESOURCES
 <h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
 <p>In the priorities presentation during the CIE Review, I presented the following image, which I found on a blog post titled <a href="https://dev.to/jon_at_backboardio/stop-building-what-your-customers-ask-for-3d16?context=digest">Stop building what your customers ask for</a>. In short, the blog post reminded me how it is not only our job to produce a product that is of use to fisheries managers but it is also our job to interpret what stakeholders see as a problem and imagine a solution potentially outside of a workflow that currently exists.</p>
 <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2fytab0wih4bn8ib230a.png" alt="A cartoon illustrating to situations where developers blindly developed what the stakeholders asked for and ended up getting things wrong." style="height:150%;">
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 <!-- ::: {#photo-code}
 ::: -->
 
@@ -531,6 +541,8 @@ font-style: inherit;">cspell</span> lint <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">--help</span></span></code></pre></div></div>
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -626,6 +638,8 @@ HELPFUL RESOURCES
 <h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
 <p>GitHub released a feature last week allowing users to <a href="https://github.blog/changelog/2026-04-09-new-sort-by-control-added-to-notifications/">sort their notifications</a> on the web interface. You can look at all of your notifications by navigating to www.github.com/notifications; this interface is great for being able to turn off notifications for specific threads that you are not interested in or honing in on recent notifications from a certain repository.</p>
 <img src="https://github.blog/wp-content/uploads/2026/04/SortBy_Improvements_Header_v02.jpg?w=1536" alt="A screenshot of GitHub showing where to sort your notifications." style="height:150%;">
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 <!-- ::: {#photo-code}
 ::: -->
 
@@ -729,6 +743,8 @@ HELPFUL RESOURCES
 <h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
 <p>Elizabeth and others worked a few weeks ago on editing an infographic to display user pathways. The work is now live on the FIMS organization website. Please feel to provide comments to Elizabeth if you have more ideas.</p>
 <img src="https://noaa-fims.github.io/blog/images/fims_user_pathways.png" alt="Five icons that lead to ideas for websites that would be of interest given what pathway you choose. The links are live and accessible on the noaa-fims website." style="height:150%;">
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 <!-- ::: {#photo-code}
 ::: -->
 
@@ -857,6 +873,8 @@ font-style: inherit;">--ff-only</span></span>
 background-color: null;
 font-style: inherit;">git</span> push origin main</span></code></pre></div></div>
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -1055,6 +1073,8 @@ background-color: null;
 font-style: inherit;">1</span>, weights[x])</span>
 <span id="cb1-14">)</span></code></pre></div></div>
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -1223,6 +1243,8 @@ font-style: inherit;">"Unable to extract summary from sdreport"</span></span>
 <span id="cb1-14">  )</span>
 <span id="cb1-15">})</span></code></pre></div></div>
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -1330,6 +1352,8 @@ HELPFUL RESOURCES
 background-color: null;
 font-style: inherit;">quarto</span> use template quarto-journals/elsevier</span></code></pre></div></div>
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -1455,6 +1479,8 @@ trimws(x = " My bad formatting ")
 trimws(x = " My bad formatting ", which = "right")
 # [1] " My bad formatting"</code></pre>
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -1559,6 +1585,8 @@ HELPFUL RESOURCES
 <div id="photo-code">
 <img src="https://raw.githubusercontent.com/NOAA-FIMS/FIMS/main/pkgdown/assets/fims-cheatsheet-thumb.png" alt="An infographic containing information on how to format data and the basics for fitting a FIMS model. See the vignettes for the code explained in this infographic." style="height:50%;">
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -2011,6 +2039,8 @@ RealVector(Rcpp::NumericVector x, size_t size) {
   this-&gt;storage_m-&gt;assign(x.begin(), x.end());
 }</code></pre>
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -2122,6 +2152,8 @@ for (ii in seq(get_n_years(data_4_model))) {
   fleet_selectivity$inflection_point[ii]$estimation_type$set("fixed_effects")
 }</code></pre>
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -2256,6 +2288,8 @@ like_fit &lt;- FIMSdiags::run_fims_likelihood(
   length = 5
 )</code></pre>
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -2378,6 +2412,8 @@ data1_with_extra_year &lt;- dplyr::add_row(
   # of the other missing years for each data type
   FIMSFrame()</code></pre>
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -2486,6 +2522,8 @@ Online: [Google meet](MEETING LINK)
 background-color: null;
 font-style: inherit;">@codecov-ai-reviewer</span> test</span></code></pre></div></div>
 </div>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
