@@ -61,3 +61,11 @@
   path: https://noaa-fims.github.io/ecosystemom/
   image: ../images/FIMS_hexlogo.png
   categories: [simulation, ecosystem]
+  
+- title: fishprior
+  weight: 17
+  description: >
+    An R package to generate priors for models that assess the status of marine resources
+  path: https://noaa-fims.github.io/fishprior/
+  image: ../images/FIMS_hexlogo.png
+  categories: [Bayesian, priors]
