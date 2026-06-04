@@ -14,6 +14,9 @@ name: Render Preview
 jobs:
   build-preview:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
     env:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
