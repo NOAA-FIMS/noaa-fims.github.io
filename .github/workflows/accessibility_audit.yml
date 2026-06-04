@@ -82,7 +82,7 @@ jobs:
           pa11y-ci --config .pa11yci.json $(cat local-urls.txt)
 
       - name: Upload Accessibility Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: Accessibility-HTML-Report
           # Upload the ENTIRE folder, not just a single file
