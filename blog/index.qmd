@@ -20,6 +20,7 @@ listing:
     - "!blog_template.qmd"
   sort: "date desc"
   type: default
+  feed: true
   categories: true
   sort-ui: true
   filter-ui: true

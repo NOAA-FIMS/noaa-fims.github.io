@@ -19,6 +19,7 @@ website:
   title: "FIMS"
   site-url: https://noaa-fims.github.io
   repo-url: https://github.com/noaa-fims.github.io
+  description: "News and updates from the Fisheries Integrated Modeling System project."
   open-graph: true
   navbar:
     title: "FIMS <small>{{< env VERSION >}}</small>"
