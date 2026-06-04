@@ -1,0 +1,171 @@
+/* ===== FIMS packages page (tidyverse-like) ===== */
+
+/* Constrain the grid to a comfortable content width (tidyverse-style) */
+.fims-packages-page #listing-fims-packages {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* --- 2-column grid overall (except featured first item) --- */
+#listing-fims-packages .list.grid {
+  /* Override Quarto's `quarto-listing-cols-3` */
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+/* --- Featured first card spans full width --- */
+#listing-fims-packages .list.grid > .g-col-1[data-index="0"] {
+  grid-column: 1 / -1; /* span both columns */
+}
+
+#listing-fims-packages .quarto-grid-item.card.card-left {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--bs-body-bg, #fff);
+  box-shadow: 0 1px 10px rgba(0,0,0,0.08);
+  position: relative;   /* establish a stacking context */
+  overflow: hidden;     /* prevents weird overlap */
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+#listing-fims-packages .quarto-grid-item.card.card-left * {
+  position: relative;
+  z-index: 1;
+}
+
+.card-img-top {
+  width: 80px
+}
+
+/* Smaller hex/logo for regular cards */
+#listing-fims-packages .g-col-1:not([data-index="0"]) img.thumbnail-image.card-img {
+  width: 72px;
+  height: 72px !important; /* overrides inline height: 250px */
+  object-fit: contain;
+}
+
+/* Bigger hex/logo for featured (optional) */
+#listing-fims-packages .g-col-1[data-index="0"] img.thumbnail-image.card-img {
+  width: 120px;
+  height: 120px !important;
+}
+
+/* Slightly larger title for featured (optional) */
+#listing-fims-packages .g-col-1[data-index="0"] .card-title.listing-title {
+  font-size: 1.35rem;
+}
+
+#listing-fims-packages .quarto-grid-item.card.card-left:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Image wrapper */
+#listing-fims-packages .quarto-grid-item.card.card-left p.card-img-top {
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+#listing-fims-packages img.thumbnail-image.card-img {
+  width: 92px;
+  height: 92px !important;
+  max-width: none;
+  object-fit: contain;
+}
+
+/* Override the inline image height Quarto adds (image-height: 250px) */
+#listing-fims-packages .quarto-grid-item.card.card-left img.thumbnail-image.card-img {
+  width: 92px;
+  height: 92px !important;
+  max-width: none;
+  object-fit: contain;
+  padding: 0;
+}
+
+/* remove Bootstrap card padding */
+#listing-fims-packages .card-body.post-contents {
+  padding: 0;
+}
+
+/* Text body */
+#listing-fims-packages .quarto-grid-item.card.card-left .card-body.post-contents {
+  padding: 0;
+  flex: 1 1 auto;
+}
+
+#listing-fims-packages .card-title.listing-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+#listing-fims-packages .listing-description {
+  order: 2;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+/* tidyverse packages page doesn't show categories; hide them (optional) */
+#listing-fims-packages .listing-categories {
+  order: 3;
+}
+
+.quarto-grid-item .listing-categories .listing-category {
+  background-color: #e4f0f1;
+  color:#0e6876;
+  border-color: #4896a1; 
+}
+
+
+/* Make overlay links not mess with styling */
+#listing-fims-packages a.quarto-grid-link {
+  text-decoration: none;
+  color: inherit;
+  position: static !important;
+  display: block;
+}
+
+/* Feature the first listing item (weight/title sort dependent) */
+#listing-fims-packages .list.grid.quarto-listing-cols-3 > .g-col-1[data-index="0"] {
+  grid-column: 1 / -1;
+}
+
+#listing-fims-packages .g-col-1[data-index="0"] .quarto-grid-item.card {
+  padding: 20px;
+}
+
+#listing-fims-packages .g-col-1[data-index="0"] img.thumbnail-image.card-img {
+  height: 140px !important;
+  width: 140px;
+}
+
+#listing-fims-packages .g-col-1[data-index="0"] .card-title.listing-title {
+  font-size: 1.4rem;
+}
+
+#listing-fims-packages .g-col-1[data-index="0"] .listing-description {
+  font-size: 1.05rem;
+}
+
+/* Dark mode tweaks */
+.quarto-dark #listing-fims-packages .quarto-grid-item.card.card-left {
+  background: #0f161a;
+  border-color: rgba(255,255,255,0.08);
+  box-shadow: 0 1px 10px rgba(0,0,0,0.35);
+}
+
+.quarto-dark #listing-fims-packages .quarto-grid-item.card.card-left:hover {
+  box-shadow: 0 10px 28px rgba(0,0,0,0.55);
+}
