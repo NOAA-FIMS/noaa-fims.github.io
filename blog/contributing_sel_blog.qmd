@@ -1,0 +1,77 @@
+---
+# Copy this to create a blog post
+title: "Implementing New Features in FIMS: A Case Study in Selectivity"
+# Using subtitle for brief description instead of the "description" listing item
+# because if you don't have a description then it just shows your starting text
+# and I don't want that for the fims-weekly ones.
+subtitle: "How to add new features in FIMS using existing code, GitHub, GitHub issues, and FIMS Implementation Team resources"
+author: "Alexander Jensen and Emily Liljestrand"
+date: "June 10, 2026"
+categories:
+   - learn
+   - R
+   - open-science
+   - testing
+---
+
+## Contributing to FIMS
+The joy of having a modular modeling system like FIMS is that the development process can also 
+be broken down and tackled in component parts. By utilizing github's collaborative tools, 
+while one developer can focus on improving recruitment estimates, others can tackle age
+composition likelihoods or diagnostic tools. 
+
+And in this way, researchers at different centers can focus on adding those features 
+that are critically necessary to convert assessments in their regions to the FIMS platform.
+Our small team chipped off a little piece of the modeling system that was important
+for our two regions despite being on complete opposite sides of the country, at
+the Southwest Fisheries Science Center and the Northeast Fisheries Science Center.
+
+The default selectivity option in FIMS is logistic or double logistic, but the
+double normal or age-specific selectivity are used in stock synthesis (SS) and the
+Woods Hole Assessment Model (WHAM) respectively. We set out to add these options
+and remove one more barrier to perfectly replicating regional assessments in FIMS.
+
+
+## Our step-by-step contribution process
+### Starting out
+We first split the task two ways: one would focus on updating the several .hpp files
+to include new modules for the double normal and age-specific selectivity and the other
+would update the defaults for if users chose this option but don't set their own
+starting parameter values. 
+
+Those .hpp files that needed updating were:
+inst/include/interface/rcpp/rcpp_objects/rcpp_selectivity.hpp
+inst/include/interface/rcpp/rcpp_interface.hpp
+inst/include/population_dynamics/selectivity/selectivity.hpp
+src/fims_modules.hpp
+
+And one new file was created:
+inst/include/population_dynamics/selectivity/functors/age_specific.hpp
+
+Updating the default parameters involved updating:
+create_default_parameters.R
+
+### Problem #1: Including the minimum age for the age-specific selectivity
+
+### Problem #2: Flexible indexing options
+
+### Problem #3: Naming conflicts with other selectivity options
+Only when we got to building out the vignette to demo the age-specific selectivity
+option did we notice a problem with our naming convention that would conflict with
+how FIMS builds out names and uses features. We'd been calling the age-specific
+option "SelectivityatAge" but when the create_default_parameters() function is run,
+this name gets knitted together with "Selectivity" creating the monsterous 
+"SelectivityatAgeSelectivity" which FIMS can't understand downstream.
+
+## Takeaways
+Don't let contributing to FIMS intimidate you! Nobody understands all the nuanced
+ins and outs of FIMS except a few core developers and given the amount of features
+FIMS needs to meet its 25% by 2026 (25% of NOAA stocks to be capable of using FIMS
+to fit the model and generate management advice), more than that core group needs
+to be actively contributing. Take on small tasks at first - a new version of an existing
+feature, like these selectivity options. But maximize efficiency by identifying a
+feature that is important to several stocks. Starting small will help build confidence
+and familiarity with FIMS's modular nature so you might be comfortable with contributing
+bigger changes down the line. Hope this post helps to identify some key starting spots!
+Please let us know if you have questions or we can offer advice, at 
+alexander.jensen[at]noaa.gov or emily.liljestrand[at]noaa.gov.
