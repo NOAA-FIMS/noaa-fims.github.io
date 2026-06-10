@@ -62,22 +62,3 @@ document.addEventListener("DOMContentLoaded", () => {
   const state = img ? stateFromImageSrc(img.getAttribute("src") || "") : null;
   setVisibleLinksForState(state || "__none__");
 });
-
-
-window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-window.LOCALE = 'en';
-window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
-window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-window.INVALID_NUMBER = "The information provided is invalid. Please review the field format and try again.";
-window.INVALID_DATE = "Please enter a valid date";
-window.REQUIRED_MULTISELECT_MESSAGE = 'Please select at least 1 option';
-window.translation = {
-  common: {
-    selectedList: '{quantity} list selected',
-    selectedLists: '{quantity} lists selected',
-    selectedOption: '{quantity} selected',
-    selectedOptions: '{quantity} selected',
-  }
-};
-var AUTOHIDE = Boolean(0);
