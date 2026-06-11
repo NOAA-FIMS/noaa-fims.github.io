@@ -34,7 +34,7 @@ resources:
 
       <a
         class="link-primary"
-        href="https://noaa-fims.r-universe.dev"
+        href="https://noaa-fisheries-integrated-toolbox.r-universe.dev"
         title="FIMS R Universe"
         aria-label="Visit FIMS R Universe repository"
         target="_blank"
