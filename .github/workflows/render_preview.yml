@@ -40,16 +40,19 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
-
       - name: Make safe branch name
         id: vars
         run: |
           SAFE_BRANCH=$(echo "${GITHUB_REF_NAME}" | sed 's#[^A-Za-z0-9._-]#-#g')
           echo "safe_branch=$SAFE_BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+        env:
+          PREVIEW_MODE: "true"
+          SAFE_BRANCH: ${{ steps.vars.outputs.safe_branch }}
 
       - name: Prepare preview in subdirectory
         run: |

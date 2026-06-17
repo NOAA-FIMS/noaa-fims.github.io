@@ -17,7 +17,7 @@ project:
 website:
   favicon: images/FIMS_hexlogo.png
   title: "FIMS"
-  site-url: https://noaa-fims.github.io
+  site-url: !expr if (Sys.getenv("PREVIEW_MODE") == "true") { paste0("https://noaa-fims.github.io/preview/", Sys.getenv("SAFE_BRANCH")) } else { "https://noaa-fims.github.io" }
   repo-url: https://github.com/noaa-fims.github.io
   description: "News and updates from the Fisheries Integrated Modeling System project."
   open-graph: true
