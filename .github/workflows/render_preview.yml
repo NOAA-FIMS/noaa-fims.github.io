@@ -54,17 +54,14 @@ jobs:
           PREVIEW_MODE: "true"
           SAFE_BRANCH: ${{ steps.vars.outputs.safe_branch }}
 
-      - name: Prepare preview in subdirectory
+      - name: Deploy preview to subdirectory
         run: |
           SAFE_BRANCH="${{ steps.vars.outputs.safe_branch }}"
-          # Create the nested directory structure
-          mkdir -p _site_preview/preview/$SAFE_BRANCH
-          # Move all rendered files into the preview subdirectory
-          mv _site/* _site_preview/preview/$SAFE_BRANCH/
-          # Replace _site with the properly structured preview directory
+          mkdir -p _deploy/preview/$SAFE_BRANCH
+          cp -r _site/* _deploy/preview/$SAFE_BRANCH/
           rm -rf _site
-          mv _site_preview _site
-      
+          mv _deploy _site
+          
       - name: Publish preview to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
