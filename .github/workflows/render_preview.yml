@@ -46,6 +46,10 @@ jobs:
           SAFE_BRANCH=$(echo "${GITHUB_REF_NAME}" | sed 's#[^A-Za-z0-9._-]#-#g')
           echo "safe_branch=$SAFE_BRANCH" >> $GITHUB_OUTPUT
 
+      - name: Override site-url for preview
+        run: |
+          sed -i 's|site-url: "https://noaa-fims.github.io"|site-url: "https://noaa-fims.github.io/preview/${{ steps.vars.outputs.safe_branch }}"|' _quarto.yml
+
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
