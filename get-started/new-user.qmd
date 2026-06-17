@@ -30,17 +30,17 @@ header-includes: >
 ::: {.fims-step-content}
 <h4>Welcome!</h4>
 <p>Use the links below to introduce yourself and learn more about FIMS.</p>
-[<i class="bi bi-person-plus></i> Introduce yourself to the team](https://github.com/orgs/NOAA-FIMS/discussions/801){.fims-btn-small .fims-task-btn target="_blank"}
+[<i class="bi bi-person-plus"></i> Introduce yourself to the team](https://github.com/orgs/NOAA-FIMS/discussions/801){.fims-btn-small .fims-task-btn target="_blank"}
 
-[<i class="bi bi-chat-text></i> Get involved in other discussions](https://github.com/orgs/NOAA-FIMS/discussions/){.fims-btn-small .fims-task-btn target="_blank"}
+[<i class="bi bi-chat-text"></i> Get involved in other discussions](https://github.com/orgs/NOAA-FIMS/discussions/){.fims-btn-small .fims-task-btn target="_blank"}
 
 [<i class="bi bi-info-circle></i> FAQs](https://e-perl-noaa.github.io/noaa-fims.github.io/about/faq.html){.fims-btn-small .fims-task-btn target="_blank"}
 
-[<i class="bi bi-layout-text-window></i> Check out our blog](https://noaa-fims.github.io/blog/index.html){.fims-btn-small .fims-task-btn target="_blank"}
+[<i class="bi bi-layout-text-window"></i> Check out our blog](https://noaa-fims.github.io/blog/index.html){.fims-btn-small .fims-task-btn target="_blank"}
 
-[<i class="bi bi-calendar-week></i> View and add the FIMS calendar](https://noaa-fims.github.io/about/calendar.html){.fims-btn-small .fims-task-btn target="_blank"}
+[<i class="bi bi-calendar-week"></i> View and add the FIMS calendar](https://noaa-fims.github.io/about/calendar.html){.fims-btn-small .fims-task-btn target="_blank"}
 
-[<i class="bi bi-envelope></i> Subscribe to our weekly newsletter](https://github.com/orgs/NOAA-FIMS/discussions/1461#discussioncomment-17065818){.fims-btn-small .fims-task-btn target="_blank"}
+[<i class="bi bi-envelope"></i> Subscribe to our weekly newsletter](https://github.com/orgs/NOAA-FIMS/discussions/1461#discussioncomment-17065818){.fims-btn-small .fims-task-btn target="_blank"}
 
 :::
 :::
