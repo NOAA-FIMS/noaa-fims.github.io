@@ -34,7 +34,7 @@ header-includes: >
 
 [<i class="bi bi-chat-text"></i> Get involved in other discussions](https://github.com/orgs/NOAA-FIMS/discussions/){.fims-btn-small .fims-task-btn target="_blank"}
 
-[<i class="bi bi-info-circle></i> FAQs](https://e-perl-noaa.github.io/noaa-fims.github.io/about/faq.html){.fims-btn-small .fims-task-btn target="_blank"}
+[<i class="bi bi-info-circle"></i> FAQs](https://e-perl-noaa.github.io/noaa-fims.github.io/about/faq.html){.fims-btn-small .fims-task-btn target="_blank"}
 
 [<i class="bi bi-layout-text-window"></i> Check out our blog](https://noaa-fims.github.io/blog/index.html){.fims-btn-small .fims-task-btn target="_blank"}
 
@@ -106,7 +106,7 @@ header-includes: >
 <p>Other R packages for FIMS.</p>
 :::
 
-::: {.fims-card .position-relative}
+<!-- ::: {.fims-card .position-relative}
 
 <a href="https://noaa-fims.github.io/blog/index.html" class="stretched-link"></a>
 
@@ -115,9 +115,9 @@ header-includes: >
 
 <h4>FIMS Blog</h4>
 <p>Latest FIMS news and updates.</p>
-:::
+::: -->
 
-::: {.fims-card .position-relative}
+<!-- ::: {.fims-card .position-relative}
 
 <a href="https://noaa-fims.github.io/about/calendar.html" class="stretched-link"></a>
 
@@ -126,6 +126,6 @@ header-includes: >
 
 <h4>FIMS Calendar</h4>
 <p>Upcoming events like Code Clubs, tutorials, etc.</p>
-:::
+::: -->
 
 :::
