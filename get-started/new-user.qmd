@@ -10,6 +10,8 @@ header-includes: >
 
 ::: {.fims-pathway-pills}
 [<i class="bi bi-person-plus"></i> New User](/new-user.qmd){.fims-pill .is-active}
+[<i class="bi bi-person-up"></i> Emerging User](/emerging-user.qmd){.fims-pill}
+[<i class="bi bi-rocket"></i> Advanced User](/advanced-user.qmd){.fims-pill}
 [<i class="bi bi-lightning"></i> Power User](/power-user.qmd){.fims-pill}
 [<i class="bi bi-code-square"></i> Contributor](/contributor.qmd){.fims-pill}
 [<i class="bi bi-file-bar-graph"></i> Decision Maker](/decision-maker.qmd){.fims-pill}
@@ -28,42 +30,45 @@ header-includes: >
 <i class="bi bi-geo-alt-fill"></i>
 :::
 ::: {.fims-step-content}
-<h4>Welcome!</h4>
-<p>Use the links below to introduce yourself and learn more about FIMS.</p>
-[<i class="bi bi-person-plus"></i> Introduce yourself to the team](https://github.com/orgs/NOAA-FIMS/discussions/801){.fims-btn-small .fims-task-btn target="_blank"}
-
-[<i class="bi bi-chat-text"></i> Get involved in other discussions](https://github.com/orgs/NOAA-FIMS/discussions/){.fims-btn-small .fims-task-btn target="_blank"}
+<h4>Some info before you start!</h4>
+<p>Use the links below to learn more about FIMS.</p>
 
 [<i class="bi bi-info-circle"></i> FAQs](https://e-perl-noaa.github.io/noaa-fims.github.io/about/faq.html){.fims-btn-small .fims-task-btn target="_blank"}
 
 [<i class="bi bi-layout-text-window"></i> Check out our blog](https://noaa-fims.github.io/blog/index.html){.fims-btn-small .fims-task-btn target="_blank"}
+:::
+:::
+
+::: {.fims-step .fims-timeline-item}
+::: {.fims-step-number}
+<i class="bi bi-geo-alt-fill"></i>
+:::
+::: {.fims-step-content}
+<h4>FIMS Community</h4>
+<p>Introduce yourself and get involved in the FIMS community.</p>
+
+[<i class="bi bi-person-plus"></i> Introduce yourself to the team](https://github.com/orgs/NOAA-FIMS/discussions/801){.fims-btn-small .fims-task-btn target="_blank"}
+
+[<i class="bi bi-chat-text"></i> Get involved in other discussions](https://github.com/orgs/NOAA-FIMS/discussions/){.fims-btn-small .fims-task-btn target="_blank"}
 
 [<i class="bi bi-calendar-week"></i> View and add the FIMS calendar](https://noaa-fims.github.io/about/calendar.html){.fims-btn-small .fims-task-btn target="_blank"}
 
 [<i class="bi bi-envelope"></i> Subscribe to our weekly newsletter](https://github.com/orgs/NOAA-FIMS/discussions/1461#discussioncomment-17065818){.fims-btn-small .fims-task-btn target="_blank"}
-
 :::
 :::
 
-::: {.fims-step .fims-timeline-item}
-::: {.fims-step-number}
-<i class="bi bi-geo-alt-fill"></i>
-:::
-::: {.fims-step-content}
-<h4>Complete the Introductory Vignette</h4>
-<p>Walk through the initial setup and familiarize yourself with the interface.</p>
-[Start <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMS/articles/fims-demo.html){.fims-btn-small .fims-task-btn target="_blank"}
-:::
-:::
 
 ::: {.fims-step .fims-timeline-item}
 ::: {.fims-step-number}
 <i class="bi bi-geo-alt-fill"></i>
 :::
 ::: {.fims-step-content}
-<h4>Diagnostics</h4>
-<p>Run diagnostic checks to ensure your model is properly configured.</p>
-[Start <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMSdiags/articles/index.html){.fims-btn-small .fims-task-btn target="_blank"}
+<h4>Build a basic FIMS model</h4>
+<p>Walk through the model and data initial setup and familiarize yourself with the interface.</p>
+
+[<i class="bi bi-rocket"></i> Introduction to FIMS](https://noaa-fims.github.io/FIMS/articles/fims-demo.html){.fims-btn-small .fims-task-btn target="_blank"}
+
+[<i class="bi bi-file-spreadsheet"></i> FIMS Input Data](https://noaa-fims.github.io/FIMS/articles/fims-input-data.html){.fims-btn-small .fims-task-btn target="_blank"}
 :::
 :::
 
