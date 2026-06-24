@@ -17,14 +17,47 @@ Select the user pathway that best describes your goals. Click on the button for 
 ::: {.fims-card-icon .bi .bi-person-plus}
 :::
 ### I am a new user
-Learn how to create your own model in FIMS using R.
+Get connected to FIMS resources and learn how to run a model in FIMS.
 
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Introductory vignette
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Diagnostics
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Transitioning to FIMS
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Welcome to FIMS!
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Running a basic FIMS model
+* <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS Input Data
 
 ::: {.fims-card-footer}
 [Start New User Path <i class="bi bi-arrow-right"></i>](new-user.qmd){.fims-btn-full .stretched-link}
+:::
+
+:::
+
+
+::: {.fims-card .position-relative}
+::: {.fims-card-icon .bi .bi-person-up}
+:::
+### I am an emerging user
+Go beyond the default configurations, run diagnostics, etc.
+
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Diagnostics
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Changing model configurations
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Comparing FIMS to other models
+
+::: {.fims-card-footer}
+[Start Emerging User Path <i class="bi bi-arrow-right"></i>](emerging-user.qmd){.fims-btn-full .stretched-link}
+:::
+
+:::
+
+::: {.fims-card .position-relative}
+::: {.fims-card-icon .bi .bi-rocket}
+:::
+### I am an advanced user
+Move beyond the common wrapper functions to set up custom configurations..
+
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Building FIMS from modules 
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Alternative model families
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Running model comparisons
+
+::: {.fims-card-footer}
+[Start Advanced User Path <i class="bi bi-arrow-right"></i>](advanced-user.qmd){.fims-btn-full .stretched-link}
 :::
 
 :::

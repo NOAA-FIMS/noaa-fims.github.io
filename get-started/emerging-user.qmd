@@ -1,0 +1,54 @@
+page-layout: full
+header-includes: >
+  <link rel="stylesheet" href="../assets/community.css">
+  <link rel="stylesheet" href="../assets/pathways.css">
+  <script src="../assets/pathways.js" defer></script>
+---
+
+::: {.fims-onboarding-container}
+
+::: {.fims-pathway-pills}
+[<i class="bi bi-person-plus"></i> New User](new-user.qmd){.fims-pill}
+[<i class="bi bi-person-up"></i> Emerging User](emerging-user.qmd){.fims-pill .is-active}
+[<i class="bi bi-rocket"></i> Advanced User](advanced-user.qmd){.fims-pill}
+[<i class="bi bi-lightning"></i> Power User](power-user.qmd){.fims-pill}
+[<i class="bi bi-code-square"></i> Contributor](contributor.qmd){.fims-pill .is-active}
+[<i class="bi bi-file-bar-graph"></i> Decision Maker](decision-maker.qmd){.fims-pill}
+:::
+
+::: {.fims-onboarding-header}
+## You have leveled up!
+<p>Time to move into diagnostics and customizations.</p>
+<h3><i class="bi bi-signpost-split"></i> Emerging User Pathway</h3>
+:::
+
+::: {.fims-timeline}
+
+::: {.fims-step .fims-timeline-item}
+::: {.fims-step-number}
+<i class="bi bi-geo-alt-fill"></i>
+:::
+::: {.fims-step-content}
+<h4>Diagnostics</h4>
+<p>Run diagnostic checks to ensure your model is properly configured.</p>
+
+[Start <i class="bi bi-arrow-right"></i>](https://e-perl-noaa.github.io/noaa-fims.github.io/FIMS/FIMSdiags){.fims-btn-small .fims-task-btn target="_blank"}
+
+:::
+:::
+
+::: {.fims-step .fims-timeline-item}
+::: {.fims-step-number}
+<i class="bi bi-geo-alt-fill"></i>
+:::
+::: {.fims-step-content}
+<h4>FIMS Features Comparison to Other Models</h4>
+<p>Compare FIMS features with other modeling frameworks.</p>
+
+[Start <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/about/#comparison-to-other-frameworks){.fims-btn-small .fims-task-btn target="_blank"}
+
+:::
+:::
+
+
+:::
