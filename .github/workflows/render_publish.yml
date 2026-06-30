@@ -39,11 +39,24 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
+          
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html
+
+      - name: Preserve preview directory from gh-pages
+        run: |
+          git fetch origin gh-pages --depth=1 || true
+          WT="/tmp/gh-pages-${GITHUB_RUN_ID}"
+          if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
+            git worktree add "$WT" origin/gh-pages
+            if [ -d "$WT/preview" ]; then
+              mkdir -p _site
+              cp -a "$WT/preview" _site/
+            fi
+            git worktree remove "$WT" --force
+          fi
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
