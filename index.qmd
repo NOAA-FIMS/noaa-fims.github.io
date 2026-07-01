@@ -183,18 +183,9 @@ resources:
 
 ```{=html}
 <div class="pathway-explorer" data-pathway-root>
-  <p id="pathway-instructions">Choose a pathway to update the graphic and view related links below.</p>
+  <p id="pathway-instructions">Select a highlighted area of the graphic to update the pathway and view related links below.</p>
 
-  <div class="pathway-controls" role="group" aria-label="Choose a FIMS pathway" aria-describedby="pathway-instructions">
-    <button type="button" class="pathway-selector is-active" data-pathway-button data-pathway="user0" data-image="images/fims-user0.png" data-alt="Overview of FIMS user pathways" data-label="Overview" data-caption="Overview of FIMS user pathways." aria-pressed="true">Overview</button>
-    <button type="button" class="pathway-selector" data-pathway-button data-pathway="user1" data-image="images/fims-user1.png" data-alt="Pathway for Interested" data-label="Interested" data-caption="Pathway for interested FIMS community members." aria-pressed="false">Interested</button>
-    <button type="button" class="pathway-selector" data-pathway-button data-pathway="user2" data-image="images/fims-user2.png" data-alt="Pathway for New User" data-label="New User" data-caption="Pathway for new FIMS users." aria-pressed="false">New User</button>
-    <button type="button" class="pathway-selector" data-pathway-button data-pathway="user3" data-image="images/fims-user3.png" data-alt="Pathway for Power User" data-label="Power User" data-caption="Pathway for experienced FIMS users." aria-pressed="false">Power User</button>
-    <button type="button" class="pathway-selector" data-pathway-button data-pathway="user4" data-image="images/fims-user4.png" data-alt="Pathway for Contributor" data-label="Contributor" data-caption="Pathway for FIMS contributors." aria-pressed="false">Contributor</button>
-    <button type="button" class="pathway-selector" data-pathway-button data-pathway="user5" data-image="images/fims-user5.png" data-alt="Pathway for Receiver of Results" data-label="Receiver of Results" data-caption="Pathway for receivers of FIMS results." aria-pressed="false">Receiver of Results</button>
-  </div>
-
-  <p id="pathway-status" class="pathway-status" role="status" aria-live="polite">Selected pathway: Overview. Choose a pathway to view related links below.</p>
+  <p id="pathway-status" class="pathway-status visually-hidden" role="status" aria-live="polite">Selected pathway: Overview. Choose a pathway to view related links below.</p>
 
   <figure class="fims-graphic-container">
     <img id="fims-main-img" src="images/fims-user0.png" alt="Overview of FIMS user pathways">

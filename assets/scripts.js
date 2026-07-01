@@ -39,20 +39,18 @@ function getPathwayConfig(state) {
     return DEFAULT_PATHWAY;
   }
 
-  const button = document.querySelector(
-    `.pathway-controls [data-pathway="${state}"]`,
-  );
+  const control = document.querySelector(`[data-pathway-button][data-pathway="${state}"]`);
 
-  if (!button) {
+  if (!control) {
     return DEFAULT_PATHWAY;
   }
 
   return {
     state,
-    image: button.dataset.image || DEFAULT_PATHWAY.image,
-    alt: button.dataset.alt || DEFAULT_PATHWAY.alt,
-    label: button.dataset.label || button.textContent.trim() || DEFAULT_PATHWAY.label,
-    caption: button.dataset.caption || button.dataset.alt || DEFAULT_PATHWAY.caption,
+    image: control.dataset.image || DEFAULT_PATHWAY.image,
+    alt: control.dataset.alt || DEFAULT_PATHWAY.alt,
+    label: control.dataset.label || control.textContent.trim() || DEFAULT_PATHWAY.label,
+    caption: control.dataset.caption || control.dataset.alt || DEFAULT_PATHWAY.caption,
   };
 }
 
