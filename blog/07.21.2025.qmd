@@ -58,3 +58,21 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 R-opensci has guidance on writing tests for packages submitted that Bai is looking into. But, it was pretty mind blowing to learn that there is a way to add comments to a commit message that can invoke “extended” tests, i.e., tests that do not need to be run on every commit. It was nice to know that others have been thinking about this as FIMS has struggled to find a resource or advice on what to do, see [Discussion #870](https://github.com/orgs/NOAA-FIMS/discussions/870). Feel free to add any thoughts about the system below or other insights to running large tests on the Discussion board. Thank you in advance for taking the time to contribute 😊.
 
 ![](images/extended_tests.png){height="150%" fig-alt="image of how to run extended tests using a commit message that contains the phrase run-extended"}
+
+```{=html}
+<script src="https://giscus.app/client.js"
+        data-repo="noaa-fims/FIMS"
+        data-repo-id="R_kgDOGvEn5A"
+        data-category="Blog discussions"
+        data-category-id="DIC_kwDOGvEn5M4C-hls"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+```

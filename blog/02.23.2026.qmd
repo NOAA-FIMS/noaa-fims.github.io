@@ -45,3 +45,21 @@ Online: [Google meet](https://meet.google.com/unsupported?meetingCode=ica-ieta-n
 <img src="https://raw.githubusercontent.com/NOAA-FIMS/FIMS/main/pkgdown/assets/fims-cheatsheet-thumb.png" alt="An infographic containing information on how to format data and the basics for fitting a FIMS model. See the vignettes for the code explained in this infographic." style="height:50%;">
 ```
 :::
+
+```{=html}
+<script src="https://giscus.app/client.js"
+        data-repo="noaa-fims/FIMS"
+        data-repo-id="R_kgDOGvEn5A"
+        data-category="Blog discussions"
+        data-category-id="DIC_kwDOGvEn5M4C-hls"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+```

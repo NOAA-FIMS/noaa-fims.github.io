@@ -130,8 +130,6 @@ PUT CODE HERE
 ```
 :::
 -->
-
-
 ',
     week_range, format(week_start, "%B %d, %Y")
     )
