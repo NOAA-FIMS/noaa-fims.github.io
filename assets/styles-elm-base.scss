@@ -11,6 +11,32 @@ $font-family-heading: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Seg
   --font-outfit: #{$font-family-heading};
 }
 
+html {
+  scroll-padding-top: 6rem;
+}
+
+:target {
+  scroll-margin-top: 6rem;
+}
+
+:where(
+  a[href],
+  button,
+  input,
+  select,
+  textarea,
+  summary,
+  iframe,
+  [tabindex]:not([tabindex="-1"])
+):focus-visible {
+  outline: 3px solid #0e6876;
+  outline-offset: 3px;
+}
+
+:where(button, input, select, textarea, summary, iframe):focus-visible {
+  border-radius: 0.25rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-heading;
 }
