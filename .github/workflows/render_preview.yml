@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: preview-${{ github.ref_name }}
+  group: gh-pages-publisher
   cancel-in-progress: true
 
 name: Render Preview

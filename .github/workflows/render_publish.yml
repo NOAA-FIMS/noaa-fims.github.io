@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: ${{ github.workflow}}-${{ github.ref }}
+  group: gh-pages-publisher
   cancel-in-progress: true
 
 name: Render and Publish
