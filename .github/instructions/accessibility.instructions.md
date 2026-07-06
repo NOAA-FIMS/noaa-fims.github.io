@@ -40,6 +40,14 @@ When generating or reviewing code or content for this Quarto project, ensure acc
   - Normal text: Minimum 4.5:1 contrast ratio against backgrounds.
   - Large text or UI components: Minimum 3:1 contrast ratio.
 - Check contrast ratios for code highlighting themes (`highlight-style` in `_quarto.yml`).
+- Check helper text, captions, and button text/background combinations, not just body text.
+
+## Automated Audit Expectations
+- This repository runs automated accessibility checks on rendered HTML using Pa11y CI with both `axe` and `htmlcs`.
+- Treat the rendered site in `_site/` as the audit target, so review generated navbar, footer, theme, and include-file output rather than only the source `.qmd`.
+- Avoid duplicate `id` values in authored HTML, includes, and JavaScript-generated markup.
+- Ensure links have an accessible name and, where possible, visible or text-equivalent content. Icon-only links should at minimum have an `aria-label`.
+- When adding audit ignores in `.github/workflows/accessibility_audit.yml`, keep them narrow and document them only for known generated-output false positives rather than authored-content issues.
 
 ## Custom Form Standards
 **If embedding raw forms inside `.qmd` files:**
