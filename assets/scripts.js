@@ -214,28 +214,42 @@ function initBlogListingAccessibility() {
     return;
   }
 
-  // Add an accessible name to the generated filter input.
-  const filter = listing.querySelector("input.search.form-control");
-  if (filter) {
-    filter.setAttribute("aria-label", "Filter blog posts");
+  function applyListingLabels() {
+    // Add accessible names to the generated filter and sort controls.
+    const filter = listing.querySelector("input.search.form-control");
+    const sort = listing.querySelector("select.form-select");
+
+    if (filter) {
+      filter.setAttribute("aria-label", "Filter blog posts");
+      filter.setAttribute("title", "Filter blog posts");
+    }
+
+    if (sort) {
+      sort.setAttribute("aria-label", "Sort blog posts");
+      sort.setAttribute("title", "Sort blog posts");
+    }
+
+    // Label generated overlay links that otherwise have no discernible text.
+    listing.querySelectorAll("a.no-external[href]").forEach((link) => {
+      if (link.textContent.trim() || link.getAttribute("aria-label")) {
+        return;
+      }
+
+      const card = link.closest(".quarto-post, .card, .quarto-grid-item");
+      const title = card?.querySelector(".listing-title, h3, h4")?.textContent?.trim();
+
+      if (title) {
+        link.setAttribute("aria-label", `Open blog post: ${title}`);
+        link.setAttribute("title", `Open blog post: ${title}`);
+      }
+    });
   }
 
-  // Label generated overlay links that otherwise have no discernible text.
-  listing.querySelectorAll("a.no-external[href]").forEach((link) => {
-    // Leave links alone if they already have visible text or an accessible name.
-    if (link.textContent.trim() || link.getAttribute("aria-label")) {
-      return;
-    }
+  applyListingLabels();
 
-    // Look up the surrounding card and use its title as the link label.
-    const card = link.closest(".quarto-post, .card, .quarto-grid-item");
-    const title = card?.querySelector(".listing-title, h3, h4")?.textContent?.trim();
-
-    // Apply an aria-label only when a nearby title is available.
-    if (title) {
-      link.setAttribute("aria-label", `Open blog post: ${title}`);
-    }
-  });
+  // Re-apply labels after Quarto updates the listing controls.
+  listing.querySelector("input.search.form-control")?.addEventListener("input", applyListingLabels);
+  listing.querySelector("select.form-select")?.addEventListener("change", applyListingLabels);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
