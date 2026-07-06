@@ -207,9 +207,41 @@ function initFormAccessibility() {
   watchMessagePanel("success-message");
 }
 
+function initBlogListingAccessibility() {
+  // Find the Quarto-generated listing container on the blog page.
+  const listing = document.getElementById("listing-listing");
+  if (!listing) {
+    return;
+  }
+
+  // Add an accessible name to the generated filter input.
+  const filter = listing.querySelector("input.search.form-control");
+  if (filter) {
+    filter.setAttribute("aria-label", "Filter blog posts");
+  }
+
+  // Label generated overlay links that otherwise have no discernible text.
+  listing.querySelectorAll("a.no-external[href]").forEach((link) => {
+    // Leave links alone if they already have visible text or an accessible name.
+    if (link.textContent.trim() || link.getAttribute("aria-label")) {
+      return;
+    }
+
+    // Look up the surrounding card and use its title as the link label.
+    const card = link.closest(".quarto-post, .card, .quarto-grid-item");
+    const title = card?.querySelector(".listing-title, h3, h4")?.textContent?.trim();
+
+    // Apply an aria-label only when a nearby title is available.
+    if (title) {
+      link.setAttribute("aria-label", `Open blog post: ${title}`);
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initPathwayExplorer();
   initFormAccessibility();
+  initBlogListingAccessibility();
 });
 
 window.changeImage = function changeImage(newSrc, newAltText) {
