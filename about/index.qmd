@@ -6,8 +6,6 @@ toc: true
 toc-location: left
 toc-depth: 3
 ---
-#0085ca
-#007cbd
 ## Mission
 
 ### Mission statement
