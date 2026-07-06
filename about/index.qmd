@@ -4,20 +4,20 @@ image: ../images/FIMS_logo3.png
 include-after-body: ../assets/open-in-new-tab.html
 toc: true
 toc-location: left
-toc-depth: 2
+toc-depth: 3
 ---
 
-# Mission
+## Mission
 
-## Mission statement
+### Mission statement
 
 The mission of the Fisheries Integrated Modeling System (FIMS) is to **enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs.**
 
-## Vision statement
+### Vision statement
 
 We aim to accomplish our mission with a **user-friendly stock assessment tool** that **streamlines** the development and application of scientific advice to inform current and future management needs of NOAA Fisheries' regions.
 
-## Priorities
+### Priorities
 
 1. FIMS meets the needs of operational stock assessments across regions, scenarios, and data types and levels to provide scientific advice to management bodies.
 2. FIMS implements practical and robust methods from ecology, statistics, computer science, and mathematical modeling.
@@ -26,21 +26,21 @@ We aim to accomplish our mission with a **user-friendly stock assessment tool** 
 5. FIMS welcomes and incorporates user, developer, and community contributions and feedback to shape design decisions and priorities, in accordance with open source principles, and communicates progress, key findings, and advancements back.
 6. FIMS is flexible enough to adapt to future management needs, new technical developments and data sources, and observational data types and supports the NOAA Open Science Initiative.
 
-# Why FIMS?
+## Why FIMS?
 
 Learn more on the [FAQ page](/about/faq.qmd#why).
 
-# Community
+## Community
 
 A team of [experts](../contact/contributors.qmd) within NOAA Fisheries is designing and developing the system, and we are advised by the [FIMS Council](../contact/contributors.qmd#fims-council) which includes academic, industry, and international partners.
 
-Contributions from individuals of all skill levels are welcome. The codebase and documentation heavily relies of contributions from volunteers and it is imperative that we receive both feedback and contributions from users to ensure the user experience remains true to our aim of being user friendly. The roles of internal and external collaborators are outlined in the [roles section](../contact/contributors.qmd#roles) of this community playbook. 
+Contributions from individuals of all skill levels are welcome. The codebase and documentation rely heavily on contributions from volunteers, and feedback from users helps keep the experience aligned with the goal of being user friendly. The roles of internal and external collaborators are outlined in the [roles section](../contact/contributors.qmd#roles) of this community playbook.
 
-## Get involved
+### Get involved
 
 Users and developers are welcome to join the [Discussions board](https://github.com/orgs/NOAA-FIMS/discussions) or submit bug reports using GitHub Issues. Please use the issues in the [NOAA-FIMS github.io repository](https://github.com/NOAA-FIMS/noaa-fims.github.io/issues) to make suggestions regarding this website and the issues under the [FIMS software repository](https://github.com/NOAA-FIMS/FIMS/issues) for software design and development feedback.
 
-# Current project status
+## Current project status
 
 The project is constantly under development 🔨. Check out our progress so far below: 
 
@@ -54,7 +54,7 @@ The project is constantly under development 🔨. Check out our progress so far 
 | `R cmd check` | ![Badge showing R CMD check workflow status](https://github.com/NOAA-FIMS/FIMS/actions/workflows/call-r-cmd-check.yml/badge.svg)|
 | Google tests | ![Badge showing Google test workflow status](https://github.com/NOAA-FIMS/FIMS/actions/workflows/run-googletest.yml/badge.svg)|
 
-## Comparison to other frameworks
+### Comparison to other frameworks
 
 | Feature | SS3 | FIMS | RCEATTLE | SPoRC | WHAM | Multi-WHAM |
 |---|---|---|---|---|---|---|
@@ -85,6 +85,6 @@ The project is constantly under development 🔨. Check out our progress so far 
 | Reference point estimation | Yes | No | Yes | Yes | Yes | Yes |
 | MSE tools | Yes | No | Yes | Yes | Yes | Yes |
 
-## Release  
+### Release  
 
  The current release can be found on the [FIMS release page](https://github.com/NOAA-FIMS/FIMS/releases). A list of all releases and their corresponding changes can be found on our [changelog page](FIMS_CHANGELOG.qmd).
