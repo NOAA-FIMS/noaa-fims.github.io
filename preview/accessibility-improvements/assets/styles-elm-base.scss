@@ -165,6 +165,23 @@ figcaption {
   text-align: right;
 }
 
+.quarto-listing .form-select,
+.quarto-listing input.search.form-control {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  border-color: var(--quarto-border-color, var(--bs-border-color));
+}
+
+.quarto-listing .form-select option {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+.quarto-listing input.search.form-control::placeholder {
+  color: var(--bs-secondary-color);
+  opacity: 1;
+}
+
 .code-with-filename > div {
   border: 1px solid var(--quarto-border-color);
   padding: 0.66rem;

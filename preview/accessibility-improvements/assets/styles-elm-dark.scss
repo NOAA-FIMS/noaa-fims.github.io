@@ -146,13 +146,13 @@ div.quarto-about-trestles .about-entity .about-link {
 div.quarto-post .listing-categories .listing-category,
 .quarto-title-block .quarto-title .quarto-categories .quarto-category {
   border-color: $pink-60;
-  color: $pink-90;
-  background-color: $pink-10;
-  opacity: 0.8
+  color: $slate-100;
+  background-color: $slate-20;
+  opacity: 1;
 }
 
 div.quarto-post .listing-categories .listing-category {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .quarto-dark .code-with-filename .code-with-filename-file {
