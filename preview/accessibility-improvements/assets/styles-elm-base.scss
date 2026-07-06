@@ -47,6 +47,11 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0.66em;
 }
 
+h2.anchored,
+h2.anchored a.anchorjs-link {
+  color: var(--bs-heading-color, var(--bs-body-color));
+}
+
 .navbar-title, .navbar-nav .nav-item {
   font-family: $font-family-heading;
   font-weight: 400;
@@ -86,6 +91,10 @@ h2, h3, h4, h5, h6 {
 #quarto-header .navbar .nav-link.active .menu-text::after {
   background-color: var(--red-50);
   width: 100%;
+}
+
+.anchorjs-link {
+  color: inherit;
 }
 
 #quarto-content {
@@ -173,6 +182,12 @@ figcaption {
 }
 
 .quarto-listing .form-select option {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+.quarto-listing .form-select:focus,
+.quarto-listing input.search.form-control:focus {
   background-color: var(--bs-body-bg);
   color: var(--bs-body-color);
 }
