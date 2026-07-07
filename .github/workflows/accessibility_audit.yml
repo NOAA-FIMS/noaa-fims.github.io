@@ -70,7 +70,8 @@ jobs:
                 "args": [
                   "--no-sandbox",
                   "--disable-setuid-sandbox",
-                  "--disable-gpu"
+                  "--disable-gpu",
+                  "--force-dark-mode=0"
                 ],
                 "ignoreHTTPSErrors": true
               },
