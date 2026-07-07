@@ -13,6 +13,7 @@ listing:
   fields: [image, title, description, categories]
 header-includes: >
   <link rel="stylesheet" href="../assets/packages.css">
+  <script src="assets/scripts.js" defer></script>
 ---
 
 ::: {#fims-packages-listing}
