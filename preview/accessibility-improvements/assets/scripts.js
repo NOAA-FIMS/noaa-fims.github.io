@@ -207,57 +207,6 @@ function initFormAccessibility() {
   watchMessagePanel("success-message");
 }
 
-function initBlogListingAccessibility() {
-  // Find the Quarto-generated listing container on the blog page.
-  const listing = document.getElementById("listing-listing");
-  if (!listing) {
-    return;
-  }
-
-  function applyListingLabels() {
-    // Add accessible names to the generated filter and sort controls.
-    const filter = listing.querySelector("input.search.form-control");
-    const sort = listing.querySelector("select.form-select");
-
-    if (filter) {
-      filter.setAttribute("aria-label", "Filter blog posts");
-      filter.setAttribute("title", "Filter blog posts");
-    }
-
-    if (sort) {
-      sort.setAttribute("aria-label", "Sort blog posts");
-      sort.setAttribute("title", "Sort blog posts");
-    }
-
-    // Label generated overlay links that otherwise have no discernible text.
-    listing.querySelectorAll("a.no-external[href]").forEach((link) => {
-      if (link.textContent.trim() || link.getAttribute("aria-label")) {
-        return;
-      }
-
-      const card = link.closest(".quarto-post, .card, .quarto-grid-item");
-      const title = card?.querySelector(".listing-title, h3, h4")?.textContent?.trim();
-
-      if (title) {
-        link.setAttribute("aria-label", `Open blog post: ${title}`);
-        link.setAttribute("title", `Open blog post: ${title}`);
-      }
-    });
-  }
-
-  applyListingLabels();
-
-  // Re-apply labels after Quarto updates the listing controls.
-  listing.querySelector("input.search.form-control")?.addEventListener("input", applyListingLabels);
-  listing.querySelector("select.form-select")?.addEventListener("change", applyListingLabels);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  initPathwayExplorer();
-  initFormAccessibility();
-  initBlogListingAccessibility();
-});
-
 window.changeImage = function changeImage(newSrc, newAltText) {
   const state = stateFromImageSrc(newSrc);
 
@@ -302,13 +251,70 @@ window.translation = {
 };
 var AUTOHIDE = Boolean(0);
 
-// Add tabindex="0" to code blocks so keyboard users can focus and scroll them
-document.addEventListener("DOMContentLoaded", function() {
-  // Find all code blocks that might scroll
-  var codeBlocks = document.querySelectorAll(".sourceCode");
+
+// ==========================================================================
+// QUARTO ACCESSIBILITY FIXES
+// The following functions address native accessibility gaps in Quarto's HTML generation.
+// ==========================================================================
+
+function initQuartoAccessibilityFixes() {
   
-  // Add tabindex="0" so keyboard users can focus and scroll them
+  // FIX 1: Scrollable Code Blocks (axe: scrollable-region-focusable)
+  // Quarto generates <div class="sourceCode"> for R/Python code blocks. If these blocks 
+  // contain long lines of code, they scroll horizontally. However, Quarto forgets to add 
+  // tabindex="0", meaning keyboard-only users cannot focus on the block to scroll it.
+  const codeBlocks = document.querySelectorAll(".sourceCode");
   codeBlocks.forEach(function(block) {
     block.setAttribute("tabindex", "0");
   });
+
+  // FIX 2: Quarto Listings (axe: link-name)
+  // Quarto's generated grid and default listings frequently generate empty HTML <a> tags 
+  // covering the cards, and the search/filter inputs lack aria-labels.
+  const listing = document.getElementById("listing-listing");
+  if (listing) {
+    function applyListingLabels() {
+      // Add accessible names to the generated filter and sort controls.
+      const filter = listing.querySelector("input.search.form-control");
+      const sort = listing.querySelector("select.form-select");
+
+      if (filter) {
+        filter.setAttribute("aria-label", "Filter blog posts");
+        filter.setAttribute("title", "Filter blog posts");
+      }
+
+      if (sort) {
+        sort.setAttribute("aria-label", "Sort blog posts");
+        sort.setAttribute("title", "Sort blog posts");
+      }
+
+      // Label generated overlay links that otherwise have no discernible text.
+      listing.querySelectorAll("a.no-external[href]").forEach((link) => {
+        if (link.textContent.trim() || link.getAttribute("aria-label")) {
+          return;
+        }
+
+        const card = link.closest(".quarto-post, .card, .quarto-grid-item");
+        const title = card?.querySelector(".listing-title, h3, h4")?.textContent?.trim();
+
+        if (title) {
+          link.setAttribute("aria-label", `Open blog post: ${title}`);
+          link.setAttribute("title", `Open blog post: ${title}`);
+        }
+      });
+    }
+
+    applyListingLabels();
+
+    // Re-apply labels after Quarto updates the listing controls via user interaction.
+    listing.querySelector("input.search.form-control")?.addEventListener("input", applyListingLabels);
+    listing.querySelector("select.form-select")?.addEventListener("change", applyListingLabels);
+  }
+}
+
+// Consolidate all script initializations into a single DOMContentLoaded event
+document.addEventListener("DOMContentLoaded", () => {
+  initPathwayExplorer();
+  initFormAccessibility();
+  initQuartoAccessibilityFixes();
 });
