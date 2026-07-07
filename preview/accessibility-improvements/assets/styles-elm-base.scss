@@ -212,6 +212,20 @@ pre > code,
   color: var(--bs-body-color);
 }
 
+/* Darken the color of the dv span to pass 4.5:1 contrast ratio */
+code span.dv {
+    color: #991424 !important; /* Darkened from #c94150 to pass 4.5:1 contrast */
+}
+
+/* Darken the color of the st span to pass 4.5:1 contrast ratio */
+code span.st {
+    color: #37542d !important; /* Darkened from #587b4b to safely pass the 4.5:1 threshold */
+}
+
+code span.co {
+    color: #405058 !important; /* Darkened from #60757e to safely pass 4.5:1 contrast */
+}
+
 .quarto-listing-cols-3 {
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 0.75em;

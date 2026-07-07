@@ -301,3 +301,14 @@ window.translation = {
   },
 };
 var AUTOHIDE = Boolean(0);
+
+// Add tabindex="0" to code blocks so keyboard users can focus and scroll them
+document.addEventListener("DOMContentLoaded", function() {
+  // Find all code blocks that might scroll
+  var codeBlocks = document.querySelectorAll(".sourceCode");
+  
+  // Add tabindex="0" so keyboard users can focus and scroll them
+  codeBlocks.forEach(function(block) {
+    block.setAttribute("tabindex", "0");
+  });
+});
