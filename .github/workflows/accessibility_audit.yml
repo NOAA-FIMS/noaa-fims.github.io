@@ -48,8 +48,8 @@ jobs:
           serve -p 3000 _site &
           wait-on http://localhost:3000
           
-          # Generate URLs for all generated HTML files
-          find _site -name "*.html" | sed 's|^_site/|http://localhost:3000/|' > local-urls.txt
+          # Generate URLs, but exclude anything in the assets folder
+          find _site -name "*.html" -not -path "*/assets/*" | sed 's|^_site/|http://localhost:3000/|' > local-urls.txt
           
           # Create pa11y config (Notice everything is nested inside "defaults")
           # hideElements to hide the helpful resources anchor that is causing a color contrast issue that is not fixable without changing the design of the site

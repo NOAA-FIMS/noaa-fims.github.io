@@ -83,7 +83,6 @@ listing:
   fields: [title, description, categories]
   feed:
     categories: [R]
-  image-align: left
 page-layout: full
 title-block-banner: false
 comments: false
