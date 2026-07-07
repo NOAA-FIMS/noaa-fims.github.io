@@ -29,5 +29,5 @@ page-layout: full
 title-block-banner: false
 comments: false
 header-includes: >
-  <script src="assets/scripts.js" defer></script>
+  <script src="../assets/scripts.js" defer></script>
 ---

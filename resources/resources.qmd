@@ -88,5 +88,5 @@ title-block-banner: false
 comments: false
 include-after-body: ../assets/open-in-new-tab.html
 header-includes: >
-  <script src="assets/scripts.js" defer></script>
+  <script src="../assets/scripts.js" defer></script>
 ---
