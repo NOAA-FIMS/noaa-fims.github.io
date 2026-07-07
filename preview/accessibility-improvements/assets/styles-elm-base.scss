@@ -47,9 +47,12 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0.66em;
 }
 
-h2.anchored,
-h2.anchored a.anchorjs-link {
+:is(h2, h3, h4, h5, h6).anchored {
   color: var(--bs-heading-color, var(--bs-body-color));
+}
+
+:is(h2, h3, h4, h5, h6).anchored .anchorjs-link {
+  color: inherit !important;
 }
 
 .navbar-title, .navbar-nav .nav-item {
