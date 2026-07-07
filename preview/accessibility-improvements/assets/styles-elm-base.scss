@@ -51,8 +51,10 @@ h2, h3, h4, h5, h6 {
   color: var(--bs-heading-color, var(--bs-body-color));
 }
 
-:is(h2, h3, h4, h5, h6).anchored .anchorjs-link {
-  color: inherit !important;
+:is(h2, h3, h4, h5, h6).anchored .anchorjs-link,
+:is(h2, h3, h4, h5, h6).anchored .anchorjs-link:hover,
+:is(h2, h3, h4, h5, h6).anchored .anchorjs-link:focus {
+  color: var(--bs-heading-color, var(--bs-body-color)) !important;
 }
 
 .navbar-title, .navbar-nav .nav-item {
