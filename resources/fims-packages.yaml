@@ -4,6 +4,7 @@
     The primary package of FIMS
   path: "https://noaa-fims.github.io/FIMS/"
   image: ../images/FIMS_hexlogo.png
+  image-alt: "FIMS base package hex logo"
   categories: [vignettes, doxygen, TMB, C++]
 
 - title: "FIMSdiags"
@@ -12,6 +13,7 @@
     Run common diagnostic analyses on FIMS models
   path: "https://noaa-fims.github.io/FIMSdiags/"
   image: ../images/FIMSdiags_placeholder.png
+  image-alt: "FIMSdiags placeholder package hex logo"
   categories: [diagnostics]
 
 - title: "FIMSRTMB"
@@ -20,6 +22,7 @@
     The repository for development of the RTMB branch of FIMS
   path: https://noaa-fims.github.io/FIMSRTMB/
   image: ../images/FIMS_hexlogo.png
+  image-alt: "FIMS base placeholder package hex logo"
   categories: [TMB, RTMB]
 
 - title: "stockplotr"
@@ -28,6 +31,7 @@
     Tables and figures for the results of stock assessment models
   path: https://nmfs-ost.github.io/stockplotr/
   image: ../images/stockplotr-hex.png
+  image-alt: "stockplotr package hex logo"
   categories: [tables, figures, reports]
 
 - title: "asar"
@@ -36,6 +40,7 @@
     Quarto template files for a U.S. stock assessment report
   path: https://nmfs-ost.github.io/asar/
   image: ../images/asar-hex.png
+  image-alt: "asar package hex logo"
   categories: [reports, Quarto]
 
 - title: "SparseNUTS"
@@ -44,6 +49,7 @@
     Sparse no-U-turn sampling for TMB and RTMB models
   path: https://noaa-afsc.github.io/SparseNUTS/
   image: ../images/FIMS_hexlogo.png
+  image-alt: "FIMS base placeholder package hex logo"
   categories: [MCMC, TMB, RTMB, Stan]
 
 - title: "fims-pkgdown-template"
@@ -52,6 +58,7 @@
     Template providing pkgdown theme files for FIMS R packages
   path: https://noaa-fims.github.io/fims-pkgdown-template/
   image: ../images/FIMS_hexlogo.png
+  image-alt: "FIMS base placeholder package hex logo"
   categories: [pkgdown, template]
 
 - title: ecosystemom
@@ -60,6 +67,7 @@
     Ecosystem operating model. Generates data sets from ecosystem model scenarios for stock assessment models.
   path: https://noaa-fims.github.io/ecosystemom/
   image: ../images/FIMS_hexlogo.png
+  image-alt: "FIMS base placeholder package hex logo"
   categories: [simulation, ecosystem]
   
 - title: fishprior
@@ -68,4 +76,5 @@
     An R package to generate priors for models that assess the status of marine resources
   path: https://noaa-fims.github.io/fishprior/
   image: ../images/FIMS_hexlogo.png
+  image-alt: "FIMS base placeholder package hex logo"
   categories: [Bayesian, priors]

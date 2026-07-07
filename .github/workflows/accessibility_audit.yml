@@ -59,6 +59,7 @@ jobs:
                 "axe",
                 "htmlcs"
               ],
+              "hideElements": ".anchorjs-link, #helpful-resources", // Hide anchor links and the helpful resources section from the audit and the quarto default is causing a color contrast issue
               "reporters": [
                 "cli",
                 ["pa11y-ci-reporter-html", {
