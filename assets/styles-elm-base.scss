@@ -48,13 +48,13 @@ h2, h3, h4, h5, h6 {
 }
 
 :is(h2, h3, h4, h5, h6).anchored {
-  color: var(--bs-heading-color, var(--bs-body-color));
+  color: #213f4b;
 }
 
 :is(h2, h3, h4, h5, h6).anchored .anchorjs-link,
 :is(h2, h3, h4, h5, h6).anchored .anchorjs-link:hover,
 :is(h2, h3, h4, h5, h6).anchored .anchorjs-link:focus {
-  color: var(--bs-heading-color, var(--bs-body-color)) !important;
+  color: #213f4b !important;
 }
 
 .navbar-title, .navbar-nav .nav-item {
