@@ -82,9 +82,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-14aad849e97d8950c2760daefbaa3b89.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-eb7cab2c5ff4470e5b1d51a7b0d49542.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-e24a4b9864467ff76728021753a274b0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-eb7cab2c5ff4470e5b1d51a7b0d49542.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3f4fd886528decdb4b1004afd516bfa5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-b475bc85fa270a90b6a6fada6868a28b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3f4fd886528decdb4b1004afd516bfa5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -128,6 +128,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:description" content="How we use {renv} to keep the FIMS ecosystem reproducible and collaborative">
 <meta property="og:image" content="https://noaa-fims.github.io/preview/accessibility-improvements/blog/images/renv_diagram.png">
 <meta property="og:site_name" content="FIMS">
+<meta property="og:image:alt" content="Diagram comparing R environments without renv versus with renv.">
 <meta property="og:image:height" content="577">
 <meta property="og:image:width" content="1411">
 </head>
@@ -483,7 +484,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/renv_diagram.png" class="img-fluid figure-img"></p>
+<p><img src="images/renv_diagram.png" class="img-fluid figure-img" alt="Diagram comparing R environments without renv versus with renv."></p>
 <figcaption>Without {renv}, each environment maintains its own independent R library with no shared source of truth, leading to version conflicts across developers and machines. With {renv}, a single renv.lock file records exact package versions, keeping all environments in sync.</figcaption>
 </figure>
 </div>
@@ -510,7 +511,7 @@ Tip
 <p>{FIMS} is continuously in active development and since both projects rely heavily on {FIMS}, it’s really important that we are keeping track of what version of {FIMS} we are using. For example, when we are writing functions for {FIMSdiags} and find a bug in {FIMS}, we can switch to using the version with the fix until that fix is merged into the dev or main branch at a later time. Using the {renv} functions to install and update the lockfile with the specific version of {FIMS} makes this really easy to do. For the case studies, this challenge was more complex. We wanted to ensure there was always a version of the case studies that works with the stable version of {FIMS}, but we also want to be able to test them with features being added into the development branch of {FIMS}. To do this, we took advantage of its profiles feature to be able to seamlessly switch between multiple versions of {FIMS} for the case studies. We created two {renv} profiles, each with their own R libraries. The profiles are determined by which branch of the case studies repository you are working on. If your R session detects “main” in the branch name it will automatically use the default profile which uses the stable version of {FIMS}. Otherwise, it will activate the dev profile and therefore, the user will be using the development version of {FIMS}.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/renv_profiles.png" class="img-fluid figure-img"></p>
+<p><img src="images/renv_profiles.png" class="img-fluid figure-img" alt="Flowchart showing how the Rprofile routes to different renv profiles based on the branch."></p>
 <figcaption>When an R session starts in the case-studies repository, the .Rprofile detects the current branch and routes automatically to the matching {renv} profile — the default profile for the stable version of {FIMS}, or the dev profile for the development version.</figcaption>
 </figure>
 </div>

@@ -1667,7 +1667,7 @@ Skip to main content
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://noaa-fims.github.io/preview/accessibility-improvements/blog/images/renv_diagram.png" class="img-fluid figure-img"></p>
+<p><img src="https://noaa-fims.github.io/preview/accessibility-improvements/blog/images/renv_diagram.png" class="img-fluid figure-img" alt="Diagram comparing R environments without renv versus with renv."></p>
 <figcaption>Without {renv}, each environment maintains its own independent R library with no shared source of truth, leading to version conflicts across developers and machines. With {renv}, a single renv.lock file records exact package versions, keeping all environments in sync.</figcaption>
 </figure>
 </div>
@@ -1694,7 +1694,7 @@ Tip
 <p>{FIMS} is continuously in active development and since both projects rely heavily on {FIMS}, it’s really important that we are keeping track of what version of {FIMS} we are using. For example, when we are writing functions for {FIMSdiags} and find a bug in {FIMS}, we can switch to using the version with the fix until that fix is merged into the dev or main branch at a later time. Using the {renv} functions to install and update the lockfile with the specific version of {FIMS} makes this really easy to do. For the case studies, this challenge was more complex. We wanted to ensure there was always a version of the case studies that works with the stable version of {FIMS}, but we also want to be able to test them with features being added into the development branch of {FIMS}. To do this, we took advantage of its profiles feature to be able to seamlessly switch between multiple versions of {FIMS} for the case studies. We created two {renv} profiles, each with their own R libraries. The profiles are determined by which branch of the case studies repository you are working on. If your R session detects “main” in the branch name it will automatically use the default profile which uses the stable version of {FIMS}. Otherwise, it will activate the dev profile and therefore, the user will be using the development version of {FIMS}.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://noaa-fims.github.io/preview/accessibility-improvements/blog/images/renv_profiles.png" class="img-fluid figure-img"></p>
+<p><img src="https://noaa-fims.github.io/preview/accessibility-improvements/blog/images/renv_profiles.png" class="img-fluid figure-img" alt="Flowchart showing how the Rprofile routes to different renv profiles based on the branch."></p>
 <figcaption>When an R session starts in the case-studies repository, the .Rprofile detects the current branch and routes automatically to the matching {renv} profile — the default profile for the stable version of {FIMS}, or the dev profile for the development version.</figcaption>
 </figure>
 </div>
