@@ -212,18 +212,19 @@ pre > code,
   color: var(--bs-body-color);
 }
 
-/* Darken the color of the dv span to pass 4.5:1 contrast ratio */
+/* Increase contrast for decimal values (numbers) */
 code span.dv {
-    color: #991424 !important; /* Darkened from #c94150 to pass 4.5:1 contrast */
+    color: var(--red-30) !important; /* Maps to #a83643 */
 }
 
-/* Darken the color of the st span to pass 4.5:1 contrast ratio */
+/* Increase contrast for strings */
 code span.st {
-    color: #37542d !important; /* Darkened from #587b4b to safely pass the 4.5:1 threshold */
+    color: var(--green-20) !important; /* Maps to #3c5130 */
 }
 
+/* Increase contrast for comments */
 code span.co {
-    color: #405058 !important; /* Darkened from #60757e to safely pass 4.5:1 contrast */
+    color: var(--slate-30) !important; /* Maps to #4a636c */
 }
 
 .quarto-listing-cols-3 {
@@ -281,6 +282,48 @@ img.thumbnail-image.card-img {
   display: none !important;
 }
 
+/* --- ACCESSIBILITY FIX: Default Badge Contrast --- */
+/* Your default badges use the pink theme. 
+   We will darken the border to pink-30 to pass the 3.0:1 UI contrast ratio */
+.quarto-listing-container .listing-category {
+    color: var(--slate-10) !important;
+    border-color: var(--pink-30) !important; 
+    background-color: var(--pink-90) !important;
+}
+
+/* On hover, deepen the colors */
+.quarto-listing-container .listing-category:hover,
+.quarto-listing-container .listing-category:focus {
+    color: var(--slate-00) !important;        
+    border-color: var(--pink-20) !important;
+}
+
+/* Ensure Quarto form inputs and borders pass the 3:1 UI contrast ratio */
+.quarto-listing-container .form-select,
+.quarto-listing-container .form-control,
+.input-group-text {
+    border: 1px solid var(--slate-50) !important; /* Maps to #7c8e95 */
+    color: var(--slate-10) !important;            /* Maps to #213f4b */
+}
+
+/* Ensure placeholder text inside the filter box is legible */
+.quarto-listing-container .form-control::placeholder {
+    color: var(--slate-40) !important; /* Maps to #60757e */
+    opacity: 1; 
+}
+
+/* --- ACCESSIBILITY FIX: Custom Badge Contrasts --- */
+/* For your custom badges (deep-dive, fims-weekly, learn, other), 
+   you used the blue palette. We use blue-40 to pass the 3.0:1 UI contrast ratio */
+div.quarto-post .listing-categories .listing-category[onclick*="ZGVlcC1kaXZl"],
+div.quarto-post .listing-categories .listing-category[onclick*="Zmltcy13ZWVrbHk="],
+div.quarto-post .listing-categories .listing-category[onclick*="bGVhcm4="],
+div.quarto-post .listing-categories .listing-category[onclick*="b3RoZXI="] {
+    border-color: var(--blue-40) !important; /* Darkened from blue-50 (#4896a1) */
+    color: var(--blue-30) !important;        /* (#0e6876) */
+    background-color: var(--blue-90) !important; /* (#e4f0f1) */
+}
+
 /* deep-dive */
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl"] {
   display: flex !important;    /* Horizontally align icon and text */
@@ -309,12 +352,6 @@ img.thumbnail-image.card-img {
   content: "\f002"; /* fa-magnifying glass */
   margin-right: 0.4em;
   display: inline-block;
-}
-
-div.quarto-post .listing-categories .listing-category[onclick*="ZGVlcC1kaXZl"] {
-    border-color: #4896a1;
-    color: #0e6876;
-    background-color: #e4f0f1;
 }
 
 /* fims-weekly */
@@ -348,12 +385,6 @@ div.quarto-post .listing-categories .listing-category[onclick*="ZGVlcC1kaXZl"] {
   display: inline-block;
 }
 
-div.quarto-post .listing-categories .listing-category[onclick*="Zmltcy13ZWVrbHk="] {
-    border-color: #4896a1;
-    color: #0e6876;
-    background-color: #e4f0f1;
-}
-
 /* learn */
 .quarto-listing-category .category[data-category="bGVhcm4="] {
   display: flex !important;    /* Horizontally align icon and text */
@@ -385,12 +416,6 @@ div.quarto-post .listing-categories .listing-category[onclick*="Zmltcy13ZWVrbHk=
   display: inline-block;
 }
 
-div.quarto-post .listing-categories .listing-category[onclick*="bGVhcm4="] {
-    border-color: #4896a1;
-    color: #0e6876;
-    background-color: #e4f0f1;
-}
-
 /* other */
 .quarto-listing-category .category[data-category="b3RoZXI="] {
   display: flex !important;    /* Horizontally align icon and text */
@@ -420,12 +445,6 @@ div.quarto-post .listing-categories .listing-category[onclick*="bGVhcm4="] {
   content: "\f111"; /* fa-circle */
   margin-right: 0.4em;
   display: inline-block;
-}
-
-div.quarto-post .listing-categories .listing-category[onclick*="b3RoZXI="] {
-    border-color: #4896a1;
-    color: #0e6876;
-    background-color: #e4f0f1;
 }
 
 div.quarto-post {
