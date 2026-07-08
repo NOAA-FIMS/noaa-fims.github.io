@@ -278,17 +278,18 @@ function initQuartoAccessibilityFixes() {
       const filter = listing.querySelector("input.search.form-control");
       const sort = listing.querySelector("select.form-select");
 
-      if (filter) {
+      if (filter && !filter.hasAttribute("aria-label")) {
         filter.setAttribute("aria-label", "Filter blog posts");
         filter.setAttribute("title", "Filter blog posts");
       }
 
-      if (sort) {
+      if (sort && !sort.hasAttribute("aria-label")) {
         sort.setAttribute("aria-label", "Sort blog posts");
         sort.setAttribute("title", "Sort blog posts");
       }
 
       // Label generated overlay links that otherwise have no discernible text.
+      // (Even if hidden by CSS, this is an excellent fallback to keep for screen readers)
       listing.querySelectorAll("a.no-external[href]").forEach((link) => {
         if (link.textContent.trim() || link.getAttribute("aria-label")) {
           return;
@@ -304,11 +305,16 @@ function initQuartoAccessibilityFixes() {
       });
     }
 
+    // Apply the labels when the page first loads
     applyListingLabels();
 
-    // Re-apply labels after Quarto updates the listing controls via user interaction.
-    listing.querySelector("input.search.form-control")?.addEventListener("input", applyListingLabels);
-    listing.querySelector("select.form-select")?.addEventListener("change", applyListingLabels);
+    // Watch the listing container. If Quarto's List.js engine rebuilds the HTML,
+    // the observer instantly catches it and re-applies our labels!
+    const observer = new MutationObserver(() => {
+      applyListingLabels();
+    });
+    
+    observer.observe(listing, { childList: true, subtree: true });
   }
 }
 
