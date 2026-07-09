@@ -285,29 +285,29 @@ img.thumbnail-image.card-img {
 /* --- ACCESSIBILITY FIX: Default Badge Contrast --- */
 /* Your default badges use the pink theme. 
    We will darken the border to pink-30 to pass the 3.0:1 UI contrast ratio */
-.quarto-listing-container .listing-category {
+.quarto-listing .listing-category {
     color: var(--slate-10) !important;
     border-color: var(--pink-30) !important; 
     background-color: var(--pink-90) !important;
 }
 
 /* On hover, deepen the colors */
-.quarto-listing-container .listing-category:hover,
-.quarto-listing-container .listing-category:focus {
+.quarto-listing .listing-category:hover,
+.quarto-listing .listing-category:focus {
     color: var(--slate-00) !important;        
     border-color: var(--pink-20) !important;
 }
 
 /* Ensure Quarto form inputs and borders pass the 3:1 UI contrast ratio */
-.quarto-listing-container .form-select,
-.quarto-listing-container .form-control,
+.quarto-listing .form-select,
+.quarto-listing .form-control,
 .input-group-text {
-    border: 1px solid var(--slate-50) !important; /* Maps to #7c8e95 */
+    border: 1px solid var(--slate-40) !important; /* Was slate-50. #60757e passes 3:1 on white. */
     color: var(--slate-10) !important;            /* Maps to #213f4b */
 }
 
 /* Ensure placeholder text inside the filter box is legible */
-.quarto-listing-container .form-control::placeholder {
+.quarto-listing .form-control::placeholder {
     color: var(--slate-40) !important; /* Maps to #60757e */
     opacity: 1; 
 }
@@ -315,10 +315,10 @@ img.thumbnail-image.card-img {
 /* --- ACCESSIBILITY FIX: Custom Badge Contrasts --- */
 /* For your custom badges (deep-dive, fims-weekly, learn, other), 
    you used the blue palette. We use blue-40 to pass the 3.0:1 UI contrast ratio */
-div.quarto-post .listing-categories .listing-category[onclick*="ZGVlcC1kaXZl"],
-div.quarto-post .listing-categories .listing-category[onclick*="Zmltcy13ZWVrbHk="],
-div.quarto-post .listing-categories .listing-category[onclick*="bGVhcm4="],
-div.quarto-post .listing-categories .listing-category[onclick*="b3RoZXI="] {
+:is(div.quarto-post .listing-categories, .quarto-listing) .listing-category[onclick*="ZGVlcC1kaXZl"],
+:is(div.quarto-post .listing-categories, .quarto-listing) .listing-category[onclick*="Zmltcy13ZWVrbHk="],
+:is(div.quarto-post .listing-categories, .quarto-listing) .listing-category[onclick*="bGVhcm4="],
+:is(div.quarto-post .listing-categories, .quarto-listing) .listing-category[onclick*="b3RoZXI="] {
     border-color: var(--blue-40) !important; /* Darkened from blue-50 (#4896a1) */
     color: var(--blue-30) !important;        /* (#0e6876) */
     background-color: var(--blue-90) !important; /* (#e4f0f1) */
