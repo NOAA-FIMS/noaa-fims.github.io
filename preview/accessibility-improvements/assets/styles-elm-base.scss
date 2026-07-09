@@ -285,6 +285,7 @@ img.thumbnail-image.card-img {
 /* --- ACCESSIBILITY FIX: Default Badge Contrast --- */
 /* Your default badges use the pink theme. 
    We will darken the border to pink-30 to pass the 3.0:1 UI contrast ratio */
+#listing-listing .listing-category,
 .quarto-listing .listing-category {
     color: var(--slate-10) !important;
     border-color: var(--pink-30) !important; 
@@ -292,6 +293,8 @@ img.thumbnail-image.card-img {
 }
 
 /* On hover, deepen the colors */
+#listing-listing .listing-category:hover,
+#listing-listing .listing-category:focus,
 .quarto-listing .listing-category:hover,
 .quarto-listing .listing-category:focus {
     color: var(--slate-00) !important;        
@@ -299,6 +302,8 @@ img.thumbnail-image.card-img {
 }
 
 /* Ensure Quarto form inputs and borders pass the 3:1 UI contrast ratio */
+#listing-listing .form-select,
+#listing-listing .form-control,
 .quarto-listing .form-select,
 .quarto-listing .form-control,
 .input-group-text {
@@ -307,6 +312,7 @@ img.thumbnail-image.card-img {
 }
 
 /* Ensure placeholder text inside the filter box is legible */
+#listing-listing .form-control::placeholder,
 .quarto-listing .form-control::placeholder {
     color: var(--slate-40) !important; /* Maps to #60757e */
     opacity: 1; 
@@ -315,10 +321,11 @@ img.thumbnail-image.card-img {
 /* --- ACCESSIBILITY FIX: Custom Badge Contrasts --- */
 /* For your custom badges (deep-dive, fims-weekly, learn, other), 
    you used the blue palette. We use blue-40 to pass the 3.0:1 UI contrast ratio */
-:is(div.quarto-post .listing-categories, .quarto-listing) .listing-category[onclick*="ZGVlcC1kaXZl"],
-:is(div.quarto-post .listing-categories, .quarto-listing) .listing-category[onclick*="Zmltcy13ZWVrbHk="],
-:is(div.quarto-post .listing-categories, .quarto-listing) .listing-category[onclick*="bGVhcm4="],
-:is(div.quarto-post .listing-categories, .quarto-listing) .listing-category[onclick*="b3RoZXI="] {
+:is(div.quarto-post .listing-categories, #listing-listing, .quarto-listing) 
+  .listing-category:is([onclick*="ZGVlcC1kaXZl"], 
+                       [onclick*="Zmltcy13ZWVrbHk="], 
+                       [onclick*="bGVhcm4="], 
+                       [onclick*="b3RoZXI="]) {
     border-color: var(--blue-40) !important; /* Darkened from blue-50 (#4896a1) */
     color: var(--blue-30) !important;        /* (#0e6876) */
     background-color: var(--blue-90) !important; /* (#e4f0f1) */
