@@ -287,8 +287,8 @@ img.thumbnail-image.card-img {
    We will darken the border to pink-30 to pass the 3.0:1 UI contrast ratio */
 #listing-listing .listing-category,
 .quarto-listing .listing-category {
-    color: var(--pink-30) !important; /* Text color:  */
-    border-color: var(--pink-30) !important; /* Border color: , matches other parts of the site */
+    color: var(--slate-10) !important;
+    border-color: var(--pink-40) !important;
     background-color: var(--pink-100) !important;/*  */
 }
 
@@ -297,9 +297,9 @@ img.thumbnail-image.card-img {
 #listing-listing .listing-category:focus,
 .quarto-listing .listing-category:hover,
 .quarto-listing .listing-category:focus {
-    color: var(--pink-10) !important;
-    border-color: var(--pink-10) !important; /* Darker pink border on hover */
-    background-color: var(--pink-100) !important; /* Slightly darker pink background on hover */
+    color: var(--pink-30) !important;
+    border-color: var(--pink-30) !important;
+    background-color: var(--pink-100) !important;
 }
 
 /* Ensure Quarto form inputs and borders pass the 3:1 UI contrast ratio */
@@ -315,7 +315,7 @@ img.thumbnail-image.card-img {
 /* Ensure placeholder text inside the filter box is legible */
 #listing-listing .form-control::placeholder,
 .quarto-listing .form-control::placeholder {
-    color: var(--slate-40) !important; /* Maps to #60757e */
+    color: var(--slate-30) !important; /* Upped contrast from slate-40 */
     opacity: 1; 
 }
 
@@ -327,9 +327,16 @@ img.thumbnail-image.card-img {
                        [onclick*="Zmltcy13ZWVrbHk="], 
                        [onclick*="bGVhcm4="], 
                        [onclick*="b3RoZXI="]) {
-    border-color: var(--blue-40) !important; /* Border color: #1c7d8b */
+    border-color: var(--blue-30) !important; /* Darker border for better contrast */
     color: var(--blue-30) !important;        /* Text color: #0e6876 */
     background-color: var(--blue-100) !important; /* #e4f0f1 */
+}
+
+/* --- ACCESSIBILITY FIX: Code Club page contrast --- */
+/* Fixes a specific color contrast issue on the Code Club page where a paragraph
+   had insufficient contrast against its container's background. */
+#a-space-for-everyone > div > div:nth-child(1) > p {
+    color: var(--slate-10) !important;
 }
 
 /* deep-dive */

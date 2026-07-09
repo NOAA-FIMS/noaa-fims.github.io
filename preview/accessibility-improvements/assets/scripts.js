@@ -264,7 +264,9 @@ function initQuartoAccessibilityFixes() {
     // Quarto generates <div class="sourceCode"> for R/Python code blocks. If these blocks 
     // contain long lines of code, they scroll horizontally. However, Quarto forgets to add 
     // tabindex="0", meaning keyboard-only users cannot focus on the block to scroll it.
-    const codeBlocks = document.querySelectorAll(".sourceCode:not([tabindex='0'])");
+    // We also target other custom scrollable <pre> blocks that might be missed.
+    const selector = ".sourceCode:not([tabindex='0']), #photo-code > pre:not([tabindex='0'])";
+    const codeBlocks = document.querySelectorAll(selector);
     codeBlocks.forEach(function(block) {
       // This is a secure way to modify an element's attributes without risk of XSS.
       block.setAttribute("tabindex", "0");
@@ -326,6 +328,29 @@ function initQuartoAccessibilityFixes() {
     });
     
     observer.observe(listing, { childList: true, subtree: true });
+  }
+
+  // FIX 3: Contributor list role validation (axe: aria-required-children)
+  // On the contributors page, the generated list may have intermediate
+  // divs between the `role="list"` container and `role="listitem"` children,
+  // which is invalid. This finds and unwraps them.
+  const contributorList = document.querySelector("#contributors > div[role='list']");
+  if (contributorList) {
+    // Find direct children that are not listitems themselves. These are potential invalid wrappers.
+    const potentialWrappers = Array.from(contributorList.children).filter(
+      child => child.getAttribute('role') !== 'listitem'
+    );
+
+    potentialWrappers.forEach(wrapper => {
+      // See if this wrapper contains listitems deep inside.
+      const listItems = wrapper.querySelectorAll("[role='listitem']");
+      if (listItems.length > 0) {
+        // It's an invalid wrapper. Move the items out.
+        listItems.forEach(item => contributorList.appendChild(item));
+        // Remove the now-empty wrapper.
+        wrapper.remove();
+      }
+    });
   }
 }
 
