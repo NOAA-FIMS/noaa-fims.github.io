@@ -287,9 +287,9 @@ img.thumbnail-image.card-img {
    We will darken the border to pink-30 to pass the 3.0:1 UI contrast ratio */
 #listing-listing .listing-category,
 .quarto-listing .listing-category {
-    color: var(--slate-10) !important; /* Text color: #213f4b */
-    border-color: var(--pink-40) !important; /* Border color: #b0508a, matches other parts of the site */
-    background-color: var(--pink-100) !important;/* #FDF9FB */
+    color: var(--pink-30) !important; /* Text color:  */
+    border-color: var(--pink-30) !important; /* Border color: , matches other parts of the site */
+    background-color: var(--pink-100) !important;/*  */
 }
 
 /* On hover, deepen the colors */
@@ -297,9 +297,9 @@ img.thumbnail-image.card-img {
 #listing-listing .listing-category:focus,
 .quarto-listing .listing-category:hover,
 .quarto-listing .listing-category:focus {
-    color: var(--slate-00) !important;
-    border-color: var(--pink-20) !important; /* Darker pink border on hover */
-    background-color: var(--pink-80) !important; /* Slightly darker pink background on hover */
+    color: var(--pink-10) !important;
+    border-color: var(--pink-10) !important; /* Darker pink border on hover */
+    background-color: var(--pink-100) !important; /* Slightly darker pink background on hover */
 }
 
 /* Ensure Quarto form inputs and borders pass the 3:1 UI contrast ratio */
@@ -329,7 +329,7 @@ img.thumbnail-image.card-img {
                        [onclick*="b3RoZXI="]) {
     border-color: var(--blue-40) !important; /* Border color: #1c7d8b */
     color: var(--blue-30) !important;        /* Text color: #0e6876 */
-    background-color: var(--blue-90) !important; /* #e4f0f1 */
+    background-color: var(--blue-100) !important; /* #e4f0f1 */
 }
 
 /* deep-dive */
