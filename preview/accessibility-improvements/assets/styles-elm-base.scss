@@ -224,7 +224,7 @@ code span.st {
 
 /* Increase contrast for comments */
 code span.co {
-    color: var(--slate-30) !important; /* Maps to #4a636c */
+    color: var(--slate-10) !important; /* Maps to #213f4b, improved contrast from slate-30 */
 }
 
 .quarto-listing-cols-3 {

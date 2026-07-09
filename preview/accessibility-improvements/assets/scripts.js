@@ -260,13 +260,24 @@ var AUTOHIDE = Boolean(0);
 function initQuartoAccessibilityFixes() {
   
   // FIX 1: Scrollable Code Blocks (axe: scrollable-region-focusable)
-  // Quarto generates <div class="sourceCode"> for R/Python code blocks. If these blocks 
-  // contain long lines of code, they scroll horizontally. However, Quarto forgets to add 
-  // tabindex="0", meaning keyboard-only users cannot focus on the block to scroll it.
-  const codeBlocks = document.querySelectorAll(".sourceCode");
-  codeBlocks.forEach(function(block) {
-    block.setAttribute("tabindex", "0");
-  });
+  const fixScrollableCodeBlocks = () => {
+    // Quarto generates <div class="sourceCode"> for R/Python code blocks. If these blocks 
+    // contain long lines of code, they scroll horizontally. However, Quarto forgets to add 
+    // tabindex="0", meaning keyboard-only users cannot focus on the block to scroll it.
+    const codeBlocks = document.querySelectorAll(".sourceCode:not([tabindex='0'])");
+    codeBlocks.forEach(function(block) {
+      // This is a secure way to modify an element's attributes without risk of XSS.
+      block.setAttribute("tabindex", "0");
+    });
+  };
+
+  // Run on initial load for all static code blocks.
+  fixScrollableCodeBlocks();
+
+  // Also re-run when a tab is shown in a panelset, for dynamically-visible code blocks.
+  // This relies on the 'shown.bs.tab' event from Bootstrap, which Quarto uses for panelsets.
+  // We listen on the whole document because the event bubbles up.
+  document.addEventListener('shown.bs.tab', fixScrollableCodeBlocks);
 
   // FIX 2: Quarto Listings (axe: link-name)
   // Quarto's generated grid and default listings frequently generate empty HTML <a> tags 
