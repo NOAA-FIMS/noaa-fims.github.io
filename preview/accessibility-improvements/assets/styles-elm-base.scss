@@ -227,6 +227,11 @@ code span.co {
     color: var(--slate-10) !important; /* Maps to #213f4b, improved contrast from slate-30 */
 }
 
+/* In dark mode, comments need to be light to be visible on a dark code background. */
+.quarto-dark code span.co {
+    color: var(--slate-60) !important; /* A light grey from the palette for legibility. */
+}
+
 .quarto-listing-cols-3 {
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 0.75em;
@@ -286,7 +291,7 @@ img.thumbnail-image.card-img {
 /* Your default badges use the pink theme. 
    We will darken the border to pink-30 to pass the 3.0:1 UI contrast ratio */
 #listing-listing .listing-category {
-  color: var(--pink-10) !important;         /* darkest pink text */
+  color: var(--slate-10) !important;         /* using slate-10 for higher contrast */
   border-color: var(--pink-30) !important;
   background-color: var(--pink-90) !important; /* less pale than pink-100 */
 }
@@ -305,7 +310,7 @@ img.thumbnail-image.card-img {
 /* Ensure Quarto form inputs and borders pass the 3:1 UI contrast ratio */
 #listing-listing-sort.form-select,
 #listing-listing input.search.form-control {
-    border: 1px solid var(--slate-40) !important; /* Was slate-50. #60757e passes 3:1 on white. */
+    border: 1px solid var(--slate-30) !important; /* Use slate-30 for a 3:1+ contrast ratio on a white background. */
     color: var(--slate-10) !important;            /* Maps to #213f4b */
     background-color: #ffffff !important; /* Explicitly set so Axe can calculate contrast */
 }
@@ -334,6 +339,11 @@ img.thumbnail-image.card-img {
 #a-space-for-everyone > div > div:nth-child(1) > p {
     color: var(--slate-10) !important;
 }
+
+.quarto-dark #a-space-for-everyone > div > div:nth-child(1) > p {
+    color: var(--slate-60) !important; /* Use a light color for dark mode, consistent with other fixes. */
+}
+
 
 /* deep-dive */
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl"] {
@@ -533,4 +543,5 @@ div.quarto-post .metadata {
 
   #sib-container .sib-form-block__button { 
     padding: 6px 14px !important; 
+    background-color: #33818c !important; /* Override Brevo default for AA contrast */
   }
