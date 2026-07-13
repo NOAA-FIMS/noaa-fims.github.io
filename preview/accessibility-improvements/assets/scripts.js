@@ -310,7 +310,7 @@ function initQuartoAccessibilityFixes() {
 
         // Updated selector to catch table rows and '.title' used in default listings
         const card = link.closest(".quarto-post, .card, .quarto-grid-item, tr");
-        const title = card?.querySelector(".listing-title, .title, h2, h3, h4")?.textContent?.trim();
+        const title = card?.querySelector(".listing-title, .title, .card-title, h2, h3, h4, h5")?.textContent?.trim();
 
         if (title) {
           link.setAttribute("aria-label", `Open blog post: ${title}`);
