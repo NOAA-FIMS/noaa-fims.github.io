@@ -328,7 +328,9 @@ function initQuartoAccessibilityFixes() {
     // Watch the listing container. If Quarto's List.js engine rebuilds the HTML,
     // the observer instantly catches it and re-applies our labels!
     const observer = new MutationObserver(() => {
-      applyListingLabels();
+      // Use a small timeout to ensure Quarto's DOM manipulation is fully complete
+      // before we try to modify it. This helps avoid race conditions.
+      setTimeout(applyListingLabels, 50);
     });
     
     observer.observe(listing, { childList: true, subtree: true });
