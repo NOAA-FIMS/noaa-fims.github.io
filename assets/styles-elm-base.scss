@@ -285,36 +285,33 @@ img.thumbnail-image.card-img {
 /* --- ACCESSIBILITY FIX: Default Badge Contrast --- */
 /* Your default badges use the pink theme. 
    We will darken the border to pink-30 to pass the 3.0:1 UI contrast ratio */
-#listing-listing .listing-category,
-.quarto-listing .listing-category {
-    color: var(--slate-10) !important;
-    border-color: var(--pink-40) !important;
-    background-color: var(--pink-100) !important;/*  */
+#listing-listing .listing-category {
+  color: var(--pink-10) !important;         /* darkest pink text */
+  border-color: var(--pink-30) !important;
+  background-color: var(--pink-90) !important; /* less pale than pink-100 */
 }
 
-/* On hover, deepen the colors */
+/* Hover/focus/active: stronger contrast and visible focus */
 #listing-listing .listing-category:hover,
 #listing-listing .listing-category:focus,
-.quarto-listing .listing-category:hover,
-.quarto-listing .listing-category:focus {
-    color: var(--pink-30) !important;
-    border-color: var(--pink-30) !important;
-    background-color: var(--pink-100) !important;
+#listing-listing .listing-category:active {
+  color: var(--pink-100) !important;
+  border-color: var(--pink-20) !important;
+  background-color: var(--pink-30) !important;
+  outline: 2px solid var(--slate-20);
+  outline-offset: 2px;
 }
 
 /* Ensure Quarto form inputs and borders pass the 3:1 UI contrast ratio */
-#listing-listing .form-select,
-#listing-listing .form-control,
-.quarto-listing .form-select,
-.quarto-listing .form-control,
-.input-group-text {
+#listing-listing-sort.form-select,
+#listing-listing input.search.form-control {
     border: 1px solid var(--slate-40) !important; /* Was slate-50. #60757e passes 3:1 on white. */
     color: var(--slate-10) !important;            /* Maps to #213f4b */
+    background-color: #ffffff !important; /* Explicitly set so Axe can calculate contrast */
 }
 
 /* Ensure placeholder text inside the filter box is legible */
-#listing-listing .form-control::placeholder,
-.quarto-listing .form-control::placeholder {
+#listing-listing input.search.form-control::placeholder {
     color: var(--slate-30) !important; /* Upped contrast from slate-40 */
     opacity: 1; 
 }
@@ -327,11 +324,10 @@ img.thumbnail-image.card-img {
                        [onclick*="Zmltcy13ZWVrbHk="], 
                        [onclick*="bGVhcm4="], 
                        [onclick*="b3RoZXI="]) {
-    border-color: var(--blue-30) !important; /* Darker border for better contrast */
-    color: var(--blue-30) !important;        /* Text color: #0e6876 */
-    background-color: var(--blue-100) !important; /* #e4f0f1 */
-}
-
+      border-color: var(--blue-40) !important;      /* #1c7d8b */
+      color: var(--slate-10) !important;            /* #213f4b */
+      background-color: var(--blue-90) !important;  /* #e4f0f1 */
+    }
 /* --- ACCESSIBILITY FIX: Code Club page contrast --- */
 /* Fixes a specific color contrast issue on the Code Club page where a paragraph
    had insufficient contrast against its container's background. */

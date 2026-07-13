@@ -308,12 +308,16 @@ function initQuartoAccessibilityFixes() {
           return;
         }
 
-        const card = link.closest(".quarto-post, .card, .quarto-grid-item");
-        const title = card?.querySelector(".listing-title, h3, h4")?.textContent?.trim();
+        // Updated selector to catch table rows and '.title' used in default listings
+        const card = link.closest(".quarto-post, .card, .quarto-grid-item, tr");
+        const title = card?.querySelector(".listing-title, .title, h2, h3, h4")?.textContent?.trim();
 
         if (title) {
           link.setAttribute("aria-label", `Open blog post: ${title}`);
           link.setAttribute("title", `Open blog post: ${title}`);
+        } else {
+          // Fallback to guarantee the Axe error is cleared even if title is missing
+          link.setAttribute("aria-label", "Read full blog post");
         }
       });
     }
