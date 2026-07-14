@@ -20,18 +20,17 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   contrib-qmd-job:
     runs-on: ubuntu-latest
     name: A job to fetch contribs from NOAA-FIMS/FIMS
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v7
-
-      - name: Pull any changes (useful when there is an auto PR)
-        if: github.event_name == 'push'
-        run: git pull --rebase origin main
 
       - name: Fetch contributors from NOAA-FIMS/FIMS and update avatar grid
         uses: actions/github-script@v9
@@ -122,10 +121,7 @@ jobs:
 
       - name: Commit and push if contributors.qmd changed
         if: github.event_name == 'push'
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add contact/contributors.qmd
-          git diff --cached --quiet || git commit -m "Update contributors list"
-          git pull --rebase origin main
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update contributors list"
+          file_pattern: contact/contributors.qmd
