@@ -43,7 +43,7 @@ $navbar-bg: $white;
 $code-color: $purple-30;
 $code-bg: $white;
 $footer-bg: $white;
-$heading-color: $slate-10;
+$heading-color: $blue-20;
 $title-banner-color: $heading-color;
 
 // Bootstrap fixups
@@ -68,11 +68,11 @@ $text-muted: $gray-700;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  background-color: $white;
+	background-color: $white;
 }
 
 h2 {
-  border-bottom: 2px solid #ebeeef; /* Replaced var(--bs-light) */
+  border-bottom: 2px solid (var(--bs-light));
 }
 
 .header-wrap {
@@ -82,7 +82,7 @@ h2 {
 }
 .header-wrap h2 {
   width: 100%; 
-  border-bottom: 2px solid #ebeeef; /* Replaced var(--bs-light) */
+  border-bottom: 2px solid var(--bs-light);
   margin-top: 4em; 
 }
 
@@ -99,14 +99,14 @@ h2 {
 
 div.quarto-post .listing-categories .listing-category,
 .quarto-title-block .quarto-title .quarto-categories .quarto-category {
-  border-color: $pink-40;
-  color: $slate-10;
+  border-color: $pink-30;
+  color: $pink-10;
   background-color: $pink-90;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 div.quarto-post .listing-categories .listing-category {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .blockquote {
@@ -114,5 +114,5 @@ div.quarto-post .listing-categories .listing-category {
 }
 
 .code-with-filename .code-with-filename-file {
-  background-color: #ebeeef; /* Replaced var(--slate-90) */
+  background-color: var(--slate-90);
 }
