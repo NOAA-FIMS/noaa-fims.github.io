@@ -47,14 +47,30 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0.66em;
 }
 
+/* =========================================================
+   ACCESSIBILITY FIX: Headings & Anchor Links (Light Mode) 
+   ========================================================= */
 :is(h2, h3, h4, h5, h6).anchored {
-  color: var(--bs-heading-color, var(--bs-body-color));
+  color: #213f4b !important; /* Maps to slate-10 */
 }
 
 :is(h2, h3, h4, h5, h6).anchored .anchorjs-link,
 :is(h2, h3, h4, h5, h6).anchored .anchorjs-link:hover,
 :is(h2, h3, h4, h5, h6).anchored .anchorjs-link:focus {
-  color: var(--bs-heading-color, var(--bs-body-color));
+  color: #213f4b !important; /* Maps to slate-10 */
+}
+
+/* =========================================================
+   ACCESSIBILITY FIX: Headings & Anchor Links (Dark Mode) 
+   ========================================================= */
+.quarto-dark :is(h2, h3, h4, h5, h6).anchored {
+  color: #bed9de !important; /* Maps to blue-80 */
+}
+
+.quarto-dark :is(h2, h3, h4, h5, h6).anchored .anchorjs-link,
+.quarto-dark :is(h2, h3, h4, h5, h6).anchored .anchorjs-link:hover,
+.quarto-dark :is(h2, h3, h4, h5, h6).anchored .anchorjs-link:focus {
+  color: #bed9de !important; /* Maps to blue-80 */
 }
 
 .navbar-title, .navbar-nav .nav-item {
@@ -179,29 +195,6 @@ figcaption {
   text-align: right;
 }
 
-.quarto-listing .form-select,
-.quarto-listing input.search.form-control {
-  background-color: var(--bs-body-bg);
-  color: var(--bs-body-color);
-  border-color: var(--quarto-border-color, var(--bs-border-color));
-}
-
-.quarto-listing .form-select option {
-  background-color: var(--bs-body-bg);
-  color: var(--bs-body-color);
-}
-
-.quarto-listing .form-select:focus,
-.quarto-listing input.search.form-control:focus {
-  background-color: var(--bs-body-bg);
-  color: var(--bs-body-color);
-}
-
-.quarto-listing input.search.form-control::placeholder {
-  color: var(--bs-secondary-color);
-  opacity: 1;
-}
-
 .code-with-filename > div {
   border: 1px solid var(--quarto-border-color);
   padding: 0.66rem;
@@ -307,18 +300,38 @@ img.thumbnail-image.card-img {
   outline-offset: 2px;
 }
 
-/* Ensure Quarto form inputs and borders pass the 3:1 UI contrast ratio */
-#listing-listing-sort.form-select,
-#listing-listing input.search.form-control {
-    border: 1px solid #213f4b !important; /* Use slate-30 for a 3:1+ contrast ratio on a white background. */
-    color: #213f4b !important;            /* Maps to #213f4b */
-    background-color: #ffffff !important; /* Explicitly set so Axe can calculate contrast */
+/* =========================================================
+   ACCESSIBILITY FIX: Form Inputs & Dropdowns (Light Mode) 
+   ========================================================= */
+.quarto-listing .form-select,
+.quarto-listing input.search.form-control,
+.quarto-listing .form-select option {
+  background-color: #ffffff !important; /* White */
+  color: #213f4b !important;            /* var(--slate-10) */
+  border: 1px solid #4a636c !important; /* var(--slate-30) */
 }
 
-/* Ensure placeholder text inside the filter box is legible */
-#listing-listing input.search.form-control::placeholder {
-    color: #213f4b !important; /* Upped contrast from slate-40 */
-    opacity: 1; 
+/* Light Mode Placeholder */
+.quarto-listing input.search.form-control::placeholder {
+  color: #4a636c !important;            /* var(--slate-30) */
+  opacity: 1 !important; 
+}
+
+/* =========================================================
+   ACCESSIBILITY FIX: Form Inputs & Dropdowns (Dark Mode) 
+   ========================================================= */
+.quarto-dark .quarto-listing .form-select,
+.quarto-dark .quarto-listing input.search.form-control,
+.quarto-dark .quarto-listing .form-select option {
+  background-color: #0e181e !important; /* var(--slate-00) */
+  color: #ebeeef !important;            /* var(--slate-90) */
+  border: 1px solid #60757e !important; /* var(--slate-40) */
+}
+
+/* Dark Mode Placeholder */
+.quarto-dark .quarto-listing input.search.form-control::placeholder {
+  color: #99a6ac !important;            /* var(--slate-60) */
+  opacity: 1 !important; 
 }
 
 /* --- ACCESSIBILITY FIX: Custom Badge Contrasts --- */
