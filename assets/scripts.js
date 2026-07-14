@@ -81,6 +81,10 @@ function setVisibleLinksForState(state) {
     const showOn = (link.dataset.showOn || "").trim();
     const shouldShow = showOn.split(/\s+/).filter(Boolean).includes(state);
     link.classList.toggle("is-visible", shouldShow);
+    // This is a secure way to modify an element's attributes without risk of XSS.
+    link.setAttribute("aria-hidden", String(!shouldShow));
+    // Programmatically set tabindex to make links focusable only when visible.
+    link.tabIndex = shouldShow ? 0 : -1;
   });
 }
 
@@ -304,6 +308,14 @@ function initQuartoAccessibilityFixes() {
     );
 
     invalidChildren.forEach(child => {
+      // If the child is a <section> element, it doesn't belong in the list at all.
+      // It indicates a DOM structure error where content is misplaced. We move it 
+      // to be a sibling of the entire #contributors container to fix the page flow.
+      if (child.tagName.toLowerCase() === 'section') {
+        contributorList.closest('#contributors')?.after(child);
+        return; // Go to the next invalid child
+      }
+
       // See if this invalid child contains listitems deep inside.
       const listItems = child.querySelectorAll("[role='listitem']");
       if (listItems.length > 0) {
