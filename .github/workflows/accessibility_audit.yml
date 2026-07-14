@@ -60,7 +60,7 @@ jobs:
                 "axe",
                 "htmlcs"
               ],
-              "hideElements": ".anchorjs-link, #helpful-resources, #listing-listing input.search, #listing-listing-sort, #listing-listing a.no-external", 
+              "hideElements": ".anchorjs-link, #helpful-resources, #listing-listing input.search, #listing-listing a.no-external, .listing-category",
               "reporters": [
                 "cli",
                 ["pa11y-ci-reporter-html", {
