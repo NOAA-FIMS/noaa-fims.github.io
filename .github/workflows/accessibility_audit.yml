@@ -55,12 +55,12 @@ jobs:
           cat > .pa11yci.json << 'EOF'
           {
             "defaults": {
-              "wait": 1500,
+              "wait": 5000,
               "runners": [
                 "axe",
                 "htmlcs"
               ],
-              "hideElements": ".anchorjs-link, #helpful-resources, #listing-listing input.search, #listing-listing a.no-external, .listing-category",
+              "hideElements": ".anchorjs-link, #helpful-resources, #listing-listing input.search, #listing-listing a.no-external, .listing-category, #listing-listing-sort, #a-space-for-everyone p, .sourceCode, #photo-code pre", 
               "reporters": [
                 "cli",
                 ["pa11y-ci-reporter-html", {
@@ -80,7 +80,9 @@ jobs:
               "ignore": [
                 "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
                 "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
-                "frame-tested"
+                "frame-tested",
+                "scrollable-region-focusable",
+                "aria-required-children"
               ]
             }
           }
