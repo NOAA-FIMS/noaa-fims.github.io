@@ -96,6 +96,8 @@ format:
     anchor-sections: true
     include-after-body: assets/open-in-new-tab.html
     include-before-body: assets/skip-link.html
+    scripts: 
+      - assets/scripts.js
     header-includes: |
       <script>
         window.addEventListener('DOMContentLoaded', function() {
