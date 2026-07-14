@@ -194,38 +194,6 @@ function initQuartoAccessibilityFixes() {
   applyListingLabels();
   setInterval(applyListingLabels, 500);
 
-  // FIX 3: Contributor list role validation (axe: aria-required-children)
-  // On the contributors page, the generated list may have intermediate
-  // content that breaks the grid layout and accessibility. This polls for a
-  // few seconds to find and repair the structure.
-  const fixContributorList = () => {
-    const list = document.querySelector("#contributors [role='list']");
-    if (!list) return false; // List not ready yet.
-
-    // Find and move any <section> elements that are incorrectly inside the list.
-    const misplacedSections = list.querySelectorAll('section');
-    if (misplacedSections.length > 0) {
-      list.after(...misplacedSections);
-    }
-
-    // Find and wrap any stray <a> tags that are not inside a listitem.
-    const strayAnchors = Array.from(list.children).filter(child => child.tagName === 'A');
-    if (strayAnchors.length > 0) {
-      strayAnchors.forEach(anchor => {
-        const wrapper = document.createElement('div');
-        wrapper.setAttribute('role', 'listitem');
-        anchor.parentNode.replaceChild(wrapper, anchor);
-        wrapper.appendChild(anchor);
-      });
-    }
-    // The fix is "done" if there's nothing left to repair.
-    return misplacedSections.length === 0 && strayAnchors.length === 0;
-  };
-
-  let attempts = 0;
-  const interval = setInterval(() => {
-    if (fixContributorList() || ++attempts > 20) clearInterval(interval);
-  }, 250);
 }
 
 // Consolidate all script initializations into a single DOMContentLoaded event
