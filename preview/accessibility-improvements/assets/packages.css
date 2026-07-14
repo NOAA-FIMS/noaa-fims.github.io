@@ -137,6 +137,7 @@
   color: inherit;
   position: static !important;
   display: block;
+  height: 100%;
 }
 
 /* Feature the first listing item (weight/title sort dependent) */
