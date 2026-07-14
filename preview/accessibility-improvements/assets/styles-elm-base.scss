@@ -309,14 +309,33 @@ img.thumbnail-image.card-img {
 
 /* --- ACCESSIBILITY FIX: Custom Badge Contrasts --- */
 /* For your custom badges (deep-dive, fims-weekly, learn, other) */
-:is(div.quarto-post .listing-categories, #listing-listing, .quarto-listing) 
-  .listing-category:is([onclick*="ZGVlcC1kaXZl"], 
-                       [onclick*="Zmltcy13ZWVrbHk="], 
-                       [onclick*="bGVhcm4="], 
-                       [onclick*="b3RoZXI="]) {
-      color: #09414a !important;             /* blue-10 for high contrast */
-      border-color: #09414a !important;      /* Matches text perfectly */
-      background-color: #e4f0f1 !important;  
+
+/* Light Mode (Old-school explicit selectors) */
+#listing-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+#listing-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
+#listing-listing .listing-category[onclick*="bGVhcm4="],
+#listing-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+.quarto-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
+.quarto-listing .listing-category[onclick*="bGVhcm4="],
+.quarto-listing .listing-category[onclick*="b3RoZXI="] {
+  color: #09414a !important;             /* blue-10 for high contrast */
+  border-color: #09414a !important;      /* Matches text perfectly */
+  background-color: #e4f0f1 !important;  
+}
+
+/* Dark Mode (Old-school explicit selectors) */
+.quarto-dark #listing-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+.quarto-dark #listing-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
+.quarto-dark #listing-listing .listing-category[onclick*="bGVhcm4="],
+.quarto-dark #listing-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-dark .quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+.quarto-dark .quarto-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
+.quarto-dark .quarto-listing .listing-category[onclick*="bGVhcm4="],
+.quarto-dark .quarto-listing .listing-category[onclick*="b3RoZXI="] {
+  color: #f7fafb !important;             /* blue-100 for high contrast on dark */
+  border-color: #f7fafb !important;      /* Matches text perfectly */
+  background-color: #09414a !important;  
 }
 
 /* --- ACCESSIBILITY FIX: Code Club page contrast --- */
@@ -530,3 +549,26 @@ div.quarto-post .metadata {
     padding: 6px 14px !important; 
     background-color: #33818c !important; /* Override Brevo default for AA contrast */
   }
+
+  /* =========================================================
+   ACCESSIBILITY FIX: HEADLESS SCANNER CONTRAST BUG
+   Explicitly declare card backgrounds so the Axe scanner 
+   can mathematically calculate the badge contrast without
+   getting confused by transparent parent containers.
+   ========================================================= */
+
+/* Light Mode Card Backgrounds */
+#listing-listing,
+.quarto-listing div.quarto-post,
+.quarto-listing .card,
+.quarto-listing div.quarto-post .metadata {
+  background-color: #ffffff !important;
+}
+
+/* Dark Mode Card Backgrounds */
+.quarto-dark #listing-listing,
+.quarto-dark .quarto-listing div.quarto-post,
+.quarto-dark .quarto-listing .card,
+.quarto-dark .quarto-listing div.quarto-post .metadata {
+  background-color: #0e181e !important; /* Maps to slate-00 */
+}
