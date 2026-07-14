@@ -52,10 +52,10 @@ jobs:
           find _site -name "*.html" -not -path "*/assets/*" | sed 's|^_site/|http://localhost:3000/|' > local-urls.txt
           
           # Create pa11y config (Notice everything is nested inside "defaults")
-          # hideElements to hide the helpful resources anchor that is causing a color contrast issue that is not fixable without changing the design of the site
           cat > .pa11yci.json << 'EOF'
           {
             "defaults": {
+              "wait": 1500,
               "runners": [
                 "axe",
                 "htmlcs"

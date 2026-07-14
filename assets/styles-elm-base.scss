@@ -47,32 +47,6 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0.66em;
 }
 
-/* =========================================================
-   ACCESSIBILITY FIX: Headings & Anchor Links (Light Mode) 
-   ========================================================= */
-:is(h2, h3, h4, h5, h6).anchored {
-  color: #213f4b !important; /* Maps to slate-10 */
-}
-
-:is(h2, h3, h4, h5, h6).anchored .anchorjs-link,
-:is(h2, h3, h4, h5, h6).anchored .anchorjs-link:hover,
-:is(h2, h3, h4, h5, h6).anchored .anchorjs-link:focus {
-  color: #213f4b !important; /* Maps to slate-10 */
-}
-
-/* =========================================================
-   ACCESSIBILITY FIX: Headings & Anchor Links (Dark Mode) 
-   ========================================================= */
-.quarto-dark :is(h2, h3, h4, h5, h6).anchored {
-  color: #bed9de !important; /* Maps to blue-80 */
-}
-
-.quarto-dark :is(h2, h3, h4, h5, h6).anchored .anchorjs-link,
-.quarto-dark :is(h2, h3, h4, h5, h6).anchored .anchorjs-link:hover,
-.quarto-dark :is(h2, h3, h4, h5, h6).anchored .anchorjs-link:focus {
-  color: #bed9de !important; /* Maps to blue-80 */
-}
-
 .navbar-title, .navbar-nav .nav-item {
   font-family: $font-family-heading;
   font-weight: 400;
@@ -346,6 +320,7 @@ img.thumbnail-image.card-img {
       color: #1c7d8b !important;            /* #1c7d8b */
       background-color: #e4f0f1 !important;  /* #e4f0f1 */
     }
+
 /* --- ACCESSIBILITY FIX: Code Club page contrast --- */
 /* Fixes a specific color contrast issue on the Code Club page where a paragraph
    had insufficient contrast against its container's background. */
@@ -356,7 +331,6 @@ img.thumbnail-image.card-img {
 .quarto-dark #a-space-for-everyone > div > div:nth-child(1) > p {
     color: #f4f4f4 !important; /* Use a light color for dark mode, consistent with other fixes. */
 }
-
 
 /* deep-dive */
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl"] {
