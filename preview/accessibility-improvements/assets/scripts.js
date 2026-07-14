@@ -1,12 +1,3 @@
-const preloadedImages = [];
-const imageList = [
-  "images/fims-user1.png",
-  "images/fims-user2.png",
-  "images/fims-user3.png",
-  "images/fims-user4.png",
-  "images/fims-user5.png",
-];
-
 const DEFAULT_PATHWAY = {
   state: "user0",
   image: "images/fims-user0.png",
@@ -15,96 +6,37 @@ const DEFAULT_PATHWAY = {
   caption: "Overview of FIMS user pathways.",
 };
 
-imageList.forEach((src) => {
+// Preload images to prevent flicker on change
+["images/fims-user1.png", "images/fims-user2.png", "images/fims-user3.png", "images/fims-user4.png", "images/fims-user5.png"].forEach((src) => {
   const img = new Image();
   img.src = src;
-  preloadedImages.push(img);
 });
 
-function stateFromImageSrc(src) {
-  const match = src.match(/fims-user(\d+)\.png$/);
-  return match ? `user${match[1]}` : null;
-}
-
-function getPathwayButtons() {
-  return Array.from(document.querySelectorAll("[data-pathway-button]"));
-}
-
-function getPathwayLinks() {
-  return Array.from(document.querySelectorAll(".fims-graphic-container a.link-hotspot"));
-}
-
 function getPathwayConfig(state) {
-  if (state === DEFAULT_PATHWAY.state) {
+  if (!state || state === DEFAULT_PATHWAY.state) {
     return DEFAULT_PATHWAY;
   }
-
   const control = document.querySelector(`[data-pathway-button][data-pathway="${state}"]`);
-
   if (!control) {
     return DEFAULT_PATHWAY;
   }
-
   return {
     state,
-    image: control.dataset.image || DEFAULT_PATHWAY.image,
-    alt: control.dataset.alt || DEFAULT_PATHWAY.alt,
-    label: control.dataset.label || control.textContent.trim() || DEFAULT_PATHWAY.label,
-    caption: control.dataset.caption || control.dataset.alt || DEFAULT_PATHWAY.caption,
+    image: control.dataset.image,
+    alt: control.dataset.alt,
+    label: control.dataset.label,
+    caption: control.dataset.caption,
   };
 }
 
-function deriveLinkLabel(link) {
-  const explicitLabel = (link.dataset.linkLabel || "").trim();
-  if (explicitLabel) {
-    return explicitLabel;
-  }
-
-  const ariaLabel = (link.getAttribute("aria-label") || "").trim();
-  if (ariaLabel) {
-    return ariaLabel.replace(/^Go to\s+/i, "");
-  }
-
-  return link.href;
-}
-
-function setPressedState(activeState) {
-  getPathwayButtons().forEach((button) => {
-    const isActive = button.dataset.pathway === activeState;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
-  });
-}
-
 function setVisibleLinksForState(state) {
-  getPathwayLinks().forEach((link) => {
+  document.querySelectorAll(".fims-graphic-container a.link-hotspot").forEach((link) => {
     const showOn = (link.dataset.showOn || "").trim();
     const shouldShow = showOn.split(/\s+/).filter(Boolean).includes(state);
     link.classList.toggle("is-visible", shouldShow);
-    // This is a secure way to modify an element's attributes without risk of XSS.
     link.setAttribute("aria-hidden", String(!shouldShow));
-    // Programmatically set tabindex to make links focusable only when visible.
     link.tabIndex = shouldShow ? 0 : -1;
   });
-}
-
-function updatePathwayLinkList(state) {
-  const list = document.getElementById('pathway-links-list');
-  // Find the heading associated with the list by its text content.
-  const heading = [...document.querySelectorAll('h1, h2, h3, h4, h5, h6')].find(
-    (h) => h.textContent.trim() === 'Resources for the selected pathway'
-  );
-
-  // Per user request, this section is no longer needed and will be removed from the DOM.
-  if (list) {
-    list.remove();
-  }
-  if (heading) {
-    heading.remove();
-  }
-
-  // Since the list is removed, there are always 0 links.
-  return 0;
 }
 
 function setActivePathway(state) {
@@ -113,57 +45,48 @@ function setActivePathway(state) {
   const caption = document.getElementById("pathway-caption");
   const status = document.getElementById("pathway-status");
 
-  if (mainImage) {
-    mainImage.src = config.image;
-    mainImage.alt = config.alt;
-  }
-
-  if (caption) {
-    caption.textContent = config.caption;
-  }
-
-  setPressedState(config.state);
-  setVisibleLinksForState(config.state);
-  updatePathwayLinkList(config.state);
-
+  if (mainImage) { mainImage.src = config.image; mainImage.alt = config.alt; }
+  if (caption) { caption.textContent = config.caption; }
   if (status) {
-    // The link summary is removed as the section is no longer present.
     status.textContent = `Selected pathway: ${config.label}.`;
   }
+
+  // Update button pressed state
+  document.querySelectorAll("[data-pathway-button]").forEach((button) => {
+    const isActive = button.dataset.pathway === state;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+
+  // Update visible link hotspots
+  setVisibleLinksForState(state);
 }
 
 function initPathwayExplorer() {
   const pathwayRoot = document.querySelector("[data-pathway-root]");
-  if (!pathwayRoot) {
-    return;
-  }
+  if (!pathwayRoot) return;
 
-  getPathwayButtons().forEach((button) => {
+  // Add click listeners to all pathway buttons
+  document.querySelectorAll("[data-pathway-button]").forEach((button) => {
     button.addEventListener("click", () => {
-      setActivePathway(button.dataset.pathway || DEFAULT_PATHWAY.state);
+      setActivePathway(button.dataset.pathway);
     });
   });
 
+  // Set initial state from the image that's there on page load
   const img = document.getElementById("fims-main-img");
-  const initialState = img ? stateFromImageSrc(img.getAttribute("src") || "") : null;
+  const m = img ? (img.getAttribute("src") || "").match(/fims-user(\d+)\.png$/) : null;
+  const initialState = m ? `user${m[1]}` : DEFAULT_PATHWAY.state;
   setActivePathway(initialState || DEFAULT_PATHWAY.state);
 }
 
 function watchMessagePanel(panelId) {
   const panel = document.getElementById(panelId);
-  if (!panel) {
-    return;
-  }
+  if (!panel) return;
 
   const observer = new MutationObserver(() => {
-    const isVisible =
-      !panel.hasAttribute("hidden") &&
-      panel.getAttribute("aria-hidden") !== "true" &&
-      window.getComputedStyle(panel).display !== "none";
-
-    if (isVisible) {
-      panel.focus();
-    }
+    const isVisible = !panel.hasAttribute("hidden") && panel.getAttribute("aria-hidden") !== "true" && window.getComputedStyle(panel).display !== "none";
+    if (isVisible) panel.focus();
   });
 
   observer.observe(panel, {
@@ -176,31 +99,6 @@ function initFormAccessibility() {
   watchMessagePanel("error-message");
   watchMessagePanel("success-message");
 }
-
-window.changeImage = function changeImage(newSrc, newAltText) {
-  const state = stateFromImageSrc(newSrc);
-
-  if (state) {
-    setActivePathway(state);
-    return;
-  }
-
-  const mainImage = document.getElementById("fims-main-img");
-  const caption = document.getElementById("pathway-caption");
-
-  if (mainImage) {
-    mainImage.src = newSrc;
-    mainImage.alt = newAltText;
-  }
-
-  if (caption) {
-    caption.textContent = newAltText;
-  }
-
-  setPressedState(DEFAULT_PATHWAY.state);
-  setVisibleLinksForState(DEFAULT_PATHWAY.state);
-  updatePathwayLinkList(DEFAULT_PATHWAY.state);
-};
 
 window.REQUIRED_CODE_ERROR_MESSAGE = "Please choose a country code";
 window.LOCALE = "en";
@@ -298,41 +196,36 @@ function initQuartoAccessibilityFixes() {
 
   // FIX 3: Contributor list role validation (axe: aria-required-children)
   // On the contributors page, the generated list may have intermediate
-  // divs or other elements between the `role="list"` container and `role="listitem"` children,
-  // which is invalid. This script corrects two common cases.
-  const contributorList = document.querySelector("#contributors [role='list']");
-  if (contributorList) {
-    // Find all direct children that are not valid listitems.
-    const invalidChildren = Array.from(contributorList.children).filter(
-      child => child.getAttribute('role') !== 'listitem'
-    );
+  // content that breaks the grid layout and accessibility. This polls for a
+  // few seconds to find and repair the structure.
+  const fixContributorList = () => {
+    const list = document.querySelector("#contributors [role='list']");
+    if (!list) return false; // List not ready yet.
 
-    invalidChildren.forEach(child => {
-      // If the child is a <section> element, it doesn't belong in the list at all.
-      // It indicates a DOM structure error where content is misplaced. We move it 
-      // to be a sibling of the entire #contributors container to fix the page flow.
-      if (child.tagName.toLowerCase() === 'section') {
-        contributorList.closest('#contributors')?.after(child);
-        return; // Go to the next invalid child
-      }
+    // Find and move any <section> elements that are incorrectly inside the list.
+    const misplacedSections = list.querySelectorAll('section');
+    if (misplacedSections.length > 0) {
+      list.after(...misplacedSections);
+    }
 
-      // See if this invalid child contains listitems deep inside.
-      const listItems = child.querySelectorAll("[role='listitem']");
-      if (listItems.length > 0) {
-        // Case 1: It's a wrapper. Unwrap it by moving the listitems to be direct
-        // children of the list, preserving order.
-        listItems.forEach(item => contributorList.insertBefore(item, child));
-        child.remove();
-      } else {
-        // Case 2: It's a stray element (like a div generated by Quarto's grid system)
-        // that doesn't contain a listitem. Wrap it in a listitem to make it valid.
-        const newListItem = document.createElement('div');
-        newListItem.setAttribute('role', 'listitem');
-        child.parentNode.replaceChild(newListItem, child);
-        newListItem.appendChild(child);
-      }
-    });
-  }
+    // Find and wrap any stray <a> tags that are not inside a listitem.
+    const strayAnchors = Array.from(list.children).filter(child => child.tagName === 'A');
+    if (strayAnchors.length > 0) {
+      strayAnchors.forEach(anchor => {
+        const wrapper = document.createElement('div');
+        wrapper.setAttribute('role', 'listitem');
+        anchor.parentNode.replaceChild(wrapper, anchor);
+        wrapper.appendChild(anchor);
+      });
+    }
+    // The fix is "done" if there's nothing left to repair.
+    return misplacedSections.length === 0 && strayAnchors.length === 0;
+  };
+
+  let attempts = 0;
+  const interval = setInterval(() => {
+    if (fixContributorList() || ++attempts > 20) clearInterval(interval);
+  }, 250);
 }
 
 // Consolidate all script initializations into a single DOMContentLoaded event
