@@ -227,11 +227,5 @@ resources:
     <a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="hotspot link-hotspot" id="link-intro-gh-receiver" data-show-on="user5" target="_blank" rel="noopener noreferrer" aria-label="Go to Introductions GitHub discussion" tabindex="-1" aria-hidden="true"></a>
     <a href="https://noaa-fims.github.io/blog/" class="hotspot link-hotspot" id="link-blog-receiver" data-show-on="user5" target="_blank" rel="noopener noreferrer" aria-label="Go to FIMS blog" tabindex="-1" aria-hidden="true"></a>
   </figure>
-
-  <section class="pathway-links-panel" aria-labelledby="pathway-links-heading">
-    <h3 id="pathway-links-heading">Resources for the selected pathway</h3>
-    <p id="pathway-links-help" class="visually-hidden">This list updates when a pathway is selected.</p>
-    <ul id="pathway-links-list" class="pathway-links-list" aria-describedby="pathway-links-help"></ul>
-  </section>
 </div>
 ```
