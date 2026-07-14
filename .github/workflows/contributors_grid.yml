@@ -64,13 +64,12 @@ jobs:
             for (const c of users) {
               // The `<a>` tag is a flex container, and the `<sub>` is for the username.
               // The styles in scss will handle the grid layout, hover effects, and responsive behavior.
-              contributorsGrid += `
-<div role="listitem">
-  <a href="${c.html_url}">
-    <img src="${c.avatar_url}" alt="${c.login} avatar" width="80" height="80" style="border-radius: 50%; object-fit: cover;" />
-    <sub>${c.login}</sub>
-  </a>
-</div>`;
+              contributorsGrid += '\n<div role="listitem">' +
+                `\n  <a href="${c.html_url}">` +
+                `\n    <img src="${c.avatar_url}" alt="${c.login} avatar" width="80" height="80" style="border-radius: 50%; object-fit: cover;" />` +
+                `\n    <sub>${c.login}</sub>` +
+                '\n  </a>' +
+                '\n</div>';
             }
             contributorsGrid += '</div>';
 
