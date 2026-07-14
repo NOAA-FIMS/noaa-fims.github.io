@@ -255,21 +255,20 @@ img.thumbnail-image.card-img {
 }
 
 /* --- ACCESSIBILITY FIX: Default Badge Contrast --- */
-/* Your default badges use the pink theme. 
-   We will darken the border to pink-30 to pass the 3.0:1 UI contrast ratio */
+/* Your default badges use the pink theme. */
 #listing-listing .listing-category {
-  color: #934373 !important;         /* using slate-10 for higher contrast */
-  border-color: #934373 !important;
-  background-color: #f4e4f1 !important; /* less pale than pink-100 */
+  color: #5c2a48 !important;            /* pink-10 for high contrast */
+  border-color: #5c2a48 !important;     /* Matches text perfectly */
+  background-color: #f4e4f1 !important; 
 }
 
 /* Hover/focus/active: stronger contrast and visible focus */
 #listing-listing .listing-category:hover,
 #listing-listing .listing-category:focus,
 #listing-listing .listing-category:active {
-  color: #934373 !important;
-  border-color: #934373 !important;
-  background-color: #f4e4f1 !important;
+  color: #5c2a48 !important;
+  border-color: #5c2a48 !important;
+  background-color: #f1c9e1 !important; 
   outline: 2px solid #213f4b;
   outline-offset: 2px;
 }
@@ -309,17 +308,16 @@ img.thumbnail-image.card-img {
 }
 
 /* --- ACCESSIBILITY FIX: Custom Badge Contrasts --- */
-/* For your custom badges (deep-dive, fims-weekly, learn, other), 
-   you used the blue palette. We use blue-40 to pass the 3.0:1 UI contrast ratio */
+/* For your custom badges (deep-dive, fims-weekly, learn, other) */
 :is(div.quarto-post .listing-categories, #listing-listing, .quarto-listing) 
   .listing-category:is([onclick*="ZGVlcC1kaXZl"], 
                        [onclick*="Zmltcy13ZWVrbHk="], 
                        [onclick*="bGVhcm4="], 
                        [onclick*="b3RoZXI="]) {
-      border-color: #1c7d8b !important;      /* #1c7d8b */
-      color: #1c7d8b !important;            /* #1c7d8b */
-      background-color: #e4f0f1 !important;  /* #e4f0f1 */
-    }
+      color: #09414a !important;             /* blue-10 for high contrast */
+      border-color: #09414a !important;      /* Matches text perfectly */
+      background-color: #e4f0f1 !important;  
+}
 
 /* --- ACCESSIBILITY FIX: Code Club page contrast --- */
 /* Fixes a specific color contrast issue on the Code Club page where a paragraph
