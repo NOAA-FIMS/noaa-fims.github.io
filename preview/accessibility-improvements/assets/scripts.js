@@ -337,7 +337,7 @@ function initQuartoAccessibilityFixes() {
     const observer = new MutationObserver(() => {
       // Use a small timeout to ensure Quarto's DOM manipulation is fully complete
       // before we try to modify it. This helps avoid race conditions.
-      setTimeout(applyListingLabels, 100);
+      setTimeout(applyListingLabels, 500);
     });
     observer.observe(listing, { childList: true, subtree: true });
 
