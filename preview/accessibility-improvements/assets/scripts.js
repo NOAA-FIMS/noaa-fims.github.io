@@ -85,50 +85,22 @@ function setVisibleLinksForState(state) {
 }
 
 function updatePathwayLinkList(state) {
-  const list = document.getElementById("pathway-links-list");
-  if (!list) {
-    return 0;
+  const list = document.getElementById('pathway-links-list');
+  // Find the heading associated with the list by its text content.
+  const heading = [...document.querySelectorAll('h1, h2, h3, h4, h5, h6')].find(
+    (h) => h.textContent.trim() === 'Resources for the selected pathway'
+  );
+
+  // Per user request, this section is no longer needed and will be removed from the DOM.
+  if (list) {
+    list.remove();
+  }
+  if (heading) {
+    heading.remove();
   }
 
-  list.replaceChildren();
-
-  const links = getPathwayLinks().filter((link) => {
-    const showOn = (link.dataset.showOn || "").trim();
-    return showOn.split(/\s+/).filter(Boolean).includes(state);
-  });
-
-  if (!links.length) {
-    const item = document.createElement("li");
-    item.className = "pathway-links-empty";
-    item.textContent =
-      state === DEFAULT_PATHWAY.state
-        ? "Choose a pathway above to view related links."
-        : "No related links are listed for this pathway yet.";
-    list.appendChild(item);
-    return 0;
-  }
-
-  links.forEach((sourceLink) => {
-    const item = document.createElement("li");
-    const link = document.createElement("a");
-
-    link.href = sourceLink.href;
-    link.textContent = deriveLinkLabel(sourceLink);
-
-    if (sourceLink.target) {
-      link.target = sourceLink.target;
-    }
-
-    const rel = sourceLink.getAttribute("rel");
-    if (rel) {
-      link.rel = rel;
-    }
-
-    item.appendChild(link);
-    list.appendChild(item);
-  });
-
-  return links.length;
+  // Since the list is removed, there are always 0 links.
+  return 0;
 }
 
 function setActivePathway(state) {
@@ -148,17 +120,11 @@ function setActivePathway(state) {
 
   setPressedState(config.state);
   setVisibleLinksForState(config.state);
-  const linkCount = updatePathwayLinkList(config.state);
+  updatePathwayLinkList(config.state);
 
   if (status) {
-    const linkSummary =
-      linkCount === 0
-        ? config.state === DEFAULT_PATHWAY.state
-          ? "Choose a pathway to view related links below."
-          : "No related links are currently listed below."
-        : `${linkCount} related ${linkCount === 1 ? "link is" : "links are"} available below.`;
-
-    status.textContent = `Selected pathway: ${config.label}. ${linkSummary}`;
+    // The link summary is removed as the section is no longer present.
+    status.textContent = `Selected pathway: ${config.label}.`;
   }
 }
 
@@ -256,6 +222,13 @@ var AUTOHIDE = Boolean(0);
 // QUARTO ACCESSIBILITY FIXES
 // The following functions address native accessibility gaps in Quarto's HTML generation.
 // ==========================================================================
+
+function addPageSpecificClass() {
+  // Add a class to the body if we're on a blog page, to allow blog-specific styling.
+  if (window.location.pathname.includes('/blog/')) {
+    document.body.classList.add('page-blog');
+  }
+}
 
 function initQuartoAccessibilityFixes() {
   
@@ -355,4 +328,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initPathwayExplorer();
   initFormAccessibility();
   initQuartoAccessibilityFixes();
+  addPageSpecificClass();
 });

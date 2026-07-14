@@ -163,10 +163,20 @@ kbd {
   vertical-align: 1px;
 }
 
+/* 
+  Visually hide the figcaption but keep it for screen readers to ensure accessibility.
+  This addresses the user request to remove the caption visually while passing checks.
+*/
 figcaption {
-  padding-right: 1rem;
-  color: #213f4b;
-  text-align: right;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .code-with-filename > div {
@@ -245,7 +255,9 @@ img.thumbnail-image.card-img {
   line-height: 1.2rem;
 }
 
-.quarto-listing-category .category {
+/* On blog pages, hide any category that isn't explicitly styled with an icon.
+   This creates a curated list for the blog, while other pages (like Resources) show all categories. */
+.page-blog .quarto-listing-category .category:not([data-category=""]):not([data-category="ZGVlcC1kaXZl"]):not([data-category="Zmltcy13ZWVrbHk="]):not([data-category="bGVhcm4="]):not([data-category="b3RoZXI="]) {
   display: none !important;
 }
 
@@ -470,6 +482,64 @@ img.thumbnail-image.card-img {
   content: "\f111"; /* fa-circle */
   margin-right: 0.4em;
   display: inline-block;
+}
+
+/* --- FIMS Pathway Explorer --- */
+.fims-graphic-container {
+  position: relative; /* This is the key for positioning children */
+}
+
+.fims-graphic-container .link-hotspot {
+  position: absolute;
+  display: none; /* Hide hotspots by default */
+}
+
+.fims-graphic-container .link-hotspot.is-visible {
+  display: block; /* Show hotspots when the 'is-visible' class is present */
+}
+
+/* --- Contributor Page Grid Layout --- */
+#contributors [role="list"] {
+  display: grid !important;
+  /* Using auto-fill with minmax is great for responsive grids without media queries */
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#contributors [role="listitem"] {
+  /* Override inline styles to ensure grid behavior */
+  display: block !important;
+  width: auto !important;
+  vertical-align: unset !important;
+  padding: 0 !important; /* We will apply padding to the link inside */
+  text-align: center !important;
+}
+
+#contributors [role="listitem"] a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#contributors [role="listitem"] a:is(:hover, :focus-visible) {
+  background-color: var(--bs-tertiary-bg);
+}
+
+#contributors [role="listitem"] sub {
+  font-size: 0.8rem;
+  word-break: break-word;
+  line-height: 1.2;
 }
 
 div.quarto-post {
