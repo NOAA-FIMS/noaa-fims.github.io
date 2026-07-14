@@ -70,7 +70,7 @@ $dropdown-link-hover-bg: $blue-20;
 
 /*-- scss:rules --*/
 :root {
-  --quarto-border-color: var(--slate-20);
+  --quarto-border-color: #334f5a; /* Replaced var(--slate-20) */
 }
 
 .quarto-title-banner {
@@ -91,12 +91,12 @@ $dropdown-link-hover-bg: $blue-20;
 }
 
 h2 {
-  border-bottom: 2px solid (var(--bs-dark));
+  border-bottom: 2px solid #213f4b; /* Replaced var(--bs-dark) */
 }
 
 div.quarto-post .listing-categories .listing-category {
   color: $slate-50;
-	border: solid 1px $slate-30;
+  border: solid 1px $slate-30;
 }
 
 .input-group-text, .form-control, .form-select {
@@ -123,12 +123,12 @@ div.quarto-post .listing-categories .listing-category {
 }
 
 div.quarto-about-trestles .about-entity .about-link {
-	color: $blue-70;
+  color: $blue-70;
 }
 
 /* Bootstrap Fixups */
 .btn-secondary, .btn-outline-secondary {
-	color: $blue-80;
+  color: $blue-80;
 }
 
 /* index.html */
@@ -156,5 +156,5 @@ div.quarto-post .listing-categories .listing-category {
 }
 
 .quarto-dark .code-with-filename .code-with-filename-file {
-  background-color: var(--slate-10);
+  background-color: #213f4b; /* Replaced var(--slate-10) */
 }

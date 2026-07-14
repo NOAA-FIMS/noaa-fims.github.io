@@ -68,11 +68,11 @@ $text-muted: $gray-700;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-	background-color: $white;
+  background-color: $white;
 }
 
 h2 {
-  border-bottom: 2px solid (var(--bs-light));
+  border-bottom: 2px solid #ebeeef; /* Replaced var(--bs-light) */
 }
 
 .header-wrap {
@@ -82,7 +82,7 @@ h2 {
 }
 .header-wrap h2 {
   width: 100%; 
-  border-bottom: 2px solid var(--bs-light);
+  border-bottom: 2px solid #ebeeef; /* Replaced var(--bs-light) */
   margin-top: 4em; 
 }
 
@@ -114,5 +114,5 @@ div.quarto-post .listing-categories .listing-category {
 }
 
 .code-with-filename .code-with-filename-file {
-  background-color: var(--slate-90);
+  background-color: #ebeeef; /* Replaced var(--slate-90) */
 }
