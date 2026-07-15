@@ -42,7 +42,7 @@ function setVisibleLinksForState(state) {
   });
 }
 
-// Expose globally so inline onclick attributes work natively in Quarto
+// RESTORED: Expose globally so inline onclick attributes work natively
 window.changeImage = function(newSrc, newAltText) {
   const mainImage = document.getElementById("fims-main-img");
   if (!mainImage) return;
@@ -150,14 +150,13 @@ function initQuartoAccessibilityFixes() {
 
 // Consolidate all script initializations
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Init pathway explorer state based on the graphic on page load
+  // Init pathway explorer state based on the graphic on page load
   const img = document.getElementById("fims-main-img");
   if (img) {
     const state = stateFromImageSrc(img.getAttribute("src") || "");
     setVisibleLinksForState(state || "__none__");
   }
   
-  // 2. Init remaining accessibility fixes
   initFormAccessibility();
   initQuartoAccessibilityFixes();
   addPageSpecificClass();
