@@ -184,7 +184,7 @@ resources:
 
 ```{=html}
 <div class="fims-graphic-container">
-  <img id="fims-main-img" src="images/fims-user0.png" alt="Overview of FIMS user pathways">
+  <img id="fims-main-img" src="images/fims-user0.png" alt="FIMS User Pathways">
 
   <button class="hotspot" type="button" id="hs-user1" onclick="changeImage('images/fims-user1.png', 'Pathway for Interested')" aria-label="Show pathway for Interested"></button>
   <button class="hotspot" type="button" id="hs-user2" onclick="changeImage('images/fims-user2.png', 'Pathway for New User')" aria-label="Show pathway for New User"></button>
