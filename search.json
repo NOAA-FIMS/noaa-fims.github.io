@@ -18,7 +18,7 @@
     "href": "contact/index.html",
     "title": "Contact",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\n\nIf you have questions or comments about FIMS please contact the FIMS Project Lead or use the form below.\n\n\nLoading…"
+    "text": "Skip to main content\n\n\n\n\n\n\nIf you have questions or comments about FIMS please contact the FIMS Project Lead or use the form below.\n\nThe embedded Google Form is available below. If the embedded form is difficult to use, open the FIMS contact form in a new tab.\n\nLoading…"
   },
   {
     "objectID": "blog/renv_blog.html",
@@ -795,7 +795,7 @@
     "href": "about/calendar.html",
     "title": "FIMS Calendar",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nFIMS has both reoccurring meetings (e.g., FIMS Code Club and FIMS Implementation Team meetings) and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If the meeting is public, there will be a hyperlink in the description with the Google Meet link so you can join in on the fun!\nLet us know (see the contact page) if there are meetings you are interested in joining since not all meeting links are provided in the calendar. However, Implementation Team meetings are currently limited to Implementation Team members.\nAdd FIMS calendar to your own by clicking the blue text “Add to calendar”, at the bottom of the calendar."
+    "text": "Skip to main content\n\n\n\n\n\nFIMS has both recurring meetings, such as FIMS Code Club and FIMS Implementation Team meetings, and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If a meeting is public, the description includes a Google Meet link.\nLet us know on the contact page if there are meetings you are interested in joining, since not all meeting links are provided in the calendar. Implementation Team meetings are currently limited to Implementation Team members.\nIf the embedded calendar is difficult to use, open the FIMS Community Calendar in a new tab.\nAdd the FIMS calendar to your own calendar by selecting Add to calendar at the bottom of the embedded calendar."
   },
   {
     "objectID": "about/index.html",
@@ -805,46 +805,32 @@
     "text": "Skip to main content"
   },
   {
-    "objectID": "about/index.html#mission-statement",
-    "href": "about/index.html#mission-statement",
+    "objectID": "about/index.html#mission",
+    "href": "about/index.html#mission",
     "title": "About FIMS",
-    "section": "Mission statement",
-    "text": "Mission statement\nThe mission of the Fisheries Integrated Modeling System (FIMS) is to enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs."
+    "section": "Mission",
+    "text": "Mission\n\nMission statement\nThe mission of the Fisheries Integrated Modeling System (FIMS) is to enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs.\n\n\nVision statement\nWe aim to accomplish our mission with a user-friendly stock assessment tool that streamlines the development and application of scientific advice to inform current and future management needs of NOAA Fisheries’ regions.\n\n\nPriorities\n\nFIMS meets the needs of operational stock assessments across regions, scenarios, and data types and levels to provide scientific advice to management bodies.\nFIMS implements practical and robust methods from ecology, statistics, computer science, and mathematical modeling.\nFIMS estimates and projects population trajectories and can estimate parameters and uncertainty accurately and reliably in simulated conditions.\nUsers spanning different levels of expertise can run a model within FIMS.\nFIMS welcomes and incorporates user, developer, and community contributions and feedback to shape design decisions and priorities, in accordance with open source principles, and communicates progress, key findings, and advancements back.\nFIMS is flexible enough to adapt to future management needs, new technical developments and data sources, and observational data types and supports the NOAA Open Science Initiative."
   },
   {
-    "objectID": "about/index.html#vision-statement",
-    "href": "about/index.html#vision-statement",
+    "objectID": "about/index.html#why-fims",
+    "href": "about/index.html#why-fims",
     "title": "About FIMS",
-    "section": "Vision statement",
-    "text": "Vision statement\nWe aim to accomplish our mission with a user-friendly stock assessment tool that streamlines the development and application of scientific advice to inform current and future management needs of NOAA Fisheries’ regions."
+    "section": "Why FIMS?",
+    "text": "Why FIMS?\nLearn more on the FAQ page."
   },
   {
-    "objectID": "about/index.html#priorities",
-    "href": "about/index.html#priorities",
+    "objectID": "about/index.html#community",
+    "href": "about/index.html#community",
     "title": "About FIMS",
-    "section": "Priorities",
-    "text": "Priorities\n\nFIMS meets the needs of operational stock assessments across regions, scenarios, and data types and levels to provide scientific advice to management bodies.\nFIMS implements practical and robust methods from ecology, statistics, computer science, and mathematical modeling.\nFIMS estimates and projects population trajectories and can estimate parameters and uncertainty accurately and reliably in simulated conditions.\nUsers spanning different levels of expertise can run a model within FIMS.\nFIMS welcomes and incorporates user, developer, and community contributions and feedback to shape design decisions and priorities, in accordance with open source principles, and communicates progress, key findings, and advancements back.\nFIMS is flexible enough to adapt to future management needs, new technical developments and data sources, and observational data types and supports the NOAA Open Science Initiative."
+    "section": "Community",
+    "text": "Community\nA team of experts within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners.\nContributions from individuals of all skill levels are welcome. The codebase and documentation rely heavily on contributions from volunteers, and feedback from users helps keep the experience aligned with the goal of being user friendly. The roles of internal and external collaborators are outlined in the roles section of this community playbook.\n\nGet involved\nUsers and developers are welcome to join the Discussions board or submit bug reports using GitHub Issues. Please use the issues in the NOAA-FIMS github.io repository to make suggestions regarding this website and the issues under the FIMS software repository for software design and development feedback."
   },
   {
-    "objectID": "about/index.html#get-involved",
-    "href": "about/index.html#get-involved",
+    "objectID": "about/index.html#current-project-status",
+    "href": "about/index.html#current-project-status",
     "title": "About FIMS",
-    "section": "Get involved",
-    "text": "Get involved\nUsers and developers are welcome to join the Discussions board or submit bug reports using GitHub Issues. Please use the issues in the NOAA-FIMS github.io repository to make suggestions regarding this website and the issues under the FIMS software repository for software design and development feedback."
-  },
-  {
-    "objectID": "about/index.html#comparison-to-other-frameworks",
-    "href": "about/index.html#comparison-to-other-frameworks",
-    "title": "About FIMS",
-    "section": "Comparison to other frameworks",
-    "text": "Comparison to other frameworks\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nSS3\nFIMS\nRCEATTLE\nSPoRC\nWHAM\nMulti-WHAM\n\n\n\n\nSoftware\nADMB\nTMB and C++\nTMB/RTMB\nRTMB\nTMB\nTMB\n\n\nOperational ready\nYes\nNo\nYes\nNo\nYes\nYes\n\n\nPrior specification?\nYes\nYes\nM, Q, and SRR\nM, h, Tag Reporting, Movement, Q, selectivity\nQ only\nQ only\n\n\nCAAL\nYes\nNo\nIn dev\nNo\nYes (deprecated)\nNo\n\n\nSplit sex\nYes\nNo\nYes\nYes\nNo\nMaybe\n\n\nAge-error\nYes\nNo\nYes\nTV but not fleet specific\nIn branch\nNo\n\n\nFleet Age-error\nYes\nNo\nYes\nNo\nNo\nNo\n\n\nTV Age-error\nYes\nNo\nIn branch\nYes\nNo\nNo\n\n\nVariety of selectivity\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nTV selectivity\nYes\nIn branch\nYes (random walks, random deviates, blocks)\nYes (blocks, iid and random walks, semi-parametric 3d and 2d)\nYes\nYes\n\n\nGrowth estimation\nYes\nNo\nYes\nNo\nYes\nNo\n\n\nMarginal lengths\nYes\nYes\nYes\nYes\nYes\nNo\n\n\nDM compositions\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nAdditive logistic-normal compositions\nNo\nNo\nNo\nYes\nNo\nNo\n\n\nEnvironmental linkages\nYes\nNo\nM, Q, SRR (any number of indices)\nQ\nYes\nYes\n\n\nMulti-area\nYes\nNo\nNo\nYes\nNo\nYes\n\n\nPopulation Structures\nglobal SRR\nNo\nNo\nglobal or local SRR\nNo\nNatal homing, local SRR\n\n\nMulti species\nNo\nNo\nYes\nNo\nNo\nYes\n\n\nMulti-variate indices\nNo\nNo\nNo\nNo\nNo\nNo\n\n\nMulti-seasonal\nYes\nNo\nNo\nIn branch\nNo\nYes\n\n\nNAA or M state-space\nNo\nNo\nM\nWill be in dev\nNAA and M\nNAA and M\n\n\nDSEM-ready\nNever\nLong-term\nYes\nYes\nHarder\nHarder\n\n\nInternal OSA\nNo\nNo\nIn dev\nNo\nYes\nYes\n\n\nInternal AFSC proj scenarios\nYes\nNo\nYes\nYes\nNo\nNo\n\n\nReference point estimation\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nMSE tools\nYes\nNo\nYes\nYes\nYes\nYes"
-  },
-  {
-    "objectID": "about/index.html#release",
-    "href": "about/index.html#release",
-    "title": "About FIMS",
-    "section": "Release",
-    "text": "Release\nThe current release can be found on the FIMS release page. A list of all releases and their corresponding changes can be found on our changelog page."
+    "section": "Current project status",
+    "text": "Current project status\nThe project is constantly under development 🔨. Check out our progress so far below:\n\n\n\nMetric\nStatus\n\n\n\n\nDevelopment\nStatus\n\n\nTotal Issues\n\n\n\nClosed Issues\n\n\n\nPull Requests\n\n\n\nCalculate test coverage\n\n\n\nR cmd check\n\n\n\nGoogle tests\n\n\n\n\n\nComparison to other frameworks\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nSS3\nFIMS\nRCEATTLE\nSPoRC\nWHAM\nMulti-WHAM\n\n\n\n\nSoftware\nADMB\nTMB and C++\nTMB/RTMB\nRTMB\nTMB\nTMB\n\n\nOperational ready\nYes\nNo\nYes\nNo\nYes\nYes\n\n\nPrior specification?\nYes\nYes\nM, Q, and SRR\nM, h, Tag Reporting, Movement, Q, selectivity\nQ only\nQ only\n\n\nCAAL\nYes\nNo\nIn dev\nNo\nYes (deprecated)\nNo\n\n\nSplit sex\nYes\nNo\nYes\nYes\nNo\nMaybe\n\n\nAge-error\nYes\nNo\nYes\nTV but not fleet specific\nIn branch\nNo\n\n\nFleet Age-error\nYes\nNo\nYes\nNo\nNo\nNo\n\n\nTV Age-error\nYes\nNo\nIn branch\nYes\nNo\nNo\n\n\nVariety of selectivity\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nTV selectivity\nYes\nIn branch\nYes (random walks, random deviates, blocks)\nYes (blocks, iid and random walks, semi-parametric 3d and 2d)\nYes\nYes\n\n\nGrowth estimation\nYes\nNo\nYes\nNo\nYes\nNo\n\n\nMarginal lengths\nYes\nYes\nYes\nYes\nYes\nNo\n\n\nDM compositions\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nAdditive logistic-normal compositions\nNo\nNo\nNo\nYes\nNo\nNo\n\n\nEnvironmental linkages\nYes\nNo\nM, Q, SRR (any number of indices)\nQ\nYes\nYes\n\n\nMulti-area\nYes\nNo\nNo\nYes\nNo\nYes\n\n\nPopulation Structures\nglobal SRR\nNo\nNo\nglobal or local SRR\nNo\nNatal homing, local SRR\n\n\nMulti species\nNo\nNo\nYes\nNo\nNo\nYes\n\n\nMulti-variate indices\nNo\nNo\nNo\nNo\nNo\nNo\n\n\nMulti-seasonal\nYes\nNo\nNo\nIn branch\nNo\nYes\n\n\nNAA or M state-space\nNo\nNo\nM\nWill be in dev\nNAA and M\nNAA and M\n\n\nDSEM-ready\nNever\nLong-term\nYes\nYes\nHarder\nHarder\n\n\nInternal OSA\nNo\nNo\nIn dev\nNo\nYes\nYes\n\n\nInternal AFSC proj scenarios\nYes\nNo\nYes\nYes\nNo\nNo\n\n\nReference point estimation\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nMSE tools\nYes\nNo\nYes\nYes\nYes\nYes\n\n\n\n\n\nRelease\nThe current release can be found on the FIMS release page. A list of all releases and their corresponding changes can be found on our changelog page."
   },
   {
     "objectID": "blog/01.12.2026.html",
@@ -1439,7 +1425,7 @@
     "href": "contact/contributors.html#contributors",
     "title": "FIMS Team",
     "section": "Contributors",
-    "text": "Contributors\n\n\n\n\nChristineStawitz-NOAA\n\n\nAndrea-Havron-NOAA\n\n\nBai-Li-NOAA\n\n\nkellijohnson-NOAA\n\n\nmsupernaw\n\n\nk-doering-NOAA\n\n\n\n\ngithub-actions[bot]\n\n\nnathanvaughan-NOAA\n\n\nJaneSullivan-NOAA\n\n\nCopilot\n\n\ndependabot[bot]\n\n\nEshaan-byte\n\n\n\n\nawilnoaa\n\n\niantaylor-NOAA\n\n\nszu-yun-ko\n\n\nJonBrodziak\n\n\nMOshima-PIFSC\n\n\ntimjmiller\n\n\n\n\nRohith-1717\n\n\njimianelli\n\n\ne-perl-NOAA\n\n\nericward-noaa\n\n\nalexjensen-NOAA\n\n\npeterkuriyama-NOAA\n\n\n\n\nabhinav-1305\n\n\naman-raj-srivastva\n\n\nKyleShertzer-NOAA\n\n\nLNo-cz\n\n\nmciechanumich\n\n\nNimra-Arshad51\n\n\n\n\nRicardoYin01\n\n\nSrajald\n\n\nvivek0913"
+    "text": "Contributors\nContributors are listed below with profile links.\n\n\n\n\nChristineStawitz-NOAA\n\n\nAndrea-Havron-NOAA\n\n\nBai-Li-NOAA\n\n\nkellijohnson-NOAA\n\n\nmsupernaw\n\n\nk-doering-NOAA\n\n\n\n\ngithub-actions[bot]\n\n\nnathanvaughan-NOAA\n\n\nJaneSullivan-NOAA\n\n\nCopilot\n\n\ndependabot[bot]\n\n\nEshaan-byte\n\n\n\n\nawilnoaa\n\n\niantaylor-NOAA\n\n\nszu-yun-ko\n\n\nJonBrodziak\n\n\nMOshima-PIFSC\n\n\ntimjmiller\n\n\n\n\nRohith-1717\n\n\njimianelli\n\n\ne-perl-NOAA\n\n\nericward-noaa\n\n\nalexjensen-NOAA\n\n\npeterkuriyama-NOAA\n\n\n\n\nabhinav-1305\n\n\naman-raj-srivastva\n\n\nKyleShertzer-NOAA\n\n\nLNo-cz\n\n\nmciechanumich\n\n\nNimra-Arshad51\n\n\n\n\nRicardoYin01\n\n\nSrajald\n\n\nvivek0913"
   },
   {
     "objectID": "contact/contributors.html#fims-council",
@@ -1474,7 +1460,7 @@
     "href": "index.html#subscribe-to-the-fims-weekly-newsletter-and-blog",
     "title": "\n      NOAA Fisheries Integrated Modeling System\n    ",
     "section": "Subscribe to the FIMS Weekly Newsletter and Blog",
-    "text": "Subscribe to the FIMS Weekly Newsletter and Blog\n\n\n  \n    \n      \n        \n          \n        \n        \n                Your subscription could not be saved. Please try again.\n          \n      \n    \n    \n    \n      \n        \n          \n        \n        \n                Your subscription to the Fisheries Integrated Modeling System Blog was successful. Welcome to the FIMS Blog :)\n          \n      \n    \n    \n    \n      \n        \n          \n            FIMS Blog\n          \n        \n        \n          \n            \n              Subscribe to our Blog and stay updated.\n            \n          \n        \n        \n          \n            \n              \n                Enter your first name\n                \n                  \n                \n              \n              \n              \n            \n          \n        \n        \n          \n            \n              \n                Enter your last name\n                \n                  \n                \n              \n              \n              \n            \n          \n        \n        \n          \n            \n              \n                Enter your email address to subscribe\n                \n                  \n                \n              \n              \n              \n              \n                Provide your email address to subscribe, e.g., abc@xyz.com\n              \n            \n          \n        \n        \n          \n            \n              \n                \n              \n              SUBSCRIBE"
+    "text": "Subscribe to the FIMS Weekly Newsletter and Blog\n\n\n  \n    \n      \n        \n          \n        \n        \n          Your subscription could not be saved. Please try again.\n        \n      \n    \n\n    \n      \n        \n          \n        \n        \n          Your subscription to the Fisheries Integrated Modeling System Blog was successful. Welcome to the FIMS Blog :)\n        \n      \n    \n\n    \n      \n        \n          Subscribe to the FIMS Blog newsletter\n\n          \n            \n              FIMS Blog\n            \n          \n\n          \n            \n              \n                Subscribe to our Blog and stay updated.\n              \n            \n          \n\n          \n            \n              \n                \n                  Enter your first name\n                  \n                    \n                  \n                \n                \n              \n            \n          \n\n          \n            \n              \n                \n                  Enter your last name\n                  \n                    \n                  \n                \n                \n              \n            \n          \n\n          \n            \n              \n                \n                  Email address\n                  \n                    \n                  \n                \n                \n                \n                  Provide your email address to subscribe, e.g., abc@xyz.com\n                \n              \n            \n          \n\n          \n            \n              \n                \n                  \n                \n                SUBSCRIBE"
   },
   {
     "objectID": "index.html#fims-user-pathways",

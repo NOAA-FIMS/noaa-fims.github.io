@@ -8,8 +8,8 @@
 <title>FIMS</title>
 <link>https://noaa-fims.github.io/blog/</link>
 <atom:link href="https://noaa-fims.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
-<description>**Category Definitions** &lt;br&gt; &lt;i class=&quot;fa-solid fa-magnifying-glass&quot;&gt;&lt;/i&gt; deep-dive: learning about hard concepts in stock assessment modeling, academic exercises, and statistical best practices &lt;br&gt; &lt;i class=&quot;fa-solid fa-newspaper&quot;&gt;&lt;/i&gt; fims-weekly: fims weekly newsletter &lt;br&gt; &lt;i class=&quot;fa-solid fa-graduation-cap&quot;&gt;&lt;/i&gt; learn: learning about the packages within FIMS, geared towards the beginner or average user &lt;br&gt; &lt;i class=&quot;fa-solid fa-circle&quot;&gt;&lt;/i&gt; other: posts that do not fit the other categories&lt;br&gt; &lt;br&gt;
-**Filtering** &lt;br&gt; You can filter blog posts by the major categories (defined above) using the right navigation panel as well as by minor categories by clicking on the specific category listed in any of the blog posts below. To unfilter, click &quot;Categories&quot; in the right navigation panel. &lt;br&gt;
+<description>**Category Definitions** &lt;br&gt; &lt;i class=&quot;fa-solid fa-magnifying-glass&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;deep-dive&lt;/strong&gt;: learning about complex stock assessment concepts, academic exercises, and statistical best practices &lt;br&gt; &lt;i class=&quot;fa-solid fa-newspaper&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;fims-weekly&lt;/strong&gt;: FIMS weekly newsletter posts &lt;br&gt; &lt;i class=&quot;fa-solid fa-graduation-cap&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;learn&lt;/strong&gt;: learning about packages within FIMS, geared toward beginner and intermediate users &lt;br&gt; &lt;i class=&quot;fa-solid fa-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;other&lt;/strong&gt;: posts that do not fit the other categories &lt;br&gt; &lt;br&gt;
+**Filtering** &lt;br&gt; Filter blog posts by major category using the categories panel. You can also filter by selecting a category listed on an individual post below. To clear the filter, select &quot;Categories&quot; in the navigation panel. &lt;br&gt;
 </description>
 <generator>quarto-1.9.38</generator>
 <lastBuildDate>Mon, 18 May 2026 00:00:00 GMT</lastBuildDate>
@@ -1558,7 +1558,7 @@ THREE BIG THINGS THIS WEEK
 </div>
 <ol type="1">
 <li><p>We have a few open PRs this week to review from new contributors and one from Matthew (fixing a memory leak).</p></li>
-<li><p>Bai is working on ecosystemdata to <a href="https://github.com/NOAA-FIMS/ecosystemdata/pull/15">extract selectivity parameters from EWE output</a>.</p></li>
+<li><p>Bai is working on ecosystemdata to extract selectivity parameters from EWE output.</p></li>
 <li><p>Matthew is working ALL WEEK on <a href="https://github.com/NOAA-FIMS/FIMS/issues/981">translational units</a> to decrease the number of cores that we need to build FIMS.</p></li>
 </ol>
 </div><div class="column" style="width:30%;">
@@ -1667,7 +1667,7 @@ Skip to main content
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://noaa-fims.github.io/blog/images/renv_diagram.png" class="img-fluid figure-img"></p>
+<p><img src="https://noaa-fims.github.io/blog/images/renv_diagram.png" class="img-fluid figure-img" alt="Diagram comparing R environments without renv versus with renv."></p>
 <figcaption>Without {renv}, each environment maintains its own independent R library with no shared source of truth, leading to version conflicts across developers and machines. With {renv}, a single renv.lock file records exact package versions, keeping all environments in sync.</figcaption>
 </figure>
 </div>
@@ -1694,7 +1694,7 @@ Tip
 <p>{FIMS} is continuously in active development and since both projects rely heavily on {FIMS}, it’s really important that we are keeping track of what version of {FIMS} we are using. For example, when we are writing functions for {FIMSdiags} and find a bug in {FIMS}, we can switch to using the version with the fix until that fix is merged into the dev or main branch at a later time. Using the {renv} functions to install and update the lockfile with the specific version of {FIMS} makes this really easy to do. For the case studies, this challenge was more complex. We wanted to ensure there was always a version of the case studies that works with the stable version of {FIMS}, but we also want to be able to test them with features being added into the development branch of {FIMS}. To do this, we took advantage of its profiles feature to be able to seamlessly switch between multiple versions of {FIMS} for the case studies. We created two {renv} profiles, each with their own R libraries. The profiles are determined by which branch of the case studies repository you are working on. If your R session detects “main” in the branch name it will automatically use the default profile which uses the stable version of {FIMS}. Otherwise, it will activate the dev profile and therefore, the user will be using the development version of {FIMS}.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://noaa-fims.github.io/blog/images/renv_profiles.png" class="img-fluid figure-img"></p>
+<p><img src="https://noaa-fims.github.io/blog/images/renv_profiles.png" class="img-fluid figure-img" alt="Flowchart showing how the Rprofile routes to different renv profiles based on the branch."></p>
 <figcaption>When an R session starts in the case-studies repository, the .Rprofile detects the current branch and routes automatically to the matching {renv} profile — the default profile for the stable version of {FIMS}, or the dev profile for the development version.</figcaption>
 </figure>
 </div>
@@ -2552,7 +2552,7 @@ Online: [Google meet](MEETING LINK)
 </div>
 <section id="photo-of-the-week" class="level2">
 <h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
-<p>Codecov has had some recent development that allows you to <a href="https://about.codecov.io/product/feature/codecov-ai/">use copilot to generate tests</a> for your Pull Request. It uses context from your test report to generate unit tests that target exactly what is missing so you can boost patch coverage. You can add the following comment on a Pull Request to make this happen. This feature has yet to be tried yet on a NOAA-FIMS repository.</p>
+<p>Codecov has had some recent development that allows you to use copilot to generate tests for your Pull Request. It uses context from your test report to generate unit tests that target exactly what is missing so you can boost patch coverage. You can add the following comment on a Pull Request to make this happen. This feature has yet to be tried yet on a NOAA-FIMS repository.</p>
 <div id="photo-code">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
 background-color: null;
