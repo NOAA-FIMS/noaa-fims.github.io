@@ -57,20 +57,29 @@ jobs:
             // Filter out bot accounts. The GitHub API `listContributors` endpoint includes a `type` field.
             const users = contributors.filter(c => c.type === 'User');
 
-            // Generate Contributors grid using divs and roles for CSS grid.
-            // This structure matches the styling rules in `assets/styles-elm-base.scss`.
-            let contributorsGrid = '<div role="list" aria-label="FIMS contributors">';
-            for (const c of users) {
-              // The `<a>` tag is a flex container, and the `<sub>` is for the username.
-              // The styles in scss will handle the grid layout, hover effects, and responsive behavior.
-              contributorsGrid += '\n<div role="listitem">' +
+            // Generate Contributors grid as a table, matching the manually corrected, accessible format.
+            // This uses inline styles for alignment to avoid using deprecated attributes.
+            let contributorsGrid = '<table>';
+            const columns = 6; // This matches the column count of the existing layout.
+            for (let i = 0; i < users.length; i++) {
+              const c = users[i];
+              if (i % columns === 0) {
+                contributorsGrid += '\n<tr>';
+              }
+
+              // Use inline styles for padding and alignment to ensure accessibility.
+              contributorsGrid += `\n<td style="padding:12px; text-align: center; vertical-align: top;">` +
                 `\n  <a href="${c.html_url}">` +
-                `\n    <img src="${c.avatar_url}" alt="${c.login} avatar" width="80" height="80" style="border-radius: 50%; object-fit: cover;" />` +
-                `\n    <sub>${c.login}</sub>` +
+                `\n    <img src="${c.avatar_url}" alt="${c.login} avatar" width="80" height="80" style="border-radius: 8px;" />` +
+                `\n    <br/><sub>${c.login}</sub>` +
                 '\n  </a>' +
-                '\n</div>';
+                '\n</td>';
+
+              if (i % columns === columns - 1 || i === users.length - 1) {
+                contributorsGrid += '\n</tr>';
+              }
             }
-            contributorsGrid += '</div>';
+            contributorsGrid += '\n</table>';
 
             const fs = require('fs');
             const filePath = 'contact/contributors.qmd';

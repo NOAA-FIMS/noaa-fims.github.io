@@ -498,50 +498,6 @@ img.thumbnail-image.card-img {
   display: block; /* Show hotspots when the 'is-visible' class is present */
 }
 
-/* --- Contributor Page Grid Layout --- */
-#contributors [role="list"] {
-  display: grid !important;
-  /* Using auto-fill with minmax is great for responsive grids without media queries */
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 16px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#contributors [role="listitem"] {
-  /* Override inline styles to ensure grid behavior */
-  display: block !important;
-  width: auto !important;
-  vertical-align: unset !important;
-  padding: 0 !important; /* We will apply padding to the link inside */
-  text-align: center !important;
-}
-
-#contributors [role="listitem"] a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding: 12px;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
-  box-sizing: border-box;
-  border-radius: 8px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-#contributors [role="listitem"] a:is(:hover, :focus-visible) {
-  background-color: var(--bs-tertiary-bg);
-}
-
-#contributors [role="listitem"] sub {
-  font-size: 0.8rem;
-  word-break: break-word;
-  line-height: 1.2;
-}
-
 div.quarto-post {
     gap: 1em;       /* Or 0.5em for even closer */
 }
