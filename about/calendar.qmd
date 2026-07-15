@@ -2,10 +2,12 @@
 title: FIMS Calendar
 ---
 
-FIMS has both reoccurring meetings (e.g., FIMS Code Club and FIMS Implementation Team meetings) and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If the meeting is public, there will be a hyperlink in the description with the Google Meet link so you can join in on the fun! 
+FIMS has both recurring meetings, such as FIMS Code Club and FIMS Implementation Team meetings, and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If a meeting is public, the description includes a Google Meet link.
 
-Let us know (see the [contact page](../contact/index.qmd)) if there are meetings you are interested in joining since not all meeting links are provided in the calendar. However, Implementation Team meetings are currently limited to [Implementation Team members](../contact/contributors.qmd#core-developers).
+Let us know on the [contact page](../contact/index.qmd) if there are meetings you are interested in joining, since not all meeting links are provided in the calendar. Implementation Team meetings are currently limited to [Implementation Team members](../contact/contributors.qmd#core-developers).
 
-Add FIMS calendar to your own by clicking the blue text "Add to calendar", at the bottom of the calendar.
+If the embedded calendar is difficult to use, open the [FIMS Community Calendar in a new tab](https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&ctz=America%2FNew_York).
 
-<iframe src="https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" title="FIMS Community Calendar"></iframe>
+Add the FIMS calendar to your own calendar by selecting `Add to calendar` at the bottom of the embedded calendar.
+
+<iframe src="https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0; max-width: 100%;" width="800" height="600" loading="lazy" scrolling="no" title="FIMS Community Calendar"></iframe>

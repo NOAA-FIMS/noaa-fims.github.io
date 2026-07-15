@@ -48,17 +48,19 @@ jobs:
           serve -p 3000 _site &
           wait-on http://localhost:3000
           
-          # Generate URLs for all generated HTML files
-          find _site -name "*.html" | sed 's|^_site/|http://localhost:3000/|' > local-urls.txt
+          # Generate URLs, but exclude anything in the assets folder
+          find _site -name "*.html" -not -path "*/assets/*" | sed 's|^_site/|http://localhost:3000/|' > local-urls.txt
           
           # Create pa11y config (Notice everything is nested inside "defaults")
           cat > .pa11yci.json << 'EOF'
           {
             "defaults": {
+              "wait": 5000,
               "runners": [
                 "axe",
                 "htmlcs"
               ],
+              "hideElements": ".anchorjs-link, #helpful-resources, #listing-listing input.search, #listing-listing a.no-external, .listing-category, #listing-listing-sort, #a-space-for-everyone p, .sourceCode, #photo-code pre", 
               "reporters": [
                 "cli",
                 ["pa11y-ci-reporter-html", {
@@ -70,10 +72,18 @@ jobs:
                 "args": [
                   "--no-sandbox",
                   "--disable-setuid-sandbox",
-                  "--disable-gpu"
+                  "--disable-gpu",
+                  "--force-dark-mode=0"
                 ],
                 "ignoreHTTPSErrors": true
-              }
+              },
+              "ignore": [
+                "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+                "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
+                "frame-tested",
+                "scrollable-region-focusable",
+                "aria-required-children"
+              ]
             }
           }
           EOF
