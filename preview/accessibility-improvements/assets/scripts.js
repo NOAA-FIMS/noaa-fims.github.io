@@ -1,5 +1,5 @@
 // ==========================================================================
-// FIMS PATHWAY EXPLORER
+// FIMS PATHWAY EXPLORER (Restored to your exact working version)
 // ==========================================================================
 const preloadedImages = [];
 const imageList = [
@@ -16,16 +16,11 @@ imageList.forEach((src) => {
   preloadedImages.push(img);
 });
 
-function stateFromImageSrc(src) {
-  const m = src.match(/fims-user(\d+)\.png$/);
-  return m ? `user${m[1]}` : null;
-}
-
 function setVisibleLinksForState(state) {
   const links = document.querySelectorAll(".fims-graphic-container a.link-hotspot");
 
   links.forEach((a) => {
-    const showOn = (a.dataset.showOn || "").trim();
+    const showOn = (a.dataset.showOn || "").trim(); // e.g. "user1 user2"
     const allowed = showOn.split(/\s+/).filter(Boolean);
     const shouldShow = allowed.includes(state);
 
@@ -42,19 +37,34 @@ function setVisibleLinksForState(state) {
   });
 }
 
-// RESTORED: Expose globally so inline onclick attributes work natively
-window.changeImage = function(newSrc, newAltText) {
-  const mainImage = document.getElementById("fims-main-img");
-  if (!mainImage) return;
+function stateFromImageSrc(src) {
+  // matches fims-user1.png ... fims-user5.png (and would match user0 too)
+  const m = src.match(/fims-user(\d+)\.png$/);
+  return m ? `user${m[1]}` : null;
+}
 
-  // Swap picture and alt text
+// UPGRADED SWAP FUNCTION (Exactly as you provided)
+function changeImage(newSrc, newAltText) {
+  const mainImage = document.getElementById("fims-main-img");
+
+  // 1) Swap the picture
   mainImage.src = newSrc;
+
+  // 2) Swap the alt text for screen readers
   mainImage.alt = newAltText;
 
-  // Toggle hotspots
+  // 3) Show/hide the appropriate href hotspots
   const state = stateFromImageSrc(newSrc);
   setVisibleLinksForState(state || "__none__");
-};
+}
+
+// Ensure correct initial state on first page load
+document.addEventListener("DOMContentLoaded", () => {
+  const img = document.getElementById("fims-main-img");
+  const state = img ? stateFromImageSrc(img.getAttribute("src") || "") : null;
+  setVisibleLinksForState(state || "__none__");
+});
+
 
 // ==========================================================================
 // BREVO FORM ACCESSIBILITY
@@ -148,15 +158,8 @@ function initQuartoAccessibilityFixes() {
   setInterval(applyListingLabels, 500);
 }
 
-// Consolidate all script initializations
+// Consolidate non-graphic script initializations
 document.addEventListener("DOMContentLoaded", () => {
-  // Init pathway explorer state based on the graphic on page load
-  const img = document.getElementById("fims-main-img");
-  if (img) {
-    const state = stateFromImageSrc(img.getAttribute("src") || "");
-    setVisibleLinksForState(state || "__none__");
-  }
-  
   initFormAccessibility();
   initQuartoAccessibilityFixes();
   addPageSpecificClass();
