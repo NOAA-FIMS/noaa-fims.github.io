@@ -1558,7 +1558,7 @@ THREE BIG THINGS THIS WEEK
 </div>
 <ol type="1">
 <li><p>We have a few open PRs this week to review from new contributors and one from Matthew (fixing a memory leak).</p></li>
-<li><p>Bai is working on ecosystemdata to <a href="https://github.com/NOAA-FIMS/ecosystemdata/pull/15">extract selectivity parameters from EWE output</a>.</p></li>
+<li><p>Bai is working on ecosystem data tools to extract selectivity parameters from EWE output.</p></li>
 <li><p>Matthew is working ALL WEEK on <a href="https://github.com/NOAA-FIMS/FIMS/issues/981">translational units</a> to decrease the number of cores that we need to build FIMS.</p></li>
 </ol>
 </div><div class="column" style="width:30%;">
@@ -2552,7 +2552,7 @@ Online: [Google meet](MEETING LINK)
 </div>
 <section id="photo-of-the-week" class="level2">
 <h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
-<p>Codecov has had some recent development that allows you to <a href="https://about.codecov.io/product/feature/codecov-ai/">use copilot to generate tests</a> for your Pull Request. It uses context from your test report to generate unit tests that target exactly what is missing so you can boost patch coverage. You can add the following comment on a Pull Request to make this happen. This feature has yet to be tried yet on a NOAA-FIMS repository.</p>
+<p>Codecov has had some recent development that allows you to use copilot to generate tests for your Pull Request. It uses context from your test report to generate unit tests that target exactly what is missing so you can boost patch coverage. You can add the following comment on a Pull Request to make this happen. This feature has yet to be tried yet on a NOAA-FIMS repository.</p>
 <div id="photo-code">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
 background-color: null;
