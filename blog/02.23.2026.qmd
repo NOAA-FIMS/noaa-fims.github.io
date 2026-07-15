@@ -9,7 +9,7 @@ categories:
   - blog
 three-big-things:
   bt1: "We have a few open PRs this week to review from new contributors and one from Matthew (fixing a memory leak)."
-  bt2: "Bai is working on ecosystemdata to [extract selectivity parameters from EWE output](https://github.com/NOAA-FIMS/ecosystemdata/pull/15)"
+  bt2: "Bai is working on ecosystemdata to extract selectivity parameters from EWE output."
   bt3: "Matthew is working ALL WEEK on [translational units](https://github.com/NOAA-FIMS/FIMS/issues/981) to decrease the number of cores that we need to build FIMS."
 # Announcements go below because of formatting that quarto doesnt transfer over from the yml
 # If there is no code club or seaside chat, just delete those lines and the template will handle it for you
