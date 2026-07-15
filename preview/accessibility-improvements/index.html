@@ -581,6 +581,42 @@ ul.task-list li input[type="checkbox"] {
   <a href="[https://noaa-fims.github.io/blog/](https://noaa-fims.github.io/blog/)" class="hotspot link-hotspot" id="link-blog-receiver" data-show-on="user5" target="_blank" aria-label="Go to FIMS blog" tabindex="-1" aria-hidden="true"></a>
 </div>
 
+<!-- INJECTED SCRIPT: Bypasses external caching and Quarto modules -->
+<script>
+  window.changeImage = function(newSrc, newAltText) {
+    const mainImage = document.getElementById("fims-main-img");
+    if (!mainImage) return;
+
+    // 1) Swap the picture
+    mainImage.src = newSrc;
+
+    // 2) Swap the alt text for screen readers
+    mainImage.alt = newAltText;
+
+    // 3) Calculate state from the image filename
+    const match = newSrc.match(/fims-user(\d+)\.png$/);
+    const targetState = match ? `user${match[1]}` : "__none__";
+
+    // 4) Show/hide the appropriate href hotspots
+    const links = document.querySelectorAll(".fims-graphic-container a.link-hotspot");
+    links.forEach((a) => {
+      const showOn = (a.dataset.showOn || "").trim();
+      const allowed = showOn.split(/\s+/).filter(Boolean);
+      const shouldShow = allowed.includes(targetState);
+
+      a.classList.toggle("is-visible", shouldShow);
+
+      if (shouldShow) {
+        a.removeAttribute("aria-hidden");
+        a.removeAttribute("tabindex");
+      } else {
+        a.setAttribute("aria-hidden", "true");
+        a.setAttribute("tabindex", "-1");
+      }
+    });
+  };
+</script>
+
 
 </section>
 
