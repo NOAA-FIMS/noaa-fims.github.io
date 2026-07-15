@@ -1558,7 +1558,7 @@ THREE BIG THINGS THIS WEEK
 </div>
 <ol type="1">
 <li><p>We have a few open PRs this week to review from new contributors and one from Matthew (fixing a memory leak).</p></li>
-<li><p>Bai is working on ecosystem data tools to extract selectivity parameters from EWE output.</p></li>
+<li><p>Bai is working on ecosystemdata to <a href="https://github.com/NOAA-FIMS/ecosystemdata/pull/15">extract selectivity parameters from EWE output</a></p></li>
 <li><p>Matthew is working ALL WEEK on <a href="https://github.com/NOAA-FIMS/FIMS/issues/981">translational units</a> to decrease the number of cores that we need to build FIMS.</p></li>
 </ol>
 </div><div class="column" style="width:30%;">
