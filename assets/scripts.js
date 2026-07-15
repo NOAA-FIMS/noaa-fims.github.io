@@ -44,7 +44,7 @@ function stateFromImageSrc(src) {
 }
 
 // UPGRADED SWAP FUNCTION (Exactly as you provided)
-function changeImage(newSrc, newAltText) {
+window.changeImage = function(newSrc, newAltText) {
   const mainImage = document.getElementById("fims-main-img");
 
   // 1) Swap the picture
@@ -56,7 +56,7 @@ function changeImage(newSrc, newAltText) {
   // 3) Show/hide the appropriate href hotspots
   const state = stateFromImageSrc(newSrc);
   setVisibleLinksForState(state || "__none__");
-}
+};
 
 // Ensure correct initial state on first page load
 document.addEventListener("DOMContentLoaded", () => {
