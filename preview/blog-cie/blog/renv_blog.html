@@ -82,9 +82,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-14aad849e97d8950c2760daefbaa3b89.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-cb908a73488886f3e08fd85e411229d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-788b7bf9d2e7dc193974166eb635c756.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-cb908a73488886f3e08fd85e411229d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3fdffcd39670d0e8f8a0eda146a967c2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-31f399fbfd59b052e6634163a9f27c32.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3fdffcd39670d0e8f8a0eda146a967c2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -128,6 +128,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:description" content="How we use {renv} to keep the FIMS ecosystem reproducible and collaborative">
 <meta property="og:image" content="https://noaa-fims.github.io/preview/blog-cie/blog/images/renv_diagram.png">
 <meta property="og:site_name" content="FIMS">
+<meta property="og:image:alt" content="Diagram comparing R environments without renv versus with renv.">
 <meta property="og:image:height" content="577">
 <meta property="og:image:width" content="1411">
 </head>
@@ -483,7 +484,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/renv_diagram.png" class="img-fluid figure-img"></p>
+<p><img src="images/renv_diagram.png" class="img-fluid figure-img" alt="Diagram comparing R environments without renv versus with renv."></p>
 <figcaption>Without {renv}, each environment maintains its own independent R library with no shared source of truth, leading to version conflicts across developers and machines. With {renv}, a single renv.lock file records exact package versions, keeping all environments in sync.</figcaption>
 </figure>
 </div>
@@ -510,7 +511,7 @@ Tip
 <p>{FIMS} is continuously in active development and since both projects rely heavily on {FIMS}, it’s really important that we are keeping track of what version of {FIMS} we are using. For example, when we are writing functions for {FIMSdiags} and find a bug in {FIMS}, we can switch to using the version with the fix until that fix is merged into the dev or main branch at a later time. Using the {renv} functions to install and update the lockfile with the specific version of {FIMS} makes this really easy to do. For the case studies, this challenge was more complex. We wanted to ensure there was always a version of the case studies that works with the stable version of {FIMS}, but we also want to be able to test them with features being added into the development branch of {FIMS}. To do this, we took advantage of its profiles feature to be able to seamlessly switch between multiple versions of {FIMS} for the case studies. We created two {renv} profiles, each with their own R libraries. The profiles are determined by which branch of the case studies repository you are working on. If your R session detects “main” in the branch name it will automatically use the default profile which uses the stable version of {FIMS}. Otherwise, it will activate the dev profile and therefore, the user will be using the development version of {FIMS}.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/renv_profiles.png" class="img-fluid figure-img"></p>
+<p><img src="images/renv_profiles.png" class="img-fluid figure-img" alt="Flowchart showing how the Rprofile routes to different renv profiles based on the branch."></p>
 <figcaption>When an R session starts in the case-studies repository, the .Rprofile detects the current branch and routes automatically to the matching {renv} profile — the default profile for the stable version of {FIMS}, or the dev profile for the development version.</figcaption>
 </figure>
 </div>
@@ -562,21 +563,48 @@ document.addEventListener("DOMContentLoaded", function () {
     "/FIMSdiags/",
     "/FIMSRTMB/",
     "/fims-pkgdown-template/",
-    "/ecosystemom/"
+    "/ecosystemom/",
     "/fishprior/"
   ];
 
   document.querySelectorAll("a[href]").forEach(function (link) {
     var href = link.getAttribute("href");
-    if (!href) return;
+    if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) {
+      return;
+    }
 
-    var url = new URL(href, window.location.origin);
-    var isExternal = url.hostname !== window.location.hostname;
-    var isForcedInternal = forceNewTabPaths.includes(url.pathname);
+    try {
+      var url = new URL(href, window.location.origin);
+      var isExternal = url.hostname !== window.location.hostname;
+      var isForcedInternal = forceNewTabPaths.includes(url.pathname);
 
-    if (isExternal || isForcedInternal) {
-      link.setAttribute("target", "_blank");
-      link.setAttribute("rel", "noopener noreferrer");
+      if (isExternal || isForcedInternal) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+
+        // Accessibility Fix: Add a screen-reader-only warning if not already present
+        if (!link.hasAttribute("data-new-tab-warning")) {
+          var srWarning = document.createElement("span");
+          srWarning.textContent = " (opens in a new tab)";
+
+          // Use CSS to hide this text visually, but keep it available to screen readers
+          srWarning.style.position = "absolute";
+          srWarning.style.width = "1px";
+          srWarning.style.height = "1px";
+          srWarning.style.padding = "0";
+          srWarning.style.margin = "-1px";
+          srWarning.style.overflow = "hidden";
+          srWarning.style.clip = "rect(0, 0, 0, 0)";
+          srWarning.style.whiteSpace = "nowrap";
+          srWarning.style.border = "0";
+          
+          link.appendChild(srWarning);
+          // Prevent duplicates
+          link.setAttribute("data-new-tab-warning", "true");
+        }
+      }
+    } catch (error) {
+      console.warn("Skipping invalid link URL:", href, error);
     }
   });
 });

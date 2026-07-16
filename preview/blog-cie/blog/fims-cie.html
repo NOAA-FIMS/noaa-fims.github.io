@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-12-15">
+<meta name="author" content="Kelli Johnson">
+<meta name="dcterms.date" content="2026-07-13">
 
-<title>FIMS Weekly - December 15–19, 2025 – FIMS</title>
+<title>FIMS CIE Review – FIMS</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -88,13 +89,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
-<meta property="og:title" content="FIMS Weekly - December 15–19, 2025 – FIMS">
-<meta property="og:description" content="News and updates from the Fisheries Integrated Modeling System project.">
-<meta property="og:image" content="https://noaa-fims.github.io/preview/blog-cie/blog/images/fims_weekly.png">
+<meta property="og:title" content="FIMS CIE Review – FIMS">
+<meta property="og:description" content="CIE concludes that FIMS is on the right track">
 <meta property="og:site_name" content="FIMS">
-<meta property="og:image:alt" content="FIMS hex icon and noaa logo with text saying FIMS Weekly">
-<meta property="og:image:height" content="112">
-<meta property="og:image:width" content="811">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -370,11 +367,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">FIMS Weekly - December 15–19, 2025</h1>
+      <h1 class="title">FIMS CIE Review</h1>
+            <p class="subtitle lead">CIE concludes that FIMS is on the right track</p>
                                 <div class="quarto-categories">
-                <div class="quarto-category">fims-weekly</div>
-                <div class="quarto-category">releases</div>
-                <div class="quarto-category">R</div>
+                <div class="quarto-category">community</div>
+                <div class="quarto-category">testing</div>
               </div>
                   </div>
   </div>
@@ -382,11 +379,17 @@ ul.task-list li input[type="checkbox"] {
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Kelli Johnson </p>
+            </div>
+    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 15, 2025</p>
+        <p class="date">July 13, 2026</p>
       </div>
     </div>
     
@@ -428,83 +431,43 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><img src="images/fims_weekly.png" class="img-fluid" alt="FIMS hex icon and noaa logo with text saying FIMS Weekly"></p>
-<div style="height:3em;">
-
-</div>
-<div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
-<div class="header-wrap">
-<h2 class="anchored">
-THREE BIG THINGS THIS WEEK
-</h2>
-</div>
-<ol type="1">
-<li><p>Thanks to Meg for <a href="https://github.com/NOAA-FIMS/FIMS/issues/1063">reporting a :bug:</a> last week, we will have a new release of 0.7.0 hopefully today, i.e., 0.7.1 that fixes the json and the R code to read that json in.</p></li>
-<li><p>Matthew has picked back up the length-based selectivity work and is hoping to get this wrapped up soon and in a new release.</p></li>
-<li><p>The projections branch will be rebased to dev and a vignette will be created to help socialize how to do projections. If you are interested in helping with this please reach out on the <a href="https://github.com/NOAA-FIMS/FIMS/pull/1035">Pull Request</a>.</p></li>
-</ol>
-</div><div class="column" style="width:30%;">
-<div class="header-wrap">
-<h2 class="anchored">
-HELPFUL RESOURCES
-</h2>
-</div>
+<p>On April 21–23, 2026 the Fisheries Integrated Modeling System (FIMS) underwent a review by the Center for Independent Experts. Reviewers included Dr.&nbsp;Steven Holmes (Earth Sciences New Zealand), Dr.&nbsp;Daniel Howell (Institute of Marine Research), and Dr.&nbsp;Kotaro Ono (Institute of Marine Research), and, Dr.&nbsp;Aaron Berger (Northwest Fisheries Science Center) served as the Chair. In summary, it was concluded that FIMS is on track for success and it was recommended that FIMS be applied to a limited number of well-chosen, simple stock assessments in the immediate future.</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Historically, NOAA Fisheries has used a patchwork of different software models developed independently across different regions. While these methods are accurate (<a href="https://spo.nmfs.noaa.gov/sites/default/files/pdf-content/fish-bull/11923li.pdf">Li et al., 2021</a>), they can be difficult to maintain and connect to ecosystem, climate and socioeconomic models. Thus, in 2020 NOAA Fisheries worked to create a Terms of Reference for an ambitious, nationally coordinated software framework designed to modernize and unify how we model marine populations, i.e., FIMS.</p>
+<p>Through FIMS, NOAA Fisheries is leading the development of a modular software system that presents a unified approach to fisheries modeling, meets regional needs for conducting stock assessments and providing scientific advice across a range of data input, provides a focus for greater international collaboration, and builds a bridge between single-species, ecosystem, socioeconomic, and climate-fisheries models. In 2025 it was clear that this effort, which started in 2021, had reached a point where an external technical review was warranted.</p>
+</section>
+<section id="cie-reports" class="level2">
+<h2 class="anchored" data-anchor-id="cie-reports">CIE reports</h2>
+<p>Each reviewer provided a report summarizing their perspective on how FIMS is meeting each of the five Review Terms of Reference, and the chair also provided a summary report. The reviewer reports can be found in the <a href="https://www.st.nmfs.noaa.gov/science-quality-assurance/cie-peer-reviews/peer-review-reports">NOAA Fisheries CIE Review Archives</a>. And, we summarize the major conclusions here.</p>
+</section>
+<section id="cie-conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="cie-conclusions">CIE conclusions</h2>
+<p>The reviewers were overwhelmingly positive about the foundation the FIMS team has built, noting that the scale and ambition of this project are unprecedented in fisheries science.</p>
+<section id="what-fims-is-getting-right" class="level3">
+<h3 class="anchored" data-anchor-id="what-fims-is-getting-right">What FIMS is getting right</h3>
 <ul>
-<li><a href="https://docs.google.com/spreadsheets/d/1g60HmAw8w_CIWBbQwTbq-oWs1ChdTTqvCREVQ8e66sE/edit?gid=0#gid=0">FIMS Outreach Activities</a></li>
-<li><a href="https://calendar.google.com/calendar/embed?src=c_916b6948ef2ee8b7d49c28661efc0798303c2742be399c9290fa02d9320c769e%40group.calendar.google.com&amp;ctz=America%2FNew_York">NMFS Open Science Calendar</a></li>
-<li><a href="https://docs.google.com/document/d/10nSfbPaBF2p7wL2cr5lW7PGZxlZI4tbPiwQRC8JKaXk/edit?usp=drive_link">Implementation Team Notes</a></li>
-<li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
-<li><a href="https://github.com/orgs/NOAA-FIMS/discussions">NOAA-FIMS Discussions</a></li>
-<li><a href="https://nmfs-opensci.github.io/GitHub-Clinic/content/schedule.html">GitHub Trainings</a></li>
+<li><strong>World-class software testing:</strong> FIMS isn’t just relying on scientists double-checking their math; it incorporates modern software engineering practices. Reviewers praised the automated testing framework as “world-leading” and more extensive than any existing stock assessment tool. This rigorous testing ensures that, as new features are added, the core system remains stable and reliable.</li>
+<li><strong>Open and collaborative development:</strong> Rather than being built behind closed doors, FIMS is open-source and hosted on GitHub. The development team actively hosts “Code Clubs” and training workshops, inviting contributions from scientists across all NOAA regions and beyond.</li>
+<li><strong>Flexible and powerful:</strong> FIMS allows scientists to seamlessly switch between different types of advanced statistical methods (like maximum-likelihood and Bayesian estimation) within the same platform. This built-in flexibility is highly innovative and will help scientists better understand uncertainty in their models.</li>
+<li><strong>Sustained commitment:</strong> A recurring theme throughout the review was the need for long-term stability. The future success of FIMS relies heavily on the dedicated support from the NOAA Fisheries Science Board.</li>
 </ul>
-</div>
-</div>
-<div class="columns">
-<div class="column">
-<section id="fims-announcements" class="level2">
-<h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
-<div id="announcements">
+</section>
+<section id="where-fims-needs-work" class="level3">
+<h3 class="anchored" data-anchor-id="where-fims-needs-work">Where FIMS needs work</h3>
+<p>Despite the high praise, the review panel concluded that FIMS is not yet fully ready for routine, operational stock assessments. To get there, the developers will need to focus on a few key hurdles.</p>
 <ul>
-<li>Please welcome 👋 Erik Williams to FIMS.</li>
+<li><strong>Adding biological realism:</strong> Currently, FIMS is equipped to handle relatively simple assessments. To support complex assessments, the software needs deeper structural upgrades. Reviewers stressed that FIMS must add the ability to model seasonality, differences in growth, and sex-specific dynamics. Adding these elements early is critical to avoid having to rewrite core software code later on.</li>
+<li><strong>Building tools for management advice:</strong> Knowing how many fish are in the ocean is only half the battle; managers also need to know what to do next. Reviewers pointed out that FIMS needs stronger capabilities for calculating reference points and projecting future stock sizes. These are the specific metrics that Regional Fishery Management Councils use to set catch limits and quotas, so aligning FIMS with regional management practices is a top priority.</li>
+<li><strong>Better guardrails and documentation for users:</strong> Because FIMS is so powerful, there is a risk that inexperienced users could accidentally misuse it. The panel strongly recommended creating prominent warning messages if a model fails to properly estimate parameters. This ensures bad data isn’t accidentally used to make management decisions. Additionally, reviewers noted that FIMS needs a comprehensive reference manual that clearly explains “default” settings so users know exactly what assumptions they are making.</li>
 </ul>
-</div>
-</section>
-</div><div class="column">
-<section id="upcoming-events" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461207570636f6d696e672d6576656e74732e636f64652d636c75622d64617465203e7d7d" class="level3">
-<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461207570636f6d696e672d6576656e74732e636f64652d636c75622d64617465203e7d7d">Wednesday,</h3>
-<p><strong>FIMS Code Club</strong> Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&amp;ref=https://meet.google.com/ica-ieta-ndu">Google Meet</a></p>
-<div id="additional-events">
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-</div>
 </section>
 </section>
-</div>
-</div>
-<section id="photo-of-the-week" class="level2">
-<h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
-<p>Has anyone heard of {fastverse} before? It appears to be a {tidyverse} style group of packages built on C++ code that is meant for quick analyses of data, unlike traditional tidyverse packages that are known to be easy to understand but slow. See the code below for installation and feel free to start a <a href="https://github.com/orgs/NOAA-FIMS/discussions">Discussion on GitHub</a> about the packages if they seem useful, especially as our input and output data frames become larger.</p>
-<div id="photo-code">
-<pre><code># Install the CRAN version
-install.packages("fastverse")
-
-# Install (Windows/Mac binaries) from R-universe
-install.packages("fastverse", repos = "https://fastverse.r-universe.dev")
-
-# Install from GitHub (requires compilation)
-remotes::install_github("fastverse/fastverse")</code></pre>
-</div>
-<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Since the conclusion of the CIE Review we have actively begun work on advancing the projections capability and adding sex structure to the model. Please contact the developers if you are interested in helping to add timing capabilities to the model so FIMS is better equipped to fit more data types.</p>
+<p>Thank you to everyone who has put in years of work getting FIMS to the point that it is now and to those who presented at the CIE Review allowing us to showcase all that we have accomplished. The review was a success because of your dedication to this project.</p>
+<p>We are also thankful to all of the beta testers that have given helpful feedback along the way. Remember, we are not building FIMS for the Implementation Team, we are building FIMS for you. So, all feedback is highly valued and we encourage you to add the FIMS calendar to your Google calendar so you can join our Code Club sessions. If you have data you would like to fit with a FIMS model, please feel free to post an <a href="https://github.com/NOAA-FIMS/case-studies/issues">issue on GitHub</a>, join a Code Club, or contact us through our <a href="https://noaa-fims.github.io/contact/">online form</a>.</p>
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
 </script>
 
