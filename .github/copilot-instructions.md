@@ -3,4 +3,4 @@ When generating code, writing markdown, or answering questions in this repositor
 
 - `.github/instructions/accessibility.instructions.md`
 - `.github/instructions/security.instructions.md`
-- `.github/instructions/beastmode.instructions.md`
+<!-- - `.github/instructions/beastmode.instructions.md` -->
