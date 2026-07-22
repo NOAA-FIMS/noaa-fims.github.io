@@ -71,7 +71,7 @@ listing:
       description: >
         'Exposing C++ functions and classes with Rcpp modules' by Dirk Eddelbuettel and Romain François focuses on Rcpp modules that allow programmers to expose C++ functions and classes to R with relative ease
       categories: [Rcpp]
-    - path: https://dirk.eddelbuettel.com/code/rcpp/Rcpp-quickref.pdf
+    - path: https://www.rcpp.org/pdf/Rcpp-quickref.pdf
       title: Rcpp quick reference
       description: >
         A short pdf produced by the authors of the Rcpp package that is analogous to a tidyverse cheat sheet
