@@ -130,7 +130,7 @@ jobs:
 
       - name: Commit and push if contributors.qmd changed
         if: github.event_name == 'push'
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Update contributors list"
           file_pattern: contact/contributors.qmd
