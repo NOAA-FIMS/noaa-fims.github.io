@@ -19,6 +19,7 @@ FIMS is a collaborative effort that would not be possible without the generous s
 * Bai Li (OST)
 * Emily M. Liljestrand (NEFSC)
 * Timothy J. Miller (NEFSC)
+* Elizabeth Perl (OST)
 * Megumi C. Oshima (PIFSC)
 * Matthew Supernaw (OST)
 * Ian G. Taylor (NWFSC)
