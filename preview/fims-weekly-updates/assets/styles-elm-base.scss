@@ -329,7 +329,7 @@ img.thumbnail-image.card-img {
 }
 
 /* --- ACCESSIBILITY FIX: Custom Badge Contrasts --- */
-/* For your custom badges (deep-dive, fims-weekly, learn, other) */
+/* For your custom badges (deep-dive, fims-monthly, learn, other) */
 
 /* Light Mode (Old-school explicit selectors) */
 #listing-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
@@ -400,7 +400,7 @@ img.thumbnail-image.card-img {
   display: inline-block;
 }
 
-/* fims-weekly */
+/* fims-monthly */
 .quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="] {
   display: flex !important;    /* Horizontally align icon and text */
   align-items: center;      /* Vertically center both */
@@ -423,7 +423,7 @@ img.thumbnail-image.card-img {
   display: inline-block;
 }
 
-.quarto-category a[href*="category=fims-weekly"]::before {
+.quarto-category a[href*="category=fims-monthly"]::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f1ea"; /* fa-newspaper */

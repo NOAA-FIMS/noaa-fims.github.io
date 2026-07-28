@@ -42,25 +42,25 @@
     "text": "Takeaways\nBy incorporating {renv} into our workflows, we’ve tackled three challenges that are common in collaborative, multi-platform development: keeping environments consistent across developers and operating systems, managing multiple versions of an actively-developing dependency, and making all of this happen automatically so that developers and users can focus on the work itself. The result is a codebase that is easier to share, easier to reproduce, and easier to maintain as both projects continue to grow."
   },
   {
-    "objectID": "blog/fims-weekly-template.html",
-    "href": "blog/fims-weekly-template.html",
+    "objectID": "blog/fims-monthly-template.html",
+    "href": "blog/fims-monthly-template.html",
     "title": "FIMS",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/fims-weekly-template.html#fims-announcements",
-    "href": "blog/fims-weekly-template.html#fims-announcements",
+    "objectID": "blog/fims-monthly-template.html#fims-announcements",
+    "href": "blog/fims-monthly-template.html#fims-announcements",
     "title": "FIMS",
     "section": "FIMS ANNOUNCEMENTS",
     "text": "FIMS ANNOUNCEMENTS"
   },
   {
-    "objectID": "blog/fims-weekly-template.html#upcoming-events",
-    "href": "blog/fims-weekly-template.html#upcoming-events",
+    "objectID": "blog/fims-monthly-template.html#upcoming-events",
+    "href": "blog/fims-monthly-template.html#upcoming-events",
     "title": "FIMS",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\nNo upcoming events scheduled for this week. Check the FIMS Community Calendar for more."
+    "text": "UPCOMING EVENTS"
   },
   {
     "objectID": "blog/fims-cie.html",
@@ -98,445 +98,459 @@
     "text": "Conclusion\nSince the conclusion of the CIE Review we have actively begun work on advancing the projections capability and adding sex structure to the model. Please contact the developers if you are interested in helping to add timing capabilities to the model so FIMS is better equipped to fit more data types.\nThank you to everyone who has put in years of work getting FIMS to the point that it is now and to those who presented at the CIE Review allowing us to showcase all that we have accomplished. The review was a success because of your dedication to this project.\nWe are also thankful to all of the beta testers that have given helpful feedback along the way. Remember, we are not building FIMS for the Implementation Team, we are building FIMS for you. So, all feedback is highly valued and we encourage you to add the FIMS calendar to your Google calendar so you can join our Code Club sessions. If you have data you would like to fit with a FIMS model, please feel free to post an issue on GitHub, join a Code Club, or contact us through our online form."
   },
   {
-    "objectID": "blog/12.29.2025.html",
-    "href": "blog/12.29.2025.html",
-    "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
+    "objectID": "blog/July_2026.html",
+    "href": "blog/July_2026.html",
+    "title": "FIMS Monthly - July 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/12.29.2025.html#fims-announcements",
-    "href": "blog/12.29.2025.html#fims-announcements",
-    "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
+    "objectID": "blog/July_2026.html#fims-announcements",
+    "href": "blog/July_2026.html#fims-announcements",
+    "title": "FIMS Monthly - July 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nThere will be a FIMS training at the National Stock Assessment Workshop in La Jolla, California on January 26th in the afternoon. The training will focus on how to run a simple FIMS model on a Google Cloud workstation and providing assistance for fitting data sets brought by attendees with FIMS.\nPlease welcome 👋 Dan Goethel to FIMS."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nANNOUNCEMENT 1\n\n\nANNOUNCEMENT 2"
   },
   {
-    "objectID": "blog/12.29.2025.html#upcoming-events",
-    "href": "blog/12.29.2025.html#upcoming-events",
-    "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
+    "objectID": "blog/July_2026.html#upcoming-events",
+    "href": "blog/July_2026.html#upcoming-events",
+    "title": "FIMS Monthly - July 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/12.15.2025.html",
-    "href": "blog/12.15.2025.html",
-    "title": "FIMS Weekly - December 15–19, 2025",
+    "objectID": "blog/12.22.2025.html",
+    "href": "blog/12.22.2025.html",
+    "title": "FIMS Weekly - December 22–26, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/12.15.2025.html#fims-announcements",
-    "href": "blog/12.15.2025.html#fims-announcements",
-    "title": "FIMS Weekly - December 15–19, 2025",
+    "objectID": "blog/12.22.2025.html#fims-announcements",
+    "href": "blog/12.22.2025.html#fims-announcements",
+    "title": "FIMS Weekly - December 22–26, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nPlease welcome 👋 Erik Williams to FIMS."
+    "text": "FIMS ANNOUNCEMENTS"
   },
   {
-    "objectID": "blog/12.15.2025.html#upcoming-events",
-    "href": "blog/12.15.2025.html#upcoming-events",
-    "title": "FIMS Weekly - December 15–19, 2025",
+    "objectID": "blog/12.22.2025.html#upcoming-events",
+    "href": "blog/12.22.2025.html#upcoming-events",
+    "title": "FIMS Weekly - December 22–26, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nWednesday,\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/12.01.2025.html",
-    "href": "blog/12.01.2025.html",
-    "title": "FIMS Weekly - December 01–05, 2025",
+    "objectID": "blog/12.08.2025.html",
+    "href": "blog/12.08.2025.html",
+    "title": "FIMS Weekly - December 08–12, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/12.01.2025.html#fims-announcements",
-    "href": "blog/12.01.2025.html#fims-announcements",
-    "title": "FIMS Weekly - December 01–05, 2025",
+    "objectID": "blog/12.08.2025.html#fims-announcements",
+    "href": "blog/12.08.2025.html#fims-announcements",
+    "title": "FIMS Weekly - December 08–12, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n👋Welcome👋 Grant Adams (AFSC) to FIMS!"
+    "text": "FIMS ANNOUNCEMENTS\n\n\nConsider attending the CAPAM workshop on tuna models this week."
   },
   {
-    "objectID": "blog/12.01.2025.html#upcoming-events",
-    "href": "blog/12.01.2025.html#upcoming-events",
-    "title": "FIMS Weekly - December 01–05, 2025",
+    "objectID": "blog/12.08.2025.html#upcoming-events",
+    "href": "blog/12.08.2025.html#upcoming-events",
+    "title": "FIMS Weekly - December 08–12, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/11.17.2025.html",
-    "href": "blog/11.17.2025.html",
-    "title": "FIMS Weekly - November 17–21, 2025",
+    "objectID": "blog/11.24.2025.html",
+    "href": "blog/11.24.2025.html",
+    "title": "FIMS Weekly - November 24–28, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/11.17.2025.html#fims-announcements",
-    "href": "blog/11.17.2025.html#fims-announcements",
-    "title": "FIMS Weekly - November 17–21, 2025",
+    "objectID": "blog/11.24.2025.html#fims-announcements",
+    "href": "blog/11.24.2025.html#fims-announcements",
+    "title": "FIMS Weekly - November 24–28, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nThe ICES Methods Group Working Group is convening this week at the University of Washington and remotely. Please contact Andrea Havron if you are interested in participating."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nHappy 🦃Thanksgiving Day🦃 to you and your friends and family this holiday season.\nThe FIMS CIE Review has been rescheduled to April 21–23, 2026."
   },
   {
-    "objectID": "blog/11.17.2025.html#upcoming-events",
-    "href": "blog/11.17.2025.html#upcoming-events",
-    "title": "FIMS Weekly - November 17–21, 2025",
+    "objectID": "blog/11.24.2025.html#upcoming-events",
+    "href": "blog/11.24.2025.html#upcoming-events",
+    "title": "FIMS Weekly - November 24–28, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS\n\n\n\nTuesday,\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/09.21.2025.html",
-    "href": "blog/09.21.2025.html",
-    "title": "FIMS Weekly - September 21–26, 2025",
+    "objectID": "blog/09.29.2025.html",
+    "href": "blog/09.29.2025.html",
+    "title": "FIMS Weekly - September 29–October 03, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/09.21.2025.html#fims-announcements",
-    "href": "blog/09.21.2025.html#fims-announcements",
-    "title": "FIMS Weekly - September 21–26, 2025",
+    "objectID": "blog/09.29.2025.html#fims-announcements",
+    "href": "blog/09.29.2025.html#fims-announcements",
+    "title": "FIMS Weekly - September 29–October 03, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n43 more days until the CIE Review; a big thanks to 👏Aaron Berger (NWFSC)👏 for stepping up to the be the chair of the CIE Review\nThe design documents have been moved to inst/include/design.md and it is live in the dev-document branch. A big thank you to Kathryn, Bai, Andrea, and Adrianne for your help getting to this point."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n36 more days until the CIE Review\nMeg and Ian have made excellent progress on FIMSdiags, complete with a pkgdown site"
   },
   {
-    "objectID": "blog/09.21.2025.html#upcoming-events",
-    "href": "blog/09.21.2025.html#upcoming-events",
-    "title": "FIMS Weekly - September 21–26, 2025",
+    "objectID": "blog/09.29.2025.html#upcoming-events",
+    "href": "blog/09.29.2025.html#upcoming-events",
+    "title": "FIMS Weekly - September 29–October 03, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, {stockplotr}\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
+    "text": "UPCOMING EVENTS\n\n\n\nTuesday, tests\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, cleanup\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/09.08.2025.html",
-    "href": "blog/09.08.2025.html",
-    "title": "FIMS Weekly - September 08–12, 2025",
+    "objectID": "blog/09.15.2025.html",
+    "href": "blog/09.15.2025.html",
+    "title": "FIMS Weekly - September 15–19, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/09.08.2025.html#fims-announcements",
-    "href": "blog/09.08.2025.html#fims-announcements",
-    "title": "FIMS Weekly - September 08–12, 2025",
+    "objectID": "blog/09.15.2025.html#fims-announcements",
+    "href": "blog/09.15.2025.html#fims-announcements",
+    "title": "FIMS Weekly - September 15–19, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nPlease welcome 👋 Adrianne Wilson 👋 to the FIMS Team!\n57 calendar days until the FIMS CIE Review, we now have a chair."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n50 days until the CIE Review"
   },
   {
-    "objectID": "blog/09.08.2025.html#upcoming-events",
-    "href": "blog/09.08.2025.html#upcoming-events",
-    "title": "FIMS Weekly - September 08–12, 2025",
+    "objectID": "blog/09.15.2025.html#upcoming-events",
+    "href": "blog/09.15.2025.html#upcoming-events",
+    "title": "FIMS Weekly - September 15–19, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, json in R\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, data and seasonality\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
+    "text": "UPCOMING EVENTS\n\n\n\nTuesday, Cleanup\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, FIMS and RTMB\nFIMS Tutorial Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/08.25.2025.html",
-    "href": "blog/08.25.2025.html",
-    "title": "FIMS Weekly - August 25–29, 2025",
+    "objectID": "blog/09.01.2025.html",
+    "href": "blog/09.01.2025.html",
+    "title": "FIMS Weekly - September 01–05, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/08.25.2025.html#fims-announcements",
-    "href": "blog/08.25.2025.html#fims-announcements",
-    "title": "FIMS Weekly - August 25–29, 2025",
+    "objectID": "blog/09.01.2025.html#fims-announcements",
+    "href": "blog/09.01.2025.html#fims-announcements",
+    "title": "FIMS Weekly - September 01–05, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n71 calendar days until the FIMS CIE Review, we still need a chair."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n64 calendar days until the FIMS CIE Review, we still need a chair."
   },
   {
-    "objectID": "blog/08.25.2025.html#upcoming-events",
-    "href": "blog/08.25.2025.html#upcoming-events",
-    "title": "FIMS Weekly - August 25–29, 2025",
+    "objectID": "blog/09.01.2025.html#upcoming-events",
+    "href": "blog/09.01.2025.html#upcoming-events",
+    "title": "FIMS Weekly - September 01–05, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, document SPM\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, Tutorial\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
+    "text": "UPCOMING EVENTS\n\n\n\nThursday, Projections\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/08.11.2025.html",
-    "href": "blog/08.11.2025.html",
-    "title": "FIMS Weekly - August 11–15, 2025",
+    "objectID": "blog/08.18.2025.html",
+    "href": "blog/08.18.2025.html",
+    "title": "FIMS Weekly - August 18–22, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/08.11.2025.html#fims-announcements",
-    "href": "blog/08.11.2025.html#fims-announcements",
-    "title": "FIMS Weekly - August 11–15, 2025",
+    "objectID": "blog/08.18.2025.html#fims-announcements",
+    "href": "blog/08.18.2025.html#fims-announcements",
+    "title": "FIMS Weekly - August 18–22, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nThis will be the last FIMS Weekly in Google Doc form because Elizabeth created a way to distribute this via html on our FIMS Website 🎉. Emails will still go out but they will just link to where you can find the weekly and maybe a screen shot. I am not sure. Please feel free to email me suggestions.\nThe collaborative workflow repository will be removed once the material is migrated to our beautiful FIMS website. Stay tuned."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThe CIE Review will be November 04–06, 2025 and all materials must be delivered to the reviewers four weeks prior to this, i.e., October 07, 2025.\nMuch of the collaborative workflow guide has been moved to this website and to CONTRIBUTING.md. Three files are left to migrate, the model specifications, hpp templates, and testing information. The testing information will move to Bai’s new test README.md file."
   },
   {
-    "objectID": "blog/08.11.2025.html#upcoming-events",
-    "href": "blog/08.11.2025.html#upcoming-events",
-    "title": "FIMS Weekly - August 11–15, 2025",
+    "objectID": "blog/08.18.2025.html#upcoming-events",
+    "href": "blog/08.18.2025.html#upcoming-events",
+    "title": "FIMS Weekly - August 18–22, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, August 12\nFIMS Code Club (WSL and docker) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
+    "text": "UPCOMING EVENTS\n\n\n\nTuesday,\nFIMS Code Club (json output) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday,\nFIMS Seaside Chat (cheat sheet) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/07.28.2025.html",
-    "href": "blog/07.28.2025.html",
-    "title": "FIMS Weekly - July 28–August 1, 2025",
+    "objectID": "blog/08.04.2025.html",
+    "href": "blog/08.04.2025.html",
+    "title": "FIMS Weekly - August 04–08, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/07.28.2025.html#fims-announcements",
-    "href": "blog/07.28.2025.html#fims-announcements",
-    "title": "FIMS Weekly - July 28–August 1, 2025",
+    "objectID": "blog/08.04.2025.html#fims-announcements",
+    "href": "blog/08.04.2025.html#fims-announcements",
+    "title": "FIMS Weekly - August 04–08, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nVersion 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.\nWe need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nFIMS website is now newly updated thanks to Elizabeth 🥇!\nThe CIE Review has been approved and will be held November 04–06, 2025 using an online platform."
   },
   {
-    "objectID": "blog/07.28.2025.html#upcoming-events",
-    "href": "blog/07.28.2025.html#upcoming-events",
-    "title": "FIMS Weekly - July 28–August 1, 2025",
+    "objectID": "blog/08.04.2025.html#upcoming-events",
+    "href": "blog/08.04.2025.html#upcoming-events",
+    "title": "FIMS Weekly - August 04–08, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS\n\n\n\nTuesday, August 05\nFIMS Code Club (json) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/05.18.2026.html",
-    "href": "blog/05.18.2026.html",
-    "title": "FIMS Weekly - May 18–22, 2026",
+    "objectID": "blog/07.21.2025.html",
+    "href": "blog/07.21.2025.html",
+    "title": "FIMS Weekly - July 21–25, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/05.18.2026.html#fims-announcements",
-    "href": "blog/05.18.2026.html#fims-announcements",
-    "title": "FIMS Weekly - May 18–22, 2026",
+    "objectID": "blog/07.21.2025.html#fims-announcements",
+    "href": "blog/07.21.2025.html#fims-announcements",
+    "title": "FIMS Weekly - July 21–25, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nThis is the last week of the Google Summer of Code Community Bonding Period, coding starts next week 🎊."
+    "text": "FIMS ANNOUNCEMENTS"
   },
   {
-    "objectID": "blog/05.18.2026.html#upcoming-events",
-    "href": "blog/05.18.2026.html#upcoming-events",
-    "title": "FIMS Weekly - May 18–22, 2026",
+    "objectID": "blog/07.21.2025.html#upcoming-events",
+    "href": "blog/07.21.2025.html#upcoming-events",
+    "title": "FIMS Weekly - July 21–25, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS\n\nTuesday, July 22\nFIMS Code Club (Tackling TODO: items in code)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet\n\n\nThursday, July 24\nFIMS Seaside Chat (🤷)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet"
   },
   {
-    "objectID": "blog/05.04.2026.html",
-    "href": "blog/05.04.2026.html",
-    "title": "FIMS Weekly - May 04–08, 2026",
+    "objectID": "blog/07.21.2025.html#photo-of-the-week",
+    "href": "blog/07.21.2025.html#photo-of-the-week",
+    "title": "FIMS Weekly - July 21–25, 2025",
+    "section": "PHOTO OF THE WEEK",
+    "text": "PHOTO OF THE WEEK\nR-opensci has guidance on writing tests for packages submitted that Bai is looking into. But, it was pretty mind blowing to learn that there is a way to add comments to a commit message that can invoke “extended” tests, i.e., tests that do not need to be run on every commit. It was nice to know that others have been thinking about this as FIMS has struggled to find a resource or advice on what to do, see Discussion #870. Feel free to add any thoughts about the system below or other insights to running large tests on the Discussion board. Thank you in advance for taking the time to contribute 😊."
+  },
+  {
+    "objectID": "blog/05.11.2026.html",
+    "href": "blog/05.11.2026.html",
+    "title": "FIMS Weekly - May 11–15, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/05.04.2026.html#fims-announcements",
-    "href": "blog/05.04.2026.html#fims-announcements",
-    "title": "FIMS Weekly - May 04–08, 2026",
+    "objectID": "blog/05.11.2026.html#fims-announcements",
+    "href": "blog/05.11.2026.html#fims-announcements",
+    "title": "FIMS Weekly - May 11–15, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nCopilot and codespaces are limited to the free versions for the month of May."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nFIMS CIE Review has been turned in and should be public next week."
   },
   {
-    "objectID": "blog/05.04.2026.html#upcoming-events",
-    "href": "blog/05.04.2026.html#upcoming-events",
-    "title": "FIMS Weekly - May 04–08, 2026",
+    "objectID": "blog/05.11.2026.html#upcoming-events",
+    "href": "blog/05.11.2026.html#upcoming-events",
+    "title": "FIMS Weekly - May 11–15, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/04.20.2026.html",
-    "href": "blog/04.20.2026.html",
-    "title": "FIMS Weekly - April 20–24, 2026",
+    "objectID": "blog/04.27.2026.html",
+    "href": "blog/04.27.2026.html",
+    "title": "FIMS Weekly - April 27–May 01, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/04.20.2026.html#fims-announcements",
-    "href": "blog/04.20.2026.html#fims-announcements",
-    "title": "FIMS Weekly - April 20–24, 2026",
+    "objectID": "blog/04.27.2026.html#fims-announcements",
+    "href": "blog/04.27.2026.html#fims-announcements",
+    "title": "FIMS Weekly - April 27–May 01, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nThere are still empty time slots for taking notes during the CIE Review, please sign up in this Google Doc."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nCIE Review is complete! Thank you to Andrea, Bai, Ian, and Nathan for giving presentations. Thank you to Aaron Berger for being such a great Chair. Thank you to everyone who took notes, they are extremely comprehensive and have already been used by several individuals to summarize the key points of the review. I really appreciate all of the help making this review successful. We received lots of good, constructive feedback and I am looking forward to working on implementing some of the suggested changes."
   },
   {
-    "objectID": "blog/04.20.2026.html#upcoming-events",
-    "href": "blog/04.20.2026.html#upcoming-events",
-    "title": "FIMS Weekly - April 20–24, 2026",
+    "objectID": "blog/04.27.2026.html#upcoming-events",
+    "href": "blog/04.27.2026.html#upcoming-events",
+    "title": "FIMS Weekly - April 27–May 01, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/04.06.2026.html",
-    "href": "blog/04.06.2026.html",
-    "title": "FIMS Weekly - April 06–10, 2026",
+    "objectID": "blog/04.13.2026.html",
+    "href": "blog/04.13.2026.html",
+    "title": "FIMS Weekly - April 13–17, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/04.06.2026.html#fims-announcements",
-    "href": "blog/04.06.2026.html#fims-announcements",
-    "title": "FIMS Weekly - April 06–10, 2026",
+    "objectID": "blog/04.13.2026.html#fims-announcements",
+    "href": "blog/04.13.2026.html#fims-announcements",
+    "title": "FIMS Weekly - April 13–17, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n14 days until the CIE Review.\nThree case studies are back up and running."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n7 days until the CIE Review.\nThere are still empty time slots for taking notes during the CIE Review, please sign up in this Google Doc."
   },
   {
-    "objectID": "blog/04.06.2026.html#upcoming-events",
-    "href": "blog/04.06.2026.html#upcoming-events",
-    "title": "FIMS Weekly - April 06–10, 2026",
+    "objectID": "blog/04.13.2026.html#upcoming-events",
+    "href": "blog/04.13.2026.html#upcoming-events",
+    "title": "FIMS Weekly - April 13–17, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/03.23.2026.html",
-    "href": "blog/03.23.2026.html",
-    "title": "FIMS Weekly - March 23–27, 2026",
+    "objectID": "blog/03.30.2026.html",
+    "href": "blog/03.30.2026.html",
+    "title": "FIMS Weekly - March 30–April 03, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/03.23.2026.html#fims-announcements",
-    "href": "blog/03.23.2026.html#fims-announcements",
-    "title": "FIMS Weekly - March 23–27, 2026",
+    "objectID": "blog/03.30.2026.html#fims-announcements",
+    "href": "blog/03.30.2026.html#fims-announcements",
+    "title": "FIMS Weekly - March 30–April 03, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n29 days until the CIE Review."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n21 days until the CIE Review.\nGoogle Summer of Code applications are due this week, we currently have six applications for four projects."
   },
   {
-    "objectID": "blog/03.23.2026.html#upcoming-events",
-    "href": "blog/03.23.2026.html#upcoming-events",
-    "title": "FIMS Weekly - March 23–27, 2026",
+    "objectID": "blog/03.30.2026.html#upcoming-events",
+    "href": "blog/03.30.2026.html#upcoming-events",
+    "title": "FIMS Weekly - March 30–April 03, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/03.09.2026.html",
-    "href": "blog/03.09.2026.html",
-    "title": "FIMS Weekly - March 09–13, 2026",
+    "objectID": "blog/03.16.2026.html",
+    "href": "blog/03.16.2026.html",
+    "title": "FIMS Weekly - March 16–20, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/03.09.2026.html#fims-announcements",
-    "href": "blog/03.09.2026.html#fims-announcements",
-    "title": "FIMS Weekly - March 09–13, 2026",
+    "objectID": "blog/03.16.2026.html#fims-announcements",
+    "href": "blog/03.16.2026.html#fims-announcements",
+    "title": "FIMS Weekly - March 16–20, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n43 days until the CIE Review.\nWe will be paring the rendered case studies down to just three, or four, examples for the CIE Review to ensure that they are fully developed and provide well-explained examples of comparisons of FIMS models to existing platforms. The remainder of the examples will stay in the repository but will not be showcased on the resulting website. This work will happen next week."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n36 days until the CIE Review, main will be frozen by next Monday when we have to turn in all materials to the CIE Reviewers."
   },
   {
-    "objectID": "blog/03.09.2026.html#upcoming-events",
-    "href": "blog/03.09.2026.html#upcoming-events",
-    "title": "FIMS Weekly - March 09–13, 2026",
+    "objectID": "blog/03.16.2026.html#upcoming-events",
+    "href": "blog/03.16.2026.html#upcoming-events",
+    "title": "FIMS Weekly - March 16–20, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/02.23.2026.html",
-    "href": "blog/02.23.2026.html",
-    "title": "FIMS Weekly - February 23–27, 2026",
+    "objectID": "blog/03.02.2026.html",
+    "href": "blog/03.02.2026.html",
+    "title": "FIMS Weekly - March 02–06, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/02.23.2026.html#fims-announcements",
-    "href": "blog/02.23.2026.html#fims-announcements",
-    "title": "FIMS Weekly - February 23–27, 2026",
+    "objectID": "blog/03.02.2026.html#fims-announcements",
+    "href": "blog/03.02.2026.html#fims-announcements",
+    "title": "FIMS Weekly - March 02–06, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nPlease consider submitting an entry to the FIMS blog, Elizabeth made this handy template to make it as painless as possible.\nVersion 0.8.1 was released TODAY! Two small fixes and lots of great documentation."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n50 days until the CIE Review.\nWe will be paring the rendered case studies down to just three, or four, examples for the CIE Review to ensure that they are fully developed and provide well-explained examples of comparisons of FIMS models to existing platforms. The remainder of the examples will stay in the repository but will not be showcased on the resulting website."
   },
   {
-    "objectID": "blog/02.23.2026.html#upcoming-events",
-    "href": "blog/02.23.2026.html#upcoming-events",
-    "title": "FIMS Weekly - February 23–27, 2026",
+    "objectID": "blog/03.02.2026.html#upcoming-events",
+    "href": "blog/03.02.2026.html#upcoming-events",
+    "title": "FIMS Weekly - March 02–06, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/02.09.2026.html",
-    "href": "blog/02.09.2026.html",
-    "title": "FIMS Weekly - February 09–13, 2026",
+    "objectID": "blog/02.16.2026.html",
+    "href": "blog/02.16.2026.html",
+    "title": "FIMS Weekly - February 16–20, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/02.09.2026.html#fims-announcements",
-    "href": "blog/02.09.2026.html#fims-announcements",
-    "title": "FIMS Weekly - February 09–13, 2026",
+    "objectID": "blog/02.16.2026.html#fims-announcements",
+    "href": "blog/02.16.2026.html#fims-announcements",
+    "title": "FIMS Weekly - February 16–20, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nPlease look at the FIMS calendar on a regular basis. There are lots of meetings happening that you can attend but global announcements are no longer going out in an attempt to save your inboxes from overload. One of those such meetings is the Code Club happening this Friday.\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
   },
   {
-    "objectID": "blog/02.09.2026.html#upcoming-events",
-    "href": "blog/02.09.2026.html#upcoming-events",
-    "title": "FIMS Weekly - February 09–13, 2026",
+    "objectID": "blog/02.16.2026.html#upcoming-events",
+    "href": "blog/02.16.2026.html#upcoming-events",
+    "title": "FIMS Weekly - February 16–20, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/01.26.2026.html",
-    "href": "blog/01.26.2026.html",
-    "title": "FIMS Weekly - January 26–30, 2026",
+    "objectID": "blog/02.02.2026.html",
+    "href": "blog/02.02.2026.html",
+    "title": "FIMS Weekly - February 02–06, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/01.26.2026.html#fims-announcements",
-    "href": "blog/01.26.2026.html#fims-announcements",
-    "title": "FIMS Weekly - January 26–30, 2026",
+    "objectID": "blog/02.02.2026.html#fims-announcements",
+    "href": "blog/02.02.2026.html#fims-announcements",
+    "title": "FIMS Weekly - February 02–06, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nMeg and Ian will be doing a training next week on FIMSdiags.\nPlease encourage your peers to use the Discussion Board to ask questions about FIMS and propose features so we can talk about them in a public forum.\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
   },
   {
-    "objectID": "blog/01.26.2026.html#upcoming-events",
-    "href": "blog/01.26.2026.html#upcoming-events",
-    "title": "FIMS Weekly - January 26–30, 2026",
+    "objectID": "blog/02.02.2026.html#upcoming-events",
+    "href": "blog/02.02.2026.html#upcoming-events",
+    "title": "FIMS Weekly - February 02–06, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/01.12.2026.html",
-    "href": "blog/01.12.2026.html",
-    "title": "FIMS Weekly - January 12–16, 2026",
+    "objectID": "blog/01.19.2026.html",
+    "href": "blog/01.19.2026.html",
+    "title": "FIMS Weekly - January 19–23, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/01.12.2026.html#fims-announcements",
-    "href": "blog/01.12.2026.html#fims-announcements",
-    "title": "FIMS Weekly - January 12–16, 2026",
+    "objectID": "blog/01.19.2026.html#fims-announcements",
+    "href": "blog/01.19.2026.html#fims-announcements",
+    "title": "FIMS Weekly - January 19–23, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nThe first in-person FIMS training is in 14 days! We have over 40 people signed up."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n90 days until the CIE Review (April 20–23, 2026)"
   },
   {
-    "objectID": "blog/01.12.2026.html#upcoming-events",
-    "href": "blog/01.12.2026.html#upcoming-events",
-    "title": "FIMS Weekly - January 12–16, 2026",
+    "objectID": "blog/01.19.2026.html#upcoming-events",
+    "href": "blog/01.19.2026.html#upcoming-events",
+    "title": "FIMS Weekly - January 19–23, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "About FIMS",
+    "objectID": "blog/01.04.2026.html",
+    "href": "blog/01.04.2026.html",
+    "title": "FIMS Weekly - January 05–09, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "about/index.html#mission",
-    "href": "about/index.html#mission",
-    "title": "About FIMS",
-    "section": "Mission",
-    "text": "Mission\n\nMission statement\nThe mission of the Fisheries Integrated Modeling System (FIMS) is to enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs.\n\n\nVision statement\nWe aim to accomplish our mission with a user-friendly stock assessment tool that streamlines the development and application of scientific advice to inform current and future management needs of NOAA Fisheries’ regions.\n\n\nPriorities\n\nFIMS meets the needs of operational stock assessments across regions, scenarios, and data types and levels to provide scientific advice to management bodies.\nFIMS implements practical and robust methods from ecology, statistics, computer science, and mathematical modeling.\nFIMS estimates and projects population trajectories and can estimate parameters and uncertainty accurately and reliably in simulated conditions.\nUsers spanning different levels of expertise can run a model within FIMS.\nFIMS welcomes and incorporates user, developer, and community contributions and feedback to shape design decisions and priorities, in accordance with open source principles, and communicates progress, key findings, and advancements back.\nFIMS is flexible enough to adapt to future management needs, new technical developments and data sources, and observational data types and supports the NOAA Open Science Initiative."
+    "objectID": "blog/01.04.2026.html#fims-announcements",
+    "href": "blog/01.04.2026.html#fims-announcements",
+    "title": "FIMS Weekly - January 05–09, 2026",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nIf you were affected by the shortage of funds in our codespaces account please reply to the Google Chat that was started last week indicating regarding the inability to use codespaces after we reached 100 percent of our funding limit."
   },
   {
-    "objectID": "about/index.html#why-fims",
-    "href": "about/index.html#why-fims",
-    "title": "About FIMS",
-    "section": "Why FIMS?",
-    "text": "Why FIMS?\nLearn more on the FAQ page."
+    "objectID": "blog/01.04.2026.html#upcoming-events",
+    "href": "blog/01.04.2026.html#upcoming-events",
+    "title": "FIMS Weekly - January 05–09, 2026",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS\n\n\n\nTuesday, January 06\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "about/index.html#community",
-    "href": "about/index.html#community",
-    "title": "About FIMS",
-    "section": "Community",
-    "text": "Community\nA team of experts within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners.\nContributions from individuals of all skill levels are welcome. The codebase and documentation rely heavily on contributions from volunteers, and feedback from users helps keep the experience aligned with the goal of being user friendly. The roles of internal and external collaborators are outlined in the roles section of this community playbook.\n\nGet involved\nUsers and developers are welcome to join the Discussions board or submit bug reports using GitHub Issues. Please use the issues in the NOAA-FIMS github.io repository to make suggestions regarding this website and the issues under the FIMS software repository for software design and development feedback."
-  },
-  {
-    "objectID": "about/index.html#current-project-status",
-    "href": "about/index.html#current-project-status",
-    "title": "About FIMS",
-    "section": "Current project status",
-    "text": "Current project status\nThe project is constantly under development 🔨. Check out our progress so far below:\n\n\n\nMetric\nStatus\n\n\n\n\nDevelopment\nStatus\n\n\nTotal Issues\n\n\n\nClosed Issues\n\n\n\nPull Requests\n\n\n\nCalculate test coverage\n\n\n\nR cmd check\n\n\n\nGoogle tests\n\n\n\n\n\nComparison to other frameworks\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nSS3\nFIMS\nRCEATTLE\nSPoRC\nWHAM\nMulti-WHAM\n\n\n\n\nSoftware\nADMB\nTMB and C++\nTMB/RTMB\nRTMB\nTMB\nTMB\n\n\nOperational ready\nYes\nNo\nYes\nNo\nYes\nYes\n\n\nPrior specification?\nYes\nYes\nM, Q, and SRR\nM, h, Tag Reporting, Movement, Q, selectivity\nQ only\nQ only\n\n\nCAAL\nYes\nNo\nIn dev\nNo\nYes (deprecated)\nNo\n\n\nSplit sex\nYes\nNo\nYes\nYes\nNo\nMaybe\n\n\nAge-error\nYes\nNo\nYes\nTV but not fleet specific\nIn branch\nNo\n\n\nFleet Age-error\nYes\nNo\nYes\nNo\nNo\nNo\n\n\nTV Age-error\nYes\nNo\nIn branch\nYes\nNo\nNo\n\n\nVariety of selectivity\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nTV selectivity\nYes\nIn branch\nYes (random walks, random deviates, blocks)\nYes (blocks, iid and random walks, semi-parametric 3d and 2d)\nYes\nYes\n\n\nGrowth estimation\nYes\nNo\nYes\nNo\nYes\nNo\n\n\nMarginal lengths\nYes\nYes\nYes\nYes\nYes\nNo\n\n\nDM compositions\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nAdditive logistic-normal compositions\nNo\nNo\nNo\nYes\nNo\nNo\n\n\nEnvironmental linkages\nYes\nNo\nM, Q, SRR (any number of indices)\nQ\nYes\nYes\n\n\nMulti-area\nYes\nNo\nNo\nYes\nNo\nYes\n\n\nPopulation Structures\nglobal SRR\nNo\nNo\nglobal or local SRR\nNo\nNatal homing, local SRR\n\n\nMulti species\nNo\nNo\nYes\nNo\nNo\nYes\n\n\nMulti-variate indices\nNo\nNo\nNo\nNo\nNo\nNo\n\n\nMulti-seasonal\nYes\nNo\nNo\nIn branch\nNo\nYes\n\n\nNAA or M state-space\nNo\nNo\nM\nWill be in dev\nNAA and M\nNAA and M\n\n\nDSEM-ready\nNever\nLong-term\nYes\nYes\nHarder\nHarder\n\n\nInternal OSA\nNo\nNo\nIn dev\nNo\nYes\nYes\n\n\nInternal AFSC proj scenarios\nYes\nNo\nYes\nYes\nNo\nNo\n\n\nReference point estimation\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nMSE tools\nYes\nNo\nYes\nYes\nYes\nYes\n\n\n\n\n\nRelease\nThe current release can be found on the FIMS release page. A list of all releases and their corresponding changes can be found on our changelog page."
-  },
-  {
-    "objectID": "about/calendar.html",
-    "href": "about/calendar.html",
-    "title": "FIMS Calendar",
+    "objectID": "about/faq.html",
+    "href": "about/faq.html",
+    "title": "Frequently Asked Questions",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nFIMS has both recurring meetings, such as FIMS Code Club and FIMS Implementation Team meetings, and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If a meeting is public, the description includes a Google Meet link.\nLet us know on the contact page if there are meetings you are interested in joining, since not all meeting links are provided in the calendar. Implementation Team meetings are currently limited to Implementation Team members.\nIf the embedded calendar is difficult to use, open the FIMS Community Calendar in a new tab.\nAdd the FIMS calendar to your own calendar by selecting Add to calendar at the bottom of the embedded calendar."
+    "text": "Skip to main content\nThis document is meant to help answer questions that are frequently asked regarding the Fisheries Integrated Modeling System (FIMS). Should your question not be answered here, we recommend that you navigate to the GitHub Discussion page to see if your question has already been asked but just might not have been asked frequently enough to make it here."
+  },
+  {
+    "objectID": "about/faq.html#why",
+    "href": "about/faq.html#why",
+    "title": "Frequently Asked Questions",
+    "section": "Why",
+    "text": "Why\n\nWhy is FIMS being created?\nFIMS was created, according to its Terms of Reference, to increase the pool of developers, designers, and testers that contribute to a commonly-used stock assessment modeling system that can be used across regions. The commitment to build FIMS was made by the National Marine Fisheries Service (NMFS) Science Board in 2020 partly in response to the Center for the Advancement of Population Assessment Methodology (CAPAM) workshop on Next Generation Models and the recommendations in Implementing a Next Generation Stock Assessment Enterprise, a NOAA Fisheries strategic document that calls for the development of general modeling platforms that facilitate ease of use, robust testing, modular applications, and best practices and to improve the professionalism of model development. New good practices in assessment methods, such as random effects, one-step ahead residuals, and new statistical distributions, can be difficult to add in a performant way to older software systems. FIMS will be written in a way that these new best practices are included at the onset rather than as an afterthought.\n\n\nWhy build FIMS now?\nAD Model Builder (ADMB) is no longer being supported so the ability to compile existing models that use ADMB, e.g., Age Structured Assessment Program (ASAP), Assessment Model for Alaska (AMAK), Beaufort Assessment Model (BAM), and Stock Synthesis 3 (SS3), will be compromised with future operating system upgrades. Furthermore, development of these models that rely on ADMB to include best practices, such as random effects, is not feasible.\n\n\nWhy does FIMS use TMB instead of RTMB?\nThe RTMB documentation describes RTMB as a native R interface to a substantial subset of TMB. RTMB improves accessibility and can speed up prototyping, and we see clear value in that. For FIMS, however, we chose a C++ foundation with TMB because our primary requirement is a long-lived, production modeling platform. In our view, this trade-off better supports maintainability, testing, and portability at the scale we need.\n\nStrong typing in C++ helps catch classes of errors earlier and supports more predictable behavior in large codebases.\nA C++ core keeps the architecture less tied to any single interface layer and supports future portability across automatic-differentiation backends.\nComponents are designed for reuse, including use in RTMB workflows (see FIMSRTMB and its vignettes).\nThe modular C++ design supports future extensions, including potential machine-learning-assisted components where appropriate.\nExplicit sub-model definitions in C++ improve specification clarity for collaboration, review, and external development support.\n\nIn short, RTMB is useful for many applications, but for FIMS we prioritized a C++ architecture to support long-term reliability and extensibility."
+  },
+  {
+    "objectID": "about/faq.html#transitioning-to-fims",
+    "href": "about/faq.html#transitioning-to-fims",
+    "title": "Frequently Asked Questions",
+    "section": "Transitioning to FIMS",
+    "text": "Transitioning to FIMS\n\nWill FIMS have all the features of current assessment models?\nThe feature set of some of the currently available assessment platforms have grown organically over several decades and certainly contain unused features, awkward conventions, and other aspects needing attention. For example, the last major refresh of the SS3 concept was more than twenty years ago (2004) when it was converted from FORTRAN to ADMB. All software needs a refresh and FIMS will be that for several assessment platforms. FIMS certainly will start with the major capabilities that are currently available such as simultaneously modeling fish growth and population numbers and to use both age and length and other data. FIMS will also start with some more advanced capabilities, particularly the ability to flexibly model time variation in parameters using random effects. Also, FIMS is being written in a more modular way to reduce duplication and facilitate robust testing of each individual part, following best-practice guides for coding. This has resulted in 78% test coverage, which is unmatched in most assessment software. A defined process for testing, model validation, and code review will support integrating future innovations after they have been proven in research sandboxes.\n\n\nWhen will FIMS be ready to transition to?\nFIMS will have many of the features stock assessment analysts expect in a beta format sometime in 2025. We expect a fully tested and documented stable release to be available in 2026. This includes implementation of fitting to length-composition data, random effects, Bayesian estimation, and SPR-based reference points in 2026.\n\n\nI need a new model. Should I wait for FIMS or use WHAM?\nWHAM is likely to have a fuller complement of features available sooner than FIMS. WHAM is currently available for operational use and approved within the Northeast Region. However, in the future, we expect a subset of models currently using WHAM to transition to FIMS as the FIMS feature set becomes more complete, so using FIMS from the beginning may save time in the long-run. We leave the decision up to you because only you know your timeline and resources available. We highly encourage you to consider FIMS because the knowledge and comradery associated with FIMS will be unlike that found with any previously available platform given that it is the first to start with input from scientists within every center in NOAA Fisheries.\n\n\nWhen will FIMS trainings be offered?\nWe will be offering FIMS trainings in 2025. These initial trainings offered in 2025 will be targeted at early adopters and power users who are willing to debug and file issues when they encounter them. This will allow for the incorporation of user feedback in the code base during 2025–2026 development and release of the first stable version in 2026. In 2026, training will be offered at different levels from novice to expert users, including students.\n\n\nHow can I prepare for the transition to FIMS?\nYou can conduct sensitivity analyses on the model you use for operational assessments to identify which model features have a large impact on model fit and which are included for historical consistency. Documenting the impact missing features have on model fit will help the FIMS team prioritize feature requests. If you haven’t worked with a random effects model, there are a number of papers and course material created by Andrea Havron available to learn more about when and how random effects should be applied in stock assessment models.\n\n\nHow long will existing assessment platforms be maintained, and at what level?\nSupport for existing models written in ADMB will phase out in stages. The first stage has already occurred for some, e.g., SS3, with a commitment to not add major new features in deference to their future consideration by FIMS. The second stage could be cessation of any releases of minor modifications or bug fixes but that may be just a gradual slowdown until re-compiling the code becomes impossible. The third will be relegation of help desk support entirely to the community as crowd sourcing.\nWe recognize that the community often continues use of older models long after new models or model versions are available so the currently available platforms will remain downloadable as an executable from the NMFS Fisheries Integrated Toolbox. Additionally, if the code is publicly available, its code will remain available in its GitHub site.\nThe following factors will affect the stages of SS3 succession: availability in FIMS of capability to address more assessment situations currently addressed by SS3; retirement of the main SS3 developer, Richard Methot; and changes in computer operating systems such that SS3 cannot be re-compiled because ADMB no longer works with those windows, ioS and/or unix compilers. All three of these transition triggers will occur, in no designable order, in 1 to 5 years. We are attempting to future-proof SS3 by building a dev_container for compiling with ADMB and the current suite of operating systems and creating a GoogleGroup user forum to bolster the generality of the help-desk support now provided by the core SS3 developers.\nASAP is currently transitioning to WHAM in the Northeast Region. A research track on WHAM was reviewed in February 2024. The Northeast Regional Coordinating Committee is expected to approve a recommendation from the Research Track Steering Committee to allow stock assessments to transition from ASAP to WHAM during a management track assessment. This is an exception to the rule in the region that all model transitions must be made in a research track. It is not known whether a similar exception will be made for the transition from WHAM to FIMS, nor whether a research track on FIMS will be required in the region. All development on ASAP has stopped with the focus shifted to WHAM.\n\n\nWill there be translators from current platforms to FIMS?\nFor model settings, we recommend using the default model configuration function that will be built into FIMS as a starting point. Then, customizing the model can be done in R as it would not be efficient to programmatically translate the model configurations, e.g., SS3 control file, given the large number of options for settings that will not be provided for FIMS. An R function is currently available to translate SS3 data inputs to the dataframe needed to run a FIMS model, and this data translator will be improved in the next few years as the range of data types used by FIMS is expanded.\nAll ASAP models will likely be converted to WHAM before transitioning to FIMS. There are currently no plans to create a translator from WHAM to FIMS but both packages use R objects to define their models. This might allow future translations of configuration objects to be relatively simple. However, it would likely not be worth the effort to maintain a translator until the input and output format of WHAM and/or FIMS are static.\nDevelopers of BAM have discussed the desirability of translating BAM input files for compatibility with FIMS. This will likely be pursued after FIMS has matured enough for operational use.\n\n\nHow far will FIMS scale towards data-poor models?\nFIMS is primarily designed as an age-structured model. Right now, FIMS can run without age-composition data but estimates are poor. The ability to model data-moderate and data-limited cases is planned for addition in later milestones to facilitate the use of one modeling platform regardless of the amount of data available."
+  },
+  {
+    "objectID": "about/acknowledgements.html",
+    "href": "about/acknowledgements.html",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\nThe development of this playbook was supported by FIMS’s participation in the Birdaro training program, which included access to the Center for Scientific Collaboration and Community Engagement (CSCCE)’s online training course Creating Community Playbooks."
   },
   {
     "objectID": "about/FIMS_CHANGELOG.html",
@@ -686,438 +700,445 @@
     "text": "v0.1.0.0 (release notes)\nThis is the first version of the Fisheries Integrated Modeling System (FIMS). At this stage, FIMS can be used to estimate a simple age-structured population model such as case 0 in Li et al. (2021)’s manuscript. Please refer to the doxygen for a description of the model functionality and completeness (edit 2026-04-02: equations are now in the doxygen). Documentation can be found in the FIMS-docs repository (edit 2026-03-18: this repository has since been deleted now that the doxygen is rendered to the pkgdown site).\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/commits/v0.1.0"
   },
   {
-    "objectID": "about/acknowledgements.html",
-    "href": "about/acknowledgements.html",
-    "title": "Acknowledgements",
+    "objectID": "about/calendar.html",
+    "href": "about/calendar.html",
+    "title": "FIMS Calendar",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nThe development of this playbook was supported by FIMS’s participation in the Birdaro training program, which included access to the Center for Scientific Collaboration and Community Engagement (CSCCE)’s online training course Creating Community Playbooks."
+    "text": "Skip to main content\n\n\n\n\n\nFIMS has both recurring meetings, such as FIMS Code Club and FIMS Implementation Team meetings, and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If a meeting is public, the description includes a Google Meet link.\nLet us know on the contact page if there are meetings you are interested in joining, since not all meeting links are provided in the calendar. Implementation Team meetings are currently limited to Implementation Team members.\nIf the embedded calendar is difficult to use, open the FIMS Community Calendar in a new tab.\nAdd the FIMS calendar to your own calendar by selecting Add to calendar at the bottom of the embedded calendar."
   },
   {
-    "objectID": "about/faq.html",
-    "href": "about/faq.html",
-    "title": "Frequently Asked Questions",
-    "section": "",
-    "text": "Skip to main content\nThis document is meant to help answer questions that are frequently asked regarding the Fisheries Integrated Modeling System (FIMS). Should your question not be answered here, we recommend that you navigate to the GitHub Discussion page to see if your question has already been asked but just might not have been asked frequently enough to make it here."
-  },
-  {
-    "objectID": "about/faq.html#why",
-    "href": "about/faq.html#why",
-    "title": "Frequently Asked Questions",
-    "section": "Why",
-    "text": "Why\n\nWhy is FIMS being created?\nFIMS was created, according to its Terms of Reference, to increase the pool of developers, designers, and testers that contribute to a commonly-used stock assessment modeling system that can be used across regions. The commitment to build FIMS was made by the National Marine Fisheries Service (NMFS) Science Board in 2020 partly in response to the Center for the Advancement of Population Assessment Methodology (CAPAM) workshop on Next Generation Models and the recommendations in Implementing a Next Generation Stock Assessment Enterprise, a NOAA Fisheries strategic document that calls for the development of general modeling platforms that facilitate ease of use, robust testing, modular applications, and best practices and to improve the professionalism of model development. New good practices in assessment methods, such as random effects, one-step ahead residuals, and new statistical distributions, can be difficult to add in a performant way to older software systems. FIMS will be written in a way that these new best practices are included at the onset rather than as an afterthought.\n\n\nWhy build FIMS now?\nAD Model Builder (ADMB) is no longer being supported so the ability to compile existing models that use ADMB, e.g., Age Structured Assessment Program (ASAP), Assessment Model for Alaska (AMAK), Beaufort Assessment Model (BAM), and Stock Synthesis 3 (SS3), will be compromised with future operating system upgrades. Furthermore, development of these models that rely on ADMB to include best practices, such as random effects, is not feasible.\n\n\nWhy does FIMS use TMB instead of RTMB?\nThe RTMB documentation describes RTMB as a native R interface to a substantial subset of TMB. RTMB improves accessibility and can speed up prototyping, and we see clear value in that. For FIMS, however, we chose a C++ foundation with TMB because our primary requirement is a long-lived, production modeling platform. In our view, this trade-off better supports maintainability, testing, and portability at the scale we need.\n\nStrong typing in C++ helps catch classes of errors earlier and supports more predictable behavior in large codebases.\nA C++ core keeps the architecture less tied to any single interface layer and supports future portability across automatic-differentiation backends.\nComponents are designed for reuse, including use in RTMB workflows (see FIMSRTMB and its vignettes).\nThe modular C++ design supports future extensions, including potential machine-learning-assisted components where appropriate.\nExplicit sub-model definitions in C++ improve specification clarity for collaboration, review, and external development support.\n\nIn short, RTMB is useful for many applications, but for FIMS we prioritized a C++ architecture to support long-term reliability and extensibility."
-  },
-  {
-    "objectID": "about/faq.html#transitioning-to-fims",
-    "href": "about/faq.html#transitioning-to-fims",
-    "title": "Frequently Asked Questions",
-    "section": "Transitioning to FIMS",
-    "text": "Transitioning to FIMS\n\nWill FIMS have all the features of current assessment models?\nThe feature set of some of the currently available assessment platforms have grown organically over several decades and certainly contain unused features, awkward conventions, and other aspects needing attention. For example, the last major refresh of the SS3 concept was more than twenty years ago (2004) when it was converted from FORTRAN to ADMB. All software needs a refresh and FIMS will be that for several assessment platforms. FIMS certainly will start with the major capabilities that are currently available such as simultaneously modeling fish growth and population numbers and to use both age and length and other data. FIMS will also start with some more advanced capabilities, particularly the ability to flexibly model time variation in parameters using random effects. Also, FIMS is being written in a more modular way to reduce duplication and facilitate robust testing of each individual part, following best-practice guides for coding. This has resulted in 78% test coverage, which is unmatched in most assessment software. A defined process for testing, model validation, and code review will support integrating future innovations after they have been proven in research sandboxes.\n\n\nWhen will FIMS be ready to transition to?\nFIMS will have many of the features stock assessment analysts expect in a beta format sometime in 2025. We expect a fully tested and documented stable release to be available in 2026. This includes implementation of fitting to length-composition data, random effects, Bayesian estimation, and SPR-based reference points in 2026.\n\n\nI need a new model. Should I wait for FIMS or use WHAM?\nWHAM is likely to have a fuller complement of features available sooner than FIMS. WHAM is currently available for operational use and approved within the Northeast Region. However, in the future, we expect a subset of models currently using WHAM to transition to FIMS as the FIMS feature set becomes more complete, so using FIMS from the beginning may save time in the long-run. We leave the decision up to you because only you know your timeline and resources available. We highly encourage you to consider FIMS because the knowledge and comradery associated with FIMS will be unlike that found with any previously available platform given that it is the first to start with input from scientists within every center in NOAA Fisheries.\n\n\nWhen will FIMS trainings be offered?\nWe will be offering FIMS trainings in 2025. These initial trainings offered in 2025 will be targeted at early adopters and power users who are willing to debug and file issues when they encounter them. This will allow for the incorporation of user feedback in the code base during 2025–2026 development and release of the first stable version in 2026. In 2026, training will be offered at different levels from novice to expert users, including students.\n\n\nHow can I prepare for the transition to FIMS?\nYou can conduct sensitivity analyses on the model you use for operational assessments to identify which model features have a large impact on model fit and which are included for historical consistency. Documenting the impact missing features have on model fit will help the FIMS team prioritize feature requests. If you haven’t worked with a random effects model, there are a number of papers and course material created by Andrea Havron available to learn more about when and how random effects should be applied in stock assessment models.\n\n\nHow long will existing assessment platforms be maintained, and at what level?\nSupport for existing models written in ADMB will phase out in stages. The first stage has already occurred for some, e.g., SS3, with a commitment to not add major new features in deference to their future consideration by FIMS. The second stage could be cessation of any releases of minor modifications or bug fixes but that may be just a gradual slowdown until re-compiling the code becomes impossible. The third will be relegation of help desk support entirely to the community as crowd sourcing.\nWe recognize that the community often continues use of older models long after new models or model versions are available so the currently available platforms will remain downloadable as an executable from the NMFS Fisheries Integrated Toolbox. Additionally, if the code is publicly available, its code will remain available in its GitHub site.\nThe following factors will affect the stages of SS3 succession: availability in FIMS of capability to address more assessment situations currently addressed by SS3; retirement of the main SS3 developer, Richard Methot; and changes in computer operating systems such that SS3 cannot be re-compiled because ADMB no longer works with those windows, ioS and/or unix compilers. All three of these transition triggers will occur, in no designable order, in 1 to 5 years. We are attempting to future-proof SS3 by building a dev_container for compiling with ADMB and the current suite of operating systems and creating a GoogleGroup user forum to bolster the generality of the help-desk support now provided by the core SS3 developers.\nASAP is currently transitioning to WHAM in the Northeast Region. A research track on WHAM was reviewed in February 2024. The Northeast Regional Coordinating Committee is expected to approve a recommendation from the Research Track Steering Committee to allow stock assessments to transition from ASAP to WHAM during a management track assessment. This is an exception to the rule in the region that all model transitions must be made in a research track. It is not known whether a similar exception will be made for the transition from WHAM to FIMS, nor whether a research track on FIMS will be required in the region. All development on ASAP has stopped with the focus shifted to WHAM.\n\n\nWill there be translators from current platforms to FIMS?\nFor model settings, we recommend using the default model configuration function that will be built into FIMS as a starting point. Then, customizing the model can be done in R as it would not be efficient to programmatically translate the model configurations, e.g., SS3 control file, given the large number of options for settings that will not be provided for FIMS. An R function is currently available to translate SS3 data inputs to the dataframe needed to run a FIMS model, and this data translator will be improved in the next few years as the range of data types used by FIMS is expanded.\nAll ASAP models will likely be converted to WHAM before transitioning to FIMS. There are currently no plans to create a translator from WHAM to FIMS but both packages use R objects to define their models. This might allow future translations of configuration objects to be relatively simple. However, it would likely not be worth the effort to maintain a translator until the input and output format of WHAM and/or FIMS are static.\nDevelopers of BAM have discussed the desirability of translating BAM input files for compatibility with FIMS. This will likely be pursued after FIMS has matured enough for operational use.\n\n\nHow far will FIMS scale towards data-poor models?\nFIMS is primarily designed as an age-structured model. Right now, FIMS can run without age-composition data but estimates are poor. The ability to model data-moderate and data-limited cases is planned for addition in later milestones to facilitate the use of one modeling platform regardless of the amount of data available."
-  },
-  {
-    "objectID": "blog/01.04.2026.html",
-    "href": "blog/01.04.2026.html",
-    "title": "FIMS Weekly - January 05–09, 2026",
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "About FIMS",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/01.04.2026.html#fims-announcements",
-    "href": "blog/01.04.2026.html#fims-announcements",
-    "title": "FIMS Weekly - January 05–09, 2026",
-    "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nIf you were affected by the shortage of funds in our codespaces account please reply to the Google Chat that was started last week indicating regarding the inability to use codespaces after we reached 100 percent of our funding limit."
+    "objectID": "about/index.html#mission",
+    "href": "about/index.html#mission",
+    "title": "About FIMS",
+    "section": "Mission",
+    "text": "Mission\n\nMission statement\nThe mission of the Fisheries Integrated Modeling System (FIMS) is to enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs.\n\n\nVision statement\nWe aim to accomplish our mission with a user-friendly stock assessment tool that streamlines the development and application of scientific advice to inform current and future management needs of NOAA Fisheries’ regions.\n\n\nPriorities\n\nFIMS meets the needs of operational stock assessments across regions, scenarios, and data types and levels to provide scientific advice to management bodies.\nFIMS implements practical and robust methods from ecology, statistics, computer science, and mathematical modeling.\nFIMS estimates and projects population trajectories and can estimate parameters and uncertainty accurately and reliably in simulated conditions.\nUsers spanning different levels of expertise can run a model within FIMS.\nFIMS welcomes and incorporates user, developer, and community contributions and feedback to shape design decisions and priorities, in accordance with open source principles, and communicates progress, key findings, and advancements back.\nFIMS is flexible enough to adapt to future management needs, new technical developments and data sources, and observational data types and supports the NOAA Open Science Initiative."
   },
   {
-    "objectID": "blog/01.04.2026.html#upcoming-events",
-    "href": "blog/01.04.2026.html#upcoming-events",
-    "title": "FIMS Weekly - January 05–09, 2026",
-    "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, January 06\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
+    "objectID": "about/index.html#why-fims",
+    "href": "about/index.html#why-fims",
+    "title": "About FIMS",
+    "section": "Why FIMS?",
+    "text": "Why FIMS?\nLearn more on the FAQ page."
   },
   {
-    "objectID": "blog/01.19.2026.html",
-    "href": "blog/01.19.2026.html",
-    "title": "FIMS Weekly - January 19–23, 2026",
+    "objectID": "about/index.html#community",
+    "href": "about/index.html#community",
+    "title": "About FIMS",
+    "section": "Community",
+    "text": "Community\nA team of experts within NOAA Fisheries is designing and developing the system, and we are advised by the FIMS Council which includes academic, industry, and international partners.\nContributions from individuals of all skill levels are welcome. The codebase and documentation rely heavily on contributions from volunteers, and feedback from users helps keep the experience aligned with the goal of being user friendly. The roles of internal and external collaborators are outlined in the roles section of this community playbook.\n\nGet involved\nUsers and developers are welcome to join the Discussions board or submit bug reports using GitHub Issues. Please use the issues in the NOAA-FIMS github.io repository to make suggestions regarding this website and the issues under the FIMS software repository for software design and development feedback."
+  },
+  {
+    "objectID": "about/index.html#current-project-status",
+    "href": "about/index.html#current-project-status",
+    "title": "About FIMS",
+    "section": "Current project status",
+    "text": "Current project status\nThe project is constantly under development 🔨. Check out our progress so far below:\n\n\n\nMetric\nStatus\n\n\n\n\nDevelopment\nStatus\n\n\nTotal Issues\n\n\n\nClosed Issues\n\n\n\nPull Requests\n\n\n\nCalculate test coverage\n\n\n\nR cmd check\n\n\n\nGoogle tests\n\n\n\n\n\nComparison to other frameworks\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nSS3\nFIMS\nRCEATTLE\nSPoRC\nWHAM\nMulti-WHAM\n\n\n\n\nSoftware\nADMB\nTMB and C++\nTMB/RTMB\nRTMB\nTMB\nTMB\n\n\nOperational ready\nYes\nNo\nYes\nNo\nYes\nYes\n\n\nPrior specification?\nYes\nYes\nM, Q, and SRR\nM, h, Tag Reporting, Movement, Q, selectivity\nQ only\nQ only\n\n\nCAAL\nYes\nNo\nIn dev\nNo\nYes (deprecated)\nNo\n\n\nSplit sex\nYes\nNo\nYes\nYes\nNo\nMaybe\n\n\nAge-error\nYes\nNo\nYes\nTV but not fleet specific\nIn branch\nNo\n\n\nFleet Age-error\nYes\nNo\nYes\nNo\nNo\nNo\n\n\nTV Age-error\nYes\nNo\nIn branch\nYes\nNo\nNo\n\n\nVariety of selectivity\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nTV selectivity\nYes\nIn branch\nYes (random walks, random deviates, blocks)\nYes (blocks, iid and random walks, semi-parametric 3d and 2d)\nYes\nYes\n\n\nGrowth estimation\nYes\nNo\nYes\nNo\nYes\nNo\n\n\nMarginal lengths\nYes\nYes\nYes\nYes\nYes\nNo\n\n\nDM compositions\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nAdditive logistic-normal compositions\nNo\nNo\nNo\nYes\nNo\nNo\n\n\nEnvironmental linkages\nYes\nNo\nM, Q, SRR (any number of indices)\nQ\nYes\nYes\n\n\nMulti-area\nYes\nNo\nNo\nYes\nNo\nYes\n\n\nPopulation Structures\nglobal SRR\nNo\nNo\nglobal or local SRR\nNo\nNatal homing, local SRR\n\n\nMulti species\nNo\nNo\nYes\nNo\nNo\nYes\n\n\nMulti-variate indices\nNo\nNo\nNo\nNo\nNo\nNo\n\n\nMulti-seasonal\nYes\nNo\nNo\nIn branch\nNo\nYes\n\n\nNAA or M state-space\nNo\nNo\nM\nWill be in dev\nNAA and M\nNAA and M\n\n\nDSEM-ready\nNever\nLong-term\nYes\nYes\nHarder\nHarder\n\n\nInternal OSA\nNo\nNo\nIn dev\nNo\nYes\nYes\n\n\nInternal AFSC proj scenarios\nYes\nNo\nYes\nYes\nNo\nNo\n\n\nReference point estimation\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nMSE tools\nYes\nNo\nYes\nYes\nYes\nYes\n\n\n\n\n\nRelease\nThe current release can be found on the FIMS release page. A list of all releases and their corresponding changes can be found on our changelog page."
+  },
+  {
+    "objectID": "blog/01.12.2026.html",
+    "href": "blog/01.12.2026.html",
+    "title": "FIMS Weekly - January 12–16, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/01.19.2026.html#fims-announcements",
-    "href": "blog/01.19.2026.html#fims-announcements",
-    "title": "FIMS Weekly - January 19–23, 2026",
+    "objectID": "blog/01.12.2026.html#fims-announcements",
+    "href": "blog/01.12.2026.html#fims-announcements",
+    "title": "FIMS Weekly - January 12–16, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n90 days until the CIE Review (April 20–23, 2026)"
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThe first in-person FIMS training is in 14 days! We have over 40 people signed up."
   },
   {
-    "objectID": "blog/01.19.2026.html#upcoming-events",
-    "href": "blog/01.19.2026.html#upcoming-events",
-    "title": "FIMS Weekly - January 19–23, 2026",
+    "objectID": "blog/01.12.2026.html#upcoming-events",
+    "href": "blog/01.12.2026.html#upcoming-events",
+    "title": "FIMS Weekly - January 12–16, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/02.02.2026.html",
-    "href": "blog/02.02.2026.html",
-    "title": "FIMS Weekly - February 02–06, 2026",
+    "objectID": "blog/01.26.2026.html",
+    "href": "blog/01.26.2026.html",
+    "title": "FIMS Weekly - January 26–30, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/02.02.2026.html#fims-announcements",
-    "href": "blog/02.02.2026.html#fims-announcements",
-    "title": "FIMS Weekly - February 02–06, 2026",
+    "objectID": "blog/01.26.2026.html#fims-announcements",
+    "href": "blog/01.26.2026.html#fims-announcements",
+    "title": "FIMS Weekly - January 26–30, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nMeg and Ian will be doing a training next week on FIMSdiags.\nPlease encourage your peers to use the Discussion Board to ask questions about FIMS and propose features so we can talk about them in a public forum.\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
   },
   {
-    "objectID": "blog/02.02.2026.html#upcoming-events",
-    "href": "blog/02.02.2026.html#upcoming-events",
-    "title": "FIMS Weekly - February 02–06, 2026",
+    "objectID": "blog/01.26.2026.html#upcoming-events",
+    "href": "blog/01.26.2026.html#upcoming-events",
+    "title": "FIMS Weekly - January 26–30, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/02.16.2026.html",
-    "href": "blog/02.16.2026.html",
-    "title": "FIMS Weekly - February 16–20, 2026",
+    "objectID": "blog/02.09.2026.html",
+    "href": "blog/02.09.2026.html",
+    "title": "FIMS Weekly - February 09–13, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/02.16.2026.html#fims-announcements",
-    "href": "blog/02.16.2026.html#fims-announcements",
-    "title": "FIMS Weekly - February 16–20, 2026",
+    "objectID": "blog/02.09.2026.html#fims-announcements",
+    "href": "blog/02.09.2026.html#fims-announcements",
+    "title": "FIMS Weekly - February 09–13, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nPlease look at the FIMS calendar on a regular basis. There are lots of meetings happening that you can attend but global announcements are no longer going out in an attempt to save your inboxes from overload. One of those such meetings is the Code Club happening this Friday.\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
   },
   {
-    "objectID": "blog/02.16.2026.html#upcoming-events",
-    "href": "blog/02.16.2026.html#upcoming-events",
-    "title": "FIMS Weekly - February 16–20, 2026",
+    "objectID": "blog/02.09.2026.html#upcoming-events",
+    "href": "blog/02.09.2026.html#upcoming-events",
+    "title": "FIMS Weekly - February 09–13, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/03.02.2026.html",
-    "href": "blog/03.02.2026.html",
-    "title": "FIMS Weekly - March 02–06, 2026",
+    "objectID": "blog/02.23.2026.html",
+    "href": "blog/02.23.2026.html",
+    "title": "FIMS Weekly - February 23–27, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/03.02.2026.html#fims-announcements",
-    "href": "blog/03.02.2026.html#fims-announcements",
-    "title": "FIMS Weekly - March 02–06, 2026",
+    "objectID": "blog/02.23.2026.html#fims-announcements",
+    "href": "blog/02.23.2026.html#fims-announcements",
+    "title": "FIMS Weekly - February 23–27, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n50 days until the CIE Review.\nWe will be paring the rendered case studies down to just three, or four, examples for the CIE Review to ensure that they are fully developed and provide well-explained examples of comparisons of FIMS models to existing platforms. The remainder of the examples will stay in the repository but will not be showcased on the resulting website."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nPlease consider submitting an entry to the FIMS blog, Elizabeth made this handy template to make it as painless as possible.\nVersion 0.8.1 was released TODAY! Two small fixes and lots of great documentation."
   },
   {
-    "objectID": "blog/03.02.2026.html#upcoming-events",
-    "href": "blog/03.02.2026.html#upcoming-events",
-    "title": "FIMS Weekly - March 02–06, 2026",
+    "objectID": "blog/02.23.2026.html#upcoming-events",
+    "href": "blog/02.23.2026.html#upcoming-events",
+    "title": "FIMS Weekly - February 23–27, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/03.16.2026.html",
-    "href": "blog/03.16.2026.html",
-    "title": "FIMS Weekly - March 16–20, 2026",
+    "objectID": "blog/03.09.2026.html",
+    "href": "blog/03.09.2026.html",
+    "title": "FIMS Weekly - March 09–13, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/03.16.2026.html#fims-announcements",
-    "href": "blog/03.16.2026.html#fims-announcements",
-    "title": "FIMS Weekly - March 16–20, 2026",
+    "objectID": "blog/03.09.2026.html#fims-announcements",
+    "href": "blog/03.09.2026.html#fims-announcements",
+    "title": "FIMS Weekly - March 09–13, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n36 days until the CIE Review, main will be frozen by next Monday when we have to turn in all materials to the CIE Reviewers."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n43 days until the CIE Review.\nWe will be paring the rendered case studies down to just three, or four, examples for the CIE Review to ensure that they are fully developed and provide well-explained examples of comparisons of FIMS models to existing platforms. The remainder of the examples will stay in the repository but will not be showcased on the resulting website. This work will happen next week."
   },
   {
-    "objectID": "blog/03.16.2026.html#upcoming-events",
-    "href": "blog/03.16.2026.html#upcoming-events",
-    "title": "FIMS Weekly - March 16–20, 2026",
+    "objectID": "blog/03.09.2026.html#upcoming-events",
+    "href": "blog/03.09.2026.html#upcoming-events",
+    "title": "FIMS Weekly - March 09–13, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/03.30.2026.html",
-    "href": "blog/03.30.2026.html",
-    "title": "FIMS Weekly - March 30–April 03, 2026",
+    "objectID": "blog/03.23.2026.html",
+    "href": "blog/03.23.2026.html",
+    "title": "FIMS Weekly - March 23–27, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/03.30.2026.html#fims-announcements",
-    "href": "blog/03.30.2026.html#fims-announcements",
-    "title": "FIMS Weekly - March 30–April 03, 2026",
+    "objectID": "blog/03.23.2026.html#fims-announcements",
+    "href": "blog/03.23.2026.html#fims-announcements",
+    "title": "FIMS Weekly - March 23–27, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n21 days until the CIE Review.\nGoogle Summer of Code applications are due this week, we currently have six applications for four projects."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n29 days until the CIE Review."
   },
   {
-    "objectID": "blog/03.30.2026.html#upcoming-events",
-    "href": "blog/03.30.2026.html#upcoming-events",
-    "title": "FIMS Weekly - March 30–April 03, 2026",
+    "objectID": "blog/03.23.2026.html#upcoming-events",
+    "href": "blog/03.23.2026.html#upcoming-events",
+    "title": "FIMS Weekly - March 23–27, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/04.13.2026.html",
-    "href": "blog/04.13.2026.html",
-    "title": "FIMS Weekly - April 13–17, 2026",
+    "objectID": "blog/04.06.2026.html",
+    "href": "blog/04.06.2026.html",
+    "title": "FIMS Weekly - April 06–10, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/04.13.2026.html#fims-announcements",
-    "href": "blog/04.13.2026.html#fims-announcements",
-    "title": "FIMS Weekly - April 13–17, 2026",
+    "objectID": "blog/04.06.2026.html#fims-announcements",
+    "href": "blog/04.06.2026.html#fims-announcements",
+    "title": "FIMS Weekly - April 06–10, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n7 days until the CIE Review.\nThere are still empty time slots for taking notes during the CIE Review, please sign up in this Google Doc."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n14 days until the CIE Review.\nThree case studies are back up and running."
   },
   {
-    "objectID": "blog/04.13.2026.html#upcoming-events",
-    "href": "blog/04.13.2026.html#upcoming-events",
-    "title": "FIMS Weekly - April 13–17, 2026",
+    "objectID": "blog/04.06.2026.html#upcoming-events",
+    "href": "blog/04.06.2026.html#upcoming-events",
+    "title": "FIMS Weekly - April 06–10, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/04.27.2026.html",
-    "href": "blog/04.27.2026.html",
-    "title": "FIMS Weekly - April 27–May 01, 2026",
+    "objectID": "blog/04.20.2026.html",
+    "href": "blog/04.20.2026.html",
+    "title": "FIMS Weekly - April 20–24, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/04.27.2026.html#fims-announcements",
-    "href": "blog/04.27.2026.html#fims-announcements",
-    "title": "FIMS Weekly - April 27–May 01, 2026",
+    "objectID": "blog/04.20.2026.html#fims-announcements",
+    "href": "blog/04.20.2026.html#fims-announcements",
+    "title": "FIMS Weekly - April 20–24, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nCIE Review is complete! Thank you to Andrea, Bai, Ian, and Nathan for giving presentations. Thank you to Aaron Berger for being such a great Chair. Thank you to everyone who took notes, they are extremely comprehensive and have already been used by several individuals to summarize the key points of the review. I really appreciate all of the help making this review successful. We received lots of good, constructive feedback and I am looking forward to working on implementing some of the suggested changes."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThere are still empty time slots for taking notes during the CIE Review, please sign up in this Google Doc."
   },
   {
-    "objectID": "blog/04.27.2026.html#upcoming-events",
-    "href": "blog/04.27.2026.html#upcoming-events",
-    "title": "FIMS Weekly - April 27–May 01, 2026",
+    "objectID": "blog/04.20.2026.html#upcoming-events",
+    "href": "blog/04.20.2026.html#upcoming-events",
+    "title": "FIMS Weekly - April 20–24, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/05.11.2026.html",
-    "href": "blog/05.11.2026.html",
-    "title": "FIMS Weekly - May 11–15, 2026",
+    "objectID": "blog/05.04.2026.html",
+    "href": "blog/05.04.2026.html",
+    "title": "FIMS Weekly - May 04–08, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/05.11.2026.html#fims-announcements",
-    "href": "blog/05.11.2026.html#fims-announcements",
-    "title": "FIMS Weekly - May 11–15, 2026",
+    "objectID": "blog/05.04.2026.html#fims-announcements",
+    "href": "blog/05.04.2026.html#fims-announcements",
+    "title": "FIMS Weekly - May 04–08, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nFIMS CIE Review has been turned in and should be public next week."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nCopilot and codespaces are limited to the free versions for the month of May."
   },
   {
-    "objectID": "blog/05.11.2026.html#upcoming-events",
-    "href": "blog/05.11.2026.html#upcoming-events",
-    "title": "FIMS Weekly - May 11–15, 2026",
+    "objectID": "blog/05.04.2026.html#upcoming-events",
+    "href": "blog/05.04.2026.html#upcoming-events",
+    "title": "FIMS Weekly - May 04–08, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/07.21.2025.html",
-    "href": "blog/07.21.2025.html",
-    "title": "FIMS Weekly - July 21–25, 2025",
+    "objectID": "blog/05.18.2026.html",
+    "href": "blog/05.18.2026.html",
+    "title": "FIMS Weekly - May 18–22, 2026",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/07.21.2025.html#fims-announcements",
-    "href": "blog/07.21.2025.html#fims-announcements",
-    "title": "FIMS Weekly - July 21–25, 2025",
+    "objectID": "blog/05.18.2026.html#fims-announcements",
+    "href": "blog/05.18.2026.html#fims-announcements",
+    "title": "FIMS Weekly - May 18–22, 2026",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS"
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThis is the last week of the Google Summer of Code Community Bonding Period, coding starts next week 🎊."
   },
   {
-    "objectID": "blog/07.21.2025.html#upcoming-events",
-    "href": "blog/07.21.2025.html#upcoming-events",
-    "title": "FIMS Weekly - July 21–25, 2025",
+    "objectID": "blog/05.18.2026.html#upcoming-events",
+    "href": "blog/05.18.2026.html#upcoming-events",
+    "title": "FIMS Weekly - May 18–22, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\n\nTuesday, July 22\nFIMS Code Club (Tackling TODO: items in code)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet\n\n\nThursday, July 24\nFIMS Seaside Chat (🤷)  Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H  Location: Virtual  Online: Google Meet"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/07.21.2025.html#photo-of-the-week",
-    "href": "blog/07.21.2025.html#photo-of-the-week",
-    "title": "FIMS Weekly - July 21–25, 2025",
-    "section": "PHOTO OF THE WEEK",
-    "text": "PHOTO OF THE WEEK\nR-opensci has guidance on writing tests for packages submitted that Bai is looking into. But, it was pretty mind blowing to learn that there is a way to add comments to a commit message that can invoke “extended” tests, i.e., tests that do not need to be run on every commit. It was nice to know that others have been thinking about this as FIMS has struggled to find a resource or advice on what to do, see Discussion #870. Feel free to add any thoughts about the system below or other insights to running large tests on the Discussion board. Thank you in advance for taking the time to contribute 😊."
-  },
-  {
-    "objectID": "blog/08.04.2025.html",
-    "href": "blog/08.04.2025.html",
-    "title": "FIMS Weekly - August 04–08, 2025",
+    "objectID": "blog/07.28.2025.html",
+    "href": "blog/07.28.2025.html",
+    "title": "FIMS Weekly - July 28–August 1, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/08.04.2025.html#fims-announcements",
-    "href": "blog/08.04.2025.html#fims-announcements",
-    "title": "FIMS Weekly - August 04–08, 2025",
+    "objectID": "blog/07.28.2025.html#fims-announcements",
+    "href": "blog/07.28.2025.html#fims-announcements",
+    "title": "FIMS Weekly - July 28–August 1, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nFIMS website is now newly updated thanks to Elizabeth 🥇!\nThe CIE Review has been approved and will be held November 04–06, 2025 using an online platform."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nVersion 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.\nWe need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday."
   },
   {
-    "objectID": "blog/08.04.2025.html#upcoming-events",
-    "href": "blog/08.04.2025.html#upcoming-events",
-    "title": "FIMS Weekly - August 04–08, 2025",
+    "objectID": "blog/07.28.2025.html#upcoming-events",
+    "href": "blog/07.28.2025.html#upcoming-events",
+    "title": "FIMS Weekly - July 28–August 1, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, August 05\nFIMS Code Club (json) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/08.18.2025.html",
-    "href": "blog/08.18.2025.html",
-    "title": "FIMS Weekly - August 18–22, 2025",
+    "objectID": "blog/08.11.2025.html",
+    "href": "blog/08.11.2025.html",
+    "title": "FIMS Weekly - August 11–15, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/08.18.2025.html#fims-announcements",
-    "href": "blog/08.18.2025.html#fims-announcements",
-    "title": "FIMS Weekly - August 18–22, 2025",
+    "objectID": "blog/08.11.2025.html#fims-announcements",
+    "href": "blog/08.11.2025.html#fims-announcements",
+    "title": "FIMS Weekly - August 11–15, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nThe CIE Review will be November 04–06, 2025 and all materials must be delivered to the reviewers four weeks prior to this, i.e., October 07, 2025.\nMuch of the collaborative workflow guide has been moved to this website and to CONTRIBUTING.md. Three files are left to migrate, the model specifications, hpp templates, and testing information. The testing information will move to Bai’s new test README.md file."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThis will be the last FIMS Weekly in Google Doc form because Elizabeth created a way to distribute this via html on our FIMS Website 🎉. Emails will still go out but they will just link to where you can find the weekly and maybe a screen shot. I am not sure. Please feel free to email me suggestions.\nThe collaborative workflow repository will be removed once the material is migrated to our beautiful FIMS website. Stay tuned."
   },
   {
-    "objectID": "blog/08.18.2025.html#upcoming-events",
-    "href": "blog/08.18.2025.html#upcoming-events",
-    "title": "FIMS Weekly - August 18–22, 2025",
+    "objectID": "blog/08.11.2025.html#upcoming-events",
+    "href": "blog/08.11.2025.html#upcoming-events",
+    "title": "FIMS Weekly - August 11–15, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday,\nFIMS Code Club (json output) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday,\nFIMS Seaside Chat (cheat sheet) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
+    "text": "UPCOMING EVENTS\n\n\n\nTuesday, August 12\nFIMS Code Club (WSL and docker) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/09.01.2025.html",
-    "href": "blog/09.01.2025.html",
-    "title": "FIMS Weekly - September 01–05, 2025",
+    "objectID": "blog/08.25.2025.html",
+    "href": "blog/08.25.2025.html",
+    "title": "FIMS Weekly - August 25–29, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/09.01.2025.html#fims-announcements",
-    "href": "blog/09.01.2025.html#fims-announcements",
-    "title": "FIMS Weekly - September 01–05, 2025",
+    "objectID": "blog/08.25.2025.html#fims-announcements",
+    "href": "blog/08.25.2025.html#fims-announcements",
+    "title": "FIMS Weekly - August 25–29, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n64 calendar days until the FIMS CIE Review, we still need a chair."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n71 calendar days until the FIMS CIE Review, we still need a chair."
   },
   {
-    "objectID": "blog/09.01.2025.html#upcoming-events",
-    "href": "blog/09.01.2025.html#upcoming-events",
-    "title": "FIMS Weekly - September 01–05, 2025",
+    "objectID": "blog/08.25.2025.html#upcoming-events",
+    "href": "blog/08.25.2025.html#upcoming-events",
+    "title": "FIMS Weekly - August 25–29, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nThursday, Projections\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
+    "text": "UPCOMING EVENTS\n\n\n\nTuesday, document SPM\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, Tutorial\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/09.15.2025.html",
-    "href": "blog/09.15.2025.html",
-    "title": "FIMS Weekly - September 15–19, 2025",
+    "objectID": "blog/09.08.2025.html",
+    "href": "blog/09.08.2025.html",
+    "title": "FIMS Weekly - September 08–12, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/09.15.2025.html#fims-announcements",
-    "href": "blog/09.15.2025.html#fims-announcements",
-    "title": "FIMS Weekly - September 15–19, 2025",
+    "objectID": "blog/09.08.2025.html#fims-announcements",
+    "href": "blog/09.08.2025.html#fims-announcements",
+    "title": "FIMS Weekly - September 08–12, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n50 days until the CIE Review"
+    "text": "FIMS ANNOUNCEMENTS\n\n\nPlease welcome 👋 Adrianne Wilson 👋 to the FIMS Team!\n57 calendar days until the FIMS CIE Review, we now have a chair."
   },
   {
-    "objectID": "blog/09.15.2025.html#upcoming-events",
-    "href": "blog/09.15.2025.html#upcoming-events",
-    "title": "FIMS Weekly - September 15–19, 2025",
+    "objectID": "blog/09.08.2025.html#upcoming-events",
+    "href": "blog/09.08.2025.html#upcoming-events",
+    "title": "FIMS Weekly - September 08–12, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, Cleanup\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, FIMS and RTMB\nFIMS Tutorial Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
+    "text": "UPCOMING EVENTS\n\n\n\nTuesday, json in R\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, data and seasonality\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/09.29.2025.html",
-    "href": "blog/09.29.2025.html",
-    "title": "FIMS Weekly - September 29–October 03, 2025",
+    "objectID": "blog/09.21.2025.html",
+    "href": "blog/09.21.2025.html",
+    "title": "FIMS Weekly - September 21–26, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/09.29.2025.html#fims-announcements",
-    "href": "blog/09.29.2025.html#fims-announcements",
-    "title": "FIMS Weekly - September 29–October 03, 2025",
+    "objectID": "blog/09.21.2025.html#fims-announcements",
+    "href": "blog/09.21.2025.html#fims-announcements",
+    "title": "FIMS Weekly - September 21–26, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\n36 more days until the CIE Review\nMeg and Ian have made excellent progress on FIMSdiags, complete with a pkgdown site"
+    "text": "FIMS ANNOUNCEMENTS\n\n\n43 more days until the CIE Review; a big thanks to 👏Aaron Berger (NWFSC)👏 for stepping up to the be the chair of the CIE Review\nThe design documents have been moved to inst/include/design.md and it is live in the dev-document branch. A big thank you to Kathryn, Bai, Andrea, and Adrianne for your help getting to this point."
   },
   {
-    "objectID": "blog/09.29.2025.html#upcoming-events",
-    "href": "blog/09.29.2025.html#upcoming-events",
-    "title": "FIMS Weekly - September 29–October 03, 2025",
+    "objectID": "blog/09.21.2025.html#upcoming-events",
+    "href": "blog/09.21.2025.html#upcoming-events",
+    "title": "FIMS Weekly - September 21–26, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, tests\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, cleanup\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
+    "text": "UPCOMING EVENTS\n\n\n\nTuesday, {stockplotr}\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/11.24.2025.html",
-    "href": "blog/11.24.2025.html",
-    "title": "FIMS Weekly - November 24–28, 2025",
+    "objectID": "blog/11.17.2025.html",
+    "href": "blog/11.17.2025.html",
+    "title": "FIMS Weekly - November 17–21, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/11.24.2025.html#fims-announcements",
-    "href": "blog/11.24.2025.html#fims-announcements",
-    "title": "FIMS Weekly - November 24–28, 2025",
+    "objectID": "blog/11.17.2025.html#fims-announcements",
+    "href": "blog/11.17.2025.html#fims-announcements",
+    "title": "FIMS Weekly - November 17–21, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nHappy 🦃Thanksgiving Day🦃 to you and your friends and family this holiday season.\nThe FIMS CIE Review has been rescheduled to April 21–23, 2026."
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThe ICES Methods Group Working Group is convening this week at the University of Washington and remotely. Please contact Andrea Havron if you are interested in participating."
   },
   {
-    "objectID": "blog/11.24.2025.html#upcoming-events",
-    "href": "blog/11.24.2025.html#upcoming-events",
-    "title": "FIMS Weekly - November 24–28, 2025",
+    "objectID": "blog/11.17.2025.html#upcoming-events",
+    "href": "blog/11.17.2025.html#upcoming-events",
+    "title": "FIMS Weekly - November 17–21, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday,\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/12.08.2025.html",
-    "href": "blog/12.08.2025.html",
-    "title": "FIMS Weekly - December 08–12, 2025",
+    "objectID": "blog/12.01.2025.html",
+    "href": "blog/12.01.2025.html",
+    "title": "FIMS Weekly - December 01–05, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/12.08.2025.html#fims-announcements",
-    "href": "blog/12.08.2025.html#fims-announcements",
-    "title": "FIMS Weekly - December 08–12, 2025",
+    "objectID": "blog/12.01.2025.html#fims-announcements",
+    "href": "blog/12.01.2025.html#fims-announcements",
+    "title": "FIMS Weekly - December 01–05, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS\n\n\nConsider attending the CAPAM workshop on tuna models this week."
+    "text": "FIMS ANNOUNCEMENTS\n\n\n👋Welcome👋 Grant Adams (AFSC) to FIMS!"
   },
   {
-    "objectID": "blog/12.08.2025.html#upcoming-events",
-    "href": "blog/12.08.2025.html#upcoming-events",
-    "title": "FIMS Weekly - December 08–12, 2025",
+    "objectID": "blog/12.01.2025.html#upcoming-events",
+    "href": "blog/12.01.2025.html#upcoming-events",
+    "title": "FIMS Weekly - December 01–05, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS"
   },
   {
-    "objectID": "blog/12.22.2025.html",
-    "href": "blog/12.22.2025.html",
-    "title": "FIMS Weekly - December 22–26, 2025",
+    "objectID": "blog/12.15.2025.html",
+    "href": "blog/12.15.2025.html",
+    "title": "FIMS Weekly - December 15–19, 2025",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "blog/12.22.2025.html#fims-announcements",
-    "href": "blog/12.22.2025.html#fims-announcements",
-    "title": "FIMS Weekly - December 22–26, 2025",
+    "objectID": "blog/12.15.2025.html#fims-announcements",
+    "href": "blog/12.15.2025.html#fims-announcements",
+    "title": "FIMS Weekly - December 15–19, 2025",
     "section": "FIMS ANNOUNCEMENTS",
-    "text": "FIMS ANNOUNCEMENTS"
+    "text": "FIMS ANNOUNCEMENTS\n\n\nPlease welcome 👋 Erik Williams to FIMS."
   },
   {
-    "objectID": "blog/12.22.2025.html#upcoming-events",
-    "href": "blog/12.22.2025.html#upcoming-events",
-    "title": "FIMS Weekly - December 22–26, 2025",
+    "objectID": "blog/12.15.2025.html#upcoming-events",
+    "href": "blog/12.15.2025.html#upcoming-events",
+    "title": "FIMS Weekly - December 15–19, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
+    "text": "UPCOMING EVENTS\n\n\n\nWednesday,\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
+  },
+  {
+    "objectID": "blog/12.29.2025.html",
+    "href": "blog/12.29.2025.html",
+    "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
+    "section": "",
+    "text": "Skip to main content"
+  },
+  {
+    "objectID": "blog/12.29.2025.html#fims-announcements",
+    "href": "blog/12.29.2025.html#fims-announcements",
+    "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
+    "section": "FIMS ANNOUNCEMENTS",
+    "text": "FIMS ANNOUNCEMENTS\n\n\nThere will be a FIMS training at the National Stock Assessment Workshop in La Jolla, California on January 26th in the afternoon. The training will focus on how to run a simple FIMS model on a Google Cloud workstation and providing assistance for fitting data sets brought by attendees with FIMS.\nPlease welcome 👋 Dan Goethel to FIMS."
+  },
+  {
+    "objectID": "blog/12.29.2025.html#upcoming-events",
+    "href": "blog/12.29.2025.html#upcoming-events",
+    "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
+    "section": "UPCOMING EVENTS",
+    "text": "UPCOMING EVENTS"
   },
   {
     "objectID": "blog/blog_template.html",
@@ -1159,7 +1180,7 @@
     "href": "blog/index.html",
     "title": "FIMS Blog",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nFIMS CIE Review\n\n\nCIE concludes that FIMS is on the right track\n\n\n\ncommunity\n\ntesting\n\n\n\n\n\n\nJul 13, 2026\n\n\nKelli Johnson\n\n\n\n\n\n\n\nFIMS Weekly - May 18–22, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nMay 18, 2026\n\n\n\n\n\n\n\nFIMS Weekly - May 11–15, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nMay 11, 2026\n\n\n\n\n\n\n\nFIMS Weekly - May 04–08, 2026\n\n\n\n\n\n\nfims-weekly\n\nCKMR\n\nGSoC\n\n\n\n\n\n\nMay 4, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 27–May 01, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nApr 27, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 20–24, 2026\n\n\n\n\n\n\nfims-weekly\n\ndependencies\n\n\n\n\n\n\nApr 20, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 13–17, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nApr 13, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 06–10, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nApr 6, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 30–April 03, 2026\n\n\n\n\n\n\nfims-weekly\n\ntutorial\n\n\n\n\n\n\nMar 30, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 16–20, 2026\n\n\n\n\n\n\nfims-weekly\n\ncase-studies\n\nreleases\n\n\n\n\n\n\nMar 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 23–27, 2026\n\n\n\n\n\n\nfims-weekly\n\ntutorial\n\ntesting\n\n\n\n\n\n\nMar 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 09–13, 2026\n\n\n\n\n\n\nfims-weekly\n\nmanuscripts\n\n\n\n\n\n\nMar 9, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 02–06, 2026\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\n\n\n\n\n\nMar 2, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 23–27, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nblog\n\n\n\n\n\n\nFeb 23, 2026\n\n\n\n\n\n\n\nR Package Chaos, Solved\n\n\nHow we use {renv} to keep the FIMS ecosystem reproducible and collaborative\n\n\n\nlearn\n\nR\n\nopen-science\n\nFIMSdiags\n\n\n\n\n\n\nFeb 20, 2026\n\n\nMeg Oshima\n\n\n\n\n\n\n\nFIMS Code Club\n\n\nBeyond the Code: Building a Community\n\n\n\nother\n\ncode-club\n\ncommunity\n\nopen-science\n\n\n\n\n\n\nFeb 17, 2026\n\n\nElizabeth Perl\n\n\n\n\n\n\n\nFIMS Weekly - February 16–20, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\n\n\n\n\n\nFeb 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 09–13, 2026\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\ncase-studies\n\n\n\n\n\n\nFeb 9, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 02–06, 2026\n\n\n\n\n\n\nfims-weekly\n\nSIS\n\ncase-studies\n\ndiagnostics\n\n\n\n\n\n\nFeb 2, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 26–30, 2026\n\n\n\n\n\n\nfims-weekly\n\ntraining\n\n\n\n\n\n\nJan 26, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 19–23, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\ntesting\n\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 12–16, 2026\n\n\n\n\n\n\nfims-weekly\n\ntrainings\n\n\n\n\n\n\nJan 12, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 05–09, 2026\n\n\n\n\n\n\nfims-weekly\n\nSurplus Production\n\nDSEM\n\ncodespaces\n\n\n\n\n\n\nJan 5, 2026\n\n\n\n\n\n\n\nFIMS Weekly - December 29, 2025–January 02, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\ntraining\n\n\n\n\n\n\nDec 29, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 22–26, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nR\n\nbash\n\n\n\n\n\n\nDec 22, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 15–19, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nR\n\n\n\n\n\n\nDec 15, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 08–12, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nprojections\n\n\n\n\n\n\nDec 8, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 01–05, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\n\n\n\n\n\nDec 1, 2025\n\n\n\n\n\n\n\nFIMS Weekly - November 24–28, 2025\n\n\n\n\n\n\nfims-weekly\n\nPosit\n\nreleases\n\n\n\n\n\n\nNov 24, 2025\n\n\n\n\n\n\n\nFIMS Weekly - November 17–21, 2025\n\n\n\n\n\n\nfims-weekly\n\ncommunity playbook\n\nschedule\n\n\n\n\n\n\nNov 17, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 29–October 03, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\ndocumentation\n\ndoxygen\n\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 21–26, 2025\n\n\n\n\n\n\nfims-weekly\n\ndoxygen\n\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 15–19, 2025\n\n\n\n\n\n\nfims-weekly\n\nvignettes\n\n\n\n\n\n\nSep 15, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 08–12, 2025\n\n\n\n\n\n\nfims-weekly\n\njson\n\npurrr\n\n\n\n\n\n\nSep 8, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 01–05, 2025\n\n\n\n\n\n\nfims-weekly\n\njson\n\nprojections\n\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 25–29, 2025\n\n\n\n\n\n\nfims-weekly\n\ndocumentation\n\ninterface\n\n\n\n\n\n\nAug 25, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 18–22, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\n\n\n\n\n\nAug 18, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 11–15, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\ngit/GitHub\n\nVSCode\n\n\n\n\n\n\nAug 11, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 04–08, 2025\n\n\n\n\n\n\nfims-weekly\n\ncase studies\n\nprojections\n\n\n\n\n\n\nAug 4, 2025\n\n\n\n\n\n\n\nFIMS Weekly - July 28–August 1, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\nselectivity\n\ndiagnostics\n\nprojections\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\nFIMS Weekly - July 21–25, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\nselectivity\n\nprojections\n\n\n\n\n\n\nJul 21, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Skip to main content\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nFIMS Monthly - July 2026\n\n\n\n\n\n\nfims-monthly\n\n\n\n\n\n\nJul 28, 2026\n\n\n\n\n\n\n\nFIMS CIE Review\n\n\nCIE concludes that FIMS is on the right track\n\n\n\ncommunity\n\ntesting\n\n\n\n\n\n\nJul 13, 2026\n\n\nKelli Johnson\n\n\n\n\n\n\n\nFIMS Weekly - May 18–22, 2026\n\n\n\n\n\n\nfims-monthly\n\n\n\n\n\n\nMay 18, 2026\n\n\n\n\n\n\n\nFIMS Weekly - May 11–15, 2026\n\n\n\n\n\n\nfims-monthly\n\n\n\n\n\n\nMay 11, 2026\n\n\n\n\n\n\n\nFIMS Weekly - May 04–08, 2026\n\n\n\n\n\n\nfims-monthly\n\nCKMR\n\nGSoC\n\n\n\n\n\n\nMay 4, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 27–May 01, 2026\n\n\n\n\n\n\nfims-monthly\n\n\n\n\n\n\nApr 27, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 20–24, 2026\n\n\n\n\n\n\nfims-monthly\n\ndependencies\n\n\n\n\n\n\nApr 20, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 13–17, 2026\n\n\n\n\n\n\nfims-monthly\n\n\n\n\n\n\nApr 13, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 06–10, 2026\n\n\n\n\n\n\nfims-monthly\n\n\n\n\n\n\nApr 6, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 30–April 03, 2026\n\n\n\n\n\n\nfims-monthly\n\ntutorial\n\n\n\n\n\n\nMar 30, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 16–20, 2026\n\n\n\n\n\n\nfims-monthly\n\ncase-studies\n\nreleases\n\n\n\n\n\n\nMar 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 23–27, 2026\n\n\n\n\n\n\nfims-monthly\n\ntutorial\n\ntesting\n\n\n\n\n\n\nMar 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 09–13, 2026\n\n\n\n\n\n\nfims-monthly\n\nmanuscripts\n\n\n\n\n\n\nMar 9, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 02–06, 2026\n\n\n\n\n\n\nfims-monthly\n\ntesting\n\n\n\n\n\n\nMar 2, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 23–27, 2026\n\n\n\n\n\n\nfims-monthly\n\nreleases\n\nblog\n\n\n\n\n\n\nFeb 23, 2026\n\n\n\n\n\n\n\nR Package Chaos, Solved\n\n\nHow we use {renv} to keep the FIMS ecosystem reproducible and collaborative\n\n\n\nlearn\n\nR\n\nopen-science\n\nFIMSdiags\n\n\n\n\n\n\nFeb 20, 2026\n\n\nMeg Oshima\n\n\n\n\n\n\n\nFIMS Code Club\n\n\nBeyond the Code: Building a Community\n\n\n\nother\n\ncode-club\n\ncommunity\n\nopen-science\n\n\n\n\n\n\nFeb 17, 2026\n\n\nElizabeth Perl\n\n\n\n\n\n\n\nFIMS Weekly - February 16–20, 2026\n\n\n\n\n\n\nfims-monthly\n\nreleases\n\n\n\n\n\n\nFeb 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 09–13, 2026\n\n\n\n\n\n\nfims-monthly\n\ntesting\n\ncase-studies\n\n\n\n\n\n\nFeb 9, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 02–06, 2026\n\n\n\n\n\n\nfims-monthly\n\nSIS\n\ncase-studies\n\ndiagnostics\n\n\n\n\n\n\nFeb 2, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 26–30, 2026\n\n\n\n\n\n\nfims-monthly\n\ntraining\n\n\n\n\n\n\nJan 26, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 19–23, 2026\n\n\n\n\n\n\nfims-monthly\n\nreleases\n\ntesting\n\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 12–16, 2026\n\n\n\n\n\n\nfims-monthly\n\ntrainings\n\n\n\n\n\n\nJan 12, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 05–09, 2026\n\n\n\n\n\n\nfims-monthly\n\nSurplus Production\n\nDSEM\n\ncodespaces\n\n\n\n\n\n\nJan 5, 2026\n\n\n\n\n\n\n\nFIMS Weekly - December 29, 2025–January 02, 2026\n\n\n\n\n\n\nfims-monthly\n\nreleases\n\ntraining\n\n\n\n\n\n\nDec 29, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 22–26, 2025\n\n\n\n\n\n\nfims-monthly\n\nreleases\n\nR\n\nbash\n\n\n\n\n\n\nDec 22, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 15–19, 2025\n\n\n\n\n\n\nfims-monthly\n\nreleases\n\nR\n\n\n\n\n\n\nDec 15, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 08–12, 2025\n\n\n\n\n\n\nfims-monthly\n\nreleases\n\nprojections\n\n\n\n\n\n\nDec 8, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 01–05, 2025\n\n\n\n\n\n\nfims-monthly\n\ntesting\n\n\n\n\n\n\nDec 1, 2025\n\n\n\n\n\n\n\nFIMS Weekly - November 24–28, 2025\n\n\n\n\n\n\nfims-monthly\n\nPosit\n\nreleases\n\n\n\n\n\n\nNov 24, 2025\n\n\n\n\n\n\n\nFIMS Weekly - November 17–21, 2025\n\n\n\n\n\n\nfims-monthly\n\ncommunity playbook\n\nschedule\n\n\n\n\n\n\nNov 17, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 29–October 03, 2025\n\n\n\n\n\n\nfims-monthly\n\ntesting\n\ndocumentation\n\ndoxygen\n\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 21–26, 2025\n\n\n\n\n\n\nfims-monthly\n\ndoxygen\n\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 15–19, 2025\n\n\n\n\n\n\nfims-monthly\n\nvignettes\n\n\n\n\n\n\nSep 15, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 08–12, 2025\n\n\n\n\n\n\nfims-monthly\n\njson\n\npurrr\n\n\n\n\n\n\nSep 8, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 01–05, 2025\n\n\n\n\n\n\nfims-monthly\n\njson\n\nprojections\n\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 25–29, 2025\n\n\n\n\n\n\nfims-monthly\n\ndocumentation\n\ninterface\n\n\n\n\n\n\nAug 25, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 18–22, 2025\n\n\n\n\n\n\nfims-monthly\n\ntesting\n\n\n\n\n\n\nAug 18, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 11–15, 2025\n\n\n\n\n\n\nfims-monthly\n\nreleases\n\ngit/GitHub\n\nVSCode\n\n\n\n\n\n\nAug 11, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 04–08, 2025\n\n\n\n\n\n\nfims-monthly\n\ncase studies\n\nprojections\n\n\n\n\n\n\nAug 4, 2025\n\n\n\n\n\n\n\nFIMS Weekly - July 28–August 1, 2025\n\n\n\n\n\n\nfims-monthly\n\ntesting\n\nselectivity\n\ndiagnostics\n\nprojections\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\nFIMS Weekly - July 21–25, 2025\n\n\n\n\n\n\nfims-monthly\n\ntesting\n\nselectivity\n\nprojections\n\n\n\n\n\n\nJul 21, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "contact/contributors.html",
