@@ -15,6 +15,15 @@ html {
   scroll-padding-top: 6rem;
 }
 
+main {
+    margin-top: 0em !important;
+    margin-bottom: 0.25em !important;
+}
+
+.column p {
+  margin-bottom: 0 !important;
+}
+
 :target {
   scroll-margin-top: 6rem;
 }
