@@ -40,13 +40,19 @@
 #| results: asis
 #| message: false
 #| warning: false
-#| eval: !expr "is.null(quarto::quarto_meta()$'upcoming-events'$'code-club') || is.null(quarto::quarto_meta()$'upcoming-events'$'seaside-chat') || is.null(quarto::quarto_meta()$'upcoming-events'$'additional-events')"
+#| eval: !expr "is.null(rmarkdown::metadata$'upcoming-events'$'code-club') && is.null(rmarkdown::metadata$'upcoming-events'$'seaside-chat')"
+
+# Ensure necessary packages are available for the CI/CD environment
+if(!requireNamespace("rmarkdown", quietly = TRUE)) { install.packages("rmarkdown", repos = "https://cloud.r-project.org") }
+if(!requireNamespace("lubridate", quietly = TRUE)) { install.packages("lubridate", repos = "https://cloud.r-project.org") }
+if(!requireNamespace("glue", quietly = TRUE)) { install.packages("glue", repos = "https://cloud.r-project.org") }
 
 cal_id <- "c_6eluv1h8o830k7vt8ctcs6ghto@group.calendar.google.com"
 
 # Define the 5-day window for events based on the document's date
 doc_date <- tryCatch({
-  as.Date(quarto::quarto_meta()$date)
+  # Use rmarkdown::metadata for broader compatibility with rendering environments
+  as.Date(rmarkdown::metadata$date)
 }, error = function(e) {
   Sys.Date() # Fallback to current date if not in a Quarto doc with a date
 })

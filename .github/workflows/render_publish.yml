@@ -33,7 +33,6 @@ jobs:
             any::ical
             any::dplyr
             any::lubridate
-            any::quarto
 
       - name: Get latest version from changelog
         id: changelog_version
