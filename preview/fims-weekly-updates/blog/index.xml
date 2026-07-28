@@ -132,7 +132,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -143,7 +143,9 @@ BIG THINGS THIS WEEK
 <li><p>Reviewing the design document for <a href="https://docs.google.com/document/d/1hDIkqUbHrf9p-FRSNxy-QfbRwaUe8g2FpynYYUiLqIU/edit?tab=t.0#heading=h.ay5ysjx323rp">modeling variability in growth</a>.</p></li>
 <li><p>The restructuring of random effects is underway, led by Nathan and Andrea, where the hope is to make the random-effects structure more generic and allow for priors on all quantities, whether they are parameters or derived quantities.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -157,7 +159,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -166,9 +168,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -248,7 +250,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -259,7 +261,9 @@ BIG THINGS THIS WEEK
 <li><p>Week 2 of community bonding with the Google Summer of Code Contributors. We are meeting with each of them to finalize their proposals.</p></li>
 <li><p>Reworking this weekly newsletter to be more informative about FIMS development by changing the Photo of the Week to a Project Summary of the Week.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -273,7 +277,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -282,9 +286,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -362,7 +366,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -373,7 +377,9 @@ BIG THINGS THIS WEEK
 <li><p>Bai is working on absorbing {ecosystemdata} into {ecosystemom}. There is also a <a href="https://github.com/orgs/NOAA-FIMS/discussions/1445">Discussion</a> about absorbing {FIMSdiags} into {FIMS}.</p></li>
 <li><p>We received additional comments on the FIMS Manuscript before the CIE Review. Christine started addressing them last week with the hope that the manuscript can be submitted this week.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -387,7 +393,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -396,9 +402,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -478,7 +484,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -489,7 +495,9 @@ BIG THINGS THIS WEEK
 <li><p>Adrianne is thinking about how to model variability in length within the new growth module. Feel free to reach out to her if you know of any published papers or have opinions.</p></li>
 <li><p>Matthew is continuing to work on translational units and getting FIMS to operate more like the RTMB package while compiling. The current road block is with the use of roxygen2 some additional files are added that can cause headaches.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -503,7 +511,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -512,9 +520,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -592,7 +600,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -603,7 +611,9 @@ BIG THINGS THIS WEEK
 <li><p>Bai is working on further designing slow versus fast tests so failures come quickly and informatively. Please reach out to her if you have ideas or want to implement similar testing strategies in your own projects.</p></li>
 <li><p>Continue to work on the FIMS planning repository.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -617,7 +627,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -626,9 +636,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -712,7 +722,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -723,7 +733,9 @@ BIG THINGS THIS WEEK
 <li><p>Make a check-list of final tasks for the Surplus Production model (carry over from last week).</p></li>
 <li><p>Reactivate the FIMS planning repository.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -737,7 +749,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -747,9 +759,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -827,7 +839,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -838,7 +850,9 @@ BIG THINGS THIS WEEK
 <li><p>Make a check-list of final tasks for the Surplus Production model.</p></li>
 <li><p>Continue work on the interface for random effects.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -852,7 +866,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -862,9 +876,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -942,7 +956,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -953,7 +967,9 @@ BIG THINGS THIS WEEK
 <li><p>An email will actually (:wink:) go out to the CIE Reviewers, Regional SSC participants, FIMS Council, and Science Board regarding review materials for the CIE Review.</p></li>
 <li><p>Finalize the Pacific Hake case study.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -967,7 +983,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -977,9 +993,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -1077,7 +1093,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -1088,7 +1104,9 @@ BIG THINGS THIS WEEK
 <li><p>All hands on deck 🚨🫡⚓ regarding FIMS documentation. Nothing is too small to submit a pull request for. Please do your part to help ensure the documentation is sufficient.</p></li>
 <li><p>Last reminder regarding the FIMS manuscript! The <a href="https://docs.google.com/document/d/1HyLJa4y8fkKML31a636qwozkaYXglT9yzQCmE6bTLa0/edit?usp=drive_link">manuscript</a> and the responses to <a href="https://docs.google.com/document/d/1t_eju7vqF119ZPgLVU95pQFqjzGRTIMmQo0lucTqEbQ/edit?usp=drive_link">reviewers</a> will be submitted on March 19, 2026.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -1102,7 +1120,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -1111,9 +1129,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -1289,7 +1307,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -1300,7 +1318,9 @@ BIG THINGS THIS WEEK
 <li><p>An email will go out to the CIE Reviewers, Regional SSC participants, FIMS Council, and Science Board regarding review materials for the CIE Review.</p></li>
 <li><p>Ian will be giving a seminar on <code>FIMSFrame</code>.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -1314,7 +1334,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -1323,9 +1343,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -1470,7 +1490,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -1481,7 +1501,9 @@ BIG THINGS THIS WEEK
 <li><p>Nathan and Andrea are working on a PR to increase the usability of the random effects in FIMS.</p></li>
 <li><p>We have addressed the comments we received on the FIMS manuscript from reviewers and it is time to do a final round of edits. The <a href="https://docs.google.com/document/d/1HyLJa4y8fkKML31a636qwozkaYXglT9yzQCmE6bTLa0/edit?usp=drive_link">manuscript</a> and the responses to <a href="https://docs.google.com/document/d/1t_eju7vqF119ZPgLVU95pQFqjzGRTIMmQo0lucTqEbQ/edit?usp=drive_link">reviewers</a> are on Google Drive. Please provide all comments by March 18, 2026 so we can return the manuscript to ICES by March 19, 2026.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -1495,7 +1517,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -1505,9 +1527,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -1589,7 +1611,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -1600,7 +1622,9 @@ BIG THINGS THIS WEEK
 <li><p>Several pull requests from potential Google Summer of Code Contributors were submitted late last week and over the weekend that will be merged into dev. We have Contributors actively working on four separate proposals that will be submitted, reviewed, and ranked this month! Additionally, we will be talking internally about the capability of using ‘populations’ to include sex in FIMS.</p></li>
 <li><p>We need more good first issues on FIMS, see <a href="https://community.apache.org/committers/good-first-issues.html">Apache’s take</a> on what it means to create a ‘good first issue’. Please consider adding more to any of the NOAA-FIMS repositories.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -1614,7 +1638,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -1624,9 +1648,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -1724,7 +1748,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -1735,7 +1759,9 @@ BIG THINGS THIS WEEK
 <li><p>Bai is working on ecosystemdata to extract selectivity parameters from EWE output.</p></li>
 <li><p>Matthew is working ALL WEEK on <a href="https://github.com/NOAA-FIMS/FIMS/issues/981">translational units</a> to decrease the number of cores that we need to build FIMS.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -1749,7 +1775,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -1759,9 +1785,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -2176,7 +2202,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -2187,7 +2213,9 @@ BIG THINGS THIS WEEK
 <li><p>Our NOAA-FIMS website will have an official blog later today that will include blog posts and the FIMS Weekly. Additionally, some changes will be made to accommodate dark mode.</p></li>
 <li><p>Ron has done some great work on cleaning up the surplus production model and that work will continue this week.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -2201,7 +2229,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -2210,9 +2238,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -2307,7 +2335,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -2318,7 +2346,9 @@ BIG THINGS THIS WEEK
 <li><p>Bai is working on the comparisons of FIMS to other modeling frameworks fit to the data from the operating model used for the model comparison project. Her most recent addition was adding a FIMS run with random effects for recruitment deviations. Great work Bai!</p></li>
 <li><p>Lots of side meetings are happening for FIMS. One of those was regarding the design of wrapper functions for random effects and other questions related to random effects.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -2332,7 +2362,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -2342,9 +2372,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -2432,7 +2462,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -2443,7 +2473,9 @@ BIG THINGS THIS WEEK
 <li><p>Google Summer of Code ideas need to be submitted today! We have two submitted so far, one related to turning on and off uncertainty for derived quantities and one related to adding Empirical Dynamic Modeling (EDM) to FIMS. EDM models were presented last week for brown shrimp at NSAW.</p></li>
 <li><p>We have an Implementation Team Meeting and a tutorial on FIMSdiags this week. Please attend both and spread the news about the tutorial.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -2457,7 +2489,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -2466,9 +2498,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
@@ -2575,7 +2607,7 @@ Skip to main content
 
 </div>
 <div class="columns equal-h2-cols">
-<div class="column" style="width:70%;">
+<div class="column" style="width:69%;">
 <div class="header-wrap">
 <h2 class="anchored">
 BIG THINGS THIS WEEK
@@ -2586,7 +2618,9 @@ BIG THINGS THIS WEEK
 <li><p>A table of capabilities of FIMS compared to other platforms will be put on our website to help communicate to leadership where we are and where we are going. A big thank you to Cole for the inspiration.</p></li>
 <li><p>Matthew is working on <a href="https://github.com/NOAA-FIMS/FIMS/issues/981">#981</a> to reduce the amount of RAM needed to compile FIMS.</p></li>
 </ol>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:29%;">
 <div class="header-wrap">
 <h2 class="anchored">
 HELPFUL RESOURCES
@@ -2600,7 +2634,7 @@ HELPFUL RESOURCES
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:48%;">
+<div class="column" style="width:49%;">
 <section id="fims-announcements" class="level2">
 <h2 class="anchored" data-anchor-id="fims-announcements">FIMS ANNOUNCEMENTS</h2>
 <div id="announcements">
@@ -2611,9 +2645,9 @@ HELPFUL RESOURCES
 </ul>
 </div>
 </section>
-</div><div class="column" style="width:4%;">
+</div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:48%;">
+</div><div class="column" style="width:49%;">
 <section id="upcoming-events" class="level2">
 <h2 class="anchored" data-anchor-id="upcoming-events">UPCOMING EVENTS</h2>
 <p>See the <a href="https://noaa-fims.github.io/calendar">FIMS Calendar</a> for more links and events.</p>
