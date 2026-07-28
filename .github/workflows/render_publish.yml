@@ -30,6 +30,8 @@ jobs:
             any::knitr
             any::rmarkdown
             any::glue
+            any::ical
+            any::dplyr
             any::lubridate
             any::quarto
 

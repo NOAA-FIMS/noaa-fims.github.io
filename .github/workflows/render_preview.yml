@@ -35,6 +35,7 @@ jobs:
             any::lubridate
             any::dplyr
             any::glue
+            any::quarto
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
