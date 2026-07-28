@@ -29,6 +29,8 @@ jobs:
           packages:
             any::knitr
             any::rmarkdown
+            any::glue
+            any::lubridate
 
       - name: Get latest version from changelog
         id: changelog_version
