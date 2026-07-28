@@ -3,7 +3,7 @@
 <div style="height:3em;"></div>
 
 ::: {.columns .equal-h2-cols}
-::: {.column width="70%"}
+::: {.column width="69%"}
 
 <div class="header-wrap"><h2>BIG THINGS THIS WEEK</h2></div>
 
@@ -13,7 +13,11 @@
 
 :::
 
-::: {.column width="30%"}
+::: {.column width="2%"}
+
+:::
+
+::: {.column width="29%"}
 <div class="header-wrap"><h2>HELPFUL RESOURCES</h2></div>
 
 - [FIMS Website](https://noaa-fims.github.io/)
@@ -24,18 +28,18 @@
 :::
 
 ::: {.columns}
-::: {.column width="48%"}
+::: {.column width="49%"}
 ## FIMS ANNOUNCEMENTS
 
 {{< contents announcements >}}
 
 :::
 
-::: {.column width="4%"}
+::: {.column width="2%"}
 
 :::
 
-::: {.column width="48%"}
+::: {.column width="49%"}
 ## UPCOMING EVENTS
 
 See the [FIMS Calendar](https://noaa-fims.github.io/calendar) for more links and events.
@@ -165,7 +169,7 @@ tryCatch({
         cat("\n\n")
       }
       
-      cat(glue::glue('**{event$summary}** \n\n'))
+      cat(glue::glue('**{event$summary}**\n\n'))
       
       is_all_day <- format(event$start, "%H:%M:%S", tz="UTC") == "00:00:00" && (is.null(event$end) || as.Date(event$end) > as.Date(event$start))
       
@@ -175,9 +179,15 @@ tryCatch({
         start_ht <- trimws(format(event$start, "%l:%M %p", tz="Pacific/Honolulu"))
         glue::glue("{start_et} ET / {start_pt} PT / {start_ht} HT")
       }
-      cat(glue::glue('Time: {time_str} \n\n'))
+      cat(glue::glue('Time: {time_str}\n\n'))
       
-      if (nzchar(event$description)) cat(glue::glue('{event$description}'))
+      if (nzchar(event$location)) {
+        if (grepl("^https?://", event$location)) {
+          cat(glue::glue('Online: <{event$location}>\n\n'))
+        }
+      }
+      
+      if (nzchar(event$description)) cat(glue::glue('{event$description}\n\n'))
     }
   } else {
     cat("No upcoming events scheduled for this week. Check the FIMS Community Calendar for more.")
