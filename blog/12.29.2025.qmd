@@ -3,10 +3,10 @@ title: "FIMS Weekly - December 29, 2025–January 02, 2026"
 date: "December 29, 2025"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - releases
   - training
-three-big-things:
+big-things:
   bt1: "We are still working on the hot-fix release to 0.7.0 that fixes a few 🐛🐛."
   bt2: "Adrianne is working on collapsing Andrea's C++ training vignettes into a single vignette and adding them to the FIMS repository."
   bt3: "A new effort will begin to migrate the FIMS requirements to Issues and label them as epics to help with getting information regarding timelines out to more people in an efficient way. This will be a long-term effort and not be anywhere near completed by the end of the week."
@@ -25,7 +25,7 @@ photo:
   alt-text: "A ggplot2 example of a scatter plot with a line where it shows the code to create the ggplot2 image on the left. The code appears to be written in a notebook page in a three-ring spiral binder."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - There will be a FIMS training at the National Stock Assessment Workshop in La Jolla, California on January 26th in the afternoon. The training will focus on how to run a simple FIMS model on a Google Cloud workstation and providing assistance for fitting data sets brought by attendees with FIMS.

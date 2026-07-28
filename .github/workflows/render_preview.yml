@@ -31,10 +31,8 @@ jobs:
           packages:
             any::knitr
             any::rmarkdown
-            any::ical
-            any::lubridate
-            any::dplyr
             any::glue
+            any::dplyr
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2

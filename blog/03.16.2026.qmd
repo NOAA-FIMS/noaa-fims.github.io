@@ -2,12 +2,12 @@
 # The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - March 16–20, 2026"
 date: "March 16, 2026"
-# Change the following categories accordingly, but you MUST keep fims-weekly
+# Change the following categories accordingly, but you MUST keep fims-monthly
 categories:
-  - fims-weekly
+  - fims-monthly
   - case-studies
   - releases
-three-big-things:
+big-things:
   bt1: "We will work on getting at least three case studies up and going this week in preparation for the CIE Review."
   bt2: "All hands on deck 🚨🫡⚓ regarding FIMS documentation. Nothing is too small to submit a pull request for. Please do your part to help ensure the documentation is sufficient."
   bt3: "Last reminder regarding the FIMS manuscript! The [manuscript](https://docs.google.com/document/d/1HyLJa4y8fkKML31a636qwozkaYXglT9yzQCmE6bTLa0/edit?usp=drive_link) and the responses to [reviewers](https://docs.google.com/document/d/1t_eju7vqF119ZPgLVU95pQFqjzGRTIMmQo0lucTqEbQ/edit?usp=drive_link) will be submitted on March 19, 2026."
@@ -23,7 +23,7 @@ photo:
   text: "Version 0.9.0 has two breaking changes. (1) If you have time-varying `weight_at_age` data you can use it but you must make a decision for the beginning of the last year after catches. FIMS does not accommodate this need for an additional year of `weight_at_age` data you must decide if you want to put in an average or some kind of projection. But, if you do not have time-varying weight_at_age data you can input just a single year as a power user and everything will be taken care of. (2) All six `m_*()` functions have been renamed to `model_*(). Below we show how a power user can implement (1)."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 36 days until the CIE Review, main will be frozen by next Monday when we have to turn in all materials to the CIE Reviewers.

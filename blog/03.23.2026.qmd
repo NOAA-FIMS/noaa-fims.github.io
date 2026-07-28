@@ -2,12 +2,12 @@
 # The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - March 23–27, 2026"
 date: "March 16, 2026"
-# Change the following categories accordingly, but you MUST keep fims-weekly
+# Change the following categories accordingly, but you MUST keep fims-monthly
 categories:
-  - fims-weekly
+  - fims-monthly
   - tutorial
   - testing
-three-big-things:
+big-things:
   bt1: "Merging in a few final Pull Requests today and tomorrow."
   bt2: "An email will go out to the CIE Reviewers, Regional SSC participants, FIMS Council, and Science Board regarding review materials for the CIE Review."
   bt3: "Ian will be giving a seminar on `FIMSFrame`."
@@ -23,7 +23,7 @@ photo:
   text: "The tests for new convergence functions use a mocking structure so we can test the individual function without having to run a FIMS model. You can read more about mocking on the [testthat github page](https://testthat.r-lib.org/articles/mocking.html). I think that mocking might be helpful for more tests in FIMS to increase coverage but keep the tests running fast."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 29 days until the CIE Review.

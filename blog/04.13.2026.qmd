@@ -2,10 +2,10 @@
 # The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - April 13–17, 2026"
 date: "April 13, 2026"
-# Change the following categories accordingly, but you MUST keep fims-weekly
+# Change the following categories accordingly, but you MUST keep fims-monthly
 categories:
-  - fims-weekly
-three-big-things:
+  - fims-monthly
+big-things:
   bt1: "Send presentations for CIE Review to OST for review."
   bt2: "Make a check-list of final tasks for the Surplus Production model (carry over from last week)."
   bt3: "Reactivate the FIMS planning repository."
@@ -24,7 +24,7 @@ photo:
   alt-text: "A screenshot of GitHub showing where to sort your notifications."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 7 days until the CIE Review.

@@ -3,11 +3,11 @@ title: "FIMS Weekly - August 11–15, 2025"
 date: "August 11, 2025"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - releases
   - git/GitHub
   - VSCode
-three-big-things:
+big-things:
   bt1: "Sorry for the late FIMS Weekly but I have been sick 🤕 and just haven’t been able to muster enough 🔥to get one together. I am doing better today but still don’t have much of a voice so there is no seaside chat this week."
   bt2: "v0.6.3 will be released this week, thanks to Andrea finding an intermittent bug when using TMBad on Windows regarding how we were implementing operators in fims_math.hpp."
   bt3: 
@@ -27,7 +27,7 @@ photo:
   alt-text: "Image of multiple branches checked out on in the FIMS repository using git worktrees."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - This will be the last FIMS Weekly in Google Doc form because Elizabeth created a way to distribute this via html on our FIMS Website 🎉. Emails will still go out but they will just link to where you can find the weekly and maybe a screen shot. I am not sure. Please feel free to email me suggestions.

@@ -3,11 +3,11 @@ title: "FIMS Weekly - January 05–09, 2026"
 date: "January 05, 2026"
 # Change the following categories accordingly
 categories:
-  - fims-weekly
+  - fims-monthly
   - Surplus Production
   - DSEM
   - codespaces
-three-big-things:
+big-things:
   bt1: "Andrea has been working on the Surplus Production model and is making great strides with respect to making comparisons to other Surplus Production models. There are some kinks with the Bayesian estimation that she is currently working out, which will also help the Catch-At-Age model, before we can release it."
   bt2: "We are still working on rebasing the dev-projections-caa branch to dev. Once this is complete, the vignette needs to be finished and then the branch can be merged into dev for a new release."
   bt3: "Bai is working on adding diet and ecosystem data to simulated data sets available from Ecopath with Ecosim models to facilitate testing of the use of Dynamic Structural Equation Modeling (DSEM) within FIMS."
@@ -29,7 +29,7 @@ photo:
   alt-text: "A drawing with marine life and 100 years ICES Journal of Marine Science in the center."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - If you were affected by the shortage of funds in our codespaces account please reply to the Google Chat that was started last week indicating regarding the inability to use codespaces after we reached 100 percent of our funding limit.

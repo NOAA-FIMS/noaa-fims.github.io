@@ -3,9 +3,9 @@ title: "FIMS Weekly - August 18–22, 2025"
 date: "August 18, 2025"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - testing
-three-big-things:
+big-things:
   bt1: "Extra attention will be on the json output this week as we look to add the Surplus Production Model and finish the implementation of model families."
   bt2: "A README for how to run and implement new 🧪s is now available thanks to Bai, this will be merged into dev this week."
   bt3: "Please ensure that your CReDiT statements in the [FIMS manuscript](https://docs.google.com/document/d/1UDQHA023U1_X2_2k2_V1QNGFhmhrx8c3omNDhSaVvdw/edit?tab=t.0#heading=h.6tcvlbsc65my) are correct by Friday the 22nd."
@@ -27,7 +27,7 @@ photo:
   alt-text: "A screen shot of No Status and In Progress issues from the project board."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - The CIE Review will be November 04--06, 2025 and **all** materials must be delivered to the reviewers four weeks prior to this, i.e., October 07, 2025.

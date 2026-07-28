@@ -3,10 +3,10 @@ title: "FIMS Weekly - August 04–08, 2025"
 date: "August 04, 2025"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - case studies
   - projections
-three-big-things:
+big-things:
   bt1: "The case studies will be updated this week to use the latest release. This has been done in dev for a while but just hanging in the ether."
   bt2: "We will be migrating several resources from individual repositories to the FIMS website, e.g., FIMS Weekly newsletter, training repo, doxygen documentation, and potentially the collaborative workflow."
   bt3: "Please ensure that your affiliation in the [FIMS manuscript](https://docs.google.com/document/d/1UDQHA023U1_X2_2k2_V1QNGFhmhrx8c3omNDhSaVvdw/edit?usp=sharing) is correct, which will be submitted to ICES Journal of Marine Science at the beginning of next week."
@@ -20,7 +20,7 @@ photo:
   text: "During last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example: "
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - [FIMS website](https://noaa-fims.github.io/) is now newly updated thanks to Elizabeth 🥇!

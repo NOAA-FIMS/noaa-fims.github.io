@@ -2,10 +2,10 @@
 # The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - April 06–10, 2026"
 date: "April 06, 2026"
-# Change the following categories accordingly, but you MUST keep fims-weekly
+# Change the following categories accordingly, but you MUST keep fims-monthly
 categories:
-  - fims-weekly
-three-big-things:
+  - fims-monthly
+big-things:
   bt1: "Jon is working on bringing more distributions into FIMS, including the Dirichlet-multinomial."
   bt2: "Make a check-list of final tasks for the Surplus Production model."
   bt3: "Continue work on the interface for random effects."
@@ -24,7 +24,7 @@ photo:
   alt-text: "Five icons that lead to ideas for websites that would be of interest given what pathway you choose. The links are live and accessible on the noaa-fims website."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 14 days until the CIE Review.

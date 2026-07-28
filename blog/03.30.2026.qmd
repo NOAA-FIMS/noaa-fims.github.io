@@ -2,11 +2,11 @@
 # The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - March 30–April 03, 2026"
 date: "March 30, 2026"
-# Change the following categories accordingly, but you MUST keep fims-weekly
+# Change the following categories accordingly, but you MUST keep fims-monthly
 categories:
-  - fims-weekly
+  - fims-monthly
   - tutorial
-three-big-things:
+big-things:
   bt1: "Continue trying to fix pkgdown site where there is an obscure failure in the testdown or coverage reports."
   bt2: "An email will actually (:wink:) go out to the CIE Reviewers, Regional SSC participants, FIMS Council, and Science Board regarding review materials for the CIE Review."
   bt3: "Finalize the Pacific Hake case study."
@@ -22,7 +22,7 @@ photo:
   text: "I finally figured out how to merge dev into main without changing all of the commit hashes and messing up all of the outstanding Pull Requests to dev. There is not an option within the GitHub user interface to do this. Instead, it must be done from the command line (see below). I think we are coming to a point in our development though where we can think about removing `dev` from our workflow and instead of letting features pile up in dev before they are released, we more thoroughly review them in their feature branches and release them directly to main rather than going to dev first."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 21 days until the CIE Review.

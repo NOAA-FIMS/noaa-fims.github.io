@@ -3,10 +3,10 @@ title: "FIMS Weekly - September 01–05, 2025"
 date: "September 01, 2025"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - json
   - projections
-three-big-things:
+big-things:
   bt1: "We are working on three pull requests right now, revamped model-specification interface, revamped json output, and addition of the surplus production model. The goal is to get at least two of the three merged this week and get dev cleaned up so it is passing tests."
   bt2: "Kyle and Kelli are working on using {asar} and {stockplotr} for the case studies to increase consistency."
   bt3: "We could use some help increasing the documentation of FIMS, for example Ian and Meg asked me last week about `clear()` which is minimally documented in the C++ code but not documented in R where it is actually used and exported."
@@ -20,7 +20,7 @@ photo:
   text: "Below is a glimpse of what the new json output looks like, where dimensions are provided both in name and in length. Please contact Matthew if you have feedback on this structure."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 64 calendar days until the FIMS CIE Review, we still need a chair.

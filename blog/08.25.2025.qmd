@@ -3,10 +3,10 @@ title: "FIMS Weekly - August 25–29, 2025"
 date: "August 25, 2025"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - documentation
   - interface
-three-big-things:
+big-things:
   bt1: "Bai is busy revamping the way users interact with the model parameters as lists of lists has gotten unwieldy."
   bt2: "Matthew and Andrea are working on different parts of the model using feature branches off of the latest dev branch that has a draft of the Surplus Production Model (SPM)."
   bt3: "This Thursday (see below) will be our first tutorial session to give new users a glimpse into how to run a FIMS model. Please share this information wide and far."
@@ -28,7 +28,7 @@ photo:
   alt-text: "The linkages between modules in the C++ source code of FIMS, which can be seen on [Deep Wiki](https://deepwiki.com/NOAA-FIMS/FIMS#population-dynamics-system)"
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 71 calendar days until the FIMS CIE Review, we still need a chair.

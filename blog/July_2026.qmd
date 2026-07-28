@@ -1,0 +1,39 @@
+---
+# The title MUST start with "FIMS Monthly - "
+title: "FIMS Monthly - July 2026"
+date: "July 28, 2026"
+# Change the following categories accordingly, but you MUST keep the fims-monthly one
+categories:
+  # This one will show up in the sidebar, any other categories you add will not
+  # but are clickable to sort.
+  - fims-monthly
+big-things:
+  - BIG THING 1
+  - BIG THING 2
+announcements:
+  - ANNOUNCEMENT 1
+  - ANNOUNCEMENT 2
+# If there is no photo in the summary section, you can delete include-photo, path, and alt-text
+# and the template will handle it for you.
+# If there is code instead, please uncomment the section below named summary-code
+# but still include the text portion under summary.
+summary:
+  text: "testing July"
+---
+
+{{< include "fims-monthly-template.qmd" >}}
+
+# ::: {#announcements}
+# - ANNOUNCEMENT 1
+# - ANNOUNCEMENT 2
+# :::
+
+
+<!--
+::: {#summary-code}
+```
+PUT CODE HERE
+```
+:::
+-->
+

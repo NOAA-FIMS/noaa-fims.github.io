@@ -5,9 +5,9 @@ date: "March 02, 2026"
 categories:
   # This one will show up in the sidebar, any other categories you add will not
   # but are clickable to sort.
-  - fims-weekly
+  - fims-monthly
   - testing
-three-big-things:
+big-things:
   bt1: "Bai is working on figures and tables to summarize the results of adding FIMS to the model-comparison project."
   bt2: "Several pull requests from potential Google Summer of Code Contributors were submitted late last week and over the weekend that will be merged into dev. We have Contributors actively working on four separate proposals that will be submitted, reviewed, and ranked this month! Additionally, we will be talking internally about the capability of using 'populations' to include sex in FIMS."
   bt3: "We need more good first issues on FIMS, see [Apache's take](https://community.apache.org/committers/good-first-issues.html) on what it means to create a 'good first issue'. Please consider adding more to any of the NOAA-FIMS repositories."
@@ -23,7 +23,7 @@ photo:
   text: "While trying to find an example of `rlang::arg_match()` I came across the [tidyverse design principles](https://design.tidyverse.org/), which has some great content, and was reminded that many R developers do not know or understand `match.arg()` or `rlang::arg_match()`. These functions can be game changes when you want the options within a function argument to be clear to users and I believe that we should be using them more in FIMS. See a small example below and read the [relevant section of design.tidyverse.org](https://design.tidyverse.org/enumerate-options.html#how-do-i-use-this-pattern) for more information."
 ---
 
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 50 days until the CIE Review.

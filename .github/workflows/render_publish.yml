@@ -30,9 +30,7 @@ jobs:
             any::knitr
             any::rmarkdown
             any::glue
-            any::ical
             any::dplyr
-            any::lubridate
 
       - name: Get latest version from changelog
         id: changelog_version

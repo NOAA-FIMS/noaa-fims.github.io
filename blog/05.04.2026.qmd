@@ -2,12 +2,12 @@
 # The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - May 04–08, 2026"
 date: "May 04, 2026"
-# Change the following categories accordingly, but you MUST keep fims-weekly
+# Change the following categories accordingly, but you MUST keep fims-monthly
 categories:
-  - fims-weekly
+  - fims-monthly
   - CKMR
   - GSoC
-three-big-things:
+big-things:
   bt1: "We received slots for two 2026 Google Summer of Code Contributors. One contributor will be working on adding sex and the other will be working on adding Empirical Dynamic Modeling (EDM) with the help of Molly Stevens and Steve Munch. Their FIMS mentors, Adrianne, Andrea, Nathan, Molly, are working on a plan regarding how to welcome them to the FIMS community."
   bt2: "Bai is working on absorbing {ecosystemdata} into {ecosystemom}. There is also a [Discussion](https://github.com/orgs/NOAA-FIMS/discussions/1445) about absorbing {FIMSdiags} into {FIMS}."
   bt3: "We received additional comments on the FIMS Manuscript before the CIE Review. Christine started addressing them last week with the hope that the manuscript can be submitted this week."
@@ -26,7 +26,7 @@ photo:
   alt-text: "A fin clip of red snapper in a plastic bag that will be used to study the genetics of the fish it was taken from."
 ---
 
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - Copilot and codespaces are limited to the free versions for the month of May.

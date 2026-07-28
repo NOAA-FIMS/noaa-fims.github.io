@@ -3,9 +3,9 @@ title: "FIMS Weekly - February 16–20, 2026"
 date: "February 16, 2026"
 # Change the following categories accordingly
 categories:
-  - fims-weekly
+  - fims-monthly
   - releases
-three-big-things:
+big-things:
   bt1: "We plan on releasing a version 0.9.0 this week once a few PR are completed."
   bt2: "Our NOAA-FIMS website will have an official blog later today that will include blog posts and the FIMS Weekly. Additionally, some changes will be made to accommodate dark mode."
   bt3: "Ron has done some great work on cleaning up the surplus production model and that work will continue this week."
@@ -21,7 +21,7 @@ photo:
   text: "We are using copilot to help with some changes related to integers in C++ in [[PR #1199](https://github.com/NOAA-FIMS/FIMS/pull/1199)] to remove many of the compiler warnings when you compile on a Windows machine. These warnings are helpful when developing and this effort will make it even more helpful because you will not have to sift through hundreds of non-helpful warnings to get to the ones that you want."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - If you attended the FIMS Training on Monday, please fill out the survey on [Google Cloud Workstations](https://docs.google.com/forms/d/e/1FAIpQLSehj6N1ka568ohEsakRQZbHxrduf1EswkYbVavhPXYBuruM7A/viewform).
