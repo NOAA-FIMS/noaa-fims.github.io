@@ -1,7 +1,7 @@
 <div style="height:3em;"></div>
 
 ::: {.columns .equal-h2-cols}
-::: {.column width="69%"}
+::: {.column width="49%"}
 
 ```{r}
 #| echo: false
@@ -32,18 +32,8 @@ if (!is.null(big_things)) {
 
 :::
 
-::: {.column width="29%"}
-<div class="header-wrap"><h2>HELPFUL RESOURCES</h2></div>
+::: {.column width="49%"}
 
-- [FIMS Website](https://noaa-fims.github.io/)
-- [FIMS GitHub Discussions](https://github.com/orgs/NOAA-FIMS/discussions)
-- [FIMS FAQs](https://noaa-fims.github.io/about/faq)
-:::
-
-:::
-
-::: {.columns}
-::: {.column width="39%"}
 ## ANNOUNCEMENTS
 
 ```{r}
@@ -69,12 +59,24 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 ```
 
 :::
+:::
+
+::: {.columns}
+::: {.column width="29%}
+
+## HELPFUL RESOURCES
+<!-- <div class="header-wrap"><h2>HELPFUL RESOURCES</h2></div> -->
+
+- [FIMS Website](https://noaa-fims.github.io/)
+- [FIMS GitHub Discussions](https://github.com/orgs/NOAA-FIMS/discussions)
+- [FIMS FAQs](https://noaa-fims.github.io/about/faq)
+:::
 
 ::: {.column width="2%"}
 
 :::
 
-::: {.column width="59%"}
+::: {.column width="69%"}
 ## UPCOMING EVENTS
 
 ```{=html}
