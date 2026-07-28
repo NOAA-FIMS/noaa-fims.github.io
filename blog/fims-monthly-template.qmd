@@ -44,7 +44,7 @@ if (!is.null(big_things)) {
 
 ::: {.columns}
 ::: {.column width="39%"}
-## FIMS ANNOUNCEMENTS
+## ANNOUNCEMENTS
 
 ```{r}
 #| echo: false
