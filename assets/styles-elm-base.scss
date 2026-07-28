@@ -20,6 +20,11 @@ main {
     margin-bottom: 0.25em !important;
 }
 
+p {
+    margin-top: 0 !important;
+    margin-bottom: 0rem !important;
+}
+
 :target {
   scroll-margin-top: 6rem;
 }
