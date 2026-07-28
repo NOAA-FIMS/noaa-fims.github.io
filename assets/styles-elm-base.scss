@@ -20,9 +20,8 @@ main {
     margin-bottom: 0.25em !important;
 }
 
-p {
-    margin-top: 0 !important;
-    margin-bottom: 0rem !important;
+.column p {
+  margin-bottom: 0 !important;
 }
 
 :target {
