@@ -31,6 +31,7 @@ jobs:
             any::rmarkdown
             any::glue
             any::lubridate
+            any::quarto
 
       - name: Get latest version from changelog
         id: changelog_version
