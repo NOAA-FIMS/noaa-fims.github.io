@@ -87,12 +87,6 @@ summary:
 
 {{< include "fims-monthly-template.qmd" >}}
 
-# ::: {#announcements}
-# - ANNOUNCEMENT 1
-# - ANNOUNCEMENT 2
-# :::
-
-
 <!--
 ::: {#summary-code}
 ```
