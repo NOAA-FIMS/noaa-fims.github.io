@@ -24,15 +24,21 @@
 :::
 
 ::: {.columns}
-::: {.column}
+::: {.column width="48%"}
 ## FIMS ANNOUNCEMENTS
 
 {{< contents announcements >}}
 
 :::
 
-::: {.column}
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="48%"}
 ## UPCOMING EVENTS
+
+See the [FIMS Calendar](https://noaa-fims.github.io/calendar) for more links and events.
 
 <!-- Code for auto events of current FIMS weekly -->
 ```{r}
@@ -156,10 +162,10 @@ tryCatch({
         last_date_printed <- current_date_str
       } else {
         # It's a subsequent event on the same day, add a separator.
-        cat("---\n\n")
+        cat("\n\n")
       }
       
-      cat(glue::glue('**{event$summary}**\n\n'))
+      cat(glue::glue('**{event$summary}** \n\n'))
       
       is_all_day <- format(event$start, "%H:%M:%S", tz="UTC") == "00:00:00" && (is.null(event$end) || as.Date(event$end) > as.Date(event$start))
       
@@ -169,9 +175,9 @@ tryCatch({
         start_ht <- trimws(format(event$start, "%l:%M %p", tz="Pacific/Honolulu"))
         glue::glue("{start_et} ET / {start_pt} PT / {start_ht} HT")
       }
-      cat(glue::glue('Time: {time_str}\n\n'))
+      cat(glue::glue('Time: {time_str} \n\n'))
       
-      if (nzchar(event$description)) cat(glue::glue('{event$description}\n\n'))
+      if (nzchar(event$description)) cat(glue::glue('{event$description}'))
     }
   } else {
     cat("No upcoming events scheduled for this week. Check the FIMS Community Calendar for more.")
