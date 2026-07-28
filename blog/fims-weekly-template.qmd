@@ -34,28 +34,13 @@
 ::: {.column}
 ## UPCOMING EVENTS
 
-::: {.content-hidden unless-meta="upcoming-events.code-club"}
-### {{< meta upcoming-events.code-club-date >}}
-**{{< meta upcoming-events.code-club-name >}}**\n
-Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H\n
-Location: Virtual\n
-Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&ref=https://meet.google.com/ica-ieta-ndu)
-:::
-
-::: {.content-hidden unless-meta="upcoming-events.seaside-chat"}
-### {{< meta upcoming-events.seaside-chat-date >}}
-**{{< meta upcoming-events.seaside-chat-name >}}**\n
-Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
-Location: Virtual\n
-Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-ghj&ref=https://meet.google.com/scg-pyqi-ghj)
-:::
-
+<!-- Code for auto events of current FIMS weekly -->
 ```{r}
 #| echo: false
 #| results: asis
 #| message: false
 #| warning: false
-#| eval: !expr "is.null(quarto::quarto_meta()$'upcoming-events'$'code-club') && is.null(quarto::quarto_meta()$'upcoming-events'$'seaside-chat')"
+#| eval: !expr "is.null(quarto::quarto_meta()$'upcoming-events'$'code-club') || is.null(quarto::quarto_meta()$'upcoming-events'$'seaside-chat') || is.null(quarto::quarto_meta()$'upcoming-events'$'additional-events')"
 
 cal_id <- "c_6eluv1h8o830k7vt8ctcs6ghto@group.calendar.google.com"
 
@@ -189,8 +174,27 @@ tryCatch({
   cat("Could not retrieve calendar events. Please check the FIMS Community Calendar.")
 })
 ```
+<!-- end -->
+
+<!-- Used for previous version of FIMS weekly -->
+::: {.content-hidden unless-meta="upcoming-events.code-club"}
+### {{< meta upcoming-events.code-club-date >}}
+**{{< meta upcoming-events.code-club-name >}}**\n
+Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H\n
+Location: Virtual\n
+Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&ref=https://meet.google.com/ica-ieta-ndu)
+:::
+
+::: {.content-hidden unless-meta="upcoming-events.seaside-chat"}
+### {{< meta upcoming-events.seaside-chat-date >}}
+**{{< meta upcoming-events.seaside-chat-name >}}**\n
+Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
+Location: Virtual\n
+Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-ghj&ref=https://meet.google.com/scg-pyqi-ghj)
+:::
 
 {{< contents additional-events >}}
+<!-- end -->
 
 :::
 :::
@@ -222,6 +226,7 @@ tryCatch({
 
 {{< contents photo-code >}}
 :::
+<!-- end -->
 
 ```{=html}
 <script src="https://giscus.app/client.js"
