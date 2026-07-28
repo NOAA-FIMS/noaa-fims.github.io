@@ -169,7 +169,7 @@ tryCatch({
         cat("\n\n")
       }
       
-      cat(glue::glue('**{event$summary}**\n\n'))
+      cat(glue::glue('**{event$summary}**'), '\n\n')
       
       is_all_day <- format(event$start, "%H:%M:%S", tz="UTC") == "00:00:00" && (is.null(event$end) || as.Date(event$end) > as.Date(event$start))
       
@@ -179,11 +179,11 @@ tryCatch({
         start_ht <- trimws(format(event$start, "%l:%M %p", tz="Pacific/Honolulu"))
         glue::glue("{start_et} ET / {start_pt} PT / {start_ht} HT")
       }
-      cat(glue::glue('Time: {time_str}\n\n'))
+      cat(glue::glue('Time: {time_str}'), '\n\n')
       
       if (nzchar(event$location)) {
         if (grepl("^https?://", event$location)) {
-          cat(glue::glue('Online: <{event$location}>\n\n'))
+          cat(glue::glue('Online: <{event$location}>'), '\n\n')
         }
       }
       
@@ -221,6 +221,7 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 :::
 :::
 
+::: {.content-visible when-meta="summary"}
 ## Summary
 
 {{< meta summary.text >}}
@@ -232,6 +233,7 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 :::
 
 {{< contents summary-code >}}
+:::
 
 
 <!-- Used for previous fims weekly posts which used a photo section. -->
