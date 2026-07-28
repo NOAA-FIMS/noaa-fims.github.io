@@ -20,7 +20,9 @@ listing:
     - "!blog_template.qmd"
   sort: "date desc"
   type: default
-  feed: true
+  feed: 
+    items: 1       # Restricts the feed to only the 1 most recent post
+    type: full
   categories: true
   sort-ui: true
   filter-ui: true
