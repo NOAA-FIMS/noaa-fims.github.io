@@ -373,7 +373,6 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 <!-- Skip to main content link for keyboard accessibility -->
-<a href="#quarto-content" class="skip-link">Skip to main content</a>
 <style>
 .skip-link {
   position: absolute;
@@ -394,6 +393,15 @@ ul.task-list li input[type="checkbox"] {
   outline-offset: 2px;
 }
 </style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const skipLink = document.createElement('a');
+    skipLink.href = '#quarto-content';
+    skipLink.className = 'skip-link';
+    skipLink.textContent = 'Skip to main content';
+    document.body.prepend(skipLink);
+  });
+</script>
 
 
 

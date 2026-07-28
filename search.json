@@ -4,35 +4,35 @@
     "href": "resources/resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nr4MAS\n\n\n\nSS3\n\n\n\nPackage to translate stock synthesis input files into MAS inputs\n\n\n\n\n\n\n\n\n\n\ncplusplus.com\n\n\n\nC++\n\ntraining\n\n\n\nA fast-paced, self-teaching tutorial covering the modern concepts of C++.\n\n\n\n\n\n\n\n\n\n\ngeeksforgeeks.org\n\n\n\nC++\n\ntraining\n\n\n\nFree online tutorials for many computer programming languages, including C++.\n\n\n\n\n\n\n\n\n\n\nlearncpp.com\n\n\n\nC++\n\ntraining\n\n\n\nSkill up with free C++ tutorials.\n\n\n\n\n\n\n\n\n\n\npositioniseverything.net\n\n\n\nC++\n\ntraining\n\n\n\nThe latest coding and computing news & tips for C++.\n\n\n\n\n\n\n\n\n\n\ndocs.microsoft.com\n\n\n\nC++\n\ndocumentation\n\n\n\nDocumentation for the C++ Standard Library, which contains functions that perform services such as input and output and provide efficient implementations of frequently used operations.\n\n\n\n\n\n\n\n\n\n\nrcpp.org\n\n\n\nRcpp\n\ntraining\n\n\n\nNumerous examples, as well as extensive documentation, to facilitate the use of Rcpp.\n\n\n\n\n\n\n\n\n\n\ngithub.com/RcppCore\n\n\n\nRcpp\n\ngithub\n\ndocumentation\n\n\n\nSource code for Rcpp.\n\n\n\n\n\n\n\n\n\n\nmjdenny.com\n\n\n\nRcpp\n\ntraining\n\n\n\nA tutorial that was originally presented as part of a 3-day intensive Data Science Workshop at UMass Amherst in June 2015 on using Rcpp.\n\n\n\n\n\n\n\n\n\n\nRcpp in Advanced R\n\n\n\nRcpp\n\n\n\nHigh performance functions with Rcpp within the Advanced R online resource by Hadley Wickham\n\n\n\n\n\n\n\n\n\n\nRcpp: Seamless R and C++ Integration\n\n\n\nRcpp\n\n\n\n“Eddelbuettel, D., & Francois, R. (2011). Rcpp: Seamless R and C++ Integration. Journal of Statistical Software, 40(8), 1–18. 10.18637/jss.v040.i08”\n\n\n\n\n\n\n\n\n\n\nRcpp for everyone\n\n\n\nRcpp\n\n\n\nRcpp for everyone by Masaki E. Tsuda focuses on providing necessary information to users who are not familiar with C++\n\n\n\n\n\n\n\n\n\n\nExposing C++ functions and classes with Rcpp modules\n\n\n\nRcpp\n\n\n\n‘Exposing C++ functions and classes with Rcpp modules’ by Dirk Eddelbuettel and Romain François focuses on Rcpp modules that allow programmers to expose C++ functions and classes to R with relative ease\n\n\n\n\n\n\n\n\n\n\nRcpp quick reference\n\n\n\nRcpp\n\n\n\nA short pdf produced by the authors of the Rcpp package that is analogous to a tidyverse cheat sheet\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nr4MAS\n\n\n\nSS3\n\n\n\nPackage to translate stock synthesis input files into MAS inputs\n\n\n\n\n\n\n\n\n\n\ncplusplus.com\n\n\n\nC++\n\ntraining\n\n\n\nA fast-paced, self-teaching tutorial covering the modern concepts of C++.\n\n\n\n\n\n\n\n\n\n\ngeeksforgeeks.org\n\n\n\nC++\n\ntraining\n\n\n\nFree online tutorials for many computer programming languages, including C++.\n\n\n\n\n\n\n\n\n\n\nlearncpp.com\n\n\n\nC++\n\ntraining\n\n\n\nSkill up with free C++ tutorials.\n\n\n\n\n\n\n\n\n\n\npositioniseverything.net\n\n\n\nC++\n\ntraining\n\n\n\nThe latest coding and computing news & tips for C++.\n\n\n\n\n\n\n\n\n\n\ndocs.microsoft.com\n\n\n\nC++\n\ndocumentation\n\n\n\nDocumentation for the C++ Standard Library, which contains functions that perform services such as input and output and provide efficient implementations of frequently used operations.\n\n\n\n\n\n\n\n\n\n\nrcpp.org\n\n\n\nRcpp\n\ntraining\n\n\n\nNumerous examples, as well as extensive documentation, to facilitate the use of Rcpp.\n\n\n\n\n\n\n\n\n\n\ngithub.com/RcppCore\n\n\n\nRcpp\n\ngithub\n\ndocumentation\n\n\n\nSource code for Rcpp.\n\n\n\n\n\n\n\n\n\n\nmjdenny.com\n\n\n\nRcpp\n\ntraining\n\n\n\nA tutorial that was originally presented as part of a 3-day intensive Data Science Workshop at UMass Amherst in June 2015 on using Rcpp.\n\n\n\n\n\n\n\n\n\n\nRcpp in Advanced R\n\n\n\nRcpp\n\n\n\nHigh performance functions with Rcpp within the Advanced R online resource by Hadley Wickham\n\n\n\n\n\n\n\n\n\n\nRcpp: Seamless R and C++ Integration\n\n\n\nRcpp\n\n\n\n“Eddelbuettel, D., & Francois, R. (2011). Rcpp: Seamless R and C++ Integration. Journal of Statistical Software, 40(8), 1–18. 10.18637/jss.v040.i08”\n\n\n\n\n\n\n\n\n\n\nRcpp for everyone\n\n\n\nRcpp\n\n\n\nRcpp for everyone by Masaki E. Tsuda focuses on providing necessary information to users who are not familiar with C++\n\n\n\n\n\n\n\n\n\n\nExposing C++ functions and classes with Rcpp modules\n\n\n\nRcpp\n\n\n\n‘Exposing C++ functions and classes with Rcpp modules’ by Dirk Eddelbuettel and Romain François focuses on Rcpp modules that allow programmers to expose C++ functions and classes to R with relative ease\n\n\n\n\n\n\n\n\n\n\nRcpp quick reference\n\n\n\nRcpp\n\n\n\nA short pdf produced by the authors of the Rcpp package that is analogous to a tidyverse cheat sheet\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resources/packages.html",
     "href": "resources/packages.html",
     "title": "FIMS R Packages",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFIMS\n\n\n\nvignettes\n\ndoxygen\n\nTMB\n\nC++\n\n\n\nThe primary package of FIMS\n\n\n\n\n\n\n\n\n\n\n\n\nFIMSdiags\n\n\n\ndiagnostics\n\n\n\nRun common diagnostic analyses on FIMS models\n\n\n\n\n\n\n\n\n\n\n\n\nFIMSRTMB\n\n\n\nTMB\n\nRTMB\n\n\n\nThe repository for development of the RTMB branch of FIMS\n\n\n\n\n\n\n\n\n\n\n\n\nstockplotr\n\n\n\ntables\n\nfigures\n\nreports\n\n\n\nTables and figures for the results of stock assessment models\n\n\n\n\n\n\n\n\n\n\n\n\nasar\n\n\n\nreports\n\nQuarto\n\n\n\nQuarto template files for a U.S. stock assessment report\n\n\n\n\n\n\n\n\n\n\n\n\nSparseNUTS\n\n\n\nMCMC\n\nTMB\n\nRTMB\n\nStan\n\n\n\nSparse no-U-turn sampling for TMB and RTMB models\n\n\n\n\n\n\n\n\n\n\n\n\nfims-pkgdown-template\n\n\n\npkgdown\n\ntemplate\n\n\n\nTemplate providing pkgdown theme files for FIMS R packages\n\n\n\n\n\n\n\n\n\n\n\n\necosystemom\n\n\n\nsimulation\n\necosystem\n\n\n\nEcosystem operating model. Generates data sets from ecosystem model scenarios for stock assessment models.\n\n\n\n\n\n\n\n\n\n\n\n\nfishprior\n\n\n\nBayesian\n\npriors\n\n\n\nAn R package to generate priors for models that assess the status of marine resources\n\n\n\n\n\nNo matching items"
+    "text": "FIMS\n\n\n\nvignettes\n\ndoxygen\n\nTMB\n\nC++\n\n\n\nThe primary package of FIMS\n\n\n\n\n\n\n\n\n\n\n\n\nFIMSdiags\n\n\n\ndiagnostics\n\n\n\nRun common diagnostic analyses on FIMS models\n\n\n\n\n\n\n\n\n\n\n\n\nFIMSRTMB\n\n\n\nTMB\n\nRTMB\n\n\n\nThe repository for development of the RTMB branch of FIMS\n\n\n\n\n\n\n\n\n\n\n\n\nstockplotr\n\n\n\ntables\n\nfigures\n\nreports\n\n\n\nTables and figures for the results of stock assessment models\n\n\n\n\n\n\n\n\n\n\n\n\nasar\n\n\n\nreports\n\nQuarto\n\n\n\nQuarto template files for a U.S. stock assessment report\n\n\n\n\n\n\n\n\n\n\n\n\nSparseNUTS\n\n\n\nMCMC\n\nTMB\n\nRTMB\n\nStan\n\n\n\nSparse no-U-turn sampling for TMB and RTMB models\n\n\n\n\n\n\n\n\n\n\n\n\nfims-pkgdown-template\n\n\n\npkgdown\n\ntemplate\n\n\n\nTemplate providing pkgdown theme files for FIMS R packages\n\n\n\n\n\n\n\n\n\n\n\n\necosystemom\n\n\n\nsimulation\n\necosystem\n\n\n\nEcosystem operating model. Generates data sets from ecosystem model scenarios for stock assessment models.\n\n\n\n\n\n\n\n\n\n\n\n\nfishprior\n\n\n\nBayesian\n\npriors\n\n\n\nAn R package to generate priors for models that assess the status of marine resources\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "contact/index.html",
     "href": "contact/index.html",
     "title": "Contact",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\n\nIf you have questions or comments about FIMS please contact the FIMS Project Lead or use the form below.\n\nThe embedded Google Form is available below. If the embedded form is difficult to use, open the FIMS contact form in a new tab.\n\nLoading…"
+    "text": "If you have questions or comments about FIMS please contact the FIMS Project Lead or use the form below.\n\nThe embedded Google Form is available below. If the embedded form is difficult to use, open the FIMS contact form in a new tab.\n\nLoading…"
   },
   {
     "objectID": "blog/renv_blog.html",
     "href": "blog/renv_blog.html",
     "title": "R Package Chaos, Solved",
     "section": "",
-    "text": "Skip to main content"
+    "text": "Typically, when you install an R package, you are installing it into a central library that is accessible for all R sessions on that computer. This generally will work but what happens when you are working on a project with someone else and they write some code but when you try to run it on your computer it doesn’t work. You get a confusing error message and spend hours trying to debug it, only to realize you are using an older version of a package than they are and an argument has changed in a function. You update that package to the newest version and everything runs fine. But, the next time you work on a different project, you realize that you actually need the older version of that package. This leads to a lot of frustration and having to remember to install and uninstall different versions of r packages or having to change your code. As the {FIMS} ecosystem grows and we encounter or anticipate these and similar situations, we have begun incorporating {renv} into our workflows to address certain challenges. The {renv} R package is a package manager that tracks and records all R packages used within a project and creates a project-specific package library. It makes each of your projects their own isolated, portable, and reproducible environment that can be shared easily with others. In our experience, three challenges in particular pushed us toward using {renv} for {FIMSdiags} and the case studies. The three challenges we faced were:\n\nCollaborating across different machines and operating systems\n\nManaging multiple versions of {FIMS}\n\nIntegrating {renv} into automated environments\n\n\n\n\nWithout {renv}, each environment maintains its own independent R library with no shared source of truth, leading to version conflicts across developers and machines. With {renv}, a single renv.lock file records exact package versions, keeping all environments in sync.\n\n\n\n\nBecause both projects are worked on by multiple developers on their local machines as well as in a codespace, we needed an easy way to make sure that each person is using the same version of all packages used when writing/running the code, without them having to change the version they have on their local machine. Before we started writing any code for {FIMSdiags}, we initialized an empty {renv} project (renv::init()). This created the key files needed to make everything work, namely the renv.lock file, activate.R, and the {renv} library. The renv.lock file contains all of the metadata for every package that is used in the project and is what is shared in the repository to make everything “work”. We decided later on to add {renv} to the case studies but the initial set up was generally the same. The only difference was that some packages used in the codebase were difficult to install automatically, so we installed those manually using renv::install().\n\n\n\n\n\n\nTip\n\n\n\nA benefit of using the install function through {renv} is that you can install packages from a variety of sources, including CRAN or Github, with the a single function.\n\n\nOnce a {renv} project has been initialized in a project, at the start of each work session, the developer makes sure their package library is up-to-date by running renv::status(). If no changes have been made to any of the R packages used, they will get a message saying their project is up to date, otherwise, they will see a message about it being out of sync. To fix this, they have two options, 1) if it is out of sync because they are missing some packages that are in the lockfile or have a different version, then they can use renv::restore() to install those missing packages or 2) if they have packages in their environment that aren’t recorded in the lockfile, they can use renv::snapshot() to add them into the lockfile. Think of restore as pulling from the lockfile and snapshot as writing to it. At the end of each session, any changes to the lockfile are pushed to the repository so that the next time someone is working on the code, they are using the same environment.\n\n\n\n{FIMS} is continuously in active development and since both projects rely heavily on {FIMS}, it’s really important that we are keeping track of what version of {FIMS} we are using. For example, when we are writing functions for {FIMSdiags} and find a bug in {FIMS}, we can switch to using the version with the fix until that fix is merged into the dev or main branch at a later time. Using the {renv} functions to install and update the lockfile with the specific version of {FIMS} makes this really easy to do. For the case studies, this challenge was more complex. We wanted to ensure there was always a version of the case studies that works with the stable version of {FIMS}, but we also want to be able to test them with features being added into the development branch of {FIMS}. To do this, we took advantage of its profiles feature to be able to seamlessly switch between multiple versions of {FIMS} for the case studies. We created two {renv} profiles, each with their own R libraries. The profiles are determined by which branch of the case studies repository you are working on. If your R session detects “main” in the branch name it will automatically use the default profile which uses the stable version of {FIMS}. Otherwise, it will activate the dev profile and therefore, the user will be using the development version of {FIMS}.\n\n\n\nWhen an R session starts in the case-studies repository, the .Rprofile detects the current branch and routes automatically to the matching {renv} profile — the default profile for the stable version of {FIMS}, or the dev profile for the development version.\n\n\n\n\n\nReducing friction for both developers and users was a priority. Ideally, {renv} should just work in the background without requiring anyone to think about it. We achieved this in three ways: automating profile switching, setting up the codespace to install packages on startup, and keeping the {renv} files out of the package build.\nSince the case studies are primarily for testing and educational purposes, we want the users to be able to focus on how to setup the {FIMS} model and the features they can use in them, not struggling with what version of {FIMS} (or other packages) they are using. The profile setting and switching happen automatically in the background, all done through the .Rprofile as shown below:\n\nbranch &lt;- Sys.getenv(\"GITHUB_REF_NAME\")\nif (branch == \"\") {\n  branch &lt;- system(\"git rev-parse --abbrev-ref HEAD\", intern = TRUE)\n}\nprofile &lt;- if (grepl(\"main\", branch)) \"default\" else \"dev\"\nSys.setenv(RENV_PROFILE = profile)\nsource(\"renv/activate.R\")\n\nThis also will recognize if the user has switched branches of the case studies and the {renv} profile will automatically change in their R session. Another example of reducing friction for developers is that when we are working on {FIMSdiags} in a codespace, we want the R packages to automatically be installed at the startup. To do this, in the devcontainer.json file we added\n\n\"postCreateCommand\": \"Rscript .devcontainer/setup.r\"\nand then the setup.r script is just:\n\n# Restore the renv packages on container build\nrenv::restore(prompt=FALSE)\n\nLastly, once we started building the package, we realized that the lockfile and other information were being included in the package during the R CMD build. We didn’t want this to happen because it will clutter the package and when a user installs the package, it will install the Dependencies for them which should be enough. To keep our {renv} library separate from the actual package, we just needed to add\n\n^renv$\n^renv\\.lock$\n\nto the .Rbuildignore file."
   },
   {
     "objectID": "blog/renv_blog.html#why-we-use-renv",
     "href": "blog/renv_blog.html#why-we-use-renv",
     "title": "R Package Chaos, Solved",
-    "section": "Why we use {renv}",
-    "text": "Why we use {renv}\nTypically, when you install an R package, you are installing it into a central library that is accessible for all R sessions on that computer. This generally will work but what happens when you are working on a project with someone else and they write some code but when you try to run it on your computer it doesn’t work. You get a confusing error message and spend hours trying to debug it, only to realize you are using an older version of a package than they are and an argument has changed in a function. You update that package to the newest version and everything runs fine. But, the next time you work on a different project, you realize that you actually need the older version of that package. This leads to a lot of frustration and having to remember to install and uninstall different versions of r packages or having to change your code. As the {FIMS} ecosystem grows and we encounter or anticipate these and similar situations, we have begun incorporating {renv} into our workflows to address certain challenges. The {renv} R package is a package manager that tracks and records all R packages used within a project and creates a project-specific package library. It makes each of your projects their own isolated, portable, and reproducible environment that can be shared easily with others. In our experience, three challenges in particular pushed us toward using {renv} for {FIMSdiags} and the case studies. The three challenges we faced were:\n\nCollaborating across different machines and operating systems\n\nManaging multiple versions of {FIMS}\n\nIntegrating {renv} into automated environments\n\n\n\n\nWithout {renv}, each environment maintains its own independent R library with no shared source of truth, leading to version conflicts across developers and machines. With {renv}, a single renv.lock file records exact package versions, keeping all environments in sync.\n\n\n\nMulti-developer and multi-platform collaboration\nBecause both projects are worked on by multiple developers on their local machines as well as in a codespace, we needed an easy way to make sure that each person is using the same version of all packages used when writing/running the code, without them having to change the version they have on their local machine. Before we started writing any code for {FIMSdiags}, we initialized an empty {renv} project (renv::init()). This created the key files needed to make everything work, namely the renv.lock file, activate.R, and the {renv} library. The renv.lock file contains all of the metadata for every package that is used in the project and is what is shared in the repository to make everything “work”. We decided later on to add {renv} to the case studies but the initial set up was generally the same. The only difference was that some packages used in the codebase were difficult to install automatically, so we installed those manually using renv::install().\n\n\n\n\n\n\nTip\n\n\n\nA benefit of using the install function through {renv} is that you can install packages from a variety of sources, including CRAN or Github, with the a single function.\n\n\nOnce a {renv} project has been initialized in a project, at the start of each work session, the developer makes sure their package library is up-to-date by running renv::status(). If no changes have been made to any of the R packages used, they will get a message saying their project is up to date, otherwise, they will see a message about it being out of sync. To fix this, they have two options, 1) if it is out of sync because they are missing some packages that are in the lockfile or have a different version, then they can use renv::restore() to install those missing packages or 2) if they have packages in their environment that aren’t recorded in the lockfile, they can use renv::snapshot() to add them into the lockfile. Think of restore as pulling from the lockfile and snapshot as writing to it. At the end of each session, any changes to the lockfile are pushed to the repository so that the next time someone is working on the code, they are using the same environment.\n\n\nManaging multiple versions of {FIMS}\n{FIMS} is continuously in active development and since both projects rely heavily on {FIMS}, it’s really important that we are keeping track of what version of {FIMS} we are using. For example, when we are writing functions for {FIMSdiags} and find a bug in {FIMS}, we can switch to using the version with the fix until that fix is merged into the dev or main branch at a later time. Using the {renv} functions to install and update the lockfile with the specific version of {FIMS} makes this really easy to do. For the case studies, this challenge was more complex. We wanted to ensure there was always a version of the case studies that works with the stable version of {FIMS}, but we also want to be able to test them with features being added into the development branch of {FIMS}. To do this, we took advantage of its profiles feature to be able to seamlessly switch between multiple versions of {FIMS} for the case studies. We created two {renv} profiles, each with their own R libraries. The profiles are determined by which branch of the case studies repository you are working on. If your R session detects “main” in the branch name it will automatically use the default profile which uses the stable version of {FIMS}. Otherwise, it will activate the dev profile and therefore, the user will be using the development version of {FIMS}.\n\n\n\nWhen an R session starts in the case-studies repository, the .Rprofile detects the current branch and routes automatically to the matching {renv} profile — the default profile for the stable version of {FIMS}, or the dev profile for the development version.\n\n\n\n\nIntegrating {renv} into automated environments\nReducing friction for both developers and users was a priority. Ideally, {renv} should just work in the background without requiring anyone to think about it. We achieved this in three ways: automating profile switching, setting up the codespace to install packages on startup, and keeping the {renv} files out of the package build.\nSince the case studies are primarily for testing and educational purposes, we want the users to be able to focus on how to setup the {FIMS} model and the features they can use in them, not struggling with what version of {FIMS} (or other packages) they are using. The profile setting and switching happen automatically in the background, all done through the .Rprofile as shown below:\n\nbranch &lt;- Sys.getenv(\"GITHUB_REF_NAME\")\nif (branch == \"\") {\n  branch &lt;- system(\"git rev-parse --abbrev-ref HEAD\", intern = TRUE)\n}\nprofile &lt;- if (grepl(\"main\", branch)) \"default\" else \"dev\"\nSys.setenv(RENV_PROFILE = profile)\nsource(\"renv/activate.R\")\n\nThis also will recognize if the user has switched branches of the case studies and the {renv} profile will automatically change in their R session. Another example of reducing friction for developers is that when we are working on {FIMSdiags} in a codespace, we want the R packages to automatically be installed at the startup. To do this, in the devcontainer.json file we added\n\n\"postCreateCommand\": \"Rscript .devcontainer/setup.r\"\nand then the setup.r script is just:\n\n# Restore the renv packages on container build\nrenv::restore(prompt=FALSE)\n\nLastly, once we started building the package, we realized that the lockfile and other information were being included in the package during the R CMD build. We didn’t want this to happen because it will clutter the package and when a user installs the package, it will install the Dependencies for them which should be enough. To keep our {renv} library separate from the actual package, we just needed to add\n\n^renv$\n^renv\\.lock$\n\nto the .Rbuildignore file."
+    "section": "",
+    "text": "Typically, when you install an R package, you are installing it into a central library that is accessible for all R sessions on that computer. This generally will work but what happens when you are working on a project with someone else and they write some code but when you try to run it on your computer it doesn’t work. You get a confusing error message and spend hours trying to debug it, only to realize you are using an older version of a package than they are and an argument has changed in a function. You update that package to the newest version and everything runs fine. But, the next time you work on a different project, you realize that you actually need the older version of that package. This leads to a lot of frustration and having to remember to install and uninstall different versions of r packages or having to change your code. As the {FIMS} ecosystem grows and we encounter or anticipate these and similar situations, we have begun incorporating {renv} into our workflows to address certain challenges. The {renv} R package is a package manager that tracks and records all R packages used within a project and creates a project-specific package library. It makes each of your projects their own isolated, portable, and reproducible environment that can be shared easily with others. In our experience, three challenges in particular pushed us toward using {renv} for {FIMSdiags} and the case studies. The three challenges we faced were:\n\nCollaborating across different machines and operating systems\n\nManaging multiple versions of {FIMS}\n\nIntegrating {renv} into automated environments\n\n\n\n\nWithout {renv}, each environment maintains its own independent R library with no shared source of truth, leading to version conflicts across developers and machines. With {renv}, a single renv.lock file records exact package versions, keeping all environments in sync.\n\n\n\n\nBecause both projects are worked on by multiple developers on their local machines as well as in a codespace, we needed an easy way to make sure that each person is using the same version of all packages used when writing/running the code, without them having to change the version they have on their local machine. Before we started writing any code for {FIMSdiags}, we initialized an empty {renv} project (renv::init()). This created the key files needed to make everything work, namely the renv.lock file, activate.R, and the {renv} library. The renv.lock file contains all of the metadata for every package that is used in the project and is what is shared in the repository to make everything “work”. We decided later on to add {renv} to the case studies but the initial set up was generally the same. The only difference was that some packages used in the codebase were difficult to install automatically, so we installed those manually using renv::install().\n\n\n\n\n\n\nTip\n\n\n\nA benefit of using the install function through {renv} is that you can install packages from a variety of sources, including CRAN or Github, with the a single function.\n\n\nOnce a {renv} project has been initialized in a project, at the start of each work session, the developer makes sure their package library is up-to-date by running renv::status(). If no changes have been made to any of the R packages used, they will get a message saying their project is up to date, otherwise, they will see a message about it being out of sync. To fix this, they have two options, 1) if it is out of sync because they are missing some packages that are in the lockfile or have a different version, then they can use renv::restore() to install those missing packages or 2) if they have packages in their environment that aren’t recorded in the lockfile, they can use renv::snapshot() to add them into the lockfile. Think of restore as pulling from the lockfile and snapshot as writing to it. At the end of each session, any changes to the lockfile are pushed to the repository so that the next time someone is working on the code, they are using the same environment.\n\n\n\n{FIMS} is continuously in active development and since both projects rely heavily on {FIMS}, it’s really important that we are keeping track of what version of {FIMS} we are using. For example, when we are writing functions for {FIMSdiags} and find a bug in {FIMS}, we can switch to using the version with the fix until that fix is merged into the dev or main branch at a later time. Using the {renv} functions to install and update the lockfile with the specific version of {FIMS} makes this really easy to do. For the case studies, this challenge was more complex. We wanted to ensure there was always a version of the case studies that works with the stable version of {FIMS}, but we also want to be able to test them with features being added into the development branch of {FIMS}. To do this, we took advantage of its profiles feature to be able to seamlessly switch between multiple versions of {FIMS} for the case studies. We created two {renv} profiles, each with their own R libraries. The profiles are determined by which branch of the case studies repository you are working on. If your R session detects “main” in the branch name it will automatically use the default profile which uses the stable version of {FIMS}. Otherwise, it will activate the dev profile and therefore, the user will be using the development version of {FIMS}.\n\n\n\nWhen an R session starts in the case-studies repository, the .Rprofile detects the current branch and routes automatically to the matching {renv} profile — the default profile for the stable version of {FIMS}, or the dev profile for the development version.\n\n\n\n\n\nReducing friction for both developers and users was a priority. Ideally, {renv} should just work in the background without requiring anyone to think about it. We achieved this in three ways: automating profile switching, setting up the codespace to install packages on startup, and keeping the {renv} files out of the package build.\nSince the case studies are primarily for testing and educational purposes, we want the users to be able to focus on how to setup the {FIMS} model and the features they can use in them, not struggling with what version of {FIMS} (or other packages) they are using. The profile setting and switching happen automatically in the background, all done through the .Rprofile as shown below:\n\nbranch &lt;- Sys.getenv(\"GITHUB_REF_NAME\")\nif (branch == \"\") {\n  branch &lt;- system(\"git rev-parse --abbrev-ref HEAD\", intern = TRUE)\n}\nprofile &lt;- if (grepl(\"main\", branch)) \"default\" else \"dev\"\nSys.setenv(RENV_PROFILE = profile)\nsource(\"renv/activate.R\")\n\nThis also will recognize if the user has switched branches of the case studies and the {renv} profile will automatically change in their R session. Another example of reducing friction for developers is that when we are working on {FIMSdiags} in a codespace, we want the R packages to automatically be installed at the startup. To do this, in the devcontainer.json file we added\n\n\"postCreateCommand\": \"Rscript .devcontainer/setup.r\"\nand then the setup.r script is just:\n\n# Restore the renv packages on container build\nrenv::restore(prompt=FALSE)\n\nLastly, once we started building the package, we realized that the lockfile and other information were being included in the package during the R CMD build. We didn’t want this to happen because it will clutter the package and when a user installs the package, it will install the Dependencies for them which should be enough. To keep our {renv} library separate from the actual package, we just needed to add\n\n^renv$\n^renv\\.lock$\n\nto the .Rbuildignore file."
   },
   {
     "objectID": "blog/renv_blog.html#takeaways",
@@ -40,13 +40,6 @@
     "title": "R Package Chaos, Solved",
     "section": "Takeaways",
     "text": "Takeaways\nBy incorporating {renv} into our workflows, we’ve tackled three challenges that are common in collaborative, multi-platform development: keeping environments consistent across developers and operating systems, managing multiple versions of an actively-developing dependency, and making all of this happen automatically so that developers and users can focus on the work itself. The result is a codebase that is easier to share, easier to reproduce, and easier to maintain as both projects continue to grow."
-  },
-  {
-    "objectID": "blog/fims-weekly-template.html",
-    "href": "blog/fims-weekly-template.html",
-    "title": "FIMS",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/fims-weekly-template.html#fims-announcements",
@@ -74,7 +67,7 @@
     "href": "blog/fims-cie.html",
     "title": "FIMS CIE Review",
     "section": "",
-    "text": "Skip to main content\nOn April 21–23, 2026 the Fisheries Integrated Modeling System (FIMS) underwent a review by the Center for Independent Experts. Reviewers included Dr. Steven Holmes (Earth Sciences New Zealand), Dr. Daniel Howell (Institute of Marine Research), and Dr. Kotaro Ono (Institute of Marine Research), and, Dr. Aaron Berger (Northwest Fisheries Science Center) served as the Chair. In summary, it was concluded that FIMS is on track for success and it was recommended that FIMS be applied to a limited number of well-chosen, simple stock assessments in the immediate future."
+    "text": "On April 21–23, 2026 the Fisheries Integrated Modeling System (FIMS) underwent a review by the Center for Independent Experts. Reviewers included Dr. Steven Holmes (Earth Sciences New Zealand), Dr. Daniel Howell (Institute of Marine Research), and Dr. Kotaro Ono (Institute of Marine Research), and, Dr. Aaron Berger (Northwest Fisheries Science Center) served as the Chair. In summary, it was concluded that FIMS is on track for success and it was recommended that FIMS be applied to a limited number of well-chosen, simple stock assessments in the immediate future."
   },
   {
     "objectID": "blog/fims-cie.html#background",
@@ -105,13 +98,6 @@
     "text": "Conclusion\nSince the conclusion of the CIE Review we have actively begun work on advancing the projections capability and adding sex structure to the model. Please contact the developers if you are interested in helping to add timing capabilities to the model so FIMS is better equipped to fit more data types.\nThank you to everyone who has put in years of work getting FIMS to the point that it is now and to those who presented at the CIE Review allowing us to showcase all that we have accomplished. The review was a success because of your dedication to this project.\nWe are also thankful to all of the beta testers that have given helpful feedback along the way. Remember, we are not building FIMS for the Implementation Team, we are building FIMS for you. So, all feedback is highly valued and we encourage you to add the FIMS calendar to your Google calendar so you can join our Code Club sessions. If you have data you would like to fit with a FIMS model, please feel free to post an issue on GitHub, join a Code Club, or contact us through our online form."
   },
   {
-    "objectID": "blog/12.29.2025.html",
-    "href": "blog/12.29.2025.html",
-    "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/12.29.2025.html#fims-announcements",
     "href": "blog/12.29.2025.html#fims-announcements",
     "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
@@ -131,13 +117,6 @@
     "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nAs a great way to visually show off code to create a {ggplot2} figure, there is a newer package out called ggram that displays the code used to create a figure alongside the figure itself using {patchwork}. This could be a unique way to display figures in training materials such as vignettes, especially vignettes that are meant to be displayed as presentations."
-  },
-  {
-    "objectID": "blog/12.15.2025.html",
-    "href": "blog/12.15.2025.html",
-    "title": "FIMS Weekly - December 15–19, 2025",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/12.15.2025.html#fims-announcements",
@@ -161,13 +140,6 @@
     "text": "PHOTO OF THE WEEK\nHas anyone heard of {fastverse} before? It appears to be a {tidyverse} style group of packages built on C++ code that is meant for quick analyses of data, unlike traditional tidyverse packages that are known to be easy to understand but slow. See the code below for installation and feel free to start a Discussion on GitHub about the packages if they seem useful, especially as our input and output data frames become larger.\n\n# Install the CRAN version\ninstall.packages(\"fastverse\")\n\n# Install (Windows/Mac binaries) from R-universe\ninstall.packages(\"fastverse\", repos = \"https://fastverse.r-universe.dev\")\n\n# Install from GitHub (requires compilation)\nremotes::install_github(\"fastverse/fastverse\")"
   },
   {
-    "objectID": "blog/12.01.2025.html",
-    "href": "blog/12.01.2025.html",
-    "title": "FIMS Weekly - December 01–05, 2025",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/12.01.2025.html#fims-announcements",
     "href": "blog/12.01.2025.html#fims-announcements",
     "title": "FIMS Weekly - December 01–05, 2025",
@@ -187,13 +159,6 @@
     "title": "FIMS Weekly - December 01–05, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nThank you to Alex and Peter for helping fix up the FIMS cheat sheet last week. Below is a screen shot of the updates made with respect to what the table of parameters looks like."
-  },
-  {
-    "objectID": "blog/11.17.2025.html",
-    "href": "blog/11.17.2025.html",
-    "title": "FIMS Weekly - November 17–21, 2025",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/11.17.2025.html#fims-announcements",
@@ -217,13 +182,6 @@
     "text": "PHOTO OF THE WEEK\nAs we update our website to be the best ‘community playbook’ that it can be, we will be adding some icons to titles to help users of all types navigate the pages. Look for each of the icons throughout this site based on which type of information you are looking for.\n\n Developer  New User  Power User  Receiver of Results"
   },
   {
-    "objectID": "blog/09.21.2025.html",
-    "href": "blog/09.21.2025.html",
-    "title": "FIMS Weekly - September 21–26, 2025",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/09.21.2025.html#fims-announcements",
     "href": "blog/09.21.2025.html#fims-announcements",
     "title": "FIMS Weekly - September 21–26, 2025",
@@ -243,13 +201,6 @@
     "title": "FIMS Weekly - September 21–26, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\ndoxygen use to be so foreign to me and I wished we could just use roxygen😒. Now, I feel more at home with doxygen and have even learned some tips (see below) to making it better and feel more roxygen like✅.\n\n// To make a table of contents in a .md file\n[TOC]\n\n// Copy documentation from another function\n@copydoc MyFunctionName\n\n// Link to a function or file\n`FunctionName()` `my_file.hpp`\n\n// Insert an inline or block equation\n\\f$a-b=c/f$\n\\f[ \\text{best} = \\alpha - \\beta \\f]"
-  },
-  {
-    "objectID": "blog/09.08.2025.html",
-    "href": "blog/09.08.2025.html",
-    "title": "FIMS Weekly - September 08–12, 2025",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/09.08.2025.html#fims-announcements",
@@ -273,13 +224,6 @@
     "text": "PHOTO OF THE WEEK\nLast week I showed the json output for dimensionality, this week I show the tidyverse code to create a tibble from that same information.\n\n#' Covert the dimension information from a FIMS json output into a tibble\n#'\n#' Dimensions in the json output are stored as a list of length two, with the\n#' header information containing the name of the dimension and the dimensions\n#' containing integers specifying the length for each dimension. The result\n#' helps interpret how the FIMS output is structured given it is dimension\n#' folded into a single vector in the json output.\n#'\n#' @param data A list containing the header and dimensions information from a\n#'   FIMS json output object.\n#' @return\n#' A tibble containing ordered rows for each combination of the dimensions.\n#' @examples\n#' dummy_dimensions &lt;- list(\n#'   header = list(\"nyears\", \"nages\"),\n#'   dimensions = list(30L, 12L)\n#' )\n#' dimensions_to_tibble(dummy_dimensions)\ndimensions_to_tibble &lt;- function(data) {\n  # Create names that are informative for columns b/c nyears is not helpful\n  better_names &lt;- unlist(data[[\"header\"]]) |&gt;\n    gsub(pattern = \"^n(.+)s$\", replacement = \"\\\\1_ids\")\n  names(data[[\"dimensions\"]]) &lt;- better_names\n  # Create the returned tibble by first sequencing from 1:n for each dimension\n  data[[\"dimensions\"]] |&gt;\n    purrr::map(seq) |&gt;\n    expand.grid() |&gt;\n    tibble::as_tibble() |&gt;\n    dplyr::arrange(!!! rlang::syms(better_names))\n}"
   },
   {
-    "objectID": "blog/08.25.2025.html",
-    "href": "blog/08.25.2025.html",
-    "title": "FIMS Weekly - August 25–29, 2025",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/08.25.2025.html#fims-announcements",
     "href": "blog/08.25.2025.html#fims-announcements",
     "title": "FIMS Weekly - August 25–29, 2025",
@@ -299,13 +243,6 @@
     "title": "FIMS Weekly - August 25–29, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nI recently learned about Deep Wiki where you can view a Wiki about any repository that is available on GitHub. I looked to see what Deep Wiki had to say about FIMS and first found it was not indexed but all it took to change that was proving my email. Within minutes, FIMS had its own page. Several diagrams were generated but the one that I thought was the most helpful (see below) summarized what is available in the main branch for the C++ code. I think this image will be extremely helpful as FIMS becomes more complex. I just wish I knew how we can create it dynamically ☹️"
-  },
-  {
-    "objectID": "blog/08.11.2025.html",
-    "href": "blog/08.11.2025.html",
-    "title": "FIMS Weekly - August 11–15, 2025",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/08.11.2025.html#fims-announcements",
@@ -329,13 +266,6 @@
     "text": "PHOTO OF THE WEEK\nDuring our GitHub training with Microsoft, Bai asked a ❓about git worktrees that kind of blew my mind. I had yet to understand the full question or the response but last week with the new version of VS Code that was released it started to make sense. VS Code now has support for git worktrees, where worktrees let you check out multiple branches at once within a single clone. This stops the need for having multiple clones of the same repository on a single computer. IMO this is genius. I am constantly making bogus commits or stashing things that I later forgot that I stashed so I can check out a different branch, do one thing, and then switch back to the other branch. Or worse yet, I am on a branch and want to see a file in a different branch so I go online copy and paste the raw text from the “other” branch that I am interested in and then put it in a new file in VS Code. All of these alternates are suboptimal and have led to 🧨, which is obviously not good. I am excited to check out the use of worktrees and if it goes well maybe we can get Jonathan to do a GitHub training on them. First, I had to click on the three dots to the right of “SOURCE CONTROL” and add “Repositories” to what was being shown in my “SOURCE CONTROL” section of VS Code. Second, I clicked the three dots to the left of REPOSITORIES/FIMS, where I currently have dev-fix-exp-TMBad checked out, which brought up a list where I selected Worktrees -&gt; Create Worktree and let me select an additional branch. I chose dev. Now you can see dev is a worktree in the list under FIMS. This is as far as I have gotten in my 🛣️."
   },
   {
-    "objectID": "blog/07.28.2025.html",
-    "href": "blog/07.28.2025.html",
-    "title": "FIMS Weekly - July 28–August 1, 2025",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/07.28.2025.html#fims-announcements",
     "href": "blog/07.28.2025.html#fims-announcements",
     "title": "FIMS Weekly - July 28–August 1, 2025",
@@ -355,13 +285,6 @@
     "title": "FIMS Weekly - July 28–August 1, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
-  },
-  {
-    "objectID": "blog/05.18.2026.html",
-    "href": "blog/05.18.2026.html",
-    "title": "FIMS Weekly - May 18–22, 2026",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/05.18.2026.html#fims-announcements",
@@ -385,13 +308,6 @@
     "text": "PHOTO OF THE WEEK\nThis will be the last FIMS Weekly for a while as we test out using the GitHub Discussion Board to post weekly summaries. Using GitHub Discussions will allow everyone with a GitHub account to subscribe (or unsubscribe 🙁) to the specific GitHub Discussion Thread without requiring us to set up a list serve. The thread is called Project Updates and it exists in the Announcement section. Please navigate to the link and click ‘Subscribe’ if you aren’t already subscribed to all FIMS Discussions. See the image for where the subscribe button is located."
   },
   {
-    "objectID": "blog/05.04.2026.html",
-    "href": "blog/05.04.2026.html",
-    "title": "FIMS Weekly - May 04–08, 2026",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/05.04.2026.html#fims-announcements",
     "href": "blog/05.04.2026.html#fims-announcements",
     "title": "FIMS Weekly - May 04–08, 2026",
@@ -411,13 +327,6 @@
     "title": "FIMS Weekly - May 04–08, 2026",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nClose-kin mark recapture (CKMR) was recently added to the Beaufort Assessment Model (BAM) for the assessment of red snapper, where DNA is used to identify family relationships or next of kin. The photograph below is a DNA sample of red snapper by Liam Kehoe, you can read about Liam’s story and view the photo on the Florida Sea Grant website. Liam Kehoe is a 2024 NMFS-Sea Grant fellow. Please let me know if you have ideas regarding CKMR and FIMS."
-  },
-  {
-    "objectID": "blog/04.20.2026.html",
-    "href": "blog/04.20.2026.html",
-    "title": "FIMS Weekly - April 20–24, 2026",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/04.20.2026.html#fims-announcements",
@@ -441,13 +350,6 @@
     "text": "PHOTO OF THE WEEK\nA recent PR came in that changes our spell checker from the one provided by ghactions4r, which uses {spelling}, to one that uses cspell and does not require installing R. This new action requires fewer words in the WORDLIST and will hopefully be easier to maintain given that we have both snake_case and PascalCase code. Locally, you can use the code below to learn more about cspell and how to check your files for spelling errors.\n\ncspell lint --help"
   },
   {
-    "objectID": "blog/04.06.2026.html",
-    "href": "blog/04.06.2026.html",
-    "title": "FIMS Weekly - April 06–10, 2026",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/04.06.2026.html#fims-announcements",
     "href": "blog/04.06.2026.html#fims-announcements",
     "title": "FIMS Weekly - April 06–10, 2026",
@@ -467,13 +369,6 @@
     "title": "FIMS Weekly - April 06–10, 2026",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nElizabeth and others worked a few weeks ago on editing an infographic to display user pathways. The work is now live on the FIMS organization website. Please feel to provide comments to Elizabeth if you have more ideas."
-  },
-  {
-    "objectID": "blog/03.23.2026.html",
-    "href": "blog/03.23.2026.html",
-    "title": "FIMS Weekly - March 23–27, 2026",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/03.23.2026.html#fims-announcements",
@@ -497,13 +392,6 @@
     "text": "PHOTO OF THE WEEK\nThe tests for new convergence functions use a mocking structure so we can test the individual function without having to run a FIMS model. You can read more about mocking on the testthat github page. I think that mocking might be helpful for more tests in FIMS to increase coverage but keep the tests running fast.\n\ntest_that(\"check_sdreport_convergence() returns correct outputs for edge cases\", {\n  #' @description Test that `check_sdreport_convergence()` gracefully handles when summary extraction throws an error.\n  obj &lt;- make_mock_obj(random = 1)\n  opt &lt;- list(par = numeric())\n  sdreport &lt;- make_mock_sdreport(\n    pdHess = TRUE,\n    fail_on = \"fixed\"\n  )\n  register_mock_sdreport_summary()\n\n  expect_warning(\n    object = FIMS:::check_sdreport_convergence(list(), obj, opt, sdreport),\n    regexp = \"Unable to extract summary from sdreport\"\n  )\n})"
   },
   {
-    "objectID": "blog/03.09.2026.html",
-    "href": "blog/03.09.2026.html",
-    "title": "FIMS Weekly - March 09–13, 2026",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/03.09.2026.html#fims-announcements",
     "href": "blog/03.09.2026.html#fims-announcements",
     "title": "FIMS Weekly - March 09–13, 2026",
@@ -523,13 +411,6 @@
     "title": "FIMS Weekly - March 09–13, 2026",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nBai recently experimented with using quarto to write a manuscript and found the template for Elsevier Journals easy to use. All the code is on GitHub and you can implement the template in your own repo with the following, single, line of code within a terminal. Quarto also provides templates for other journals and information regarding how to use templates on their website. Thank you Bai for sharing.\n\nquarto use template quarto-journals/elsevier"
-  },
-  {
-    "objectID": "blog/02.23.2026.html",
-    "href": "blog/02.23.2026.html",
-    "title": "FIMS Weekly - February 23–27, 2026",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/02.23.2026.html#fims-announcements",
@@ -553,13 +434,6 @@
     "text": "PHOTO OF THE WEEK\nOur cheatsheet is now live in the FIMS package."
   },
   {
-    "objectID": "blog/02.09.2026.html",
-    "href": "blog/02.09.2026.html",
-    "title": "FIMS Weekly - February 09–13, 2026",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/02.09.2026.html#fims-announcements",
     "href": "blog/02.09.2026.html#fims-announcements",
     "title": "FIMS Weekly - February 09–13, 2026",
@@ -581,13 +455,6 @@
     "text": "PHOTO OF THE WEEK\nIn the dev-hake branch, we now have the ability to estimate parameters using a time-varying vector. Below is code to set the initial values and estimation type. We need to decide as a group what would be the best way for non-power users to interact with time-varying parameters.\n\n# Resize the parameter vector\nfleet_selectivity$inflection_point$resize(get_n_years(data_4_model))\n# Set the initial value of each element of the vector to be one and\n# estimate it as a fixed effect\nfor (ii in seq(get_n_years(data_4_model))) {\n  fleet_selectivity$inflection_point[ii]$value &lt;- 1\n  fleet_selectivity$inflection_point[ii]$estimation_type$set(\"fixed_effects\")\n}"
   },
   {
-    "objectID": "blog/01.26.2026.html",
-    "href": "blog/01.26.2026.html",
-    "title": "FIMS Weekly - January 26–30, 2026",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/01.26.2026.html#fims-announcements",
     "href": "blog/01.26.2026.html#fims-announcements",
     "title": "FIMS Weekly - January 26–30, 2026",
@@ -607,13 +474,6 @@
     "title": "FIMS Weekly - January 26–30, 2026",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nTo add ten years of projections onto your time series you can use FIMS::FIMSFrame() to add -999 to all of your data streams by just adding a single year of -999 for any type with the maximum year that you want to project to. See the code below for an example, which was taken from the projections vignette. Now we need to think carefully about the default uncertainty values for the -999 in each type.\n\ndata(\"data1\", package = \"FIMS\")\nyears_of_projections &lt;- 10\ndata1_with_extra_year &lt;- dplyr::add_row(\n  data1,\n  type = \"landings\",\n  timing = get_end_year(data_4_model) + years_of_projection,\n  name = \"fleet1\",\n  value = -999,\n  unit = \"mt\"\n) |&gt;\n  # Make a FIMSFrame object out of this data frame with the extra row to add all\n  # of the other missing years for each data type\n  FIMSFrame()"
-  },
-  {
-    "objectID": "blog/01.12.2026.html",
-    "href": "blog/01.12.2026.html",
-    "title": "FIMS Weekly - January 12–16, 2026",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/01.12.2026.html#fims-announcements",
@@ -641,14 +501,14 @@
     "href": "about/index.html",
     "title": "About FIMS",
     "section": "",
-    "text": "Skip to main content"
+    "text": "The mission of the Fisheries Integrated Modeling System (FIMS) is to enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs.\n\n\n\nWe aim to accomplish our mission with a user-friendly stock assessment tool that streamlines the development and application of scientific advice to inform current and future management needs of NOAA Fisheries’ regions.\n\n\n\n\nFIMS meets the needs of operational stock assessments across regions, scenarios, and data types and levels to provide scientific advice to management bodies.\nFIMS implements practical and robust methods from ecology, statistics, computer science, and mathematical modeling.\nFIMS estimates and projects population trajectories and can estimate parameters and uncertainty accurately and reliably in simulated conditions.\nUsers spanning different levels of expertise can run a model within FIMS.\nFIMS welcomes and incorporates user, developer, and community contributions and feedback to shape design decisions and priorities, in accordance with open source principles, and communicates progress, key findings, and advancements back.\nFIMS is flexible enough to adapt to future management needs, new technical developments and data sources, and observational data types and supports the NOAA Open Science Initiative."
   },
   {
     "objectID": "about/index.html#mission",
     "href": "about/index.html#mission",
     "title": "About FIMS",
-    "section": "Mission",
-    "text": "Mission\n\nMission statement\nThe mission of the Fisheries Integrated Modeling System (FIMS) is to enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs.\n\n\nVision statement\nWe aim to accomplish our mission with a user-friendly stock assessment tool that streamlines the development and application of scientific advice to inform current and future management needs of NOAA Fisheries’ regions.\n\n\nPriorities\n\nFIMS meets the needs of operational stock assessments across regions, scenarios, and data types and levels to provide scientific advice to management bodies.\nFIMS implements practical and robust methods from ecology, statistics, computer science, and mathematical modeling.\nFIMS estimates and projects population trajectories and can estimate parameters and uncertainty accurately and reliably in simulated conditions.\nUsers spanning different levels of expertise can run a model within FIMS.\nFIMS welcomes and incorporates user, developer, and community contributions and feedback to shape design decisions and priorities, in accordance with open source principles, and communicates progress, key findings, and advancements back.\nFIMS is flexible enough to adapt to future management needs, new technical developments and data sources, and observational data types and supports the NOAA Open Science Initiative."
+    "section": "",
+    "text": "The mission of the Fisheries Integrated Modeling System (FIMS) is to enhance the connection of models used to assess the status of managed fish stocks to ecosystem, climate, and socioeconomic factors while meeting current management needs.\n\n\n\nWe aim to accomplish our mission with a user-friendly stock assessment tool that streamlines the development and application of scientific advice to inform current and future management needs of NOAA Fisheries’ regions.\n\n\n\n\nFIMS meets the needs of operational stock assessments across regions, scenarios, and data types and levels to provide scientific advice to management bodies.\nFIMS implements practical and robust methods from ecology, statistics, computer science, and mathematical modeling.\nFIMS estimates and projects population trajectories and can estimate parameters and uncertainty accurately and reliably in simulated conditions.\nUsers spanning different levels of expertise can run a model within FIMS.\nFIMS welcomes and incorporates user, developer, and community contributions and feedback to shape design decisions and priorities, in accordance with open source principles, and communicates progress, key findings, and advancements back.\nFIMS is flexible enough to adapt to future management needs, new technical developments and data sources, and observational data types and supports the NOAA Open Science Initiative."
   },
   {
     "objectID": "about/index.html#why-fims",
@@ -676,21 +536,21 @@
     "href": "about/calendar.html",
     "title": "FIMS Calendar",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nFIMS has both recurring meetings, such as FIMS Code Club and FIMS Implementation Team meetings, and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If a meeting is public, the description includes a Google Meet link.\nLet us know on the contact page if there are meetings you are interested in joining, since not all meeting links are provided in the calendar. Implementation Team meetings are currently limited to Implementation Team members.\nIf the embedded calendar is difficult to use, open the FIMS Community Calendar in a new tab.\nAdd the FIMS calendar to your own calendar by selecting Add to calendar at the bottom of the embedded calendar."
+    "text": "FIMS has both recurring meetings, such as FIMS Code Club and FIMS Implementation Team meetings, and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If a meeting is public, the description includes a Google Meet link.\nLet us know on the contact page if there are meetings you are interested in joining, since not all meeting links are provided in the calendar. Implementation Team meetings are currently limited to Implementation Team members.\nIf the embedded calendar is difficult to use, open the FIMS Community Calendar in a new tab.\nAdd the FIMS calendar to your own calendar by selecting Add to calendar at the bottom of the embedded calendar."
   },
   {
     "objectID": "about/FIMS_CHANGELOG.html",
     "href": "about/FIMS_CHANGELOG.html",
     "title": "FIMS Change Log",
     "section": "",
-    "text": "Skip to main content"
+    "text": "Reduce verbose FIMS logging and refine messages by @msupernaw\nCleans up integration tests after switching log_devs to random effects by @Andrea-Havron-NOAA\nRevert some changes that eliminated compiler warnings because they were causing tests to fail but not R CMD check\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.9.2…v0.9.3"
   },
   {
     "objectID": "about/FIMS_CHANGELOG.html#v0.9.3-release-notes",
     "href": "about/FIMS_CHANGELOG.html#v0.9.3-release-notes",
     "title": "FIMS Change Log",
-    "section": "v0.9.3 (release notes)",
-    "text": "v0.9.3 (release notes)\n\nWhat’s Changed\n\nReduce verbose FIMS logging and refine messages by @msupernaw\nCleans up integration tests after switching log_devs to random effects by @Andrea-Havron-NOAA\nRevert some changes that eliminated compiler warnings because they were causing tests to fail but not R CMD check\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.9.2…v0.9.3"
+    "section": "",
+    "text": "Reduce verbose FIMS logging and refine messages by @msupernaw\nCleans up integration tests after switching log_devs to random effects by @Andrea-Havron-NOAA\nRevert some changes that eliminated compiler warnings because they were causing tests to fail but not R CMD check\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.9.2…v0.9.3"
   },
   {
     "objectID": "about/FIMS_CHANGELOG.html#v0.9.2-release-notes",
@@ -830,14 +690,14 @@
     "href": "about/acknowledgements.html",
     "title": "Acknowledgements",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nThe development of this playbook was supported by FIMS’s participation in the Birdaro training program, which included access to the Center for Scientific Collaboration and Community Engagement (CSCCE)’s online training course Creating Community Playbooks."
+    "text": "The development of this playbook was supported by FIMS’s participation in the Birdaro training program, which included access to the Center for Scientific Collaboration and Community Engagement (CSCCE)’s online training course Creating Community Playbooks."
   },
   {
     "objectID": "about/faq.html",
     "href": "about/faq.html",
     "title": "Frequently Asked Questions",
     "section": "",
-    "text": "Skip to main content\nThis document is meant to help answer questions that are frequently asked regarding the Fisheries Integrated Modeling System (FIMS). Should your question not be answered here, we recommend that you navigate to the GitHub Discussion page to see if your question has already been asked but just might not have been asked frequently enough to make it here."
+    "text": "This document is meant to help answer questions that are frequently asked regarding the Fisheries Integrated Modeling System (FIMS). Should your question not be answered here, we recommend that you navigate to the GitHub Discussion page to see if your question has already been asked but just might not have been asked frequently enough to make it here."
   },
   {
     "objectID": "about/faq.html#why",
@@ -852,13 +712,6 @@
     "title": "Frequently Asked Questions",
     "section": "Transitioning to FIMS",
     "text": "Transitioning to FIMS\n\nWill FIMS have all the features of current assessment models?\nThe feature set of some of the currently available assessment platforms have grown organically over several decades and certainly contain unused features, awkward conventions, and other aspects needing attention. For example, the last major refresh of the SS3 concept was more than twenty years ago (2004) when it was converted from FORTRAN to ADMB. All software needs a refresh and FIMS will be that for several assessment platforms. FIMS certainly will start with the major capabilities that are currently available such as simultaneously modeling fish growth and population numbers and to use both age and length and other data. FIMS will also start with some more advanced capabilities, particularly the ability to flexibly model time variation in parameters using random effects. Also, FIMS is being written in a more modular way to reduce duplication and facilitate robust testing of each individual part, following best-practice guides for coding. This has resulted in 78% test coverage, which is unmatched in most assessment software. A defined process for testing, model validation, and code review will support integrating future innovations after they have been proven in research sandboxes.\n\n\nWhen will FIMS be ready to transition to?\nFIMS will have many of the features stock assessment analysts expect in a beta format sometime in 2025. We expect a fully tested and documented stable release to be available in 2026. This includes implementation of fitting to length-composition data, random effects, Bayesian estimation, and SPR-based reference points in 2026.\n\n\nI need a new model. Should I wait for FIMS or use WHAM?\nWHAM is likely to have a fuller complement of features available sooner than FIMS. WHAM is currently available for operational use and approved within the Northeast Region. However, in the future, we expect a subset of models currently using WHAM to transition to FIMS as the FIMS feature set becomes more complete, so using FIMS from the beginning may save time in the long-run. We leave the decision up to you because only you know your timeline and resources available. We highly encourage you to consider FIMS because the knowledge and comradery associated with FIMS will be unlike that found with any previously available platform given that it is the first to start with input from scientists within every center in NOAA Fisheries.\n\n\nWhen will FIMS trainings be offered?\nWe will be offering FIMS trainings in 2025. These initial trainings offered in 2025 will be targeted at early adopters and power users who are willing to debug and file issues when they encounter them. This will allow for the incorporation of user feedback in the code base during 2025–2026 development and release of the first stable version in 2026. In 2026, training will be offered at different levels from novice to expert users, including students.\n\n\nHow can I prepare for the transition to FIMS?\nYou can conduct sensitivity analyses on the model you use for operational assessments to identify which model features have a large impact on model fit and which are included for historical consistency. Documenting the impact missing features have on model fit will help the FIMS team prioritize feature requests. If you haven’t worked with a random effects model, there are a number of papers and course material created by Andrea Havron available to learn more about when and how random effects should be applied in stock assessment models.\n\n\nHow long will existing assessment platforms be maintained, and at what level?\nSupport for existing models written in ADMB will phase out in stages. The first stage has already occurred for some, e.g., SS3, with a commitment to not add major new features in deference to their future consideration by FIMS. The second stage could be cessation of any releases of minor modifications or bug fixes but that may be just a gradual slowdown until re-compiling the code becomes impossible. The third will be relegation of help desk support entirely to the community as crowd sourcing.\nWe recognize that the community often continues use of older models long after new models or model versions are available so the currently available platforms will remain downloadable as an executable from the NMFS Fisheries Integrated Toolbox. Additionally, if the code is publicly available, its code will remain available in its GitHub site.\nThe following factors will affect the stages of SS3 succession: availability in FIMS of capability to address more assessment situations currently addressed by SS3; retirement of the main SS3 developer, Richard Methot; and changes in computer operating systems such that SS3 cannot be re-compiled because ADMB no longer works with those windows, ioS and/or unix compilers. All three of these transition triggers will occur, in no designable order, in 1 to 5 years. We are attempting to future-proof SS3 by building a dev_container for compiling with ADMB and the current suite of operating systems and creating a GoogleGroup user forum to bolster the generality of the help-desk support now provided by the core SS3 developers.\nASAP is currently transitioning to WHAM in the Northeast Region. A research track on WHAM was reviewed in February 2024. The Northeast Regional Coordinating Committee is expected to approve a recommendation from the Research Track Steering Committee to allow stock assessments to transition from ASAP to WHAM during a management track assessment. This is an exception to the rule in the region that all model transitions must be made in a research track. It is not known whether a similar exception will be made for the transition from WHAM to FIMS, nor whether a research track on FIMS will be required in the region. All development on ASAP has stopped with the focus shifted to WHAM.\n\n\nWill there be translators from current platforms to FIMS?\nFor model settings, we recommend using the default model configuration function that will be built into FIMS as a starting point. Then, customizing the model can be done in R as it would not be efficient to programmatically translate the model configurations, e.g., SS3 control file, given the large number of options for settings that will not be provided for FIMS. An R function is currently available to translate SS3 data inputs to the dataframe needed to run a FIMS model, and this data translator will be improved in the next few years as the range of data types used by FIMS is expanded.\nAll ASAP models will likely be converted to WHAM before transitioning to FIMS. There are currently no plans to create a translator from WHAM to FIMS but both packages use R objects to define their models. This might allow future translations of configuration objects to be relatively simple. However, it would likely not be worth the effort to maintain a translator until the input and output format of WHAM and/or FIMS are static.\nDevelopers of BAM have discussed the desirability of translating BAM input files for compatibility with FIMS. This will likely be pursued after FIMS has matured enough for operational use.\n\n\nHow far will FIMS scale towards data-poor models?\nFIMS is primarily designed as an age-structured model. Right now, FIMS can run without age-composition data but estimates are poor. The ability to model data-moderate and data-limited cases is planned for addition in later milestones to facilitate the use of one modeling platform regardless of the amount of data available."
-  },
-  {
-    "objectID": "blog/01.04.2026.html",
-    "href": "blog/01.04.2026.html",
-    "title": "FIMS Weekly - January 05–09, 2026",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/01.04.2026.html#fims-announcements",
@@ -882,13 +735,6 @@
     "text": "PHOTO OF THE WEEK\nThe theme set of ‘Celebrating a century of marine science’ within ICES Journal of Marine Science is about to close on January 30, 2026. We submitted our FIMS manuscript to this special issue but we are still waiting on receiving reviews."
   },
   {
-    "objectID": "blog/01.19.2026.html",
-    "href": "blog/01.19.2026.html",
-    "title": "FIMS Weekly - January 19–23, 2026",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/01.19.2026.html#fims-announcements",
     "href": "blog/01.19.2026.html#fims-announcements",
     "title": "FIMS Weekly - January 19–23, 2026",
@@ -908,13 +754,6 @@
     "title": "FIMS Weekly - January 19–23, 2026",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nCodecov has had some recent development that allows you to use copilot to generate tests for your Pull Request. It uses context from your test report to generate unit tests that target exactly what is missing so you can boost patch coverage. You can add the following comment on a Pull Request to make this happen. This feature has yet to be tried yet on a NOAA-FIMS repository.\n\n@codecov-ai-reviewer test"
-  },
-  {
-    "objectID": "blog/02.02.2026.html",
-    "href": "blog/02.02.2026.html",
-    "title": "FIMS Weekly - February 02–06, 2026",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/02.02.2026.html#fims-announcements",
@@ -938,13 +777,6 @@
     "text": "PHOTO OF THE WEEK\nWe have diagnostics thanks to Meg and Ian. Below is some sample code for running a likelihood profile over R_zero. Attend the tutorial on Thursday to learn more about {FIMSdiags}.\n\n# data\ndata(\"data1\", package = \"FIMS\")\ndata_4_model &lt;- FIMS::FIMSFrame(data1)\n\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  FIMS::create_default_configurations() |&gt;\n  FIMS::create_default_parameters(data = data_4_model)\n\n# Run the  model with optimization\nbase_model &lt;- parameters |&gt;\n  FIMS::initialize_fims(data = data_4_model) |&gt;\n  FIMS::fit_fims(optimize = TRUE)\nFIMS::clear()\n\n# Run a likelihood profile on R_zero\nlike_fit &lt;- FIMSdiags::run_fims_likelihood(\n  model = base_model,\n  parameters = parameters,\n  parameter_name = \"log_rzero\", \n  data = data1,\n  n_cores = 1,\n  min = -1,\n  max = 1,\n  length = 5\n)"
   },
   {
-    "objectID": "blog/02.16.2026.html",
-    "href": "blog/02.16.2026.html",
-    "title": "FIMS Weekly - February 16–20, 2026",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/02.16.2026.html#fims-announcements",
     "href": "blog/02.16.2026.html#fims-announcements",
     "title": "FIMS Weekly - February 16–20, 2026",
@@ -964,13 +796,6 @@
     "title": "FIMS Weekly - February 16–20, 2026",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nWe are using copilot to help with some changes related to integers in C++ in [PR #1199] to remove many of the compiler warnings when you compile on a Windows machine. These warnings are helpful when developing and this effort will make it even more helpful because you will not have to sift through hundreds of non-helpful warnings to get to the ones that you want.\n\n# old code\nRealVector(Rcpp::NumericVector x, size_t size) {\n  this-&gt;id_m = RealVector::id_g++;\n  this-&gt;storage_m = std::make_shared&lt;std::vector&lt;double&gt;&gt;();\n  this-&gt;resize(x.size());\n  for (size_t i = 0; i &lt; x.size(); i++) {\n    storage_m-&gt;at(i) = x[i];\n  }\n}\n\n# new code\nRealVector(Rcpp::NumericVector x, size_t size) {\n  this-&gt;id_m = RealVector::id_g++;\n  this-&gt;storage_m = std::make_shared&lt;std::vector&lt;double&gt;&gt;();\n  this-&gt;storage_m-&gt;assign(x.begin(), x.end());\n}"
-  },
-  {
-    "objectID": "blog/03.02.2026.html",
-    "href": "blog/03.02.2026.html",
-    "title": "FIMS Weekly - March 02–06, 2026",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/03.02.2026.html#fims-announcements",
@@ -994,13 +819,6 @@
     "text": "PHOTO OF THE WEEK\nWhile trying to find an example of rlang::arg_match() I came across the tidyverse design principles, which has some great content, and was reminded that many R developers do not know or understand match.arg() or rlang::arg_match(). These functions can be game changes when you want the options within a function argument to be clear to users and I believe that we should be using them more in FIMS. See a small example below and read the relevant section of design.tidyverse.org for more information.\n\n# Base R function trimws uses match.arg() on the which argument\n# both is the default\ntrimws\n# function (x, which = c(\"both\", \"left\", \"right\"), whitespace = \"[ \\t\\r\\n]\") \n# {\n#     which &lt;- match.arg(which)\n#     mysub &lt;- function(re, x) sub(re, \"\", x, perl = TRUE)\n#     switch(which, left = mysub(paste0(\"^\", whitespace, \"+\"),\n#         x), right = mysub(paste0(whitespace, \"+$\"), x), both = mysub(paste0(whitespace,\n#         \"+$\"), mysub(paste0(\"^\", whitespace, \"+\"), x)))\n# }\n# &lt;bytecode: 0x0000024f9a563858&gt;\n# &lt;environment: namespace:base&gt;\n\ntrimws(x = \" My bad formatting \")\n# [1] \"My bad formatting\"\n\ntrimws(x = \" My bad formatting \", which = \"right\")\n# [1] \" My bad formatting\""
   },
   {
-    "objectID": "blog/03.16.2026.html",
-    "href": "blog/03.16.2026.html",
-    "title": "FIMS Weekly - March 16–20, 2026",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/03.16.2026.html#fims-announcements",
     "href": "blog/03.16.2026.html#fims-announcements",
     "title": "FIMS Weekly - March 16–20, 2026",
@@ -1020,13 +838,6 @@
     "title": "FIMS Weekly - March 16–20, 2026",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nVersion 0.9.0 has two breaking changes. (1) If you have time-varying weight_at_age data you can use it but you must make a decision for the beginning of the last year after catches. FIMS does not accommodate this need for an additional year of weight_at_age data you must decide if you want to put in an average or some kind of projection. But, if you do not have time-varying weight_at_age data you can input just a single year as a power user and everything will be taken care of. (2) All six m_*() functions have been renamed to `model_*(). Below we show how a power user can implement (1).\n\n# A vector of weights for each age\nweights &lt;- 1:12\newaa_growth &lt;- methods::new(EWAAGrowth)\newaa_growth$n_years$set(get_n_years(fims_frame))\newaa_growth$ages$resize(get_n_ages(fims_frame))\npurrr::walk(\n  seq_along(get_ages(fims_frame)),\n  \\(x) ewaa_growth$ages$set(x - 1, get_ages(fims_frame)[x])\n)\newaa_growth$weights$resize(get_n_ages(fims_frame))\npurrr::walk(\n  seq(ewaa_growth$weights$size()),\n  \\(x) ewaa_growth$weights$set(x - 1, weights[x])\n)"
-  },
-  {
-    "objectID": "blog/03.30.2026.html",
-    "href": "blog/03.30.2026.html",
-    "title": "FIMS Weekly - March 30–April 03, 2026",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/03.30.2026.html#fims-announcements",
@@ -1050,13 +861,6 @@
     "text": "PHOTO OF THE WEEK\nI finally figured out how to merge dev into main without changing all of the commit hashes and messing up all of the outstanding Pull Requests to dev. There is not an option within the GitHub user interface to do this. Instead, it must be done from the command line (see below). I think we are coming to a point in our development though where we can think about removing dev from our workflow and instead of letting features pile up in dev before they are released, we more thoroughly review them in their feature branches and release them directly to main rather than going to dev first.\n\ngit checkout main\ngit fetch -a\ngit rebase origin/main\ngit merge dev --ff-only\ngit push origin main"
   },
   {
-    "objectID": "blog/04.13.2026.html",
-    "href": "blog/04.13.2026.html",
-    "title": "FIMS Weekly - April 13–17, 2026",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/04.13.2026.html#fims-announcements",
     "href": "blog/04.13.2026.html#fims-announcements",
     "title": "FIMS Weekly - April 13–17, 2026",
@@ -1076,13 +880,6 @@
     "title": "FIMS Weekly - April 13–17, 2026",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nGitHub released a feature last week allowing users to sort their notifications on the web interface. You can look at all of your notifications by navigating to www.github.com/notifications; this interface is great for being able to turn off notifications for specific threads that you are not interested in or honing in on recent notifications from a certain repository."
-  },
-  {
-    "objectID": "blog/04.27.2026.html",
-    "href": "blog/04.27.2026.html",
-    "title": "FIMS Weekly - April 27–May 01, 2026",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/04.27.2026.html#fims-announcements",
@@ -1106,13 +903,6 @@
     "text": "PHOTO OF THE WEEK\nIn the priorities presentation during the CIE Review, I presented the following image, which I found on a blog post titled Stop building what your customers ask for. In short, the blog post reminded me how it is not only our job to produce a product that is of use to fisheries managers but it is also our job to interpret what stakeholders see as a problem and imagine a solution potentially outside of a workflow that currently exists."
   },
   {
-    "objectID": "blog/05.11.2026.html",
-    "href": "blog/05.11.2026.html",
-    "title": "FIMS Weekly - May 11–15, 2026",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/05.11.2026.html#fims-announcements",
     "href": "blog/05.11.2026.html#fims-announcements",
     "title": "FIMS Weekly - May 11–15, 2026",
@@ -1132,13 +922,6 @@
     "title": "FIMS Weekly - May 11–15, 2026",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nJust this morning I learned that issues associated with a milestone can be ordered to show users which issues will be worked on first. This should help communicate how work will be prioritized within FIMS."
-  },
-  {
-    "objectID": "blog/07.21.2025.html",
-    "href": "blog/07.21.2025.html",
-    "title": "FIMS Weekly - July 21–25, 2025",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/07.21.2025.html#fims-announcements",
@@ -1162,13 +945,6 @@
     "text": "PHOTO OF THE WEEK\nR-opensci has guidance on writing tests for packages submitted that Bai is looking into. But, it was pretty mind blowing to learn that there is a way to add comments to a commit message that can invoke “extended” tests, i.e., tests that do not need to be run on every commit. It was nice to know that others have been thinking about this as FIMS has struggled to find a resource or advice on what to do, see Discussion #870. Feel free to add any thoughts about the system below or other insights to running large tests on the Discussion board. Thank you in advance for taking the time to contribute 😊."
   },
   {
-    "objectID": "blog/08.04.2025.html",
-    "href": "blog/08.04.2025.html",
-    "title": "FIMS Weekly - August 04–08, 2025",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/08.04.2025.html#fims-announcements",
     "href": "blog/08.04.2025.html#fims-announcements",
     "title": "FIMS Weekly - August 04–08, 2025",
@@ -1188,13 +964,6 @@
     "title": "FIMS Weekly - August 04–08, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nDuring last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example:\n\n{\n  \"@context\": \"https://schema.org/\",\n  \"@type\": \"Dataset\",\n  \"name\": \"Human Genome Assembly GRCh38\",\n  \"description\": \"The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.\",\n  \"url\": \"https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/\",\n  \"identifier\": \"GCF_000001405.26\",\n  \"creator\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Genome Reference Consortium\"\n  },\n  \"citation\": \"Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.\",\n  \"keywords\": [\n    \"Human Genome\",\n    \"GRCh38\",\n    \"Genomics\",\n    \"Reference Assembly\"\n  ],\n  \"license\": \"https://creativecommons.org/licenses/by/4.0/\",\n  \"datePublished\": \"2013-12-17\",\n  \"distribution\": [\n    {\n      \"@type\": \"DataDownload\",\n      \"name\": \"GRCh38 FASTA file\",\n      \"contentUrl\": \"ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz\",\n      \"encodingFormat\": \"application/x-fasta\"\n    }\n  ],\n  \"measurementTechnique\": \"Next-Generation Sequencing\",\n  \"inLanguage\": \"en\"\n}"
-  },
-  {
-    "objectID": "blog/08.18.2025.html",
-    "href": "blog/08.18.2025.html",
-    "title": "FIMS Weekly - August 18–22, 2025",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/08.18.2025.html#fims-announcements",
@@ -1218,13 +987,6 @@
     "text": "PHOTO OF THE WEEK\nThanks to my GitHub Project Board mentors, Andrea and Kathryn, I have revitalized the Issue Triage Board and I will be working on getting the, currently, 104 un-triaged issues assigned to someone or placed in the parking lot. It took me a while but I think Project Boards might be growing on me."
   },
   {
-    "objectID": "blog/09.01.2025.html",
-    "href": "blog/09.01.2025.html",
-    "title": "FIMS Weekly - September 01–05, 2025",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/09.01.2025.html#fims-announcements",
     "href": "blog/09.01.2025.html#fims-announcements",
     "title": "FIMS Weekly - September 01–05, 2025",
@@ -1244,13 +1006,6 @@
     "title": "FIMS Weekly - September 01–05, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nBelow is a glimpse of what the new json output looks like, where dimensions are provided both in name and in length. Please contact Matthew if you have feedback on this structure.\n\n{\n                    \"name\": \"age_to_length_conversion\",\n                    \"dimensionality\": {\n                        \"header\": [\n                            \"year\",\n                            \"length\"\n                        ],\n                        \"dimensions\": [\n                            31,\n                            24\n                        ]\n                    },\n                    \"values\": [\n                        1.26174e-16,\n                        8.38582e-11,\n                        2.29736e-06,\n                        0.00274388,\n                        0.163077,"
-  },
-  {
-    "objectID": "blog/09.15.2025.html",
-    "href": "blog/09.15.2025.html",
-    "title": "FIMS Weekly - September 15–19, 2025",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/09.15.2025.html#fims-announcements",
@@ -1274,13 +1029,6 @@
     "text": "PHOTO OF THE WEEK\nThanks to Bai’s recent PR that revamped the lists of lists for running a model into a tibble the amount of code needed to run a default model is even less. Check out the revamped fims-demo-minimal below!\n\ndata_4_model &lt;- FIMSFrame(data1)\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  create_default_configurations() |&gt;\n  create_default_parameters(data = data_4_model)\n# Run the  model with optimization\nfit &lt;- parameters |&gt;\n  initialize_fims(data = data_4_model) |&gt;\n  fit_fims(optimize = TRUE)"
   },
   {
-    "objectID": "blog/09.29.2025.html",
-    "href": "blog/09.29.2025.html",
-    "title": "FIMS Weekly - September 29–October 03, 2025",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/09.29.2025.html#fims-announcements",
     "href": "blog/09.29.2025.html#fims-announcements",
     "title": "FIMS Weekly - September 29–October 03, 2025",
@@ -1300,13 +1048,6 @@
     "title": "FIMS Weekly - September 29–October 03, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nI am truly impressed by the perseverance of Elizabeth Perl 😮. She was able to get our doxygen site to render with the same headers as our noaa-fims.github.io site. This was no easy feat, and it looks beautiful. If you have any suggestions feel free to fill out an issue."
-  },
-  {
-    "objectID": "blog/11.24.2025.html",
-    "href": "blog/11.24.2025.html",
-    "title": "FIMS Weekly - November 24–28, 2025",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/11.24.2025.html#fims-announcements",
@@ -1330,13 +1071,6 @@
     "text": "PHOTO OF THE WEEK\nA few months ago, Posit introduced Databot to help explore your data. This is not really of direct interest to FIMS but I think the concept is. Our figures and tables should with a FIMS data object should be relatively similar where we build a command such as summarize() to give similar summaries."
   },
   {
-    "objectID": "blog/12.08.2025.html",
-    "href": "blog/12.08.2025.html",
-    "title": "FIMS Weekly - December 08–12, 2025",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
     "objectID": "blog/12.08.2025.html#fims-announcements",
     "href": "blog/12.08.2025.html#fims-announcements",
     "title": "FIMS Weekly - December 08–12, 2025",
@@ -1356,13 +1090,6 @@
     "title": "FIMS Weekly - December 08–12, 2025",
     "section": "PHOTO OF THE WEEK",
     "text": "PHOTO OF THE WEEK\nA new expectation expect_shape() is available from {testthat} which checks the dimensions of the object of interest, e.g., number of rows or number of columns! This function could be helpful for FIMS where we expect the model results to have a certain number of rows.\n\ntestthat::expect_shape()\n\nargs(testthat::expect_shape)\n# function (object, ..., nrow, ncol, dim)\n\nmat &lt;- matrix(1:6, nrow = 2, ncol = 3)\n# Passes: mat has 2 rows and 3 columns\ntestthat::expect_shape(mat, c(2, 3))\n\ndf &lt;- data.frame(a = 1:4, b = 5:8)\n# Passes: df has 4 rows and 2 columns\ntestthat::expect_shape(df, c(4, 2))"
-  },
-  {
-    "objectID": "blog/12.22.2025.html",
-    "href": "blog/12.22.2025.html",
-    "title": "FIMS Weekly - December 22–26, 2025",
-    "section": "",
-    "text": "Skip to main content"
   },
   {
     "objectID": "blog/12.22.2025.html#fims-announcements",
@@ -1386,32 +1113,18 @@
     "text": "PHOTO OF THE WEEK\nx %notin% table is currently in the development version of R and is an idiom for !(x %in% table) and provided almost entirely for convenience and code readability, from an R-devel suggestion, after many years of private definitions mostly hidden in packages, including in R’s {tools}.\n\nx &lt;- 1\nmy_vector &lt;- 1:10\nx %notin% my_vector"
   },
   {
-    "objectID": "blog/blog_template.html",
-    "href": "blog/blog_template.html",
-    "title": "Title",
-    "section": "",
-    "text": "Skip to main content"
-  },
-  {
-    "objectID": "blog/blog_template.html#text",
-    "href": "blog/blog_template.html#text",
-    "title": "Title",
-    "section": "Text",
-    "text": "Text"
-  },
-  {
     "objectID": "blog/fims-code-club.html",
     "href": "blog/fims-code-club.html",
     "title": "FIMS Code Club",
     "section": "",
-    "text": "Skip to main content"
+    "text": "Welcome to the FIMS Code Club, where we don’t just build software; we build developers. Every month, we gather to tackle GitHub issues in a space where curiosity is more important than expertise. The FIMS Team provides the framework, but you provide the future. Our goal for these Code Clubs is to lower the barrier to entry so that every user feels like an owner, and every ‘newbie’ becomes a contributor.\n[The FIMS Code Club is built on the idea that people matter more than pull requests.]\n\n\n\nLower the Barrier: Make contributing to FIMS less intimidating.\nTeach the “Hidden” Skills: Debugging, Quarto, C++, and TMB.\nCollaborate: Use Pair Programming/Buddy Coding to learn and solve issues.\n\n\n“It may take longer to resolve issues this way, but resolving issues isn’t truly the point. The point is to teach, to engage, and to grow the community.”\n\n\n\n\n\n\nDuring Code Club, we use breakout rooms to takle issues based on specific topics. Whether you are a C++ expert or just getting started with documentation, there is a room for you.\n\n\n\n\nIllustration by Natasha Remarchuk Ouch!\n\n\n\n\nAn example of a past Code Club’s “rooms” is below:\n\n\n\n\n\n\n\n\nRoom\nFocus Area\nSkill Level\n\n\n\n\nThe Engine Room\nC++ & TMB Debugging\nAdvanced/Intermediate/Curious\n\n\nThe Logic Lab\nUnit Testing & Logic\nAdvanced/Intermediate/Curious\n\n\nThe Gateway\nVignettes & Accessibility\nBeginner/All\n\n\n\n\nIn a past Code Club, we had three distinct rooms. One tackled complex scalar vector errors in C++, another built robust new tests, and a third focused on making our documentation accessible to everyone.\n\n\n\n\n\n\nWhen I first joined, I stayed in the Vignettes Room. I felt like I didn’t have the skills to contribute elsewhere. I was intimidated by C++ and TMB. I was afraid of “getting in the way” or asking a question that seemed too basic. I contributed to that room, and even taught others, who are better at TMB and C++ than I am, how to add alt text in Rmarkdown and markdown files and how to navigate _pkgdown.yml files.\n\n\n\nBut then I remembered: This club is the solution to that fear. It exists specifically to bridge that gap. I moved to both of the other C++/TMB coding rooms, asked those “dumb” questions, and watched how experts debug.\n\n\n\nThe result? Debugging some of the C++/TMB code in FIMS feels a lot less scary now. I didn’t just help fix code during Code Club; I gained a new skills, learned a lot of helpful tools and tidbits, and feel more connected to the FIMS community!"
   },
   {
     "objectID": "blog/fims-code-club.html#what-is-code-club",
     "href": "blog/fims-code-club.html#what-is-code-club",
     "title": "FIMS Code Club",
-    "section": "What is Code Club?",
-    "text": "What is Code Club?\nWelcome to the FIMS Code Club, where we don’t just build software; we build developers. Every month, we gather to tackle GitHub issues in a space where curiosity is more important than expertise. The FIMS Team provides the framework, but you provide the future. Our goal for these Code Clubs is to lower the barrier to entry so that every user feels like an owner, and every ‘newbie’ becomes a contributor.\n[The FIMS Code Club is built on the idea that people matter more than pull requests.]\n\nThe Core Mission\n\nLower the Barrier: Make contributing to FIMS less intimidating.\nTeach the “Hidden” Skills: Debugging, Quarto, C++, and TMB.\nCollaborate: Use Pair Programming/Buddy Coding to learn and solve issues.\n\n\n“It may take longer to resolve issues this way, but resolving issues isn’t truly the point. The point is to teach, to engage, and to grow the community.”\n\n\n\nA Space for Everyone\n\n\nDuring Code Club, we use breakout rooms to takle issues based on specific topics. Whether you are a C++ expert or just getting started with documentation, there is a room for you.\n\n\n\n\nIllustration by Natasha Remarchuk Ouch!\n\n\n\n\nAn example of a past Code Club’s “rooms” is below:\n\n\n\n\n\n\n\n\nRoom\nFocus Area\nSkill Level\n\n\n\n\nThe Engine Room\nC++ & TMB Debugging\nAdvanced/Intermediate/Curious\n\n\nThe Logic Lab\nUnit Testing & Logic\nAdvanced/Intermediate/Curious\n\n\nThe Gateway\nVignettes & Accessibility\nBeginner/All\n\n\n\n\nIn a past Code Club, we had three distinct rooms. One tackled complex scalar vector errors in C++, another built robust new tests, and a third focused on making our documentation accessible to everyone.\n\n\n\nMy Journey: Overcoming the Fear\n\nI felt like I could only contribute to vignettes…\nWhen I first joined, I stayed in the Vignettes Room. I felt like I didn’t have the skills to contribute elsewhere. I was intimidated by C++ and TMB. I was afraid of “getting in the way” or asking a question that seemed too basic. I contributed to that room, and even taught others, who are better at TMB and C++ than I am, how to add alt text in Rmarkdown and markdown files and how to navigate _pkgdown.yml files.\n\n\nFear of not knowing is preventing me from learning…\nBut then I remembered: This club is the solution to that fear. It exists specifically to bridge that gap. I moved to both of the other C++/TMB coding rooms, asked those “dumb” questions, and watched how experts debug.\n\n\nDebugging feels a lot less scary now…\nThe result? Debugging some of the C++/TMB code in FIMS feels a lot less scary now. I didn’t just help fix code during Code Club; I gained a new skills, learned a lot of helpful tools and tidbits, and feel more connected to the FIMS community!"
+    "section": "",
+    "text": "Welcome to the FIMS Code Club, where we don’t just build software; we build developers. Every month, we gather to tackle GitHub issues in a space where curiosity is more important than expertise. The FIMS Team provides the framework, but you provide the future. Our goal for these Code Clubs is to lower the barrier to entry so that every user feels like an owner, and every ‘newbie’ becomes a contributor.\n[The FIMS Code Club is built on the idea that people matter more than pull requests.]\n\n\n\nLower the Barrier: Make contributing to FIMS less intimidating.\nTeach the “Hidden” Skills: Debugging, Quarto, C++, and TMB.\nCollaborate: Use Pair Programming/Buddy Coding to learn and solve issues.\n\n\n“It may take longer to resolve issues this way, but resolving issues isn’t truly the point. The point is to teach, to engage, and to grow the community.”\n\n\n\n\n\n\nDuring Code Club, we use breakout rooms to takle issues based on specific topics. Whether you are a C++ expert or just getting started with documentation, there is a room for you.\n\n\n\n\nIllustration by Natasha Remarchuk Ouch!\n\n\n\n\nAn example of a past Code Club’s “rooms” is below:\n\n\n\n\n\n\n\n\nRoom\nFocus Area\nSkill Level\n\n\n\n\nThe Engine Room\nC++ & TMB Debugging\nAdvanced/Intermediate/Curious\n\n\nThe Logic Lab\nUnit Testing & Logic\nAdvanced/Intermediate/Curious\n\n\nThe Gateway\nVignettes & Accessibility\nBeginner/All\n\n\n\n\nIn a past Code Club, we had three distinct rooms. One tackled complex scalar vector errors in C++, another built robust new tests, and a third focused on making our documentation accessible to everyone.\n\n\n\n\n\n\nWhen I first joined, I stayed in the Vignettes Room. I felt like I didn’t have the skills to contribute elsewhere. I was intimidated by C++ and TMB. I was afraid of “getting in the way” or asking a question that seemed too basic. I contributed to that room, and even taught others, who are better at TMB and C++ than I am, how to add alt text in Rmarkdown and markdown files and how to navigate _pkgdown.yml files.\n\n\n\nBut then I remembered: This club is the solution to that fear. It exists specifically to bridge that gap. I moved to both of the other C++/TMB coding rooms, asked those “dumb” questions, and watched how experts debug.\n\n\n\nThe result? Debugging some of the C++/TMB code in FIMS feels a lot less scary now. I didn’t just help fix code during Code Club; I gained a new skills, learned a lot of helpful tools and tidbits, and feel more connected to the FIMS community!"
   },
   {
     "objectID": "blog/fims-code-club.html#join-us-at-the-next-session",
@@ -1425,70 +1138,70 @@
     "href": "blog/index.html",
     "title": "FIMS Blog",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nFIMS CIE Review\n\n\nCIE concludes that FIMS is on the right track\n\n\n\ncommunity\n\ntesting\n\n\n\n\n\n\nJul 13, 2026\n\n\nKelli Johnson\n\n\n\n\n\n\n\nFIMS Weekly - May 18–22, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nMay 18, 2026\n\n\n\n\n\n\n\nFIMS Weekly - May 11–15, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nMay 11, 2026\n\n\n\n\n\n\n\nFIMS Weekly - May 04–08, 2026\n\n\n\n\n\n\nfims-weekly\n\nCKMR\n\nGSoC\n\n\n\n\n\n\nMay 4, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 27–May 01, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nApr 27, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 20–24, 2026\n\n\n\n\n\n\nfims-weekly\n\ndependencies\n\n\n\n\n\n\nApr 20, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 13–17, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nApr 13, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 06–10, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nApr 6, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 30–April 03, 2026\n\n\n\n\n\n\nfims-weekly\n\ntutorial\n\n\n\n\n\n\nMar 30, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 16–20, 2026\n\n\n\n\n\n\nfims-weekly\n\ncase-studies\n\nreleases\n\n\n\n\n\n\nMar 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 23–27, 2026\n\n\n\n\n\n\nfims-weekly\n\ntutorial\n\ntesting\n\n\n\n\n\n\nMar 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 09–13, 2026\n\n\n\n\n\n\nfims-weekly\n\nmanuscripts\n\n\n\n\n\n\nMar 9, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 02–06, 2026\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\n\n\n\n\n\nMar 2, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 23–27, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nblog\n\n\n\n\n\n\nFeb 23, 2026\n\n\n\n\n\n\n\nR Package Chaos, Solved\n\n\nHow we use {renv} to keep the FIMS ecosystem reproducible and collaborative\n\n\n\nlearn\n\nR\n\nopen-science\n\nFIMSdiags\n\n\n\n\n\n\nFeb 20, 2026\n\n\nMeg Oshima\n\n\n\n\n\n\n\nFIMS Code Club\n\n\nBeyond the Code: Building a Community\n\n\n\nother\n\ncode-club\n\ncommunity\n\nopen-science\n\n\n\n\n\n\nFeb 17, 2026\n\n\nElizabeth Perl\n\n\n\n\n\n\n\nFIMS Weekly - February 16–20, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\n\n\n\n\n\nFeb 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 09–13, 2026\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\ncase-studies\n\n\n\n\n\n\nFeb 9, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 02–06, 2026\n\n\n\n\n\n\nfims-weekly\n\nSIS\n\ncase-studies\n\ndiagnostics\n\n\n\n\n\n\nFeb 2, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 26–30, 2026\n\n\n\n\n\n\nfims-weekly\n\ntraining\n\n\n\n\n\n\nJan 26, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 19–23, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\ntesting\n\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 12–16, 2026\n\n\n\n\n\n\nfims-weekly\n\ntrainings\n\n\n\n\n\n\nJan 12, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 05–09, 2026\n\n\n\n\n\n\nfims-weekly\n\nSurplus Production\n\nDSEM\n\ncodespaces\n\n\n\n\n\n\nJan 5, 2026\n\n\n\n\n\n\n\nFIMS Weekly - December 29, 2025–January 02, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\ntraining\n\n\n\n\n\n\nDec 29, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 22–26, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nR\n\nbash\n\n\n\n\n\n\nDec 22, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 15–19, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nR\n\n\n\n\n\n\nDec 15, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 08–12, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nprojections\n\n\n\n\n\n\nDec 8, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 01–05, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\n\n\n\n\n\nDec 1, 2025\n\n\n\n\n\n\n\nFIMS Weekly - November 24–28, 2025\n\n\n\n\n\n\nfims-weekly\n\nPosit\n\nreleases\n\n\n\n\n\n\nNov 24, 2025\n\n\n\n\n\n\n\nFIMS Weekly - November 17–21, 2025\n\n\n\n\n\n\nfims-weekly\n\ncommunity playbook\n\nschedule\n\n\n\n\n\n\nNov 17, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 29–October 03, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\ndocumentation\n\ndoxygen\n\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 21–26, 2025\n\n\n\n\n\n\nfims-weekly\n\ndoxygen\n\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 15–19, 2025\n\n\n\n\n\n\nfims-weekly\n\nvignettes\n\n\n\n\n\n\nSep 15, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 08–12, 2025\n\n\n\n\n\n\nfims-weekly\n\njson\n\npurrr\n\n\n\n\n\n\nSep 8, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 01–05, 2025\n\n\n\n\n\n\nfims-weekly\n\njson\n\nprojections\n\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 25–29, 2025\n\n\n\n\n\n\nfims-weekly\n\ndocumentation\n\ninterface\n\n\n\n\n\n\nAug 25, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 18–22, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\n\n\n\n\n\nAug 18, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 11–15, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\ngit/GitHub\n\nVSCode\n\n\n\n\n\n\nAug 11, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 04–08, 2025\n\n\n\n\n\n\nfims-weekly\n\ncase studies\n\nprojections\n\n\n\n\n\n\nAug 4, 2025\n\n\n\n\n\n\n\nFIMS Weekly - July 28–August 1, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\nselectivity\n\ndiagnostics\n\nprojections\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\nFIMS Weekly - July 21–25, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\nselectivity\n\nprojections\n\n\n\n\n\n\nJul 21, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nFIMS CIE Review\n\n\nCIE concludes that FIMS is on the right track\n\n\n\ncommunity\n\ntesting\n\n\n\n\n\n\nJul 13, 2026\n\n\nKelli Johnson\n\n\n\n\n\n\n\nFIMS Weekly - May 18–22, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nMay 18, 2026\n\n\n\n\n\n\n\nFIMS Weekly - May 11–15, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nMay 11, 2026\n\n\n\n\n\n\n\nFIMS Weekly - May 04–08, 2026\n\n\n\n\n\n\nfims-weekly\n\nCKMR\n\nGSoC\n\n\n\n\n\n\nMay 4, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 27–May 01, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nApr 27, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 20–24, 2026\n\n\n\n\n\n\nfims-weekly\n\ndependencies\n\n\n\n\n\n\nApr 20, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 13–17, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nApr 13, 2026\n\n\n\n\n\n\n\nFIMS Weekly - April 06–10, 2026\n\n\n\n\n\n\nfims-weekly\n\n\n\n\n\n\nApr 6, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 30–April 03, 2026\n\n\n\n\n\n\nfims-weekly\n\ntutorial\n\n\n\n\n\n\nMar 30, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 16–20, 2026\n\n\n\n\n\n\nfims-weekly\n\ncase-studies\n\nreleases\n\n\n\n\n\n\nMar 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 23–27, 2026\n\n\n\n\n\n\nfims-weekly\n\ntutorial\n\ntesting\n\n\n\n\n\n\nMar 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 09–13, 2026\n\n\n\n\n\n\nfims-weekly\n\nmanuscripts\n\n\n\n\n\n\nMar 9, 2026\n\n\n\n\n\n\n\nFIMS Weekly - March 02–06, 2026\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\n\n\n\n\n\nMar 2, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 23–27, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nblog\n\n\n\n\n\n\nFeb 23, 2026\n\n\n\n\n\n\n\nR Package Chaos, Solved\n\n\nHow we use {renv} to keep the FIMS ecosystem reproducible and collaborative\n\n\n\nlearn\n\nR\n\nopen-science\n\nFIMSdiags\n\n\n\n\n\n\nFeb 20, 2026\n\n\nMeg Oshima\n\n\n\n\n\n\n\nFIMS Code Club\n\n\nBeyond the Code: Building a Community\n\n\n\nother\n\ncode-club\n\ncommunity\n\nopen-science\n\n\n\n\n\n\nFeb 17, 2026\n\n\nElizabeth Perl\n\n\n\n\n\n\n\nFIMS Weekly - February 16–20, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\n\n\n\n\n\nFeb 16, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 09–13, 2026\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\ncase-studies\n\n\n\n\n\n\nFeb 9, 2026\n\n\n\n\n\n\n\nFIMS Weekly - February 02–06, 2026\n\n\n\n\n\n\nfims-weekly\n\nSIS\n\ncase-studies\n\ndiagnostics\n\n\n\n\n\n\nFeb 2, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 26–30, 2026\n\n\n\n\n\n\nfims-weekly\n\ntraining\n\n\n\n\n\n\nJan 26, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 19–23, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\ntesting\n\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 12–16, 2026\n\n\n\n\n\n\nfims-weekly\n\ntrainings\n\n\n\n\n\n\nJan 12, 2026\n\n\n\n\n\n\n\nFIMS Weekly - January 05–09, 2026\n\n\n\n\n\n\nfims-weekly\n\nSurplus Production\n\nDSEM\n\ncodespaces\n\n\n\n\n\n\nJan 5, 2026\n\n\n\n\n\n\n\nFIMS Weekly - December 29, 2025–January 02, 2026\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\ntraining\n\n\n\n\n\n\nDec 29, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 22–26, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nR\n\nbash\n\n\n\n\n\n\nDec 22, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 15–19, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nR\n\n\n\n\n\n\nDec 15, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 08–12, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\nprojections\n\n\n\n\n\n\nDec 8, 2025\n\n\n\n\n\n\n\nFIMS Weekly - December 01–05, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\n\n\n\n\n\nDec 1, 2025\n\n\n\n\n\n\n\nFIMS Weekly - November 24–28, 2025\n\n\n\n\n\n\nfims-weekly\n\nPosit\n\nreleases\n\n\n\n\n\n\nNov 24, 2025\n\n\n\n\n\n\n\nFIMS Weekly - November 17–21, 2025\n\n\n\n\n\n\nfims-weekly\n\ncommunity playbook\n\nschedule\n\n\n\n\n\n\nNov 17, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 29–October 03, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\ndocumentation\n\ndoxygen\n\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 21–26, 2025\n\n\n\n\n\n\nfims-weekly\n\ndoxygen\n\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 15–19, 2025\n\n\n\n\n\n\nfims-weekly\n\nvignettes\n\n\n\n\n\n\nSep 15, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 08–12, 2025\n\n\n\n\n\n\nfims-weekly\n\njson\n\npurrr\n\n\n\n\n\n\nSep 8, 2025\n\n\n\n\n\n\n\nFIMS Weekly - September 01–05, 2025\n\n\n\n\n\n\nfims-weekly\n\njson\n\nprojections\n\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 25–29, 2025\n\n\n\n\n\n\nfims-weekly\n\ndocumentation\n\ninterface\n\n\n\n\n\n\nAug 25, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 18–22, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\n\n\n\n\n\nAug 18, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 11–15, 2025\n\n\n\n\n\n\nfims-weekly\n\nreleases\n\ngit/GitHub\n\nVSCode\n\n\n\n\n\n\nAug 11, 2025\n\n\n\n\n\n\n\nFIMS Weekly - August 04–08, 2025\n\n\n\n\n\n\nfims-weekly\n\ncase studies\n\nprojections\n\n\n\n\n\n\nAug 4, 2025\n\n\n\n\n\n\n\nFIMS Weekly - July 28–August 1, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\nselectivity\n\ndiagnostics\n\nprojections\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\nFIMS Weekly - July 21–25, 2025\n\n\n\n\n\n\nfims-weekly\n\ntesting\n\nselectivity\n\nprojections\n\n\n\n\n\n\nJul 21, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "contact/contributors.html",
     "href": "contact/contributors.html",
     "title": "FIMS Team",
     "section": "",
-    "text": "Skip to main content"
+    "text": "FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.\n\n\n\nKelli F. Johnson (OST)\n\n\n\n\n\nGrant D. Adams (AFSC)\nJon K. T. Brodziak (PIFSC)\nKathryn L. Doering (OST)\nDaniel R. Goethel (AFSC)\nAndrea M. Havron (OST)\nAlexander J. Jensen (SWFSC)\nRonald Klasky (T and T Consulting Services, Inc.)\nPeter T. Kuriyama (SWFSC)\nBai Li (OST)\nEmily M. Liljestrand (NEFSC)\nTimothy J. Miller (NEFSC)\nElizabeth Perl (OST)\nMegumi C. Oshima (PIFSC)\nMatthew Supernaw (OST)\nIan G. Taylor (NWFSC)\nNathan R. Vaughan (Vaughan Analytics)\nEric J. Ward (NWFSC)\nErik H. Williams (SEFSC)\n\n\n\n\n\nJennifer S. Bigman (University of Delaware)\nKristan Blackhart (NEFSC)\nEdward J. Dick (SWFSC)\nAlan C. Haynie (ICES)\nJames N. Ianelli (AFSC)\nHui-hua Lee (SWFSC)\nChristopher M. Legault (NEFSC)\nPatrick D. Lynch (OST)\nRichard D. Methot (NWFSC)\nCole C. Monnahan (AFSC)\nLisa Pfeiffer (NWFSC)\nKyle W. Shertzer (SEFSC)\nChristine C. Stawitz (University of Birmingham)\nJane Y. Sullivan (AFSC)\nHoward Townsend (OST)\n\n\n\n\nContributors are listed below with profile links.\n\n\n\n\n  ChristineStawitz-NOAA \n\n\n  Andrea-Havron-NOAA \n\n\n  Bai-Li-NOAA \n\n\n  kellijohnson-NOAA \n\n\n  msupernaw \n\n\n  k-doering-NOAA \n\n\n\n\n  nathanvaughan-NOAA \n\n\n  JaneSullivan-NOAA \n\n\n  Eshaan-byte \n\n\n  iantaylor-NOAA \n\n\n  awilnoaa \n\n\n  szu-yun-ko \n\n\n\n\n  MOshima-PIFSC \n\n\n  JonBrodziak \n\n\n  jimianelli \n\n\n  Rohith-1717 \n\n\n  e-perl-NOAA \n\n\n  timjmiller \n\n\n\n\n  ericward-noaa \n\n\n  alexjensen-NOAA \n\n\n  peterkuriyama-NOAA \n\n\n  KyleShertzer-NOAA \n\n\n  aman-raj-srivastva \n\n\n  abhinav-1305 \n\n\n\n\n  LNo-cz \n\n\n  mciechanumich \n\n\n  Nimra-Arshad51 \n\n\n  RicardoYin01 \n\n\n  Srajald \n\n\n  vivek0913 \n\n\n\n\n\n\n\n\nAnders Nielsen (DTU-Aqua)\nAndré E. Punt (Chair, SAFS UW)\nAnne M. Cooper (ICES)\nBjarki Þ. Elvarsson (MFRI, Gadget)\nCurry J. Cunningham (NPFMC)\nÉva E. Plagányi (CSIRO)\nGeneviève M. Nesslage (UMCES)\nHenning Winker (JRC, Jabba)\nJim N. Sanchirico (UC Davis)\nJon R. Weidenmann (Rutgers)\nMark N. Maunder (IATTC)\nZ. Teresa A’mar (Dragonfly Data Science)\n\n\n\n\n\n\nThe Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the Terms of Reference and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the Github Projects and GitHub Milestones.\n\n\n\nThe Lead Software Architect is responsible for advising the architecture of FIMS to maximize portability and extensibility; manage technical risks and opportunities; advise the Project Lead on software design, refactor, and implementation decisions; and guarantee quality of deliveries via code review. The Lead Software Architect also educates the team on technical best practices.\n\n\n\nThe Lead Test Engineer is responsible for designing and driving test objectives, test strategies, and test plans of the FIMS product at subsequent milestones. The Lead Test Engineer will identify the tools for test reporting, management and automation, guide and monitor the design, implementation, and execution of test cases and test procedures. The Lead Test Engineer will train and mentor implementation team members on how to effectively write and debug tests.\n\n\n\nThe Lead Statistical Computing Engineer is responsible for designing the FIMS statistical architecture that maximizes statistical accuracy and ensures the implementation of statistical good practices. The Lead Statistical Computing Engineer will advise the Project Lead on design and implementation decisions and will work closely with the Lead Software Architect to ensure a balance between computation and statistical efficiency and with the Lead Test Engineer to develop tests that check the statistical accuracy of model design.\n\n\n\nThe Outreach and Transition Coordinator communicates with policy-makers, NOAA leadership, and regional offices on transition plans from existing assessment models and processes to FIMS. This coordinator works with academic partners to develop and coordinate training on using FIMS.\n\n\n\nThe Lead of Workflows, Accessibility, and Integration is responsible for designing and driving workflows and automation to support the reliability and robustness of the FIMS. The Lead of Workflows, Accessibility, and Integration ensures FIMS aligns with expected standards for accessibility and quality control in accordance with guidelines set by the Fisheries Integrated Toolbox. This lead coordinates with the Lead Test Engineer to ensure test cases are automated and successfully run by GitHub Actions and coordinates with the Lead Statistical Computing Engineer to identify opportunities to expand FIMS across related disciplines.\n\n\n\nRegional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations.\n\n\n\n\nCurrent developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., FIMS DESCRIPTION. When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit."
   },
   {
     "objectID": "contact/contributors.html#project-lead",
     "href": "contact/contributors.html#project-lead",
     "title": "FIMS Team",
-    "section": "Project Lead",
-    "text": "Project Lead\n\nKelli F. Johnson (OST)"
+    "section": "",
+    "text": "Kelli F. Johnson (OST)"
   },
   {
     "objectID": "contact/contributors.html#core-developers",
     "href": "contact/contributors.html#core-developers",
     "title": "FIMS Team",
-    "section": "Core Developers",
-    "text": "Core Developers\n\nGrant D. Adams (AFSC)\nJon K. T. Brodziak (PIFSC)\nKathryn L. Doering (OST)\nDaniel R. Goethel (AFSC)\nAndrea M. Havron (OST)\nAlexander J. Jensen (SWFSC)\nRonald Klasky (T and T Consulting Services, Inc.)\nPeter T. Kuriyama (SWFSC)\nBai Li (OST)\nEmily M. Liljestrand (NEFSC)\nTimothy J. Miller (NEFSC)\nElizabeth Perl (OST)\nMegumi C. Oshima (PIFSC)\nMatthew Supernaw (OST)\nIan G. Taylor (NWFSC)\nNathan R. Vaughan (Vaughan Analytics)\nEric J. Ward (NWFSC)\nErik H. Williams (SEFSC)"
+    "section": "",
+    "text": "Grant D. Adams (AFSC)\nJon K. T. Brodziak (PIFSC)\nKathryn L. Doering (OST)\nDaniel R. Goethel (AFSC)\nAndrea M. Havron (OST)\nAlexander J. Jensen (SWFSC)\nRonald Klasky (T and T Consulting Services, Inc.)\nPeter T. Kuriyama (SWFSC)\nBai Li (OST)\nEmily M. Liljestrand (NEFSC)\nTimothy J. Miller (NEFSC)\nElizabeth Perl (OST)\nMegumi C. Oshima (PIFSC)\nMatthew Supernaw (OST)\nIan G. Taylor (NWFSC)\nNathan R. Vaughan (Vaughan Analytics)\nEric J. Ward (NWFSC)\nErik H. Williams (SEFSC)"
   },
   {
     "objectID": "contact/contributors.html#supporting-developers",
     "href": "contact/contributors.html#supporting-developers",
     "title": "FIMS Team",
-    "section": "Supporting Developers",
-    "text": "Supporting Developers\n\nJennifer S. Bigman (University of Delaware)\nKristan Blackhart (NEFSC)\nEdward J. Dick (SWFSC)\nAlan C. Haynie (ICES)\nJames N. Ianelli (AFSC)\nHui-hua Lee (SWFSC)\nChristopher M. Legault (NEFSC)\nPatrick D. Lynch (OST)\nRichard D. Methot (NWFSC)\nCole C. Monnahan (AFSC)\nLisa Pfeiffer (NWFSC)\nKyle W. Shertzer (SEFSC)\nChristine C. Stawitz (University of Birmingham)\nJane Y. Sullivan (AFSC)\nHoward Townsend (OST)"
+    "section": "",
+    "text": "Jennifer S. Bigman (University of Delaware)\nKristan Blackhart (NEFSC)\nEdward J. Dick (SWFSC)\nAlan C. Haynie (ICES)\nJames N. Ianelli (AFSC)\nHui-hua Lee (SWFSC)\nChristopher M. Legault (NEFSC)\nPatrick D. Lynch (OST)\nRichard D. Methot (NWFSC)\nCole C. Monnahan (AFSC)\nLisa Pfeiffer (NWFSC)\nKyle W. Shertzer (SEFSC)\nChristine C. Stawitz (University of Birmingham)\nJane Y. Sullivan (AFSC)\nHoward Townsend (OST)"
   },
   {
     "objectID": "contact/contributors.html#contributors",
     "href": "contact/contributors.html#contributors",
     "title": "FIMS Team",
-    "section": "Contributors",
-    "text": "Contributors\nContributors are listed below with profile links.\n\n\n\n\n  ChristineStawitz-NOAA \n\n\n  Andrea-Havron-NOAA \n\n\n  Bai-Li-NOAA \n\n\n  kellijohnson-NOAA \n\n\n  msupernaw \n\n\n  k-doering-NOAA \n\n\n\n\n  nathanvaughan-NOAA \n\n\n  JaneSullivan-NOAA \n\n\n  Eshaan-byte \n\n\n  iantaylor-NOAA \n\n\n  awilnoaa \n\n\n  szu-yun-ko \n\n\n\n\n  MOshima-PIFSC \n\n\n  JonBrodziak \n\n\n  jimianelli \n\n\n  Rohith-1717 \n\n\n  e-perl-NOAA \n\n\n  timjmiller \n\n\n\n\n  ericward-noaa \n\n\n  alexjensen-NOAA \n\n\n  peterkuriyama-NOAA \n\n\n  KyleShertzer-NOAA \n\n\n  aman-raj-srivastva \n\n\n  abhinav-1305 \n\n\n\n\n  LNo-cz \n\n\n  mciechanumich \n\n\n  Nimra-Arshad51 \n\n\n  RicardoYin01 \n\n\n  Srajald \n\n\n  vivek0913"
+    "section": "",
+    "text": "Contributors are listed below with profile links.\n\n\n\n\n  ChristineStawitz-NOAA \n\n\n  Andrea-Havron-NOAA \n\n\n  Bai-Li-NOAA \n\n\n  kellijohnson-NOAA \n\n\n  msupernaw \n\n\n  k-doering-NOAA \n\n\n\n\n  nathanvaughan-NOAA \n\n\n  JaneSullivan-NOAA \n\n\n  Eshaan-byte \n\n\n  iantaylor-NOAA \n\n\n  awilnoaa \n\n\n  szu-yun-ko \n\n\n\n\n  MOshima-PIFSC \n\n\n  JonBrodziak \n\n\n  jimianelli \n\n\n  Rohith-1717 \n\n\n  e-perl-NOAA \n\n\n  timjmiller \n\n\n\n\n  ericward-noaa \n\n\n  alexjensen-NOAA \n\n\n  peterkuriyama-NOAA \n\n\n  KyleShertzer-NOAA \n\n\n  aman-raj-srivastva \n\n\n  abhinav-1305 \n\n\n\n\n  LNo-cz \n\n\n  mciechanumich \n\n\n  Nimra-Arshad51 \n\n\n  RicardoYin01 \n\n\n  Srajald \n\n\n  vivek0913"
   },
   {
     "objectID": "contact/contributors.html#fims-council",
     "href": "contact/contributors.html#fims-council",
     "title": "FIMS Team",
-    "section": "FIMS Council",
-    "text": "FIMS Council\n\nAnders Nielsen (DTU-Aqua)\nAndré E. Punt (Chair, SAFS UW)\nAnne M. Cooper (ICES)\nBjarki Þ. Elvarsson (MFRI, Gadget)\nCurry J. Cunningham (NPFMC)\nÉva E. Plagányi (CSIRO)\nGeneviève M. Nesslage (UMCES)\nHenning Winker (JRC, Jabba)\nJim N. Sanchirico (UC Davis)\nJon R. Weidenmann (Rutgers)\nMark N. Maunder (IATTC)\nZ. Teresa A’mar (Dragonfly Data Science)"
+    "section": "",
+    "text": "Anders Nielsen (DTU-Aqua)\nAndré E. Punt (Chair, SAFS UW)\nAnne M. Cooper (ICES)\nBjarki Þ. Elvarsson (MFRI, Gadget)\nCurry J. Cunningham (NPFMC)\nÉva E. Plagányi (CSIRO)\nGeneviève M. Nesslage (UMCES)\nHenning Winker (JRC, Jabba)\nJim N. Sanchirico (UC Davis)\nJon R. Weidenmann (Rutgers)\nMark N. Maunder (IATTC)\nZ. Teresa A’mar (Dragonfly Data Science)"
   },
   {
     "objectID": "contact/contributors.html#roles",
     "href": "contact/contributors.html#roles",
     "title": "FIMS Team",
-    "section": "Roles",
-    "text": "Roles\n\nProject Lead\nThe Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the Terms of Reference and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the Github Projects and GitHub Milestones.\n\n\nLead Software Architect\nThe Lead Software Architect is responsible for advising the architecture of FIMS to maximize portability and extensibility; manage technical risks and opportunities; advise the Project Lead on software design, refactor, and implementation decisions; and guarantee quality of deliveries via code review. The Lead Software Architect also educates the team on technical best practices.\n\n\nLead Test Engineer\nThe Lead Test Engineer is responsible for designing and driving test objectives, test strategies, and test plans of the FIMS product at subsequent milestones. The Lead Test Engineer will identify the tools for test reporting, management and automation, guide and monitor the design, implementation, and execution of test cases and test procedures. The Lead Test Engineer will train and mentor implementation team members on how to effectively write and debug tests.\n\n\nLead Statistical Computing Engineer\nThe Lead Statistical Computing Engineer is responsible for designing the FIMS statistical architecture that maximizes statistical accuracy and ensures the implementation of statistical good practices. The Lead Statistical Computing Engineer will advise the Project Lead on design and implementation decisions and will work closely with the Lead Software Architect to ensure a balance between computation and statistical efficiency and with the Lead Test Engineer to develop tests that check the statistical accuracy of model design.\n\n\nOutreach and Transition Coordinator\nThe Outreach and Transition Coordinator communicates with policy-makers, NOAA leadership, and regional offices on transition plans from existing assessment models and processes to FIMS. This coordinator works with academic partners to develop and coordinate training on using FIMS.\n\n\nLead of Workflows, Accessibility, and Integration\nThe Lead of Workflows, Accessibility, and Integration is responsible for designing and driving workflows and automation to support the reliability and robustness of the FIMS. The Lead of Workflows, Accessibility, and Integration ensures FIMS aligns with expected standards for accessibility and quality control in accordance with guidelines set by the Fisheries Integrated Toolbox. This lead coordinates with the Lead Test Engineer to ensure test cases are automated and successfully run by GitHub Actions and coordinates with the Lead Statistical Computing Engineer to identify opportunities to expand FIMS across related disciplines.\n\n\nRegional Representatives\nRegional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations."
+    "section": "",
+    "text": "The Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the Terms of Reference and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the Github Projects and GitHub Milestones.\n\n\n\nThe Lead Software Architect is responsible for advising the architecture of FIMS to maximize portability and extensibility; manage technical risks and opportunities; advise the Project Lead on software design, refactor, and implementation decisions; and guarantee quality of deliveries via code review. The Lead Software Architect also educates the team on technical best practices.\n\n\n\nThe Lead Test Engineer is responsible for designing and driving test objectives, test strategies, and test plans of the FIMS product at subsequent milestones. The Lead Test Engineer will identify the tools for test reporting, management and automation, guide and monitor the design, implementation, and execution of test cases and test procedures. The Lead Test Engineer will train and mentor implementation team members on how to effectively write and debug tests.\n\n\n\nThe Lead Statistical Computing Engineer is responsible for designing the FIMS statistical architecture that maximizes statistical accuracy and ensures the implementation of statistical good practices. The Lead Statistical Computing Engineer will advise the Project Lead on design and implementation decisions and will work closely with the Lead Software Architect to ensure a balance between computation and statistical efficiency and with the Lead Test Engineer to develop tests that check the statistical accuracy of model design.\n\n\n\nThe Outreach and Transition Coordinator communicates with policy-makers, NOAA leadership, and regional offices on transition plans from existing assessment models and processes to FIMS. This coordinator works with academic partners to develop and coordinate training on using FIMS.\n\n\n\nThe Lead of Workflows, Accessibility, and Integration is responsible for designing and driving workflows and automation to support the reliability and robustness of the FIMS. The Lead of Workflows, Accessibility, and Integration ensures FIMS aligns with expected standards for accessibility and quality control in accordance with guidelines set by the Fisheries Integrated Toolbox. This lead coordinates with the Lead Test Engineer to ensure test cases are automated and successfully run by GitHub Actions and coordinates with the Lead Statistical Computing Engineer to identify opportunities to expand FIMS across related disciplines.\n\n\n\nRegional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations."
   },
   {
     "objectID": "contact/contributors.html#authorship",
     "href": "contact/contributors.html#authorship",
     "title": "FIMS Team",
-    "section": "Authorship",
-    "text": "Authorship\nCurrent developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., FIMS DESCRIPTION. When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit."
+    "section": "",
+    "text": "Current developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., FIMS DESCRIPTION. When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "\n      NOAA Fisheries Integrated Modeling System\n    ",
     "section": "",
-    "text": "Skip to main content"
+    "text": "Welcome to the Fisheries Integrated Modeling System (FIMS) community playbook, your source of information for all members of the FIMS community--developers, users, and receivers of stock assessments. We welcome both those that are new and seasoned to the field to join us as we work to fulfill our mission!\n    \n    See the overview page for more! →"
   },
   {
     "objectID": "index.html#subscribe-to-the-fims-weekly-newsletter-and-blog",
@@ -1509,6 +1222,6 @@
     "href": "resources/projects.html",
     "title": "FIMS Projects",
     "section": "",
-    "text": "Skip to main content\n\n\n\n\n\n\nCurrent projects\n\n{stockplotr}\nCenter for Independent Experts (CIE) Review\nOnce a month training opportunities via Google Meet\nManuscript on random effects\nManuscript on Dirichlet-multinomial distribution for composition data\nInternal versus external estimation of growth\n\n\n\nRelated projects\n\nThe Fisheries Integrated Toolbox\nStock Assessment Dictionary Project\nPartially Automated Stock Assessment Reporting {asar}"
+    "text": "Current projects\n\n{stockplotr}\nCenter for Independent Experts (CIE) Review\nOnce a month training opportunities via Google Meet\nManuscript on random effects\nManuscript on Dirichlet-multinomial distribution for composition data\nInternal versus external estimation of growth\n\n\n\nRelated projects\n\nThe Fisheries Integrated Toolbox\nStock Assessment Dictionary Project\nPartially Automated Stock Assessment Reporting {asar}"
   }
 ]
