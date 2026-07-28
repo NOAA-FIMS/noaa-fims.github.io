@@ -63,13 +63,6 @@
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\nNo upcoming events scheduled for this week. Check the FIMS Community Calendar for more."
   },
   {
-    "objectID": "blog/fims-weekly-template.html#summary",
-    "href": "blog/fims-weekly-template.html#summary",
-    "title": "FIMS",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
-  },
-  {
     "objectID": "blog/fims-cie.html",
     "href": "blog/fims-cie.html",
     "title": "FIMS CIE Review",
@@ -123,14 +116,7 @@
     "href": "blog/12.29.2025.html#upcoming-events",
     "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/12.29.2025.html#summary",
-    "href": "blog/12.29.2025.html#summary",
-    "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/12.15.2025.html",
@@ -154,13 +140,6 @@
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nWednesday,\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/12.15.2025.html#summary",
-    "href": "blog/12.15.2025.html#summary",
-    "title": "FIMS Weekly - December 15–19, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\n# Install the CRAN version\ninstall.packages(\"fastverse\")\n\n# Install (Windows/Mac binaries) from R-universe\ninstall.packages(\"fastverse\", repos = \"https://fastverse.r-universe.dev\")\n\n# Install from GitHub (requires compilation)\nremotes::install_github(\"fastverse/fastverse\")"
-  },
-  {
     "objectID": "blog/12.01.2025.html",
     "href": "blog/12.01.2025.html",
     "title": "FIMS Weekly - December 01–05, 2025",
@@ -179,14 +158,7 @@
     "href": "blog/12.01.2025.html#upcoming-events",
     "title": "FIMS Weekly - December 01–05, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/12.01.2025.html#summary",
-    "href": "blog/12.01.2025.html#summary",
-    "title": "FIMS Weekly - December 01–05, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/11.17.2025.html",
@@ -207,14 +179,7 @@
     "href": "blog/11.17.2025.html#upcoming-events",
     "title": "FIMS Weekly - November 17–21, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/11.17.2025.html#summary",
-    "href": "blog/11.17.2025.html#summary",
-    "title": "FIMS Weekly - November 17–21, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\n Developer  New User  Power User  Receiver of Results"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/09.21.2025.html",
@@ -238,13 +203,6 @@
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, {stockplotr}\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/09.21.2025.html#summary",
-    "href": "blog/09.21.2025.html#summary",
-    "title": "FIMS Weekly - September 21–26, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\n// To make a table of contents in a .md file\n[TOC]\n\n// Copy documentation from another function\n@copydoc MyFunctionName\n\n// Link to a function or file\n`FunctionName()` `my_file.hpp`\n\n// Insert an inline or block equation\n\\f$a-b=c/f$\n\\f[ \\text{best} = \\alpha - \\beta \\f]"
-  },
-  {
     "objectID": "blog/09.08.2025.html",
     "href": "blog/09.08.2025.html",
     "title": "FIMS Weekly - September 08–12, 2025",
@@ -264,13 +222,6 @@
     "title": "FIMS Weekly - September 08–12, 2025",
     "section": "UPCOMING EVENTS",
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, json in R\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, data and seasonality\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
-  },
-  {
-    "objectID": "blog/09.08.2025.html#summary",
-    "href": "blog/09.08.2025.html#summary",
-    "title": "FIMS Weekly - September 08–12, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\n#' Covert the dimension information from a FIMS json output into a tibble\n#'\n#' Dimensions in the json output are stored as a list of length two, with the\n#' header information containing the name of the dimension and the dimensions\n#' containing integers specifying the length for each dimension. The result\n#' helps interpret how the FIMS output is structured given it is dimension\n#' folded into a single vector in the json output.\n#'\n#' @param data A list containing the header and dimensions information from a\n#'   FIMS json output object.\n#' @return\n#' A tibble containing ordered rows for each combination of the dimensions.\n#' @examples\n#' dummy_dimensions &lt;- list(\n#'   header = list(\"nyears\", \"nages\"),\n#'   dimensions = list(30L, 12L)\n#' )\n#' dimensions_to_tibble(dummy_dimensions)\ndimensions_to_tibble &lt;- function(data) {\n  # Create names that are informative for columns b/c nyears is not helpful\n  better_names &lt;- unlist(data[[\"header\"]]) |&gt;\n    gsub(pattern = \"^n(.+)s$\", replacement = \"\\\\1_ids\")\n  names(data[[\"dimensions\"]]) &lt;- better_names\n  # Create the returned tibble by first sequencing from 1:n for each dimension\n  data[[\"dimensions\"]] |&gt;\n    purrr::map(seq) |&gt;\n    expand.grid() |&gt;\n    tibble::as_tibble() |&gt;\n    dplyr::arrange(!!! rlang::syms(better_names))\n}"
   },
   {
     "objectID": "blog/08.25.2025.html",
@@ -294,13 +245,6 @@
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, document SPM\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, Tutorial\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/08.25.2025.html#summary",
-    "href": "blog/08.25.2025.html#summary",
-    "title": "FIMS Weekly - August 25–29, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
-  },
-  {
     "objectID": "blog/08.11.2025.html",
     "href": "blog/08.11.2025.html",
     "title": "FIMS Weekly - August 11–15, 2025",
@@ -322,13 +266,6 @@
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, August 12\nFIMS Code Club (WSL and docker) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/08.11.2025.html#summary",
-    "href": "blog/08.11.2025.html#summary",
-    "title": "FIMS Weekly - August 11–15, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
-  },
-  {
     "objectID": "blog/07.28.2025.html",
     "href": "blog/07.28.2025.html",
     "title": "FIMS Weekly - July 28–August 1, 2025",
@@ -347,14 +284,7 @@
     "href": "blog/07.28.2025.html#upcoming-events",
     "title": "FIMS Weekly - July 28–August 1, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/07.28.2025.html#summary",
-    "href": "blog/07.28.2025.html#summary",
-    "title": "FIMS Weekly - July 28–August 1, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/05.18.2026.html",
@@ -375,14 +305,7 @@
     "href": "blog/05.18.2026.html#upcoming-events",
     "title": "FIMS Weekly - May 18–22, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/05.18.2026.html#summary",
-    "href": "blog/05.18.2026.html#summary",
-    "title": "FIMS Weekly - May 18–22, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/05.04.2026.html",
@@ -403,14 +326,7 @@
     "href": "blog/05.04.2026.html#upcoming-events",
     "title": "FIMS Weekly - May 04–08, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/05.04.2026.html#summary",
-    "href": "blog/05.04.2026.html#summary",
-    "title": "FIMS Weekly - May 04–08, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/04.20.2026.html",
@@ -431,14 +347,7 @@
     "href": "blog/04.20.2026.html#upcoming-events",
     "title": "FIMS Weekly - April 20–24, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/04.20.2026.html#summary",
-    "href": "blog/04.20.2026.html#summary",
-    "title": "FIMS Weekly - April 20–24, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\ncspell lint --help"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/04.06.2026.html",
@@ -459,14 +368,7 @@
     "href": "blog/04.06.2026.html#upcoming-events",
     "title": "FIMS Weekly - April 06–10, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/04.06.2026.html#summary",
-    "href": "blog/04.06.2026.html#summary",
-    "title": "FIMS Weekly - April 06–10, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/03.23.2026.html",
@@ -487,14 +389,7 @@
     "href": "blog/03.23.2026.html#upcoming-events",
     "title": "FIMS Weekly - March 23–27, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/03.23.2026.html#summary",
-    "href": "blog/03.23.2026.html#summary",
-    "title": "FIMS Weekly - March 23–27, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\ntest_that(\"check_sdreport_convergence() returns correct outputs for edge cases\", {\n  #' @description Test that `check_sdreport_convergence()` gracefully handles when summary extraction throws an error.\n  obj &lt;- make_mock_obj(random = 1)\n  opt &lt;- list(par = numeric())\n  sdreport &lt;- make_mock_sdreport(\n    pdHess = TRUE,\n    fail_on = \"fixed\"\n  )\n  register_mock_sdreport_summary()\n\n  expect_warning(\n    object = FIMS:::check_sdreport_convergence(list(), obj, opt, sdreport),\n    regexp = \"Unable to extract summary from sdreport\"\n  )\n})"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/03.09.2026.html",
@@ -515,14 +410,7 @@
     "href": "blog/03.09.2026.html#upcoming-events",
     "title": "FIMS Weekly - March 09–13, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/03.09.2026.html#summary",
-    "href": "blog/03.09.2026.html#summary",
-    "title": "FIMS Weekly - March 09–13, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\nquarto use template quarto-journals/elsevier"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/02.23.2026.html",
@@ -543,14 +431,7 @@
     "href": "blog/02.23.2026.html#upcoming-events",
     "title": "FIMS Weekly - February 23–27, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/02.23.2026.html#summary",
-    "href": "blog/02.23.2026.html#summary",
-    "title": "FIMS Weekly - February 23–27, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/02.09.2026.html",
@@ -571,14 +452,7 @@
     "href": "blog/02.09.2026.html#upcoming-events",
     "title": "FIMS Weekly - February 09–13, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/02.09.2026.html#summary",
-    "href": "blog/02.09.2026.html#summary",
-    "title": "FIMS Weekly - February 09–13, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\n# Resize the parameter vector\nfleet_selectivity$inflection_point$resize(get_n_years(data_4_model))\n# Set the initial value of each element of the vector to be one and\n# estimate it as a fixed effect\nfor (ii in seq(get_n_years(data_4_model))) {\n  fleet_selectivity$inflection_point[ii]$value &lt;- 1\n  fleet_selectivity$inflection_point[ii]$estimation_type$set(\"fixed_effects\")\n}"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/01.26.2026.html",
@@ -599,14 +473,7 @@
     "href": "blog/01.26.2026.html#upcoming-events",
     "title": "FIMS Weekly - January 26–30, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/01.26.2026.html#summary",
-    "href": "blog/01.26.2026.html#summary",
-    "title": "FIMS Weekly - January 26–30, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/01.12.2026.html",
@@ -627,14 +494,7 @@
     "href": "blog/01.12.2026.html#upcoming-events",
     "title": "FIMS Weekly - January 12–16, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/01.12.2026.html#summary",
-    "href": "blog/01.12.2026.html#summary",
-    "title": "FIMS Weekly - January 12–16, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "about/index.html",
@@ -875,13 +735,6 @@
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, January 06\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/01.04.2026.html#summary",
-    "href": "blog/01.04.2026.html#summary",
-    "title": "FIMS Weekly - January 05–09, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
-  },
-  {
     "objectID": "blog/01.19.2026.html",
     "href": "blog/01.19.2026.html",
     "title": "FIMS Weekly - January 19–23, 2026",
@@ -900,14 +753,7 @@
     "href": "blog/01.19.2026.html#upcoming-events",
     "title": "FIMS Weekly - January 19–23, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/01.19.2026.html#summary",
-    "href": "blog/01.19.2026.html#summary",
-    "title": "FIMS Weekly - January 19–23, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/02.02.2026.html",
@@ -928,14 +774,7 @@
     "href": "blog/02.02.2026.html#upcoming-events",
     "title": "FIMS Weekly - February 02–06, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/02.02.2026.html#summary",
-    "href": "blog/02.02.2026.html#summary",
-    "title": "FIMS Weekly - February 02–06, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\n# data\ndata(\"data1\", package = \"FIMS\")\ndata_4_model &lt;- FIMS::FIMSFrame(data1)\n\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  FIMS::create_default_configurations() |&gt;\n  FIMS::create_default_parameters(data = data_4_model)\n\n# Run the  model with optimization\nbase_model &lt;- parameters |&gt;\n  FIMS::initialize_fims(data = data_4_model) |&gt;\n  FIMS::fit_fims(optimize = TRUE)\nFIMS::clear()\n\n# Run a likelihood profile on R_zero\nlike_fit &lt;- FIMSdiags::run_fims_likelihood(\n  model = base_model,\n  parameters = parameters,\n  parameter_name = \"log_rzero\", \n  data = data1,\n  n_cores = 1,\n  min = -1,\n  max = 1,\n  length = 5\n)"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/02.16.2026.html",
@@ -956,14 +795,7 @@
     "href": "blog/02.16.2026.html#upcoming-events",
     "title": "FIMS Weekly - February 16–20, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/02.16.2026.html#summary",
-    "href": "blog/02.16.2026.html#summary",
-    "title": "FIMS Weekly - February 16–20, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\n# old code\nRealVector(Rcpp::NumericVector x, size_t size) {\n  this-&gt;id_m = RealVector::id_g++;\n  this-&gt;storage_m = std::make_shared&lt;std::vector&lt;double&gt;&gt;();\n  this-&gt;resize(x.size());\n  for (size_t i = 0; i &lt; x.size(); i++) {\n    storage_m-&gt;at(i) = x[i];\n  }\n}\n\n# new code\nRealVector(Rcpp::NumericVector x, size_t size) {\n  this-&gt;id_m = RealVector::id_g++;\n  this-&gt;storage_m = std::make_shared&lt;std::vector&lt;double&gt;&gt;();\n  this-&gt;storage_m-&gt;assign(x.begin(), x.end());\n}"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/03.02.2026.html",
@@ -984,14 +816,7 @@
     "href": "blog/03.02.2026.html#upcoming-events",
     "title": "FIMS Weekly - March 02–06, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/03.02.2026.html#summary",
-    "href": "blog/03.02.2026.html#summary",
-    "title": "FIMS Weekly - March 02–06, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\n# Base R function trimws uses match.arg() on the which argument\n# both is the default\ntrimws\n# function (x, which = c(\"both\", \"left\", \"right\"), whitespace = \"[ \\t\\r\\n]\") \n# {\n#     which &lt;- match.arg(which)\n#     mysub &lt;- function(re, x) sub(re, \"\", x, perl = TRUE)\n#     switch(which, left = mysub(paste0(\"^\", whitespace, \"+\"),\n#         x), right = mysub(paste0(whitespace, \"+$\"), x), both = mysub(paste0(whitespace,\n#         \"+$\"), mysub(paste0(\"^\", whitespace, \"+\"), x)))\n# }\n# &lt;bytecode: 0x0000024f9a563858&gt;\n# &lt;environment: namespace:base&gt;\n\ntrimws(x = \" My bad formatting \")\n# [1] \"My bad formatting\"\n\ntrimws(x = \" My bad formatting \", which = \"right\")\n# [1] \" My bad formatting\""
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/03.16.2026.html",
@@ -1012,14 +837,7 @@
     "href": "blog/03.16.2026.html#upcoming-events",
     "title": "FIMS Weekly - March 16–20, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/03.16.2026.html#summary",
-    "href": "blog/03.16.2026.html#summary",
-    "title": "FIMS Weekly - March 16–20, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\n# A vector of weights for each age\nweights &lt;- 1:12\newaa_growth &lt;- methods::new(EWAAGrowth)\newaa_growth$n_years$set(get_n_years(fims_frame))\newaa_growth$ages$resize(get_n_ages(fims_frame))\npurrr::walk(\n  seq_along(get_ages(fims_frame)),\n  \\(x) ewaa_growth$ages$set(x - 1, get_ages(fims_frame)[x])\n)\newaa_growth$weights$resize(get_n_ages(fims_frame))\npurrr::walk(\n  seq(ewaa_growth$weights$size()),\n  \\(x) ewaa_growth$weights$set(x - 1, weights[x])\n)"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/03.30.2026.html",
@@ -1040,14 +858,7 @@
     "href": "blog/03.30.2026.html#upcoming-events",
     "title": "FIMS Weekly - March 30–April 03, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/03.30.2026.html#summary",
-    "href": "blog/03.30.2026.html#summary",
-    "title": "FIMS Weekly - March 30–April 03, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\ngit checkout main\ngit fetch -a\ngit rebase origin/main\ngit merge dev --ff-only\ngit push origin main"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/04.13.2026.html",
@@ -1068,14 +879,7 @@
     "href": "blog/04.13.2026.html#upcoming-events",
     "title": "FIMS Weekly - April 13–17, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/04.13.2026.html#summary",
-    "href": "blog/04.13.2026.html#summary",
-    "title": "FIMS Weekly - April 13–17, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/04.27.2026.html",
@@ -1096,14 +900,7 @@
     "href": "blog/04.27.2026.html#upcoming-events",
     "title": "FIMS Weekly - April 27–May 01, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/04.27.2026.html#summary",
-    "href": "blog/04.27.2026.html#summary",
-    "title": "FIMS Weekly - April 27–May 01, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/05.11.2026.html",
@@ -1124,14 +921,7 @@
     "href": "blog/05.11.2026.html#upcoming-events",
     "title": "FIMS Weekly - May 11–15, 2026",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/05.11.2026.html#summary",
-    "href": "blog/05.11.2026.html#summary",
-    "title": "FIMS Weekly - May 11–15, 2026",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/07.21.2025.html",
@@ -1183,13 +973,6 @@
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, August 05\nFIMS Code Club (json) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/08.04.2025.html#summary",
-    "href": "blog/08.04.2025.html#summary",
-    "title": "FIMS Weekly - August 04–08, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\n{\n  \"@context\": \"https://schema.org/\",\n  \"@type\": \"Dataset\",\n  \"name\": \"Human Genome Assembly GRCh38\",\n  \"description\": \"The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.\",\n  \"url\": \"https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/\",\n  \"identifier\": \"GCF_000001405.26\",\n  \"creator\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Genome Reference Consortium\"\n  },\n  \"citation\": \"Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.\",\n  \"keywords\": [\n    \"Human Genome\",\n    \"GRCh38\",\n    \"Genomics\",\n    \"Reference Assembly\"\n  ],\n  \"license\": \"https://creativecommons.org/licenses/by/4.0/\",\n  \"datePublished\": \"2013-12-17\",\n  \"distribution\": [\n    {\n      \"@type\": \"DataDownload\",\n      \"name\": \"GRCh38 FASTA file\",\n      \"contentUrl\": \"ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz\",\n      \"encodingFormat\": \"application/x-fasta\"\n    }\n  ],\n  \"measurementTechnique\": \"Next-Generation Sequencing\",\n  \"inLanguage\": \"en\"\n}"
-  },
-  {
     "objectID": "blog/08.18.2025.html",
     "href": "blog/08.18.2025.html",
     "title": "FIMS Weekly - August 18–22, 2025",
@@ -1209,13 +992,6 @@
     "title": "FIMS Weekly - August 18–22, 2025",
     "section": "UPCOMING EVENTS",
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday,\nFIMS Code Club (json output) Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday,\nFIMS Seaside Chat (cheat sheet) Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
-  },
-  {
-    "objectID": "blog/08.18.2025.html#summary",
-    "href": "blog/08.18.2025.html#summary",
-    "title": "FIMS Weekly - August 18–22, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
   },
   {
     "objectID": "blog/09.01.2025.html",
@@ -1239,13 +1015,6 @@
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nThursday, Projections\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/09.01.2025.html#summary",
-    "href": "blog/09.01.2025.html#summary",
-    "title": "FIMS Weekly - September 01–05, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\n{\n                    \"name\": \"age_to_length_conversion\",\n                    \"dimensionality\": {\n                        \"header\": [\n                            \"year\",\n                            \"length\"\n                        ],\n                        \"dimensions\": [\n                            31,\n                            24\n                        ]\n                    },\n                    \"values\": [\n                        1.26174e-16,\n                        8.38582e-11,\n                        2.29736e-06,\n                        0.00274388,\n                        0.163077,"
-  },
-  {
     "objectID": "blog/09.15.2025.html",
     "href": "blog/09.15.2025.html",
     "title": "FIMS Weekly - September 15–19, 2025",
@@ -1265,13 +1034,6 @@
     "title": "FIMS Weekly - September 15–19, 2025",
     "section": "UPCOMING EVENTS",
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, Cleanup\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, FIMS and RTMB\nFIMS Tutorial Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
-  },
-  {
-    "objectID": "blog/09.15.2025.html#summary",
-    "href": "blog/09.15.2025.html#summary",
-    "title": "FIMS Weekly - September 15–19, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\ndata_4_model &lt;- FIMSFrame(data1)\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  create_default_configurations() |&gt;\n  create_default_parameters(data = data_4_model)\n# Run the  model with optimization\nfit &lt;- parameters |&gt;\n  initialize_fims(data = data_4_model) |&gt;\n  fit_fims(optimize = TRUE)"
   },
   {
     "objectID": "blog/09.29.2025.html",
@@ -1295,13 +1057,6 @@
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday, tests\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet\n\n\nThursday, cleanup\nFIMS Seaside Chat Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/09.29.2025.html#summary",
-    "href": "blog/09.29.2025.html#summary",
-    "title": "FIMS Weekly - September 29–October 03, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
-  },
-  {
     "objectID": "blog/11.24.2025.html",
     "href": "blog/11.24.2025.html",
     "title": "FIMS Weekly - November 24–28, 2025",
@@ -1323,13 +1078,6 @@
     "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\n\n\nTuesday,\nFIMS Code Club Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: Google Meet"
   },
   {
-    "objectID": "blog/11.24.2025.html#summary",
-    "href": "blog/11.24.2025.html#summary",
-    "title": "FIMS Weekly - November 24–28, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
-  },
-  {
     "objectID": "blog/12.08.2025.html",
     "href": "blog/12.08.2025.html",
     "title": "FIMS Weekly - December 08–12, 2025",
@@ -1348,14 +1096,7 @@
     "href": "blog/12.08.2025.html#upcoming-events",
     "title": "FIMS Weekly - December 08–12, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/12.08.2025.html#summary",
-    "href": "blog/12.08.2025.html#summary",
-    "title": "FIMS Weekly - December 08–12, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text\n\n\n\n\ntestthat::expect_shape()\n\nargs(testthat::expect_shape)\n# function (object, ..., nrow, ncol, dim)\n\nmat &lt;- matrix(1:6, nrow = 2, ncol = 3)\n# Passes: mat has 2 rows and 3 columns\ntestthat::expect_shape(mat, c(2, 3))\n\ndf &lt;- data.frame(a = 1:4, b = 5:8)\n# Passes: df has 4 rows and 2 columns\ntestthat::expect_shape(df, c(4, 2))"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/12.22.2025.html",
@@ -1376,14 +1117,7 @@
     "href": "blog/12.22.2025.html#upcoming-events",
     "title": "FIMS Weekly - December 22–26, 2025",
     "section": "UPCOMING EVENTS",
-    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT Notes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing FIMSMemoryBenchmarks repo\nOpaka case study  Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
-  },
-  {
-    "objectID": "blog/12.22.2025.html#summary",
-    "href": "blog/12.22.2025.html#summary",
-    "title": "FIMS Weekly - December 22–26, 2025",
-    "section": "Summary",
-    "text": "Summary\n?meta:summary.text"
+    "text": "UPCOMING EVENTS\nSee the FIMS Calendar for more links and events.\n\n\nTuesday, July 28\nLikelihood Refactor\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nfishprior\nTime: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT\nNotes: fishpriorWork on some code for fishprior together virtually. To join the meeting please use the following google meet id: myk-zvas-ptn.\nC++ development check-in\nTime: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT\nA chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.  Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.\n\n\nWednesday, July 29\nFIMS Profiling\nTime: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT\nWork on developing FIMSMemoryBenchmarks repo\nOpaka case study \nTime: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT"
   },
   {
     "objectID": "blog/blog_template.html",

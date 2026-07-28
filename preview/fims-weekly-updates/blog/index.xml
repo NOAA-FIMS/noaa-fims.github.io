@@ -177,23 +177,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -206,7 +211,6 @@ HELPFUL RESOURCES
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -295,23 +299,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -322,7 +331,6 @@ HELPFUL RESOURCES
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -411,23 +419,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -438,7 +451,6 @@ HELPFUL RESOURCES
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -529,23 +541,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -556,7 +573,6 @@ HELPFUL RESOURCES
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -645,23 +661,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -677,7 +698,6 @@ font-style: inherit;">--help</span></span></code></pre></div></div>
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -768,23 +788,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -795,7 +820,6 @@ HELPFUL RESOURCES
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -885,23 +909,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -912,7 +941,6 @@ HELPFUL RESOURCES
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -1002,23 +1030,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -1048,7 +1081,6 @@ font-style: inherit;">git</span> push origin main</span></code></pre></div></div
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -1138,23 +1170,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -1261,7 +1298,6 @@ font-style: inherit;">1</span>, weights[x])</span>
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -1352,23 +1388,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -1444,7 +1485,6 @@ font-style: inherit;">"Unable to extract summary from sdreport"</span></span>
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -1536,23 +1576,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -1566,7 +1611,6 @@ font-style: inherit;">quarto</span> use template quarto-journals/elsevier</span>
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -1657,23 +1701,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -1703,7 +1752,6 @@ trimws(x = " My bad formatting ", which = "right")
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -1794,23 +1842,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -1822,7 +1875,6 @@ HELPFUL RESOURCES
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -2247,23 +2299,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -2290,7 +2347,6 @@ RealVector(Rcpp::NumericVector x, size_t size) {
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -2381,23 +2437,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -2416,7 +2477,6 @@ for (ii in seq(get_n_years(data_4_model))) {
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -2507,23 +2567,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -2560,7 +2625,6 @@ like_fit &lt;- FIMSdiags::run_fims_likelihood(
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
@@ -2654,23 +2718,28 @@ HELPFUL RESOURCES
 <!-- Code for auto events of current FIMS weekly -->
 <section id="tuesday-july-28" class="level3">
 <h3 class="anchored" data-anchor-id="tuesday-july-28">Tuesday, July 28</h3>
-<p><strong>Likelihood Refactor</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
-<p><strong>fishprior</strong> Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT <a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
-<p><strong>C++ development check-in</strong> Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
+<p><strong>Likelihood Refactor</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p><strong>fishprior</strong></p>
+<p>Time: 2:00 PM ET / 11:00 AM PT / 8:00 AM HT</p>
+<p><a href="https://docs.google.com/document/d/1pX5px3a8-9wR9o9eH6H5NwlmvBWvdPctxyPwaCqdIsg/edit?tab=t.0" target="_blank">Notes: fishprior</a><br>Work on some code for fishprior together virtually. To join the meeting please use the following google meet id:&nbsp;<u>myk-zvas-ptn</u>.</p>
+<p><strong>C++ development check-in</strong></p>
+<p>Time: 3:00 PM ET / 12:00 PM PT / 9:00 AM HT</p>
+<p>A chance to check in on everyone’s C++ development tasks, ask questions, and help each other troubleshoot.&nbsp; Check-ins are intended to be short, concise, and very technical. Anyone who is actively developing or interested in following along with C++ development is welcome. For people external to FIMS, you can email andrea.havron@noaa.gov for the link.</p>
 </section>
 <section id="wednesday-july-29" class="level3">
 <h3 class="anchored" data-anchor-id="wednesday-july-29">Wednesday, July 29</h3>
-<p><strong>FIMS Profiling</strong> Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
-<p><strong>Opaka case study </strong> Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
+<p><strong>FIMS Profiling</strong></p>
+<p>Time: 12:00 PM ET / 9:00 AM PT / 6:00 AM HT</p>
+<p>Work on developing <a href="https://github.com/NOAA-FIMS/FIMSMemoryBenchmarks">FIMSMemoryBenchmarks</a> repo</p>
+<p><strong>Opaka case study </strong></p>
+<p>Time: 2:30 PM ET / 11:30 AM PT / 8:30 AM HT <!-- end --></p>
 <!-- Used for previous version of FIMS weekly -->
 <p> <!-- end --></p>
 </section>
 </section>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p><strong>?meta:summary.text</strong></p>
 <!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
@@ -2679,7 +2748,6 @@ HELPFUL RESOURCES
 </script>
 
 
-</section>
 
  ]]></description>
   <category>fims-weekly</category>
