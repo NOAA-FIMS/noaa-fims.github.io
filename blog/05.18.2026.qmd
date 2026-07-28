@@ -30,12 +30,6 @@ photo:
 - This is the last week of the Google Summer of Code Community Bonding Period, coding starts next week 🎊.
 ::: 
 
-<!-- ::: {#additional-events}
-::: -->
-
-<!-- ::: {#photo-code}
-::: -->
-
 ```{=html}
 <script src="https://giscus.app/client.js"
         data-repo="noaa-fims/FIMS"
