@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: 400 !important;
   margin-top: 1.66em;
   margin-bottom: 0.66em;
 }
@@ -60,8 +60,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: #213f4b !important;
 }
 
-.navbar-title, .navbar-nav .nav-item {
-  font-family: $font-family-heading;
+.navbar-title, .navbar-nav .nav-item .nav-link {
+  font-family: $font-family-heading !important;
   font-weight: 400 !important;
   letter-spacing: 1px;
 }
@@ -278,17 +278,6 @@ img.thumbnail-image.card-img {
   line-height: 1.2rem;
 }
 
-/* On blog pages, hide any category that isn't explicitly styled with an icon.
-   This creates a curated list for the blog, while other pages (like Resources) show all categories. */
-.page-blog .quarto-listing-category .category:not([data-category="deep-dive"]):not([data-category="fims-monthly"]):not([data-category="learn"]):not([data-category="other"]):not([data-category=""]) {
-  display: none !important;
-}
-
-/* "All" category (example: fa-list) */
-.quarto-listing-category .category[data-category=""] {
-  display: none !important;
-}
-
 /* --- ACCESSIBILITY FIX: Default Badge Contrast --- */
 /* Your default badges use the pink theme. */
 #listing-listing .listing-category {
@@ -345,29 +334,29 @@ img.thumbnail-image.card-img {
 /* --- ACCESSIBILITY FIX: Custom Badge Contrasts --- */
 /* For your custom badges (deep-dive, fims-monthly, learn, other) */
 
-/* Light Mode (Old-school explicit selectors) */
-#listing-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
-#listing-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
-#listing-listing .listing-category[onclick*="bGVhcm4="],
-#listing-listing .listing-category[onclick*="b3RoZXI="],
-.quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
-.quarto-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
-.quarto-listing .listing-category[onclick*="bGVhcm4="],
-.quarto-listing .listing-category[onclick*="b3RoZXI="] {
+/* Light Mode */
+#listing-listing .listing-category[data-category="deep-dive"],
+#listing-listing .listing-category[data-category="fims-monthly"],
+#listing-listing .listing-category[data-category="learn"],
+#listing-listing .listing-category[data-category="other"],
+.quarto-listing .listing-category[data-category="deep-dive"],
+.quarto-listing .listing-category[data-category="fims-monthly"],
+.quarto-listing .listing-category[data-category="learn"],
+.quarto-listing .listing-category[data-category="other"] {
   color: #09414a !important;             /* blue-10 for high contrast */
   border-color: #09414a !important;      /* Matches text perfectly */
   background-color: #e4f0f1 !important;  
 }
 
-/* Dark Mode (Old-school explicit selectors) */
-.quarto-dark #listing-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
-.quarto-dark #listing-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
-.quarto-dark #listing-listing .listing-category[onclick*="bGVhcm4="],
-.quarto-dark #listing-listing .listing-category[onclick*="b3RoZXI="],
-.quarto-dark .quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
-.quarto-dark .quarto-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
-.quarto-dark .quarto-listing .listing-category[onclick*="bGVhcm4="],
-.quarto-dark .quarto-listing .listing-category[onclick*="b3RoZXI="] {
+/* Dark Mode */
+.quarto-dark #listing-listing .listing-category[data-category="deep-dive"],
+.quarto-dark #listing-listing .listing-category[data-category="fims-monthly"],
+.quarto-dark #listing-listing .listing-category[data-category="learn"],
+.quarto-dark #listing-listing .listing-category[data-category="other"],
+.quarto-dark .quarto-listing .listing-category[data-category="deep-dive"],
+.quarto-dark .quarto-listing .listing-category[data-category="fims-monthly"],
+.quarto-dark .quarto-listing .listing-category[data-category="learn"],
+.quarto-dark .quarto-listing .listing-category[data-category="other"] {
   color: #f7fafb !important;             /* blue-100 for high contrast on dark */
   border-color: #f7fafb !important;      /* Matches text perfectly */
   background-color: #09414a !important;  
@@ -384,127 +373,110 @@ img.thumbnail-image.card-img {
     color: #f4f4f4 !important; /* Use a light color for dark mode, consistent with other fixes. */
 }
 
-/* deep-dive */
-.quarto-listing-category .category[data-category="ZGVlcC1kaXZl"] {
-  display: flex !important;    /* Horizontally align icon and text */
-  align-items: center;      /* Vertically center both */
-  gap: 0.5em;  
-}
-.quarto-listing-category .category[data-category="ZGVlcC1kaXZl"]::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f002"; /* fa-magnifying glass */
-  margin-right: 0.5em;
-  display: inline-block;
+// Blog categories to only show fims-monthly, deep dive, learn, and other
+
+/* On blog pages, hide any category that isn't explicitly styled with an icon.
+   This creates a curated list for the blog, while other pages (like Resources) show all categories. */
+.page-blog .quarto-listing-category .category:not([data-category=""]):not([data-category="ZGVlcC1kaXZl"]):not([data-category="Zmltcy1tb250aGx5"]):not([data-category="bGVhcm4="]):not([data-category="b3RoZXI="]) {
+  display: none !important;
 }
 
-.listing-category[onclick*="ZGVlcC1kaXZl"]::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f002"; 
-  margin-right: 0.5em;
-  display: inline-block;
+/* "All" category (example: fa-list) */
+.quarto-listing-category .category[data-category=""] {
+  display: none !important;
 }
 
-.quarto-category a[href*="category=deep-dive"]::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f002"; /* fa-magnifying glass */
-  margin-right: 0.4em;
-  display: inline-block;
-}
-
-/* fims-monthly */
-.quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="] {
-  display: flex !important;    /* Horizontally align icon and text */
-  align-items: center;      /* Vertically center both */
-  gap: 0.5em;  
-}
-
-.quarto-listing-category .category[data-category="Zmltcy13ZWVrbHk="]::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f1ea"; /* fa-newpaper */
-  margin-right: 0.5em;
-  display: inline-block;
-}
-
-.listing-category[onclick*="Zmltcy13ZWVrbHk="]::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f1ea";
-  margin-right: 0.5em;
-  display: inline-block;
-}
-
-.quarto-category a[href*="category=fims-monthly"]::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f1ea"; /* fa-newspaper */
-  margin-right: 0.4em;
-  display: inline-block;
-}
-
-/* learn */
-.quarto-listing-category .category[data-category="bGVhcm4="] {
-  display: flex !important;    /* Horizontally align icon and text */
-  align-items: center;      /* Vertically center both */
-  gap: 0.5em;  
-}
-
-.quarto-listing-category .category[data-category="bGVhcm4="]::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f19d"; /* fa-graduation cap */
-  margin-right: 0.5em;
-  display: inline-block;
-}
-
-.listing-category[onclick*="bGVhcm4="]::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f19d"; 
-  margin-right: 0.5em;
-  display: inline-block;
-}
-
-.quarto-category a[href*="category=learn"]::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f19d"; /* fa-graduation-cap */
-  margin-right: 0.4em;
-  display: inline-block;
-}
-
-/* other */
+.quarto-listing-category .category[data-category="ZGVlcC1kaXZl"],
+.quarto-listing-category .category[data-category="Zmltcy1tb250aGx5"],
+.quarto-listing-category .category[data-category="bGVhcm4="],
 .quarto-listing-category .category[data-category="b3RoZXI="] {
-  display: flex !important;    /* Horizontally align icon and text */
-  align-items: center;      /* Vertically center both */
-  gap: 0.5em;  
+  display: flex !important;
+  align-items: center;
+  gap: 0.5em;
 }
 
-.quarto-listing-category .category[data-category="b3RoZXI="]::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f111"; /* fa-circle */
-  margin-right: 0.5em;
-  display: inline-block;
-}
-
+.listing-category[onclick*="ZGVlcC1kaXZl"]::before,
+.listing-category[onclick*="Zmltcy1tb250aGx5"]::before,
+.listing-category[onclick*="bGVhcm4="]::before,
 .listing-category[onclick*="b3RoZXI="]::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f111"; 
   margin-right: 0.5em;
   display: inline-block;
 }
 
+.quarto-listing-category .category[data-category="ZGVlcC1kaXZl"]::before,
+.quarto-listing-category .category[data-category="Zmltcy1tb250aGx5"]::before,
+.quarto-listing-category .category[data-category="bGVhcm4="]::before,
+.quarto-listing-category .category[data-category="b3RoZXI="]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.quarto-category a[href*="category=deep-dive"]::before,
+.quarto-category a[href*="category=fims-monthly"]::before,
+.quarto-category a[href*="category=learn"]::before,
 .quarto-category a[href*="category=other"]::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f111"; /* fa-circle */
+  content: "\f002"; /* fa-magnifying glass */
   margin-right: 0.4em;
   display: inline-block;
+}
+
+/* deep-dive */
+.quarto-listing-category .category[data-category="ZGVlcC1kaXZl"]::before {
+  content: "\f002"; /* fa-magnifying glass */
+}
+
+.listing-category[onclick*="ZGVlcC1kaXZl"]::before {
+  content: "\f002";
+}
+
+.quarto-category a[href*="category=deep-dive"]::before {
+  content: "\f002"; /* fa-magnifying glass */
+}
+
+/* fims-monthly */
+
+.quarto-listing-category .category[data-category="Zmltcy1tb250aGx5="]::before {
+  content: "\f1ea"; /* fa-newpaper */
+}
+
+.listing-category[onclick*="Zmltcy1tb250aGx5="]::before {
+  content: "\f1ea";
+}
+
+.quarto-category a[href*="category=fims-monthly"]::before {
+  content: "\f1ea"; /* fa-newspaper */
+}
+
+/* learn */
+.quarto-listing-category .category[data-category="bGVhcm4="]::before {
+  content: "\f19d"; /* fa-graduation cap */
+}
+
+.listing-category[onclick*="bGVhcm4="]::before {
+  content: "\f19d"; 
+}
+
+.quarto-category a[href*="category=learn"]::before {
+  content: "\f19d"; /* fa-graduation-cap */
+}
+
+/* other */
+.quarto-listing-category .category[data-category="b3RoZXI="]::before {
+  content: "\f111"; /* fa-circle */
+}
+
+.listing-category[onclick*="b3RoZXI="]::before {
+  content: "\f111"; 
+}
+
+.quarto-category a[href*="category=other"]::before {
+  content: "\f111"; /* fa-circle */
 }
 
 /* --- FIMS Pathway Explorer --- */
