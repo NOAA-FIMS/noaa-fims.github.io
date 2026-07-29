@@ -11,6 +11,31 @@ $font-family-heading: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Seg
   --font-outfit: #{$font-family-heading};
 }
 
+/* Target only the blog index page */
+.blog-index-page {
+  
+  /* First, hide all categories in the right sidebar */
+  .quarto-listing-category .category {
+    display: none !important; 
+  }
+
+  /* Then, reveal only the specific categories you want */
+  .quarto-listing-category {
+    /* "All" category */
+    .category[data-category=""],
+    /* "fims-weekly" */
+    .category[data-category="Zmltcy13ZWVrbHk="],
+    /* "other" */
+    .category[data-category="b3RoZXI="],
+    /* "learn" */
+    .category[data-category="bGVhcm4="],
+    /* "deep-dive" */
+    .category[data-category="ZGVlcC1kaXZl"] {
+      display: block !important; 
+    }
+  }
+}
+
 html {
   scroll-padding-top: 6rem;
 }
