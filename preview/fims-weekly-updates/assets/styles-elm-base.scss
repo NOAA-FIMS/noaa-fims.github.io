@@ -56,10 +56,19 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0.66em;
 }
 
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  color: #213f4b !important;
+}
+
 .navbar-title, .navbar-nav .nav-item {
   font-family: $font-family-heading;
-  font-weight: 400;
+  font-weight: 400 !important;
   letter-spacing: 1px;
+}
+
+.navbar .nav-item {
+    margin-right: .5rem;
+    margin-left: .5rem;
 }
 
 .navbar-title small {
@@ -134,6 +143,11 @@ main.content img {
 .quarto-title .quarto-categories {
 	flex-wrap: wrap;
 	gap: 0.4em;
+}
+
+.table {
+    font-size: .875rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
 }
 
 .lead {
@@ -266,7 +280,7 @@ img.thumbnail-image.card-img {
 
 /* On blog pages, hide any category that isn't explicitly styled with an icon.
    This creates a curated list for the blog, while other pages (like Resources) show all categories. */
-.page-blog .quarto-listing-category .category:not([data-category=""]):not([data-category="ZGVlcC1kaXZl"]):not([data-category="Zmltcy13ZWVrbHk="]):not([data-category="bGVhcm4="]):not([data-category="b3RoZXI="]) {
+.page-blog .quarto-listing-category .category:not([data-category="deep-dive"]):not([data-category="fims-monthly"]):not([data-category="learn"]):not([data-category="other"]):not([data-category=""]) {
   display: none !important;
 }
 
