@@ -4,6 +4,7 @@ subtitle: "CIE concludes that FIMS is on the right track"
 author: "Kelli Johnson"
 date: "July 13, 2026"
 categories:
+  - other
   - community
   - testing
 ---
