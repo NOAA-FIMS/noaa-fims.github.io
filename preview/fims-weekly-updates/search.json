@@ -67,7 +67,7 @@
     "href": "blog/fims-monthly-template.html#helpful-resources",
     "title": "FIMS",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/fims-monthly-template.html#upcoming-events",
@@ -123,7 +123,7 @@
     "href": "blog/July_2026.html#big-things-happening",
     "title": "FIMS Monthly - July 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nBIG THING 1\n\n\nBIG THING 2"
+    "text": "BIG THINGS HAPPENING\n\n\nBIG THING 1\n\n\nBIG THING 2"
   },
   {
     "objectID": "blog/July_2026.html#announcements",
@@ -137,7 +137,7 @@
     "href": "blog/July_2026.html#helpful-resources",
     "title": "FIMS Monthly - July 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/July_2026.html#upcoming-events",
@@ -158,7 +158,7 @@
     "href": "blog/12.22.2025.html#big-things-happening",
     "title": "FIMS Weekly - December 22–26, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nAs the year winds down and everyone enjoys their holiday season the development pace of FIMS will be slightly slower over this week and the following week. Please take time to enjoy your friends and family.\n\n\nWe are working on a hot-fix release to 0.7.0 that fixes a few 🐛🐛. At the last Code Club we prioritized closing all 🐛 issues and this will stay a priority until it is finished.\n\n\nBai is working on a Pull Request to establish a bash script to set up FIMS, which will be helpful for Google Cloud workstations. It has also been helpful to test out the install process on several different types of machines. Feel free to give feedback here on FIMS Discussion 1073."
+    "text": "BIG THINGS HAPPENING\n\n\nAs the year winds down and everyone enjoys their holiday season the development pace of FIMS will be slightly slower over this week and the following week. Please take time to enjoy your friends and family.\n\n\nWe are working on a hot-fix release to 0.7.0 that fixes a few 🐛🐛. At the last Code Club we prioritized closing all 🐛 issues and this will stay a priority until it is finished.\n\n\nBai is working on a Pull Request to establish a bash script to set up FIMS, which will be helpful for Google Cloud workstations. It has also been helpful to test out the install process on several different types of machines. Feel free to give feedback here on FIMS Discussion 1073."
   },
   {
     "objectID": "blog/12.22.2025.html#announcements",
@@ -172,7 +172,7 @@
     "href": "blog/12.22.2025.html#helpful-resources",
     "title": "FIMS Weekly - December 22–26, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/12.22.2025.html#upcoming-events",
@@ -193,7 +193,7 @@
     "href": "blog/12.08.2025.html#big-things-happening",
     "title": "FIMS Weekly - December 08–12, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nv0.7.0 will be released this week, thanks to Matthew for finishing up the model families code and Bai and Adrianne for working on cleanup tasks while the rest of us were away from our desks.\n\n\nThe code for projections just needs a vignette, which will be worked on this week, then we can release this PR next week hopefully.\n\n\nImplementation of ‘epics’ in the issue tracker will start this week in an effort to help communicate the timeline. Epics are essentially parent issues that help link small issues to a larger feature."
+    "text": "BIG THINGS HAPPENING\n\n\nv0.7.0 will be released this week, thanks to Matthew for finishing up the model families code and Bai and Adrianne for working on cleanup tasks while the rest of us were away from our desks.\n\n\nThe code for projections just needs a vignette, which will be worked on this week, then we can release this PR next week hopefully.\n\n\nImplementation of ‘epics’ in the issue tracker will start this week in an effort to help communicate the timeline. Epics are essentially parent issues that help link small issues to a larger feature."
   },
   {
     "objectID": "blog/12.08.2025.html#announcements",
@@ -207,7 +207,7 @@
     "href": "blog/12.08.2025.html#helpful-resources",
     "title": "FIMS Weekly - December 08–12, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/12.08.2025.html#upcoming-events",
@@ -228,7 +228,7 @@
     "href": "blog/11.24.2025.html#big-things-happening",
     "title": "FIMS Weekly - November 24–28, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nThis week’s Code Club will be our first installment of a 3-hour time window for coding. You can think of this as a monthly hackathon now instead of our weekly sessions. We will work on (1) reviewing the outstanding Pull Requests to dev, (2) writing a log statement for the newest version that is about to be released, and (3) updating the cheat sheet given the changes to the R interface. Breakout rooms will allow you to work on things in a quiet space or in small groups if desired.\n\n\nWith the shortened week because of the holiday, I am not certain we will be able to get a release out but we will at least work towards that goal.\n\n\nNow that the ICES Methods Group Working Group is over, we will resume forward progress on the Surplus Production Model, which will be our second release from now."
+    "text": "BIG THINGS HAPPENING\n\n\nThis week’s Code Club will be our first installment of a 3-hour time window for coding. You can think of this as a monthly hackathon now instead of our weekly sessions. We will work on (1) reviewing the outstanding Pull Requests to dev, (2) writing a log statement for the newest version that is about to be released, and (3) updating the cheat sheet given the changes to the R interface. Breakout rooms will allow you to work on things in a quiet space or in small groups if desired.\n\n\nWith the shortened week because of the holiday, I am not certain we will be able to get a release out but we will at least work towards that goal.\n\n\nNow that the ICES Methods Group Working Group is over, we will resume forward progress on the Surplus Production Model, which will be our second release from now."
   },
   {
     "objectID": "blog/11.24.2025.html#announcements",
@@ -242,7 +242,7 @@
     "href": "blog/11.24.2025.html#helpful-resources",
     "title": "FIMS Weekly - November 24–28, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/11.24.2025.html#upcoming-events",
@@ -263,7 +263,7 @@
     "href": "blog/09.29.2025.html#big-things-happening",
     "title": "FIMS Weekly - September 29–October 03, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nNathan will be working on rebasing/moving the projections code to a new branch based off of dev-json-caa-rebased\n\n\nThere are tests that are failing in dev-json-caa-rebased that need to be fixed before it can move into dev see Issue #997\n\n\nA lot of progress has been made to update the case studies in dev-wtatage-from-SS3. Still to do is to update the renv file, update the data for type, e.g., ‘age_comp’, and use the input tibble instead of lists of lists."
+    "text": "BIG THINGS HAPPENING\n\n\nNathan will be working on rebasing/moving the projections code to a new branch based off of dev-json-caa-rebased\n\n\nThere are tests that are failing in dev-json-caa-rebased that need to be fixed before it can move into dev see Issue #997\n\n\nA lot of progress has been made to update the case studies in dev-wtatage-from-SS3. Still to do is to update the renv file, update the data for type, e.g., ‘age_comp’, and use the input tibble instead of lists of lists."
   },
   {
     "objectID": "blog/09.29.2025.html#announcements",
@@ -277,7 +277,7 @@
     "href": "blog/09.29.2025.html#helpful-resources",
     "title": "FIMS Weekly - September 29–October 03, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/09.29.2025.html#upcoming-events",
@@ -298,7 +298,7 @@
     "href": "blog/09.15.2025.html#big-things-happening",
     "title": "FIMS Weekly - September 15–19, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nAfter two weeks of not merging in any PRs, I switched it up and merged in Bai’s first so now we just have one outstanding PR left, which we have made a lot of progress on but still need some more progress to get it into dev. Mainly, matching the TMB estimates of uncertainty with the estimates tibble.\n\n\nThis week is going to be documentation week. Please see the FIMS calendar for co-working sessions to help out with converting some Google Docs to markdown files.\n\n\nThere are lots of issues marked under the CIE Review Milestone. Please feel free to sign up for any that you can accomplish by September 30, 2025."
+    "text": "BIG THINGS HAPPENING\n\n\nAfter two weeks of not merging in any PRs, I switched it up and merged in Bai’s first so now we just have one outstanding PR left, which we have made a lot of progress on but still need some more progress to get it into dev. Mainly, matching the TMB estimates of uncertainty with the estimates tibble.\n\n\nThis week is going to be documentation week. Please see the FIMS calendar for co-working sessions to help out with converting some Google Docs to markdown files.\n\n\nThere are lots of issues marked under the CIE Review Milestone. Please feel free to sign up for any that you can accomplish by September 30, 2025."
   },
   {
     "objectID": "blog/09.15.2025.html#announcements",
@@ -312,7 +312,7 @@
     "href": "blog/09.15.2025.html#helpful-resources",
     "title": "FIMS Weekly - September 15–19, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/09.15.2025.html#upcoming-events",
@@ -333,7 +333,7 @@
     "href": "blog/09.01.2025.html#big-things-happening",
     "title": "FIMS Weekly - September 01–05, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nWe are working on three pull requests right now, revamped model-specification interface, revamped json output, and addition of the surplus production model. The goal is to get at least two of the three merged this week and get dev cleaned up so it is passing tests.\n\n\nKyle and Kelli are working on using {asar} and {stockplotr} for the case studies to increase consistency.\n\n\nWe could use some help increasing the documentation of FIMS, for example Ian and Meg asked me last week about clear() which is minimally documented in the C++ code but not documented in R where it is actually used and exported."
+    "text": "BIG THINGS HAPPENING\n\n\nWe are working on three pull requests right now, revamped model-specification interface, revamped json output, and addition of the surplus production model. The goal is to get at least two of the three merged this week and get dev cleaned up so it is passing tests.\n\n\nKyle and Kelli are working on using {asar} and {stockplotr} for the case studies to increase consistency.\n\n\nWe could use some help increasing the documentation of FIMS, for example Ian and Meg asked me last week about clear() which is minimally documented in the C++ code but not documented in R where it is actually used and exported."
   },
   {
     "objectID": "blog/09.01.2025.html#announcements",
@@ -347,7 +347,7 @@
     "href": "blog/09.01.2025.html#helpful-resources",
     "title": "FIMS Weekly - September 01–05, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/09.01.2025.html#upcoming-events",
@@ -368,7 +368,7 @@
     "href": "blog/08.18.2025.html#big-things-happening",
     "title": "FIMS Weekly - August 18–22, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nExtra attention will be on the json output this week as we look to add the Surplus Production Model and finish the implementation of model families.\n\n\nA README for how to run and implement new 🧪s is now available thanks to Bai, this will be merged into dev this week.\n\n\nPlease ensure that your CReDiT statements in the FIMS manuscript are correct by Friday the 22nd."
+    "text": "BIG THINGS HAPPENING\n\n\nExtra attention will be on the json output this week as we look to add the Surplus Production Model and finish the implementation of model families.\n\n\nA README for how to run and implement new 🧪s is now available thanks to Bai, this will be merged into dev this week.\n\n\nPlease ensure that your CReDiT statements in the FIMS manuscript are correct by Friday the 22nd."
   },
   {
     "objectID": "blog/08.18.2025.html#announcements",
@@ -382,7 +382,7 @@
     "href": "blog/08.18.2025.html#helpful-resources",
     "title": "FIMS Weekly - August 18–22, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/08.18.2025.html#upcoming-events",
@@ -403,7 +403,7 @@
     "href": "blog/08.04.2025.html#big-things-happening",
     "title": "FIMS Weekly - August 04–08, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nThe case studies will be updated this week to use the latest release. This has been done in dev for a while but just hanging in the ether.\n\n\nWe will be migrating several resources from individual repositories to the FIMS website, e.g., FIMS Weekly newsletter, training repo, doxygen documentation, and potentially the collaborative workflow.\n\n\nPlease ensure that your affiliation in the FIMS manuscript is correct, which will be submitted to ICES Journal of Marine Science at the beginning of next week."
+    "text": "BIG THINGS HAPPENING\n\n\nThe case studies will be updated this week to use the latest release. This has been done in dev for a while but just hanging in the ether.\n\n\nWe will be migrating several resources from individual repositories to the FIMS website, e.g., FIMS Weekly newsletter, training repo, doxygen documentation, and potentially the collaborative workflow.\n\n\nPlease ensure that your affiliation in the FIMS manuscript is correct, which will be submitted to ICES Journal of Marine Science at the beginning of next week."
   },
   {
     "objectID": "blog/08.04.2025.html#announcements",
@@ -417,7 +417,7 @@
     "href": "blog/08.04.2025.html#helpful-resources",
     "title": "FIMS Weekly - August 04–08, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/08.04.2025.html#upcoming-events",
@@ -466,7 +466,7 @@
     "href": "blog/05.11.2026.html#big-things-happening",
     "title": "FIMS Weekly - May 11–15, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nAs we shift to using ‘translational units’ to compile FIMS, much like how RTMB compiles, we are also thinking about storing metrics related to building FIMS, e.g., compile time and size. This week Matthew is working on getting PR #1430 and PR #1336 to work together.\n\n\nWeek 2 of community bonding with the Google Summer of Code Contributors. We are meeting with each of them to finalize their proposals.\n\n\nReworking this weekly newsletter to be more informative about FIMS development by changing the Photo of the Week to a Project Summary of the Week."
+    "text": "BIG THINGS HAPPENING\n\n\nAs we shift to using ‘translational units’ to compile FIMS, much like how RTMB compiles, we are also thinking about storing metrics related to building FIMS, e.g., compile time and size. This week Matthew is working on getting PR #1430 and PR #1336 to work together.\n\n\nWeek 2 of community bonding with the Google Summer of Code Contributors. We are meeting with each of them to finalize their proposals.\n\n\nReworking this weekly newsletter to be more informative about FIMS development by changing the Photo of the Week to a Project Summary of the Week."
   },
   {
     "objectID": "blog/05.11.2026.html#announcements",
@@ -480,7 +480,7 @@
     "href": "blog/05.11.2026.html#helpful-resources",
     "title": "FIMS Weekly - May 11–15, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/05.11.2026.html#upcoming-events",
@@ -501,7 +501,7 @@
     "href": "blog/04.27.2026.html#big-things-happening",
     "title": "FIMS Weekly - April 27–May 01, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nThere are several Pull Requests that have been in the queue for more than a week that need reviewed and brought into dev. We are still thinking about changing our workflow to move away from having a dev branch but more investigation is needed.\n\n\nAdrianne is thinking about how to model variability in length within the new growth module. Feel free to reach out to her if you know of any published papers or have opinions.\n\n\nMatthew is continuing to work on translational units and getting FIMS to operate more like the RTMB package while compiling. The current road block is with the use of roxygen2 some additional files are added that can cause headaches."
+    "text": "BIG THINGS HAPPENING\n\n\nThere are several Pull Requests that have been in the queue for more than a week that need reviewed and brought into dev. We are still thinking about changing our workflow to move away from having a dev branch but more investigation is needed.\n\n\nAdrianne is thinking about how to model variability in length within the new growth module. Feel free to reach out to her if you know of any published papers or have opinions.\n\n\nMatthew is continuing to work on translational units and getting FIMS to operate more like the RTMB package while compiling. The current road block is with the use of roxygen2 some additional files are added that can cause headaches."
   },
   {
     "objectID": "blog/04.27.2026.html#announcements",
@@ -515,7 +515,7 @@
     "href": "blog/04.27.2026.html#helpful-resources",
     "title": "FIMS Weekly - April 27–May 01, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/04.27.2026.html#upcoming-events",
@@ -536,7 +536,7 @@
     "href": "blog/04.13.2026.html#big-things-happening",
     "title": "FIMS Weekly - April 13–17, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nSend presentations for CIE Review to OST for review.\n\n\nMake a check-list of final tasks for the Surplus Production model (carry over from last week).\n\n\nReactivate the FIMS planning repository."
+    "text": "BIG THINGS HAPPENING\n\n\nSend presentations for CIE Review to OST for review.\n\n\nMake a check-list of final tasks for the Surplus Production model (carry over from last week).\n\n\nReactivate the FIMS planning repository."
   },
   {
     "objectID": "blog/04.13.2026.html#announcements",
@@ -550,7 +550,7 @@
     "href": "blog/04.13.2026.html#helpful-resources",
     "title": "FIMS Weekly - April 13–17, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/04.13.2026.html#upcoming-events",
@@ -571,7 +571,7 @@
     "href": "blog/03.30.2026.html#big-things-happening",
     "title": "FIMS Weekly - March 30–April 03, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nContinue trying to fix pkgdown site where there is an obscure failure in the testdown or coverage reports.\n\n\nAn email will actually (:wink:) go out to the CIE Reviewers, Regional SSC participants, FIMS Council, and Science Board regarding review materials for the CIE Review.\n\n\nFinalize the Pacific Hake case study."
+    "text": "BIG THINGS HAPPENING\n\n\nContinue trying to fix pkgdown site where there is an obscure failure in the testdown or coverage reports.\n\n\nAn email will actually (:wink:) go out to the CIE Reviewers, Regional SSC participants, FIMS Council, and Science Board regarding review materials for the CIE Review.\n\n\nFinalize the Pacific Hake case study."
   },
   {
     "objectID": "blog/03.30.2026.html#announcements",
@@ -585,7 +585,7 @@
     "href": "blog/03.30.2026.html#helpful-resources",
     "title": "FIMS Weekly - March 30–April 03, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/03.30.2026.html#upcoming-events",
@@ -606,7 +606,7 @@
     "href": "blog/03.16.2026.html#big-things-happening",
     "title": "FIMS Weekly - March 16–20, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nWe will work on getting at least three case studies up and going this week in preparation for the CIE Review.\n\n\nAll hands on deck 🚨🫡⚓ regarding FIMS documentation. Nothing is too small to submit a pull request for. Please do your part to help ensure the documentation is sufficient.\n\n\nLast reminder regarding the FIMS manuscript! The manuscript and the responses to reviewers will be submitted on March 19, 2026."
+    "text": "BIG THINGS HAPPENING\n\n\nWe will work on getting at least three case studies up and going this week in preparation for the CIE Review.\n\n\nAll hands on deck 🚨🫡⚓ regarding FIMS documentation. Nothing is too small to submit a pull request for. Please do your part to help ensure the documentation is sufficient.\n\n\nLast reminder regarding the FIMS manuscript! The manuscript and the responses to reviewers will be submitted on March 19, 2026."
   },
   {
     "objectID": "blog/03.16.2026.html#announcements",
@@ -620,7 +620,7 @@
     "href": "blog/03.16.2026.html#helpful-resources",
     "title": "FIMS Weekly - March 16–20, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/03.16.2026.html#upcoming-events",
@@ -641,7 +641,7 @@
     "href": "blog/03.02.2026.html#big-things-happening",
     "title": "FIMS Weekly - March 02–06, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nBai is working on figures and tables to summarize the results of adding FIMS to the model-comparison project.\n\n\nSeveral pull requests from potential Google Summer of Code Contributors were submitted late last week and over the weekend that will be merged into dev. We have Contributors actively working on four separate proposals that will be submitted, reviewed, and ranked this month! Additionally, we will be talking internally about the capability of using ‘populations’ to include sex in FIMS.\n\n\nWe need more good first issues on FIMS, see Apache’s take on what it means to create a ‘good first issue’. Please consider adding more to any of the NOAA-FIMS repositories."
+    "text": "BIG THINGS HAPPENING\n\n\nBai is working on figures and tables to summarize the results of adding FIMS to the model-comparison project.\n\n\nSeveral pull requests from potential Google Summer of Code Contributors were submitted late last week and over the weekend that will be merged into dev. We have Contributors actively working on four separate proposals that will be submitted, reviewed, and ranked this month! Additionally, we will be talking internally about the capability of using ‘populations’ to include sex in FIMS.\n\n\nWe need more good first issues on FIMS, see Apache’s take on what it means to create a ‘good first issue’. Please consider adding more to any of the NOAA-FIMS repositories."
   },
   {
     "objectID": "blog/03.02.2026.html#announcements",
@@ -655,7 +655,7 @@
     "href": "blog/03.02.2026.html#helpful-resources",
     "title": "FIMS Weekly - March 02–06, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/03.02.2026.html#upcoming-events",
@@ -676,7 +676,7 @@
     "href": "blog/02.16.2026.html#big-things-happening",
     "title": "FIMS Weekly - February 16–20, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nWe plan on releasing a version 0.9.0 this week once a few PR are completed.\n\n\nOur NOAA-FIMS website will have an official blog later today that will include blog posts and the FIMS Weekly. Additionally, some changes will be made to accommodate dark mode.\n\n\nRon has done some great work on cleaning up the surplus production model and that work will continue this week."
+    "text": "BIG THINGS HAPPENING\n\n\nWe plan on releasing a version 0.9.0 this week once a few PR are completed.\n\n\nOur NOAA-FIMS website will have an official blog later today that will include blog posts and the FIMS Weekly. Additionally, some changes will be made to accommodate dark mode.\n\n\nRon has done some great work on cleaning up the surplus production model and that work will continue this week."
   },
   {
     "objectID": "blog/02.16.2026.html#announcements",
@@ -690,7 +690,7 @@
     "href": "blog/02.16.2026.html#helpful-resources",
     "title": "FIMS Weekly - February 16–20, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/02.16.2026.html#upcoming-events",
@@ -711,7 +711,7 @@
     "href": "blog/02.02.2026.html#big-things-happening",
     "title": "FIMS Weekly - February 02–06, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nAll of the case studies have been worked on but the advanced one is still having some trouble. We will be working on both the advanced and Pacific Hake case studies this week.\n\n\nGoogle Summer of Code ideas need to be submitted today! We have two submitted so far, one related to turning on and off uncertainty for derived quantities and one related to adding Empirical Dynamic Modeling (EDM) to FIMS. EDM models were presented last week for brown shrimp at NSAW.\n\n\nWe have an Implementation Team Meeting and a tutorial on FIMSdiags this week. Please attend both and spread the news about the tutorial."
+    "text": "BIG THINGS HAPPENING\n\n\nAll of the case studies have been worked on but the advanced one is still having some trouble. We will be working on both the advanced and Pacific Hake case studies this week.\n\n\nGoogle Summer of Code ideas need to be submitted today! We have two submitted so far, one related to turning on and off uncertainty for derived quantities and one related to adding Empirical Dynamic Modeling (EDM) to FIMS. EDM models were presented last week for brown shrimp at NSAW.\n\n\nWe have an Implementation Team Meeting and a tutorial on FIMSdiags this week. Please attend both and spread the news about the tutorial."
   },
   {
     "objectID": "blog/02.02.2026.html#announcements",
@@ -725,7 +725,7 @@
     "href": "blog/02.02.2026.html#helpful-resources",
     "title": "FIMS Weekly - February 02–06, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/02.02.2026.html#upcoming-events",
@@ -746,7 +746,7 @@
     "href": "blog/01.19.2026.html#big-things-happening",
     "title": "FIMS Weekly - January 19–23, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nVersion v0.8.0 was released early this morning! Thank you to everyone who worked on this release, especially Nathan for seeing the projections branch through to to the bitter end.\n\n\nNext week we will be giving at least three presentations and one training session that touch on FIMS at the National Stock Assessment Workshop and authors will be working on their presentations this week.\n\n\nThe case studies need to be updated, which will be a major undertaking this week."
+    "text": "BIG THINGS HAPPENING\n\n\nVersion v0.8.0 was released early this morning! Thank you to everyone who worked on this release, especially Nathan for seeing the projections branch through to to the bitter end.\n\n\nNext week we will be giving at least three presentations and one training session that touch on FIMS at the National Stock Assessment Workshop and authors will be working on their presentations this week.\n\n\nThe case studies need to be updated, which will be a major undertaking this week."
   },
   {
     "objectID": "blog/01.19.2026.html#announcements",
@@ -760,7 +760,7 @@
     "href": "blog/01.19.2026.html#helpful-resources",
     "title": "FIMS Weekly - January 19–23, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/01.19.2026.html#upcoming-events",
@@ -781,7 +781,7 @@
     "href": "blog/01.04.2026.html#big-things-happening",
     "title": "FIMS Weekly - January 05–09, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nAndrea has been working on the Surplus Production model and is making great strides with respect to making comparisons to other Surplus Production models. There are some kinks with the Bayesian estimation that she is currently working out, which will also help the Catch-At-Age model, before we can release it.\n\n\nWe are still working on rebasing the dev-projections-caa branch to dev. Once this is complete, the vignette needs to be finished and then the branch can be merged into dev for a new release.\n\n\nBai is working on adding diet and ecosystem data to simulated data sets available from Ecopath with Ecosim models to facilitate testing of the use of Dynamic Structural Equation Modeling (DSEM) within FIMS."
+    "text": "BIG THINGS HAPPENING\n\n\nAndrea has been working on the Surplus Production model and is making great strides with respect to making comparisons to other Surplus Production models. There are some kinks with the Bayesian estimation that she is currently working out, which will also help the Catch-At-Age model, before we can release it.\n\n\nWe are still working on rebasing the dev-projections-caa branch to dev. Once this is complete, the vignette needs to be finished and then the branch can be merged into dev for a new release.\n\n\nBai is working on adding diet and ecosystem data to simulated data sets available from Ecopath with Ecosim models to facilitate testing of the use of Dynamic Structural Equation Modeling (DSEM) within FIMS."
   },
   {
     "objectID": "blog/01.04.2026.html#announcements",
@@ -795,7 +795,7 @@
     "href": "blog/01.04.2026.html#helpful-resources",
     "title": "FIMS Weekly - January 05–09, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/01.04.2026.html#upcoming-events",
@@ -1033,7 +1033,7 @@
     "href": "blog/01.12.2026.html#big-things-happening",
     "title": "FIMS Weekly - January 12–16, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nWe will freeze development in main on January 19, 2026 for two weeks because of the training at the National Stock Assessment Workshop. All this means is that there will be no releases for that two-week period.\n\n\nThere are several outstanding pull requests that need reviewed. Thank you for all of the contributions. The bug fixes will be merged into a hot fix and the remaining pull requests will make it into version 0.8.0 this week.\n\n\nLength-based selectivity work is ramping back up as we wind down work on projections."
+    "text": "BIG THINGS HAPPENING\n\n\nWe will freeze development in main on January 19, 2026 for two weeks because of the training at the National Stock Assessment Workshop. All this means is that there will be no releases for that two-week period.\n\n\nThere are several outstanding pull requests that need reviewed. Thank you for all of the contributions. The bug fixes will be merged into a hot fix and the remaining pull requests will make it into version 0.8.0 this week.\n\n\nLength-based selectivity work is ramping back up as we wind down work on projections."
   },
   {
     "objectID": "blog/01.12.2026.html#announcements",
@@ -1047,7 +1047,7 @@
     "href": "blog/01.12.2026.html#helpful-resources",
     "title": "FIMS Weekly - January 12–16, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/01.12.2026.html#upcoming-events",
@@ -1068,7 +1068,7 @@
     "href": "blog/01.26.2026.html#big-things-happening",
     "title": "FIMS Weekly - January 26–30, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nWe gave one training session and presented three talks this week at the National Stock Assessment Workshop!\n\n\nA table of capabilities of FIMS compared to other platforms will be put on our website to help communicate to leadership where we are and where we are going. A big thank you to Cole for the inspiration.\n\n\nMatthew is working on #981 to reduce the amount of RAM needed to compile FIMS."
+    "text": "BIG THINGS HAPPENING\n\n\nWe gave one training session and presented three talks this week at the National Stock Assessment Workshop!\n\n\nA table of capabilities of FIMS compared to other platforms will be put on our website to help communicate to leadership where we are and where we are going. A big thank you to Cole for the inspiration.\n\n\nMatthew is working on #981 to reduce the amount of RAM needed to compile FIMS."
   },
   {
     "objectID": "blog/01.26.2026.html#announcements",
@@ -1082,7 +1082,7 @@
     "href": "blog/01.26.2026.html#helpful-resources",
     "title": "FIMS Weekly - January 26–30, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/01.26.2026.html#upcoming-events",
@@ -1103,7 +1103,7 @@
     "href": "blog/02.09.2026.html#big-things-happening",
     "title": "FIMS Weekly - February 09–13, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nThe FIMS case study will be presented to the Scientific Review Group as additional research. Spoiler alert, depending on what you assume for selectivity, the end-year population dynamics are very different but the rest of the time series matches pretty well.\n\n\nBai is working on the comparisons of FIMS to other modeling frameworks fit to the data from the operating model used for the model comparison project. Her most recent addition was adding a FIMS run with random effects for recruitment deviations. Great work Bai!\n\n\nLots of side meetings are happening for FIMS. One of those was regarding the design of wrapper functions for random effects and other questions related to random effects."
+    "text": "BIG THINGS HAPPENING\n\n\nThe FIMS case study will be presented to the Scientific Review Group as additional research. Spoiler alert, depending on what you assume for selectivity, the end-year population dynamics are very different but the rest of the time series matches pretty well.\n\n\nBai is working on the comparisons of FIMS to other modeling frameworks fit to the data from the operating model used for the model comparison project. Her most recent addition was adding a FIMS run with random effects for recruitment deviations. Great work Bai!\n\n\nLots of side meetings are happening for FIMS. One of those was regarding the design of wrapper functions for random effects and other questions related to random effects."
   },
   {
     "objectID": "blog/02.09.2026.html#announcements",
@@ -1117,7 +1117,7 @@
     "href": "blog/02.09.2026.html#helpful-resources",
     "title": "FIMS Weekly - February 09–13, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/02.09.2026.html#upcoming-events",
@@ -1138,7 +1138,7 @@
     "href": "blog/02.23.2026.html#big-things-happening",
     "title": "FIMS Weekly - February 23–27, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nWe have a few open PRs this week to review from new contributors and one from Matthew (fixing a memory leak).\n\n\nBai is working on ecosystemdata to extract selectivity parameters from EWE output.\n\n\nMatthew is working ALL WEEK on translational units to decrease the number of cores that we need to build FIMS."
+    "text": "BIG THINGS HAPPENING\n\n\nWe have a few open PRs this week to review from new contributors and one from Matthew (fixing a memory leak).\n\n\nBai is working on ecosystemdata to extract selectivity parameters from EWE output.\n\n\nMatthew is working ALL WEEK on translational units to decrease the number of cores that we need to build FIMS."
   },
   {
     "objectID": "blog/02.23.2026.html#announcements",
@@ -1152,7 +1152,7 @@
     "href": "blog/02.23.2026.html#helpful-resources",
     "title": "FIMS Weekly - February 23–27, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/02.23.2026.html#upcoming-events",
@@ -1173,7 +1173,7 @@
     "href": "blog/03.09.2026.html#big-things-happening",
     "title": "FIMS Weekly - March 09–13, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nAll changes to the code that are going to happen for the CIE Review must happen this week. Time-varying selectivity and time-varying weight-at-age inputs might make it in :crossed_fingers:. Next week will be focused on updating the case studies.\n\n\nNathan and Andrea are working on a PR to increase the usability of the random effects in FIMS.\n\n\nWe have addressed the comments we received on the FIMS manuscript from reviewers and it is time to do a final round of edits. The manuscript and the responses to reviewers are on Google Drive. Please provide all comments by March 18, 2026 so we can return the manuscript to ICES by March 19, 2026."
+    "text": "BIG THINGS HAPPENING\n\n\nAll changes to the code that are going to happen for the CIE Review must happen this week. Time-varying selectivity and time-varying weight-at-age inputs might make it in :crossed_fingers:. Next week will be focused on updating the case studies.\n\n\nNathan and Andrea are working on a PR to increase the usability of the random effects in FIMS.\n\n\nWe have addressed the comments we received on the FIMS manuscript from reviewers and it is time to do a final round of edits. The manuscript and the responses to reviewers are on Google Drive. Please provide all comments by March 18, 2026 so we can return the manuscript to ICES by March 19, 2026."
   },
   {
     "objectID": "blog/03.09.2026.html#announcements",
@@ -1187,7 +1187,7 @@
     "href": "blog/03.09.2026.html#helpful-resources",
     "title": "FIMS Weekly - March 09–13, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/03.09.2026.html#upcoming-events",
@@ -1208,7 +1208,7 @@
     "href": "blog/03.23.2026.html#big-things-happening",
     "title": "FIMS Weekly - March 23–27, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nMerging in a few final Pull Requests today and tomorrow.\n\n\nAn email will go out to the CIE Reviewers, Regional SSC participants, FIMS Council, and Science Board regarding review materials for the CIE Review.\n\n\nIan will be giving a seminar on FIMSFrame."
+    "text": "BIG THINGS HAPPENING\n\n\nMerging in a few final Pull Requests today and tomorrow.\n\n\nAn email will go out to the CIE Reviewers, Regional SSC participants, FIMS Council, and Science Board regarding review materials for the CIE Review.\n\n\nIan will be giving a seminar on FIMSFrame."
   },
   {
     "objectID": "blog/03.23.2026.html#announcements",
@@ -1222,7 +1222,7 @@
     "href": "blog/03.23.2026.html#helpful-resources",
     "title": "FIMS Weekly - March 23–27, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/03.23.2026.html#upcoming-events",
@@ -1243,7 +1243,7 @@
     "href": "blog/04.06.2026.html#big-things-happening",
     "title": "FIMS Weekly - April 06–10, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nJon is working on bringing more distributions into FIMS, including the Dirichlet-multinomial.\n\n\nMake a check-list of final tasks for the Surplus Production model.\n\n\nContinue work on the interface for random effects."
+    "text": "BIG THINGS HAPPENING\n\n\nJon is working on bringing more distributions into FIMS, including the Dirichlet-multinomial.\n\n\nMake a check-list of final tasks for the Surplus Production model.\n\n\nContinue work on the interface for random effects."
   },
   {
     "objectID": "blog/04.06.2026.html#announcements",
@@ -1257,7 +1257,7 @@
     "href": "blog/04.06.2026.html#helpful-resources",
     "title": "FIMS Weekly - April 06–10, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/04.06.2026.html#upcoming-events",
@@ -1278,7 +1278,7 @@
     "href": "blog/04.20.2026.html#big-things-happening",
     "title": "FIMS Weekly - April 20–24, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nCIE Review is this week!\n\n\nBai is working on further designing slow versus fast tests so failures come quickly and informatively. Please reach out to her if you have ideas or want to implement similar testing strategies in your own projects.\n\n\nContinue to work on the FIMS planning repository."
+    "text": "BIG THINGS HAPPENING\n\n\nCIE Review is this week!\n\n\nBai is working on further designing slow versus fast tests so failures come quickly and informatively. Please reach out to her if you have ideas or want to implement similar testing strategies in your own projects.\n\n\nContinue to work on the FIMS planning repository."
   },
   {
     "objectID": "blog/04.20.2026.html#announcements",
@@ -1292,7 +1292,7 @@
     "href": "blog/04.20.2026.html#helpful-resources",
     "title": "FIMS Weekly - April 20–24, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/04.20.2026.html#upcoming-events",
@@ -1313,7 +1313,7 @@
     "href": "blog/05.04.2026.html#big-things-happening",
     "title": "FIMS Weekly - May 04–08, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nWe received slots for two 2026 Google Summer of Code Contributors. One contributor will be working on adding sex and the other will be working on adding Empirical Dynamic Modeling (EDM) with the help of Molly Stevens and Steve Munch. Their FIMS mentors, Adrianne, Andrea, Nathan, Molly, are working on a plan regarding how to welcome them to the FIMS community.\n\n\nBai is working on absorbing {ecosystemdata} into {ecosystemom}. There is also a Discussion about absorbing {FIMSdiags} into {FIMS}.\n\n\nWe received additional comments on the FIMS Manuscript before the CIE Review. Christine started addressing them last week with the hope that the manuscript can be submitted this week."
+    "text": "BIG THINGS HAPPENING\n\n\nWe received slots for two 2026 Google Summer of Code Contributors. One contributor will be working on adding sex and the other will be working on adding Empirical Dynamic Modeling (EDM) with the help of Molly Stevens and Steve Munch. Their FIMS mentors, Adrianne, Andrea, Nathan, Molly, are working on a plan regarding how to welcome them to the FIMS community.\n\n\nBai is working on absorbing {ecosystemdata} into {ecosystemom}. There is also a Discussion about absorbing {FIMSdiags} into {FIMS}.\n\n\nWe received additional comments on the FIMS Manuscript before the CIE Review. Christine started addressing them last week with the hope that the manuscript can be submitted this week."
   },
   {
     "objectID": "blog/05.04.2026.html#announcements",
@@ -1327,7 +1327,7 @@
     "href": "blog/05.04.2026.html#helpful-resources",
     "title": "FIMS Weekly - May 04–08, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/05.04.2026.html#upcoming-events",
@@ -1348,7 +1348,7 @@
     "href": "blog/05.18.2026.html#big-things-happening",
     "title": "FIMS Weekly - May 18–22, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nPull Requests, Pull Requests, and more Pull Requests. We hope to merge in all non-draft PRs this week in preparation for removing the dev branch.\n\n\nReviewing the design document for modeling variability in growth.\n\n\nThe restructuring of random effects is underway, led by Nathan and Andrea, where the hope is to make the random-effects structure more generic and allow for priors on all quantities, whether they are parameters or derived quantities."
+    "text": "BIG THINGS HAPPENING\n\n\nPull Requests, Pull Requests, and more Pull Requests. We hope to merge in all non-draft PRs this week in preparation for removing the dev branch.\n\n\nReviewing the design document for modeling variability in growth.\n\n\nThe restructuring of random effects is underway, led by Nathan and Andrea, where the hope is to make the random-effects structure more generic and allow for priors on all quantities, whether they are parameters or derived quantities."
   },
   {
     "objectID": "blog/05.18.2026.html#announcements",
@@ -1362,7 +1362,7 @@
     "href": "blog/05.18.2026.html#helpful-resources",
     "title": "FIMS Weekly - May 18–22, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/05.18.2026.html#upcoming-events",
@@ -1383,7 +1383,7 @@
     "href": "blog/07.28.2025.html#big-things-happening",
     "title": "FIMS Weekly - July 28–August 1, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nWriting tests 🧪 for length-based selectivity and finding the remaining 🐛.\n\n\nMeg and Ian are working on FIMSdiags. If you are interested in joining them, watch the FIMS Calendar for meetings or ask Meg specifically to be invited.\n\n\nProjections and reference points are in the works. An update will be presented at the next FIMS Implementation Team Meeting."
+    "text": "BIG THINGS HAPPENING\n\n\nWriting tests 🧪 for length-based selectivity and finding the remaining 🐛.\n\n\nMeg and Ian are working on FIMSdiags. If you are interested in joining them, watch the FIMS Calendar for meetings or ask Meg specifically to be invited.\n\n\nProjections and reference points are in the works. An update will be presented at the next FIMS Implementation Team Meeting."
   },
   {
     "objectID": "blog/07.28.2025.html#announcements",
@@ -1397,7 +1397,7 @@
     "href": "blog/07.28.2025.html#helpful-resources",
     "title": "FIMS Weekly - July 28–August 1, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/07.28.2025.html#upcoming-events",
@@ -1418,7 +1418,7 @@
     "href": "blog/08.11.2025.html#big-things-happening",
     "title": "FIMS Weekly - August 11–15, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nSorry for the late FIMS Weekly but I have been sick 🤕 and just haven’t been able to muster enough 🔥to get one together. I am doing better today but still don’t have much of a voice so there is no seaside chat this week.\n\n\nv0.6.3 will be released this week, thanks to Andrea finding an intermittent bug when using TMBad on Windows regarding how we were implementing operators in fims_math.hpp.\n\n\nLots of work is co-occurring in several branches, I will be missing some in the following list but I hope this helps people get a pulse 💓 on what is going on: (a) Matthew - dev-length-selectivity-rebased trying to find 🐛 in length likelihood, (b) Alex - dev-dbl-norm implementing double normal selectivity, (c) Andrea - dev-osa adding one-step-ahead residuals, (d) Nathan & Andrea - dev-projections-[nathan|andrea] projections, (e) Bai - dev-refactor-nested-parameter-list updating R side of model input, and (f) Kathryn - in ghactions4r allowing /document to work."
+    "text": "BIG THINGS HAPPENING\n\n\nSorry for the late FIMS Weekly but I have been sick 🤕 and just haven’t been able to muster enough 🔥to get one together. I am doing better today but still don’t have much of a voice so there is no seaside chat this week.\n\n\nv0.6.3 will be released this week, thanks to Andrea finding an intermittent bug when using TMBad on Windows regarding how we were implementing operators in fims_math.hpp.\n\n\nLots of work is co-occurring in several branches, I will be missing some in the following list but I hope this helps people get a pulse 💓 on what is going on: (a) Matthew - dev-length-selectivity-rebased trying to find 🐛 in length likelihood, (b) Alex - dev-dbl-norm implementing double normal selectivity, (c) Andrea - dev-osa adding one-step-ahead residuals, (d) Nathan & Andrea - dev-projections-[nathan|andrea] projections, (e) Bai - dev-refactor-nested-parameter-list updating R side of model input, and (f) Kathryn - in ghactions4r allowing /document to work."
   },
   {
     "objectID": "blog/08.11.2025.html#announcements",
@@ -1432,7 +1432,7 @@
     "href": "blog/08.11.2025.html#helpful-resources",
     "title": "FIMS Weekly - August 11–15, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/08.11.2025.html#upcoming-events",
@@ -1453,7 +1453,7 @@
     "href": "blog/08.25.2025.html#big-things-happening",
     "title": "FIMS Weekly - August 25–29, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nBai is busy revamping the way users interact with the model parameters as lists of lists has gotten unwieldy.\n\n\nMatthew and Andrea are working on different parts of the model using feature branches off of the latest dev branch that has a draft of the Surplus Production Model (SPM).\n\n\nThis Thursday (see below) will be our first tutorial session to give new users a glimpse into how to run a FIMS model. Please share this information wide and far."
+    "text": "BIG THINGS HAPPENING\n\n\nBai is busy revamping the way users interact with the model parameters as lists of lists has gotten unwieldy.\n\n\nMatthew and Andrea are working on different parts of the model using feature branches off of the latest dev branch that has a draft of the Surplus Production Model (SPM).\n\n\nThis Thursday (see below) will be our first tutorial session to give new users a glimpse into how to run a FIMS model. Please share this information wide and far."
   },
   {
     "objectID": "blog/08.25.2025.html#announcements",
@@ -1467,7 +1467,7 @@
     "href": "blog/08.25.2025.html#helpful-resources",
     "title": "FIMS Weekly - August 25–29, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/08.25.2025.html#upcoming-events",
@@ -1488,7 +1488,7 @@
     "href": "blog/09.08.2025.html#big-things-happening",
     "title": "FIMS Weekly - September 08–12, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nOn Wednesday, the Science Board will be given an update and we will discuss creating a formal FIMS Transition Plan. Thank you Jane for volunteering to attend the presentation to help take notes.\n\n\nNone of the PRs that I wanted to merge in last week happened so merging those is a goal again. Attend Code Club on Tuesday if you are interested in helping write R code to read in the json output.\n\n\nBy the end of the day on Wednesday there will be a prioritized list of issues that need completed before October 01, 2025 because they are needed for the documentation that will be sent to the CIE Reviewers."
+    "text": "BIG THINGS HAPPENING\n\n\nOn Wednesday, the Science Board will be given an update and we will discuss creating a formal FIMS Transition Plan. Thank you Jane for volunteering to attend the presentation to help take notes.\n\n\nNone of the PRs that I wanted to merge in last week happened so merging those is a goal again. Attend Code Club on Tuesday if you are interested in helping write R code to read in the json output.\n\n\nBy the end of the day on Wednesday there will be a prioritized list of issues that need completed before October 01, 2025 because they are needed for the documentation that will be sent to the CIE Reviewers."
   },
   {
     "objectID": "blog/09.08.2025.html#announcements",
@@ -1502,7 +1502,7 @@
     "href": "blog/09.08.2025.html#helpful-resources",
     "title": "FIMS Weekly - September 08–12, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/09.08.2025.html#upcoming-events",
@@ -1523,7 +1523,7 @@
     "href": "blog/09.21.2025.html#big-things-happening",
     "title": "FIMS Weekly - September 21–26, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nA new release of FIMS will come out this week that contains the PRs brought in last week thanks to Bai and Eric as well as improvements to the documentation thanks to those that showed up to Code Club and the extra design document meetings. Everyone’s work is greatly appreciated. Check out the issues listed in the CIE cleanup milestone for more tasks to work on.\n\n\nOnce a bug in the likelihood calculations is fixed in dev-json-caa, this branch will be merged into dev. By the end of the day today though it will be rebased and Nathan can branch off it to start adding projections and Meg and Ian can use it for their diagnostic work.\n\n\nThe case studies are mid-stream in an update to use {asar} and {stockplotr} for plotting. Thanks to help from Kyle and Sam we have two case studies nearly complete and we hope to get some help porting over the remaining ones this week."
+    "text": "BIG THINGS HAPPENING\n\n\nA new release of FIMS will come out this week that contains the PRs brought in last week thanks to Bai and Eric as well as improvements to the documentation thanks to those that showed up to Code Club and the extra design document meetings. Everyone’s work is greatly appreciated. Check out the issues listed in the CIE cleanup milestone for more tasks to work on.\n\n\nOnce a bug in the likelihood calculations is fixed in dev-json-caa, this branch will be merged into dev. By the end of the day today though it will be rebased and Nathan can branch off it to start adding projections and Meg and Ian can use it for their diagnostic work.\n\n\nThe case studies are mid-stream in an update to use {asar} and {stockplotr} for plotting. Thanks to help from Kyle and Sam we have two case studies nearly complete and we hope to get some help porting over the remaining ones this week."
   },
   {
     "objectID": "blog/09.21.2025.html#announcements",
@@ -1537,7 +1537,7 @@
     "href": "blog/09.21.2025.html#helpful-resources",
     "title": "FIMS Weekly - September 21–26, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/09.21.2025.html#upcoming-events",
@@ -1558,7 +1558,7 @@
     "href": "blog/11.17.2025.html#big-things-happening",
     "title": "FIMS Weekly - November 17–21, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nWelcome back all! Last week was spent catching up on emails and getting reorientated, where this week we will be working towards getting a release out within the next two weeks. Thank you to Bai, Adrianne, and Nathan for keeping the lights on.\n\n\nWe will no longer be having our Seaside Chats on Thursdays. Instead, we will be scheduling calls that work with people’s schedules based on need. We encourage everyone to schedule these types of calls within the FIMS community based on your own needs. Just remember to add them to the FIMS calendar.\n\n\nThe CIE Review will be rescheduled for next Spring. Before the review we will ensure that all work done in preparation for the review is solid and that the documentation has been vetted with new users to ensure that it is understandable to non-developers."
+    "text": "BIG THINGS HAPPENING\n\n\nWelcome back all! Last week was spent catching up on emails and getting reorientated, where this week we will be working towards getting a release out within the next two weeks. Thank you to Bai, Adrianne, and Nathan for keeping the lights on.\n\n\nWe will no longer be having our Seaside Chats on Thursdays. Instead, we will be scheduling calls that work with people’s schedules based on need. We encourage everyone to schedule these types of calls within the FIMS community based on your own needs. Just remember to add them to the FIMS calendar.\n\n\nThe CIE Review will be rescheduled for next Spring. Before the review we will ensure that all work done in preparation for the review is solid and that the documentation has been vetted with new users to ensure that it is understandable to non-developers."
   },
   {
     "objectID": "blog/11.17.2025.html#announcements",
@@ -1572,7 +1572,7 @@
     "href": "blog/11.17.2025.html#helpful-resources",
     "title": "FIMS Weekly - November 17–21, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/11.17.2025.html#upcoming-events",
@@ -1593,7 +1593,7 @@
     "href": "blog/12.01.2025.html#big-things-happening",
     "title": "FIMS Weekly - December 01–05, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nOur number one goal this week is to get a new release out, which involves trudging through the 13 open Pull Requests and prioritizing which ones will be a part of 0.8.0 and need rebased and which ones will wait for the next release.\n\n\nBai is working hard on sorting out the differences between FIMS and other software in an effort to ramp up the testing in FIMS.\n\n\nEffort on the Surplus Production Model is ramping back up. Again, testing has revealed differences between FIMS and other frameworks that needs to be sorted out."
+    "text": "BIG THINGS HAPPENING\n\n\nOur number one goal this week is to get a new release out, which involves trudging through the 13 open Pull Requests and prioritizing which ones will be a part of 0.8.0 and need rebased and which ones will wait for the next release.\n\n\nBai is working hard on sorting out the differences between FIMS and other software in an effort to ramp up the testing in FIMS.\n\n\nEffort on the Surplus Production Model is ramping back up. Again, testing has revealed differences between FIMS and other frameworks that needs to be sorted out."
   },
   {
     "objectID": "blog/12.01.2025.html#announcements",
@@ -1607,7 +1607,7 @@
     "href": "blog/12.01.2025.html#helpful-resources",
     "title": "FIMS Weekly - December 01–05, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/12.01.2025.html#upcoming-events",
@@ -1628,7 +1628,7 @@
     "href": "blog/12.15.2025.html#big-things-happening",
     "title": "FIMS Weekly - December 15–19, 2025",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nThanks to Meg for reporting a :bug: last week, we will have a new release of 0.7.0 hopefully today, i.e., 0.7.1 that fixes the json and the R code to read that json in.\n\n\nMatthew has picked back up the length-based selectivity work and is hoping to get this wrapped up soon and in a new release.\n\n\nThe projections branch will be rebased to dev and a vignette will be created to help socialize how to do projections. If you are interested in helping with this please reach out on the Pull Request."
+    "text": "BIG THINGS HAPPENING\n\n\nThanks to Meg for reporting a :bug: last week, we will have a new release of 0.7.0 hopefully today, i.e., 0.7.1 that fixes the json and the R code to read that json in.\n\n\nMatthew has picked back up the length-based selectivity work and is hoping to get this wrapped up soon and in a new release.\n\n\nThe projections branch will be rebased to dev and a vignette will be created to help socialize how to do projections. If you are interested in helping with this please reach out on the Pull Request."
   },
   {
     "objectID": "blog/12.15.2025.html#announcements",
@@ -1642,7 +1642,7 @@
     "href": "blog/12.15.2025.html#helpful-resources",
     "title": "FIMS Weekly - December 15–19, 2025",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/12.15.2025.html#upcoming-events",
@@ -1663,7 +1663,7 @@
     "href": "blog/12.29.2025.html#big-things-happening",
     "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
     "section": "BIG THINGS HAPPENING",
-    "text": "BIG THINGS HAPPENING\n\nWe are still working on the hot-fix release to 0.7.0 that fixes a few 🐛🐛.\n\n\nAdrianne is working on collapsing Andrea’s C++ training vignettes into a single vignette and adding them to the FIMS repository.\n\n\nA new effort will begin to migrate the FIMS requirements to Issues and label them as epics to help with getting information regarding timelines out to more people in an efficient way. This will be a long-term effort and not be anywhere near completed by the end of the week."
+    "text": "BIG THINGS HAPPENING\n\n\nWe are still working on the hot-fix release to 0.7.0 that fixes a few 🐛🐛.\n\n\nAdrianne is working on collapsing Andrea’s C++ training vignettes into a single vignette and adding them to the FIMS repository.\n\n\nA new effort will begin to migrate the FIMS requirements to Issues and label them as epics to help with getting information regarding timelines out to more people in an efficient way. This will be a long-term effort and not be anywhere near completed by the end of the week."
   },
   {
     "objectID": "blog/12.29.2025.html#announcements",
@@ -1677,7 +1677,7 @@
     "href": "blog/12.29.2025.html#helpful-resources",
     "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
     "section": "HELPFUL RESOURCES",
-    "text": "HELPFUL RESOURCES\n\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
+    "text": "HELPFUL RESOURCES\n\nFIMS Website\nFIMS GitHub Discussions\nFIMS FAQs"
   },
   {
     "objectID": "blog/12.29.2025.html#upcoming-events",
