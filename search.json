@@ -543,14 +543,21 @@
     "href": "about/FIMS_CHANGELOG.html",
     "title": "FIMS Change Log",
     "section": "",
-    "text": "Reduce verbose FIMS logging and refine messages by @msupernaw\nCleans up integration tests after switching log_devs to random effects by @Andrea-Havron-NOAA\nRevert some changes that eliminated compiler warnings because they were causing tests to fail but not R CMD check\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.9.2…v0.9.3"
+    "text": "fix(JSON): use sanitize_val() for JSON output values by @Bai-Li-NOAA in #1505*\nfix(ci): fix swap file creation for slow-tests on ubuntu-latest by @aman-raj-srivastva in #1545\nfix memory leak by @Andrea-Havron-NOAA in #1554\nfix(initialize_fims): log_sd needed filtered by module_type by @kellijohnson-NOAA in #1653\n\n\n\n\n\nname is now fleet in FIMSFrame\nfleet_name is now fleet in FIMSFit\n\n\n\n\n\nExpose Population proportion_female with default 0.5 by @szu-yun-ko in #1494\nAdd Google Benchmark template, R helper, and a benchmark for CatchNumbersAtAge by @szu-yun-ko in #1277\nOptimizing the build memory and to surface compilation performance metrics by @Rohith-1717 in #1336\ndocs: add debugging workflow for long-running or crashing test runs by @Eshaan-byte in #1420\nImprove convergence handling in fit_fims by wrapping nlminb calls with tryCatch by @aman-raj-srivastva in #1385\nRefactor gtest files to use_gtest_template() convention by @Eshaan-byte in #1433\nDev tu rtmb style by @msupernaw in #1430\nRename phi_0 by @nathanvaughan-NOAA in #1490\nrefactor: Removes globalVariables() by @kellijohnson-NOAA in #1539\nDev deep copy by @msupernaw in #1626\n\n\n\n\n\nallow for priors on derived quantities by @nathanvaughan-NOAA in #1603\ntidy output by @ericward-noaa in #1509\nMigrate FIMSdiags from separate repo into FIMS repo by @iantaylor-NOAA in #1542\n\n\n\n\n\n@vivek0913 made their first contribution in #1526\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.9.3…v0.9.4"
+  },
+  {
+    "objectID": "about/FIMS_CHANGELOG.html#v0.9.4-release-notes",
+    "href": "about/FIMS_CHANGELOG.html#v0.9.4-release-notes",
+    "title": "FIMS Change Log",
+    "section": "",
+    "text": "fix(JSON): use sanitize_val() for JSON output values by @Bai-Li-NOAA in #1505*\nfix(ci): fix swap file creation for slow-tests on ubuntu-latest by @aman-raj-srivastva in #1545\nfix memory leak by @Andrea-Havron-NOAA in #1554\nfix(initialize_fims): log_sd needed filtered by module_type by @kellijohnson-NOAA in #1653\n\n\n\n\n\nname is now fleet in FIMSFrame\nfleet_name is now fleet in FIMSFit\n\n\n\n\n\nExpose Population proportion_female with default 0.5 by @szu-yun-ko in #1494\nAdd Google Benchmark template, R helper, and a benchmark for CatchNumbersAtAge by @szu-yun-ko in #1277\nOptimizing the build memory and to surface compilation performance metrics by @Rohith-1717 in #1336\ndocs: add debugging workflow for long-running or crashing test runs by @Eshaan-byte in #1420\nImprove convergence handling in fit_fims by wrapping nlminb calls with tryCatch by @aman-raj-srivastva in #1385\nRefactor gtest files to use_gtest_template() convention by @Eshaan-byte in #1433\nDev tu rtmb style by @msupernaw in #1430\nRename phi_0 by @nathanvaughan-NOAA in #1490\nrefactor: Removes globalVariables() by @kellijohnson-NOAA in #1539\nDev deep copy by @msupernaw in #1626\n\n\n\n\n\nallow for priors on derived quantities by @nathanvaughan-NOAA in #1603\ntidy output by @ericward-noaa in #1509\nMigrate FIMSdiags from separate repo into FIMS repo by @iantaylor-NOAA in #1542\n\n\n\n\n\n@vivek0913 made their first contribution in #1526\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.9.3…v0.9.4"
   },
   {
     "objectID": "about/FIMS_CHANGELOG.html#v0.9.3-release-notes",
     "href": "about/FIMS_CHANGELOG.html#v0.9.3-release-notes",
     "title": "FIMS Change Log",
-    "section": "",
-    "text": "Reduce verbose FIMS logging and refine messages by @msupernaw\nCleans up integration tests after switching log_devs to random effects by @Andrea-Havron-NOAA\nRevert some changes that eliminated compiler warnings because they were causing tests to fail but not R CMD check\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.9.2…v0.9.3"
+    "section": "v0.9.3 (release notes)",
+    "text": "v0.9.3 (release notes)\n\nWhat’s Changed\n\nReduce verbose FIMS logging and refine messages by @msupernaw\nCleans up integration tests after switching log_devs to random effects by @Andrea-Havron-NOAA\nRevert some changes that eliminated compiler warnings because they were causing tests to fail but not R CMD check\n\nFull Changelog: https://github.com/NOAA-FIMS/FIMS/compare/v0.9.2…v0.9.3"
   },
   {
     "objectID": "about/FIMS_CHANGELOG.html#v0.9.2-release-notes",
