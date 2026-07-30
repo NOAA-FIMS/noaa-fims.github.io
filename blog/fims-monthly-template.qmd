@@ -83,7 +83,7 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 <iframe src="https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0; width: 100%; height: 500px;" frameborder="0" scrolling="no"></iframe>
 ```
 
-<!-- Used for previous version of FIMS weekly -->
+<!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
 ::: {.content-hidden unless-meta="upcoming-events.code-club"}
 ### {{< meta upcoming-events.code-club-date >}}
 **{{< meta upcoming-events.code-club-name >}}**\n
