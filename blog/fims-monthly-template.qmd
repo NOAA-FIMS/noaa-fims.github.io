@@ -71,7 +71,7 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 :::
 
 ::: {.column width="68%"}
-## UPCOMING EVENTS
+<div class="header-wrap"><h2>UPCOMING EVENTS</h2></div>
 
 ::: {.content-visible unless-meta="upcoming-events"}
 ```{=html}
