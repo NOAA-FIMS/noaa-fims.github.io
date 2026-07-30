@@ -1,5 +1,3 @@
-<div style="height:3em;"></div>
-
 ::: {.columns}
 ::: {.column width="49%"}
 
@@ -59,7 +57,7 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 :::
 
 ::: {.columns}
-::: {.column width="20%}
+::: {.column width="20%"}
 
 ## HELPFUL RESOURCES
 
