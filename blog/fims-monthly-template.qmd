@@ -57,7 +57,7 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 :::
 
 ::: {.columns}
-::: {.column width="20%"}
+::: {.column width="30%"}
 
 ## HELPFUL RESOURCES
 
@@ -70,7 +70,7 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 
 :::
 
-::: {.column width="78%"}
+::: {.column width="68%"}
 ## UPCOMING EVENTS
 
 ::: {.content-visible unless-meta="upcoming-events"}
