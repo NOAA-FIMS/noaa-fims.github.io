@@ -74,16 +74,18 @@ ANNOUNCEMENT 2
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -260,16 +262,18 @@ The restructuring of random effects is underway, led by Nathan and Andrea, where
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -358,16 +362,18 @@ Reworking this weekly newsletter to be more informative about FIMS development b
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -458,16 +464,18 @@ We received additional comments on the FIMS Manuscript before the CIE Review. Ch
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -560,16 +568,18 @@ Matthew is continuing to work on translational units and getting FIMS to operate
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -660,16 +670,18 @@ Continue to work on the FIMS planning repository.
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -767,16 +779,18 @@ Reactivate the FIMS planning repository.
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -868,16 +882,18 @@ Continue work on the interface for random effects.
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -969,16 +985,18 @@ Finalize the Pacific Hake case study.
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -1089,16 +1107,18 @@ Last reminder regarding the FIMS manuscript! The <a href="https://docs.google.co
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -1287,16 +1307,18 @@ Ian will be giving a seminar on <code>FIMSFrame</code>.
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -1455,16 +1477,18 @@ We have addressed the comments we received on the FIMS manuscript from reviewers
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -1560,16 +1584,18 @@ We need more good first issues on FIMS, see <a href="https://community.apache.or
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -1681,16 +1707,18 @@ Matthew is working ALL WEEK on <a href="https://github.com/NOAA-FIMS/FIMS/issues
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -2118,16 +2146,18 @@ Ron has done some great work on cleaning up the surplus production model and tha
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -2236,16 +2266,18 @@ Lots of side meetings are happening for FIMS. One of those was regarding the des
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
@@ -2346,16 +2378,18 @@ We have an Implementation Team Meeting and a tutorial on FIMSdiags this week. Pl
 </section>
 </div>
 </div>
-<div class="columns">
+<div class="columns equal-h2-cols">
 <div class="column" style="width:30%;">
-<section id="helpful-resources" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-resources">HELPFUL RESOURCES</h2>
+<div class="header-wrap">
+<h2 class="anchored">
+HELPFUL RESOURCES
+</h2>
+</div>
 <ul>
 <li><a href="https://noaa-fims.github.io/">FIMS Website</a></li>
 <li><a href="https://github.com/orgs/NOAA-FIMS/discussions">FIMS GitHub Discussions</a></li>
 <li><a href="https://noaa-fims.github.io/about/faq">FIMS FAQs</a></li>
 </ul>
-</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:68%;">
