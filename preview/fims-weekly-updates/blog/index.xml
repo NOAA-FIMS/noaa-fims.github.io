@@ -50,15 +50,16 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 BIG THING 1
 </li>
 <li>
 BIG THING 2
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -236,8 +237,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 Pull Requests, Pull Requests, and more Pull Requests. We hope to merge in all non-draft PRs this week in preparation for removing the dev branch.
 </li>
@@ -247,7 +248,8 @@ Reviewing the design document for <a href="https://docs.google.com/document/d/1h
 <li>
 The restructuring of random effects is underway, led by Nathan and Andrea, where the hope is to make the random-effects structure more generic and allow for priors on all quantities, whether they are parameters or derived quantities.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -334,8 +336,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 As we shift to using ‘translational units’ to compile FIMS, much like how RTMB compiles, we are also thinking about storing metrics related to building FIMS, e.g., compile time and size. This week Matthew is working on getting <a href="https://github.com/NOAA-FIMS/FIMS/pull/1430">PR #1430</a> and <a href="https://github.com/NOAA-FIMS/FIMS/pull/1336">PR #1336</a> to work together.
 </li>
@@ -345,7 +347,8 @@ Week 2 of community bonding with the Google Summer of Code Contributors. We are 
 <li>
 Reworking this weekly newsletter to be more informative about FIMS development by changing the Photo of the Week to a Project Summary of the Week.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -434,8 +437,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 We received slots for two 2026 Google Summer of Code Contributors. One contributor will be working on adding sex and the other will be working on adding Empirical Dynamic Modeling (EDM) with the help of Molly Stevens and Steve Munch. Their FIMS mentors, Adrianne, Andrea, Nathan, Molly, are working on a plan regarding how to welcome them to the FIMS community.
 </li>
@@ -445,7 +448,8 @@ Bai is working on absorbing {ecosystemdata} into {ecosystemom}. There is also a 
 <li>
 We received additional comments on the FIMS Manuscript before the CIE Review. Christine started addressing them last week with the hope that the manuscript can be submitted this week.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -536,8 +540,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 There are several Pull Requests that have been in the queue for more than a week that need reviewed and brought into dev. We are still thinking about changing our workflow to move away from having a dev branch but more investigation is needed.
 </li>
@@ -547,7 +551,8 @@ Adrianne is thinking about how to model variability in length within the new gro
 <li>
 Matthew is continuing to work on translational units and getting FIMS to operate more like the RTMB package while compiling. The current road block is with the use of roxygen2 some additional files are added that can cause headaches.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -636,8 +641,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 CIE Review is this week!
 </li>
@@ -647,7 +652,8 @@ Bai is working on further designing slow versus fast tests so failures come quic
 <li>
 Continue to work on the FIMS planning repository.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -742,8 +748,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 Send presentations for CIE Review to OST for review.
 </li>
@@ -753,7 +759,8 @@ Make a check-list of final tasks for the Surplus Production model (carry over fr
 <li>
 Reactivate the FIMS planning repository.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -843,8 +850,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 Jon is working on bringing more distributions into FIMS, including the Dirichlet-multinomial.
 </li>
@@ -854,7 +861,8 @@ Make a check-list of final tasks for the Surplus Production model.
 <li>
 Continue work on the interface for random effects.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -944,8 +952,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 Continue trying to fix pkgdown site where there is an obscure failure in the testdown or coverage reports.
 </li>
@@ -955,7 +963,8 @@ An email will actually (:wink:) go out to the CIE Reviewers, Regional SSC partic
 <li>
 Finalize the Pacific Hake case study.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -1065,8 +1074,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 We will work on getting at least three case studies up and going this week in preparation for the CIE Review.
 </li>
@@ -1076,7 +1085,8 @@ All hands on deck 🚨🫡⚓ regarding FIMS documentation. Nothing is too small
 <li>
 Last reminder regarding the FIMS manuscript! The <a href="https://docs.google.com/document/d/1HyLJa4y8fkKML31a636qwozkaYXglT9yzQCmE6bTLa0/edit?usp=drive_link">manuscript</a> and the responses to <a href="https://docs.google.com/document/d/1t_eju7vqF119ZPgLVU95pQFqjzGRTIMmQo0lucTqEbQ/edit?usp=drive_link">reviewers</a> will be submitted on March 19, 2026.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -1263,8 +1273,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 Merging in a few final Pull Requests today and tomorrow.
 </li>
@@ -1274,7 +1284,8 @@ An email will go out to the CIE Reviewers, Regional SSC participants, FIMS Counc
 <li>
 Ian will be giving a seminar on <code>FIMSFrame</code>.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -1430,8 +1441,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 All changes to the code that are going to happen for the CIE Review must happen this week. Time-varying selectivity and time-varying weight-at-age inputs might make it in :crossed_fingers:. Next week will be focused on updating the case studies.
 </li>
@@ -1441,7 +1452,8 @@ Nathan and Andrea are working on a PR to increase the usability of the random ef
 <li>
 We have addressed the comments we received on the FIMS manuscript from reviewers and it is time to do a final round of edits. The <a href="https://docs.google.com/document/d/1HyLJa4y8fkKML31a636qwozkaYXglT9yzQCmE6bTLa0/edit?usp=drive_link">manuscript</a> and the responses to <a href="https://docs.google.com/document/d/1t_eju7vqF119ZPgLVU95pQFqjzGRTIMmQo0lucTqEbQ/edit?usp=drive_link">reviewers</a> are on Google Drive. Please provide all comments by March 18, 2026 so we can return the manuscript to ICES by March 19, 2026.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -1535,8 +1547,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 Bai is working on figures and tables to summarize the results of adding FIMS to the model-comparison project.
 </li>
@@ -1546,7 +1558,8 @@ Several pull requests from potential Google Summer of Code Contributors were sub
 <li>
 We need more good first issues on FIMS, see <a href="https://community.apache.org/committers/good-first-issues.html">Apache’s take</a> on what it means to create a ‘good first issue’. Please consider adding more to any of the NOAA-FIMS repositories.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -1656,8 +1669,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 We have a few open PRs this week to review from new contributors and one from Matthew (fixing a memory leak).
 </li>
@@ -1667,7 +1680,8 @@ Bai is working on ecosystemdata to extract selectivity parameters from EWE outpu
 <li>
 Matthew is working ALL WEEK on <a href="https://github.com/NOAA-FIMS/FIMS/issues/981">translational units</a> to decrease the number of cores that we need to build FIMS.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -2094,8 +2108,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 We plan on releasing a version 0.9.0 this week once a few PR are completed.
 </li>
@@ -2105,7 +2119,8 @@ Our NOAA-FIMS website will have an official blog later today that will include b
 <li>
 Ron has done some great work on cleaning up the surplus production model and that work will continue this week.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -2211,8 +2226,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 The FIMS case study will be presented to the Scientific Review Group as additional research. Spoiler alert, depending on what you assume for selectivity, the end-year population dynamics are very different but the rest of the time series matches pretty well.
 </li>
@@ -2222,7 +2237,8 @@ Bai is working on the comparisons of FIMS to other modeling frameworks fit to th
 <li>
 Lots of side meetings are happening for FIMS. One of those was regarding the design of wrapper functions for random effects and other questions related to random effects.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
@@ -2322,8 +2338,8 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-## BIG THINGS HAPPENING
-<ol>
+<section id="big-things-happening" class="level2">
+<h2 class="anchored" data-anchor-id="big-things-happening">BIG THINGS HAPPENING</h2>
 <li>
 All of the case studies have been worked on but the advanced one is still having some trouble. We will be working on both the advanced and Pacific Hake case studies this week.
 </li>
@@ -2333,7 +2349,8 @@ Google Summer of Code ideas need to be submitted today! We have two submitted so
 <li>
 We have an Implementation Team Meeting and a tutorial on FIMSdiags this week. Please attend both and spread the news about the tutorial.
 </li>
-</ol>
+
+</section>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
