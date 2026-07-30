@@ -16,7 +16,7 @@ if (!is.null(big_things)) {
   items <- items[nzchar(trimws(items))]
   
   if (length(items) > 0) {
-    cat('<div class="header-wrap"><h2>BIG THINGS HAPPENING</h2></div>\n')
+    cat('## BIG THINGS HAPPENING')
     cat('<ol>\n')
     for (item in items) {
       cat(paste0('  <li>', item, '</li>\n'))
