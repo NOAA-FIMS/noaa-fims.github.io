@@ -56,6 +56,9 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 :::
 :::
 
+<br>
+
+
 ::: {.columns .equal-h2-cols}
 ::: {.column width="30%"}
 

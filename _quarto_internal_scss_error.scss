@@ -1051,7 +1051,7 @@ $font-family-heading: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Seg
 // Color system
 //
 
-$white:    #FFFFFF;
+$white:    $slate-100;
 $gray-100: $slate-90;
 $gray-200: $slate-80;
 $gray-300: $slate-70;
@@ -1063,19 +1063,19 @@ $gray-800: $slate-20;
 $gray-900: $slate-10;
 $black:    $slate-00;
 
-$blue:    $blue-30;
+$blue:    $blue-50;
 $indigo:  #E574BC !default;
-$purple:  $purple-30;
-$pink:    $pink-40;
-$red:     $red-30;
-$orange:  $orange-30;
+$purple:  $purple-50;
+$pink:    $pink-60;
+$red:     $red-60;
+$orange:  $orange-60;
 $yellow:  $orange-70;
-$green:   $green-50;
-$teal:    $blue-50;
-$cyan:    $blue-70;
+$green:   $green-60;
+$teal:    $blue-40;
+$cyan:    $blue-60;
 
 $primary:       $blue !default;
-$secondary:     $blue-50 !default;
+$secondary:     $blue-10 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -1083,41 +1083,27 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 
+$headings-color: $blue-80;
+$title-banner-color: $headings-color;
+
 // Quarto variables
-$body-color: $slate-10;
-$navbar-bg: $white;
-$code-color: $purple-30;
-$code-bg: $white;
-$footer-bg: $white;
-$heading-color: $blue-20;
-$title-banner-color: $heading-color;
+$navbar-bg: $black;
+$link-color: $blue-50;
+$code-color: $pink-60;
+$code-bg: $black;
+$footer-bg: $black;
+$quarto-border-color: $slate-20;
 
-// Bootstrap fixups
-$text-muted: $gray-700;
+// Bootstrap Alerts
+$alert-bg-scale: 66%;
+$alert-border-scale: 50%;
+$alert-color-scale: -30%;
+$alert-link-scale: 5%;
+
+$dropdown-link-hover-bg: $blue-20;
 
 
-// Heading font size customization
-$h1-font-size: 2rem !default;
-$h2-font-size: 1.65rem !default;
-$h3-font-size: 1.45rem !default;
-$h4-font-size: 1.25rem !default;
-$h5-font-size: 1.1rem !default;
-
-$kbd-padding-y: 0.4rem !default;
-$kbd-padding-x: 0.4rem !default;
-
-// Speed up the default transition for the navbar
-$transition-collapse: height 0.2s ease !default;
-
-// Adjust the base font size up a little
-$font-size-root: 17px !default;
-
-// Disable smooth scrolling
-$enable-smooth-scroll: false !default;
-
-// quarto-scss-analysis-annotation { "origin": "zephyr (builtin theme)" }
-
-$theme: "zephyr" !default;
+$theme: "zephyr-dark" !default;
 
 //
 // Color system
@@ -1161,9 +1147,9 @@ $enable-shadows:              true !default;
 
 // Body
 
-$body-color:                $gray-700 !default;
-
-$headings-color:              $gray-900 !default;
+$body-color:     $gray-200 !default;
+$body-bg:        $black;
+$headings-color: $gray-100 !default;
 
 // Fonts
 
@@ -1174,8 +1160,8 @@ $font-size-sm:                $font-size-base * .875 !default;
 
 // Components
 
-$box-shadow:                  0 1px 2px rgba($black, .05) !default;
-$box-shadow-lg:               0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) !default;
+$box-shadow:                  0 1px 2px rgba($gray-900, .05) !default;
+$box-shadow-lg:               0 1px 3px 0 rgba($gray-900, .1), 0 1px 2px 0 rgba($gray-900, .06) !default;
 
 // Tables
 
@@ -1205,7 +1191,7 @@ $form-label-font-weight:                500 !default;
 
 $input-box-shadow:                      $box-shadow !default;
 
-$input-group-addon-bg:                  $gray-100 !default;
+$input-group-addon-bg:                  $gray-900 !default;
 
 // Navs
 
@@ -1221,12 +1207,24 @@ $navbar-padding-y:                  .85rem !default;
 
 $navbar-nav-link-padding-x:         .75rem !default;
 
+$navbar-dark-color:                 $black !default;
+$navbar-dark-hover-color:           $black !default;
+$navbar-dark-active-color:          $black !default;
+
+$navbar-light-color:                $white !default;
+$navbar-light-hover-color:          $white !default;
+$navbar-light-active-color:         $white !default;
+
 // Dropdowns
 
-$dropdown-font-size:                $font-size-sm !default;
-$dropdown-border-color:             $gray-300 !default;
-$dropdown-divider-bg:               $gray-200 !default;
+$dropdown-color:                    $white;
+$dropdown-bg:                       mix($black, $gray-900, 50%);
 
+$dropdown-font-size:                $font-size-sm !default;
+$dropdown-border-color:             $gray-700 !default;
+$dropdown-divider-bg:               $gray-800 !default;
+
+$dropdown-link-color:               $light;
 $dropdown-link-hover-color:         $white !default;
 $dropdown-link-hover-bg:            $primary !default;
 
@@ -1238,17 +1236,33 @@ $dropdown-item-padding-x:           1rem !default;
 $pagination-padding-y:              .5rem !default;
 $pagination-padding-x:              1rem !default;
 
-$pagination-color:                  $gray-700 !default;
+$pagination-color:                  $gray-300 !default;
+$pagination-bg:                     $gray-900;
+$pagination-border-color:           $gray-700;
 
 $pagination-focus-color:            $pagination-color !default;
+$pagination-focus-background:       $gray-700;
 
 $pagination-hover-color:            $pagination-color !default;
-$pagination-hover-bg:               $gray-100 !default;
+$pagination-hover-bg:               $gray-800 !default;
+
+$pagination-disabled-color:         $gray-600;
+$pagination-disabled-bg:            $gray-900;
 
 // Cards
 $card-spacer-x:                     1.5rem !default;
 $card-cap-padding-y:                1rem !default;
 $card-cap-padding-x:                1.5rem !default;
+$card-border-color:                 rgba($white, .125);
+$card-cap-bg:                       rgba($white, .03);
+$card-cap-color:                    null;
+$card-color:                        null;
+$card-bg:                           $black;
+
+// Accordions
+$accordion-button-bg:               mix($black, $gray-900, 50%);
+$accordion-button-active-bg:        $gray-900;
+$accordion-button-active-color:     $white;
 
 // Toasts
 
@@ -1256,7 +1270,8 @@ $toast-header-color:                $headings-color !default;
 
 // Modals
 
-$modal-content-border-color:        $gray-300 !default;
+$modal-content-bg:                  $black;
+$modal-content-border-color:        $gray-700 !default;
 $modal-header-border-width:         0 !default;
 
 // List group
@@ -1270,7 +1285,41 @@ $breadcrumb-padding-x:              1rem !default;
 
 $breadcrumb-divider:                quote(">") !default;
 
+// Progress Bars
 
+$progress-bg:                       $gray-900;
+$progress-bar-color:                $gray-800;
+
+// Toasts
+
+$toast-color:                       null;
+$toast-background-color:            rgba($black, .85);
+$toast-border-color:                rgba($white, .1);
+
+$toast-header-color:                $gray-100;
+$toast-header-background-color:     rgba($black, .85);
+$toast-header-border-color:         rgba($white, .05);
+
+
+
+// Heading font size customization
+$h1-font-size: 2rem !default;
+$h2-font-size: 1.65rem !default;
+$h3-font-size: 1.45rem !default;
+$h4-font-size: 1.25rem !default;
+$h5-font-size: 1.1rem !default;
+
+$kbd-padding-y: 0.4rem !default;
+$kbd-padding-x: 0.4rem !default;
+
+// Speed up the default transition for the navbar
+$transition-collapse: height 0.2s ease !default;
+
+// Adjust the base font size up a little
+$font-size-root: 17px !default;
+
+// Disable smooth scrolling
+$enable-smooth-scroll: false !default;
 
 /*-- scss: functions --*/
 
@@ -1309,8 +1358,8 @@ $title-banner-bg: null !default;
 $title-banner-image: null !default;
 
 
-$btn-code-copy-color: #60757e !default;
-$btn-code-copy-color-active: #0e6876 !default;
+$btn-code-copy-color: #99a6ac !default;
+$btn-code-copy-color-active: #71aeb7 !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
 
@@ -5386,6 +5435,16 @@ $grid-default-toc-mid-body: minmax(
 
 
 // quarto-scss-analysis-annotation { "origin": "'mixins' section from user-defined SCSS" }
+
+@mixin alert-variant($background, $border, $color) {
+  color: $color;
+  @include gradient-bg($background);
+  border-color: $border;
+
+  .alert-link {
+    color: shade-color($color, $alert-link-scale);
+  }
+}
 
 
 
@@ -13070,8 +13129,8 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700
   font-weight: 500;
 
   .nav-item {
-    margin-right: .5rem;
     margin-left: .5rem;
+    margin-right: .5rem;
   }
 
   .navbar-nav {
@@ -13107,10 +13166,6 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700
       }
     }
   }
-}
-
-.navbar-nav {
-  --bs-nav-link-padding-x: .5rem;
 }
 
 // Buttons
@@ -13152,13 +13207,13 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700
 // Tables
 
 .table {
-  font-size: $font-size-sm;
   box-shadow: $box-shadow-lg;
+  font-size: $font-size-sm;
 }
 
 thead th {
-  font-size: $font-size-sm;
   text-transform: uppercase;
+  font-size: $font-size-sm;
 }
 
 // Forms
@@ -13198,11 +13253,11 @@ thead th {
 }
 
 .breadcrumb {
-  font-size: $font-size-sm;
-  font-weight: 500;
-  border: 1px solid $gray-300;
+  border: 1px solid $gray-700;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
+  font-size: $font-size-sm;
+  font-weight: 500;
 
   &-item {
     padding: 1rem .5rem 1rem 0;
@@ -13224,29 +13279,11 @@ thead th {
 .badge {
   &.bg-secondary,
   &.bg-light {
-    color: $gray-900;
+    color: $gray-100;
   }
 }
 
 // Containers
-
-.list-group-item,
-.card {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5,
-  .h6 {
-    color: inherit;
-  }
-}
 
 .list-group {
   box-shadow: $box-shadow-lg;
@@ -13254,10 +13291,14 @@ thead th {
 
 .card {
   box-shadow: $box-shadow-lg;
+
+  &-title {
+    color: inherit;
+  }
 }
 
 .modal-footer {
-  background-color: $gray-100;
+  background-color: $gray-900;
 }
 
 .modal-content {
@@ -13265,18 +13306,20 @@ thead th {
 }
 
 
-// quarto-scss-analysis-annotation { "origin": null }
+:root {
+  --quarto-border-color: var(--slate-20);
+}
 
 .quarto-title-banner {
-  @extend .border-bottom, .border-2, .bg-white, .border-light;
+  @extend .border-bottom, .border-2, .bg-black, .border-dark;
 }
 
 .quarto-title-banner .quarto-title .title {
-  font-weight: 400;
+  font-weight: 400 !important;
   font-size: calc(1.5rem + 1.14vw);
 
   #title-block-header.quarto-title-block & {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem !important;
   }
 
   @include media-breakpoint-up(md) {
@@ -13284,29 +13327,52 @@ thead th {
   }
 }
 
-.navbar-dark .navbar-nav .nav-link.active {
-	background-color: $white;
-}
-
 h2 {
-  border-bottom: 2px solid (var(--bs-light));
+  border-bottom: 2px solid (var(--bs-dark));
 }
 
-.header-wrap {
-  height: 3em; /* or whatever fits your tallest h2 */
-  display: flex;
-  align-items: flex-end;
-}
-.header-wrap h2 {
-  width: 100%; 
-  border-bottom: 2px solid var(--bs-light);
-  margin-top: 4em; 
+div.quarto-post .listing-categories .listing-category {
+  color: $slate-50;
+	border: solid 1px $slate-30;
 }
 
+.input-group-text, .form-control, .form-select {
+  border:1px solid $slate-30;
+}
+
+.quarto-listing-default div.quarto-post {
+  border-bottom: 1px solid $slate-30;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: $black;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: $black;
+}
+
+// about page - trestles template
+@media(min-width: 992px) {
+  div.quarto-about-trestles .about-contents {
+   border-left-color: $slate-30;
+  }
+}
+
+div.quarto-about-trestles .about-entity .about-link {
+	color: $blue-70;
+}
+
+/* Bootstrap Fixups */
+.btn-secondary, .btn-outline-secondary {
+	color: $blue-80;
+}
+
+/* index.html */
 .social-icon-links .link-primary {
-  color: $pink-30;
+  color: $pink-40;
   &:hover, &:focus {
-    color: $pink-20;
+    color: $pink-50;
     i {
       transform: scale(1.25);
       transform-origin: center center;
@@ -13316,22 +13382,18 @@ h2 {
 
 div.quarto-post .listing-categories .listing-category,
 .quarto-title-block .quarto-title .quarto-categories .quarto-category {
-  border-color: $pink-30;
-  color: $pink-10;
-  background-color: $pink-90;
-  opacity: 0.9;
+  border-color: $pink-60;
+  color: $pink-90;
+  background-color: $pink-10;
+  opacity: 0.8
 }
 
 div.quarto-post .listing-categories .listing-category {
   opacity: 0.6;
 }
 
-.blockquote {
-  color: $text-muted;
-}
-
-.code-with-filename .code-with-filename-file {
-  background-color: var(--slate-90);
+.quarto-dark .code-with-filename .code-with-filename-file {
+  background-color: var(--slate-10);
 }
 :root {
   --bs-font-family-heading: #{$font-family-heading};
