@@ -50,11 +50,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 BIG THING 1
@@ -240,11 +236,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 Pull Requests, Pull Requests, and more Pull Requests. We hope to merge in all non-draft PRs this week in preparation for removing the dev branch.
@@ -342,11 +334,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 As we shift to using ‘translational units’ to compile FIMS, much like how RTMB compiles, we are also thinking about storing metrics related to building FIMS, e.g., compile time and size. This week Matthew is working on getting <a href="https://github.com/NOAA-FIMS/FIMS/pull/1430">PR #1430</a> and <a href="https://github.com/NOAA-FIMS/FIMS/pull/1336">PR #1336</a> to work together.
@@ -446,11 +434,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 We received slots for two 2026 Google Summer of Code Contributors. One contributor will be working on adding sex and the other will be working on adding Empirical Dynamic Modeling (EDM) with the help of Molly Stevens and Steve Munch. Their FIMS mentors, Adrianne, Andrea, Nathan, Molly, are working on a plan regarding how to welcome them to the FIMS community.
@@ -552,11 +536,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 There are several Pull Requests that have been in the queue for more than a week that need reviewed and brought into dev. We are still thinking about changing our workflow to move away from having a dev branch but more investigation is needed.
@@ -656,11 +636,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 CIE Review is this week!
@@ -766,11 +742,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 Send presentations for CIE Review to OST for review.
@@ -871,11 +843,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 Jon is working on bringing more distributions into FIMS, including the Dirichlet-multinomial.
@@ -976,11 +944,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 Continue trying to fix pkgdown site where there is an obscure failure in the testdown or coverage reports.
@@ -1101,11 +1065,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 We will work on getting at least three case studies up and going this week in preparation for the CIE Review.
@@ -1303,11 +1263,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 Merging in a few final Pull Requests today and tomorrow.
@@ -1474,11 +1430,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 All changes to the code that are going to happen for the CIE Review must happen this week. Time-varying selectivity and time-varying weight-at-age inputs might make it in :crossed_fingers:. Next week will be focused on updating the case studies.
@@ -1583,11 +1535,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 Bai is working on figures and tables to summarize the results of adding FIMS to the model-comparison project.
@@ -1708,11 +1656,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 We have a few open PRs this week to review from new contributors and one from Matthew (fixing a memory leak).
@@ -2150,11 +2094,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 We plan on releasing a version 0.9.0 this week once a few PR are completed.
@@ -2271,11 +2211,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 The FIMS case study will be presented to the Scientific Review Group as additional research. Spoiler alert, depending on what you assume for selectivity, the end-year population dynamics are very different but the rest of the time series matches pretty well.
@@ -2386,11 +2322,7 @@ Skip to main content
 </div>
 <div class="columns">
 <div class="column" style="width:49%;">
-<div class="header-wrap">
-<h2 class="anchored">
-BIG THINGS HAPPENING
-</h2>
-</div>
+## BIG THINGS HAPPENING
 <ol>
 <li>
 All of the case studies have been worked on but the advanced one is still having some trouble. We will be working on both the advanced and Pacific Hake case studies this week.
