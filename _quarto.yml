@@ -113,14 +113,12 @@ format:
     theme:
       light:
         - zephyr
+        - assets/colors.scss
         - assets/styles-elm-light.scss
         - assets/styles-elm-base.scss
-        - assets/colors.scss
       dark:
-        - assets/zephyr-dark.scss
         - assets/styles-elm-dark.scss
         - assets/styles-elm-base.scss
-        - assets/colors.scss
     css:
       - assets/panelset-extras.css
     highlight-style:
@@ -130,4 +128,3 @@ format:
 
 execute:
   freeze: auto
-
