@@ -2,6 +2,44 @@
 title: FIMS Change Log
 ---
 
+## v0.9.4 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.9.4))
+### What's Changed
+
+### Bug Fixes
+- fix(JSON): use sanitize_val() for JSON output values by @Bai-Li-NOAA in [#1505](https://github.com/NOAA-FIMS/FIMS/pull/1505)*
+- fix(ci): fix swap file creation for slow-tests on ubuntu-latest by @aman-raj-srivastva in [#1545](https://github.com/NOAA-FIMS/FIMS/pull/1545)
+- fix memory leak by @Andrea-Havron-NOAA in [#1554](https://github.com/NOAA-FIMS/FIMS/pull/1554)
+- fix(initialize_fims): log_sd needed filtered by module_type by @kellijohnson-NOAA in [#1653](https://github.com/NOAA-FIMS/FIMS/pull/1653)
+
+### Breaking Changes
+- `name` is now `fleet` in FIMSFrame
+- `fleet_name` is now `fleet` in FIMSFit
+
+### Refactor Changes
+- Expose Population proportion_female with default 0.5 by @szu-yun-ko in [#1494](https://github.com/NOAA-FIMS/FIMS/pull/1494)
+- Add Google Benchmark template, R helper, and a benchmark for CatchNumbersAtAge by @szu-yun-ko in [#1277](https://github.com/NOAA-FIMS/FIMS/pull/1277)
+- Optimizing the build memory and to surface compilation performance metrics by @Rohith-1717 in [#1336](https://github.com/NOAA-FIMS/FIMS/pull/1336)
+- docs: add debugging workflow for long-running or crashing test runs by @Eshaan-byte in [#1420](https://github.com/NOAA-FIMS/FIMS/pull/1420)
+- Improve convergence handling in fit_fims by wrapping nlminb calls with tryCatch by @aman-raj-srivastva in [#1385](https://github.com/NOAA-FIMS/FIMS/pull/1385)
+- Refactor gtest files to use_gtest_template() convention by @Eshaan-byte in [#1433](https://github.com/NOAA-FIMS/FIMS/pull/1433)
+- Dev tu rtmb style by @msupernaw in [#1430](https://github.com/NOAA-FIMS/FIMS/pull/1430)
+- Rename phi_0 by @nathanvaughan-NOAA in [#1490](https://github.com/NOAA-FIMS/FIMS/pull/1490)
+- refactor: Removes globalVariables() by @kellijohnson-NOAA in [#1539](https://github.com/NOAA-FIMS/FIMS/pull/1539)
+- Dev deep copy by @msupernaw in [#1626](https://github.com/NOAA-FIMS/FIMS/pull/1626)
+
+### New features
+- allow for priors on derived quantities by @nathanvaughan-NOAA in [#1603](https://github.com/NOAA-FIMS/FIMS/pull/1603)
+- tidy output by @ericward-noaa in [#1509](https://github.com/NOAA-FIMS/FIMS/pull/1509)
+- Migrate FIMSdiags from separate repo into FIMS repo by @iantaylor-NOAA in [#1542](https://github.com/NOAA-FIMS/FIMS/pull/1542)
+
+### New Contributors
+- @vivek0913 made their first contribution in [#1526](https://github.com/NOAA-FIMS/FIMS/pull/1526)
+
+**Full Changelog**: https://github.com/NOAA-FIMS/FIMS/compare/v0.9.3...v0.9.4
+
+---
+
+
 ## v0.9.3 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.9.3))
 ### What's Changed
 - Reduce verbose FIMS logging and refine messages by @msupernaw
