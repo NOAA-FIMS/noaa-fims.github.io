@@ -117,6 +117,9 @@ format:
         - assets/styles-elm-light.scss
         - assets/styles-elm-base.scss
       dark:
+        - zephyr
+        - assets/zephyr-dark.scss
+        - assets/colors.scss
         - assets/styles-elm-dark.scss
         - assets/styles-elm-base.scss
     css:
