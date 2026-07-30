@@ -32,11 +32,21 @@ main {
 }
 
 #title-block-header {
-  margin-block-end: 0.25rem;
+  margin-block-end: 0.25rem !important;
 }
 
 .quarto-title-banner {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.25em !important;
+}
+
+@media (max-width: 991.98px) {
+  .quarto-title-banner {
+    margin-bottom: 0.25em !important;
+  }
+}
+
+#title-block-header.quarto-title-block.default .quarto-title-meta-heading {
+    margin-top: 0.25em !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
