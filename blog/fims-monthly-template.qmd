@@ -3,6 +3,7 @@
 ::: {.columns}
 ::: {.column width="49%"}
 
+## BIG THINGS HAPPENING
 ```{r}
 #| echo: false
 #| results: asis
@@ -16,8 +17,6 @@ if (!is.null(big_things)) {
   items <- items[nzchar(trimws(items))]
   
   if (length(items) > 0) {
-    cat('## BIG THINGS HAPPENING')
-    cat('<ol>\n')
     for (item in items) {
       cat(paste0('  <li>', item, '</li>\n'))
     }
