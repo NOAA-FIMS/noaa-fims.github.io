@@ -56,10 +56,10 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 :::
 :::
 
-::: {.columns}
+::: {.columns .equal-h2-cols}
 ::: {.column width="30%"}
 
-## HELPFUL RESOURCES
+<div class="header-wrap"><h2>HELPFUL RESOURCES</h2></div>
 
 - [FIMS Website](https://noaa-fims.github.io/)
 - [FIMS GitHub Discussions](https://github.com/orgs/NOAA-FIMS/discussions)
