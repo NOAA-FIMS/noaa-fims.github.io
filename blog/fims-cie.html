@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Alexander Jensen and Emily Liljestrand">
-<meta name="dcterms.date" content="2026-08-01">
+<meta name="author" content="Kelli Johnson">
+<meta name="dcterms.date" content="2026-07-13">
 
-<title>Implementing New Features in FIMS: A Case Study in Selectivity – FIMS</title>
+<title>FIMS CIE Review – FIMS</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -50,9 +50,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-12e365f24a4b4913e1296245ea4537a8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2d7eb0530402e3af163a54230485c4e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d6f832aa94d119160e5f37568b55255e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-2d7eb0530402e3af163a54230485c4e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b8847f48e5f07260553305716990c6b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-bcfc6585472487d75d5ce9100d322c96.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-b8847f48e5f07260553305716990c6b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,8 +92,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
-<meta property="og:title" content="Implementing New Features in FIMS: A Case Study in Selectivity – FIMS">
-<meta property="og:description" content="How to add new features in FIMS using existing code, GitHub, GitHub issues, and FIMS Implementation Team resources">
+<meta property="og:title" content="FIMS CIE Review – FIMS">
+<meta property="og:description" content="CIE concludes that FIMS is on the right track">
 <meta property="og:site_name" content="FIMS">
 </head>
 
@@ -271,7 +271,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">FIMS <small><strong>?env:VERSION</strong></small></span>
+    <span class="navbar-title">FIMS <small>v0.9.4</small></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -370,12 +370,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Implementing New Features in FIMS: A Case Study in Selectivity</h1>
-            <p class="subtitle lead">How to add new features in FIMS using existing code, GitHub, GitHub issues, and FIMS Implementation Team resources</p>
+      <h1 class="title">FIMS CIE Review</h1>
+            <p class="subtitle lead">CIE concludes that FIMS is on the right track</p>
                                 <div class="quarto-categories">
-                <div class="quarto-category">learn</div>
-                <div class="quarto-category">R</div>
-                <div class="quarto-category">open-science</div>
+                <div class="quarto-category">community</div>
                 <div class="quarto-category">testing</div>
               </div>
                   </div>
@@ -387,14 +385,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Alexander Jensen and Emily Liljestrand </p>
+               <p>Kelli Johnson </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 1, 2026</p>
+        <p class="date">July 13, 2026</p>
       </div>
     </div>
     
@@ -410,7 +408,6 @@ ul.task-list li input[type="checkbox"] {
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 <!-- Skip to main content link for keyboard accessibility -->
-<a href="#quarto-content" class="skip-link">Skip to main content</a>
 <style>
 .skip-link {
   position: absolute;
@@ -431,125 +428,59 @@ ul.task-list li input[type="checkbox"] {
   outline-offset: 2px;
 }
 </style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const skipLink = document.createElement('a');
+    skipLink.href = '#quarto-content';
+    skipLink.className = 'skip-link';
+    skipLink.textContent = 'Skip to main content';
+    document.body.prepend(skipLink);
+  });
+</script>
 
 
 
 
 
-<section id="contributing-to-fims" class="level2">
-<h2 class="anchored" data-anchor-id="contributing-to-fims">Contributing to FIMS</h2>
-<p>The advantage of having a modular modeling system like FIMS is that its development can also be broken down and tackled in component parts. By utilizing github’s collaborative structure, while one developer can focus on improving recruitment estimates in FIMS, others can tackle, for example, age composition likelihoods or diagnostic tools.</p>
-<p>In this way, scientists at different centers can focus on adding those features that are critically necessary to make the assessments in their regions compatible with the FIMS platform. Our small team chipped off a little piece of age-based stock assessment models that was important for our two regions despite being on complete opposite sides of the country, at the Southwest Fisheries Science Center and the Northeast Fisheries Science Center.</p>
-<p>The default selectivity option in FIMS is logistic or double logistic, but the double normal or age-specific selectivity are used in stock synthesis (SS) and the Woods Hole Assessment Model (WHAM) respectively. We set out to add these options and remove one more barrier to replicating regional assessments in FIMS.</p>
+<p>On April 21–23, 2026 the Fisheries Integrated Modeling System (FIMS) underwent a review by the Center for Independent Experts. Reviewers included Dr.&nbsp;Steven Holmes (Earth Sciences New Zealand), Dr.&nbsp;Daniel Howell (Institute of Marine Research), and Dr.&nbsp;Kotaro Ono (Institute of Marine Research), and, Dr.&nbsp;Aaron Berger (Northwest Fisheries Science Center) served as the Chair. In summary, it was concluded that FIMS is on track for success and it was recommended that FIMS be applied to a limited number of well-chosen, simple stock assessments in the immediate future.</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Historically, NOAA Fisheries has used a patchwork of different software models developed independently across different regions. While these methods are accurate (<a href="https://spo.nmfs.noaa.gov/sites/default/files/pdf-content/fish-bull/11923li.pdf">Li et al., 2021</a>), they can be difficult to maintain and connect to ecosystem, climate and socioeconomic models. Thus, in 2020 NOAA Fisheries worked to create a Terms of Reference for an ambitious, nationally coordinated software framework designed to modernize and unify how we model marine populations, i.e., FIMS.</p>
+<p>Through FIMS, NOAA Fisheries is leading the development of a modular software system that presents a unified approach to fisheries modeling, meets regional needs for conducting stock assessments and providing scientific advice across a range of data input, provides a focus for greater international collaboration, and builds a bridge between single-species, ecosystem, socioeconomic, and climate-fisheries models. In 2025 it was clear that this effort, which started in 2021, had reached a point where an external technical review was warranted.</p>
 </section>
-<section id="modifying-the-fims-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="modifying-the-fims-workflow">Modifying the FIMS Workflow</h2>
-<p>Though daunting at first, we realized we could add these selectivity options by copying the existing scaffolding from previous selectivity options or even look to features like the recruitment or abundance specification to figure out indexing, calculations, and how variables are passed around the FIMS framework. Implementing new cpp architecture was the most tricky, since neither of us had a strong background in it.</p>
-<p>Before any modifications were made, we branched the github repository into a development branch with an informative name- dev-selectivity-at-age and made all changes there.</p>
-<p>The crux of how selectivity is specified and used in FIMS came down to modifying or adding a few bits of code, described below:</p>
-<p><u>src/fims_modules.hpp</u> This code lists all the FIMS modules. We added “SelectivityatAge” as a module, with corresponding variable names</p>
-<p><u>inst/include/common/fims_math.hpp</u> This code contains all of the “fims math” or other formulas and math functions not found in base R functionality. We added new functions to help conversion of Type&amp;x to size_t for indexing purposes in age_specific.hpp</p>
-<p><u>inst/include/interface/rcpp/rcpp_interface.hpp</u> This is the RCPP interface “to declare things”. We copied the code used for the other selectivity options (i.e., “LogisticSelectivityInterface” and “DoubleLogisticSelectivityInterface”) and used it to declare AgeSpecificSelectivityInterface</p>
-<p><u>inst/include/interface/rcpp/rcpp_objects/rcpp_selectivity.hpp</u> This code is an RCPP interface to declare objects, specifically different types of selectivity. There was already code for “LogisticSelectivityInterface” and “DoubleLogisticSelectivityInterface” so it was trivial to copy this architecture wholesale for “AgeSpecificSelectivityInterface”</p>
-<p><u>inst/include/population_dynamics/selectivity/selectivity.hpp</u> This code explicitly defines any downstream “functors” (see below) and makes sure toexplicitly include them for use in FIMS. We added a single line “#include”functors/age_specific.hpp”</p>
-<p><u>inst/include/population_dynamics/selectivity/functors/age_specific.hpp</u> This was a brand new bit of code we created, again mimicking the functors for other selectivity options like logistic and double logistic. Here’s where the actual “math” all gets applied, the correct indexing figured out for the age-specific values, and the inverse logit applied to the parameters.</p>
-<p><u>R/FIMS-package.R</u> This code lists all objects that are “imported” and “exported” in FIMS and we modified to include ‘<span class="citation" data-cites="export">@export</span> AgeSpecificSelectivity’ and ran devtools::document() to add function to exported functions</p>
-<section id="default-parameters" class="level3">
-<h3 class="anchored" data-anchor-id="default-parameters">Default Parameters</h3>
-<p>All of the above made it explicitly possible to use an age-based selectivity to fit assessment models in FIMS. But for accessibility and to make sure the model does run (rather than simply ‘can’ run), it was critical to specify default parameters when this selectivity is chosen by a user.</p>
-<p><u>R/create_default_parameters.R</u> This bit of code contains several functions necessary for broadly and specifically specifying default parameters in FIMS. The nested functions are as follows:</p>
+<section id="cie-reports" class="level2">
+<h2 class="anchored" data-anchor-id="cie-reports">CIE reports</h2>
+<p>Each reviewer provided a report summarizing their perspective on how FIMS is meeting each of the five Review Terms of Reference, and the chair also provided a summary report. The reviewer reports can be found in the <a href="https://www.st.nmfs.noaa.gov/science-quality-assurance/cie-peer-reviews/peer-review-reports">NOAA Fisheries CIE Review Archives</a>. And, we summarize the major conclusions here.</p>
+</section>
+<section id="cie-conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="cie-conclusions">CIE conclusions</h2>
+<p>The reviewers were overwhelmingly positive about the foundation the FIMS team has built, noting that the scale and ambition of this project are unprecedented in fisheries science.</p>
+<section id="what-fims-is-getting-right" class="level3">
+<h3 class="anchored" data-anchor-id="what-fims-is-getting-right">What FIMS is getting right</h3>
 <ul>
-<li>create_default_parameters() -&gt; create_default_fleet() -&gt; create_default_selectivity() -&gt; create_default_AgeSpecific</li>
+<li><strong>World-class software testing:</strong> FIMS isn’t just relying on scientists double-checking their math; it incorporates modern software engineering practices. Reviewers praised the automated testing framework as “world-leading” and more extensive than any existing stock assessment tool. This rigorous testing ensures that, as new features are added, the core system remains stable and reliable.</li>
+<li><strong>Open and collaborative development:</strong> Rather than being built behind closed doors, FIMS is open-source and hosted on GitHub. The development team actively hosts “Code Clubs” and training workshops, inviting contributions from scientists across all NOAA regions and beyond.</li>
+<li><strong>Flexible and powerful:</strong> FIMS allows scientists to seamlessly switch between different types of advanced statistical methods (like maximum-likelihood and Bayesian estimation) within the same platform. This built-in flexibility is highly innovative and will help scientists better understand uncertainty in their models.</li>
+<li><strong>Sustained commitment:</strong> A recurring theme throughout the review was the need for long-term stability. The future success of FIMS relies heavily on the dedicated support from the NOAA Fisheries Science Board.</li>
 </ul>
-<p>And at the center of these matryoshka dolls is a function that uses the template for setting default parameters to specify the name, type, label, ages, that these are fixed effects and estimated on the logistic scale (i.e., constrained between 0 and 1), using a qlogis() function.</p>
-<pre><code>create_default_AgeSpecific &lt;- function(
-  module_name = NA_character_,
-  data
-) {
-  default &lt;- create_default_parameters_template(n_parameters = get_n_ages(data)) |&gt;
-    dplyr::mutate(
-      module_name = !!module_name,
-      module_type = "AgeSpecific",
-      label = "logit_sel_at_age",
-      age = get_ages(data),
-      value = qlogis(1/(1+(exp(-1*(get_ages(data)-2))))),
-      estimation_type = "fixed_effects"
-    )
-}</code></pre>
 </section>
-<section id="vignettes" class="level3">
-<h3 class="anchored" data-anchor-id="vignettes">Vignettes</h3>
-<p>Once the functionality and default parameters were set, it was time to add a vignette that demonstrates the selectivity-at-age function working in action. We saved a copy of the existing <u>vignettes/fims-demo.Rmd</u> as <u>fims-demo-age-spec-sel.Rmd</u> and changed the updated configurations section to:</p>
-<pre><code>updated_configurations &lt;- default_configurations_unnested |&gt;
-  dplyr::rows_update(
-    y = tibble::tibble(
-      module_name = c("Selectivity"),
-      fleet_name = c("survey1"),
-      module_type = c("AgeSpecific")
-    ),
-    by = c("module_name", "fleet_name")
-  )</code></pre>
-<p>by changing the module_type from the previous selectivity option. Further down in the code we changed the specified starting parameters as well:</p>
-<pre><code>dplyr::rows_update(
-    tibble::tibble(
-      fleet_name = "survey1",
-      label = "logit_sel_at_age",
-      age = seq(get_n_ages(data_4_model)),
-      value = c(0, 0, 2.999999, 4.999993, 6.999946,
-                8.999956, 11.000085, 12.982599, 15.019483, 18.420681,
-                18.420681, 18.420681),
-      estimation_type = c(rep("fixed_effects", 2), rep("constant", 10))
-    ),
-    by = c("fleet_name", "label", "age")
-  )</code></pre>
-<p>This meant only the first two ages were estimated as fixed effects and the rest of the age-specific selectivity was fixed at or near 1. From previous experience it is often best to fix one or several selectivity-at-age values close to 1, otherwise the selectivity and fishing mortality parameters can become confounded.</p>
-</section>
-<section id="tests" class="level3">
-<h3 class="anchored" data-anchor-id="tests">Tests</h3>
-<p>Once the actual functionality was in place, default parameters are set, and a vignette is made, it was time to guarantee compatibility across all other areas of FIMS both now and in the future by writing in some checks and tests. There are two main categories of tests in FIMS, the gtests and testthat. The former focuses on cpp code and the latter on R code. In both, we added similar tests, 1) that the input and output get passed around effectively, 2) that the inverse-logit and logit transformations handled values correctly, and 3) that FIMS could handle “edge-cases” or those extreme values where things run up against their bounds.</p>
-<p><u>tests/gtest/CMAkeLists.txt</u>. We just needed to modify one thing- adding test names for AgeSpecificSelectivity to ensure these tests are called during compilation</p>
-<p><u>tests/gtest/test_AgeSpecificSelectivity_Evaluate.cpp</u> Tests performance of evaluate calls with multiple ages and multiple time steps, to show inverse-logit transformations and indexing perform as expected. It was easy to set using the built in FIMS:::use_gtest_template()</p>
-<p><u>tests/testthat/test-rcpp-selectivity.R</u> - This code is generic to all selectivity options, unlike the gtest above. But we added sections specific to the AgeSpecificSelectivity option to check that the estimation type and evaluate() works correctly:</p>
-<pre><code># Create selectivity2
-  selectivity2 &lt;- methods::new(AgeSpecificSelectivity)
-
-  selectivity2$logit_sel_at_age$resize(1)
-  selectivity2$logit_sel_at_age[1]$value &lt;- 1
-  selectivity2$logit_sel_at_age[1]$estimation_type$set("random_effects")
-  selectivity2$ages$resize(1)
-  selectivity2$ages$set(0, 1)
-
-  #' @description Test that `get_id()` for `AgeSpecificSelectivity` works when a second object is created.
-  expect_equal(selectivity2$get_id(), 2)
-  #' @description Test that the `logit_sel_at_age` value is set to 1.
-  expect_equal(selectivity2$logit_sel_at_age[1]$value, 1.0)
-  #' @description Test that the `logit_sel_at_age` estimation type is set to "random_effects".
-  expect_equal(selectivity2$logit_sel_at_age[1]$estimation_type$get(), "random_effects")
-  #' @description Test that `evaluate()` works for `AgeSpecificSelectivity` with "random_effects".
-  expect_equal(
-    selectivity2$evaluate(1),
-    # Line below equals 0.2716494
-    1.0 / (1.0 + exp(-1.0)), # inverse logit equation
-    tolerance = 0.0000001
-  )</code></pre>
-<p>Essentially we specified values, ran the evaluation, and used a workhorse function in FIMS testing - expect_equal() - to see if we got back the result we expected.</p>
-</section>
-<section id="roadblockslessons-learned" class="level3">
-<h3 class="anchored" data-anchor-id="roadblockslessons-learned">Roadblocks/Lessons Learned</h3>
+<section id="where-fims-needs-work" class="level3">
+<h3 class="anchored" data-anchor-id="where-fims-needs-work">Where FIMS needs work</h3>
+<p>Despite the high praise, the review panel concluded that FIMS is not yet fully ready for routine, operational stock assessments. To get there, the developers will need to focus on a few key hurdles.</p>
+<ul>
+<li><strong>Adding biological realism:</strong> Currently, FIMS is equipped to handle relatively simple assessments. To support complex assessments, the software needs deeper structural upgrades. Reviewers stressed that FIMS must add the ability to model seasonality, differences in growth, and sex-specific dynamics. Adding these elements early is critical to avoid having to rewrite core software code later on.</li>
+<li><strong>Building tools for management advice:</strong> Knowing how many fish are in the ocean is only half the battle; managers also need to know what to do next. Reviewers pointed out that FIMS needs stronger capabilities for calculating reference points and projecting future stock sizes. These are the specific metrics that Regional Fishery Management Councils use to set catch limits and quotas, so aligning FIMS with regional management practices is a top priority.</li>
+<li><strong>Better guardrails and documentation for users:</strong> Because FIMS is so powerful, there is a risk that inexperienced users could accidentally misuse it. The panel strongly recommended creating prominent warning messages if a model fails to properly estimate parameters. This ensures bad data isn’t accidentally used to make management decisions. Additionally, reviewers noted that FIMS needs a comprehensive reference manual that clearly explains “default” settings so users know exactly what assumptions they are making.</li>
+</ul>
 </section>
 </section>
-<section id="roadblock-1-flexible-indexing-and-age-specification-options" class="level2">
-<h2 class="anchored" data-anchor-id="roadblock-1-flexible-indexing-and-age-specification-options"><span class="emoji" data-emoji="construction">🚧</span> Roadblock #1: Flexible indexing and age-specification options</h2>
-<p>Unlike for other selectivity options which include a few parameters that establish a function between age and selectivity, the selectivity-at-age option uses a flexible number of parameters, specified by the user. At a maximum there can be one parameter for every age and at a minimum there can be no parameters (all values fixed at their input). There was no precedent for this setting and the other selectivity options wouldn’t help us resolve it. Ultimately, we asked for individual sessions with FIMS leadership to explain the issue and ask for solutions. They recommended including n_ages, the number of ages, and min_age the minimum age when declaring the AgeSpecificSelectivity class.</p>
-</section>
-<section id="roadblock-2-naming-conflicts-with-other-selectivity-options" class="level2">
-<h2 class="anchored" data-anchor-id="roadblock-2-naming-conflicts-with-other-selectivity-options"><span class="emoji" data-emoji="construction">🚧</span> Roadblock #2: Naming conflicts with other selectivity options</h2>
-<p>Only when we got to building out the vignette to demo the age-specific selectivity option did we notice a problem with our naming convention that would conflict with how FIMS builds out names and uses features. We’d been calling the age-specific option “SelectivityatAge” but when the create_default_parameters() function is run, this name gets knitted together with “Selectivity” creating the monstrous “SelectivityatAgeSelectivity” which FIMS can’t understand downstream.</p>
-<p>Our early fix was ugly. We manually put in an if statement to catch when the incorrect name shows up and manually changes it back to something comprehensible. But once we showed the issue and our band-aid solution to the FIMS code club, a weekly meeting from 1:00-5:00 EST or 10:00-2:00 PST that is reserved for debugging and discussion, we were about to crowd source a permanent solution - going back through the FIMS structure and renamed everything that was “selectivity at age” to “age specific selectivity” to fix this overarching issue.</p>
-</section>
-<section id="takeaways" class="level2">
-<h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
-<p>Don’t let contributing to FIMS intimidate you! Nobody understands all the nuanced ins and outs of FIMS except a few core developers and given the amount of features FIMS needs to meet its 25% by 2026 (25% of NOAA stocks to be capable of using FIMS to fit the model and generate management advice), more than that core group needs to be actively contributing. Take on small tasks at first - a new version of an existing feature, like these selectivity options. But maximize efficiency by identifying a feature that is important to several stocks. Starting small will help build confidence and familiarity with FIMS’s modular nature so you might be comfortable with contributing bigger changes down the line. Hope this post helps to identify some key starting spots and illustrates how modifications are really just a matter of taking, copying, and ajusting existing code. Please let us know if you have questions or we can offer advice, at alexander.jensen[at]noaa.gov or emily.liljestrand[at]noaa.gov.</p>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Since the conclusion of the CIE Review we have actively begun work on advancing the projections capability and adding sex structure to the model. Please contact the developers if you are interested in helping to add timing capabilities to the model so FIMS is better equipped to fit more data types.</p>
+<p>Thank you to everyone who has put in years of work getting FIMS to the point that it is now and to those who presented at the CIE Review allowing us to showcase all that we have accomplished. The review was a success because of your dedication to this project.</p>
+<p>We are also thankful to all of the beta testers that have given helpful feedback along the way. Remember, we are not building FIMS for the Implementation Team, we are building FIMS for you. So, all feedback is highly valued and we encourage you to add the FIMS calendar to your Google calendar so you can join our Code Club sessions. If you have data you would like to fit with a FIMS model, please feel free to post an <a href="https://github.com/NOAA-FIMS/case-studies/issues">issue on GitHub</a>, join a Code Club, or contact us through our <a href="https://noaa-fims.github.io/contact/">online form</a>.</p>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -563,21 +494,48 @@ document.addEventListener("DOMContentLoaded", function () {
     "/FIMSdiags/",
     "/FIMSRTMB/",
     "/fims-pkgdown-template/",
-    "/ecosystemom/"
+    "/ecosystemom/",
     "/fishprior/"
   ];
 
   document.querySelectorAll("a[href]").forEach(function (link) {
     var href = link.getAttribute("href");
-    if (!href) return;
+    if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) {
+      return;
+    }
 
-    var url = new URL(href, window.location.origin);
-    var isExternal = url.hostname !== window.location.hostname;
-    var isForcedInternal = forceNewTabPaths.includes(url.pathname);
+    try {
+      var url = new URL(href, window.location.origin);
+      var isExternal = url.hostname !== window.location.hostname;
+      var isForcedInternal = forceNewTabPaths.includes(url.pathname);
 
-    if (isExternal || isForcedInternal) {
-      link.setAttribute("target", "_blank");
-      link.setAttribute("rel", "noopener noreferrer");
+      if (isExternal || isForcedInternal) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+
+        // Accessibility Fix: Add a screen-reader-only warning if not already present
+        if (!link.hasAttribute("data-new-tab-warning")) {
+          var srWarning = document.createElement("span");
+          srWarning.textContent = " (opens in a new tab)";
+
+          // Use CSS to hide this text visually, but keep it available to screen readers
+          srWarning.style.position = "absolute";
+          srWarning.style.width = "1px";
+          srWarning.style.height = "1px";
+          srWarning.style.padding = "0";
+          srWarning.style.margin = "-1px";
+          srWarning.style.overflow = "hidden";
+          srWarning.style.clip = "rect(0, 0, 0, 0)";
+          srWarning.style.whiteSpace = "nowrap";
+          srWarning.style.border = "0";
+          
+          link.appendChild(srWarning);
+          // Prevent duplicates
+          link.setAttribute("data-new-tab-warning", "true");
+        }
+      }
+    } catch (error) {
+      console.warn("Skipping invalid link URL:", href, error);
     }
   });
 });
@@ -1005,7 +963,7 @@ document.addEventListener("DOMContentLoaded", function () {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="FIMS on GitHub" aria-label="Visit FIMS on GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="FIMS R Universe" aria-label="Visit FIMS R Universe repository" target="_blank" rel="noopener"><i class="fab fa-r-project" aria-hidden="true"></i></a></p>
+<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="FIMS on GitHub" aria-label="Visit FIMS on GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a> <a class="link-dark" href="https://noaa-fisheries-integrated-toolbox.r-universe.dev" title="FIMS R Universe" aria-label="Visit FIMS R Universe repository" target="_blank" rel="noopener"><i class="fab fa-r-project" aria-hidden="true"></i></a></p>
 </div>
   </div>
 </footer>
