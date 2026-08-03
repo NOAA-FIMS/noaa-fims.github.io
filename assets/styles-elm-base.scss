@@ -59,6 +59,10 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0.66em;
 }
 
+#additional-events section:first-of-type h3 {
+  margin-top: 0 !important;
+}
+
 .lead {
   margin-bottom: 2rem;
 }
