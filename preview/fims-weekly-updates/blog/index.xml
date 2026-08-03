@@ -283,7 +283,7 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -383,7 +383,19 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<section id="tuesday-may-12" class="level3">
+<h3 class="anchored" data-anchor-id="tuesday-may-12">Tuesday, May 12</h3>
+<p><strong>NMFS Cloud Workstations: Part 1</strong></p>
+<p>Time: 14:00–15:00 E; 11:00–12:00 P; 10:00–11:00 AK; 8:00–9:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=djv-qgow-qwe&amp;ref=https://meet.google.com/djv-qgow-qwe">Google Meet</a></p>
+</section>
+<section id="thursday-may-14" class="level3">
+<h3 class="anchored" data-anchor-id="thursday-may-14">Thursday, May 14</h3>
+<p><strong>NMFS Cloud Workstations: Part 1</strong></p>
+<p>Time: 16:00–17:00 E; 13:00–14:00 P; 12:00–13:00 AK; 10:00–11:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=djv-qgow-qwe&amp;ref=https://meet.google.com/djv-qgow-qwe">Google Meet</a></p>
+</section>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -485,7 +497,19 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<section id="tuesday-may-05" class="level3">
+<h3 class="anchored" data-anchor-id="tuesday-may-05">Tuesday, May 05</h3>
+<p><strong>UW SAFS Think Tank with Anna Simeon on CKMR</strong></p>
+<p>Time: 12:30–13:30 E; 9:30–10:30 P; 8:30–9:30 AK; 6:30–7:30 H Location: Virtual Online: <a href="https://attendee.gotowebinar.com/register/7428607775995901536">Go to webinar</a></p>
+</section>
+<section id="wednesday-may-06" class="level3">
+<h3 class="anchored" data-anchor-id="wednesday-may-06">Wednesday, May 06</h3>
+<p><strong>FIMS Implementation Team Meeting (Tasks)</strong></p>
+<p>Time: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=kbz-ccew-iij&amp;ref=https://meet.google.com/kbz-ccew-iij">Google meet</a></p>
+</section>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -589,7 +613,10 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -691,7 +718,24 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<section id="tuesday-april-21" class="level3">
+<h3 class="anchored" data-anchor-id="tuesday-april-21">Tuesday, April 21</h3>
+<p><strong>FIMS CIE Review</strong></p>
+<p>Time: 12:00–20:00 E; 9:00–17:00 P; 8:00–16:00 AK; 6:00–14:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=cex-grne-bmx&amp;ref=https://meet.google.com/cex-grne-bmx">Google meet</a></p>
+</section>
+<section id="wednesday-april-22" class="level3">
+<h3 class="anchored" data-anchor-id="wednesday-april-22">Wednesday, April 22</h3>
+<p><strong>FIMS CIE Review</strong></p>
+<p>Time: 12:00–20:00 E; 9:00–17:00 P; 8:00–16:00 AK; 6:00–14:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=cex-grne-bmx&amp;ref=https://meet.google.com/cex-grne-bmx">Google meet</a></p>
+</section>
+<section id="thursday-april-23" class="level3">
+<h3 class="anchored" data-anchor-id="thursday-april-23">Thursday, April 23</h3>
+<p><strong>FIMS CIE Review</strong></p>
+<p>Time: 12:00–20:00 E; 9:00–17:00 P; 8:00–16:00 AK; 6:00–14:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=cex-grne-bmx&amp;ref=https://meet.google.com/cex-grne-bmx">Google meet</a></p>
+</section>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -800,7 +844,7 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -903,7 +947,14 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<section id="wednesday-april-01" class="level3">
+<h3 class="anchored" data-anchor-id="wednesday-april-01">Wednesday, April 01</h3>
+<p><strong>UW SAFS Think Tank with Mark Maunder</strong></p>
+<p>Time: 12:30–13:30 E; 9:30–10:30 P; 8:30–9:30 AK; 6:30–7:30 H Location: Virtual Online: <a href="https://register.gotowebinar.com/register/2627838742231839063">Go to webinar</a></p>
+</section>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -1006,7 +1057,19 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<section id="wednesday-april-01" class="level3">
+<h3 class="anchored" data-anchor-id="wednesday-april-01">Wednesday, April 01</h3>
+<p><strong>FIMS Implementation Team Meeting (Tasks)</strong></p>
+<p>Time: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=kbz-ccew-iij&amp;ref=https://meet.google.com/kbz-ccew-iij">Google meet</a></p>
+</section>
+<section id="thursday-april-02" class="level3">
+<h3 class="anchored" data-anchor-id="thursday-april-02">Thursday, April 02</h3>
+<p><strong>Stock Assessment Seminar</strong></p>
+<p>Time: 15:00–16:00 E; 12:00–13:00 P; 11:00–12:00 AK; 9:00–10:00 H Location: Virtual Online: <a href="https://vimeo.com/event/5810113">Register here</a></p>
+</section>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -1128,7 +1191,14 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<section id="wednesday-march-18" class="level3">
+<h3 class="anchored" data-anchor-id="wednesday-march-18">Wednesday, March 18</h3>
+<p><strong>FIMS Code Club</strong></p>
+<p>Time: 11:00–14:00 E; 08:00–11:00 P; 09:00–12:00 AK; 05:00-08:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&amp;ref=https://meet.google.com/ica-ieta-ndu">Google meet</a></p>
+</section>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -1328,7 +1398,14 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<section id="wednesday-march-25" class="level3">
+<h3 class="anchored" data-anchor-id="wednesday-march-25">Wednesday, March 25</h3>
+<p><strong>FIMS Tutorial on FIMSFrame</strong></p>
+<p>Time: 14:00–15:00 E; 11:00–12:00 P; 12:00–13:00 AK; 08:00-09:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=fst-apme-enz%20&amp;ref=https://meet.google.com/fst-apme-enz">Google meet</a></p>
+</section>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -1498,7 +1575,14 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<section id="wednesday-march-12" class="level3">
+<h3 class="anchored" data-anchor-id="wednesday-march-12">Wednesday, March 12</h3>
+<p><strong>FIMS Code Club</strong></p>
+<p>Time: 11:00–14:00 E; 08:00–11:00 P; 09:00–12:00 AK; 05:00-08:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&amp;ref=https://meet.google.com/ica-ieta-ndu">Google meet</a></p>
+</section>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -1605,7 +1689,17 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<!--
+### DAY DATE
+**NAME**
+
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -1728,7 +1822,14 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<section id="wednesday-february-25" class="level3">
+<h3 class="anchored" data-anchor-id="wednesday-february-25">Wednesday, February 25</h3>
+<p><strong>FIMS Code Club</strong></p>
+<p>Time: 16:00–19:00 E; 13:00–16:00 P; 12:00–15:00 AK; 09:00-12:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&amp;ref=https://meet.google.com/ica-ieta-ndu">Google meet</a></p>
+</section>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -2167,7 +2268,17 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<!--
+### DAY DATE
+**NAME**
+
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -2287,7 +2398,14 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<section id="friday-february-13" class="level3">
+<h3 class="anchored" data-anchor-id="friday-february-13">Friday, February 13</h3>
+<p><strong>FIMS Code Club</strong></p>
+<p>Time: 12:00–15:00 E; 09:00–12:00 P; 08:00–11:00 AK; 06:00-09:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=nbf-ngbd-pro&amp;ref=https://meet.google.com/nbf-ngbd-pro">Google meet</a></p>
+</section>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
@@ -2399,7 +2517,19 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<section id="wednesday-february-04" class="level3">
+<h3 class="anchored" data-anchor-id="wednesday-february-04">Wednesday, February 04</h3>
+<p><strong>FIMS Implementation Team Meeting (Priorities)</strong></p>
+<p>Time: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=kbz-ccew-iij&amp;ref=https://meet.google.com/kbz-ccew-iij">Google meet</a></p>
+</section>
+<section id="thursday-february-05" class="level3">
+<h3 class="anchored" data-anchor-id="thursday-february-05">Thursday, February 05</h3>
+<p><strong>FIMSdiags Tutorial</strong></p>
+<p>Time: 14:00–15:00 E; 11:00–12:00 P; 10:00–11:00 AK; 8:00–9:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=yhu-xrvw-yqn&amp;ref=https://meet.google.com/yhu-xrvw-yqn">Google meet</a></p>
+</section>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->

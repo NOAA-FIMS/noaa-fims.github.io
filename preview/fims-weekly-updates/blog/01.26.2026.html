@@ -479,7 +479,32 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<p> <!-- end --></p>
+<div id="additional-events">
+<!--
+### DAY DATE
+**NAME**
+
+Time: TIME
+Location: VIRTUAL/IN-PERSON
+Online: [Google meet](MEETING LINK)
+-->
+<div id="photo-code">
+<pre><code>data("data1", package = "FIMS")
+years_of_projections &lt;- 10
+data1_with_extra_year &lt;- dplyr::add_row(
+  data1,
+  type = "landings",
+  timing = get_end_year(data_4_model) + years_of_projection,
+  name = "fleet1",
+  value = -999,
+  unit = "mt"
+) |&gt;
+  # Make a FIMSFrame object out of this data frame with the extra row to add all
+  # of the other missing years for each data type
+  FIMSFrame()</code></pre>
+</div>
+</div>
+<!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
