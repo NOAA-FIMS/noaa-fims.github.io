@@ -85,7 +85,7 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 
 ::: {.content-hidden when-meta="show-calendar"}
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-::: {.content-hidden unless-meta="upcoming-events.code-club-date"}
+::: {.content-hidden unless-meta="upcoming-events.code-club-include"}
 ### {{< meta upcoming-events.code-club-date >}}
 **{{< meta upcoming-events.code-club-name >}}**\n
 Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H\n
@@ -93,7 +93,7 @@ Location: Virtual\n
 Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&ref=https://meet.google.com/ica-ieta-ndu)
 :::
 
-::: {.content-hidden unless-meta="upcoming-events.seaside-chat-date"}
+::: {.content-hidden unless-meta="upcoming-events.seaside-chat-include"}
 ### {{< meta upcoming-events.seaside-chat-date >}}
 **{{< meta upcoming-events.seaside-chat-name >}}**\n
 Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n
@@ -109,7 +109,7 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 :::
 :::
 
-::: {.content-visible when-meta="summary.text"}
+::: {.content-visible when-meta="summary.include"}
 ## Summary
 
 {{< meta summary.text >}}
