@@ -125,7 +125,7 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 
 
 <!-- Used for previous fims weekly posts which used a photo section. -->
-::: {.content-visible when-meta="photo.text"}
+::: {.content-visible when-meta="photo.include"}
 ## Photo
 
 {{< meta photo.text >}}
