@@ -524,9 +524,9 @@ UPCOMING EVENTS
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
-<!-- end -->
-<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
+<section id="photo" class="level2">
+<h2 class="anchored" data-anchor-id="photo">Photo</h2>
+<p>The tests for new convergence functions use a mocking structure so we can test the individual function without having to run a FIMS model. You can read more about mocking on the <a href="https://testthat.r-lib.org/articles/mocking.html">testthat github page</a>. I think that mocking might be helpful for more tests in FIMS to increase coverage but keep the tests running fast.</p>
 <div id="photo-code">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">test_that</span>(<span class="st">"check_sdreport_convergence() returns correct outputs for edge cases"</span>, {</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#' @description Test that `check_sdreport_convergence()` gracefully handles when summary extraction throws an error.</span></span>
@@ -544,10 +544,14 @@ UPCOMING EVENTS
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<!-- end -->
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
 </script>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>

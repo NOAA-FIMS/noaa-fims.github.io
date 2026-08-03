@@ -477,26 +477,19 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<div id="additional-events">
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
+<!-- end -->
+</div>
+</div>
+<!-- Used for previous fims weekly posts which used a photo section. -->
+<section id="photo" class="level2">
+<h2 class="anchored" data-anchor-id="photo">Photo</h2>
+<p>When you are installing packages in R there are several ways to go about doing this but we recommend using <a href="https://pak.r-lib.org/reference/features.html">{pak}</a> because it is one of the few methods that automatically installs packages in parallel, which can considerably speed up the process. You can set up <code>install.packages()</code> to use parallel methods but it will not be able to optimize things based on the mutual dependencies found across a set of packages that you wish to install, like {pak} can.</p>
 <div id="photo-code">
 <pre><code># To install a vector of packages
 pak::pkg_install(c("dplyr", "ggplot2", "data.table"))
 # The following is a wrapper around pak::pkg_install()
 pak::pak()</code></pre>
 </div>
-</div>
-<!-- end -->
-</div>
-</div>
-<!-- Used for previous fims weekly posts which used a photo section. -->
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
 </script>
@@ -504,6 +497,7 @@ pak::pak()</code></pre>
 </script>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>

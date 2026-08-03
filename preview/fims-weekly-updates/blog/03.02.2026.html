@@ -478,23 +478,13 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<div id="additional-events">
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-</div>
 <!-- end -->
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
-<!-- end -->
-<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
+<section id="photo" class="level2">
+<h2 class="anchored" data-anchor-id="photo">Photo</h2>
+<p>While trying to find an example of <code>rlang::arg_match()</code> I came across the <a href="https://design.tidyverse.org/">tidyverse design principles</a>, which has some great content, and was reminded that many R developers do not know or understand <code>match.arg()</code> or <code>rlang::arg_match()</code>. These functions can be game changes when you want the options within a function argument to be clear to users and I believe that we should be using them more in FIMS. See a small example below and read the <a href="https://design.tidyverse.org/enumerate-options.html#how-do-i-use-this-pattern">relevant section of design.tidyverse.org</a> for more information.</p>
 <div id="photo-code">
 <pre><code># Base R function trimws uses match.arg() on the which argument
 # both is the default
@@ -516,10 +506,14 @@ trimws(x = " My bad formatting ")
 trimws(x = " My bad formatting ", which = "right")
 # [1] " My bad formatting"</code></pre>
 </div>
+<!-- end -->
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
 </script>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>

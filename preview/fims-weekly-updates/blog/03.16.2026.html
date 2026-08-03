@@ -524,9 +524,9 @@ UPCOMING EVENTS
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
-<!-- end -->
-<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
-</script>
+<section id="photo" class="level2">
+<h2 class="anchored" data-anchor-id="photo">Photo</h2>
+<p>Version 0.9.0 has two breaking changes. (1) If you have time-varying <code>weight_at_age</code> data you can use it but you must make a decision for the beginning of the last year after catches. FIMS does not accommodate this need for an additional year of <code>weight_at_age</code> data you must decide if you want to put in an average or some kind of projection. But, if you do not have time-varying weight_at_age data you can input just a single year as a power user and everything will be taken care of. (2) All six <code>m_*()</code> functions have been renamed to `model_*(). Below we show how a power user can implement (1).</p>
 <div id="photo-code">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A vector of weights for each age</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>weights <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">12</span></span>
@@ -543,10 +543,14 @@ UPCOMING EVENTS
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  \(x) ewaa_growth<span class="sc">$</span>weights<span class="sc">$</span><span class="fu">set</span>(x <span class="sc">-</span> <span class="dv">1</span>, weights[x])</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<!-- end -->
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
 </script>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>

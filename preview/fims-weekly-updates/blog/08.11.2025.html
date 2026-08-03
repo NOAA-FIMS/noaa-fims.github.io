@@ -93,7 +93,11 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/panelset-extras.css">
 <meta property="og:title" content="FIMS Weekly - August 11–15, 2025 – FIMS">
 <meta property="og:description" content="News and updates from the Fisheries Integrated Modeling System project.">
+<meta property="og:image" content="https://noaa-fims.github.io/preview/fims-weekly-updates/blog/images/git-worktrees.png">
 <meta property="og:site_name" content="FIMS">
+<meta property="og:image:alt" content="Image of multiple branches checked out on in the FIMS repository using git worktrees.">
+<meta property="og:image:height" content="215">
+<meta property="og:image:width" content="579">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -480,30 +484,26 @@ UPCOMING EVENTS
 </h2>
 </div>
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
-<div id="additional-events">
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-</div>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461207570636f6d696e672d6576656e74732e636f64652d636c75622d64617465203e7d7d" class="level3">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461207570636f6d696e672d6576656e74732e636f64652d636c75622d64617465203e7d7d">Tuesday, August 12</h3>
+<p><strong>FIMS Code Club (WSL and docker)</strong> Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H Location: Virtual Online: <a href="https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&amp;ref=https://meet.google.com/ica-ieta-ndu">Google Meet</a></p>
 <!-- end -->
+</section>
 </div>
 </div>
 <!-- Used for previous fims weekly posts which used a photo section. -->
+<section id="photo" class="level2">
+<h2 class="anchored" data-anchor-id="photo">Photo</h2>
+<p>During our GitHub training with Microsoft, Bai asked a ❓about git worktrees that kind of blew my mind. I had yet to understand the full question or the response but last week with the <a href="https://code.visualstudio.com/updates/v1_103">new version of VS Code</a> that was released it started to make sense. VS Code now has <a href="https://code.visualstudio.com/updates/v1_103#_git-worktree-support">support for git worktrees</a>, where worktrees let you check out multiple branches at once within a single clone. This stops the need for having multiple clones of the same repository on a single computer. IMO this is genius. I am constantly making bogus commits or stashing things that I later forgot that I stashed so I can check out a different branch, do one thing, and then switch back to the other branch. Or worse yet, I am on a branch and want to see a file in a different branch so I go online copy and paste the raw text from the “other” branch that I am interested in and then put it in a new file in VS Code. All of these alternates are suboptimal and have led to 🧨, which is obviously not good. I am excited to check out the use of worktrees and if it goes well maybe we can get Jonathan to do a GitHub training on them. First, I had to click on the three dots to the right of “SOURCE CONTROL” and add “Repositories” to what was being shown in my “SOURCE CONTROL” section of VS Code. Second, I clicked the three dots to the left of REPOSITORIES/FIMS, where I currently have dev-fix-exp-TMBad checked out, which brought up a list where I selected Worktrees -&gt; Create Worktree and let me select an additional branch. I chose dev. Now you can see dev is a worktree in the list under FIMS. This is as far as I have gotten in my 🛣️.</p>
+<img src="images/git-worktrees.png" alt="Image of multiple branches checked out on in the FIMS repository using git worktrees." style="height:150%;">
 <!-- end -->
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
 </script>
-<div id="photo-code">
-
-</div>
 <script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
 </script>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>
