@@ -63,10 +63,13 @@ h2, h3, h4, h5, h6 {
   margin-top: 0 !important;
 }
 
-/* Target the section right after the Upcoming Events header wrap */
-.header-wrap:has(#upcoming-events) + section {
+#upcoming-events-wrap + section {
   margin-top: 0 !important;
   padding-top: 0 !important;
+}
+
+#upcoming-events-wrap + section h3 {
+  margin-top: 0 !important;
 }
 
 .lead {
