@@ -109,7 +109,7 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 :::
 :::
 
-::: {.content-visible when-meta="summary.text"}
+::: {.content-hidden unless-meta="summary.text"}
 ## Summary
 
 {{< meta summary.text >}}
@@ -125,7 +125,7 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 
 
 <!-- Used for previous fims weekly posts which used a photo section. -->
-::: {.content-visible when-meta="photo.text"}
+::: {.content-hidden unless-meta="photo.text"}
 ## Photo
 
 {{< meta photo.text >}}
@@ -139,6 +139,8 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 {{< contents photo-code >}}
 :::
 <!-- end -->
+
+
 
 ```{=html}
 <script src="https://giscus.app/client.js"
