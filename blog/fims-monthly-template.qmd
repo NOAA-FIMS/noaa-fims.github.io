@@ -83,7 +83,7 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 ```
 :::
 
-::: {.content-visible unless-meta="show-calendar"}
+::: {.content-hidden when-meta="show-calendar"}
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
 ::: {.content-hidden unless-meta="upcoming-events.code-club-date"}
 ### {{< meta upcoming-events.code-club-date >}}
