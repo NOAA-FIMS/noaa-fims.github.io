@@ -19,6 +19,7 @@ upcoming-events:
 # but still include the text portion under photo.
 photo:
   text: "To add ten years of projections onto your time series you can use `FIMS::FIMSFrame()` to add -999 to all of your data streams by just adding a single year of -999 for any type with the maximum year that you want to project to. See the code below for an example, which was taken from the [projections vignette](https://noaa-fims.github.io/FIMS/articles/fims-demo-projections.html). Now we need to think carefully about the default uncertainty values for the -999 in each type."
+  include-photo: false
 ---
   
 {{< include "fims-monthly-template.qmd" >}}

@@ -19,7 +19,8 @@ show-calendar: true
 # If there is code instead, please uncomment the section below named summary-code
 # but still include the text portion under summary.
 summary:
-  text: "testing July"
+  text: "test"
+  include-photo: false
 ---
 
 {{< include "fims-monthly-template.qmd" >}}

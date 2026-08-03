@@ -21,6 +21,7 @@ upcoming-events:
 # but still include the text portion under photo.
 photo:
   text: "Our [cheatsheet](https://github.com/NOAA-FIMS/FIMS/raw/main/pkgdown/assets/fims-cheatsheet-thumb.png) is now live in the FIMS package."
+  include-photo: false
 ---
   
 {{< include "fims-monthly-template.qmd" >}}

@@ -20,6 +20,7 @@ upcoming-events:
 # but still include the text portion under photo.
 photo:
   text: "In the dev-hake branch, we now have the ability to estimate parameters using a time-varying vector. Below is code to set the initial values and estimation type. We need to decide as a group what would be the best way for non-power users to interact with time-varying parameters."
+  include-photo: false
 ---
   
 {{< include "fims-monthly-template.qmd" >}}
