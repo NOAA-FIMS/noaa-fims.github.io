@@ -80,6 +80,7 @@ show-calendar: true
 # If there is code instead, please uncomment the section below named summary-code
 # but still include the text portion under summary.
 summary:
+  include: true
   text: ""
   include-photo: true
   path: "images/NAME.png"
