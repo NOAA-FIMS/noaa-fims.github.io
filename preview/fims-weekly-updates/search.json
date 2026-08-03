@@ -791,6 +791,13 @@
     "text": "ANNOUNCEMENTS\n\n\nMeg and Ian will be doing a training next week on FIMSdiags.\nPlease encourage your peers to use the Discussion Board to ask questions about FIMS and propose features so we can talk about them in a public forum.\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
   },
   {
+    "objectID": "blog/01.26.2026.html#photo",
+    "href": "blog/01.26.2026.html#photo",
+    "title": "FIMS Weekly - January 26–30, 2026",
+    "section": "Photo",
+    "text": "Photo\nTo add ten years of projections onto your time series you can use FIMS::FIMSFrame() to add -999 to all of your data streams by just adding a single year of -999 for any type with the maximum year that you want to project to. See the code below for an example, which was taken from the projections vignette. Now we need to think carefully about the default uncertainty values for the -999 in each type.\n\ndata(\"data1\", package = \"FIMS\")\nyears_of_projections &lt;- 10\ndata1_with_extra_year &lt;- dplyr::add_row(\n  data1,\n  type = \"landings\",\n  timing = get_end_year(data_4_model) + years_of_projection,\n  name = \"fleet1\",\n  value = -999,\n  unit = \"mt\"\n) |&gt;\n  # Make a FIMSFrame object out of this data frame with the extra row to add all\n  # of the other missing years for each data type\n  FIMSFrame()"
+  },
+  {
     "objectID": "blog/02.09.2026.html",
     "href": "blog/02.09.2026.html",
     "title": "FIMS Weekly - February 09–13, 2026",
@@ -810,6 +817,13 @@
     "title": "FIMS Weekly - February 09–13, 2026",
     "section": "ANNOUNCEMENTS",
     "text": "ANNOUNCEMENTS\n\n\nPlease look at the FIMS calendar on a regular basis. There are lots of meetings happening that you can attend but global announcements are no longer going out in an attempt to save your inboxes from overload. One of those such meetings is the Code Club happening this Friday.\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
+  },
+  {
+    "objectID": "blog/02.09.2026.html#photo",
+    "href": "blog/02.09.2026.html#photo",
+    "title": "FIMS Weekly - February 09–13, 2026",
+    "section": "Photo",
+    "text": "Photo\nIn the dev-hake branch, we now have the ability to estimate parameters using a time-varying vector. Below is code to set the initial values and estimation type. We need to decide as a group what would be the best way for non-power users to interact with time-varying parameters.\n\n# Resize the parameter vector\nfleet_selectivity$inflection_point$resize(get_n_years(data_4_model))\n# Set the initial value of each element of the vector to be one and\n# estimate it as a fixed effect\nfor (ii in seq(get_n_years(data_4_model))) {\n  fleet_selectivity$inflection_point[ii]$value &lt;- 1\n  fleet_selectivity$inflection_point[ii]$estimation_type$set(\"fixed_effects\")\n}"
   },
   {
     "objectID": "blog/02.23.2026.html",
@@ -978,6 +992,13 @@
     "title": "FIMS Weekly - July 28–August 1, 2025",
     "section": "ANNOUNCEMENTS",
     "text": "ANNOUNCEMENTS\n\n\nVersion 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.\nWe need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday."
+  },
+  {
+    "objectID": "blog/07.28.2025.html#photo",
+    "href": "blog/07.28.2025.html#photo",
+    "title": "FIMS Weekly - July 28–August 1, 2025",
+    "section": "Photo",
+    "text": "Photo\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
   },
   {
     "objectID": "blog/08.11.2025.html",
