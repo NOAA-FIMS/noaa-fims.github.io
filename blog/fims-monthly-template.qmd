@@ -109,12 +109,12 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 :::
 :::
 
-::: {.content-hidden unless-meta="summary.text"}
+::: {.content-visible when-meta="summary.text"}
 ## Summary
 
 {{< meta summary.text >}}
 
-::: {.content-hidden unless-meta="summary.include-photo"}
+::: {.content-visible when-meta="summary.include-photo"}
 ```{=html}
 <img src="{{< meta summary.path >}}" alt="{{< meta summary.alt-text >}}" style="height:150%;">
 ```
@@ -125,12 +125,12 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 
 
 <!-- Used for previous fims weekly posts which used a photo section. -->
-::: {.content-hidden unless-meta="photo.text"}
+::: {.content-visible when-meta="photo.text"}
 ## Photo
 
 {{< meta photo.text >}}
 
-::: {.content-hidden unless-meta="photo.include-photo"}
+::: {.content-visible when-meta="photo.include-photo"}
 ```{=html}
 <img src="{{< meta photo.path >}}" alt="{{< meta photo.alt-text >}}" style="height:150%;">
 ```
