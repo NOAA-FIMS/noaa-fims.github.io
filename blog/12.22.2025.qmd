@@ -20,25 +20,11 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "`x %notin% table` is currently in the development version of [R](https://developer.r-project.org/blosxom.cgi/R-devel/NEWS/2025/12/05) and is an idiom for `!(x %in% table)` and provided almost entirely for convenience and code readability, from an R-devel suggestion, after many years of private definitions mostly hidden in packages, including in R's {tools}."
 ---
   
 {{< include "fims-monthly-template.qmd" >}}
-
-::: {#announcements}
-- 
-::: 
-    
-::: {#additional-events}
-      
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
 
 ::: {#photo-code}
 ```
@@ -48,7 +34,6 @@ x %notin% my_vector
 ```
 :::
         
-:::
 
 ```{=html}
 <script src="https://giscus.app/client.js"

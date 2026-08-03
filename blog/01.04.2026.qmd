@@ -23,6 +23,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "The theme set of 'Celebrating a century of marine science' within ICES Journal of Marine Science is about to close on January 30, 2026. We submitted our FIMS manuscript to this special issue but we are still waiting on receiving reviews."
   include-photo: true
   path: "images/ICESJMS+100+Image-+white+BG.jpg"
@@ -37,7 +38,6 @@ photo:
     
 ::: {#additional-events}
       
-
 ### Wednesday, January 07
 **FIMS Implementation Team Meeting (Trainings)**
 
@@ -45,16 +45,7 @@ Time: 15:30–16:30 E; 12:30–13:30 P; 11:30–12:30 AK; 9:30–10:30 H
 Location: Virtual
 Online: [Google meet](https://meet.google.com/unsupported?meetingCode=kbz-ccew-iij&ref=https://meet.google.com/kbz-ccew-iij)
 
-
 :::
-
-<!--
-::: {#photo-code}
-```
-PUT CODE HERE
-```
-:::
--->
         
 
 ```{=html}

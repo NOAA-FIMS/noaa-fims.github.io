@@ -22,6 +22,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "A few months ago, Posit introduced [Databot](https://posit.co/blog/introducing-databot/) to help explore your data. This is not really of direct interest to FIMS but I think the concept is. Our figures and tables should with a FIMS data object should be relatively similar where we build a command such as `summarize()` to give similar summaries."
   include-photo: true
   path: "https://posit.co/sites/default/files/styles/x_large_hq/public/migrate/blog/2025/08/databot-blog.pdf.jpg.webp?itok=HdtfJ252"
@@ -34,13 +35,6 @@ photo:
 - Happy 🦃Thanksgiving Day🦃 to you and your friends and family this holiday season.
 - The FIMS CIE Review has been rescheduled to April 21–23, 2026.
 ::: 
-    
-::: {#additional-events}
-:::
-
-::: {#photo-code}
-:::
-
         
 
 ```{=html}

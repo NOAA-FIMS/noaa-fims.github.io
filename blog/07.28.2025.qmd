@@ -13,10 +13,10 @@ big-things:
   bt3: "Projections and reference points are in the works. An update will be presented at the next FIMS Implementation Team Meeting."
 # Announcements go below because of formatting that quarto doesn't transfer over from the yml
 upcoming-events:
-  code-club-include: true
+  code-club: true
   code-club-date: "Tuesday, July 29"
   code-club-name: "FIMS Code Club (length-based selectivity)"
-  seaside-chat-include: true
+  seaside-chat: true
   seaside-chat-date: "Thursday, July 31"
   seaside-chat-name: "FIMS Seaside Chat (❓)"
 # If you have any additional events, uncomment and fill out the additional events section below.
@@ -35,20 +35,6 @@ photo:
 - We need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday.
 ::: 
 
-::: {#additional-events}
-
-<!--
-### DAY DATE
-**NAME**\n
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-
-:::
-
-::: {#photo-code}
-:::
 
 ```{=html}
 <script src="https://giscus.app/client.js"

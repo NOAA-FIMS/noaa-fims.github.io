@@ -18,6 +18,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "GitHub released a feature last week allowing users to [sort their notifications](https://github.blog/changelog/2026-04-09-new-sort-by-control-added-to-notifications/) on the web interface. You can look at all of your notifications by navigating to www.github.com/notifications; this interface is great for being able to turn off notifications for specific threads that you are not interested in or honing in on recent notifications from a certain repository."
   include-photo: true
   path: "https://github.blog/wp-content/uploads/2026/04/SortBy_Improvements_Header_v02.jpg?w=1536"
@@ -30,10 +31,6 @@ photo:
 - 7 days until the CIE Review.
 - There are still empty time slots for taking notes during the CIE Review, please sign up in this [Google Doc](https://docs.google.com/document/d/1MfqLOMrkawPrQzdI3ycybxBx2gk8r7tLa44iKIo0taY/edit?tab=t.0).
 ::: 
-    
-
-<!-- ::: {#photo-code}
-::: -->
 
 ```{=html}
 <script src="https://giscus.app/client.js"

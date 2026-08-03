@@ -18,6 +18,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "Just this morning I learned that issues associated with a milestone can be ordered to show users which issues will be worked on first. This should help communicate how work will be prioritized within FIMS."
   include-photo: true
   path: "https://github.blog/wp-content/uploads/2016/07/6629b442-42c7-11e6-954b-88a57821a36a.gif?resize=1600%2C850"
@@ -45,9 +46,6 @@ Time: 16:00–17:00 E; 13:00–14:00 P; 12:00–13:00 AK; 10:00–11:00 H
 Location: Virtual
 Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=djv-qgow-qwe&ref=https://meet.google.com/djv-qgow-qwe)
 :::
-
-<!-- ::: {#photo-code}
-::: -->
 
 ```{=html}
 <script src="https://giscus.app/client.js"

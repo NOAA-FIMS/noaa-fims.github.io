@@ -21,7 +21,6 @@ show-calendar: true
 summary:
   include: true
   text: "test"
-  include-photo: false
 ---
 
 {{< include "fims-monthly-template.qmd" >}}

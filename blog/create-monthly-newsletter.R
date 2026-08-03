@@ -75,6 +75,7 @@ announcements:
   - ANNOUNCEMENT 1
   - ANNOUNCEMENT 2
 show-calendar: true
+# If you want a summary section, include: true needs to be there
 # If there is no photo in the summary section, you can delete include-photo, path, and alt-text
 # and the template will handle it for you.
 # If there is code instead, please uncomment the section below named summary-code

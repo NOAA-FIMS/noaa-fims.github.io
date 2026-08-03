@@ -19,6 +19,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "A recent PR came in that changes our spell checker from the one provided by [ghactions4r](https://github.com/nmfs-ost/ghactions4r/blob/main/.github/workflows/spell-check.yml), which uses {spelling}, to one that uses [cspell](https://cspell.org/) and does not require installing R. This new action requires fewer words in the WORDLIST and will hopefully be easier to maintain given that we have both snake_case and PascalCase code. Locally, you can use the code below to learn more about cspell and how to check your files for spelling errors."
 ---
 

@@ -19,6 +19,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "As a great way to visually show off code to create a {ggplot2} figure, there is a newer package out called [ggram](https://github.com/EvaMaeRey/ggram) that displays the code used to create a figure alongside the figure itself using {patchwork}. This could be a unique way to display figures in training materials such as vignettes, especially vignettes that are meant to be displayed as presentations."
   include-photo: true
   path: "images/a_ggram0.png"
@@ -31,26 +32,7 @@ photo:
 - There will be a FIMS training at the National Stock Assessment Workshop in La Jolla, California on January 26th in the afternoon. The training will focus on how to run a simple FIMS model on a Google Cloud workstation and providing assistance for fitting data sets brought by attendees with FIMS.
 - Please welcome 👋 Dan Goethel to FIMS.
 ::: 
-    
-::: {#additional-events}
-      
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-:::
-
-<!--
-::: {#photo-code}
-```
-PUT CODE HERE
-```
-:::
--->
+  
 
 ```{=html}
 <script src="https://giscus.app/client.js"

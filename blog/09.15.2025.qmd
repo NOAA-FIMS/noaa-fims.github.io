@@ -24,6 +24,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "Thanks to Bai's recent PR that revamped the lists of lists for running a model into a tibble the amount of code needed to run a default model is even less. Check out the revamped fims-demo-minimal below!"
 ---
   
@@ -32,19 +33,6 @@ photo:
 ::: {#announcements}
 - 50 days until the CIE Review
 ::: 
-    
-::: {#additional-events}
-      
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-
-:::
 
 ::: {#photo-code}
 

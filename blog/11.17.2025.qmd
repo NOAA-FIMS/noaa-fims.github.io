@@ -18,6 +18,7 @@ big-things:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "As we update our website to be the best 'community playbook' that it can be, we will be adding some icons to titles to help users of all types navigate the pages. Look for each of the icons throughout this site based on which type of information you are looking for."
 ---
   
@@ -26,19 +27,6 @@ photo:
 ::: {#announcements}
 - The ICES Methods Group Working Group is convening this week at the University of Washington and remotely. Please contact Andrea Havron if you are interested in participating.
 ::: 
-    
-::: {#additional-events}
-      
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-
-:::
 
 ::: {#photo-code}
 <i class="fa-solid fa-laptop-code"></i> Developer<br>
@@ -46,7 +34,6 @@ Online: [Google meet](MEETING LINK)
 <i class="fa-solid fa-bolt"></i> Power User<br>
 <i class="fa-solid fa-chart-line"></i> Receiver of Results<br>
 :::
-
         
 
 ```{=html}

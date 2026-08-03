@@ -20,6 +20,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "While trying to find an example of `rlang::arg_match()` I came across the [tidyverse design principles](https://design.tidyverse.org/), which has some great content, and was reminded that many R developers do not know or understand `match.arg()` or `rlang::arg_match()`. These functions can be game changes when you want the options within a function argument to be clear to users and I believe that we should be using them more in FIMS. See a small example below and read the [relevant section of design.tidyverse.org](https://design.tidyverse.org/enumerate-options.html#how-do-i-use-this-pattern) for more information."
 ---
 
@@ -28,19 +29,6 @@ photo:
 ::: {#announcements}
 - 50 days until the CIE Review.
 - We will be paring the rendered case studies down to just three, or four, examples for the CIE Review to ensure that they are fully developed and provide well-explained examples of comparisons of FIMS models to existing platforms. The remainder of the examples will stay in the repository but will not be showcased on the resulting website.
-:::
-
-::: {#additional-events}
-
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-
 :::
 
 

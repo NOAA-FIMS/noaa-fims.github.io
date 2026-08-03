@@ -18,6 +18,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "This will be the last FIMS Weekly for a while as we test out using the GitHub Discussion Board to post weekly summaries. Using GitHub Discussions will allow everyone with a GitHub account to subscribe (or unsubscribe 🙁) to the specific GitHub Discussion Thread without requiring us to set up a list serve. The thread is called [Project Updates](https://github.com/orgs/NOAA-FIMS/discussions/1461) and it exists in the Announcement section. Please navigate to the link and click 'Subscribe' if you aren't already subscribed to all FIMS Discussions. See the image for where the subscribe button is located."
   include-photo: true
   path: "images/project_updates_discussion.png"

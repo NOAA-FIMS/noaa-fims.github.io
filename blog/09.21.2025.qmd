@@ -21,6 +21,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "doxygen use to be so foreign to me and I wished we could just use roxygen😒. Now, I feel more at home with doxygen and have even learned some tips (see below) to making it better and feel more roxygen like✅."
 ---
   

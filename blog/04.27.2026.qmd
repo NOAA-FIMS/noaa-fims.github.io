@@ -18,6 +18,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "In the priorities presentation during the CIE Review, I presented the following image, which I found on a blog post titled [Stop building what your customers ask for](https://dev.to/jon_at_backboardio/stop-building-what-your-customers-ask-for-3d16?context=digest). In short, the blog post reminded me how it is not only our job to produce a product that is of use to fisheries managers but it is also our job to interpret what stakeholders see as a problem and imagine a solution potentially outside of a workflow that currently exists. "
   include-photo: true
   path: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2fytab0wih4bn8ib230a.png"
@@ -30,11 +31,6 @@ photo:
 - CIE Review is complete! Thank you to Andrea, Bai, Ian, and Nathan for giving presentations. Thank you to Aaron Berger for being such a great Chair. Thank you to everyone who took notes, they are extremely comprehensive and have already been used by several individuals to summarize the key points of the review. I really appreciate all of the help making this review successful. We received lots of good, constructive feedback and I am looking forward to working on implementing some of the suggested changes.
 ::: 
 
-::: {#additional-events}
-:::
-
-<!-- ::: {#photo-code}
-::: -->
 
 ```{=html}
 <script src="https://giscus.app/client.js"

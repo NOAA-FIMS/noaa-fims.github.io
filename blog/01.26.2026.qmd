@@ -20,7 +20,6 @@ upcoming-events:
 photo:
   include: true
   text: "To add ten years of projections onto your time series you can use `FIMS::FIMSFrame()` to add -999 to all of your data streams by just adding a single year of -999 for any type with the maximum year that you want to project to. See the code below for an example, which was taken from the [projections vignette](https://noaa-fims.github.io/FIMS/articles/fims-demo-projections.html). Now we need to think carefully about the default uncertainty values for the -999 in each type."
-  include-photo: false
 ---
   
 {{< include "fims-monthly-template.qmd" >}}
@@ -31,18 +30,6 @@ photo:
 - If you attended the FIMS Training on Monday, please fill out the survey on [Google Cloud Workstations](https://docs.google.com/forms/d/e/1FAIpQLSehj6N1ka568ohEsakRQZbHxrduf1EswkYbVavhPXYBuruM7A/viewform).
 ::: 
     
-::: {#additional-events}
-      
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-
-:::
 
 ::: {#photo-code}
 

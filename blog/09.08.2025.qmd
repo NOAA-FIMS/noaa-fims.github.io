@@ -22,6 +22,7 @@ upcoming-events:
 # If you have any additional events, uncomment and fill out the additional events section below.
 # If there is no actual photo you can delete include-photo, path, and alt-text and the template will handle it for you. If there is code instead, please uncomment the section below named photo-code.
 photo:
+  include: true
   text: "Last week I showed the json output for dimensionality, this week I show the tidyverse code to create a tibble from that same information."
 ---
   
@@ -32,18 +33,6 @@ photo:
 - 57 calendar days until the FIMS CIE Review, we now have a chair.
 ::: 
     
-::: {#additional-events}
-      
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-        
-:::
 
 ::: {#photo-code}
 

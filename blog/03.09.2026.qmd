@@ -19,6 +19,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "Bai recently experimented with using quarto to write a manuscript and found the [template for Elsevier Journals](https://quarto-journals.github.io/elsevier/) easy to use. All the code is on [GitHub](https://github.com/quarto-journals/elsevier) and you can implement the template in your own repo with the following, single, line of code within a terminal. Quarto also provides [templates for other journals](https://quarto.org/docs/journals/) and information regarding how to use templates on their website. Thank you Bai for sharing."
 ---
   

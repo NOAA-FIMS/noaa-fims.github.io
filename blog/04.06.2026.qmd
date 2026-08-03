@@ -18,6 +18,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "Elizabeth and others worked a few weeks ago on editing an infographic to display user pathways. The work is now live on the FIMS organization website. Please feel to provide comments to Elizabeth if you have more ideas."
   include-photo: true
   path: "images/fims_user_pathways.png"
@@ -39,9 +40,6 @@ Time: 12:30–13:30 E; 9:30–10:30 P; 8:30–9:30 AK; 6:30–7:30 H
 Location: Virtual
 Online: [Go to webinar](https://register.gotowebinar.com/register/2627838742231839063)
 :::
-
-<!-- ::: {#photo-code}
-::: -->
 
 ```{=html}
 <script src="https://giscus.app/client.js"

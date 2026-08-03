@@ -18,6 +18,7 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "Thank you to Alex and Peter for helping fix up the FIMS cheat sheet last week. Below is a screen shot of the updates made with respect to what the table of parameters looks like."
   include-photo: true
   path: "images/cheat_sheet_2025-12-01.png"
@@ -41,8 +42,6 @@ Online: [Google meet](https://meet.google.com/unsupported?meetingCode=kbz-ccew-i
 
 :::
 
-::: {#photo-code}
-:::
 
 ```{=html}
 <script src="https://giscus.app/client.js"
