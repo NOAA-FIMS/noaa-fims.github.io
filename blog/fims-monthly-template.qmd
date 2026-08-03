@@ -77,12 +77,13 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 ::: {.column width="68%"}
 <div class="header-wrap"><h2>UPCOMING EVENTS</h2></div>
 
-::: {.content-visible unless-meta="upcoming-events"}
+::: {.content-visible when-meta="show-calendar"}
 ```{=html}
-<iframe src="https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0; width: 100%; height: 500px;" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0; width: 100%; height: 500px;" frameborder="0" scrolling="no" title="FIMS Upcoming Events Calendar"></iframe>
 ```
 :::
 
+::: {.content-visible unless-meta="show-calendar"}
 <!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
 ::: {.content-hidden unless-meta="upcoming-events.code-club"}
 ### {{< meta upcoming-events.code-club-date >}}
@@ -102,6 +103,7 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 
 {{< contents additional-events >}}
 <!-- end -->
+:::
 
 :::
 :::
