@@ -89,7 +89,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -273,7 +273,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -378,7 +378,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -495,7 +495,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -614,7 +614,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -719,7 +719,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -849,7 +849,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -955,7 +955,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -1068,7 +1068,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -1206,7 +1206,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -1417,7 +1417,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -1598,7 +1598,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -1716,7 +1716,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -1843,7 +1843,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -2293,7 +2293,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -2417,7 +2417,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
@@ -2540,7 +2540,7 @@ HELPFUL RESOURCES
 </ul>
 </div><div class="column" style="width:2%;">
 
-</div><div class="column" style="width:68%;">
+</div><div id="upcoming-events-col" class="column" style="width:68%;">
 <div class="header-wrap">
 <h2 class="anchored">
 UPCOMING EVENTS
