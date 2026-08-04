@@ -147,11 +147,11 @@
     "text": "ANNOUNCEMENTS"
   },
   {
-    "objectID": "blog/12.22.2025.html#photo",
-    "href": "blog/12.22.2025.html#photo",
+    "objectID": "blog/12.22.2025.html#photo-of-the-week",
+    "href": "blog/12.22.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - December 22–26, 2025",
-    "section": "Photo",
-    "text": "Photo\nx %notin% table is currently in the development version of R and is an idiom for !(x %in% table) and provided almost entirely for convenience and code readability, from an R-devel suggestion, after many years of private definitions mostly hidden in packages, including in R’s {tools}.\n\nx &lt;- 1\nmy_vector &lt;- 1:10\nx %notin% my_vector"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nx %notin% table is currently in the development version of R and is an idiom for !(x %in% table) and provided almost entirely for convenience and code readability, from an R-devel suggestion, after many years of private definitions mostly hidden in packages, including in R’s {tools}.\n\nx &lt;- 1\nmy_vector &lt;- 1:10\nx %notin% my_vector"
   },
   {
     "objectID": "blog/12.08.2025.html",
@@ -175,11 +175,11 @@
     "text": "ANNOUNCEMENTS\n\n\nConsider attending the CAPAM workshop on tuna models this week."
   },
   {
-    "objectID": "blog/12.08.2025.html#photo",
-    "href": "blog/12.08.2025.html#photo",
+    "objectID": "blog/12.08.2025.html#photo-of-the-week",
+    "href": "blog/12.08.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - December 08–12, 2025",
-    "section": "Photo",
-    "text": "Photo\nA new expectation expect_shape() is available from {testthat} which checks the dimensions of the object of interest, e.g., number of rows or number of columns! This function could be helpful for FIMS where we expect the model results to have a certain number of rows.\n\ntestthat::expect_shape()\n\nargs(testthat::expect_shape)\n# function (object, ..., nrow, ncol, dim)\n\nmat &lt;- matrix(1:6, nrow = 2, ncol = 3)\n# Passes: mat has 2 rows and 3 columns\ntestthat::expect_shape(mat, c(2, 3))\n\ndf &lt;- data.frame(a = 1:4, b = 5:8)\n# Passes: df has 4 rows and 2 columns\ntestthat::expect_shape(df, c(4, 2))"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nA new expectation expect_shape() is available from {testthat} which checks the dimensions of the object of interest, e.g., number of rows or number of columns! This function could be helpful for FIMS where we expect the model results to have a certain number of rows.\n\ntestthat::expect_shape()\n\nargs(testthat::expect_shape)\n# function (object, ..., nrow, ncol, dim)\n\nmat &lt;- matrix(1:6, nrow = 2, ncol = 3)\n# Passes: mat has 2 rows and 3 columns\ntestthat::expect_shape(mat, c(2, 3))\n\ndf &lt;- data.frame(a = 1:4, b = 5:8)\n# Passes: df has 4 rows and 2 columns\ntestthat::expect_shape(df, c(4, 2))"
   },
   {
     "objectID": "blog/11.24.2025.html",
@@ -203,11 +203,11 @@
     "text": "ANNOUNCEMENTS\n\n\nHappy 🦃Thanksgiving Day🦃 to you and your friends and family this holiday season.\nThe FIMS CIE Review has been rescheduled to April 21–23, 2026."
   },
   {
-    "objectID": "blog/11.24.2025.html#photo",
-    "href": "blog/11.24.2025.html#photo",
+    "objectID": "blog/11.24.2025.html#photo-of-the-week",
+    "href": "blog/11.24.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - November 24–28, 2025",
-    "section": "Photo",
-    "text": "Photo\nA few months ago, Posit introduced Databot to help explore your data. This is not really of direct interest to FIMS but I think the concept is. Our figures and tables should with a FIMS data object should be relatively similar where we build a command such as summarize() to give similar summaries."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nA few months ago, Posit introduced Databot to help explore your data. This is not really of direct interest to FIMS but I think the concept is. Our figures and tables should with a FIMS data object should be relatively similar where we build a command such as summarize() to give similar summaries."
   },
   {
     "objectID": "blog/09.29.2025.html",
@@ -231,11 +231,11 @@
     "text": "ANNOUNCEMENTS\n\n\n36 more days until the CIE Review\nMeg and Ian have made excellent progress on FIMSdiags, complete with a pkgdown site"
   },
   {
-    "objectID": "blog/09.29.2025.html#photo",
-    "href": "blog/09.29.2025.html#photo",
+    "objectID": "blog/09.29.2025.html#photo-of-the-week",
+    "href": "blog/09.29.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - September 29–October 03, 2025",
-    "section": "Photo",
-    "text": "Photo\nI am truly impressed by the perseverance of Elizabeth Perl 😮. She was able to get our doxygen site to render with the same headers as our noaa-fims.github.io site. This was no easy feat, and it looks beautiful. If you have any suggestions feel free to fill out an issue."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nI am truly impressed by the perseverance of Elizabeth Perl 😮. She was able to get our doxygen site to render with the same headers as our noaa-fims.github.io site. This was no easy feat, and it looks beautiful. If you have any suggestions feel free to fill out an issue."
   },
   {
     "objectID": "blog/09.15.2025.html",
@@ -259,11 +259,11 @@
     "text": "ANNOUNCEMENTS\n\n\n50 days until the CIE Review"
   },
   {
-    "objectID": "blog/09.15.2025.html#photo",
-    "href": "blog/09.15.2025.html#photo",
+    "objectID": "blog/09.15.2025.html#photo-of-the-week",
+    "href": "blog/09.15.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - September 15–19, 2025",
-    "section": "Photo",
-    "text": "Photo\nThanks to Bai’s recent PR that revamped the lists of lists for running a model into a tibble the amount of code needed to run a default model is even less. Check out the revamped fims-demo-minimal below!\n\ndata_4_model &lt;- FIMSFrame(data1)\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  create_default_configurations() |&gt;\n  create_default_parameters(data = data_4_model)\n# Run the  model with optimization\nfit &lt;- parameters |&gt;\n  initialize_fims(data = data_4_model) |&gt;\n  fit_fims(optimize = TRUE)"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nThanks to Bai’s recent PR that revamped the lists of lists for running a model into a tibble the amount of code needed to run a default model is even less. Check out the revamped fims-demo-minimal below!\n\ndata_4_model &lt;- FIMSFrame(data1)\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  create_default_configurations() |&gt;\n  create_default_parameters(data = data_4_model)\n# Run the  model with optimization\nfit &lt;- parameters |&gt;\n  initialize_fims(data = data_4_model) |&gt;\n  fit_fims(optimize = TRUE)"
   },
   {
     "objectID": "blog/09.01.2025.html",
@@ -287,11 +287,11 @@
     "text": "ANNOUNCEMENTS\n\n\n64 calendar days until the FIMS CIE Review, we still need a chair."
   },
   {
-    "objectID": "blog/09.01.2025.html#photo",
-    "href": "blog/09.01.2025.html#photo",
+    "objectID": "blog/09.01.2025.html#photo-of-the-week",
+    "href": "blog/09.01.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - September 01–05, 2025",
-    "section": "Photo",
-    "text": "Photo\nBelow is a glimpse of what the new json output looks like, where dimensions are provided both in name and in length. Please contact Matthew if you have feedback on this structure.\n\n{\n                    \"name\": \"age_to_length_conversion\",\n                    \"dimensionality\": {\n                        \"header\": [\n                            \"year\",\n                            \"length\"\n                        ],\n                        \"dimensions\": [\n                            31,\n                            24\n                        ]\n                    },\n                    \"values\": [\n                        1.26174e-16,\n                        8.38582e-11,\n                        2.29736e-06,\n                        0.00274388,\n                        0.163077,"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nBelow is a glimpse of what the new json output looks like, where dimensions are provided both in name and in length. Please contact Matthew if you have feedback on this structure.\n\n{\n                    \"name\": \"age_to_length_conversion\",\n                    \"dimensionality\": {\n                        \"header\": [\n                            \"year\",\n                            \"length\"\n                        ],\n                        \"dimensions\": [\n                            31,\n                            24\n                        ]\n                    },\n                    \"values\": [\n                        1.26174e-16,\n                        8.38582e-11,\n                        2.29736e-06,\n                        0.00274388,\n                        0.163077,"
   },
   {
     "objectID": "blog/08.18.2025.html",
@@ -315,11 +315,11 @@
     "text": "ANNOUNCEMENTS\n\n\nThe CIE Review will be November 04–06, 2025 and all materials must be delivered to the reviewers four weeks prior to this, i.e., October 07, 2025.\nMuch of the collaborative workflow guide has been moved to this website and to CONTRIBUTING.md. Three files are left to migrate, the model specifications, hpp templates, and testing information. The testing information will move to Bai’s new test README.md file."
   },
   {
-    "objectID": "blog/08.18.2025.html#photo",
-    "href": "blog/08.18.2025.html#photo",
+    "objectID": "blog/08.18.2025.html#photo-of-the-week",
+    "href": "blog/08.18.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - August 18–22, 2025",
-    "section": "Photo",
-    "text": "Photo\nThanks to my GitHub Project Board mentors, Andrea and Kathryn, I have revitalized the Issue Triage Board and I will be working on getting the, currently, 104 un-triaged issues assigned to someone or placed in the parking lot. It took me a while but I think Project Boards might be growing on me."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nThanks to my GitHub Project Board mentors, Andrea and Kathryn, I have revitalized the Issue Triage Board and I will be working on getting the, currently, 104 un-triaged issues assigned to someone or placed in the parking lot. It took me a while but I think Project Boards might be growing on me."
   },
   {
     "objectID": "blog/08.04.2025.html",
@@ -343,11 +343,11 @@
     "text": "ANNOUNCEMENTS\n\n\nFIMS website is now newly updated thanks to Elizabeth 🥇!\nThe CIE Review has been approved and will be held November 04–06, 2025 using an online platform."
   },
   {
-    "objectID": "blog/08.04.2025.html#photo",
-    "href": "blog/08.04.2025.html#photo",
+    "objectID": "blog/08.04.2025.html#photo-of-the-week",
+    "href": "blog/08.04.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - August 04–08, 2025",
-    "section": "Photo",
-    "text": "Photo\nDuring last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example:\n\n{\n  \"@context\": \"https://schema.org/\",\n  \"@type\": \"Dataset\",\n  \"name\": \"Human Genome Assembly GRCh38\",\n  \"description\": \"The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.\",\n  \"url\": \"https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/\",\n  \"identifier\": \"GCF_000001405.26\",\n  \"creator\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Genome Reference Consortium\"\n  },\n  \"citation\": \"Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.\",\n  \"keywords\": [\n    \"Human Genome\",\n    \"GRCh38\",\n    \"Genomics\",\n    \"Reference Assembly\"\n  ],\n  \"license\": \"https://creativecommons.org/licenses/by/4.0/\",\n  \"datePublished\": \"2013-12-17\",\n  \"distribution\": [\n    {\n      \"@type\": \"DataDownload\",\n      \"name\": \"GRCh38 FASTA file\",\n      \"contentUrl\": \"ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz\",\n      \"encodingFormat\": \"application/x-fasta\"\n    }\n  ],\n  \"measurementTechnique\": \"Next-Generation Sequencing\",\n  \"inLanguage\": \"en\"\n}"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nDuring last week’s Seaside Chat, it was proposed that we should make a json schema for the FIMS output and I agree 💯. Gemini then told me that referencing schemas is a thing, which led me down a “bright” 🐰🕳️. I realized that the .bib files for LaTeX that I normally work with are essentially a json file. Gemini also informed me that BioSchemas is the most referenced schema in science, particularly their Dataset schema. Below is an example:\n\n{\n  \"@context\": \"https://schema.org/\",\n  \"@type\": \"Dataset\",\n  \"name\": \"Human Genome Assembly GRCh38\",\n  \"description\": \"The latest full reference genome assembly of the human genome, a product of the Genome Reference Consortium.\",\n  \"url\": \"https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/\",\n  \"identifier\": \"GCF_000001405.26\",\n  \"creator\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Genome Reference Consortium\"\n  },\n  \"citation\": \"Kallberg, M. et al. (2014). GRCh38: The human reference genome update. Nucleic Acids Research.\",\n  \"keywords\": [\n    \"Human Genome\",\n    \"GRCh38\",\n    \"Genomics\",\n    \"Reference Assembly\"\n  ],\n  \"license\": \"https://creativecommons.org/licenses/by/4.0/\",\n  \"datePublished\": \"2013-12-17\",\n  \"distribution\": [\n    {\n      \"@type\": \"DataDownload\",\n      \"name\": \"GRCh38 FASTA file\",\n      \"contentUrl\": \"ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.26_GRCh38/GCF_000001405.26_GRCh38_genomic.fna.gz\",\n      \"encodingFormat\": \"application/x-fasta\"\n    }\n  ],\n  \"measurementTechnique\": \"Next-Generation Sequencing\",\n  \"inLanguage\": \"en\"\n}"
   },
   {
     "objectID": "blog/07.21.2025.html",
@@ -399,11 +399,11 @@
     "text": "ANNOUNCEMENTS\n\n\nFIMS CIE Review has been turned in and should be public next week."
   },
   {
-    "objectID": "blog/05.11.2026.html#photo",
-    "href": "blog/05.11.2026.html#photo",
+    "objectID": "blog/05.11.2026.html#photo-of-the-week",
+    "href": "blog/05.11.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - May 11–15, 2026",
-    "section": "Photo",
-    "text": "Photo\nJust this morning I learned that issues associated with a milestone can be ordered to show users which issues will be worked on first. This should help communicate how work will be prioritized within FIMS."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nJust this morning I learned that issues associated with a milestone can be ordered to show users which issues will be worked on first. This should help communicate how work will be prioritized within FIMS."
   },
   {
     "objectID": "blog/04.27.2026.html",
@@ -427,11 +427,11 @@
     "text": "ANNOUNCEMENTS\n\n\nCIE Review is complete! Thank you to Andrea, Bai, Ian, and Nathan for giving presentations. Thank you to Aaron Berger for being such a great Chair. Thank you to everyone who took notes, they are extremely comprehensive and have already been used by several individuals to summarize the key points of the review. I really appreciate all of the help making this review successful. We received lots of good, constructive feedback and I am looking forward to working on implementing some of the suggested changes."
   },
   {
-    "objectID": "blog/04.27.2026.html#photo",
-    "href": "blog/04.27.2026.html#photo",
+    "objectID": "blog/04.27.2026.html#photo-of-the-week",
+    "href": "blog/04.27.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - April 27–May 01, 2026",
-    "section": "Photo",
-    "text": "Photo\nIn the priorities presentation during the CIE Review, I presented the following image, which I found on a blog post titled Stop building what your customers ask for. In short, the blog post reminded me how it is not only our job to produce a product that is of use to fisheries managers but it is also our job to interpret what stakeholders see as a problem and imagine a solution potentially outside of a workflow that currently exists."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nIn the priorities presentation during the CIE Review, I presented the following image, which I found on a blog post titled Stop building what your customers ask for. In short, the blog post reminded me how it is not only our job to produce a product that is of use to fisheries managers but it is also our job to interpret what stakeholders see as a problem and imagine a solution potentially outside of a workflow that currently exists."
   },
   {
     "objectID": "blog/04.13.2026.html",
@@ -455,11 +455,11 @@
     "text": "ANNOUNCEMENTS\n\n\n7 days until the CIE Review.\nThere are still empty time slots for taking notes during the CIE Review, please sign up in this Google Doc."
   },
   {
-    "objectID": "blog/04.13.2026.html#photo",
-    "href": "blog/04.13.2026.html#photo",
+    "objectID": "blog/04.13.2026.html#photo-of-the-week",
+    "href": "blog/04.13.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - April 13–17, 2026",
-    "section": "Photo",
-    "text": "Photo\nGitHub released a feature last week allowing users to sort their notifications on the web interface. You can look at all of your notifications by navigating to www.github.com/notifications; this interface is great for being able to turn off notifications for specific threads that you are not interested in or honing in on recent notifications from a certain repository."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nGitHub released a feature last week allowing users to sort their notifications on the web interface. You can look at all of your notifications by navigating to www.github.com/notifications; this interface is great for being able to turn off notifications for specific threads that you are not interested in or honing in on recent notifications from a certain repository."
   },
   {
     "objectID": "blog/03.30.2026.html",
@@ -483,11 +483,11 @@
     "text": "ANNOUNCEMENTS\n\n\n21 days until the CIE Review.\nGoogle Summer of Code applications are due this week, we currently have six applications for four projects."
   },
   {
-    "objectID": "blog/03.30.2026.html#photo",
-    "href": "blog/03.30.2026.html#photo",
+    "objectID": "blog/03.30.2026.html#photo-of-the-week",
+    "href": "blog/03.30.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - March 30–April 03, 2026",
-    "section": "Photo",
-    "text": "Photo\nI finally figured out how to merge dev into main without changing all of the commit hashes and messing up all of the outstanding Pull Requests to dev. There is not an option within the GitHub user interface to do this. Instead, it must be done from the command line (see below). I think we are coming to a point in our development though where we can think about removing dev from our workflow and instead of letting features pile up in dev before they are released, we more thoroughly review them in their feature branches and release them directly to main rather than going to dev first.\n\ngit checkout main\ngit fetch -a\ngit rebase origin/main\ngit merge dev --ff-only\ngit push origin main"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nI finally figured out how to merge dev into main without changing all of the commit hashes and messing up all of the outstanding Pull Requests to dev. There is not an option within the GitHub user interface to do this. Instead, it must be done from the command line (see below). I think we are coming to a point in our development though where we can think about removing dev from our workflow and instead of letting features pile up in dev before they are released, we more thoroughly review them in their feature branches and release them directly to main rather than going to dev first.\n\ngit checkout main\ngit fetch -a\ngit rebase origin/main\ngit merge dev --ff-only\ngit push origin main"
   },
   {
     "objectID": "blog/03.16.2026.html",
@@ -511,11 +511,11 @@
     "text": "ANNOUNCEMENTS\n\n\n36 days until the CIE Review, main will be frozen by next Monday when we have to turn in all materials to the CIE Reviewers."
   },
   {
-    "objectID": "blog/03.16.2026.html#photo",
-    "href": "blog/03.16.2026.html#photo",
+    "objectID": "blog/03.16.2026.html#photo-of-the-week",
+    "href": "blog/03.16.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - March 16–20, 2026",
-    "section": "Photo",
-    "text": "Photo\nVersion 0.9.0 has two breaking changes. (1) If you have time-varying weight_at_age data you can use it but you must make a decision for the beginning of the last year after catches. FIMS does not accommodate this need for an additional year of weight_at_age data you must decide if you want to put in an average or some kind of projection. But, if you do not have time-varying weight_at_age data you can input just a single year as a power user and everything will be taken care of. (2) All six m_*() functions have been renamed to `model_*(). Below we show how a power user can implement (1).\n\n# A vector of weights for each age\nweights &lt;- 1:12\newaa_growth &lt;- methods::new(EWAAGrowth)\newaa_growth$n_years$set(get_n_years(fims_frame))\newaa_growth$ages$resize(get_n_ages(fims_frame))\npurrr::walk(\n  seq_along(get_ages(fims_frame)),\n  \\(x) ewaa_growth$ages$set(x - 1, get_ages(fims_frame)[x])\n)\newaa_growth$weights$resize(get_n_ages(fims_frame))\npurrr::walk(\n  seq(ewaa_growth$weights$size()),\n  \\(x) ewaa_growth$weights$set(x - 1, weights[x])\n)"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nVersion 0.9.0 has two breaking changes. (1) If you have time-varying weight_at_age data you can use it but you must make a decision for the beginning of the last year after catches. FIMS does not accommodate this need for an additional year of weight_at_age data you must decide if you want to put in an average or some kind of projection. But, if you do not have time-varying weight_at_age data you can input just a single year as a power user and everything will be taken care of. (2) All six m_*() functions have been renamed to `model_*(). Below we show how a power user can implement (1).\n\n# A vector of weights for each age\nweights &lt;- 1:12\newaa_growth &lt;- methods::new(EWAAGrowth)\newaa_growth$n_years$set(get_n_years(fims_frame))\newaa_growth$ages$resize(get_n_ages(fims_frame))\npurrr::walk(\n  seq_along(get_ages(fims_frame)),\n  \\(x) ewaa_growth$ages$set(x - 1, get_ages(fims_frame)[x])\n)\newaa_growth$weights$resize(get_n_ages(fims_frame))\npurrr::walk(\n  seq(ewaa_growth$weights$size()),\n  \\(x) ewaa_growth$weights$set(x - 1, weights[x])\n)"
   },
   {
     "objectID": "blog/03.02.2026.html",
@@ -539,11 +539,11 @@
     "text": "ANNOUNCEMENTS\n\n\n50 days until the CIE Review.\nWe will be paring the rendered case studies down to just three, or four, examples for the CIE Review to ensure that they are fully developed and provide well-explained examples of comparisons of FIMS models to existing platforms. The remainder of the examples will stay in the repository but will not be showcased on the resulting website."
   },
   {
-    "objectID": "blog/03.02.2026.html#photo",
-    "href": "blog/03.02.2026.html#photo",
+    "objectID": "blog/03.02.2026.html#photo-of-the-week",
+    "href": "blog/03.02.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - March 02–06, 2026",
-    "section": "Photo",
-    "text": "Photo\nWhile trying to find an example of rlang::arg_match() I came across the tidyverse design principles, which has some great content, and was reminded that many R developers do not know or understand match.arg() or rlang::arg_match(). These functions can be game changes when you want the options within a function argument to be clear to users and I believe that we should be using them more in FIMS. See a small example below and read the relevant section of design.tidyverse.org for more information.\n\n# Base R function trimws uses match.arg() on the which argument\n# both is the default\ntrimws\n# function (x, which = c(\"both\", \"left\", \"right\"), whitespace = \"[ \\t\\r\\n]\") \n# {\n#     which &lt;- match.arg(which)\n#     mysub &lt;- function(re, x) sub(re, \"\", x, perl = TRUE)\n#     switch(which, left = mysub(paste0(\"^\", whitespace, \"+\"),\n#         x), right = mysub(paste0(whitespace, \"+$\"), x), both = mysub(paste0(whitespace,\n#         \"+$\"), mysub(paste0(\"^\", whitespace, \"+\"), x)))\n# }\n# &lt;bytecode: 0x0000024f9a563858&gt;\n# &lt;environment: namespace:base&gt;\n\ntrimws(x = \" My bad formatting \")\n# [1] \"My bad formatting\"\n\ntrimws(x = \" My bad formatting \", which = \"right\")\n# [1] \" My bad formatting\""
+    "section": "Photo of the week",
+    "text": "Photo of the week\nWhile trying to find an example of rlang::arg_match() I came across the tidyverse design principles, which has some great content, and was reminded that many R developers do not know or understand match.arg() or rlang::arg_match(). These functions can be game changes when you want the options within a function argument to be clear to users and I believe that we should be using them more in FIMS. See a small example below and read the relevant section of design.tidyverse.org for more information.\n\n# Base R function trimws uses match.arg() on the which argument\n# both is the default\ntrimws\n# function (x, which = c(\"both\", \"left\", \"right\"), whitespace = \"[ \\t\\r\\n]\") \n# {\n#     which &lt;- match.arg(which)\n#     mysub &lt;- function(re, x) sub(re, \"\", x, perl = TRUE)\n#     switch(which, left = mysub(paste0(\"^\", whitespace, \"+\"),\n#         x), right = mysub(paste0(whitespace, \"+$\"), x), both = mysub(paste0(whitespace,\n#         \"+$\"), mysub(paste0(\"^\", whitespace, \"+\"), x)))\n# }\n# &lt;bytecode: 0x0000024f9a563858&gt;\n# &lt;environment: namespace:base&gt;\n\ntrimws(x = \" My bad formatting \")\n# [1] \"My bad formatting\"\n\ntrimws(x = \" My bad formatting \", which = \"right\")\n# [1] \" My bad formatting\""
   },
   {
     "objectID": "blog/02.16.2026.html",
@@ -567,11 +567,11 @@
     "text": "ANNOUNCEMENTS\n\n\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
   },
   {
-    "objectID": "blog/02.16.2026.html#photo",
-    "href": "blog/02.16.2026.html#photo",
+    "objectID": "blog/02.16.2026.html#photo-of-the-week",
+    "href": "blog/02.16.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - February 16–20, 2026",
-    "section": "Photo",
-    "text": "Photo\nWe are using copilot to help with some changes related to integers in C++ in [PR #1199] to remove many of the compiler warnings when you compile on a Windows machine. These warnings are helpful when developing and this effort will make it even more helpful because you will not have to sift through hundreds of non-helpful warnings to get to the ones that you want.\n\n# old code\nRealVector(Rcpp::NumericVector x, size_t size) {\n  this-&gt;id_m = RealVector::id_g++;\n  this-&gt;storage_m = std::make_shared&lt;std::vector&lt;double&gt;&gt;();\n  this-&gt;resize(x.size());\n  for (size_t i = 0; i &lt; x.size(); i++) {\n    storage_m-&gt;at(i) = x[i];\n  }\n}\n\n# new code\nRealVector(Rcpp::NumericVector x, size_t size) {\n  this-&gt;id_m = RealVector::id_g++;\n  this-&gt;storage_m = std::make_shared&lt;std::vector&lt;double&gt;&gt;();\n  this-&gt;storage_m-&gt;assign(x.begin(), x.end());\n}"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nWe are using copilot to help with some changes related to integers in C++ in [PR #1199] to remove many of the compiler warnings when you compile on a Windows machine. These warnings are helpful when developing and this effort will make it even more helpful because you will not have to sift through hundreds of non-helpful warnings to get to the ones that you want.\n\n# old code\nRealVector(Rcpp::NumericVector x, size_t size) {\n  this-&gt;id_m = RealVector::id_g++;\n  this-&gt;storage_m = std::make_shared&lt;std::vector&lt;double&gt;&gt;();\n  this-&gt;resize(x.size());\n  for (size_t i = 0; i &lt; x.size(); i++) {\n    storage_m-&gt;at(i) = x[i];\n  }\n}\n\n# new code\nRealVector(Rcpp::NumericVector x, size_t size) {\n  this-&gt;id_m = RealVector::id_g++;\n  this-&gt;storage_m = std::make_shared&lt;std::vector&lt;double&gt;&gt;();\n  this-&gt;storage_m-&gt;assign(x.begin(), x.end());\n}"
   },
   {
     "objectID": "blog/02.02.2026.html",
@@ -595,11 +595,11 @@
     "text": "ANNOUNCEMENTS\n\n\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
   },
   {
-    "objectID": "blog/02.02.2026.html#photo",
-    "href": "blog/02.02.2026.html#photo",
+    "objectID": "blog/02.02.2026.html#photo-of-the-week",
+    "href": "blog/02.02.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - February 02–06, 2026",
-    "section": "Photo",
-    "text": "Photo\nWe have diagnostics thanks to Meg and Ian. Below is some sample code for running a likelihood profile over R_zero. Attend the tutorial on Thursday to learn more about {FIMSdiags}.\n\n# data\ndata(\"data1\", package = \"FIMS\")\ndata_4_model &lt;- FIMS::FIMSFrame(data1)\n\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  FIMS::create_default_configurations() |&gt;\n  FIMS::create_default_parameters(data = data_4_model)\n\n# Run the  model with optimization\nbase_model &lt;- parameters |&gt;\n  FIMS::initialize_fims(data = data_4_model) |&gt;\n  FIMS::fit_fims(optimize = TRUE)\nFIMS::clear()\n\n# Run a likelihood profile on R_zero\nlike_fit &lt;- FIMSdiags::run_fims_likelihood(\n  model = base_model,\n  parameters = parameters,\n  parameter_name = \"log_rzero\", \n  data = data1,\n  n_cores = 1,\n  min = -1,\n  max = 1,\n  length = 5\n)"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nWe have diagnostics thanks to Meg and Ian. Below is some sample code for running a likelihood profile over R_zero. Attend the tutorial on Thursday to learn more about {FIMSdiags}.\n\n# data\ndata(\"data1\", package = \"FIMS\")\ndata_4_model &lt;- FIMS::FIMSFrame(data1)\n\n# Create parameters\nparameters &lt;- data_4_model |&gt;\n  FIMS::create_default_configurations() |&gt;\n  FIMS::create_default_parameters(data = data_4_model)\n\n# Run the  model with optimization\nbase_model &lt;- parameters |&gt;\n  FIMS::initialize_fims(data = data_4_model) |&gt;\n  FIMS::fit_fims(optimize = TRUE)\nFIMS::clear()\n\n# Run a likelihood profile on R_zero\nlike_fit &lt;- FIMSdiags::run_fims_likelihood(\n  model = base_model,\n  parameters = parameters,\n  parameter_name = \"log_rzero\", \n  data = data1,\n  n_cores = 1,\n  min = -1,\n  max = 1,\n  length = 5\n)"
   },
   {
     "objectID": "blog/01.19.2026.html",
@@ -623,11 +623,11 @@
     "text": "ANNOUNCEMENTS\n\n\n90 days until the CIE Review (April 20–23, 2026)"
   },
   {
-    "objectID": "blog/01.19.2026.html#photo",
-    "href": "blog/01.19.2026.html#photo",
+    "objectID": "blog/01.19.2026.html#photo-of-the-week",
+    "href": "blog/01.19.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - January 19–23, 2026",
-    "section": "Photo",
-    "text": "Photo\nCodecov has had some recent development that allows you to use copilot to generate tests for your Pull Request. It uses context from your test report to generate unit tests that target exactly what is missing so you can boost patch coverage. You can add the following comment on a Pull Request to make this happen. This feature has yet to be tried yet on a NOAA-FIMS repository.\n\n@codecov-ai-reviewer test"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nCodecov has had some recent development that allows you to use copilot to generate tests for your Pull Request. It uses context from your test report to generate unit tests that target exactly what is missing so you can boost patch coverage. You can add the following comment on a Pull Request to make this happen. This feature has yet to be tried yet on a NOAA-FIMS repository.\n\n@codecov-ai-reviewer test"
   },
   {
     "objectID": "blog/01.04.2026.html",
@@ -651,11 +651,11 @@
     "text": "ANNOUNCEMENTS\n\n\nIf you were affected by the shortage of funds in our codespaces account please reply to the Google Chat that was started last week indicating regarding the inability to use codespaces after we reached 100 percent of our funding limit."
   },
   {
-    "objectID": "blog/01.04.2026.html#photo",
-    "href": "blog/01.04.2026.html#photo",
+    "objectID": "blog/01.04.2026.html#photo-of-the-week",
+    "href": "blog/01.04.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - January 05–09, 2026",
-    "section": "Photo",
-    "text": "Photo\nThe theme set of ‘Celebrating a century of marine science’ within ICES Journal of Marine Science is about to close on January 30, 2026. We submitted our FIMS manuscript to this special issue but we are still waiting on receiving reviews."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nThe theme set of ‘Celebrating a century of marine science’ within ICES Journal of Marine Science is about to close on January 30, 2026. We submitted our FIMS manuscript to this special issue but we are still waiting on receiving reviews."
   },
   {
     "objectID": "about/faq.html",
@@ -896,11 +896,11 @@
     "text": "ANNOUNCEMENTS\n\n\nThe first in-person FIMS training is in 14 days! We have over 40 people signed up."
   },
   {
-    "objectID": "blog/01.12.2026.html#photo",
-    "href": "blog/01.12.2026.html#photo",
+    "objectID": "blog/01.12.2026.html#photo-of-the-week",
+    "href": "blog/01.12.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - January 12–16, 2026",
-    "section": "Photo",
-    "text": "Photo\nWhen you are installing packages in R there are several ways to go about doing this but we recommend using {pak} because it is one of the few methods that automatically installs packages in parallel, which can considerably speed up the process. You can set up install.packages() to use parallel methods but it will not be able to optimize things based on the mutual dependencies found across a set of packages that you wish to install, like {pak} can.\n\n# To install a vector of packages\npak::pkg_install(c(\"dplyr\", \"ggplot2\", \"data.table\"))\n# The following is a wrapper around pak::pkg_install()\npak::pak()"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nWhen you are installing packages in R there are several ways to go about doing this but we recommend using {pak} because it is one of the few methods that automatically installs packages in parallel, which can considerably speed up the process. You can set up install.packages() to use parallel methods but it will not be able to optimize things based on the mutual dependencies found across a set of packages that you wish to install, like {pak} can.\n\n# To install a vector of packages\npak::pkg_install(c(\"dplyr\", \"ggplot2\", \"data.table\"))\n# The following is a wrapper around pak::pkg_install()\npak::pak()"
   },
   {
     "objectID": "blog/01.26.2026.html",
@@ -924,11 +924,11 @@
     "text": "ANNOUNCEMENTS\n\n\nMeg and Ian will be doing a training next week on FIMSdiags.\nPlease encourage your peers to use the Discussion Board to ask questions about FIMS and propose features so we can talk about them in a public forum.\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
   },
   {
-    "objectID": "blog/01.26.2026.html#photo",
-    "href": "blog/01.26.2026.html#photo",
+    "objectID": "blog/01.26.2026.html#photo-of-the-week",
+    "href": "blog/01.26.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - January 26–30, 2026",
-    "section": "Photo",
-    "text": "Photo\nTo add ten years of projections onto your time series you can use FIMS::FIMSFrame() to add -999 to all of your data streams by just adding a single year of -999 for any type with the maximum year that you want to project to. See the code below for an example, which was taken from the projections vignette. Now we need to think carefully about the default uncertainty values for the -999 in each type.\n\ndata(\"data1\", package = \"FIMS\")\nyears_of_projections &lt;- 10\ndata1_with_extra_year &lt;- dplyr::add_row(\n  data1,\n  type = \"landings\",\n  timing = get_end_year(data_4_model) + years_of_projection,\n  name = \"fleet1\",\n  value = -999,\n  unit = \"mt\"\n) |&gt;\n  # Make a FIMSFrame object out of this data frame with the extra row to add all\n  # of the other missing years for each data type\n  FIMSFrame()"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nTo add ten years of projections onto your time series you can use FIMS::FIMSFrame() to add -999 to all of your data streams by just adding a single year of -999 for any type with the maximum year that you want to project to. See the code below for an example, which was taken from the projections vignette. Now we need to think carefully about the default uncertainty values for the -999 in each type.\n\ndata(\"data1\", package = \"FIMS\")\nyears_of_projections &lt;- 10\ndata1_with_extra_year &lt;- dplyr::add_row(\n  data1,\n  type = \"landings\",\n  timing = get_end_year(data_4_model) + years_of_projection,\n  name = \"fleet1\",\n  value = -999,\n  unit = \"mt\"\n) |&gt;\n  # Make a FIMSFrame object out of this data frame with the extra row to add all\n  # of the other missing years for each data type\n  FIMSFrame()"
   },
   {
     "objectID": "blog/02.09.2026.html",
@@ -952,11 +952,11 @@
     "text": "ANNOUNCEMENTS\n\n\nPlease look at the FIMS calendar on a regular basis. There are lots of meetings happening that you can attend but global announcements are no longer going out in an attempt to save your inboxes from overload. One of those such meetings is the Code Club happening this Friday.\nIf you attended the FIMS Training on Monday, please fill out the survey on Google Cloud Workstations."
   },
   {
-    "objectID": "blog/02.09.2026.html#photo",
-    "href": "blog/02.09.2026.html#photo",
+    "objectID": "blog/02.09.2026.html#photo-of-the-week",
+    "href": "blog/02.09.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - February 09–13, 2026",
-    "section": "Photo",
-    "text": "Photo\nIn the dev-hake branch, we now have the ability to estimate parameters using a time-varying vector. Below is code to set the initial values and estimation type. We need to decide as a group what would be the best way for non-power users to interact with time-varying parameters.\n\n# Resize the parameter vector\nfleet_selectivity$inflection_point$resize(get_n_years(data_4_model))\n# Set the initial value of each element of the vector to be one and\n# estimate it as a fixed effect\nfor (ii in seq(get_n_years(data_4_model))) {\n  fleet_selectivity$inflection_point[ii]$value &lt;- 1\n  fleet_selectivity$inflection_point[ii]$estimation_type$set(\"fixed_effects\")\n}"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nIn the dev-hake branch, we now have the ability to estimate parameters using a time-varying vector. Below is code to set the initial values and estimation type. We need to decide as a group what would be the best way for non-power users to interact with time-varying parameters.\n\n# Resize the parameter vector\nfleet_selectivity$inflection_point$resize(get_n_years(data_4_model))\n# Set the initial value of each element of the vector to be one and\n# estimate it as a fixed effect\nfor (ii in seq(get_n_years(data_4_model))) {\n  fleet_selectivity$inflection_point[ii]$value &lt;- 1\n  fleet_selectivity$inflection_point[ii]$estimation_type$set(\"fixed_effects\")\n}"
   },
   {
     "objectID": "blog/02.23.2026.html",
@@ -980,11 +980,11 @@
     "text": "ANNOUNCEMENTS\n\n\nPlease consider submitting an entry to the FIMS blog, Elizabeth made this handy template to make it as painless as possible.\nVersion 0.8.1 was released TODAY! Two small fixes and lots of great documentation."
   },
   {
-    "objectID": "blog/02.23.2026.html#photo",
-    "href": "blog/02.23.2026.html#photo",
+    "objectID": "blog/02.23.2026.html#photo-of-the-week",
+    "href": "blog/02.23.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - February 23–27, 2026",
-    "section": "Photo",
-    "text": "Photo\nOur cheatsheet is now live in the FIMS package."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nOur cheatsheet is now live in the FIMS package."
   },
   {
     "objectID": "blog/03.09.2026.html",
@@ -1008,11 +1008,11 @@
     "text": "ANNOUNCEMENTS\n\n\n43 days until the CIE Review.\nWe will be paring the rendered case studies down to just three, or four, examples for the CIE Review to ensure that they are fully developed and provide well-explained examples of comparisons of FIMS models to existing platforms. The remainder of the examples will stay in the repository but will not be showcased on the resulting website. This work will happen next week."
   },
   {
-    "objectID": "blog/03.09.2026.html#photo",
-    "href": "blog/03.09.2026.html#photo",
+    "objectID": "blog/03.09.2026.html#photo-of-the-week",
+    "href": "blog/03.09.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - March 09–13, 2026",
-    "section": "Photo",
-    "text": "Photo\nBai recently experimented with using quarto to write a manuscript and found the template for Elsevier Journals easy to use. All the code is on GitHub and you can implement the template in your own repo with the following, single, line of code within a terminal. Quarto also provides templates for other journals and information regarding how to use templates on their website. Thank you Bai for sharing.\n\nquarto use template quarto-journals/elsevier"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nBai recently experimented with using quarto to write a manuscript and found the template for Elsevier Journals easy to use. All the code is on GitHub and you can implement the template in your own repo with the following, single, line of code within a terminal. Quarto also provides templates for other journals and information regarding how to use templates on their website. Thank you Bai for sharing.\n\nquarto use template quarto-journals/elsevier"
   },
   {
     "objectID": "blog/03.23.2026.html",
@@ -1036,11 +1036,11 @@
     "text": "ANNOUNCEMENTS\n\n\n29 days until the CIE Review."
   },
   {
-    "objectID": "blog/03.23.2026.html#photo",
-    "href": "blog/03.23.2026.html#photo",
+    "objectID": "blog/03.23.2026.html#photo-of-the-week",
+    "href": "blog/03.23.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - March 23–27, 2026",
-    "section": "Photo",
-    "text": "Photo\nThe tests for new convergence functions use a mocking structure so we can test the individual function without having to run a FIMS model. You can read more about mocking on the testthat github page. I think that mocking might be helpful for more tests in FIMS to increase coverage but keep the tests running fast.\n\ntest_that(\"check_sdreport_convergence() returns correct outputs for edge cases\", {\n  #' @description Test that `check_sdreport_convergence()` gracefully handles when summary extraction throws an error.\n  obj &lt;- make_mock_obj(random = 1)\n  opt &lt;- list(par = numeric())\n  sdreport &lt;- make_mock_sdreport(\n    pdHess = TRUE,\n    fail_on = \"fixed\"\n  )\n  register_mock_sdreport_summary()\n\n  expect_warning(\n    object = FIMS:::check_sdreport_convergence(list(), obj, opt, sdreport),\n    regexp = \"Unable to extract summary from sdreport\"\n  )\n})"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nThe tests for new convergence functions use a mocking structure so we can test the individual function without having to run a FIMS model. You can read more about mocking on the testthat github page. I think that mocking might be helpful for more tests in FIMS to increase coverage but keep the tests running fast.\n\ntest_that(\"check_sdreport_convergence() returns correct outputs for edge cases\", {\n  #' @description Test that `check_sdreport_convergence()` gracefully handles when summary extraction throws an error.\n  obj &lt;- make_mock_obj(random = 1)\n  opt &lt;- list(par = numeric())\n  sdreport &lt;- make_mock_sdreport(\n    pdHess = TRUE,\n    fail_on = \"fixed\"\n  )\n  register_mock_sdreport_summary()\n\n  expect_warning(\n    object = FIMS:::check_sdreport_convergence(list(), obj, opt, sdreport),\n    regexp = \"Unable to extract summary from sdreport\"\n  )\n})"
   },
   {
     "objectID": "blog/04.06.2026.html",
@@ -1064,11 +1064,11 @@
     "text": "ANNOUNCEMENTS\n\n\n14 days until the CIE Review.\nThree case studies are back up and running."
   },
   {
-    "objectID": "blog/04.06.2026.html#photo",
-    "href": "blog/04.06.2026.html#photo",
+    "objectID": "blog/04.06.2026.html#photo-of-the-week",
+    "href": "blog/04.06.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - April 06–10, 2026",
-    "section": "Photo",
-    "text": "Photo\nElizabeth and others worked a few weeks ago on editing an infographic to display user pathways. The work is now live on the FIMS organization website. Please feel to provide comments to Elizabeth if you have more ideas."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nElizabeth and others worked a few weeks ago on editing an infographic to display user pathways. The work is now live on the FIMS organization website. Please feel to provide comments to Elizabeth if you have more ideas."
   },
   {
     "objectID": "blog/04.20.2026.html",
@@ -1092,11 +1092,11 @@
     "text": "ANNOUNCEMENTS\n\n\nThere are still empty time slots for taking notes during the CIE Review, please sign up in this Google Doc."
   },
   {
-    "objectID": "blog/04.20.2026.html#photo",
-    "href": "blog/04.20.2026.html#photo",
+    "objectID": "blog/04.20.2026.html#photo-of-the-week",
+    "href": "blog/04.20.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - April 20–24, 2026",
-    "section": "Photo",
-    "text": "Photo\nA recent PR came in that changes our spell checker from the one provided by ghactions4r, which uses {spelling}, to one that uses cspell and does not require installing R. This new action requires fewer words in the WORDLIST and will hopefully be easier to maintain given that we have both snake_case and PascalCase code. Locally, you can use the code below to learn more about cspell and how to check your files for spelling errors.\n\ncspell lint --help"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nA recent PR came in that changes our spell checker from the one provided by ghactions4r, which uses {spelling}, to one that uses cspell and does not require installing R. This new action requires fewer words in the WORDLIST and will hopefully be easier to maintain given that we have both snake_case and PascalCase code. Locally, you can use the code below to learn more about cspell and how to check your files for spelling errors.\n\ncspell lint --help"
   },
   {
     "objectID": "blog/05.04.2026.html",
@@ -1120,11 +1120,11 @@
     "text": "ANNOUNCEMENTS\n\n\nCopilot and codespaces are limited to the free versions for the month of May."
   },
   {
-    "objectID": "blog/05.04.2026.html#photo",
-    "href": "blog/05.04.2026.html#photo",
+    "objectID": "blog/05.04.2026.html#photo-of-the-week",
+    "href": "blog/05.04.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - May 04–08, 2026",
-    "section": "Photo",
-    "text": "Photo\nClose-kin mark recapture (CKMR) was recently added to the Beaufort Assessment Model (BAM) for the assessment of red snapper, where DNA is used to identify family relationships or next of kin. The photograph below is a DNA sample of red snapper by Liam Kehoe, you can read about Liam’s story and view the photo on the Florida Sea Grant website. Liam Kehoe is a 2024 NMFS-Sea Grant fellow. Please let me know if you have ideas regarding CKMR and FIMS."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nClose-kin mark recapture (CKMR) was recently added to the Beaufort Assessment Model (BAM) for the assessment of red snapper, where DNA is used to identify family relationships or next of kin. The photograph below is a DNA sample of red snapper by Liam Kehoe, you can read about Liam’s story and view the photo on the Florida Sea Grant website. Liam Kehoe is a 2024 NMFS-Sea Grant fellow. Please let me know if you have ideas regarding CKMR and FIMS."
   },
   {
     "objectID": "blog/05.18.2026.html",
@@ -1148,11 +1148,11 @@
     "text": "ANNOUNCEMENTS\n\n\nThis is the last week of the Google Summer of Code Community Bonding Period, coding starts next week 🎊."
   },
   {
-    "objectID": "blog/05.18.2026.html#photo",
-    "href": "blog/05.18.2026.html#photo",
+    "objectID": "blog/05.18.2026.html#photo-of-the-week",
+    "href": "blog/05.18.2026.html#photo-of-the-week",
     "title": "FIMS Weekly - May 18–22, 2026",
-    "section": "Photo",
-    "text": "Photo\nThis will be the last FIMS Weekly for a while as we test out using the GitHub Discussion Board to post weekly summaries. Using GitHub Discussions will allow everyone with a GitHub account to subscribe (or unsubscribe 🙁) to the specific GitHub Discussion Thread without requiring us to set up a list serve. The thread is called Project Updates and it exists in the Announcement section. Please navigate to the link and click ‘Subscribe’ if you aren’t already subscribed to all FIMS Discussions. See the image for where the subscribe button is located."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nThis will be the last FIMS Weekly for a while as we test out using the GitHub Discussion Board to post weekly summaries. Using GitHub Discussions will allow everyone with a GitHub account to subscribe (or unsubscribe 🙁) to the specific GitHub Discussion Thread without requiring us to set up a list serve. The thread is called Project Updates and it exists in the Announcement section. Please navigate to the link and click ‘Subscribe’ if you aren’t already subscribed to all FIMS Discussions. See the image for where the subscribe button is located."
   },
   {
     "objectID": "blog/07.28.2025.html",
@@ -1176,11 +1176,11 @@
     "text": "ANNOUNCEMENTS\n\n\nVersion 0.6.2 is the newest version of FIMS thanks to Andrea fixing a 🐛 that was found while initiating the Windows make file to use TMBad.\nWe need a volunteer to lead Seaside Chat on Thursday if we would like to keep it because Kelli will be on Annual Leave Wednesday–Friday."
   },
   {
-    "objectID": "blog/07.28.2025.html#photo",
-    "href": "blog/07.28.2025.html#photo",
+    "objectID": "blog/07.28.2025.html#photo-of-the-week",
+    "href": "blog/07.28.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - July 28–August 1, 2025",
-    "section": "Photo",
-    "text": "Photo\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nElizabeth Perl has been working on revamping the NOAA-FIMS github.io site and has been making fantastic progress. The new website should be live in about a week or so. Thank you to Meg for your initial work on revamping the website that showed something like this was possible, Alex for suggesting that we needed to condense our resources instead of having them scattered about, and Elizabeth for taking on this massive task."
   },
   {
     "objectID": "blog/08.11.2025.html",
@@ -1204,11 +1204,11 @@
     "text": "ANNOUNCEMENTS\n\n\nThis will be the last FIMS Weekly in Google Doc form because Elizabeth created a way to distribute this via html on our FIMS Website 🎉. Emails will still go out but they will just link to where you can find the weekly and maybe a screen shot. I am not sure. Please feel free to email me suggestions.\nThe collaborative workflow repository will be removed once the material is migrated to our beautiful FIMS website. Stay tuned."
   },
   {
-    "objectID": "blog/08.11.2025.html#photo",
-    "href": "blog/08.11.2025.html#photo",
+    "objectID": "blog/08.11.2025.html#photo-of-the-week",
+    "href": "blog/08.11.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - August 11–15, 2025",
-    "section": "Photo",
-    "text": "Photo\nDuring our GitHub training with Microsoft, Bai asked a ❓about git worktrees that kind of blew my mind. I had yet to understand the full question or the response but last week with the new version of VS Code that was released it started to make sense. VS Code now has support for git worktrees, where worktrees let you check out multiple branches at once within a single clone. This stops the need for having multiple clones of the same repository on a single computer. IMO this is genius. I am constantly making bogus commits or stashing things that I later forgot that I stashed so I can check out a different branch, do one thing, and then switch back to the other branch. Or worse yet, I am on a branch and want to see a file in a different branch so I go online copy and paste the raw text from the “other” branch that I am interested in and then put it in a new file in VS Code. All of these alternates are suboptimal and have led to 🧨, which is obviously not good. I am excited to check out the use of worktrees and if it goes well maybe we can get Jonathan to do a GitHub training on them. First, I had to click on the three dots to the right of “SOURCE CONTROL” and add “Repositories” to what was being shown in my “SOURCE CONTROL” section of VS Code. Second, I clicked the three dots to the left of REPOSITORIES/FIMS, where I currently have dev-fix-exp-TMBad checked out, which brought up a list where I selected Worktrees -&gt; Create Worktree and let me select an additional branch. I chose dev. Now you can see dev is a worktree in the list under FIMS. This is as far as I have gotten in my 🛣️."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nDuring our GitHub training with Microsoft, Bai asked a ❓about git worktrees that kind of blew my mind. I had yet to understand the full question or the response but last week with the new version of VS Code that was released it started to make sense. VS Code now has support for git worktrees, where worktrees let you check out multiple branches at once within a single clone. This stops the need for having multiple clones of the same repository on a single computer. IMO this is genius. I am constantly making bogus commits or stashing things that I later forgot that I stashed so I can check out a different branch, do one thing, and then switch back to the other branch. Or worse yet, I am on a branch and want to see a file in a different branch so I go online copy and paste the raw text from the “other” branch that I am interested in and then put it in a new file in VS Code. All of these alternates are suboptimal and have led to 🧨, which is obviously not good. I am excited to check out the use of worktrees and if it goes well maybe we can get Jonathan to do a GitHub training on them. First, I had to click on the three dots to the right of “SOURCE CONTROL” and add “Repositories” to what was being shown in my “SOURCE CONTROL” section of VS Code. Second, I clicked the three dots to the left of REPOSITORIES/FIMS, where I currently have dev-fix-exp-TMBad checked out, which brought up a list where I selected Worktrees -&gt; Create Worktree and let me select an additional branch. I chose dev. Now you can see dev is a worktree in the list under FIMS. This is as far as I have gotten in my 🛣️."
   },
   {
     "objectID": "blog/08.25.2025.html",
@@ -1232,11 +1232,11 @@
     "text": "ANNOUNCEMENTS\n\n\n71 calendar days until the FIMS CIE Review, we still need a chair."
   },
   {
-    "objectID": "blog/08.25.2025.html#photo",
-    "href": "blog/08.25.2025.html#photo",
+    "objectID": "blog/08.25.2025.html#photo-of-the-week",
+    "href": "blog/08.25.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - August 25–29, 2025",
-    "section": "Photo",
-    "text": "Photo\nI recently learned about Deep Wiki where you can view a Wiki about any repository that is available on GitHub. I looked to see what Deep Wiki had to say about FIMS and first found it was not indexed but all it took to change that was proving my email. Within minutes, FIMS had its own page. Several diagrams were generated but the one that I thought was the most helpful (see below) summarized what is available in the main branch for the C++ code. I think this image will be extremely helpful as FIMS becomes more complex. I just wish I knew how we can create it dynamically ☹️"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nI recently learned about Deep Wiki where you can view a Wiki about any repository that is available on GitHub. I looked to see what Deep Wiki had to say about FIMS and first found it was not indexed but all it took to change that was proving my email. Within minutes, FIMS had its own page. Several diagrams were generated but the one that I thought was the most helpful (see below) summarized what is available in the main branch for the C++ code. I think this image will be extremely helpful as FIMS becomes more complex. I just wish I knew how we can create it dynamically ☹️"
   },
   {
     "objectID": "blog/09.08.2025.html",
@@ -1260,11 +1260,11 @@
     "text": "ANNOUNCEMENTS\n\n\nPlease welcome 👋 Adrianne Wilson 👋 to the FIMS Team!\n57 calendar days until the FIMS CIE Review, we now have a chair."
   },
   {
-    "objectID": "blog/09.08.2025.html#photo",
-    "href": "blog/09.08.2025.html#photo",
+    "objectID": "blog/09.08.2025.html#photo-of-the-week",
+    "href": "blog/09.08.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - September 08–12, 2025",
-    "section": "Photo",
-    "text": "Photo\nLast week I showed the json output for dimensionality, this week I show the tidyverse code to create a tibble from that same information.\n\n#' Covert the dimension information from a FIMS json output into a tibble\n#'\n#' Dimensions in the json output are stored as a list of length two, with the\n#' header information containing the name of the dimension and the dimensions\n#' containing integers specifying the length for each dimension. The result\n#' helps interpret how the FIMS output is structured given it is dimension\n#' folded into a single vector in the json output.\n#'\n#' @param data A list containing the header and dimensions information from a\n#'   FIMS json output object.\n#' @return\n#' A tibble containing ordered rows for each combination of the dimensions.\n#' @examples\n#' dummy_dimensions &lt;- list(\n#'   header = list(\"nyears\", \"nages\"),\n#'   dimensions = list(30L, 12L)\n#' )\n#' dimensions_to_tibble(dummy_dimensions)\ndimensions_to_tibble &lt;- function(data) {\n  # Create names that are informative for columns b/c nyears is not helpful\n  better_names &lt;- unlist(data[[\"header\"]]) |&gt;\n    gsub(pattern = \"^n(.+)s$\", replacement = \"\\\\1_ids\")\n  names(data[[\"dimensions\"]]) &lt;- better_names\n  # Create the returned tibble by first sequencing from 1:n for each dimension\n  data[[\"dimensions\"]] |&gt;\n    purrr::map(seq) |&gt;\n    expand.grid() |&gt;\n    tibble::as_tibble() |&gt;\n    dplyr::arrange(!!! rlang::syms(better_names))\n}"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nLast week I showed the json output for dimensionality, this week I show the tidyverse code to create a tibble from that same information.\n\n#' Covert the dimension information from a FIMS json output into a tibble\n#'\n#' Dimensions in the json output are stored as a list of length two, with the\n#' header information containing the name of the dimension and the dimensions\n#' containing integers specifying the length for each dimension. The result\n#' helps interpret how the FIMS output is structured given it is dimension\n#' folded into a single vector in the json output.\n#'\n#' @param data A list containing the header and dimensions information from a\n#'   FIMS json output object.\n#' @return\n#' A tibble containing ordered rows for each combination of the dimensions.\n#' @examples\n#' dummy_dimensions &lt;- list(\n#'   header = list(\"nyears\", \"nages\"),\n#'   dimensions = list(30L, 12L)\n#' )\n#' dimensions_to_tibble(dummy_dimensions)\ndimensions_to_tibble &lt;- function(data) {\n  # Create names that are informative for columns b/c nyears is not helpful\n  better_names &lt;- unlist(data[[\"header\"]]) |&gt;\n    gsub(pattern = \"^n(.+)s$\", replacement = \"\\\\1_ids\")\n  names(data[[\"dimensions\"]]) &lt;- better_names\n  # Create the returned tibble by first sequencing from 1:n for each dimension\n  data[[\"dimensions\"]] |&gt;\n    purrr::map(seq) |&gt;\n    expand.grid() |&gt;\n    tibble::as_tibble() |&gt;\n    dplyr::arrange(!!! rlang::syms(better_names))\n}"
   },
   {
     "objectID": "blog/09.21.2025.html",
@@ -1288,11 +1288,11 @@
     "text": "ANNOUNCEMENTS\n\n\n43 more days until the CIE Review; a big thanks to 👏Aaron Berger (NWFSC)👏 for stepping up to the be the chair of the CIE Review\nThe design documents have been moved to inst/include/design.md and it is live in the dev-document branch. A big thank you to Kathryn, Bai, Andrea, and Adrianne for your help getting to this point."
   },
   {
-    "objectID": "blog/09.21.2025.html#photo",
-    "href": "blog/09.21.2025.html#photo",
+    "objectID": "blog/09.21.2025.html#photo-of-the-week",
+    "href": "blog/09.21.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - September 21–26, 2025",
-    "section": "Photo",
-    "text": "Photo\ndoxygen use to be so foreign to me and I wished we could just use roxygen😒. Now, I feel more at home with doxygen and have even learned some tips (see below) to making it better and feel more roxygen like✅.\n\n// To make a table of contents in a .md file\n[TOC]\n\n// Copy documentation from another function\n@copydoc MyFunctionName\n\n// Link to a function or file\n`FunctionName()` `my_file.hpp`\n\n// Insert an inline or block equation\n\\f$a-b=c/f$\n\\f[ \\text{best} = \\alpha - \\beta \\f]"
+    "section": "Photo of the week",
+    "text": "Photo of the week\ndoxygen use to be so foreign to me and I wished we could just use roxygen😒. Now, I feel more at home with doxygen and have even learned some tips (see below) to making it better and feel more roxygen like✅.\n\n// To make a table of contents in a .md file\n[TOC]\n\n// Copy documentation from another function\n@copydoc MyFunctionName\n\n// Link to a function or file\n`FunctionName()` `my_file.hpp`\n\n// Insert an inline or block equation\n\\f$a-b=c/f$\n\\f[ \\text{best} = \\alpha - \\beta \\f]"
   },
   {
     "objectID": "blog/11.17.2025.html",
@@ -1316,11 +1316,11 @@
     "text": "ANNOUNCEMENTS\n\n\nThe ICES Methods Group Working Group is convening this week at the University of Washington and remotely. Please contact Andrea Havron if you are interested in participating."
   },
   {
-    "objectID": "blog/11.17.2025.html#photo",
-    "href": "blog/11.17.2025.html#photo",
+    "objectID": "blog/11.17.2025.html#photo-of-the-week",
+    "href": "blog/11.17.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - November 17–21, 2025",
-    "section": "Photo",
-    "text": "Photo\nAs we update our website to be the best ‘community playbook’ that it can be, we will be adding some icons to titles to help users of all types navigate the pages. Look for each of the icons throughout this site based on which type of information you are looking for.\n\n Developer  New User  Power User  Receiver of Results"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nAs we update our website to be the best ‘community playbook’ that it can be, we will be adding some icons to titles to help users of all types navigate the pages. Look for each of the icons throughout this site based on which type of information you are looking for.\n\n Developer  New User  Power User  Receiver of Results"
   },
   {
     "objectID": "blog/12.01.2025.html",
@@ -1344,11 +1344,11 @@
     "text": "ANNOUNCEMENTS\n\n\n👋Welcome👋 Grant Adams (AFSC) to FIMS!"
   },
   {
-    "objectID": "blog/12.01.2025.html#photo",
-    "href": "blog/12.01.2025.html#photo",
+    "objectID": "blog/12.01.2025.html#photo-of-the-week",
+    "href": "blog/12.01.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - December 01–05, 2025",
-    "section": "Photo",
-    "text": "Photo\nThank you to Alex and Peter for helping fix up the FIMS cheat sheet last week. Below is a screen shot of the updates made with respect to what the table of parameters looks like."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nThank you to Alex and Peter for helping fix up the FIMS cheat sheet last week. Below is a screen shot of the updates made with respect to what the table of parameters looks like."
   },
   {
     "objectID": "blog/12.15.2025.html",
@@ -1372,11 +1372,11 @@
     "text": "ANNOUNCEMENTS\n\n\nPlease welcome 👋 Erik Williams to FIMS."
   },
   {
-    "objectID": "blog/12.15.2025.html#photo",
-    "href": "blog/12.15.2025.html#photo",
+    "objectID": "blog/12.15.2025.html#photo-of-the-week",
+    "href": "blog/12.15.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - December 15–19, 2025",
-    "section": "Photo",
-    "text": "Photo\nHas anyone heard of {fastverse} before? It appears to be a {tidyverse} style group of packages built on C++ code that is meant for quick analyses of data, unlike traditional tidyverse packages that are known to be easy to understand but slow. See the code below for installation and feel free to start a Discussion on GitHub about the packages if they seem useful, especially as our input and output data frames become larger.\n\n# Install the CRAN version\ninstall.packages(\"fastverse\")\n\n# Install (Windows/Mac binaries) from R-universe\ninstall.packages(\"fastverse\", repos = \"https://fastverse.r-universe.dev\")\n\n# Install from GitHub (requires compilation)\nremotes::install_github(\"fastverse/fastverse\")"
+    "section": "Photo of the week",
+    "text": "Photo of the week\nHas anyone heard of {fastverse} before? It appears to be a {tidyverse} style group of packages built on C++ code that is meant for quick analyses of data, unlike traditional tidyverse packages that are known to be easy to understand but slow. See the code below for installation and feel free to start a Discussion on GitHub about the packages if they seem useful, especially as our input and output data frames become larger.\n\n# Install the CRAN version\ninstall.packages(\"fastverse\")\n\n# Install (Windows/Mac binaries) from R-universe\ninstall.packages(\"fastverse\", repos = \"https://fastverse.r-universe.dev\")\n\n# Install from GitHub (requires compilation)\nremotes::install_github(\"fastverse/fastverse\")"
   },
   {
     "objectID": "blog/12.29.2025.html",
@@ -1400,11 +1400,11 @@
     "text": "ANNOUNCEMENTS\n\n\nThere will be a FIMS training at the National Stock Assessment Workshop in La Jolla, California on January 26th in the afternoon. The training will focus on how to run a simple FIMS model on a Google Cloud workstation and providing assistance for fitting data sets brought by attendees with FIMS.\nPlease welcome 👋 Dan Goethel to FIMS."
   },
   {
-    "objectID": "blog/12.29.2025.html#photo",
-    "href": "blog/12.29.2025.html#photo",
+    "objectID": "blog/12.29.2025.html#photo-of-the-week",
+    "href": "blog/12.29.2025.html#photo-of-the-week",
     "title": "FIMS Weekly - December 29, 2025–January 02, 2026",
-    "section": "Photo",
-    "text": "Photo\nAs a great way to visually show off code to create a {ggplot2} figure, there is a newer package out called ggram that displays the code used to create a figure alongside the figure itself using {patchwork}. This could be a unique way to display figures in training materials such as vignettes, especially vignettes that are meant to be displayed as presentations."
+    "section": "Photo of the week",
+    "text": "Photo of the week\nAs a great way to visually show off code to create a {ggplot2} figure, there is a newer package out called ggram that displays the code used to create a figure alongside the figure itself using {patchwork}. This could be a unique way to display figures in training materials such as vignettes, especially vignettes that are meant to be displayed as presentations."
   },
   {
     "objectID": "blog/blog_template.html",
