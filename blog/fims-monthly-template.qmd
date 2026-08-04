@@ -66,8 +66,9 @@ if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
 <div class="header-wrap"><h2>HELPFUL RESOURCES</h2></div>
 
 - [FIMS Website](https://noaa-fims.github.io/)
-- [FIMS GitHub Discussions](https://github.com/orgs/NOAA-FIMS/discussions)
-- [FIMS FAQs](https://noaa-fims.github.io/about/faq)
+- [GitHub Discussions](https://github.com/orgs/NOAA-FIMS/discussions)
+- [FIMS Planning](https://github.com/orgs/NOAA-FIMS/projects/33)
+- [FAQs](https://noaa-fims.github.io/about/faq)
 :::
 
 ::: {.column width="2%"}
