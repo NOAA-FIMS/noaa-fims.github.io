@@ -59,9 +59,13 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0.66em;
 }
 
-.column > section:first-child {
+// .column > section:first-child {
+//   margin-top: 0 !important;
+//   padding-top: 0 !important;
+// }
+
+.column > section:first-child > h2 {
   margin-top: 0 !important;
-  padding-top: 0 !important;
 }
 
 #upcoming-events-col section:first-of-type {
