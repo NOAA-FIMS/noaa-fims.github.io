@@ -59,17 +59,21 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0.66em;
 }
 
-#additional-events section:first-of-type h3 {
-  margin-top: 0 !important;
+/* 1. Remove all gap under the H2 and its wrapper */
+#upcoming-events-col .header-wrap,
+#upcoming-events-col .header-wrap h2 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-#upcoming-events-wrap + section {
+/* 2. Target the VERY FIRST event section to pull it up tight to the H2 */
+#upcoming-events-col section:first-of-type {
+  margin-top: 0 !important;
+  padding-top: 0 !important; /* Quarto often adds padding to sections for anchor links */
+}
+#upcoming-events-col section:first-of-type h3 {
   margin-top: 0 !important;
   padding-top: 0 !important;
-}
-
-#upcoming-events-wrap + section h3 {
-  margin-top: 0 !important;
 }
 
 .lead {
