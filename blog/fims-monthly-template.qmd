@@ -144,7 +144,7 @@ Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-g
 
 ## Project board
 ```{=html}
-<iframe width="100%" height="500px" src="https://github.com/orgs/NOAA-FIMS/projects/33" title="FIMS Project Board"></iframe>
+<iframe width="100%" height="500px" src="https://github.com/orgs/NOAA-FIMS/projects/28" title="FIMS Project Board"></iframe>
 ```
 
 
