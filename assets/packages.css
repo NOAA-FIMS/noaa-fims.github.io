@@ -14,7 +14,6 @@
   /* Override Quarto's `quarto-listing-cols-3` */
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-auto-rows: 1fr;
   gap: 1rem;
 }
 
@@ -25,7 +24,6 @@
 
 #listing-fims-packages .quarto-grid-item.card.card-left {
   display: flex;
-  height: 100%;
   flex-direction: row;
   gap: 30px;
   padding: 10px;
@@ -137,7 +135,6 @@
   color: inherit;
   position: static !important;
   display: block;
-  height: 100%;
 }
 
 /* Feature the first listing item (weight/title sort dependent) */

@@ -48,9 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-12e365f24a4b4913e1296245ea4537a8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b8847f48e5f07260553305716990c6b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-bcfc6585472487d75d5ce9100d322c96.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-b8847f48e5f07260553305716990c6b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2d7eb0530402e3af163a54230485c4e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d6f832aa94d119160e5f37568b55255e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-2d7eb0530402e3af163a54230485c4e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -269,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">FIMS <small>v0.9.4</small></span>
+    <span class="navbar-title">FIMS <small><strong>?env:VERSION</strong></small></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -373,6 +373,7 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 <!-- Skip to main content link for keyboard accessibility -->
+<a href="#quarto-content" class="skip-link">Skip to main content</a>
 <style>
 .skip-link {
   position: absolute;
@@ -393,15 +394,6 @@ ul.task-list li input[type="checkbox"] {
   outline-offset: 2px;
 }
 </style>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const skipLink = document.createElement('a');
-    skipLink.href = '#quarto-content';
-    skipLink.className = 'skip-link';
-    skipLink.textContent = 'Skip to main content';
-    document.body.prepend(skipLink);
-  });
-</script>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -422,11 +414,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>FIMS has both recurring meetings, such as FIMS Code Club and FIMS Implementation Team meetings, and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If a meeting is public, the description includes a Google Meet link.</p>
-<p>Let us know on the <a href="../contact/index.html">contact page</a> if there are meetings you are interested in joining, since not all meeting links are provided in the calendar. Implementation Team meetings are currently limited to <a href="../contact/contributors.html#core-developers">Implementation Team members</a>.</p>
-<p>If the embedded calendar is difficult to use, open the <a href="https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&amp;ctz=America%2FNew_York">FIMS Community Calendar in a new tab</a>.</p>
-<p>Add the FIMS calendar to your own calendar by selecting <code>Add to calendar</code> at the bottom of the embedded calendar.</p>
-<iframe src="https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&amp;ctz=America%2FNew_York" style="border: 0; max-width: 100%;" width="800" height="600" loading="lazy" scrolling="no" title="FIMS Community Calendar">
+<p>FIMS has both reoccurring meetings (e.g., FIMS Code Club and FIMS Implementation Team meetings) and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If the meeting is public, there will be a hyperlink in the description with the Google Meet link so you can join in on the fun!</p>
+<p>Let us know (see the <a href="../contact/index.html">contact page</a>) if there are meetings you are interested in joining since not all meeting links are provided in the calendar. However, Implementation Team meetings are currently limited to <a href="../contact/contributors.html#core-developers">Implementation Team members</a>.</p>
+<p>Add FIMS calendar to your own by clicking the blue text “Add to calendar”, at the bottom of the calendar.</p>
+<iframe src="https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&amp;ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" title="FIMS Community Calendar">
 </iframe>
 
 
@@ -440,48 +431,21 @@ document.addEventListener("DOMContentLoaded", function () {
     "/FIMSdiags/",
     "/FIMSRTMB/",
     "/fims-pkgdown-template/",
-    "/ecosystemom/",
+    "/ecosystemom/"
     "/fishprior/"
   ];
 
   document.querySelectorAll("a[href]").forEach(function (link) {
     var href = link.getAttribute("href");
-    if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) {
-      return;
-    }
+    if (!href) return;
 
-    try {
-      var url = new URL(href, window.location.origin);
-      var isExternal = url.hostname !== window.location.hostname;
-      var isForcedInternal = forceNewTabPaths.includes(url.pathname);
+    var url = new URL(href, window.location.origin);
+    var isExternal = url.hostname !== window.location.hostname;
+    var isForcedInternal = forceNewTabPaths.includes(url.pathname);
 
-      if (isExternal || isForcedInternal) {
-        link.setAttribute("target", "_blank");
-        link.setAttribute("rel", "noopener noreferrer");
-
-        // Accessibility Fix: Add a screen-reader-only warning if not already present
-        if (!link.hasAttribute("data-new-tab-warning")) {
-          var srWarning = document.createElement("span");
-          srWarning.textContent = " (opens in a new tab)";
-
-          // Use CSS to hide this text visually, but keep it available to screen readers
-          srWarning.style.position = "absolute";
-          srWarning.style.width = "1px";
-          srWarning.style.height = "1px";
-          srWarning.style.padding = "0";
-          srWarning.style.margin = "-1px";
-          srWarning.style.overflow = "hidden";
-          srWarning.style.clip = "rect(0, 0, 0, 0)";
-          srWarning.style.whiteSpace = "nowrap";
-          srWarning.style.border = "0";
-          
-          link.appendChild(srWarning);
-          // Prevent duplicates
-          link.setAttribute("data-new-tab-warning", "true");
-        }
-      }
-    } catch (error) {
-      console.warn("Skipping invalid link URL:", href, error);
+    if (isExternal || isForcedInternal) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
     }
   });
 });
@@ -909,7 +873,7 @@ document.addEventListener("DOMContentLoaded", function () {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="FIMS on GitHub" aria-label="Visit FIMS on GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a> <a class="link-dark" href="https://noaa-fisheries-integrated-toolbox.r-universe.dev" title="FIMS R Universe" aria-label="Visit FIMS R Universe repository" target="_blank" rel="noopener"><i class="fab fa-r-project" aria-hidden="true"></i></a></p>
+<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="FIMS on GitHub" aria-label="Visit FIMS on GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="FIMS R Universe" aria-label="Visit FIMS R Universe repository" target="_blank" rel="noopener"><i class="fab fa-r-project" aria-hidden="true"></i></a></p>
 </div>
   </div>
 </footer>
