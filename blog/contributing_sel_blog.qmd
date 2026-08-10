@@ -2,7 +2,7 @@
 title: "Implementing New Features in FIMS: A Case Study in Selectivity"
 subtitle: "How to add new features in FIMS using existing code, GitHub, GitHub issues, and FIMS Implementation Team resources"
 author: "Alexander Jensen and Emily Liljestrand"
-date: "August 1, 2026"
+date: "August 7, 2026"
 categories:
    - learn
    - R
@@ -20,100 +20,61 @@ from: markdown+emoji
 
 ## Contributing to FIMS
 
-The advantage of having a modular modeling system like FIMS is that its
-development can also be broken down and tackled in component parts. By
-utilizing github's collaborative structure, while one developer can
-focus on improving recruitment estimates in FIMS, others can tackle, for
-example, age composition likelihoods or diagnostic tools.
+The advantage of having a modular modeling system like FIMS is that its development can be broken down and tackled in component parts. By utilizing GitHub's collaborative structure, while one developer can focus on improving recruitment estimates in FIMS, others can tackle, for example, age composition likelihoods or diagnostic tools.
 
-In this way, scientists at different centers can focus on adding those
-features that are critically necessary to make the assessments in their
-regions compatible with the FIMS platform. Our small team chipped off a
-little piece of age-based stock assessment models that was important for
-our two regions despite being on complete opposite sides of the country,
-at the Southwest Fisheries Science Center and the Northeast Fisheries
-Science Center.
+In this way, scientists at different centers can focus on adding those features that are critically necessary to make the assessments in their regions compatible with the FIMS platform. Our small team chipped off a little piece of age-based stock assessment models that was important for our two regions despite being on complete opposite sides of the country, at the Southwest Fisheries Science Center and the Northeast Fisheries Science Center.
 
-The default selectivity option in FIMS is logistic or double logistic,
-but the double normal or age-specific selectivity are used in stock
-synthesis (SS) and the Woods Hole Assessment Model (WHAM) respectively.
-We set out to add these options and remove one more barrier to
-replicating regional assessments in FIMS.
+The default selectivity options in FIMS are logistic or double logistic, but various versions of double normal and age-specific selectivity are used in stock synthesis (SS) and the Woods Hole Assessment Model (WHAM). We set out to add these options and remove one more barrier to replicating regional assessments in FIMS.
 
 ## Modifying the FIMS Workflow
 
 Though daunting at first, we realized we could add these selectivity
-options by copying the existing scaffolding from previous selectivity
-options or even look to features like the recruitment or abundance
-specification to figure out indexing, calculations, and how variables
-are passed around the FIMS framework. Implementing new cpp architecture
-was the most tricky, since neither of us had a strong background in it.
+options by copying the existing scaffolding from previous selectivity options or even look to features like the recruitment or abundance specification to figure out indexing, calculations, and how variables are passed around the FIMS framework. Implementing new cpp architecture was the most tricky, since neither of us had a strong background in it.
 
-Before any modifications were made, we branched the github repository
-into a development branch with an informative name-
-dev-selectivity-at-age and made all changes there.
+Before any modifications were made, we branched the github repository into a development branch with an informative name, dev-selectivity-at-age and made all changes there.
 
-The crux of how selectivity is specified and used in FIMS came down to
-modifying or adding a few bits of code, described below:
+The crux of how selectivity is specified and used in FIMS came down to modifying or adding a few bits of code, described below:
 
-[src/fims_modules.hpp]{.underline} This code lists all the FIMS modules.
-We added “SelectivityatAge” as a module, with corresponding variable
-names
+[src/fims_modules.hpp]{.underline} This code lists all the FIMS modules. We added “SelectivityatAge” as a module, with corresponding variable names
 
-[inst/include/common/fims_math.hpp]{.underline} This code contains all
-of the "fims math" or other formulas and math functions not found in
-base R functionality. We added new functions to help conversion of
-Type&x to size_t for indexing purposes in age_specific.hpp
+[inst/include/common/fims_math.hpp]{.underline} This code contains all of the "fims math" or other formulas and math functions not found in base R functionality. We added new functions to help conversion of Type&x to size_t for indexing purposes in age_specific.hpp
 
-[inst/include/interface/rcpp/rcpp_interface.hpp]{.underline} This is the
-RCPP interface "to declare things". We copied the code used for the
-other selectivity options (i.e., "LogisticSelectivityInterface" and
-"DoubleLogisticSelectivityInterface") and used it to declare
-AgeSpecificSelectivityInterface
+[inst/include/common/fims_vector.hpp]{.underline} This code contains utility functions for interacting with vectors using cpp. We added a new function to properly index and transform logit-transformed selectivity parameter values within vectors into standard selectivity values as a function of both age and time (get_force_scalar_wrap):
 
-[inst/include/interface/rcpp/rcpp_objects/rcpp_selectivity.hpp]{.underline}
-This code is an RCPP interface to declare objects, specifically
-different types of selectivity. There was already code for
-"LogisticSelectivityInterface" and "DoubleLogisticSelectivityInterface"
-so it was trivial to copy this architecture wholesale for
-"AgeSpecificSelectivityInterface"
+```
+  inline Type &get_force_scalar_wrap(size_t pos) {
+    if (this->size() == 1 && pos > 0) {
+      return this->at(0);
+    } else if (this->size() > 1 && pos >= this->size()) {
+      size_t remain = pos % this->size(); 
+      // this only works if both pos and this->size() are integers
+      return this->at(remain);
+    } else {
+      return this->at(pos);
+    }
+  }
+```
 
-[inst/include/population_dynamics/selectivity/selectivity.hpp]{.underline}
-This code explicitly defines any downstream "functors" (see below) and
-makes sure toexplicitly include them for use in FIMS. We added a single
-line "#include "functors/age_specific.hpp"
+[inst/include/interface/rcpp/rcpp_interface.hpp]{.underline} This is the RCPP interface "to declare things". We copied the code used for the other selectivity options (i.e., "LogisticSelectivityInterface" and "DoubleLogisticSelectivityInterface") and used it to declare AgeSpecificSelectivityInterface
 
-[inst/include/population_dynamics/selectivity/functors/age_specific.hpp]{.underline}
-This was a brand new bit of code we created, again mimicking the
-functors for other selectivity options like logistic and double
-logistic. Here's where the actual "math" all gets applied, the correct
-indexing figured out for the age-specific values, and the inverse logit
-applied to the parameters.
+[inst/include/interface/rcpp/rcpp_objects/rcpp_selectivity.hpp]{.underline} This code is an RCPP interface to declare objects, specifically different types of selectivity. There was already code for "LogisticSelectivityInterface" and "DoubleLogisticSelectivityInterface" so it was trivial to copy this architecture wholesale for "AgeSpecificSelectivityInterface"
 
-[R/FIMS-package.R]{.underline} This code lists all objects that are
-"imported" and "exported" in FIMS and we modified to include ‘@export
-AgeSpecificSelectivity’ and ran devtools::document() to add function to
-exported functions
+[inst/include/population_dynamics/selectivity/selectivity.hpp]{.underline} This code explicitly defines any downstream "functors" (see below) and makes sure toexplicitly include them for use in FIMS. We added a single line "#include "functors/age_specific.hpp"
+
+[inst/include/population_dynamics/selectivity/functors/age_specific.hpp]{.underline} This was a brand new bit of code we created, again mimicking the functors for other selectivity options like logistic and double logistic. Here's where the actual "math" all gets applied, the correct indexing figured out for the age-specific values, and the inverse logit applied to the parameters.
+
+[R/FIMS-package.R]{.underline} This code lists all objects that are "imported" and "exported" in FIMS and we modified to include ‘@export AgeSpecificSelectivity’ and ran devtools::document() to add function to exported functions
 
 ### Default Parameters
 
-All of the above made it explicitly possible to use an age-based
-selectivity to fit assessment models in FIMS. But for accessibility and
-to make sure the model does run (rather than simply 'can' run), it was
-critical to specify default parameters when this selectivity is chosen
-by a user.
+All of the above made it explicitly possible to use an age-based selectivity to fit assessment models in FIMS. But for accessibility and to make sure the model does run (rather than simply 'can' run), it was critical to specify default parameters when this selectivity is chosen by a user.
 
-[R/create_default_parameters.R]{.underline} This bit of code contains
-several functions necessary for broadly and specifically specifying
-default parameters in FIMS. The nested functions are as follows:
+[R/create_default_parameters.R]{.underline} This bit of code contains several functions necessary for broadly and specifically specifying default parameters in FIMS. The nested functions are as follows:
 
 -   create_default_parameters() -\> create_default_fleet() -\>
     create_default_selectivity() -\> create_default_AgeSpecific
 
-And at the center of these matryoshka dolls is a function that uses the
-template for setting default parameters to specify the name, type,
-label, ages, that these are fixed effects and estimated on the logistic
-scale (i.e., constrained between 0 and 1), using a qlogis() function.
+And at the center of these matryoshka dolls is a function that uses the template for setting default parameters to specify the name, type, label, ages, that these are fixed effects and estimated on the logistic scale (i.e., constrained between 0 and 1), using a qlogis() function. The new function call creates a vector of custom length for the parameter estimates, depending on the number of ages supplied by the user in the input data.
 
 ```         
 create_default_AgeSpecific <- function(
@@ -134,12 +95,7 @@ create_default_AgeSpecific <- function(
 
 ### Vignettes
 
-Once the functionality and default parameters were set, it was time to
-add a vignette that demonstrates the selectivity-at-age function working
-in action. We saved a copy of the existing
-[vignettes/fims-demo.Rmd]{.underline} as
-[fims-demo-age-spec-sel.Rmd]{.underline} and changed the updated
-configurations section to:
+Once the functionality and default parameters were set, it was time to add a vignette that demonstrates the selectivity-at-age function working in action. We saved a copy of the existing [vignettes/fims-demo.Rmd]{.underline} as [fims-demo-age-spec-sel.Rmd]{.underline} and changed the updated configurations section to:
 
 ```         
 updated_configurations <- default_configurations_unnested |>
@@ -153,9 +109,7 @@ updated_configurations <- default_configurations_unnested |>
   )
 ```
 
-by changing the module_type from the previous selectivity option.
-Further down in the code we changed the specified starting parameters as
-well:
+by changing the module_type from the previous selectivity option. Further down in the code we changed the specified starting parameters as well:
 
 ```         
 dplyr::rows_update(
@@ -172,39 +126,19 @@ dplyr::rows_update(
   )
 ```
 
-This meant only the first two ages were estimated as fixed effects and
-the rest of the age-specific selectivity was fixed at or near 1. From
-previous experience it is often best to fix one or several
-selectivity-at-age values close to 1, otherwise the selectivity and
-fishing mortality parameters can become confounded.
+This meant only the first two ages were estimated as fixed effects and the rest of the age-specific selectivity values were fixed at true values used to generate the input data to the vignette; selectivity for the older ages were effectively fixed at or near 1 with this specification. From previous experience it is often best to fix one or several selectivity-at-age values close to 1, otherwise the selectivity and fishing mortality parameters can become confounded.
+
+Modifying and running the vignette confirmed that we were able to accurately and reliably estimate the two specified age-specific selectivity parameters for the test dataset using the new selectivity feature.
 
 ### Tests
 
-Once the actual functionality was in place, default parameters are set,
-and a vignette is made, it was time to guarantee compatibility across
-all other areas of FIMS both now and in the future by writing in some
-checks and tests. There are two main categories of tests in FIMS, the
-gtests and testthat. The former focuses on cpp code and the latter on R
-code. In both, we added similar tests, 1) that the input and output get
-passed around effectively, 2) that the inverse-logit and logit
-transformations handled values correctly, and 3) that FIMS could handle
-"edge-cases" or those extreme values where things run up against their
-bounds.
+Once the actual functionality was in place, default parameters are set, and a vignette is made, it was time to guarantee compatibility across all other areas of FIMS both now and in the future by writing in some checks and tests. There are two main categories of tests in FIMS, the gtests and testthat. The former focuses on cpp code and the latter on rcpp code. In both, we added similar tests, 1) that the input and output get passed around effectively, 2) that the inverse-logit and logit transformations handled values correctly, 3) that parameter values were being properly indexed and called, and 4) that FIMS could handle "edge-cases" or those extreme values where things run up against their bounds.
 
-[tests/gtest/CMAkeLists.txt]{.underline}. We just needed to modify one
-thing- adding test names for AgeSpecificSelectivity to ensure these
-tests are called during compilation
+[tests/gtest/CMAkeLists.txt]{.underline}. We just needed to modify one thing- adding test names for AgeSpecificSelectivity to ensure these tests are called during compilation
 
-[tests/gtest/test_AgeSpecificSelectivity_Evaluate.cpp]{.underline} Tests
-performance of evaluate calls with multiple ages and multiple time
-steps, to show inverse-logit transformations and indexing perform as
-expected. It was easy to set using the built in
-FIMS:::use_gtest_template()
+[tests/gtest/test_AgeSpecificSelectivity_Evaluate.cpp]{.underline} Tests performance of evaluate calls with multiple ages and multiple time steps, to show inverse-logit transformations and indexing perform as expected. It was easy to set using the built in FIMS:::use_gtest_template()
 
-[tests/testthat/test-rcpp-selectivity.R]{.underline} - This code is
-generic to all selectivity options, unlike the gtest above. But we added
-sections specific to the AgeSpecificSelectivity option to check that the
-estimation type and evaluate() works correctly:
+[tests/testthat/test-rcpp-selectivity.R]{.underline} - This code is generic to all selectivity options, unlike the gtest above. But we added sections specific to the AgeSpecificSelectivity option to check that the estimation type and evaluate() works correctly:
 
 ```         
 # Create selectivity2
@@ -231,58 +165,26 @@ estimation type and evaluate() works correctly:
   )
 ```
 
-Essentially we specified values, ran the evaluation, and used a
-workhorse function in FIMS testing - expect_equal() - to see if we got
-back the result we expected.
+Essentially we specified values, ran the evaluation, and used a workhorse function in FIMS testing - expect_equal() - to see if we got back the result we expected.
 
 ### Roadblocks/Lessons Learned
 
 ## :construction: Roadblock #1: Flexible indexing and age-specification options
 
-Unlike for other selectivity options which include a few parameters that
-establish a function between age and selectivity, the selectivity-at-age
-option uses a flexible number of parameters, specified by the user. At a
-maximum there can be one parameter for every age and at a minimum there
-can be no parameters (all values fixed at their input). There was no
-precedent for this setting and the other selectivity options wouldn't
-help us resolve it. Ultimately, we asked for individual sessions with
-FIMS leadership to explain the issue and ask for solutions. They
-recommended including n_ages, the number of ages, and min_age the
-minimum age when declaring the AgeSpecificSelectivity class.
+Unlike for other selectivity options which include a few parameters that establish a function between age and selectivity, the selectivity-at-age option uses a flexible number of parameters, specified by the user input data, and each can beset to be fixed to a constant, estimated using fixed effects. At a maximum there can be one estimated parameter for every age and at a minimum there can be no estimated parameters (all values fixed at their default of expected values). There was no precedent for this setting and the other selectivity options wouldn't help us resolve it. Ultimately, we asked for individual sessions with FIMS leadership to explain the issue and ask for solutions. They recommended including n_ages, the number of ages, and min_age the minimum age when declaring the AgeSpecificSelectivity class.
 
 ## :construction: Roadblock #2: Naming conflicts with other selectivity options
 
-Only when we got to building out the vignette to demo the age-specific
-selectivity option did we notice a problem with our naming convention
-that would conflict with how FIMS builds out names and uses features.
-We'd been calling the age-specific option "SelectivityatAge" but when
-the create_default_parameters() function is run, this name gets knitted
-together with "Selectivity" creating the monstrous
-"SelectivityatAgeSelectivity" which FIMS can't understand downstream.
+Only when we got to building out the vignette to demo the age-specific selectivity option did we notice a problem with our naming convention that would conflict with how FIMS builds out names and uses features. We'd been calling the age-specific option "SelectivityatAge" but when the create_default_parameters() function is run, this name gets knitted together with "Selectivity" creating the monstrous "SelectivityatAgeSelectivity" which FIMS can't understand downstream.
 
-Our early fix was ugly. We manually put in an if statement to catch when
-the incorrect name shows up and manually changes it back to something
-comprehensible. But once we showed the issue and our band-aid solution
-to the FIMS code club, a weekly meeting from 1:00-5:00 EST or 10:00-2:00
-PST that is reserved for debugging and discussion, we were about to
-crowd source a permanent solution - going back through the FIMS
-structure and renamed everything that was "selectivity at age" to "age
-specific selectivity" to fix this overarching issue.
+Our early fix was ugly. We manually put in an if statement to catch when the incorrect name shows up and manually changes it back to something comprehensible. But once we showed the issue and our band-aid solution to the FIMS code club, a weekly meeting from 1:00-5:00 EST or 10:00-2:00 PST that is reserved for debugging and discussion, we were about to crowd source a permanent solution - going back through the FIMS structure and renamed everything that was "selectivity at age" to "age specific selectivity" to fix this overarching issue.
+
+## :construction: Roadblock #3: Rebasing
+
+Sometimes we'd get a confusing error message, try a few fixes, check the indexing, check that input and output are to be expected, check that all the variables are properly declared and passed, only to come up totally blank. We'd ask others in the FIMS group just to learn its likely because of a mis-match between ours and the base code, necessitating a process called "rebasing"
+
+Essentially, once we branched off our project, any other changes made to the main "tree" afterwards don't automatically get included as we're working. Re-basing puts us in line with the central "trunk" before we put the branch back into the main version of the code. Our main advice on re-basing (besides letting someone supervise the first few times you try) is to 'squash' down all your commits into a single commit before doing the rebase, that way you don't have to approve commits over and over in the process.
 
 ## Takeaways
 
-Don't let contributing to FIMS intimidate you! Nobody understands all
-the nuanced ins and outs of FIMS except a few core developers and given
-the amount of features FIMS needs to meet its 25% by 2026 (25% of NOAA
-stocks to be capable of using FIMS to fit the model and generate
-management advice), more than that core group needs to be actively
-contributing. Take on small tasks at first - a new version of an
-existing feature, like these selectivity options. But maximize
-efficiency by identifying a feature that is important to several stocks.
-Starting small will help build confidence and familiarity with FIMS's
-modular nature so you might be comfortable with contributing bigger
-changes down the line. Hope this post helps to identify some key
-starting spots and illustrates how modifications are really just a
-matter of taking, copying, and ajusting existing code. Please let us
-know if you have questions or we can offer advice, at
-alexander.jensen\[at\]noaa.gov or emily.liljestrand\[at\]noaa.gov.
+Don't let contributing to FIMS intimidate you! Nobody understands all the nuanced ins and outs of FIMS except a few core developers and given the amount of features FIMS needs to meet its 25% by 2026 (25% of NOAA stocks to be capable of using FIMS to fit the model and generate management advice), more than that core group needs to be actively contributing. Take on small tasks at first - a new version of an existing feature, like these selectivity options. But maximize efficiency by identifying a feature that is important to several stocks. Starting small will help build confidence and familiarity with FIMS's modular nature so you might be comfortable with contributing bigger changes down the line. There is also lots of help and expertise available in the FIMS development community! We reached out for help at several points to implement changes to the cpp architecture, implement and debug tests, and format the repository for merging back into the main branch of FIMS. Hope this post helps to identify some key starting spots and illustrates how modifications are really just a matter of taking, copying, and ajusting existing code. Please let us know if you have questions or we can offer advice, at alexander.jensen\[at\]noaa.gov or emily.liljestrand\[at\]noaa.gov.
