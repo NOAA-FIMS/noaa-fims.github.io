@@ -35,7 +35,7 @@ Before any modifications were made, we branched the github repository into a dev
 
 The crux of how selectivity is specified and used in FIMS came down to modifying or adding a few bits of code, described below:
 
-[src/fims_modules.hpp]{.underline} This code lists all the FIMS modules. We added “SelectivityatAge” as a module, with corresponding variable names
+[src/rcpp_selectivity.cpp]{.underline} The code includes Rcpp classes for the different selectivity components. We added 'AgeSpecificSelectivity' as a new class, with corresponding variable names.
 
 [inst/include/common/fims_math.hpp]{.underline} This code contains all of the "fims math" or other formulas and math functions not found in base R functionality. We added new functions to help conversion of Type&x to size_t for indexing purposes in age_specific.hpp
 
@@ -171,13 +171,13 @@ Essentially we specified values, ran the evaluation, and used a workhorse functi
 
 ## :construction: Roadblock #1: Flexible indexing and age-specification options
 
-Unlike for other selectivity options which include a few parameters that establish a function between age and selectivity, the selectivity-at-age option uses a flexible number of parameters, specified by the user input data, and each can beset to be fixed to a constant, estimated using fixed effects. At a maximum there can be one estimated parameter for every age and at a minimum there can be no estimated parameters (all values fixed at their default of expected values). There was no precedent for this setting and the other selectivity options wouldn't help us resolve it. Ultimately, we asked for individual sessions with FIMS leadership to explain the issue and ask for solutions. They recommended including n_ages, the number of ages, and min_age the minimum age when declaring the AgeSpecificSelectivity class.
+Unlike for other selectivity options which include a few parameters that establish a function between age and selectivity, the selectivity-at-age option uses a flexible number of parameters, specified by the user input data, and each can be set to be fixed to a constant, estimated using fixed effects. At a maximum there can be one estimated parameter for every age and at a minimum there can be no estimated parameters (all values fixed at their default of expected values). There was no precedent for this setting and the other selectivity options wouldn't help us resolve it. Ultimately, we asked for individual sessions with FIMS leadership to explain the issue and ask for solutions. They recommended including n_ages, the number of ages, and min_age the minimum age when declaring the AgeSpecificSelectivity class.
 
 ## :construction: Roadblock #2: Naming conflicts with other selectivity options
 
 Only when we got to building out the vignette to demo the age-specific selectivity option did we notice a problem with our naming convention that would conflict with how FIMS builds out names and uses features. We'd been calling the age-specific option "SelectivityatAge" but when the create_default_parameters() function is run, this name gets knitted together with "Selectivity" creating the monstrous "SelectivityatAgeSelectivity" which FIMS can't understand downstream.
 
-Our early fix was ugly. We manually put in an if statement to catch when the incorrect name shows up and manually changes it back to something comprehensible. But once we showed the issue and our band-aid solution to the FIMS code club, a weekly meeting from 1:00-5:00 EST or 10:00-2:00 PST that is reserved for debugging and discussion, we were about to crowd source a permanent solution - going back through the FIMS structure and renamed everything that was "selectivity at age" to "age specific selectivity" to fix this overarching issue.
+Our early fix was ugly. We manually put in an if statement to catch when the incorrect name shows up and manually changes it back to something comprehensible. But once we showed the issue and our band-aid solution to the FIMS code club, a weekly meeting that is reserved for debugging and discussion, we were about to crowd source a permanent solution - going back through the FIMS structure and renamed everything that was "selectivity at age" to "age specific selectivity" to fix this overarching issue.
 
 ## :construction: Roadblock #3: Rebasing
 
