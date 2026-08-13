@@ -102,10 +102,10 @@ updated_configurations <- default_configurations_unnested |>
   dplyr::rows_update(
     y = tibble::tibble(
       module_name = c("Selectivity"),
-      fleet_name = c("survey1"),
+      fleet = c("survey1"),
       module_type = c("AgeSpecific")
     ),
-    by = c("module_name", "fleet_name")
+    by = c("module_name", "fleet")
   )
 ```
 
