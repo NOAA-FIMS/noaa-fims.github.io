@@ -11,6 +11,32 @@ $font-family-heading: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Seg
   --font-outfit: #{$font-family-heading};
 }
 
+html {
+  scroll-padding-top: 6rem;
+}
+
+:target {
+  scroll-margin-top: 6rem;
+}
+
+:where(
+  a[href],
+  button,
+  input,
+  select,
+  textarea,
+  summary,
+  iframe,
+  [tabindex]:not([tabindex="-1"])
+):focus-visible {
+  outline: 3px solid #0e6876;
+  outline-offset: 3px;
+}
+
+:where(button, input, select, textarea, summary, iframe):focus-visible {
+  border-radius: 0.25rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-heading;
 }
@@ -58,8 +84,12 @@ h2, h3, h4, h5, h6 {
 }
 
 #quarto-header .navbar .nav-link.active .menu-text::after {
-  background-color: var(--red-50);
+  background-color: #f54f61;
   width: 100%;
+}
+
+.anchorjs-link {
+  color: inherit;
 }
 
 #quarto-content {
@@ -133,10 +163,20 @@ kbd {
   vertical-align: 1px;
 }
 
+/* 
+  Visually hide the figcaption but keep it for screen readers to ensure accessibility.
+  This addresses the user request to remove the caption visually while passing checks.
+*/
 figcaption {
-  padding-right: 1rem;
-  color: var(--bs-tertiary-color);
-  text-align: right;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .code-with-filename > div {
@@ -147,6 +187,26 @@ figcaption {
 pre > code,
 .code-with-filename-file strong {
   color: var(--bs-body-color);
+}
+
+/* Increase contrast for decimal values (numbers) */
+code span.dv {
+    color: #a83643 !important; /* Maps to #a83643 */
+}
+
+/* Increase contrast for strings */
+code span.st {
+    color: #3c5130 !important; /* Maps to #3c5130 */
+}
+
+/* Increase contrast for comments */
+code span.co {
+    color: #213f4b !important; /* Maps to #213f4b, improved contrast from slate-30 */
+}
+
+/* In dark mode, comments need to be light to be visible on a dark code background. */
+.quarto-dark code span.co {
+    color: #f4f4f4 !important; /* A light grey from the palette for legibility. */
 }
 
 .quarto-listing-cols-3 {
@@ -195,13 +255,110 @@ img.thumbnail-image.card-img {
   line-height: 1.2rem;
 }
 
-.quarto-listing-category .category {
+/* On blog pages, hide any category that isn't explicitly styled with an icon.
+   This creates a curated list for the blog, while other pages (like Resources) show all categories. */
+.page-blog .quarto-listing-category .category:not([data-category=""]):not([data-category="ZGVlcC1kaXZl"]):not([data-category="Zmltcy13ZWVrbHk="]):not([data-category="bGVhcm4="]):not([data-category="b3RoZXI="]) {
   display: none !important;
 }
 
 /* "All" category (example: fa-list) */
 .quarto-listing-category .category[data-category=""] {
   display: none !important;
+}
+
+/* --- ACCESSIBILITY FIX: Default Badge Contrast --- */
+/* Your default badges use the pink theme. */
+#listing-listing .listing-category {
+  color: #5c2a48 !important;            /* pink-10 for high contrast */
+  border-color: #5c2a48 !important;     /* Matches text perfectly */
+  background-color: #f4e4f1 !important; 
+}
+
+/* Hover/focus/active: stronger contrast and visible focus */
+#listing-listing .listing-category:hover,
+#listing-listing .listing-category:focus,
+#listing-listing .listing-category:active {
+  color: #5c2a48 !important;
+  border-color: #5c2a48 !important;
+  background-color: #f1c9e1 !important; 
+  outline: 2px solid #213f4b;
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   ACCESSIBILITY FIX: Form Inputs & Dropdowns (Light Mode) 
+   ========================================================= */
+.quarto-listing .form-select,
+.quarto-listing input.search.form-control,
+.quarto-listing .form-select option {
+  background-color: #ffffff !important; /* White */
+  color: #213f4b !important;            /* var(--slate-10) */
+  border: 1px solid #4a636c !important; /* var(--slate-30) */
+}
+
+/* Light Mode Placeholder */
+.quarto-listing input.search.form-control::placeholder {
+  color: #4a636c !important;            /* var(--slate-30) */
+  opacity: 1 !important; 
+}
+
+/* =========================================================
+   ACCESSIBILITY FIX: Form Inputs & Dropdowns (Dark Mode) 
+   ========================================================= */
+.quarto-dark .quarto-listing .form-select,
+.quarto-dark .quarto-listing input.search.form-control,
+.quarto-dark .quarto-listing .form-select option {
+  background-color: #0e181e !important; /* var(--slate-00) */
+  color: #ebeeef !important;            /* var(--slate-90) */
+  border: 1px solid #60757e !important; /* var(--slate-40) */
+}
+
+/* Dark Mode Placeholder */
+.quarto-dark .quarto-listing input.search.form-control::placeholder {
+  color: #99a6ac !important;            /* var(--slate-60) */
+  opacity: 1 !important; 
+}
+
+/* --- ACCESSIBILITY FIX: Custom Badge Contrasts --- */
+/* For your custom badges (deep-dive, fims-weekly, learn, other) */
+
+/* Light Mode (Old-school explicit selectors) */
+#listing-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+#listing-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
+#listing-listing .listing-category[onclick*="bGVhcm4="],
+#listing-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+.quarto-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
+.quarto-listing .listing-category[onclick*="bGVhcm4="],
+.quarto-listing .listing-category[onclick*="b3RoZXI="] {
+  color: #09414a !important;             /* blue-10 for high contrast */
+  border-color: #09414a !important;      /* Matches text perfectly */
+  background-color: #e4f0f1 !important;  
+}
+
+/* Dark Mode (Old-school explicit selectors) */
+.quarto-dark #listing-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+.quarto-dark #listing-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
+.quarto-dark #listing-listing .listing-category[onclick*="bGVhcm4="],
+.quarto-dark #listing-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-dark .quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+.quarto-dark .quarto-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
+.quarto-dark .quarto-listing .listing-category[onclick*="bGVhcm4="],
+.quarto-dark .quarto-listing .listing-category[onclick*="b3RoZXI="] {
+  color: #f7fafb !important;             /* blue-100 for high contrast on dark */
+  border-color: #f7fafb !important;      /* Matches text perfectly */
+  background-color: #09414a !important;  
+}
+
+/* --- ACCESSIBILITY FIX: Code Club page contrast --- */
+/* Fixes a specific color contrast issue on the Code Club page where a paragraph
+   had insufficient contrast against its container's background. */
+#a-space-for-everyone > div > div:nth-child(1) > p {
+    color: #213f4b !important;
+}
+
+.quarto-dark #a-space-for-everyone > div > div:nth-child(1) > p {
+    color: #f4f4f4 !important; /* Use a light color for dark mode, consistent with other fixes. */
 }
 
 /* deep-dive */
@@ -232,12 +389,6 @@ img.thumbnail-image.card-img {
   content: "\f002"; /* fa-magnifying glass */
   margin-right: 0.4em;
   display: inline-block;
-}
-
-div.quarto-post .listing-categories .listing-category[onclick*="ZGVlcC1kaXZl"] {
-    border-color: #4896a1;
-    color: #0e6876;
-    background-color: #e4f0f1;
 }
 
 /* fims-weekly */
@@ -271,12 +422,6 @@ div.quarto-post .listing-categories .listing-category[onclick*="ZGVlcC1kaXZl"] {
   display: inline-block;
 }
 
-div.quarto-post .listing-categories .listing-category[onclick*="Zmltcy13ZWVrbHk="] {
-    border-color: #4896a1;
-    color: #0e6876;
-    background-color: #e4f0f1;
-}
-
 /* learn */
 .quarto-listing-category .category[data-category="bGVhcm4="] {
   display: flex !important;    /* Horizontally align icon and text */
@@ -306,12 +451,6 @@ div.quarto-post .listing-categories .listing-category[onclick*="Zmltcy13ZWVrbHk=
   content: "\f19d"; /* fa-graduation-cap */
   margin-right: 0.4em;
   display: inline-block;
-}
-
-div.quarto-post .listing-categories .listing-category[onclick*="bGVhcm4="] {
-    border-color: #4896a1;
-    color: #0e6876;
-    background-color: #e4f0f1;
 }
 
 /* other */
@@ -345,10 +484,18 @@ div.quarto-post .listing-categories .listing-category[onclick*="bGVhcm4="] {
   display: inline-block;
 }
 
-div.quarto-post .listing-categories .listing-category[onclick*="b3RoZXI="] {
-    border-color: #4896a1;
-    color: #0e6876;
-    background-color: #e4f0f1;
+/* --- FIMS Pathway Explorer --- */
+.fims-graphic-container {
+  position: relative; /* This is the key for positioning children */
+}
+
+.fims-graphic-container .link-hotspot {
+  position: absolute;
+  display: none; /* Hide hotspots by default */
+}
+
+.fims-graphic-container .link-hotspot.is-visible {
+  display: block; /* Show hotspots when the 'is-visible' class is present */
 }
 
 div.quarto-post {
@@ -358,4 +505,96 @@ div.quarto-post {
 div.quarto-post .metadata {
     flex-basis: 10%;       /* Try 10% or even 0 if you want it to size to fit */
     min-width: 3em;        /* Optional: ensure it doesn't get too tiny */
+}
+
+/* Brevo css overrides */
+  @font-face {
+    font-display: block;
+    font-family: Roboto;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+  }
+
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 600;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+  }
+
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+  }
+
+  :where(.sib-form-message-panel) {
+    display: none;
+  }
+
+  :where(.sib-form-message-panel .sib-notification__icon) {
+    width: 20px;
+    height: 20px;
+  }
+
+  #sib-container input:-ms-input-placeholder {
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    color: #c0ccda;
+  }
+
+  #sib-container input::placeholder {
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    color: #c0ccda;
+  }
+
+  #sib-container textarea::placeholder {
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    color: #c0ccda;
+  }
+
+  #sib-container a {
+    text-decoration: underline;
+    color: #4896a1;
+  }
+
+  #sib-container .input { 
+    padding: 2px 6px !important; 
+    height: auto !important; 
+    min-height: 25px !important; 
+  }
+
+  #sib-container .entry__label { 
+    margin-bottom: 1px !important; 
+    font-size: 14px !important; 
+  }
+
+  #sib-container .sib-form-block__button { 
+    padding: 6px 14px !important; 
+    background-color: #33818c !important; /* Override Brevo default for AA contrast */
+  }
+
+  /* =========================================================
+   ACCESSIBILITY FIX: HEADLESS SCANNER CONTRAST BUG
+   Explicitly declare card backgrounds so the Axe scanner 
+   can mathematically calculate the badge contrast without
+   getting confused by transparent parent containers.
+   ========================================================= */
+
+/* Light Mode Card Backgrounds */
+#listing-listing,
+.quarto-listing div.quarto-post,
+.quarto-listing .card,
+.quarto-listing div.quarto-post .metadata {
+  background-color: #ffffff !important;
+}
+
+/* Dark Mode Card Backgrounds */
+.quarto-dark #listing-listing,
+.quarto-dark .quarto-listing div.quarto-post,
+.quarto-dark .quarto-listing .card,
+.quarto-dark .quarto-listing div.quarto-post .metadata {
+  background-color: #0e181e !important; /* Maps to slate-00 */
 }
