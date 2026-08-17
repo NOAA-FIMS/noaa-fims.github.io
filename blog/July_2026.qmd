@@ -1,6 +1,7 @@
 ---
 # The title MUST start with "FIMS Monthly - "
 title: "FIMS Monthly - July 2026"
+from: markdown+emoji
 date: "July 28, 2026"
 # Change the following categories accordingly, but you MUST keep the fims-monthly one
 categories:
@@ -10,6 +11,9 @@ categories:
 big-things:
   - BIG THING 1
   - BIG THING 2
+input:
+  - https://github.com/orgs/NOAA-FIMS/discussions/1600
+  - https://github.com/orgs/NOAA-FIMS/discussions/1692
 announcements:
   - ANNOUNCEMENT 1
   - ANNOUNCEMENT 2
