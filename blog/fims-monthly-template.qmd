@@ -31,6 +31,7 @@ if (!is.null(big_things) && any(nzchar(unlist(big_things)))) {
 These are the discussions and issues that we need your input on!
 
 ```{r, echo=FALSE, results="asis"}
+#| cache: false
 # This chunk fetches details for GitHub issues/PRs listed in the 'input' YAML field
 # and renders them in a GitHub-like style. It requires httr, jsonlite, stringr, and purrr.
 
@@ -77,81 +78,113 @@ if (!is.null(input_urls) && length(input_urls) > 0 && any(nzchar(unlist(input_ur
   )
 
 # Helper function to render GitHub labels from either REST (data.frame) or GraphQL (list)
+  # Helper function to render GitHub labels from either REST or GraphQL
   render_labels <- function(labels_data) {
+    # GraphQL nests the actual list of labels inside a "nodes" item
+    if (is.list(labels_data) && "nodes" %in% names(labels_data)) {
+      labels_data <- labels_data$nodes
+    }
+    
     if (is.null(labels_data) || length(labels_data) == 0 || (is.data.frame(labels_data) && nrow(labels_data) == 0)) {
       return("")
     }
-    # Coerce list from GraphQL to data.frame for consistent processing
-    if (is.list(labels_data) && !is.data.frame(labels_data)) {
-      labels_data <- do.call(rbind.data.frame, labels_data)
+    
+    # Force it into a data frame just to be safe
+    if (!is.data.frame(labels_data)) {
+      labels_data <- as.data.frame(do.call(rbind, labels_data))
     }
     
-    label_tags <- apply(labels_data, 1, function(label) {
-      hex <- paste0("#", label$color)
+    # Loop over the rows by their index number to avoid the atomic vector error
+    label_tags <- sapply(seq_len(nrow(labels_data)), function(i) {
+      name <- labels_data$name[i]
+      color <- labels_data$color[i]
+      
+      hex <- paste0("#", color)
       rgb <- grDevices::col2rgb(hex)
-      brightness <- (rgb * 299 + rgb * 587 + rgb * 114) / 1000
+      
+      # col2rgb returns a matrix, so we grab row 1 (R), 2 (G), and 3 (B)
+      brightness <- (rgb[1, 1] * 299 + rgb[2, 1] * 587 + rgb[3, 1] * 114) / 1000
       text_color <- ifelse(brightness > 128, "#000000", "#ffffff")
-      sprintf('<span class="gh-label" style="background-color: %s; color: %s;">%s</span>', hex, text_color, label$name)
+      
+      sprintf('<span class="gh-label" style="background-color: %s; color: %s;">%s</span>', hex, text_color, name)
     })
+    
     paste0('<div class="gh-labels">', paste(label_tags, collapse = " "), '</div>')
   }
 
-  render_item <- function(url) {
+render_item <- function(url) {
     repo_match <- stringr::str_match(url, "https://github\\.com/([^/]+)/([^/]+)/(issues|pull|discussions)/(\\d+)")
     org_match <- stringr::str_match(url, "https://github\\.com/orgs/([^/]+)/discussions/(\\d+)")
 
-    headers <- httr::add_headers("User-Agent" = "NOAA-FIMS-Website-Builder")
+    is_repo_match <- !is.na(repo_match[1, 1])
+    is_org_match <- !is.na(org_match[1, 1])
+
     pat <- Sys.getenv("DISCUSSIONS_PAT")
     if (nzchar(pat)) {
-      headers <- httr::add_headers(headers, "Authorization" = paste("token", pat))
+      headers <- httr::add_headers(
+        "User-Agent" = "NOAA-FIMS-Website-Builder",
+        "Authorization" = paste("token", pat)
+      )
+    } else {
+      headers <- httr::add_headers("User-Agent" = "NOAA-FIMS-Website-Builder")
     }
 
-    # Handle discussions (org and repo) via GraphQL
-    is_discussion <- !is.na(org_match) || (!is.na(repo_match) && repo_match == "discussions")
+    is_discussion <- is_org_match || (is_repo_match && repo_match[1, 4] == "discussions")
+    
     if (is_discussion) {
       if (!nzchar(pat)) {
-        display_ref <- if (!is.na(org_match)) sprintf("orgs/%s#%s", org_match, org_match) else sprintf("%s/%s#%s", repo_match, repo_match, repo_match)
-        return(sprintf('<div class="gh-list-item"><div class="gh-icon">%s</div><div class="gh-details"><div class="gh-title"><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></div><div class="gh-meta">Cannot fetch discussion details: GITHUB_PAT is required.</div></div></div>', icons$discussion, url, display_ref))
+        return(sprintf('<div class="gh-list-item"><div class="gh-details"><div class="gh-title">%s</div><div class="gh-meta" style="color:red;">Cannot fetch: DISCUSSIONS_PAT is missing from .Renviron</div></div></div>', url))
       }
-      if (!is.na(org_match)) {
-        org <- org_match; number <- as.integer(org_match)
-        graphql_query <- sprintf('query { organization(login: "%s") { discussion(number: %d) { title, author { login }, url, closed, labels(first: 10) { nodes { name, color } } } } }', org, number)
-        item_path <- c("data", "organization", "discussion")
-        display_ref <- sprintf("orgs/%s#%s", org, number)
-      } else {
-        owner <- repo_match; repo <- repo_match; number <- as.integer(repo_match)
-        graphql_query <- sprintf('query { repository(owner: "%s", name: "%s") { discussion(number: %d) { title, author { login }, url, closed, labels(first: 10) { nodes { name, color } } } } }', owner, repo, number)
+      
+      if (is_org_match) {
+        org <- org_match[1, 2]
+        number <- as.integer(org_match[1, 3])
+        # Force the GraphQL query to look inside the backing FIMS repository
+        graphql_query <- sprintf('query { repository(owner: "%s", name: "FIMS") { discussion(number: %d) { title, url, closed, labels(first: 10) { nodes { name, color } } } } }', org, number)
         item_path <- c("data", "repository", "discussion")
-        display_ref <- sprintf("%s/%s#%s", owner, repo, number)
+      } else {
+        owner <- repo_match[1, 2]
+        repo <- repo_match[1, 3]
+        number <- as.integer(repo_match[1, 5])
+        graphql_query <- sprintf('query { repository(owner: "%s", name: "%s") { discussion(number: %d) { title, url, closed, labels(first: 10) { nodes { name, color } } } } }', owner, repo, number)
+        item_path <- c("data", "repository", "discussion")
       }
 
       response <- httr::POST("https://api.github.com/graphql", headers, body = list(query = graphql_query), encode = "json")
-      content <- jsonlite::fromJSON(httr::content(response, "text", encoding = "UTF-8"))
+      raw_text <- httr::content(response, "text", encoding = "UTF-8")
+      content <- jsonlite::fromJSON(raw_text)
 
       if (httr::status_code(response) != 200 || !is.null(content$errors)) {
-        return(sprintf('<div class="gh-list-item"><div class="gh-details"><div class="gh-title"><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></div><div class="gh-meta">Failed to fetch details from GitHub API.</div></div></div>', url, display_ref))
+        safe_json <- gsub("<", "&lt;", raw_text)
+        return(sprintf('<div class="gh-list-item" style="background:#ffebe9; padding:10px; border:1px solid #cf222e;"><div class="gh-details"><strong>GitHub API Error for %s:</strong><br><pre style="white-space:pre-wrap; font-size:11px;">%s</pre></div></div>', url, safe_json))
       }
 
       item <- purrr::pluck(content, .default = NULL, !!!item_path)
+      
       if (is.null(item)) {
-        return(sprintf('<div class="gh-list-item"><div class="gh-details"><div class="gh-title"><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></div><div class="gh-meta">Failed to parse details from API response.</div></div></div>', url, display_ref))
+        safe_json <- gsub("<", "&lt;", raw_text)
+        return(sprintf('<div class="gh-list-item" style="background:#fff8c5; padding:10px; border:1px solid #d4a72c;"><div class="gh-details"><strong>Data Not Found for %s:</strong><br><pre style="white-space:pre-wrap; font-size:11px;">%s</pre></div></div>', url, safe_json))
       }
+      
       state_class <- if (item$closed) "closed" else "open"
       icon_svg <- if (state_class == "closed") icons$closed else icons$discussion
-
       labels_html <- render_labels(item$labels)
 
-      return(sprintf('<div class="gh-list-item"><div class="gh-icon %s">%s</div><div class="gh-details"><div class="gh-title"><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></div><div class="gh-meta">#%s opened by %s</div>%s</div></div>', state_class, icon_svg, item$url, item$title, number, item$author$login, labels_html))
+      # Removed the gh-meta div
+      return(sprintf('<div class="gh-list-item"><div class="gh-icon %s">%s</div><div class="gh-details"><div class="gh-title"><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></div>%s</div></div>', state_class, icon_svg, url, item$title, labels_html))
     }
 
-      # Handle issues/PRs via REST API
-    is_issue_or_pr <- !is.na(repo_match) && repo_match %in% c("issues", "pull")
+    # REST API Block
+    is_issue_or_pr <- is_repo_match && repo_match[1, 4] %in% c("issues", "pull")
     if (is_issue_or_pr) {
-      owner <- repo_match; repo <- repo_match; number <- repo_match
+      owner <- repo_match[1, 2]
+      repo <- repo_match[1, 3]
+      number <- repo_match[1, 5]
       api_url <- paste0("https://api.github.com/repos/", owner, "/", repo, "/issues/", number)
+      
       response <- try(httr::GET(api_url, headers), silent = TRUE)
       if (inherits(response, "try-error") || httr::status_code(response) != 200) {
-        return(sprintf('<div class="gh-list-item"><div class="gh-details"><div class="gh-title"><a href="%s" target="_blank" rel="noopener noreferrer">%s/%s#%s</a></div><div class="gh-meta">Failed to fetch details from GitHub API.</div></div></div>', url, owner, repo, number))
+        return(sprintf('<div class="gh-list-item"><div class="gh-details"><div class="gh-title">%s</div><div class="gh-meta" style="color:red;">REST API failed with status %s</div></div></div>', url, httr::status_code(response)))
       }
 
       item <- jsonlite::fromJSON(httr::content(response, "text", encoding = "UTF-8"))
@@ -160,13 +193,12 @@ if (!is.null(input_urls) && length(input_urls) > 0 && any(nzchar(unlist(input_ur
       
       state_class <- if (is_merged) "merged" else if (is_draft) "draft" else item$state
       icon_svg <- icons[[state_class]]
-
       labels_html <- render_labels(item$labels)
 
-      return(sprintf('<div class="gh-list-item"><div class="gh-icon %s">%s</div><div class="gh-details"><div class="gh-title"><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></div><div class="gh-meta">#%s opened by %s</div>%s</div></div>', state_class, icon_svg, item$html_url, item$title, item$number, item$user$login, labels_html))
+      # Removed the gh-meta div
+      return(sprintf('<div class="gh-list-item"><div class="gh-icon %s">%s</div><div class="gh-details"><div class="gh-title"><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></div>%s</div></div>', state_class, icon_svg, item$html_url, item$title, labels_html))
     }
 
-    # Fallback for non-matching URLs
     return(paste0("<li><a href='", url, "'>", url, "</a></li>"))
   }
 

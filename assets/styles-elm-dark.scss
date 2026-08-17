@@ -91,7 +91,7 @@ $dropdown-link-hover-bg: $blue-20;
 }
 
 h2 {
-  border-bottom: 2px solid (var(--bs-dark));
+  border-bottom: 2px solid var(--bs-dark);
 }
 
 div.quarto-post .listing-categories .listing-category {
