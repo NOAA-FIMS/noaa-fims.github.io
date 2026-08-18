@@ -5,7 +5,7 @@ on:
 
 concurrency:
   group: gh-pages-publisher
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 name: Render and Publish
 
@@ -65,4 +65,3 @@ jobs:
           render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
