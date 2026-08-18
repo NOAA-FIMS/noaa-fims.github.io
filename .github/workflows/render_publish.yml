@@ -49,6 +49,8 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html
+        env:
+          DISCUSSIONS_PAT: ${{ secrets.DISCUSSIONS_PAT }}
 
       - name: Preserve preview directory from gh-pages
         run: |

@@ -58,6 +58,7 @@ jobs:
         env:
           PREVIEW_MODE: "true"
           SAFE_BRANCH: ${{ steps.vars.outputs.safe_branch }}
+          DISCUSSIONS_PAT: ${{ secrets.DISCUSSIONS_PAT }}
 
       - name: Build additive preview deploy tree
         run: |
