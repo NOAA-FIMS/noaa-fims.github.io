@@ -1,0 +1,567 @@
+/*-- scss:defaults --*/
+$web-font-path: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,300;1,500&family=Outfit:wght@200;400;500;700&display=swap";
+
+$font-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+$font-family-monospace: "IBM Plex Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-heading: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+/*-- scss:rules --*/
+:root {
+  --bs-font-family-heading: #{$font-family-heading};
+  --font-outfit: #{$font-family-heading};
+}
+
+/* =========================================================
+   1. BASE STYLES & LAYOUT
+   ========================================================= */
+html {
+  scroll-padding-top: 6rem;
+}
+
+main {
+  margin-top: 0em !important;
+  margin-bottom: 0.25em !important;
+}
+
+.column p {
+  margin-bottom: 0 !important; 
+}
+
+:target {
+  scroll-margin-top: 6rem;
+}
+
+#title-block-header {
+  margin-block-end: 0.25rem !important;
+}
+
+.quarto-title-banner {
+  margin-bottom: 0.25em !important;
+}
+
+@media (max-width: 991.98px) {
+  .quarto-title-banner {
+    margin-bottom: 0.25em !important;
+  }
+}
+
+#title-block-header.quarto-title-block.default .quarto-title-meta-heading {
+    margin-top: 0.25em !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin-top: 1.66em;
+  margin-bottom: 0.66em;
+}
+
+.column > section:first-child > h2 {
+  margin-top: 0 !important;
+}
+
+#upcoming-events-col section:first-of-type {
+  margin-top: 0 !important;
+  padding-top: 0 !important; 
+}
+#upcoming-events-col section:first-of-type h3 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.lead {
+  margin-bottom: 2rem;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+footer a {
+  text-decoration: none;
+}
+footer .nav-footer-left, footer .nav-footer-right {
+  min-height: 3rem;
+}
+
+#quarto-content {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+main.content img {
+  max-width: 100%;
+}
+
+/* =========================================================
+   2. NAVIGATION & SIDEBAR
+   ========================================================= */
+.navbar-title, .navbar-nav .nav-item {
+  font-family: $font-family-heading;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.navbar-title small {
+  font-size: 60%;
+}
+
+.navbar-brand-logo img {
+  max-height: 37px;
+  margin-right: 6px;
+}
+
+.sidebar-item {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  line-height: 1.5rem;
+}
+
+#quarto-header .navbar .nav-link .menu-text {
+  position: relative;
+}
+
+#quarto-header .navbar .nav-link .menu-text::after {
+  height: 0.1rem;
+  width: 0%;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  transition: width 200ms ease-in-out;
+}
+
+#quarto-header .navbar .nav-link.active .menu-text::after {
+  background-color: #f54f61;
+  width: 100%;
+}
+
+.anchorjs-link {
+  color: inherit;
+}
+
+div.quarto-about-trestles {
+  align-items: center;
+
+  @include media-breakpoint-up(lg) {
+    .about-entity {
+      padding-right: 1.5em;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .about-entity {
+      padding-right: 0;
+    }
+  }
+}
+
+/* =========================================================
+   3. CODE BLOCKS & TYPOGRAPHY
+   ========================================================= */
+kbd {
+  font-size: 0.7rem;
+  padding: 0.2em 0.6em;
+  border: 1px solid $dropdown-border-color;
+  font-family: $font-family-monospace;
+  background-color: $code-bg;
+  color: $body-color;
+  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 1px $body-color inset;
+  box-shadow: 0 1px 0px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px $body-color inset;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 0.2em;
+  line-height: inherit;
+  white-space: nowrap;
+  vertical-align: 1px;
+}
+
+.code-with-filename > div {
+  border: 1px solid var(--quarto-border-color);
+  padding: 0.66rem;
+}
+
+pre > code,
+.code-with-filename-file strong {
+  color: var(--bs-body-color);
+}
+
+/* =========================================================
+   4. LISTINGS & CARDS
+   ========================================================= */
+.quarto-listing-cols-3 {
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 0.75em;
+}
+
+.card {
+  --bs-card-spacer-y: 0.75rem;
+  --bs-card-spacer-x: 0.75rem;
+}
+
+.card h5 {
+  margin-top: 0.75em;
+}
+
+.card-body {
+  padding: 0.75rem;
+}
+
+.card-img {
+  text-align: center !important;
+  padding: 0.75rem;
+}
+
+.card-img-top {
+  text-align: center;
+}
+
+.card-img-top img {
+  display: inline-block;
+}
+
+img.thumbnail-image.card-img {
+  height: 120px !important;
+  width: auto !important;
+  object-fit: unset !important;
+}
+
+div.quarto-post {
+  gap: 1em;
+}
+
+div.quarto-post .metadata {
+  flex-basis: 10%;
+  min-width: 3em;
+}
+
+/* =========================================================
+   5. BLOG CATEGORIES & ICONS
+   ========================================================= */
+
+/* Target only the blog index page */
+.blog-index-page {
+  /* Hide all categories in the right sidebar by default */
+  .quarto-listing-category .category {
+    display: none !important; 
+  }
+
+  /* Reveal only the specific categories you want */
+  .quarto-listing-category {
+    .category[data-category=""],
+    .category[data-category="Zmltcy13ZWVrbHk="],
+    .category[data-category="b3RoZXI="],
+    .category[data-category="bGVhcm4="],
+    .category[data-category="ZGVlcC1kaXZl"] {
+      display: block !important; 
+    }
+  }
+}
+
+.quarto-title .quarto-categories {
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+.articleCategory {
+  font-size: 15px;
+  line-height: 35px;
+  padding-left: 33px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-bottom: 1.2em;
+  line-height: 1.2rem;
+}
+
+/* deep-dive */
+.quarto-listing-category .category[data-category="ZGVlcC1kaXZl"] {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5em;
+}
+.quarto-listing-category .category[data-category="ZGVlcC1kaXZl"]::before,
+.listing-category[onclick*="ZGVlcC1kaXZl"]::before,
+.quarto-category a[href*="category=deep-dive"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002"; /* fa-magnifying glass */
+  display: inline-block;
+}
+.quarto-listing-category .category[data-category="ZGVlcC1kaXZl"]::before,
+.listing-category[onclick*="ZGVlcC1kaXZl"]::before { margin-right: 0.5em; }
+.quarto-category a[href*="category=deep-dive"]::before { margin-right: 0.4em; }
+
+/* fims-monthly */
+.quarto-listing-category .category[data-category="Zmltcy1tb250aGx5"] {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5em;
+}
+.quarto-listing-category .category[data-category="Zmltcy1tb250aGx5"]::before,
+.listing-category[onclick*="Zmltcy1tb250aGx5"]::before,
+.quarto-category a[href*="category=fims-monthly"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1ea"; /* fa-newspaper */
+  display: inline-block;
+}
+.quarto-listing-category .category[data-category="Zmltcy1tb250aGx5"]::before,
+.listing-category[onclick*="Zmltcy1tb250aGx5"]::before { margin-right: 0.5em; }
+.quarto-category a[href*="category=fims-monthly"]::before { margin-right: 0.4em; }
+
+/* learn */
+.quarto-listing-category .category[data-category="bGVhcm4="] {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5em;
+}
+.quarto-listing-category .category[data-category="bGVhcm4="]::before,
+.listing-category[onclick*="bGVhcm4="]::before,
+.quarto-category a[href*="category=learn"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f19d"; /* fa-graduation cap */
+  display: inline-block;
+}
+.quarto-listing-category .category[data-category="bGVhcm4="]::before,
+.listing-category[onclick*="bGVhcm4="]::before { margin-right: 0.5em; }
+.quarto-category a[href*="category=learn"]::before { margin-right: 0.4em; }
+
+/* other */
+.quarto-listing-category .category[data-category="b3RoZXI="] {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5em;
+}
+.quarto-listing-category .category[data-category="b3RoZXI="]::before,
+.listing-category[onclick*="b3RoZXI="]::before,
+.quarto-category a[href*="category=other"]::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f111"; /* fa-circle */
+  display: inline-block;
+}
+.quarto-listing-category .category[data-category="b3RoZXI="]::before,
+.listing-category[onclick*="b3RoZXI="]::before { margin-right: 0.5em; }
+.quarto-category a[href*="category=other"]::before { margin-right: 0.4em; }
+
+/* =========================================================
+   6. EXTERNAL COMPONENTS (FIMS Pathway & Brevo)
+   ========================================================= */
+
+/* FIMS Pathway Explorer */
+.fims-graphic-container {
+  position: relative;
+}
+.fims-graphic-container .link-hotspot {
+  position: absolute;
+  display: none;
+}
+.fims-graphic-container .link-hotspot.is-visible {
+  display: block;
+}
+
+/* Brevo Form Overrides */
+@font-face {
+  font-display: block;
+  font-family: Roboto;
+  src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+}
+@font-face {
+  font-display: fallback;
+  font-family: Roboto;
+  font-weight: 600;
+  src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+}
+@font-face {
+  font-display: fallback;
+  font-family: Roboto;
+  font-weight: 700;
+  src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+}
+:where(.sib-form-message-panel) { display: none; }
+:where(.sib-form-message-panel .sib-notification__icon) {
+  width: 20px;
+  height: 20px;
+}
+#sib-container input:-ms-input-placeholder {
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  color: #c0ccda;
+}
+#sib-container input::placeholder,
+#sib-container textarea::placeholder {
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  color: #c0ccda;
+}
+#sib-container a {
+  text-decoration: underline;
+  color: #4896a1;
+}
+#sib-container .input { 
+  padding: 2px 6px !important; 
+  height: auto !important; 
+  min-height: 25px !important; 
+}
+#sib-container .entry__label { 
+  margin-bottom: 1px !important; 
+  font-size: 14px !important; 
+}
+
+/* =========================================================
+   7. ACCESSIBILITY FIXES (GROUPED)
+   ========================================================= */
+
+/* Focus States */
+:where(
+  a[href],
+  button,
+  input,
+  select,
+  textarea,
+  summary,
+  iframe,
+  [tabindex]:not([tabindex="-1"])
+):focus-visible {
+  outline: 3px solid #0e6876;
+  outline-offset: 3px;
+}
+:where(button, input, select, textarea, summary, iframe):focus-visible {
+  border-radius: 0.25rem;
+}
+
+/* Screen Reader Only Figcaption */
+figcaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Syntax Highlighting Contrast */
+code span.dv { color: #a83643 !important; }
+code span.st { color: #3c5130 !important; }
+code span.co { color: #213f4b !important; }
+.quarto-dark code span.co { color: #f4f4f4 !important; }
+
+/* Default Badge Contrast */
+#listing-listing .listing-category {
+  color: #5c2a48 !important;            
+  border-color: #5c2a48 !important;     
+  background-color: #f4e4f1 !important; 
+}
+#listing-listing .listing-category:hover,
+#listing-listing .listing-category:focus,
+#listing-listing .listing-category:active {
+  color: #5c2a48 !important;
+  border-color: #5c2a48 !important;
+  background-color: #f1c9e1 !important; 
+  outline: 2px solid #213f4b;
+  outline-offset: 2px;
+}
+
+/* Custom Badge Contrasts (Light Mode) */
+#listing-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+#listing-listing .listing-category[onclick*="Zmltcy1tb250aGx5"],
+#listing-listing .listing-category[onclick*="bGVhcm4="],
+#listing-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+.quarto-listing .listing-category[onclick*="Zmltcy1tb250aGx5"],
+.quarto-listing .listing-category[onclick*="bGVhcm4="],
+.quarto-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-category:has(a[href*="category=deep-dive"]),
+.quarto-category:has(a[href*="category=fims-monthly"]),
+.quarto-category:has(a[href*="category=learn"]),
+.quarto-category:has(a[href*="category=other"]) {
+  color: #09414a !important;             
+  border-color: #09414a !important;      
+  background-color: #e4f0f1 !important;  
+}
+
+/* Custom Badge Contrasts (Dark Mode) */
+.quarto-dark #listing-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+.quarto-dark #listing-listing .listing-category[onclick*="Zmltcy1tb250aGx5"],
+.quarto-dark #listing-listing .listing-category[onclick*="bGVhcm4="],
+.quarto-dark #listing-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-dark .quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
+.quarto-dark .quarto-listing .listing-category[onclick*="Zmltcy1tb250aGx5"],
+.quarto-dark .quarto-listing .listing-category[onclick*="bGVhcm4="],
+.quarto-dark .quarto-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-dark .quarto-category:has(a[href*="category=deep-dive"]),
+.quarto-dark .quarto-category:has(a[href*="category=fims-monthly"]),
+.quarto-dark .quarto-category:has(a[href*="category=learn"]),
+.quarto-dark .quarto-category:has(a[href*="category=other"]) {
+  color: #f7fafb !important;             
+  border-color: #f7fafb !important;      
+  background-color: #09414a !important;  
+}
+
+/* Form Inputs & Dropdowns Contrast (Light Mode) */
+.quarto-listing .form-select,
+.quarto-listing input.search.form-control,
+.quarto-listing .form-select option {
+  background-color: #ffffff !important; 
+  color: #213f4b !important;            
+  border: 1px solid #4a636c !important; 
+}
+.quarto-listing input.search.form-control::placeholder {
+  color: #4a636c !important;            
+  opacity: 1 !important; 
+}
+
+/* Form Inputs & Dropdowns Contrast (Dark Mode) */
+.quarto-dark .quarto-listing .form-select,
+.quarto-dark .quarto-listing input.search.form-control,
+.quarto-dark .quarto-listing .form-select option {
+  background-color: #0e181e !important; 
+  color: #ebeeef !important;            
+  border: 1px solid #60757e !important; 
+}
+.quarto-dark .quarto-listing input.search.form-control::placeholder {
+  color: #99a6ac !important;            
+  opacity: 1 !important; 
+}
+
+/* Headless Scanner Contrast Bug Fixes (Background explicit declarations) */
+#listing-listing,
+.quarto-listing div.quarto-post,
+.quarto-listing .card,
+.quarto-listing div.quarto-post .metadata {
+  background-color: #ffffff !important;
+}
+.quarto-dark #listing-listing,
+.quarto-dark .quarto-listing div.quarto-post,
+.quarto-dark .quarto-listing .card,
+.quarto-dark .quarto-listing div.quarto-post .metadata {
+  background-color: #0e181e !important; 
+}
+
+/* Code Club Page Text Contrast */
+#a-space-for-everyone > div > div:nth-child(1) > p {
+  color: #213f4b !important;
+}
+.quarto-dark #a-space-for-everyone > div > div:nth-child(1) > p {
+  color: #f4f4f4 !important; 
+}
+
+/* Brevo Button Contrast Override for AA Compliance */
+#sib-container .sib-form-block__button { 
+  padding: 6px 14px !important; 
+  background-color: #33818c !important; 
+}
