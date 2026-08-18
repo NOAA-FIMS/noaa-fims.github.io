@@ -24,7 +24,7 @@ show-calendar: true
 # but still include the text portion under summary.
 summary:
   include: true
-  text: "test"
+  text: "Is this section still needed? What should be put here?"
 ---
 
 {{< include "fims-monthly-template.qmd" >}}
