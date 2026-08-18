@@ -19,15 +19,15 @@
 
 /* --- Pathway Pills --- */
 .fims-pathway-pills { 
-  display: flex; 
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.75rem; 
-  overflow-x: auto; 
   padding-bottom: 0.5rem; 
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
 }
-.fims-pathway-pills::-webkit-scrollbar { 
-    display: none; 
+
+/* The pills are inside a <p> tag, so we use display: contents to make the <a> tags behave as direct children of the flex container */
+.fims-pathway-pills > p {
+  display: contents;
 }
 
 .fims-pill { 
