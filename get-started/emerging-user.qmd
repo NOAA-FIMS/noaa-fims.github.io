@@ -10,7 +10,6 @@ header-includes: >
 ::: {.fims-pathway-pills}
 [<i class="bi bi-person-plus"></i> New User](new-user.qmd){.fims-pill}
 [<i class="bi bi-person-up"></i> Emerging User](emerging-user.qmd){.fims-pill .is-active}
-[<i class="bi bi-rocket"></i> Advanced User](advanced-user.qmd){.fims-pill}
 [<i class="bi bi-lightning"></i> Power User](power-user.qmd){.fims-pill}
 [<i class="bi bi-code-square"></i> Contributor](contributor.qmd){.fims-pill .is-active}
 [<i class="bi bi-file-bar-graph"></i> Decision Maker](decision-maker.qmd){.fims-pill}

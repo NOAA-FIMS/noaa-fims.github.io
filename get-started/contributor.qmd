@@ -11,7 +11,6 @@ header-includes: >
 ::: {.fims-pathway-pills}
 [<i class="bi bi-person-plus"></i> New User](new-user.qmd){.fims-pill}
 [<i class="bi bi-person-up"></i> Emerging User](emerging-user.qmd){.fims-pill}
-[<i class="bi bi-rocket"></i> Advanced User](advanced-user.qmd){.fims-pill}
 [<i class="bi bi-lightning"></i> Power User](power-user.qmd){.fims-pill}
 [<i class="bi bi-code-square"></i> Contributor](contributor.qmd){.fims-pill .is-active}
 [<i class="bi bi-file-bar-graph"></i> Decision Maker](decision-maker.qmd){.fims-pill}
@@ -57,7 +56,7 @@ header-includes: >
 
 [<i class="bi bi-briefcase"></i> Contributing Case Studies](https://github.com//NOAA-FIMS/case-studies#fims-case-studies){.fims-btn-small .fims-task-btn target="_blank"}
 
-[<i class="bi bi-menu-button-wide-fill"></i> Contributing a Blog Post or to the Website](/contributing.md){.fims-btn-small .fims-task-btn}
+[<i class="bi bi-layout-text-window"></i> Contributing a Blog Post or to the Website](/contributing.md){.fims-btn-small .fims-task-btn}
 :::
 :::
 
