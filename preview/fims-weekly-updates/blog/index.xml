@@ -63,7 +63,7 @@ BIG THING 2
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <style>
 .gh-list-item { display: flex; align-items: flex-start; gap: 8px; padding: 8px 0; border-top: 1px solid #d8dee4; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
 .gh-list-item:first-child { border-top: 0; }
@@ -292,7 +292,7 @@ The restructuring of random effects is underway, led by Nathan and Andrea, where
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>This is the last week of the Google Summer of Code Community Bonding Period, coding starts next week 🎊.</li>
@@ -398,7 +398,7 @@ Reworking this weekly newsletter to be more informative about FIMS development b
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>FIMS CIE Review has been turned in and should be public next week.</li>
@@ -516,7 +516,7 @@ We received additional comments on the FIMS Manuscript before the CIE Review. Ch
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>Copilot and codespaces are limited to the free versions for the month of May.</li>
@@ -636,7 +636,7 @@ Matthew is continuing to work on translational units and getting FIMS to operate
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>CIE Review is complete! Thank you to Andrea, Bai, Ian, and Nathan for giving presentations. Thank you to Aaron Berger for being such a great Chair. Thank you to everyone who took notes, they are extremely comprehensive and have already been used by several individuals to summarize the key points of the review. I really appreciate all of the help making this review successful. We received lots of good, constructive feedback and I am looking forward to working on implementing some of the suggested changes.</li>
@@ -742,7 +742,7 @@ Continue to work on the FIMS planning repository.
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>There are still empty time slots for taking notes during the CIE Review, please sign up in this <a href="https://docs.google.com/document/d/1MfqLOMrkawPrQzdI3ycybxBx2gk8r7tLa44iKIo0taY/edit?tab=t.0">Google Doc</a>.</li>
@@ -873,7 +873,7 @@ Reactivate the FIMS planning repository.
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>7 days until the CIE Review.</li>
@@ -980,7 +980,7 @@ Continue work on the interface for random effects.
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>14 days until the CIE Review.</li>
@@ -1094,7 +1094,7 @@ Finalize the Pacific Hake case study.
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>21 days until the CIE Review.</li>
@@ -1235,7 +1235,7 @@ Last reminder regarding the FIMS manuscript! The <a href="https://docs.google.co
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>36 days until the CIE Review, main will be frozen by next Monday when we have to turn in all materials to the CIE Reviewers.</li>
@@ -1448,7 +1448,7 @@ Ian will be giving a seminar on <code>FIMSFrame</code>.
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>29 days until the CIE Review.</li>
@@ -1630,7 +1630,7 @@ We have addressed the comments we received on the FIMS manuscript from reviewers
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>43 days until the CIE Review.</li>
@@ -1750,7 +1750,7 @@ We need more good first issues on FIMS, see <a href="https://community.apache.or
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>50 days until the CIE Review.</li>
@@ -1879,7 +1879,7 @@ Matthew is working ALL WEEK on <a href="https://github.com/NOAA-FIMS/FIMS/issues
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>Please consider submitting an entry to the <a href="https://noaa-fims.github.io/blog/">FIMS blog</a>, Elizabeth made this handy <a href="https://github.com/NOAA-FIMS/noaa-fims.github.io/blob/main/blog/blog_template.qmd">template</a> to make it as painless as possible.</li>
@@ -2332,7 +2332,7 @@ Ron has done some great work on cleaning up the surplus production model and tha
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>If you attended the FIMS Training on Monday, please fill out the survey on <a href="https://docs.google.com/forms/d/e/1FAIpQLSehj6N1ka568ohEsakRQZbHxrduf1EswkYbVavhPXYBuruM7A/viewform">Google Cloud Workstations</a>.</li>
@@ -2457,7 +2457,7 @@ Lots of side meetings are happening for FIMS. One of those was regarding the des
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>Please look at the FIMS calendar on a regular basis. There are lots of meetings happening that you can attend but global announcements are no longer going out in an attempt to save your inboxes from overload. One of those such meetings is the Code Club happening this Friday.</li>
@@ -2583,7 +2583,7 @@ We have an Implementation Team Meeting and a tutorial on FIMSdiags this week. Pl
 </div><div class="column" style="width:49%;">
 <section id="input-needed" class="level2">
 <h2 class="anchored" data-anchor-id="input-needed">❗Input Needed ❗</h2>
-<p>These are the discussions and issues that we need your input on!</p>
+<p>Discussions and issues where we need your input!</p>
 <div id="announcements">
 <ul>
 <li>If you attended the FIMS Training on Monday, please fill out the survey on <a href="https://docs.google.com/forms/d/e/1FAIpQLSehj6N1ka568ohEsakRQZbHxrduf1EswkYbVavhPXYBuruM7A/viewform">Google Cloud Workstations</a>.</li>
