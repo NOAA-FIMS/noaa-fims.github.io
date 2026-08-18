@@ -30,9 +30,34 @@ header-includes: >
 <i class="bi bi-geo-alt-fill"></i>
 :::
 ::: {.fims-step-content}
-<h4>Introduce Yourself</h4>
-<p>Join the community and tell us about your research if you haven't done so already.</p>
-<a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="fims-btn-small fims-task-btn">Start <i class="bi bi-arrow-right"></i></a>
+<h4>FIMS Community</h4>
+<p>First, let's make sure you are plugged in to the FIMS community!</p>
+
+[<i class="bi bi-emoji-sunglasses"></i> Keep up on the Community Page](/community/index.html)
+
+[<i class="bi bi-chat-text"></i> Get involved in GitHub discussions](https://github.com/orgs/NOAA-FIMS/discussions/){.fims-btn-small .fims-task-btn target="_blank"}
+
+[<i class="bi bi-envelope"></i> Subscribe to our weekly newsletter](https://github.com/orgs/NOAA-FIMS/discussions/1461#discussioncomment-17065818){.fims-btn-small .fims-task-btn target="_blank"}
+
+[<i class="bi bi-calendar-week"></i> View and add the FIMS calendar, especially Code Clubs!](/about/calendar.html){.fims-btn-small .fims-task-btn}
+:::
+:::
+
+
+
+::: {.fims-step .fims-timeline-item}
+::: {.fims-step-number}
+<i class="bi bi-geo-alt-fill"></i>
+:::
+::: {.fims-step-content}
+<h4>Contributor's Guides</h4>
+<p>Familiarize yourself with our contributor's guides for our various projects.</p>
+
+[<i class="bi bi-code"></i> Contributing to FIMS Source Code](https://github.com/NOAA-FIMS/FIMS/blob/main/CONTRIBUTING.md#contributing-to-the-noaa-fisheries-integrated-modeling-system){.fims-btn-small .fims-task-btn target="_blank"}
+
+[<i class="bi bi-briefcase"></i> Contributing Case Studies](https://github.com//NOAA-FIMS/case-studies#fims-case-studies){.fims-btn-small .fims-task-btn target="_blank"}
+
+[<i class="bi bi-menu-button-wide-fill"></i> Contributing a Blog Post or to the Website](/contributing.md){.fims-btn-small .fims-task-btn}
 :::
 :::
 
