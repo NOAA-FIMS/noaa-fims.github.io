@@ -42,7 +42,7 @@
   text-decoration: none; 
   transition: all 0.2s ease;
   background-color: var(--slate-90); 
-  color: var(--slate-40); 
+  color: var(--slate-20); 
   border: 1px solid var(--slate-80); 
 }
 .fims-pill:hover { 
