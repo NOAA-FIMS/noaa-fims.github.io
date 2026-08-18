@@ -3,7 +3,7 @@ name: Accessibility Audit
 # Trigger this on Pull Requests against main, and allow manual runs
 on:
   push:
-    branches: [ main ]
+    # branches: [ main ]
   pull_request:
     branches: [ main ]
   workflow_dispatch:
