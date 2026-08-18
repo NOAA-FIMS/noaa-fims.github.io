@@ -48,9 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-12e365f24a4b4913e1296245ea4537a8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2d7eb0530402e3af163a54230485c4e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d6f832aa94d119160e5f37568b55255e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-2d7eb0530402e3af163a54230485c4e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5a17f8981dcc169fd558a390d8bf4c07.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-4ffd8e27b392f94f7f51c5dc95ed2c8f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5a17f8981dcc169fd558a390d8bf4c07.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -273,7 +273,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">FIMS <small><strong>?env:VERSION</strong></small></span>
+    <span class="navbar-title">FIMS <small>v0.9.4</small></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -377,7 +377,6 @@ ul.task-list li input[type="checkbox"] {
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 <!-- Skip to main content link for keyboard accessibility -->
-<a href="#quarto-content" class="skip-link">Skip to main content</a>
 <style>
 .skip-link {
   position: absolute;
@@ -398,6 +397,15 @@ ul.task-list li input[type="checkbox"] {
   outline-offset: 2px;
 }
 </style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const skipLink = document.createElement('a');
+    skipLink.href = '#quarto-content';
+    skipLink.className = 'skip-link';
+    skipLink.textContent = 'Skip to main content';
+    document.body.prepend(skipLink);
+  });
+</script>
 
 
 
@@ -448,6 +456,8 @@ HELPFUL RESOURCES
 <section id="photo-of-the-week" class="level2">
 <h2 class="anchored" data-anchor-id="photo-of-the-week">PHOTO OF THE WEEK</h2>
 <p><strong>?meta:photo.text</strong></p>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
 
 
 </section>
@@ -461,21 +471,48 @@ document.addEventListener("DOMContentLoaded", function () {
     "/FIMSdiags/",
     "/FIMSRTMB/",
     "/fims-pkgdown-template/",
-    "/ecosystemom/"
+    "/ecosystemom/",
     "/fishprior/"
   ];
 
   document.querySelectorAll("a[href]").forEach(function (link) {
     var href = link.getAttribute("href");
-    if (!href) return;
+    if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) {
+      return;
+    }
 
-    var url = new URL(href, window.location.origin);
-    var isExternal = url.hostname !== window.location.hostname;
-    var isForcedInternal = forceNewTabPaths.includes(url.pathname);
+    try {
+      var url = new URL(href, window.location.origin);
+      var isExternal = url.hostname !== window.location.hostname;
+      var isForcedInternal = forceNewTabPaths.includes(url.pathname);
 
-    if (isExternal || isForcedInternal) {
-      link.setAttribute("target", "_blank");
-      link.setAttribute("rel", "noopener noreferrer");
+      if (isExternal || isForcedInternal) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+
+        // Accessibility Fix: Add a screen-reader-only warning if not already present
+        if (!link.hasAttribute("data-new-tab-warning")) {
+          var srWarning = document.createElement("span");
+          srWarning.textContent = " (opens in a new tab)";
+
+          // Use CSS to hide this text visually, but keep it available to screen readers
+          srWarning.style.position = "absolute";
+          srWarning.style.width = "1px";
+          srWarning.style.height = "1px";
+          srWarning.style.padding = "0";
+          srWarning.style.margin = "-1px";
+          srWarning.style.overflow = "hidden";
+          srWarning.style.clip = "rect(0, 0, 0, 0)";
+          srWarning.style.whiteSpace = "nowrap";
+          srWarning.style.border = "0";
+          
+          link.appendChild(srWarning);
+          // Prevent duplicates
+          link.setAttribute("data-new-tab-warning", "true");
+        }
+      }
+    } catch (error) {
+      console.warn("Skipping invalid link URL:", href, error);
     }
   });
 });
@@ -903,7 +940,7 @@ document.addEventListener("DOMContentLoaded", function () {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="FIMS on GitHub" aria-label="Visit FIMS on GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a> <a class="link-dark" href="https://noaa-fims.r-universe.dev" title="FIMS R Universe" aria-label="Visit FIMS R Universe repository" target="_blank" rel="noopener"><i class="fab fa-r-project" aria-hidden="true"></i></a></p>
+<p><a class="link-dark" href="https://github.com/NOAA-FIMS" title="FIMS on GitHub" aria-label="Visit FIMS on GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a> <a class="link-dark" href="https://noaa-fisheries-integrated-toolbox.r-universe.dev" title="FIMS R Universe" aria-label="Visit FIMS R Universe repository" target="_blank" rel="noopener"><i class="fab fa-r-project" aria-hidden="true"></i></a></p>
 </div>
   </div>
 </footer>
