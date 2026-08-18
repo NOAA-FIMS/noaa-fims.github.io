@@ -47,22 +47,6 @@ Go beyond the default configurations, run diagnostics, etc.
 :::
 
 ::: {.fims-card .position-relative}
-::: {.fims-card-icon .bi .bi-rocket}
-:::
-### I am an advanced user
-Move beyond the common wrapper functions to set up custom configurations..
-
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Building FIMS from modules 
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Alternative model families
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Running model comparisons
-
-::: {.fims-card-footer}
-[Start Advanced User Path <i class="bi bi-arrow-right"></i>](advanced-user.qmd){.fims-btn-full .stretched-link}
-:::
-
-:::
-
-::: {.fims-card .position-relative}
 ::: {.fims-card-icon .bi .bi-lightning}
 :::
 ### I am a power user
