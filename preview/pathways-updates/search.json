@@ -18,7 +18,7 @@
     "href": "get-started/power-user.html",
     "title": "FIMS",
     "section": "",
-    "text": "New User  Emerging User  Advanced User  Power User  Contributor  Decision Maker\n\n\n\n\nLet’s get you ready to dive deeper into FIMS.\n\n\n\n\n\n\n\n\n\n\n\nJoin the community and tell us about your research if you haven’t done so already.\n\nStart \n\n\n\n\n\n\n\n\n\nExplore advanced features in FIMS through these vignettes.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn from real-world applications of FIMS using our case studies.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn about the different functions available in FIMS and how to use them.\n\nStart \n\n\n\n\n\n\n\n\n\nExplore the C++ documentation for advanced FIMS development.\n\nStart \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRTMB extension for FIMS\n\n\n\n\n\n\n\n\n\nUpcoming events like Code Clubs, tutorials, etc."
+    "text": "New User  Emerging User  Power User  Contributor  Decision Maker\n\n\n\n\nLet’s get you ready to dive deeper into FIMS.\n\n\n\n\n\n\n\n\n\n\n\nJoin the community and tell us about your research if you haven’t done so already.\n\nStart \n\n\n\n\n\n\n\n\n\nExplore advanced features in FIMS through these vignettes.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn from real-world applications of FIMS using our case studies.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn about the different functions available in FIMS and how to use them.\n\nStart \n\n\n\n\n\n\n\n\n\nExplore the C++ documentation for advanced FIMS development.\n\nStart \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRTMB extension for FIMS\n\n\n\n\n\n\n\n\n\nUpcoming events like Code Clubs, tutorials, etc."
   },
   {
     "objectID": "get-started/power-user.html#welcome",
@@ -32,25 +32,25 @@
     "href": "get-started/index.html",
     "title": "Get Started",
     "section": "",
-    "text": "Unsure where to start? Choose your path!\n\nSelect the user pathway that best describes your goals. Click on the button for each pathway to see all of the resources available.\n\n\n\n\n\n\n\nI am a new user\nGet connected to FIMS resources and learn how to run a model in FIMS.\n\n Welcome to FIMS!\n Running a basic FIMS model\n FIMS Input Data\n\n\nStart New User Path \n\n\n\n\n\n\n\n\nI am an emerging user\nGo beyond the default configurations, run diagnostics, etc.\n\n Diagnostics\n Changing model configurations\n Comparing FIMS to other models\n\n\nStart Emerging User Path \n\n\n\n\n\n\n\n\nI am an advanced user\nMove beyond the common wrapper functions to set up custom configurations..\n\n Building FIMS from modules\n Alternative model families\n Running model comparisons\n\n\nStart Advanced User Path \n\n\n\n\n\n\n\n\nI am a power user\nLearn how to use FIMS beyond the R helper functions.\n\n Advanced vignettes\n Case studies\n C++ documentation\n\n\nStart Power User Path \n\n\n\n\n\n\n\n\nI want to contribute\nLearn how to contribute contribute code, documentation, testing, etc. to FIMS!\n\n Contributor guidelines\n Good first issues\n FIMS project board\n\n\nStart Contributor Path \n\n\n\n\n\n\n\n\nI am a decision maker or manager\nLearn how to interpret FIMS outputs and use them to inform decision making.\n\n FAQ\n Project milestones\n Projects & publications\n\n\nStart Decision Maker Path",
+    "text": "Unsure where to start? Choose your path!\n\nSelect the user pathway that best describes your goals. Click on the button for each pathway to see all of the resources available.\n\n\n\n\n\n\n\nI am a new user\nGet connected to FIMS resources and learn how to run a model in FIMS.\n\n Welcome to FIMS!\n Running a basic FIMS model\n FIMS Input Data\n\n\nStart New User Path \n\n\n\n\n\n\n\n\nI am an emerging user\nGo beyond the default configurations, run diagnostics, etc.\n\n Diagnostics\n Changing model configurations\n Comparing FIMS to other models\n\n\nStart Emerging User Path \n\n\n\n\n\n\n\n\nI am a power user\nLearn how to use FIMS beyond the R helper functions.\n\n Advanced vignettes\n Case studies\n C++ documentation\n\n\nStart Power User Path \n\n\n\n\n\n\n\n\nI want to contribute\nLearn how to contribute contribute code, documentation, testing, etc. to FIMS!\n\n Contributor guidelines\n Good first issues\n FIMS project board\n\n\nStart Contributor Path \n\n\n\n\n\n\n\n\nI am a decision maker or manager\nLearn how to interpret FIMS outputs and use them to inform decision making.\n\n FAQ\n Project milestones\n Projects & publications\n\n\nStart Decision Maker Path",
     "crumbs": [
       "get started",
       "Get Started"
     ]
   },
   {
-    "objectID": "get-started/contributor.html",
-    "href": "get-started/contributor.html",
+    "objectID": "get-started/decision-maker.html",
+    "href": "get-started/decision-maker.html",
     "title": "FIMS",
     "section": "",
-    "text": "New User  Emerging User  Advanced User  Power User  Contributor  Decision Maker\n\n\n\n\nLet’s get you ready to contribute to FIMS.\n\n\n\n\n\n\n\n\n\n\n\nJoin the community and tell us about your research if you haven’t done so already.\n\nStart \n\n\n\n\n\n\n\n\n\nExplore advanced features in FIMS through these vignettes.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn from real-world applications of FIMS using our case studies.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn about the different functions available in FIMS and how to use them.\n\nStart \n\n\n\n\n\n\n\n\n\nExplore the C++ documentation for advanced FIMS development.\n\nStart \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExplore the RTMB extension for FIMS\n\n\n\n\n\n\n\n\n\nUpcoming events like Code Clubs, tutorials, etc."
+    "text": "New User  Emerging User  Power User  Contributor  Decision Maker\n\n\n\n\nLet’s get you ready to make informed decisions using outputs from a FIMS model.\n\n\n\n\n\n\n\n\n\n\n\nJoin the community and tell us about your research if you haven’t done so already.\n\nStart \n\n\n\n\n\n\n\n\n\nExplore advanced features in FIMS through these vignettes.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn from real-world applications of FIMS using our case studies.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn about the different functions available in FIMS and how to use them.\n\nStart \n\n\n\n\n\n\n\n\n\nExplore the C++ documentation for advanced FIMS development.\n\nStart \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExplore the RTMB extension for FIMS\n\n\n\n\n\n\n\n\n\nUpcoming events like Code Clubs, tutorials, etc."
   },
   {
-    "objectID": "get-started/contributor.html#welcome",
-    "href": "get-started/contributor.html#welcome",
+    "objectID": "get-started/decision-maker.html#welcome",
+    "href": "get-started/decision-maker.html#welcome",
     "title": "FIMS",
     "section": "",
-    "text": "Let’s get you ready to contribute to FIMS."
+    "text": "Let’s get you ready to make informed decisions using outputs from a FIMS model."
   },
   {
     "objectID": "community/projects.html",
@@ -1473,25 +1473,18 @@
     ]
   },
   {
-    "objectID": "get-started/advanced-user.html",
-    "href": "get-started/advanced-user.html",
+    "objectID": "get-started/contributor.html",
+    "href": "get-started/contributor.html",
     "title": "FIMS",
     "section": "",
-    "text": "page-layout: full header-includes: &gt;  \n\n\n\n\n New User  Emerging User  Advanced User  Power User  Contributor  Decision Maker"
+    "text": "New User  Emerging User  Power User  Contributor  Decision Maker\n\n\n\n\nLet’s get you ready to contribute to FIMS.\n\n\n\n\n\n\n\n\n\n\n\nFirst, let’s make sure you are plugged in to the FIMS community!\n\n Keep up on the Community Page\n Get involved in GitHub discussions\n Subscribe to our weekly newsletter\n View and add the FIMS calendar, especially Code Clubs!\n\n\n\n\n\n\n\n\n\nFamiliarize yourself with our contributor’s guides for our various projects.\n\n Contributing to FIMS Source Code\n Contributing Case Studies\n Contributing a Blog Post or to the Website\n\n\n\n\n\n\n\n\n\nExplore advanced features in FIMS through these vignettes.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn from real-world applications of FIMS using our case studies.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn about the different functions available in FIMS and how to use them.\n\nStart \n\n\n\n\n\n\n\n\n\nExplore the C++ documentation for advanced FIMS development.\n\nStart \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExplore the RTMB extension for FIMS\n\n\n\n\n\n\n\n\n\nUpcoming events like Code Clubs, tutorials, etc."
   },
   {
-    "objectID": "get-started/decision-maker.html",
-    "href": "get-started/decision-maker.html",
+    "objectID": "get-started/contributor.html#welcome",
+    "href": "get-started/contributor.html#welcome",
     "title": "FIMS",
     "section": "",
-    "text": "New User  Emerging User  Advanced User  Power User  Contributor  Decision Maker\n\n\n\n\nLet’s get you ready to make informed decisions using outputs from a FIMS model.\n\n\n\n\n\n\n\n\n\n\n\nJoin the community and tell us about your research if you haven’t done so already.\n\nStart \n\n\n\n\n\n\n\n\n\nExplore advanced features in FIMS through these vignettes.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn from real-world applications of FIMS using our case studies.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn about the different functions available in FIMS and how to use them.\n\nStart \n\n\n\n\n\n\n\n\n\nExplore the C++ documentation for advanced FIMS development.\n\nStart \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExplore the RTMB extension for FIMS\n\n\n\n\n\n\n\n\n\nUpcoming events like Code Clubs, tutorials, etc."
-  },
-  {
-    "objectID": "get-started/decision-maker.html#welcome",
-    "href": "get-started/decision-maker.html#welcome",
-    "title": "FIMS",
-    "section": "",
-    "text": "Let’s get you ready to make informed decisions using outputs from a FIMS model."
+    "text": "Let’s get you ready to contribute to FIMS."
   },
   {
     "objectID": "get-started/emerging-user.html#you-have-leveled-up",
@@ -1505,7 +1498,7 @@
     "href": "get-started/new-user.html",
     "title": "FIMS",
     "section": "",
-    "text": "New User  Emerging User  Advanced User  Power User  Contributor  Decision Maker\n\n\n\n\nLet’s get you set up to run your first model in FIMS.\n\n\n\n\n\n\n\n\n\n\n\nUse the links below to learn more about FIMS.\n\n FAQs\n Check out our blog\n\n\n\n\n\n\n\n\n\nIntroduce yourself and get involved in the FIMS community.\n\n Introduce yourself to the team\n Get involved in other discussions\n View and add the FIMS calendar\n Subscribe to our weekly newsletter\n\n\n\n\n\n\n\n\n\nWalk through the model and data initial setup and familiarize yourself with the interface.\n\n Introduction to FIMS\n FIMS Input Data\n\n\n\n\n\n\n\n\n\nLearn about the different functions available in FIMS and how to use them.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn about transitioning to FIMS from other frameworks and how to adapt your workflow.\n\nStart \n\n\n\n\n\n\n\n\n\n\n\n\n\nOther R packages for FIMS."
+    "text": "New User  Emerging User  Power User  Contributor  Decision Maker\n\n\n\n\nLet’s get you set up to run your first model in FIMS.\n\n\n\n\n\n\n\n\n\n\n\nUse the links below to learn more about FIMS.\n\n FAQs\n Check out our blog\n\n\n\n\n\n\n\n\n\nIntroduce yourself and get involved in the FIMS community.\n\n Introduce yourself to the team\n Get involved in other discussions\n View and add the FIMS calendar\n Subscribe to our weekly newsletter\n\n\n\n\n\n\n\n\n\nWalk through the model and data initial setup and familiarize yourself with the interface.\n\n Introduction to FIMS\n FIMS Input Data\n\n\n\n\n\n\n\n\n\nLearn about the different functions available in FIMS and how to use them.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn about transitioning to FIMS from other frameworks and how to adapt your workflow.\n\nStart \n\n\n\n\n\n\n\n\n\n\n\n\n\nOther R packages for FIMS."
   },
   {
     "objectID": "get-started/new-user.html#welcome",
@@ -1519,7 +1512,7 @@
     "href": "get-started/transitioning.html",
     "title": "Transitioning to FIMS",
     "section": "",
-    "text": "Placeholder content for transitioning to FIMS page. This page will include information about how to transition your model to FIMS, including resources, vignettes, and support available to help with the transition."
+    "text": "Placeholder content for transitioning to FIMS page. This page will include information about how to transition your model to FIMS, including resources, vignettes, the case studies repository, and support available to help with the transition."
   },
   {
     "objectID": "index.html",
