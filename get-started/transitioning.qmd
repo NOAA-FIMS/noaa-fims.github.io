@@ -6,4 +6,4 @@ toc-location: right
 toc-depth: 2
 ---
 
-Placeholder content for transitioning to FIMS page. This page will include information about how to transition your model to FIMS, including resources, vignettes, and support available to help with the transition.
+Placeholder content for transitioning to FIMS page. This page will include information about how to transition your model to FIMS, including resources, vignettes, the [case studies repository](https://github.com/NOAA-FIMS/case-studies), and support available to help with the transition. 
