@@ -133,7 +133,7 @@ render_item <- function(url) {
     
     if (is_discussion) {
       if (!nzchar(pat)) {
-        return(sprintf('<div class="gh-list-item"><div class="gh-details"><div class="gh-title">%s</div><div class="gh-meta" style="color:red;">Cannot fetch: DISCUSSIONS_PAT is missing from .Renviron</div></div></div>', url))
+        return(sprintf('<div class="gh-list-item"><div class="gh-details"><div class="gh-title">%s</div><div class="gh-meta" style="color:#cf222e;">Cannot fetch: DISCUSSIONS_PAT is missing from .Renviron</div></div></div>', url))
       }
       
       if (is_org_match) {
@@ -184,7 +184,7 @@ render_item <- function(url) {
       
       response <- try(httr::GET(api_url, headers), silent = TRUE)
       if (inherits(response, "try-error") || httr::status_code(response) != 200) {
-        return(sprintf('<div class="gh-list-item"><div class="gh-details"><div class="gh-title">%s</div><div class="gh-meta" style="color:red;">REST API failed with status %s</div></div></div>', url, httr::status_code(response)))
+        return(sprintf('<div class="gh-list-item"><div class="gh-details"><div class="gh-title">%s</div><div class="gh-meta" style="color:#cf222e;">REST API failed with status %s</div></div></div>', url, httr::status_code(response)))
       }
 
       item <- jsonlite::fromJSON(httr::content(response, "text", encoding = "UTF-8"))
