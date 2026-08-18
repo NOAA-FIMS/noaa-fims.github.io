@@ -1,0 +1,320 @@
+:::::: columns
+::: {.column width="49%"}
+## BIG THINGS HAPPENING
+
+```{r}
+#| echo: false
+#| results: asis
+
+big_things <- rmarkdown::metadata$'big-things'
+
+# Check if big_things exists and has content
+if (!is.null(big_things) && any(nzchar(unlist(big_things)))) {
+  items <- unlist(big_things)
+  items <- items[nzchar(trimws(items))]
+  
+  cat('<ul>\n')
+  for (item in items) {
+    cat(paste0('  <li>', item, '</li>\n'))
+  }
+  cat('</ul>\n')
+}
+```
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="49%"}
+## ❗Input Needed ❗
+
+Discussions and issues where we need your input!
+
+```{r, echo=FALSE, results="asis"}
+#| cache: false
+# This chunk fetches details for GitHub issues/PRs listed in the 'input' YAML field
+# and renders them in a GitHub-like style. It requires httr, jsonlite, stringr, and purrr.
+
+input_urls <- rmarkdown::metadata$input
+
+# Only proceed if there are URLs in the 'input' field
+if (!is.null(input_urls) && length(input_urls) > 0 && any(nzchar(unlist(input_urls)))) {
+
+  # Self-contained CSS for styling the issue list
+  cat("
+<style>
+.gh-list-item { display: flex; align-items: flex-start; gap: 8px; padding: 8px 0; border-top: 1px solid #d8dee4; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+.gh-list-item:first-child { border-top: 0; }
+.gh-icon { flex-shrink: 0; margin-top: 3px; }
+.gh-icon svg { display: block; }
+.gh-icon.open { color: #2da44e; }
+.gh-icon.closed { color: #8250df; }
+.gh-icon.merged { color: #8250df; }
+.gh-icon.draft { color: #6e7781; }
+.gh-details { flex-grow: 1; }
+.gh-title-row { display: flex; justify-content: space-between; align-items: center; }
+.gh-title { font-size: 16px; font-weight: 600; margin: 0; }
+.gh-title a { color: #0969da; text-decoration: none; }
+.gh-title a:hover { text-decoration: underline; }
+.gh-meta { font-size: 12px; color: #57606a; margin-top: 4px; }
+.gh-labels { margin-top: 4px; line-height: 1.5; }
+.gh-label { display: inline-block; padding: 0 7px; font-size: 12px; font-weight: 500; line-height: 18px; border-radius: 2em; border: 1px solid transparent; }
+.quarto-dark .gh-list-item { border-top-color: #30363d; }
+.quarto-dark .gh-icon.open { color: #3fb950; }
+.quarto-dark .gh-icon.closed { color: #a371f7; }
+.quarto-dark .gh-icon.merged { color: #a371f7; }
+.quarto-dark .gh-title a { color: #58a6ff; }
+.quarto-dark .gh-meta { color: #8b949e; }
+</style>
+")
+
+  # SVG icons for different states
+  icons <- list(
+    open = '<svg class="gh-icon open" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path></svg>',
+    closed = '<svg class="gh-icon closed" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path></svg>',
+    merged = '<svg class="gh-icon merged" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M5 3.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm0 2.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm-1.5 5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm2.25-4a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm.75 2.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm0 2.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm5-4.5a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm.75 2.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm0 2.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm2.25-4a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm.75 2.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm0 2.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"></path><path d="M1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0ZM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Z"></path></svg>',
+    draft = '<svg class="gh-icon draft" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16ZM4 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"></path></svg>',
+    discussion = '<svg class="gh-icon open" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0 1 13.25 12H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 13.543V12H2.75A1.75 1.75 0 0 1 1 10.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2.5a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.25a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg>'
+  )
+
+# Helper function to render GitHub labels from either REST (data.frame) or GraphQL (list)
+  # Helper function to render GitHub labels from either REST or GraphQL
+  render_labels <- function(labels_data) {
+    # GraphQL nests the actual list of labels inside a "nodes" item
+    if (is.list(labels_data) && "nodes" %in% names(labels_data)) {
+      labels_data <- labels_data$nodes
+    }
+    
+    if (is.null(labels_data) || length(labels_data) == 0 || (is.data.frame(labels_data) && nrow(labels_data) == 0)) {
+      return("")
+    }
+    
+    # Force it into a data frame just to be safe
+    if (!is.data.frame(labels_data)) {
+      labels_data <- as.data.frame(do.call(rbind, labels_data))
+    }
+    
+    # Loop over the rows by their index number to avoid the atomic vector error
+    label_tags <- sapply(seq_len(nrow(labels_data)), function(i) {
+      name <- labels_data$name[i]
+      color <- labels_data$color[i]
+      
+      hex <- paste0("#", color)
+      rgb <- grDevices::col2rgb(hex)
+      
+      # col2rgb returns a matrix, so we grab row 1 (R), 2 (G), and 3 (B)
+      brightness <- (rgb[1, 1] * 299 + rgb[2, 1] * 587 + rgb[3, 1] * 114) / 1000
+      text_color <- ifelse(brightness > 128, "#000000", "#ffffff")
+      
+      sprintf('<span class="gh-label" style="background-color: %s; color: %s;">%s</span>', hex, text_color, name)
+    })
+    
+    paste0('<div class="gh-labels">', paste(label_tags, collapse = " "), '</div>')
+  }
+
+render_item <- function(url) {
+    repo_match <- stringr::str_match(url, "https://github\\.com/([^/]+)/([^/]+)/(issues|pull|discussions)/(\\d+)")
+    org_match <- stringr::str_match(url, "https://github\\.com/orgs/([^/]+)/discussions/(\\d+)")
+
+    is_repo_match <- !is.na(repo_match[1, 1])
+    is_org_match <- !is.na(org_match[1, 1])
+
+    pat <- Sys.getenv("DISCUSSIONS_PAT")
+    if (nzchar(pat)) {
+      headers <- httr::add_headers(
+        "User-Agent" = "NOAA-FIMS-Website-Builder",
+        "Authorization" = paste("token", pat)
+      )
+    } else {
+      headers <- httr::add_headers("User-Agent" = "NOAA-FIMS-Website-Builder")
+    }
+
+    is_discussion <- is_org_match || (is_repo_match && repo_match[1, 4] == "discussions")
+    
+    if (is_discussion) {
+      if (!nzchar(pat)) {
+        return(sprintf('<div class="gh-list-item"><div class="gh-details"><div class="gh-title">%s</div><div class="gh-meta" style="color:#cf222e;">Cannot fetch: DISCUSSIONS_PAT is missing from .Renviron</div></div></div>', url))
+      }
+      
+      if (is_org_match) {
+        org <- org_match[1, 2]
+        number <- as.integer(org_match[1, 3])
+        # Force the GraphQL query to look inside the backing FIMS repository
+        graphql_query <- sprintf('query { repository(owner: "%s", name: "FIMS") { discussion(number: %d) { title, url, closed, labels(first: 10) { nodes { name, color } } } } }', org, number)
+        item_path <- c("data", "repository", "discussion")
+      } else {
+        owner <- repo_match[1, 2]
+        repo <- repo_match[1, 3]
+        number <- as.integer(repo_match[1, 5])
+        graphql_query <- sprintf('query { repository(owner: "%s", name: "%s") { discussion(number: %d) { title, url, closed, labels(first: 10) { nodes { name, color } } } } }', owner, repo, number)
+        item_path <- c("data", "repository", "discussion")
+      }
+
+      response <- httr::POST("https://api.github.com/graphql", headers, body = list(query = graphql_query), encode = "json")
+      raw_text <- httr::content(response, "text", encoding = "UTF-8")
+      content <- jsonlite::fromJSON(raw_text)
+
+      if (httr::status_code(response) != 200 || !is.null(content$errors)) {
+        safe_json <- gsub("<", "&lt;", raw_text)
+        return(sprintf('<div class="gh-list-item" style="background:#ffebe9; padding:10px; border:1px solid #cf222e;"><div class="gh-details"><strong>GitHub API Error for %s:</strong><br><pre style="white-space:pre-wrap; font-size:11px;">%s</pre></div></div>', url, safe_json))
+      }
+
+      item <- purrr::pluck(content, .default = NULL, !!!item_path)
+      
+      if (is.null(item)) {
+        safe_json <- gsub("<", "&lt;", raw_text)
+        return(sprintf('<div class="gh-list-item" style="background:#fff8c5; padding:10px; border:1px solid #d4a72c;"><div class="gh-details"><strong>Data Not Found for %s:</strong><br><pre style="white-space:pre-wrap; font-size:11px;">%s</pre></div></div>', url, safe_json))
+      }
+      
+      state_class <- if (item$closed) "closed" else "open"
+      icon_svg <- if (state_class == "closed") icons$closed else icons$discussion
+      labels_html <- render_labels(item$labels)
+
+      # Removed the gh-meta div
+      return(sprintf('<div class="gh-list-item"><div class="gh-icon %s">%s</div><div class="gh-details"><div class="gh-title"><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></div>%s</div></div>', state_class, icon_svg, url, item$title, labels_html))
+    }
+
+    # REST API Block
+    is_issue_or_pr <- is_repo_match && repo_match[1, 4] %in% c("issues", "pull")
+    if (is_issue_or_pr) {
+      owner <- repo_match[1, 2]
+      repo <- repo_match[1, 3]
+      number <- repo_match[1, 5]
+      api_url <- paste0("https://api.github.com/repos/", owner, "/", repo, "/issues/", number)
+      
+      response <- try(httr::GET(api_url, headers), silent = TRUE)
+      if (inherits(response, "try-error") || httr::status_code(response) != 200) {
+        return(sprintf('<div class="gh-list-item"><div class="gh-details"><div class="gh-title">%s</div><div class="gh-meta" style="color:#cf222e;">REST API failed with status %s</div></div></div>', url, httr::status_code(response)))
+      }
+
+      item <- jsonlite::fromJSON(httr::content(response, "text", encoding = "UTF-8"))
+      is_merged <- !is.null(item$pull_request) && !is.null(item$pull_request$merged_at) && !is.na(item$pull_request$merged_at)
+      is_draft <- !is.null(item$draft) && item$draft
+      
+      state_class <- if (is_merged) "merged" else if (is_draft) "draft" else item$state
+      icon_svg <- icons[[state_class]]
+      labels_html <- render_labels(item$labels)
+
+      # Removed the gh-meta div
+      return(sprintf('<div class="gh-list-item"><div class="gh-icon %s">%s</div><div class="gh-details"><div class="gh-title"><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></div>%s</div></div>', state_class, icon_svg, item$html_url, item$title, labels_html))
+    }
+
+    return(paste0("<li><a href='", url, "'>", url, "</a></li>"))
+  }
+
+  cat(sapply(unlist(input_urls), render_item), sep = "\n")
+
+} else {
+  # Fallback to original announcement logic for backward compatibility
+  announcements <- rmarkdown::metadata$announcements
+  if (!is.null(announcements) && any(nzchar(unlist(announcements)))) {
+    items <- unlist(announcements)
+    items <- items[nzchar(trimws(items))]
+    cat('<ul>\n')
+    for (item in items) {
+      cat(paste0('  <li>', item, '</li>\n'))
+    }
+    cat('</ul>\n')
+  } else {
+    cat('{{< contents announcements >}}')
+  }
+}
+```
+:::
+::::::
+
+<br> <br>
+
+:::::::::::: {.columns .equal-h2-cols}
+:::: {.column width="30%"}
+::: header-wrap
+<h2>HELPFUL RESOURCES</h2>
+:::
+
+- [FIMS Website](https://noaa-fims.github.io/)
+- [GitHub Discussions](https://github.com/orgs/NOAA-FIMS/discussions)
+- [FIMS Planning](https://github.com/orgs/NOAA-FIMS/projects/33)
+- [FAQs](https://noaa-fims.github.io/about/faq)
+::::
+
+::: {.column width="2%"}
+:::
+
+:::::::: {#upcoming-events-col .column width="68%"}
+::: header-wrap
+<h2>UPCOMING EVENTS</h2>
+:::
+
+::: {.content-visible when-meta="show-calendar"}
+```{=html}
+<iframe src="https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0; width: 100%; height: 500px;" frameborder="0" scrolling="no" title="FIMS Upcoming Events Calendar"></iframe>
+```
+:::
+
+::::: {.content-hidden when-meta="show-calendar"}
+<!-- Used for previous version of FIMS weekly that is retained to make sure those still work -->
+
+::: {.content-hidden unless-meta="upcoming-events.code-club"}
+### {{< meta upcoming-events.code-club-date >}}
+
+{{< meta upcoming-events.code-club-name >}}\n Time: 13:00–16:00 E; 10:00–13:00 P; 9:00–12:00 AK; 7:00–10:00 H\n Location: Virtual\n Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=ica-ieta-ndu&ref=https://meet.google.com/ica-ieta-ndu)
+:::
+
+::: {.content-hidden unless-meta="upcoming-events.seaside-chat"}
+### {{< meta upcoming-events.seaside-chat-date >}}
+
+{{< meta upcoming-events.seaside-chat-name >}}\n Time: 13:00–14:00 E; 10:00–11:00 P; 9:00–10:00 AK; 7:00–8:00 H\n Location: Virtual\n Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=scg-pyqi-ghj&ref=https://meet.google.com/scg-pyqi-ghj)
+:::
+
+{{< contents additional-events >}}
+
+<!-- end -->
+:::::
+::::::::
+::::::::::::
+
+:::: {.content-visible when-meta="summary.include"}
+## Summary
+
+{{< meta summary.text >}}
+
+::: {.content-visible when-meta="summary.include-photo"}
+<img src="{{&lt; meta summary.path &gt;}}" alt="{{&lt; meta summary.alt-text &gt;}}" style="height:150%;"/>
+:::
+
+{{< contents summary-code >}}
+::::
+
+<!-- Used for previous fims weekly posts which used a photo section. -->
+
+:::: {.content-visible when-meta="photo.include"}
+## Photo of the week
+
+{{< meta photo.text >}}
+
+::: {.content-visible when-meta="photo.include-photo"}
+<img src="{{&lt; meta photo.path &gt;}}" alt="{{&lt; meta photo.alt-text &gt;}}" style="height:150%;"/>
+:::
+
+{{< contents photo-code >}}
+::::
+
+<!-- end -->
+
+```{=html}
+<script src="https://giscus.app/client.js"
+        data-repo="noaa-fims/FIMS"
+        data-repo-id="R_kgDOGvEn5A"
+        data-category="Blog discussions"
+        data-category-id="DIC_kwDOGvEn5M4C-hls"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+```

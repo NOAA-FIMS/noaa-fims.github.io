@@ -3,9 +3,9 @@ title: "FIMS Weekly - September 21–26, 2025"
 date: "September 21, 2025"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - doxygen
-three-big-things:
+big-things:
   bt1: "A new release of FIMS will come out this week that contains the PRs brought in last week thanks to Bai and Eric as well as improvements to the documentation thanks to those that showed up to Code Club and the extra design document meetings. Everyone's work is greatly appreciated. Check out the issues listed in the [CIE cleanup milestone](https://github.com/NOAA-FIMS/FIMS/milestone/14) for more tasks to work on."
   bt2: "Once a bug in the likelihood calculations is fixed in dev-json-caa, this branch will be merged into dev. By the end of the day today though it will be rebased and Nathan can branch off it to start adding projections and Meg and Ian can use it for their diagnostic work."
   bt3: "The case studies are mid-stream in an update to use {asar} and {stockplotr} for plotting. Thanks to help from Kyle and Sam we have two case studies nearly complete and we hope to get some help porting over the remaining ones this week."
@@ -21,10 +21,11 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "doxygen use to be so foreign to me and I wished we could just use roxygen😒. Now, I feel more at home with doxygen and have even learned some tips (see below) to making it better and feel more roxygen like✅."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 43 more days until the CIE Review; a big thanks to 👏Aaron Berger (NWFSC)👏 for stepping up to the be the chair of the CIE Review

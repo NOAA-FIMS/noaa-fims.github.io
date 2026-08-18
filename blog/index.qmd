@@ -4,7 +4,7 @@ description: >
   **Category Definitions**
   <br>
   <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> <span class="visually-hidden">Category icon: </span><strong>deep-dive</strong>: learning about complex stock assessment concepts, academic exercises, and statistical best practices <br>
-  <i class="fa-solid fa-newspaper" aria-hidden="true"></i> <span class="visually-hidden">Category icon: </span><strong>fims-weekly</strong>: FIMS weekly newsletter posts <br>
+  <i class="fa-solid fa-newspaper" aria-hidden="true"></i> <span class="visually-hidden">Category icon: </span><strong>fims-monthly</strong>: FIMS weekly newsletter posts <br>
   <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> <span class="visually-hidden">Category icon: </span><strong>learn</strong>: learning about packages within FIMS, geared toward beginner and intermediate users <br>
   <i class="fa-solid fa-circle" aria-hidden="true"></i> <span class="visually-hidden">Category icon: </span><strong>other</strong>: posts that do not fit the other categories <br>
   <br>
@@ -16,7 +16,7 @@ description: >
 listing:
   contents:
     - "*.qmd"
-    - "!fims-weekly-template.qmd"
+    - "!fims-monthly-template.qmd"
     - "!blog_template.qmd"
   sort: "date desc"
   type: default
@@ -30,4 +30,5 @@ listing:
 page-layout: full
 title-block-banner: false
 comments: false
+body-classes: blog-index-page
 ---

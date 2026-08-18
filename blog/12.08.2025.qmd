@@ -3,10 +3,10 @@ title: "FIMS Weekly - December 08–12, 2025"
 date: "December 08, 2025"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - releases
   - projections
-three-big-things:
+big-things:
   bt1: "v0.7.0 will be released this week, thanks to Matthew for finishing up the model families code and Bai and Adrianne for working on cleanup tasks while the rest of us were away from our desks."
   bt2: "The code for projections just needs a vignette, which will be worked on this week, then we can release [this PR](https://github.com/NOAA-FIMS/FIMS/pull/1035) next week hopefully."
   bt3: "Implementation of 'epics' in the issue tracker will start this week in an effort to help communicate the timeline. Epics are essentially parent issues that help link small issues to a larger feature."
@@ -19,17 +19,15 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "A new expectation `expect_shape()` is available from {testthat} which checks the dimensions of the object of interest, e.g., number of rows or number of columns! This function could be helpful for FIMS where we expect the model results to have a certain number of rows."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - Consider attending the [CAPAM workshop](https://www.populationassessment.com/tuna/next-gen-model) on tuna models this week.
 ::: 
-    
-::: {#additional-events}
-:::
 
 ::: {#photo-code}
 

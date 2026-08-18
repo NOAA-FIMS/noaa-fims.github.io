@@ -2,10 +2,10 @@
 # The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - May 11–15, 2026"
 date: "May 11, 2026"
-# Change the following categories accordingly, but you MUST keep fims-weekly
+# Change the following categories accordingly, but you MUST keep fims-monthly
 categories:
-  - fims-weekly
-three-big-things:
+  - fims-monthly
+big-things:
   bt1: "As we shift to using 'translational units' to compile FIMS, much like how RTMB compiles, we are also thinking about storing metrics related to building FIMS, e.g., compile time and size. This week Matthew is working on getting [PR #1430](https://github.com/NOAA-FIMS/FIMS/pull/1430) and [PR #1336](https://github.com/NOAA-FIMS/FIMS/pull/1336) to work together."
   bt2: "Week 2 of community bonding with the Google Summer of Code Contributors. We are meeting with each of them to finalize their proposals."
   bt3: "Reworking this weekly newsletter to be more informative about FIMS development by changing the Photo of the Week to a Project Summary of the Week."
@@ -18,13 +18,14 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "Just this morning I learned that issues associated with a milestone can be ordered to show users which issues will be worked on first. This should help communicate how work will be prioritized within FIMS."
   include-photo: true
   path: "https://github.blog/wp-content/uploads/2016/07/6629b442-42c7-11e6-954b-88a57821a36a.gif?resize=1600%2C850"
   alt-text: "A movie clip showing the drag and drop feature of prioritizing issues within a Milestone."
 ---
 
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - FIMS CIE Review has been turned in and should be public next week.
@@ -45,9 +46,6 @@ Time: 16:00–17:00 E; 13:00–14:00 P; 12:00–13:00 AK; 10:00–11:00 H
 Location: Virtual
 Online: [Google Meet](https://meet.google.com/unsupported?meetingCode=djv-qgow-qwe&ref=https://meet.google.com/djv-qgow-qwe)
 :::
-
-<!-- ::: {#photo-code}
-::: -->
 
 ```{=html}
 <script src="https://giscus.app/client.js"

@@ -2,11 +2,11 @@
 # The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - March 09–13, 2026"
 date: "March 09, 2026"
-# Change the following categories accordingly, but you MUST keep fims-weekly
+# Change the following categories accordingly, but you MUST keep fims-monthly
 categories:
-  - fims-weekly
+  - fims-monthly
   - manuscripts
-three-big-things:
+big-things:
   bt1: "All changes to the code that are going to happen for the CIE Review must happen this week. Time-varying selectivity and time-varying weight-at-age inputs might make it in :crossed_fingers:. Next week will be focused on updating the case studies."
   bt2: "Nathan and Andrea are working on a PR to increase the usability of the random effects in FIMS."
   bt3: "We have addressed the comments we received on the FIMS manuscript from reviewers and it is time to do a final round of edits. The [manuscript](https://docs.google.com/document/d/1HyLJa4y8fkKML31a636qwozkaYXglT9yzQCmE6bTLa0/edit?usp=drive_link) and the responses to [reviewers](https://docs.google.com/document/d/1t_eju7vqF119ZPgLVU95pQFqjzGRTIMmQo0lucTqEbQ/edit?usp=drive_link) are on Google Drive. Please provide all comments by March 18, 2026 so we can return the manuscript to ICES by March 19, 2026."
@@ -19,10 +19,11 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "Bai recently experimented with using quarto to write a manuscript and found the [template for Elsevier Journals](https://quarto-journals.github.io/elsevier/) easy to use. All the code is on [GitHub](https://github.com/quarto-journals/elsevier) and you can implement the template in your own repo with the following, single, line of code within a terminal. Quarto also provides [templates for other journals](https://quarto.org/docs/journals/) and information regarding how to use templates on their website. Thank you Bai for sharing."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 43 days until the CIE Review.

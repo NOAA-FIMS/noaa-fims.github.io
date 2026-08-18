@@ -3,9 +3,9 @@ title: "FIMS Weekly - December 01–05, 2025"
 date: "December 01, 2025"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - testing
-three-big-things:
+big-things:
   bt1: "Our number one goal this week is to get a new release out, which involves trudging through the 13 open Pull Requests and prioritizing which ones will be a part of 0.8.0 and need rebased and which ones will wait for the next release."
   bt2: "Bai is working hard on sorting out the differences between FIMS and other software in an effort to ramp up the testing in FIMS."
   bt3: "Effort on the Surplus Production Model is ramping back up. Again, testing has revealed differences between FIMS and other frameworks that needs to be sorted out."
@@ -18,13 +18,14 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "Thank you to Alex and Peter for helping fix up the FIMS cheat sheet last week. Below is a screen shot of the updates made with respect to what the table of parameters looks like."
   include-photo: true
   path: "images/cheat_sheet_2025-12-01.png"
   alt-text: "A screenshot of the table that is created when running FIMS::create_default_parameters()."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 👋Welcome👋 Grant Adams (AFSC) to FIMS!
@@ -41,8 +42,6 @@ Online: [Google meet](https://meet.google.com/unsupported?meetingCode=kbz-ccew-i
 
 :::
 
-::: {#photo-code}
-:::
 
 ```{=html}
 <script src="https://giscus.app/client.js"

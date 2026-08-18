@@ -3,11 +3,11 @@ title: "FIMS Weekly - February 02–06, 2026"
 date: "February 02, 2026"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - SIS
   - case-studies
   - diagnostics
-three-big-things:
+big-things:
   bt1: "All of the case studies have been worked on but the advanced one is still having some trouble. We will be working on both the advanced and Pacific Hake case studies this week."
   bt2: "Google Summer of Code ideas need to be submitted today! We have two submitted so far, one related to turning on and off uncertainty for derived quantities and one related to adding Empirical Dynamic Modeling (EDM) to FIMS. EDM models were presented last week for brown shrimp at NSAW."
   bt3: "We have an Implementation Team Meeting and a tutorial on FIMSdiags this week. Please attend both and spread the news about the tutorial."
@@ -20,10 +20,11 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "We have diagnostics thanks to Meg and Ian. Below is some sample code for running a likelihood profile over R_zero. Attend the tutorial on Thursday to learn more about [{FIMSdiags}](https://noaa-fims.github.io/FIMSdiags/)."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - If you attended the FIMS Training on Monday, please fill out the survey on [Google Cloud Workstations](https://docs.google.com/forms/d/e/1FAIpQLSehj6N1ka568ohEsakRQZbHxrduf1EswkYbVavhPXYBuruM7A/viewform).

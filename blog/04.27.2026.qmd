@@ -2,10 +2,10 @@
 # The title MUST start with "FIMS Weekly - "
 title: "FIMS Weekly - April 27–May 01, 2026"
 date: "April 27, 2026"
-# Change the following categories accordingly, but you MUST keep fims-weekly
+# Change the following categories accordingly, but you MUST keep fims-monthly
 categories:
-  - fims-weekly
-three-big-things:
+  - fims-monthly
+big-things:
   bt1: "There are several Pull Requests that have been in the queue for more than a week that need reviewed and brought into dev. We are still thinking about changing our workflow to move away from having a dev branch but more investigation is needed."
   bt2: "Adrianne is thinking about how to model variability in length within the new growth module. Feel free to reach out to her if you know of any published papers or have opinions."
   bt3: "Matthew is continuing to work on translational units and getting FIMS to operate more like the RTMB package while compiling. The current road block is with the use of roxygen2 some additional files are added that can cause headaches."
@@ -18,23 +18,19 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "In the priorities presentation during the CIE Review, I presented the following image, which I found on a blog post titled [Stop building what your customers ask for](https://dev.to/jon_at_backboardio/stop-building-what-your-customers-ask-for-3d16?context=digest). In short, the blog post reminded me how it is not only our job to produce a product that is of use to fisheries managers but it is also our job to interpret what stakeholders see as a problem and imagine a solution potentially outside of a workflow that currently exists. "
   include-photo: true
   path: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2fytab0wih4bn8ib230a.png"
   alt-text: "A cartoon illustrating to situations where developers blindly developed what the stakeholders asked for and ended up getting things wrong."
 ---
 
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - CIE Review is complete! Thank you to Andrea, Bai, Ian, and Nathan for giving presentations. Thank you to Aaron Berger for being such a great Chair. Thank you to everyone who took notes, they are extremely comprehensive and have already been used by several individuals to summarize the key points of the review. I really appreciate all of the help making this review successful. We received lots of good, constructive feedback and I am looking forward to working on implementing some of the suggested changes.
 ::: 
 
-::: {#additional-events}
-:::
-
-<!-- ::: {#photo-code}
-::: -->
 
 ```{=html}
 <script src="https://giscus.app/client.js"

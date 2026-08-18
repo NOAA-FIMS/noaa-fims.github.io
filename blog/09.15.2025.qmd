@@ -3,9 +3,9 @@ title: "FIMS Weekly - September 15–19, 2025"
 date: "September 15, 2025"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - vignettes
-three-big-things:
+big-things:
   bt1: "After two weeks of not merging in any PRs, I switched it up and merged in Bai's first so now we just have one outstanding PR left, which we have made a lot of progress on but still need some more progress to get it into dev. Mainly, matching the TMB estimates of uncertainty with the estimates tibble."
   bt2: "This week is going to be documentation week. Please see the FIMS calendar for co-working sessions to help out with converting some Google Docs to markdown files."
   bt3: "There are lots of issues marked under the CIE Review Milestone. Please feel free to sign up for any that you can accomplish by September 30, 2025."
@@ -24,27 +24,15 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "Thanks to Bai's recent PR that revamped the lists of lists for running a model into a tibble the amount of code needed to run a default model is even less. Check out the revamped fims-demo-minimal below!"
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 50 days until the CIE Review
 ::: 
-    
-::: {#additional-events}
-      
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-
-:::
 
 ::: {#photo-code}
 

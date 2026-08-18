@@ -115,7 +115,7 @@ Do not use rendered HTML as the primary source of truth.
 
 - Edit `.qmd`, `.scss`, `.css`, `.js`, and shared asset files first.
 - Regenerate output with Quarto instead of hand-editing output files whenever possible.
-- Treat `fims-weekly/*.html` as published artifacts unless there is a specific reason to patch output directly.
+- Treat `fims-monthly/*.html` as published artifacts unless there is a specific reason to patch output directly.
 
 The repository uses `execute.freeze: auto`, so Quarto may preserve rendered results for unchanged pages. If a page is not updating the way you expect, rerun `quarto render` and verify you changed the actual source file.
 

@@ -3,10 +3,10 @@ title: "FIMS Weekly - February 09–13, 2026"
 date: "February 09, 2026"
 # Change the following categories accordingly
 categories:
-  - fims-weekly
+  - fims-monthly
   - testing
   - case-studies
-three-big-things:
+big-things:
   bt1: "The FIMS case study will be presented to the Scientific Review Group as additional research. Spoiler alert, depending on what you assume for selectivity, the end-year population dynamics are very different but the rest of the time series matches pretty well."
   bt2: "Bai is working on the comparisons of FIMS to other modeling frameworks fit to the data from the operating model used for the model comparison project. Her most recent addition was adding a FIMS run with random effects for recruitment deviations. Great work Bai!"
   bt3: "Lots of side meetings are happening for FIMS. One of those was regarding the design of wrapper functions for random effects and other questions related to random effects."
@@ -19,10 +19,11 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "In the dev-hake branch, we now have the ability to estimate parameters using a time-varying vector. Below is code to set the initial values and estimation type. We need to decide as a group what would be the best way for non-power users to interact with time-varying parameters."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - Please look at the FIMS calendar on a regular basis. There are lots of meetings happening that you can attend but global announcements are no longer going out in an attempt to save your inboxes from overload. One of those such meetings is the Code Club happening this Friday.

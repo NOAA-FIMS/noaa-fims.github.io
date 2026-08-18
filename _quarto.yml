@@ -11,8 +11,8 @@ project:
     - images/
     - assets/
     - about/FIMS_TOR_08.26.2021.pdf
-    - fims-weekly/*.html
-    - fims-weekly/redirect.js
+    - fims-monthly/*.html
+    - fims-monthly/redirect.js
 
 website:
   favicon: images/FIMS_hexlogo.png
@@ -115,12 +115,10 @@ format:
         - zephyr
         - assets/styles-elm-light.scss
         - assets/styles-elm-base.scss
-        - assets/colors.scss
       dark:
         - assets/zephyr-dark.scss
         - assets/styles-elm-dark.scss
         - assets/styles-elm-base.scss
-        - assets/colors.scss
     css:
       - assets/panelset-extras.css
     highlight-style:
@@ -130,4 +128,3 @@ format:
 
 execute:
   freeze: auto
-

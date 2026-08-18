@@ -29,6 +29,12 @@ jobs:
           packages:
             any::knitr
             any::rmarkdown
+            any::glue
+            any::dplyr
+            any::stringr
+            any::httr
+            any::purrr
+            any::jsonlite
 
       - name: Get latest version from changelog
         id: changelog_version
@@ -43,6 +49,8 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html
+        env:
+          DISCUSSIONS_PAT: ${{ secrets.DISCUSSIONS_PAT }}
 
       - name: Preserve preview directory from gh-pages
         run: |

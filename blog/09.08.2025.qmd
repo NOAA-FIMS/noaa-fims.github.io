@@ -3,10 +3,10 @@ title: "FIMS Weekly - September 08–12, 2025"
 date: "September 08, 2025"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - json
   - purrr
-three-big-things:
+big-things:
   bt1: "On Wednesday, the Science Board will be given an update and we will discuss creating a formal FIMS Transition Plan. Thank you Jane for volunteering to attend the presentation to help take notes."
   bt2: "None of the PRs that I wanted to merge in last week happened so merging those is a goal again. Attend Code Club on Tuesday if you are interested in helping write R code to read in the json output."
   bt3: "By the end of the day on Wednesday there will be a prioritized list of issues that need completed before October 01, 2025 because they are needed for the documentation that will be sent to the CIE Reviewers."
@@ -22,28 +22,17 @@ upcoming-events:
 # If you have any additional events, uncomment and fill out the additional events section below.
 # If there is no actual photo you can delete include-photo, path, and alt-text and the template will handle it for you. If there is code instead, please uncomment the section below named photo-code.
 photo:
+  include: true
   text: "Last week I showed the json output for dimensionality, this week I show the tidyverse code to create a tibble from that same information."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - Please welcome 👋 Adrianne Wilson 👋 to the FIMS Team!
 - 57 calendar days until the FIMS CIE Review, we now have a chair.
 ::: 
     
-::: {#additional-events}
-      
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
-        
-:::
 
 ::: {#photo-code}
 

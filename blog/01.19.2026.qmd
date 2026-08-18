@@ -3,10 +3,10 @@ title: "FIMS Weekly - January 19–23, 2026"
 date: "January 19, 2026"
 # Change the following categories accordingly
 categories: 
-  - fims-weekly
+  - fims-monthly
   - releases
   - testing
-three-big-things:
+big-things:
   bt1: "Version v0.8.0 was released early this morning! Thank you to everyone who worked on this release, especially Nathan for seeing the projections branch through to to the bitter end."
   bt2: "Next week we will be giving at least three presentations and one training session that touch on FIMS at the National Stock Assessment Workshop and authors will be working on their presentations this week."
   bt3: "The case studies need to be updated, which will be a major undertaking this week."
@@ -19,25 +19,15 @@ upcoming-events:
 # If there is code instead, please uncomment the section below named photo-code 
 # but still include the text portion under photo.
 photo:
+  include: true
   text: "Codecov has had some recent development that allows you to use copilot to generate tests for your Pull Request. It uses context from your test report to generate unit tests that target exactly what is missing so you can boost patch coverage. You can add the following comment on a Pull Request to make this happen. This feature has yet to be tried yet on a NOAA-FIMS repository."
 ---
   
-{{< include "fims-weekly-template.qmd" >}}
+{{< include "fims-monthly-template.qmd" >}}
 
 ::: {#announcements}
 - 90 days until the CIE Review (April 20--23, 2026)
 ::: 
-    
-::: {#additional-events}
-      
-<!--
-### DAY DATE
-**NAME**
-
-Time: TIME
-Location: VIRTUAL/IN-PERSON
-Online: [Google meet](MEETING LINK)
--->
 
 
 ::: {#photo-code}
@@ -46,8 +36,6 @@ Online: [Google meet](MEETING LINK)
 ```
 :::
 
-        
-:::
 
 ```{=html}
 <script src="https://giscus.app/client.js"
