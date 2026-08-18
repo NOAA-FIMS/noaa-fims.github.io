@@ -31,6 +31,10 @@ jobs:
             any::rmarkdown
             any::glue
             any::dplyr
+            any::stringr
+            any::httr
+            any::purrr
+            any::jsonlite
 
       - name: Get latest version from changelog
         id: changelog_version

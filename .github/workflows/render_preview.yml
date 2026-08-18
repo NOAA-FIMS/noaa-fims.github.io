@@ -33,6 +33,10 @@ jobs:
             any::rmarkdown
             any::glue
             any::dplyr
+            any::stringr
+            any::httr
+            any::purrr
+            any::jsonlite
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
