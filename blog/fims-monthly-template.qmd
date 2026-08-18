@@ -28,7 +28,7 @@ if (!is.null(big_things) && any(nzchar(unlist(big_things)))) {
 ::: {.column width="49%"}
 ## ❗Input Needed ❗
 
-These are the discussions and issues that we need your input on!
+Discussions and issues where we need your input!
 
 ```{r, echo=FALSE, results="asis"}
 #| cache: false
