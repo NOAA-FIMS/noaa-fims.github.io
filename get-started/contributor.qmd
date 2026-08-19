@@ -9,11 +9,11 @@ header-includes: >
 ::: {.fims-onboarding-container}
 
 ::: {.fims-pathway-pills}
-[<i class="bi bi-person-plus"></i> New User](new-user.qmd){.fims-pill}
-[<i class="bi bi-person-up"></i> Emerging User](emerging-user.qmd){.fims-pill}
-[<i class="bi bi-lightning"></i> Power User](power-user.qmd){.fims-pill}
-[<i class="bi bi-code-square"></i> Contributor](contributor.qmd){.fims-pill .is-active}
-[<i class="bi bi-file-bar-graph"></i> Decision Maker](decision-maker.qmd){.fims-pill}
+[<i class="bi bi-person-plus" aria-hidden="true"></i> New User](new-user.qmd){.fims-pill}
+[<i class="bi bi-person-up" aria-hidden="true"></i> Emerging User](emerging-user.qmd){.fims-pill}
+[<i class="bi bi-lightning" aria-hidden="true"></i> Power User](power-user.qmd){.fims-pill}
+[<i class="bi bi-code-square" aria-hidden="true"></i> Contributor](contributor.qmd){.fims-pill .is-active}
+[<i class="bi bi-file-bar-graph" aria-hidden="true"></i> Decision Maker](decision-maker.qmd){.fims-pill}
 :::
 
 ::: {.fims-onboarding-header}
@@ -32,13 +32,13 @@ header-includes: >
 <h4>FIMS Community</h4>
 <p>First, let's make sure you are plugged in to the FIMS community!</p>
 
-[<i class="bi bi-emoji-sunglasses"></i> Keep up on the Community Page](/community/index.html)
+[<i class="bi bi-emoji-sunglasses" aria-hidden="true"></i> Keep up on the Community Page](/community/index.html)
 
-[<i class="bi bi-chat-text"></i> Get involved in GitHub discussions](https://github.com/orgs/NOAA-FIMS/discussions/){.fims-btn-small .fims-task-btn target="_blank"}
+[<i class="bi bi-chat-text" aria-hidden="true"></i> Get involved in GitHub discussions](https://github.com/orgs/NOAA-FIMS/discussions/){.fims-btn-small .fims-task-btn target="_blank"}
 
-[<i class="bi bi-envelope"></i> Subscribe to our weekly newsletter](https://github.com/orgs/NOAA-FIMS/discussions/1461#discussioncomment-17065818){.fims-btn-small .fims-task-btn target="_blank"}
+[<i class="bi bi-envelope" aria-hidden="true"></i> Subscribe to our weekly newsletter](https://github.com/orgs/NOAA-FIMS/discussions/1461#discussioncomment-17065818){.fims-btn-small .fims-task-btn target="_blank"}
 
-[<i class="bi bi-calendar-week"></i> View and add the FIMS calendar, especially Code Clubs!](/about/calendar.html){.fims-btn-small .fims-task-btn}
+[<i class="bi bi-calendar-week" aria-hidden="true"></i> View and add the FIMS calendar, especially Code Clubs!](/about/calendar.html){.fims-btn-small .fims-task-btn}
 :::
 :::
 
@@ -52,11 +52,11 @@ header-includes: >
 <h4>Contributor's Guides</h4>
 <p>Familiarize yourself with our contributor's guides for our various projects.</p>
 
-[<i class="bi bi-code"></i> Contributing to FIMS Source Code](https://github.com/NOAA-FIMS/FIMS/blob/main/CONTRIBUTING.md#contributing-to-the-noaa-fisheries-integrated-modeling-system){.fims-btn-small .fims-task-btn target="_blank"}
+[<i class="bi bi-code" aria-hidden="true"></i> Contributing to FIMS Source Code](https://github.com/NOAA-FIMS/FIMS/blob/main/CONTRIBUTING.md#contributing-to-the-noaa-fisheries-integrated-modeling-system){.fims-btn-small .fims-task-btn target="_blank"}
 
-[<i class="bi bi-briefcase"></i> Contributing Case Studies](https://github.com//NOAA-FIMS/case-studies#fims-case-studies){.fims-btn-small .fims-task-btn target="_blank"}
+[<i class="bi bi-briefcase" aria-hidden="true"></i> Contributing Case Studies](https://github.com//NOAA-FIMS/case-studies#fims-case-studies){.fims-btn-small .fims-task-btn target="_blank"}
 
-[<i class="bi bi-layout-text-window"></i> Contributing a Blog Post or to the Website](/contributing.md){.fims-btn-small .fims-task-btn}
+[<i class="bi bi-layout-text-window" aria-hidden="true"></i> Contributing a Blog Post or to the Website](/contributing.md){.fims-btn-small .fims-task-btn}
 :::
 :::
 
