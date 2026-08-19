@@ -177,7 +177,7 @@ tryCatch({
     # Format description HTML (Hides completely if empty, clamps at 5 lines)
     desc_html <- ""
     if (nchar(desc_txt) > 0) {
-      desc_html <- paste0('<div class="mb-4 small opacity-75" style="display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">', desc_txt, '</div>')
+      desc_html <- paste0('<div class="mb-4 small fims-meeting-description" style="display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">', desc_txt, '</div>')
     } else {
       desc_html <- '<div class="mb-4"></div>' 
     }
@@ -187,7 +187,7 @@ tryCatch({
         '<div class="fims-meeting-card">',
           '<div class="fims-meeting-content">',
             '<h3 class="no-anchor">Next Meeting</h3>',
-            '<p class="mb-1 fw-bold">', summary_txt, '</p>',
+            '<p class="mb-1 fw-bold fims-meeting-summary">', summary_txt, '</p>',
             desc_html,
             '<div class="fims-meeting-datetime">',
               '<div class="fims-meeting-row">',
@@ -214,7 +214,7 @@ tryCatch({
       '<div class="fims-meeting-card">',
         '<div class="fims-meeting-content">',
           '<h3 class="no-anchor">Next Meeting</h3>',
-          '<p class="mb-4 opacity-75">No upcoming meetings scheduled.</p>',
+          '<p class="mb-4 fims-meeting-description">No upcoming meetings scheduled.</p>',
         '</div>',
       '</div>',
     '</div>'
@@ -271,7 +271,7 @@ Participate in working groups to validate the mathematical integrity of new mode
 ## Getting Involved
 Follow these 4 simple steps to start contributing to the FIMS project today.
 
-![](../images/fims_dashboard.png){.fims-steps-img}
+![FIMS dashboard showing the project workflow and contribution steps.](../images/fims_dashboard.png){.fims-steps-img}
 :::
 
 ::: {.fims-steps-list}
@@ -346,9 +346,9 @@ Pick a 'Good First Issue' on GitHub and submit your first pull request for peer 
 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-cover w-80 h-60 opacity-75" alt="People collaborating">
 <div class="position-absolute bottom-0 start-0 w-80 p-3 bg-gradient-dark">
 <span class="text-white fw-bold small text-uppercase d-block">Fisheries & Oceans Canada Training</span>
-<span class="text-white-50 small">Nanaimo, BC</span>
-<span class="text-white-50 small">October 5-8, 2026</span>
-<span class="text-white-50 small">Private training</span>
+<span class="text-white small">Nanaimo, BC</span>
+<span class="text-white small">October 5-8, 2026</span>
+<span class="text-white small">Private training</span>
 </div>
 :::
 :::
@@ -360,5 +360,5 @@ Pick a 'Good First Issue' on GitHub and submit your first pull request for peer 
 /* A few micro-interactions converted from Tailwind utilities */
 .hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
 .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
-.bg-gradient-dark { background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); }
+.bg-gradient-dark { background: #0e181e; }
 </style>
