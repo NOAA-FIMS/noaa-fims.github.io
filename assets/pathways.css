@@ -124,15 +124,30 @@
   box-shadow: 0 0 0 6px rgba(14, 104, 118, 0.15); 
 }
 .fims-timeline-item.is-active .fims-step-content { 
-  background-color: var(--blue-100);
-  color: var(--slate-10);
+  background-color: #f7fafb;
+  color: #213f4b !important;
   padding: 1rem; 
   border-radius: 0.5rem; 
   border: 1px solid var(--bs-primary); 
 }
 
+.fims-timeline-item.is-active .fims-step-content h4,
+.fims-timeline-item.is-active .fims-step-content h4 .anchorjs-link {
+  color: #213f4b !important;
+}
+
 .fims-timeline-item.is-active .fims-step-content p {
-  color: var(--slate-30);
+  color: #4a636c !important;
+}
+
+.fims-timeline-item.is-active .fims-step-content a {
+  color: #213f4b !important;
+  font-weight: 700;
+}
+
+.fims-timeline-item.is-active .fims-step-content a:hover,
+.fims-timeline-item.is-active .fims-step-content a:focus-visible {
+  color: #0e181e !important;
 }
 
 .fims-timeline-item.is-active .fims-task-btn { 
