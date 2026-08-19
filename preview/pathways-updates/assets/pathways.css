@@ -124,7 +124,7 @@
   box-shadow: 0 0 0 6px rgba(14, 104, 118, 0.15); 
 }
 .fims-timeline-item.is-active .fims-step-content { 
-  background-color: var(--slate-10); 
+  background-color: rgba(14, 104, 118, 0.05); 
   padding: 1rem; 
   border-radius: 0.5rem; 
   border: 1px solid var(--bs-primary); 
