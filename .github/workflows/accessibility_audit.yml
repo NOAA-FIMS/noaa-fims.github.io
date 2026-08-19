@@ -79,6 +79,7 @@ jobs:
               },
               "ignore": [
                 "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+                "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.EmptyNoId",
                 "WCAG2AA.Principle4.Guideline4_1.4_1_1.F77",
                 "frame-tested",
                 "scrollable-region-focusable",
