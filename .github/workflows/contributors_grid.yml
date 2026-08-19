@@ -82,7 +82,7 @@ jobs:
             contributorsGrid += '\n</table>';
 
             const fs = require('fs');
-            const filePath = 'contact/contributors.qmd';
+            const filePath = 'about/contributors.qmd';
             
             // Read the existing file
             if (!fs.existsSync(filePath)) {
@@ -102,7 +102,7 @@ jobs:
                 `Please add the following markers around the contributors grid:\n` +
                 `  ${beginMarker}\n` +
                 `  ${endMarker}\n\n` +
-                `Example in contact/contributors.qmd:\n` +
+                `Example in about/contributors.qmd:\n` +
                 `## Contributors\n\n` +
                 `${beginMarker}\n` +
                 `<table>...</table>\n` +
@@ -133,4 +133,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Update contributors list"
-          file_pattern: contact/contributors.qmd
+          file_pattern: about/contributors.qmd
