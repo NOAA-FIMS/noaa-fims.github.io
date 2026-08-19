@@ -94,8 +94,18 @@ async function fetchGitHubActivity() {
   }
 }
 
+function hideDecorativeSidebarIcons() {
+  document.querySelectorAll('.quarto-sidebar i[role="img"]').forEach(icon => {
+    icon.setAttribute('aria-hidden', 'true');
+  });
+}
+
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', fetchGitHubActivity);
+  document.addEventListener('DOMContentLoaded', () => {
+    hideDecorativeSidebarIcons();
+    fetchGitHubActivity();
+  });
 } else {
+  hideDecorativeSidebarIcons();
   fetchGitHubActivity();
 }
