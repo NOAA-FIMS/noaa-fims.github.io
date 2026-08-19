@@ -49,7 +49,7 @@
 .fims-badge {
   display: inline-block;
   background-color: #f8f9fa;
-  color: #0e6876; /* Utilizing the teal from your grid category tags */
+  color: #213f4b;
   padding: 0.5rem 0.75rem;
   margin-bottom: 1.5rem;
   font-size: 0.85rem;
@@ -74,6 +74,7 @@
   margin-bottom: 1.5rem;
   opacity: 1;
   line-height: 1.5;
+  color: #ffffff !important;
 }
 
 /* Container for the action buttons, allowing them to wrap on smaller screens */
@@ -101,6 +102,9 @@
   --bs-btn-hover-border-color: #6a222a;
   --bs-btn-active-bg: #573301;
   --bs-btn-active-border-color: #573301;
+  background-color: #852b35 !important;
+  border-color: #852b35 !important;
+  color: #ffffff !important;
 }
 
 .btn-outline-light {
@@ -123,6 +127,12 @@
   background-color: var(--bs-btn-bg) !important;
   border-color: var(--bs-btn-border-color) !important;
   color: var(--bs-btn-color) !important;
+}
+
+.fims-giant-card .btn-outline-light {
+  background-color: #0e6876 !important;
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
 }
 
 /* 5. Force text color on hover and active states to bypass theme locks */
@@ -634,6 +644,15 @@ h3.no-anchor {
   text-decoration-thickness: 0.12em;
 }
 
+.bg-gradient-dark {
+  background-color: #0e181e !important;
+  background-image: none !important;
+}
+
+.bg-gradient-dark span {
+  color: #ffffff !important;
+}
+
 /* Replaces .bg-dark, .bg-opacity-25, .rounded-3, .p-3, .mb-4 */
 .fims-meeting-datetime {
   background-color: rgba(0, 0, 0, 0.25);
@@ -673,4 +692,18 @@ h3.no-anchor {
 .quarto-dark .fims-meeting-card {
   background-color: #1a242b; /* A darker tone to match your dark mode theme */
   border: 1px solid rgba(255,255,255,0.08);
+}
+
+.fims-giant-card .btn-danger:hover,
+.fims-giant-card .btn-danger:focus-visible {
+  background-color: #6a222a !important;
+  border-color: #6a222a !important;
+  color: #ffffff !important;
+}
+
+.fims-giant-card .btn-outline-light:hover,
+.fims-giant-card .btn-outline-light:focus-visible {
+  background-color: #0c5460 !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
 }
