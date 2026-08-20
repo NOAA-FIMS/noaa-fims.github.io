@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>FIMS</title>
+<link>https://noaa-fims.github.io/preview/blog-annual-planning/blog/</link>
+<atom:link href="https://noaa-fims.github.io/preview/blog-annual-planning/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>**Category Definitions** &lt;br&gt; &lt;i class=&quot;fa-solid fa-magnifying-glass&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;deep-dive&lt;/strong&gt;: learning about complex stock assessment concepts, academic exercises, and statistical best practices &lt;br&gt; &lt;i class=&quot;fa-solid fa-newspaper&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;fims-weekly&lt;/strong&gt;: FIMS weekly newsletter posts &lt;br&gt; &lt;i class=&quot;fa-solid fa-graduation-cap&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;learn&lt;/strong&gt;: learning about packages within FIMS, geared toward beginner and intermediate users &lt;br&gt; &lt;i class=&quot;fa-solid fa-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;other&lt;/strong&gt;: posts that do not fit the other categories &lt;br&gt; &lt;br&gt;
+**Filtering** &lt;br&gt; Filter blog posts by major category using the categories panel. You can also filter by selecting a category listed on an individual post below. To clear the filter, select &quot;Categories&quot; in the navigation panel. &lt;br&gt;
+</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Thu, 20 Aug 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Planning for 2027</title>
+  <dc:creator>Kelli Johnson</dc:creator>
+  <link>https://noaa-fims.github.io/preview/blog-annual-planning/blog/fims-planning-2026.html</link>
+  <description><![CDATA[ 
+
+<!-- Skip to main content link for keyboard accessibility -->
+<style>
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  z-index: 10000;
+  border-radius: 0 0 4px 0;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #4896a1; /* Using FIMS blue */
+  outline-offset: 2px;
+}
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const skipLink = document.createElement('a');
+    skipLink.href = '#quarto-content';
+    skipLink.className = 'skip-link';
+    skipLink.textContent = 'Skip to main content';
+    document.body.prepend(skipLink);
+  });
+</script>
+
+
+
+
+
+<p>On August 05, 2026, the FIMS Implementation Team met to work on planning for the FY2027. And, even though I did not schedule enough time to do everything that I had in mind, we made a ton of progress and were able to identify priority features for each quarter of 2027 as well as several stocks that will use FIMS in some capacity in 2027. This annual planning exercise will occur annually 😉 every August and will facilitate users knowing what is coming down the pipeline and help keep developers on track.</p>
+<p>In the future, if you have a feature that is a high priority feel free to open an issue, talk to your regional representative about your need, or fill out the <a href="https://noaa-fims.github.io/contact/">contact form</a> on our webpage. <a href="https://github.com/orgs/NOAA-FIMS/discussions">GitHub Discussions</a> are also a great place to talk about potential features and scope needs.</p>
+<section id="fims-models-for-2027" class="level2">
+<h2 class="anchored" data-anchor-id="fims-models-for-2027">FIMS models for 2027</h2>
+<p>FIMS has moved beyond just being suitable for the data simulated for the <a href="https://spo.nmfs.noaa.gov/sites/default/files/pdf-content/fish-bull/11923li.pdf">model comparison project</a> and is ready to fit to data where simple model structures are sufficient. Each region was encouraged to identify a stock that has the potential to be modeled with FIMS FY2027 and identify key features that would need to be added to FIMS to facilitate comparing the results with current production models. The Implementation Team came up with the following list:</p>
+<ul>
+<li>ʻŌpakapaka (<em>Pristipomoides filamentosus</em>)</li>
+<li>Cobia (<em>Rachycentron canadum</em>)</li>
+<li>Petrale sole (<em>Eopsetta jordani</em>)</li>
+<li>Shortspine thornyhead (<em>Sebastolobus alascanus</em>)</li>
+<li>Pacific mackerel (<em>Scomber japonicus</em>)</li>
+<li>Gulf of Alaska pollock (<em>Gadus chalcogrammus</em>)</li>
+<li>Pacific hake (<em>Merluccius productus</em>)</li>
+</ul>
+<p>More than half of the stocks on this list are already implemented as <a href="https://noaa-fims.github.io/case-studies/">case studies</a>. We encourage everyone to watch this repository as the case studies develop and potentially more are added. The case studies have been instrumental in identifying needed features in FIMS and where users would benefit from more documentation or more informative messaging. As we move forward with FIMS, we hope that the case studies continue to be informative for development as well as provide a worked example of how to crosswalk between assessment platforms.</p>
+<p>For example, the scamp case study made converting inputs for cobia, which currently uses BAM, to FIMS pretty seamless. While working on cobia, I was able to identify ways to generalize some of the data-converting code that will even further help future conversions from BAM to FIMS.</p>
+</section>
+<section id="fims-features-for-2027" class="level2">
+<h2 class="anchored" data-anchor-id="fims-features-for-2027">FIMS features for 2027</h2>
+<p>Prioritizing what to work on next is never an easy task but we worked through it as a team. First we identified items we had already completed or would complete in FY2026. Next, we identified features that were in the planning stages and features that are wanted but had yet to undergo any planning. From those two categories, we finally identified features that Implementation Team members saw as crucial. Only features that were seen as both crucial and had a volunteer to spearhead their development were added to the following list as prioritized features for FY2027.</p>
+<section id="features-by-quarter" class="level3">
+<h3 class="anchored" data-anchor-id="features-by-quarter">Features by quarter</h3>
+<ul>
+<li><p>FY2027 Q1</p>
+<ul>
+<li>Linear version of the <a href="https://github.com/NOAA-FIMS/FIMS/issues/112">Dirichlet-multinomial distribution</a> for fitting compositional data</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1582">Sex-specific parameter estimation and data fitting</a></li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1414">Internal estimation of the Schnute–Fournier</a> version of von Bertalanffy growth parameters</li>
+</ul></li>
+<li><p>FY2027 Q2</p>
+<ul>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1702">Fit to conditional age-at-length data</a></li>
+<li>Goodness of fit and <a href="https://github.com/NOAA-FIMS/FIMS/issues/1457">residual plots</a></li>
+</ul></li>
+<li><p>FY2027 Q3</p>
+<ul>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/924">Pella–Tomlinson version of a surplus production model</a></li>
+</ul></li>
+<li><p>FY2027 Q4</p>
+<ul>
+<li>Equilibrium-based reference points</li>
+<li>Estimation of an initial fishing mortality</li>
+<li>Ageing error</li>
+</ul></li>
+</ul>
+</section>
+<section id="process-for-identifying-features" class="level3">
+<h3 class="anchored" data-anchor-id="process-for-identifying-features">Process for identifying features</h3>
+<p>Our current process of identifying priorities is largely based on our <a href="https://docs.google.com/spreadsheets/d/1i9zws9pk1fZ7D8RLrGH2CN7QU48ij86oOY_XgwaG7n4/edit?usp=sharing">Requirements Spreadsheet</a>, which was created in November of 2021. In July of this year, I copied the main tab labelled “FIMS Requirements Full” in the spreadsheet and began modifying it. First, I made my best attempt to remove duplicate rows, where not all duplicates were originally caught when we merged requirements from each Science Center into the this spreadsheet. Second, I changed the status of everything that we had already accomplished to “Done” and everything that we were currently working on to “Current”. Next, I removed some columns that we used in the original planning process but I did not see them as helpful such as “Impact”, “Effort”, and “Compatibility”. I then added “Quarter”, “Lead”, and “Issue”.</p>
+<p>My ultimate goal is to get all of these requirements in the <a href="https://github.com/NOAA-FIMS/FIMS/issues">FIMS Issue Tracker</a> as Issues so we can display the issues on a GitHub Project Board that would replace the spreadsheet. Clearly, we haven’t reached that goal yet, so we will continue to cross-link issues to the spreadsheet until one day the spreadsheet is obsolete and we find ourselves naturally navigating to a Project Board instead.</p>
+<p>Additionally, Andrea liked the dialogue that happened with the spreadsheet so much that she thought it would be a good idea to start adding a list of requirements for the back end to a <a href="https://docs.google.com/spreadsheets/d/1i9zws9pk1fZ7D8RLrGH2CN7QU48ij86oOY_XgwaG7n4/edit?gid=1203414660#gid=1203414660">separate tab</a>. That way we can track which back-end requirements are needed for each feature to ensure that the C++ coding stays focused and in tune with the front end.</p>
+</section>
+</section>
+<section id="thank-you" class="level2">
+<h2 class="anchored" data-anchor-id="thank-you">Thank you</h2>
+<p>I just want to conclude with a big thank you to the Implementation Team members for sticking with FIMS and being the voice of their centers. It is much easier to work on code alone and not worry about what other people across the country think. Instead, we have all deliberately chosen the hard road and are working together for the greater good. This will pay off, and I am seeing the benefits already.</p>
+<p>Good job, team.</p>
+<script src="https://giscus.app/client.js" data-repo="noaa-fims/FIMS" data-repo-id="R_kgDOGvEn5A" data-category="Blog discussions" data-category-id="DIC_kwDOGvEn5M4C-hls" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async="">
+</script>
+
+
+</section>
+
+ ]]></description>
+  <category>schedule</category>
+  <category>community</category>
+  <guid>https://noaa-fims.github.io/preview/blog-annual-planning/blog/fims-planning-2026.html</guid>
+  <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
