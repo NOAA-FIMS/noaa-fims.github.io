@@ -1,0 +1,92 @@
+---
+# Copy this to create a blog post
+title: "Planning for 2027"
+# Using subtitle for brief description instead of the "description" listing item
+# because if you don't have a description then it just shows your starting text
+# and I don't want that for the fims-weekly ones.
+subtitle: "Annual planning for FIMS development for FY2027"
+author: "Kelli Johnson"
+date: "August 20, 2026"
+categories:
+  - schedule
+  - community
+---
+
+On August 05, 2026, the FIMS Implementation Team met to work on planning for the FY2027. And, even though I did not schedule enough time to do everything that I had in mind, we made a ton of progress and were able to identify priority features for each quarter of 2027 as well as several stocks that will use FIMS in some capacity in 2027. This annual planning exercise will occur annually 😉 every August and will facilitate users knowing what is coming down the pipeline and help keep developers on track.
+
+In the future, if you have a feature that is a high priority feel free to open an issue, talk to your regional representative about your need, or fill out the [contact form](https://noaa-fims.github.io/contact/) on our webpage. [GitHub Discussions](https://github.com/orgs/NOAA-FIMS/discussions) are also a great place to talk about potential features and scope needs.
+
+## FIMS models for 2027
+
+FIMS has moved beyond just being suitable for the data simulated for the [model comparison project](https://spo.nmfs.noaa.gov/sites/default/files/pdf-content/fish-bull/11923li.pdf) and is ready to fit to data where simple model structures are sufficient. Each region was encouraged to identify a stock that has the potential to be modeled with FIMS FY2027 and identify key features that would need to be added to FIMS to facilitate comparing the results with current production models. The Implementation Team came up with the following list:
+
+* ʻŌpakapaka (*Pristipomoides filamentosus*)
+* Cobia (*Rachycentron canadum*)
+* Petrale sole (*Eopsetta jordani*)
+* Shortspine thornyhead (*Sebastolobus alascanus*)
+* Pacific mackerel (*Scomber japonicus*)
+* Gulf of Alaska pollock (*Gadus chalcogrammus*)
+* Pacific hake (*Merluccius productus*)
+
+More than half of the stocks on this list are already implemented as [case studies](https://noaa-fims.github.io/case-studies/). We encourage everyone to watch this repository as the case studies develop and potentially more are added. The case studies have been instrumental in identifying needed features in FIMS and where users would benefit from more documentation or more informative messaging. As we move forward with FIMS, we hope that the case studies continue to be informative for development as well as provide a worked example of how to crosswalk between assessment platforms.
+
+For example, the scamp case study made converting inputs for cobia, which currently uses BAM, to FIMS pretty seamless. While working on cobia, I was able to identify ways to generalize some of the data-converting code that will even further help future conversions from BAM to FIMS.
+
+## FIMS features for 2027
+
+Prioritizing what to work on next is never an easy task but we worked through it as a team. First we identified items we had already completed or would complete in FY2026. Next, we identified features that were in the planning stages and features that are wanted but had yet to undergo any planning. From those two categories, we finally identified features that Implementation Team members saw as crucial. Only features that were seen as both crucial and had a volunteer to spearhead their development were added to the following list as prioritized features for FY2027.
+
+### Features by quarter
+
+* FY2027 Q1
+
+  * Linear version of the [Dirichlet-multinomial distribution](https://github.com/NOAA-FIMS/FIMS/issues/112) for fitting compositional data
+  * [Sex-specific parameter estimation and data fitting](https://github.com/NOAA-FIMS/FIMS/issues/1582)
+  * [Internal estimation of the Schnute--Fournier](https://github.com/NOAA-FIMS/FIMS/issues/1414) version of von Bertalanffy growth parameters
+
+* FY2027 Q2
+
+  * [Fit to conditional age-at-length data](https://github.com/NOAA-FIMS/FIMS/issues/1702)
+  * Goodness of fit and [residual plots](https://github.com/NOAA-FIMS/FIMS/issues/1457)
+
+* FY2027 Q3
+
+  * [Pella--Tomlinson version of a surplus production model](https://github.com/NOAA-FIMS/FIMS/issues/924)
+
+* FY2027 Q4
+
+  * Equilibrium-based reference points
+  * Estimation of an initial fishing mortality
+  * Ageing error
+
+### Process for identifying features
+
+Our current process of identifying priorities is largely based on our [Requirements Spreadsheet](https://docs.google.com/spreadsheets/d/1i9zws9pk1fZ7D8RLrGH2CN7QU48ij86oOY_XgwaG7n4/edit?usp=sharing), which was created in November of 2021. In July of this year, I copied the main tab labelled "FIMS Requirements Full" in the spreadsheet and began modifying it. First, I made my best attempt to remove duplicate rows, where not all duplicates were originally caught when we merged requirements from each Science Center into the this spreadsheet. Second, I changed the status of everything that we had already accomplished to "Done" and everything that we were currently working on to "Current". Next, I removed some columns that we used in the original planning process but I did not see them as helpful such as "Impact", "Effort", and "Compatibility". I then added "Quarter",  "Lead", and "Issue".
+
+My ultimate goal is to get all of these requirements in the [FIMS Issue Tracker](https://github.com/NOAA-FIMS/FIMS/issues) as Issues so we can display the issues on a GitHub Project Board that would replace the spreadsheet. Clearly, we haven't reached that goal yet, so we will continue to cross-link issues to the spreadsheet until one day the spreadsheet is obsolete and we find ourselves naturally navigating to a Project Board instead.
+
+Additionally, Andrea liked the dialogue that happened with the spreadsheet so much that she thought it would be a good idea to start adding a list of requirements for the back end to a [separate tab](https://docs.google.com/spreadsheets/d/1i9zws9pk1fZ7D8RLrGH2CN7QU48ij86oOY_XgwaG7n4/edit?gid=1203414660#gid=1203414660). That way we can track which back-end requirements are needed for each feature to ensure that the C++ coding stays focused and in tune with the front end.
+
+## Thank you
+
+I just want to conclude with a big thank you to the Implementation Team members for sticking with FIMS and being the voice of their centers. It is much easier to work on code alone and not worry about what other people across the country think. Instead, we have all deliberately chosen the hard road and are working together for the greater good. This will pay off, and I am seeing the benefits already.
+
+Good job, team.
+
+```{=html}
+<script src="https://giscus.app/client.js"
+        data-repo="noaa-fims/FIMS"
+        data-repo-id="R_kgDOGvEn5A"
+        data-category="Blog discussions"
+        data-category-id="DIC_kwDOGvEn5M4C-hls"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+```
