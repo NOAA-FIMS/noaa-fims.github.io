@@ -4,7 +4,7 @@ date: "September 21, 2025"
 # Change the following categories accordingly
 categories: 
   - fims-weekly
-  - doxygen
+  - documentation
 three-big-things:
   bt1: "A new release of FIMS will come out this week that contains the PRs brought in last week thanks to Bai and Eric as well as improvements to the documentation thanks to those that showed up to Code Club and the extra design document meetings. Everyone's work is greatly appreciated. Check out the issues listed in the [CIE cleanup milestone](https://github.com/NOAA-FIMS/FIMS/milestone/14) for more tasks to work on."
   bt2: "Once a bug in the likelihood calculations is fixed in dev-json-caa, this branch will be merged into dev. By the end of the day today though it will be rebased and Nathan can branch off it to start adding projections and Meg and Ian can use it for their diagnostic work."

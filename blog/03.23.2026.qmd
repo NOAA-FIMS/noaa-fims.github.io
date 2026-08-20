@@ -5,7 +5,7 @@ date: "March 16, 2026"
 # Change the following categories accordingly, but you MUST keep fims-weekly
 categories:
   - fims-weekly
-  - tutorial
+  - training
   - testing
 three-big-things:
   bt1: "Merging in a few final Pull Requests today and tomorrow."

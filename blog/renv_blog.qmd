@@ -6,8 +6,8 @@ date: "February 20, 2026"
 categories:
    - learn
    - R
-   - open-science
-   - FIMSdiags
+   - open science
+   - diagnostics
 ---
 ## Why we use {renv}  
 Typically, when you install an R package, you are installing it into a central library that is accessible for all R sessions on that computer. This generally will work but what happens when you are working on a project with someone else and they write some code but when you try to run it on your computer it doesn’t work. You get a confusing error message and spend hours trying to debug it, only to realize you are using an older version of a package than they are and an argument has changed in a function. You update that package to the newest version and everything runs fine. But, the next time you work on a different project, you realize that you actually need the older version of that package. This leads to a lot of frustration and having to remember to install and uninstall different versions of r packages or having to change your code. As the {FIMS} ecosystem grows and we encounter or anticipate these and similar situations, we have begun incorporating {renv} into our workflows to address certain challenges. The [{renv}](https://rstudio.github.io/renv/) R package is a package manager that tracks and records all R packages used within a project and creates a project-specific package library. It makes each of your projects their own isolated, portable, and reproducible environment that can be shared easily with others. In our experience, three challenges in particular pushed us toward using {renv} for {[FIMSdiags](https://github.com/NOAA-FIMS/FIMSdiags)} and the [case studies]( https://github.com/NOAA-FIMS/case-studies/tree/main). The three challenges we faced were:  

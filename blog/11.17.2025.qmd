@@ -4,7 +4,7 @@ date: "November 17, 2025"
 # Change the following categories accordingly
 categories: 
   - fims-weekly
-  - community playbook
+  - community
   - schedule
 three-big-things:
   bt1: "Welcome back all! Last week was spent catching up on emails and getting reorientated, where this week we will be working towards getting a release out within the next two weeks. Thank you to Bai, Adrianne, and Nathan for keeping the lights on."

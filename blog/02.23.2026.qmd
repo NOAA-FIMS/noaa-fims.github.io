@@ -6,7 +6,6 @@ date: "February 23, 2026"
 categories:
   - fims-weekly
   - releases
-  - blog
 three-big-things:
   bt1: "We have a few open PRs this week to review from new contributors and one from Matthew (fixing a memory leak)."
   bt2: "Bai is working on ecosystemdata to extract selectivity parameters from EWE output."

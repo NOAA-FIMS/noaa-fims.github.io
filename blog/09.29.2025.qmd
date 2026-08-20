@@ -6,7 +6,7 @@ categories:
   - fims-weekly
   - testing
   - documentation
-  - doxygen
+  - documentation
 three-big-things:
   bt1: "Nathan will be working on rebasing/moving the projections code to a new branch based off of dev-json-caa-rebased"
   bt2: "There are tests that are failing in dev-json-caa-rebased that need to be fixed before it can move into dev see [Issue #997](https://github.com/NOAA-FIMS/fims/issues/997)"

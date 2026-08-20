@@ -5,7 +5,7 @@ date: "March 30, 2026"
 # Change the following categories accordingly, but you MUST keep fims-weekly
 categories:
   - fims-weekly
-  - tutorial
+  - training
 three-big-things:
   bt1: "Continue trying to fix pkgdown site where there is an obscure failure in the testdown or coverage reports."
   bt2: "An email will actually (:wink:) go out to the CIE Reviewers, Regional SSC participants, FIMS Council, and Science Board regarding review materials for the CIE Review."

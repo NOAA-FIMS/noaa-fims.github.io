@@ -5,7 +5,7 @@ date: "February 02, 2026"
 categories: 
   - fims-weekly
   - SIS
-  - case-studies
+  - case studies
   - diagnostics
 three-big-things:
   bt1: "All of the case studies have been worked on but the advanced one is still having some trouble. We will be working on both the advanced and Pacific Hake case studies this week."

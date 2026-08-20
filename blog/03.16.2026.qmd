@@ -5,7 +5,7 @@ date: "March 16, 2026"
 # Change the following categories accordingly, but you MUST keep fims-weekly
 categories:
   - fims-weekly
-  - case-studies
+  - case studies
   - releases
 three-big-things:
   bt1: "We will work on getting at least three case studies up and going this week in preparation for the CIE Review."
