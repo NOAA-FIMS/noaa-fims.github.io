@@ -51,7 +51,7 @@ quarto use template quarto-journals/elsevier
         data-repo-id="R_kgDOGvEn5A"
         data-category="Blog discussions"
         data-category-id="DIC_kwDOGvEn5M4C-hls"
-        data-mapping="title"
+        data-mapping="pathname"
         data-strict="1"
         data-reactions-enabled="1"
         data-emit-metadata="0"
