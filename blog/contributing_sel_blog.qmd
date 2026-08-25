@@ -41,7 +41,7 @@ The crux of how selectivity is specified and used in FIMS came down to modifying
 
 [inst/include/common/fims_vector.hpp]{.underline} This code contains utility functions for interacting with vectors using cpp. We added a new function to properly index and transform logit-transformed selectivity parameter values within vectors into standard selectivity values as a function of both age and time (get_force_scalar_wrap):
 
-```
+```cpp
   inline Type &get_force_scalar_wrap(size_t pos) {
     if (this->size() == 1 && pos > 0) {
       return this->at(0);
@@ -77,7 +77,7 @@ All of the above made it explicitly possible to use an age-based selectivity to 
 
 And at the center of these matryoshka dolls is a function that uses the template for setting default parameters to specify the name, type, label, ages, that these are fixed effects and estimated on the logistic scale (i.e., constrained between 0 and 1), using a qlogis() function. The new function call creates a vector of custom length for the parameter estimates, depending on the number of ages supplied by the user in the input data.
 
-```         
+```{r}         
 setup_default_AgeSpecific <- function(
   data
 ) {
@@ -96,7 +96,7 @@ setup_default_AgeSpecific <- function(
 
 Once the functionality and default parameters were set, it was time to add a vignette that demonstrates the selectivity-at-age function working in action. We saved a copy of the existing [vignettes/fims-demo.Rmd]{.underline} as [fims-demo-age-spec-sel.Rmd]{.underline} and when setting up the default parameters, also did the following:
 
-```         
+```{r}         
 new_selectivity <- setup_default_Selectivity(
     data = data_4_model,
     fleet = "survey1",
@@ -106,7 +106,7 @@ new_selectivity <- setup_default_Selectivity(
 
 Then we manually overwrote the selectivity parameters by filtering out those associated with survey1 and selectivity before and binding on our rows we made in new_selectivity:
 
-```         
+```{r}         
 updated_parameters <- default_parameters |>
   dplyr::filter(!(fleet == "survey1" & module_name == "Selectivity")) |>
   dplyr::bind_rows(new_selectivity)
@@ -114,7 +114,7 @@ updated_parameters <- default_parameters |>
 
 Finally, we added a part in the code that creates "parameters_4_model" to specify which parameters are estimated and where we want the estimation to start:
 
-```
+```{r}
 dplyr::rows_update(
     tibble::tibble(
       fleet = "survey1",
@@ -140,7 +140,7 @@ Once the actual functionality was in place, default parameters are set, and a vi
 
 [tests/gtest/CMAkeLists.txt]{.underline}. We just needed to modify one thing- adding test names for AgeSpecificSelectivity to ensure these tests are called during compilation:
 
-```
+```cpp
 gtest_discover_tests(AgeSpecificSelectivity_Evaluate)
 ```
 
@@ -152,7 +152,7 @@ gtest_discover_tests(AgeSpecificSelectivity_Evaluate)
 
 [tests/testthat/test-rcpp-selectivity.R]{.underline} - This code is generic to all selectivity options, unlike the gtest above. But we added sections specific to the AgeSpecificSelectivity option to check that the estimation type and evaluate() works correctly:
 
-```         
+```{r}         
 # Create selectivity2
   selectivity2 <- methods::new(AgeSpecificSelectivity)
 
