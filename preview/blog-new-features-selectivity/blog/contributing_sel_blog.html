@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Alexander Jensen and Emily Liljestrand">
-<meta name="dcterms.date" content="2026-08-07">
+<meta name="dcterms.date" content="2026-08-25">
 
 <title>Implementing New Features in FIMS: A Case Study in Selectivity – FIMS</title>
 <style>
@@ -394,7 +394,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 7, 2026</p>
+        <p class="date">August 25, 2026</p>
       </div>
     </div>
     
@@ -474,21 +474,20 @@ ul.task-list li input[type="checkbox"] {
 <p><u>inst/include/population_dynamics/selectivity/selectivity.hpp</u> This code explicitly defines any downstream “functors” (see below) and makes sure toexplicitly include them for use in FIMS. We added a single line “#include”functors/age_specific.hpp”</p>
 <p><u>inst/include/population_dynamics/selectivity/functors/age_specific.hpp</u> This was a brand new bit of code we created, again mimicking the functors for other selectivity options like logistic and double logistic. Here’s where the actual “math” all gets applied, the correct indexing figured out for the age-specific values, and the inverse logit applied to the parameters.</p>
 <p><u>R/FIMS-package.R</u> This code lists all objects that are “imported” and “exported” in FIMS and we modified to include ‘<span class="citation" data-cites="export">@export</span> AgeSpecificSelectivity’ and ran devtools::document() to add function to exported functions</p>
+<p><u>R/initialize_modules.R</u> As the name suggests, this is where a generic module (e.g., “Population” or “Fleet”) is initialized. Unlike other selectivity options, the age-specific selectivity needs the minimum age as an input (more on this in the roadblocks below), so we added it to the vector of integer_fields when a fleet is initialized.</p>
 <section id="default-parameters" class="level3">
 <h3 class="anchored" data-anchor-id="default-parameters">Default Parameters</h3>
 <p>All of the above made it explicitly possible to use an age-based selectivity to fit assessment models in FIMS. But for accessibility and to make sure the model does run (rather than simply ‘can’ run), it was critical to specify default parameters when this selectivity is chosen by a user.</p>
-<p><u>R/create_default_parameters.R</u> This bit of code contains several functions necessary for broadly and specifically specifying default parameters in FIMS. The nested functions are as follows:</p>
+<p><u>R/setup_default_parameters.R</u> This bit of code contains several functions necessary for broadly and specifically specifying default parameters in FIMS. The nested functions are as follows:</p>
 <ul>
-<li>create_default_parameters() -&gt; create_default_fleet() -&gt; create_default_selectivity() -&gt; create_default_AgeSpecific</li>
+<li>setup_default_parameters() -&gt; setup_default_Selectivity() -&gt; setup_default_AgeSpecific() -&gt; setup_default_parameters_template()</li>
 </ul>
 <p>And at the center of these matryoshka dolls is a function that uses the template for setting default parameters to specify the name, type, label, ages, that these are fixed effects and estimated on the logistic scale (i.e., constrained between 0 and 1), using a qlogis() function. The new function call creates a vector of custom length for the parameter estimates, depending on the number of ages supplied by the user in the input data.</p>
-<pre><code>create_default_AgeSpecific &lt;- function(
-  module_name = NA_character_,
+<pre><code>setup_default_AgeSpecific &lt;- function(
   data
 ) {
-  default &lt;- create_default_parameters_template(n_parameters = get_n_ages(data)) |&gt;
+  default &lt;- setup_default_parameters_template(n_parameters = get_n_ages(data)) |&gt;
     dplyr::mutate(
-      module_name = !!module_name,
       module_type = "AgeSpecific",
       label = "logit_sel_at_age",
       age = get_ages(data),
@@ -499,37 +498,41 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="vignettes" class="level3">
 <h3 class="anchored" data-anchor-id="vignettes">Vignettes</h3>
-<p>Once the functionality and default parameters were set, it was time to add a vignette that demonstrates the selectivity-at-age function working in action. We saved a copy of the existing <u>vignettes/fims-demo.Rmd</u> as <u>fims-demo-age-spec-sel.Rmd</u> and changed the updated configurations section to:</p>
-<pre><code>updated_configurations &lt;- default_configurations_unnested |&gt;
-  dplyr::rows_update(
-    y = tibble::tibble(
-      module_name = c("Selectivity"),
-      fleet = c("survey1"),
-      module_type = c("AgeSpecific")
-    ),
-    by = c("module_name", "fleet")
+<p>Once the functionality and default parameters were set, it was time to add a vignette that demonstrates the selectivity-at-age function working in action. We saved a copy of the existing <u>vignettes/fims-demo.Rmd</u> as <u>fims-demo-age-spec-sel.Rmd</u> and when setting up the default parameters, also did the following:</p>
+<pre><code>new_selectivity &lt;- setup_default_Selectivity(
+    data = data_4_model,
+    fleet = "survey1",
+    module_type = "AgeSpecific"
   )</code></pre>
-<p>by changing the module_type from the previous selectivity option. Further down in the code we changed the specified starting parameters as well:</p>
+<p>Then we manually overwrote the selectivity parameters by filtering out those associated with survey1 and selectivity before and binding on our rows we made in new_selectivity:</p>
+<pre><code>updated_parameters &lt;- default_parameters |&gt;
+  dplyr::filter(!(fleet == "survey1" &amp; module_name == "Selectivity")) |&gt;
+  dplyr::bind_rows(new_selectivity)</code></pre>
+<p>Finally, we added a part in the code that creates “parameters_4_model” to specify which parameters are estimated and where we want the estimation to start:</p>
 <pre><code>dplyr::rows_update(
     tibble::tibble(
-      fleet_name = "survey1",
+      fleet = "survey1",
       label = "logit_sel_at_age",
       age = seq(get_n_ages(data_4_model)),
-      value = c(0, 0, 2.999999, 4.999993, 6.999946,
-                8.999956, 11.000085, 12.982599, 15.019483, 18.420681,
-                18.420681, 18.420681),
+      value = c(
+        0, 0, 2.999999, 4.999993, 6.999946,
+        8.999956, 11.000085, 12.982599, 15.019483, 18.420681,
+        18.420681, 18.420681
+      ),
       estimation_type = c(rep("fixed_effects", 2), rep("constant", 10))
     ),
-    by = c("fleet_name", "label", "age")
-  )</code></pre>
+    by = c("fleet", "label", "age")</code></pre>
 <p>This meant only the first two ages were estimated as fixed effects and the rest of the age-specific selectivity values were fixed at true values used to generate the input data to the vignette; selectivity for the older ages were effectively fixed at or near 1 with this specification. From previous experience it is often best to fix one or several selectivity-at-age values close to 1, otherwise the selectivity and fishing mortality parameters can become confounded.</p>
 <p>Modifying and running the vignette confirmed that we were able to accurately and reliably estimate the two specified age-specific selectivity parameters for the test dataset using the new selectivity feature.</p>
 </section>
 <section id="tests" class="level3">
 <h3 class="anchored" data-anchor-id="tests">Tests</h3>
 <p>Once the actual functionality was in place, default parameters are set, and a vignette is made, it was time to guarantee compatibility across all other areas of FIMS both now and in the future by writing in some checks and tests. There are two main categories of tests in FIMS, the gtests and testthat. The former focuses on cpp code and the latter on rcpp code. In both, we added similar tests, 1) that the input and output get passed around effectively, 2) that the inverse-logit and logit transformations handled values correctly, 3) that parameter values were being properly indexed and called, and 4) that FIMS could handle “edge-cases” or those extreme values where things run up against their bounds.</p>
-<p><u>tests/gtest/CMAkeLists.txt</u>. We just needed to modify one thing- adding test names for AgeSpecificSelectivity to ensure these tests are called during compilation</p>
+<p><u>tests/gtest/CMAkeLists.txt</u>. We just needed to modify one thing- adding test names for AgeSpecificSelectivity to ensure these tests are called during compilation:</p>
+<pre><code>gtest_discover_tests(AgeSpecificSelectivity_Evaluate)</code></pre>
 <p><u>tests/gtest/test_AgeSpecificSelectivity_Evaluate.cpp</u> Tests performance of evaluate calls with multiple ages and multiple time steps, to show inverse-logit transformations and indexing perform as expected. It was easy to set using the built in FIMS:::use_gtest_template()</p>
+<p><u>tests/testthat/test-setup_default_AgeSpecific.R</u> - This code specifically tests that the setup_default_AgeSpecific() function from R/create_default_parameters.R is working</p>
+<p><u>tests/testthat/test-setup_default_Selectivity.R</u> - This code specifically tests that the setup_default_Selectivity() function from R/create_default_parameters.R is working</p>
 <p><u>tests/testthat/test-rcpp-selectivity.R</u> - This code is generic to all selectivity options, unlike the gtest above. But we added sections specific to the AgeSpecificSelectivity option to check that the estimation type and evaluate() works correctly:</p>
 <pre><code># Create selectivity2
   selectivity2 &lt;- methods::new(AgeSpecificSelectivity)
@@ -575,6 +578,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="takeaways" class="level2">
 <h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
+<p>Once all that was said and done, we had one final contribution to make to the FIMS code base. We updated the manual! In <u>man/setup_default_Selectivity.Rd</u> we updated the listed “allowable forms” of selectivity to include AgeSpecific. We were legit - in the FIMS manual and everything!</p>
 <p>Don’t let contributing to FIMS intimidate you! Nobody understands all the nuanced ins and outs of FIMS except a few core developers and given the amount of features FIMS needs to meet its 25% by 2026 (25% of NOAA stocks to be capable of using FIMS to fit the model and generate management advice), more than that core group needs to be actively contributing. Take on small tasks at first - a new version of an existing feature, like these selectivity options. But maximize efficiency by identifying a feature that is important to several stocks. Starting small will help build confidence and familiarity with FIMS’s modular nature so you might be comfortable with contributing bigger changes down the line. There is also lots of help and expertise available in the FIMS development community! We reached out for help at several points to implement changes to the cpp architecture, implement and debug tests, and format the repository for merging back into the main branch of FIMS. Hope this post helps to identify some key starting spots and illustrates how modifications are really just a matter of taking, copying, and ajusting existing code. Please let us know if you have questions or we can offer advice, at alexander.jensen[at]noaa.gov or emily.liljestrand[at]noaa.gov.</p>
 
 
