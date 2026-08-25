@@ -14,7 +14,7 @@ editor:
 format:
   html:
     echo: true
-    code-fold: true
+    code-fold: false
 from: markdown+emoji
 ---
 
@@ -67,7 +67,7 @@ The crux of how selectivity is specified and used in FIMS came down to modifying
 
 [R/initialize_modules.R]{.underline} As the name suggests, this is where a generic module (e.g., "Population" or "Fleet") is initialized. Unlike other selectivity options, the age-specific selectivity needs the minimum age as an input (more on this in the roadblocks below), so we added it to the vector of integer_fields when a fleet is initialized.
 
-### Default Parameters
+## Default Parameters
 
 All of the above made it explicitly possible to use an age-based selectivity to fit assessment models in FIMS. But for accessibility and to make sure the model does run (rather than simply 'can' run), it was critical to specify default parameters when this selectivity is chosen by a user.
 
@@ -77,7 +77,8 @@ All of the above made it explicitly possible to use an age-based selectivity to 
 
 And at the center of these matryoshka dolls is a function that uses the template for setting default parameters to specify the name, type, label, ages, that these are fixed effects and estimated on the logistic scale (i.e., constrained between 0 and 1), using a qlogis() function. The new function call creates a vector of custom length for the parameter estimates, depending on the number of ages supplied by the user in the input data.
 
-```{r}         
+```{r}
+#| eval: false
 setup_default_AgeSpecific <- function(
   data
 ) {
@@ -92,11 +93,12 @@ setup_default_AgeSpecific <- function(
 }
 ```
 
-### Vignettes
+## Vignettes
 
 Once the functionality and default parameters were set, it was time to add a vignette that demonstrates the selectivity-at-age function working in action. We saved a copy of the existing [vignettes/fims-demo.Rmd]{.underline} as [fims-demo-age-spec-sel.Rmd]{.underline} and when setting up the default parameters, also did the following:
 
-```{r}         
+```{r}
+#| eval: false
 new_selectivity <- setup_default_Selectivity(
     data = data_4_model,
     fleet = "survey1",
@@ -106,7 +108,8 @@ new_selectivity <- setup_default_Selectivity(
 
 Then we manually overwrote the selectivity parameters by filtering out those associated with survey1 and selectivity before and binding on our rows we made in new_selectivity:
 
-```{r}         
+```{r}
+#| eval: false
 updated_parameters <- default_parameters |>
   dplyr::filter(!(fleet == "survey1" & module_name == "Selectivity")) |>
   dplyr::bind_rows(new_selectivity)
@@ -115,6 +118,7 @@ updated_parameters <- default_parameters |>
 Finally, we added a part in the code that creates "parameters_4_model" to specify which parameters are estimated and where we want the estimation to start:
 
 ```{r}
+#| eval: false
 dplyr::rows_update(
     tibble::tibble(
       fleet = "survey1",
@@ -134,7 +138,7 @@ This meant only the first two ages were estimated as fixed effects and the rest 
 
 Modifying and running the vignette confirmed that we were able to accurately and reliably estimate the two specified age-specific selectivity parameters for the test dataset using the new selectivity feature.
 
-### Tests
+## Tests
 
 Once the actual functionality was in place, default parameters are set, and a vignette is made, it was time to guarantee compatibility across all other areas of FIMS both now and in the future by writing in some checks and tests. There are two main categories of tests in FIMS, the gtests and testthat. The former focuses on cpp code and the latter on rcpp code. In both, we added similar tests, 1) that the input and output get passed around effectively, 2) that the inverse-logit and logit transformations handled values correctly, 3) that parameter values were being properly indexed and called, and 4) that FIMS could handle "edge-cases" or those extreme values where things run up against their bounds.
 
@@ -146,13 +150,14 @@ gtest_discover_tests(AgeSpecificSelectivity_Evaluate)
 
 [tests/gtest/test_AgeSpecificSelectivity_Evaluate.cpp]{.underline} Tests performance of evaluate calls with multiple ages and multiple time steps, to show inverse-logit transformations and indexing perform as expected. It was easy to set using the built in FIMS:::use_gtest_template()
 
-[tests/testthat/test-setup_default_AgeSpecific.R]{.underline} - This code specifically tests that the setup_default_AgeSpecific() function from R/create_default_parameters.R is working  
+[tests/testthat/test-setup_default_AgeSpecific.R]{.underline} - This code specifically tests that the setup_default_AgeSpecific() function from R/setup_default_parameters.R is working  
 
-[tests/testthat/test-setup_default_Selectivity.R]{.underline} - This code specifically tests that the setup_default_Selectivity() function from R/create_default_parameters.R is working  
+[tests/testthat/test-setup_default_Selectivity.R]{.underline} - This code specifically tests that the setup_default_Selectivity() function from R/setup_default_parameters.R is working  
 
 [tests/testthat/test-rcpp-selectivity.R]{.underline} - This code is generic to all selectivity options, unlike the gtest above. But we added sections specific to the AgeSpecificSelectivity option to check that the estimation type and evaluate() works correctly:
 
-```{r}         
+```{r}
+#| eval: false
 # Create selectivity2
   selectivity2 <- methods::new(AgeSpecificSelectivity)
 
@@ -179,23 +184,24 @@ gtest_discover_tests(AgeSpecificSelectivity_Evaluate)
 
 Essentially we specified values, ran the evaluation, and used a workhorse function in FIMS testing - expect_equal() - to see if we got back the result we expected.
 
-### Roadblocks/Lessons Learned
+## Roadblocks/Lessons Learned
 
-## :construction: Roadblock #1: Flexible indexing and age-specification options
+### :construction: Roadblock #1: Flexible indexing and age-specification options
 
 Unlike for other selectivity options which include a few parameters that establish a function between age and selectivity, the selectivity-at-age option uses a flexible number of parameters, specified by the user input data, and each can be set to be fixed to a constant, estimated using fixed effects. At a maximum there can be one estimated parameter for every age and at a minimum there can be no estimated parameters (all values fixed at their default of expected values). There was no precedent for this setting and the other selectivity options wouldn't help us resolve it. Ultimately, we asked for individual sessions with FIMS leadership to explain the issue and ask for solutions. They recommended including n_ages, the number of ages, and min_age the minimum age when declaring the AgeSpecificSelectivity class.
 
-## :construction: Roadblock #2: Naming conflicts with other selectivity options
+### :construction: Roadblock #2: Naming conflicts with other selectivity options
 
-Only when we got to building out the vignette to demo the age-specific selectivity option did we notice a problem with our naming convention that would conflict with how FIMS builds out names and uses features. We'd been calling the age-specific option "SelectivityatAge" but when the create_default_parameters() function is run, this name gets knitted together with "Selectivity" creating the monstrous "SelectivityatAgeSelectivity" which FIMS can't understand downstream.
+Only when we got to building out the vignette to demo the age-specific selectivity option did we notice a problem with our naming convention that would conflict with how FIMS builds out names and uses features. We'd been calling the age-specific option "SelectivityatAge" but when the setup_default_parameters() function is run, this name gets knitted together with "Selectivity" creating the monstrous "SelectivityatAgeSelectivity" which FIMS can't understand downstream.
 
 Our early fix was ugly. We manually put in an if statement to catch when the incorrect name shows up and manually changes it back to something comprehensible. But once we showed the issue and our band-aid solution to the FIMS code club, a weekly meeting that is reserved for debugging and discussion, we were about to crowd source a permanent solution - going back through the FIMS structure and renamed everything that was "selectivity at age" to "age specific selectivity" to fix this overarching issue.
 
-## :construction: Roadblock #3: Rebasing
+### :construction: Roadblock #3: Rebasing
 
-Sometimes we'd get a confusing error message, try a few fixes, check the indexing, check that input and output are to be expected, check that all the variables are properly declared and passed, only to come up totally blank. We'd ask others in the FIMS group just to learn its likely because of a mis-match between ours and the base code, necessitating a process called "rebasing"
+Sometimes we'd get a confusing error message, try a few fixes, check the indexing, check that input and output are to be expected, check that all the variables are properly declared and passed, only to come up totally blank. We'd ask others in the FIMS group just to learn its likely because of a mis-match between ours and the base code, necessitating a process called "rebasing." For example, in the process of writing this blog post, the function setup_default_parameters() was renamed from create_default_parameters(). We hadn't noticed and were hitting our heads against the wall when suddenly the demo vignette wasn't working at all!
 
 Essentially, once we branched off our project, any other changes made to the main "tree" afterwards don't automatically get included as we're working. Re-basing puts us in line with the central "trunk" before we put the branch back into the main version of the code. Our main advice on re-basing (besides letting someone supervise the first few times you try) is to 'squash' down all your commits into a single commit before doing the rebase, that way you don't have to approve commits over and over in the process.
+
 
 ## Takeaways
 
