@@ -317,7 +317,7 @@ Pick a 'Good First Issue' on GitHub and submit your first pull request for peer 
 ::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative .bg-dark}
 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-cover w-100 h-100" alt="" aria-hidden="true">
 <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-gradient-dark">
-<div class="text-white fw-bold small text-uppercase d-block">Fisheries & Oceans Canada Training</div>
+<div class="text-white fw-bold small text-uppercase d-block">Fisheries & Oceans Canada FIMS Training</div>
 <div class="text-white small">Nanaimo, BC</div>
 <div class="text-white small">October 5-8, 2026</div>
 <div class="text-white small">Private training</div>
