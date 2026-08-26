@@ -91,7 +91,6 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
 <meta property="og:title" content="Model Architecture – FIMS">
-<meta property="og:description" content="News and updates from the Fisheries Integrated Modeling System project.">
 <meta property="og:site_name" content="FIMS">
 </head>
 
@@ -392,7 +391,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../about/contributors.html" class="sidebar-item-text sidebar-link"><i class="bi bi-people" role="img">
 </i> 
- <span class="menu-text">Contributors</span></a>
+ <span class="menu-text">FIMS Team</span></a>
   </div>
 </li>
     </ul>
@@ -400,8 +399,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#comparison-of-fims-to-other-frameworks" id="toc-comparison-of-fims-to-other-frameworks" class="nav-link active" data-scroll-target="#comparison-of-fims-to-other-frameworks">Comparison of FIMS to other frameworks</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -456,9 +461,269 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Placeholder content for model architecture page. This page will include information about the FIMS model architecture, including diagrams and descriptions of the different components of the model and how they interact with each other.</p>
+<section id="comparison-of-fims-to-other-frameworks" class="level2">
+<h2 class="anchored" data-anchor-id="comparison-of-fims-to-other-frameworks">Comparison of FIMS to other frameworks</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>SS3</th>
+<th>FIMS</th>
+<th>RCEATTLE</th>
+<th>SPoRC</th>
+<th>WHAM</th>
+<th>Multi-WHAM</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Software</td>
+<td>ADMB</td>
+<td>TMB and C++</td>
+<td>TMB/RTMB</td>
+<td>RTMB</td>
+<td>TMB</td>
+<td>TMB</td>
+</tr>
+<tr class="even">
+<td>Operational ready</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Prior specification?</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>M, Q, and SRR</td>
+<td>M, h, Tag Reporting, Movement, Q, selectivity</td>
+<td>Q only</td>
+<td>Q only</td>
+</tr>
+<tr class="even">
+<td>CAAL</td>
+<td>Yes</td>
+<td>No</td>
+<td>In dev</td>
+<td>No</td>
+<td>Yes (deprecated)</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>Split sex</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Maybe</td>
+</tr>
+<tr class="even">
+<td>Age-error</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>TV but not fleet specific</td>
+<td>In branch</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>Fleet Age-error</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>TV Age-error</td>
+<td>Yes</td>
+<td>No</td>
+<td>In branch</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>Variety of selectivity</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>TV selectivity</td>
+<td>Yes</td>
+<td>In branch</td>
+<td>Yes (random walks, random deviates, blocks)</td>
+<td>Yes (blocks, iid and random walks, semi-parametric 3d and 2d)</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Growth estimation</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Marginal lengths</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>DM compositions</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>Additive logistic-normal compositions</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>Environmental linkages</td>
+<td>Yes</td>
+<td>No</td>
+<td>M, Q, SRR (any number of indices)</td>
+<td>Q</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>Multi-area</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Population Structures</td>
+<td>global SRR</td>
+<td>No</td>
+<td>No</td>
+<td>global or local SRR</td>
+<td>No</td>
+<td>Natal homing, local SRR</td>
+</tr>
+<tr class="even">
+<td>Multi species</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Multi-variate indices</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Multi-seasonal</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>In branch</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>NAA or M state-space</td>
+<td>No</td>
+<td>No</td>
+<td>M</td>
+<td>Will be in dev</td>
+<td>NAA and M</td>
+<td>NAA and M</td>
+</tr>
+<tr class="even">
+<td>DSEM-ready</td>
+<td>Never</td>
+<td>Long-term</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Harder</td>
+<td>Harder</td>
+</tr>
+<tr class="odd">
+<td>Internal OSA</td>
+<td>No</td>
+<td>No</td>
+<td>In dev</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>Internal AFSC proj scenarios</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>Reference point estimation</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>MSE tools</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>
