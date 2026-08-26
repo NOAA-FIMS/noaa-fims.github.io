@@ -1451,22 +1451,11 @@
     ]
   },
   {
-    "objectID": "community/index.html#ways-to-contribute",
-    "href": "community/index.html#ways-to-contribute",
-    "title": "Community & Collaboration",
-    "section": "Ways to Contribute",
-    "text": "Ways to Contribute\nWhether you’re a seasoned modeler or a first-time open-source contributor, there’s a place for you in the FIMS community.",
-    "crumbs": [
-      "community",
-      "Community Hub"
-    ]
-  },
-  {
     "objectID": "community/index.html#getting-involved",
     "href": "community/index.html#getting-involved",
     "title": "Community & Collaboration",
     "section": "Getting Involved",
-    "text": "Getting Involved\nFollow these 4 simple steps to start contributing to the FIMS project today.\n\n\n\nFIMS dashboard showing the project workflow and contribution steps.",
+    "text": "Getting Involved\nFollow these simple steps to start contributing to the FIMS project today.\n\n\n\nFIMS dashboard",
     "crumbs": [
       "community",
       "Community Hub"

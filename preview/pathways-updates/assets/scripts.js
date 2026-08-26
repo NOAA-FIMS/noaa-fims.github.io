@@ -49,6 +49,12 @@ function addPageSpecificClass() {
 }
 
 function initQuartoAccessibilityFixes() {
+  const hideDecorativeSidebarIcons = () => {
+    document.querySelectorAll('.quarto-sidebar i[role="img"]').forEach((icon) => {
+      icon.setAttribute("aria-hidden", "true");
+    });
+  };
+
   const fixScrollableCodeBlocks = () => {
     const selector = ".sourceCode:not([tabindex='0']), #photo-code pre:not([tabindex='0']), .panelset--bordered .panel:not([tabindex='0'])";
     const codeBlocks = document.querySelectorAll(selector);
@@ -58,7 +64,11 @@ function initQuartoAccessibilityFixes() {
   };
 
   fixScrollableCodeBlocks();
+  hideDecorativeSidebarIcons();
   document.addEventListener('shown.bs.tab', fixScrollableCodeBlocks);
+
+  const sidebarObserver = new MutationObserver(hideDecorativeSidebarIcons);
+  sidebarObserver.observe(document.body, { childList: true, subtree: true });
 
   const applyListingLabels = () => {
     const listing = document.getElementById("listing-listing");
