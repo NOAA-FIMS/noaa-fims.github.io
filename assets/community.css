@@ -204,6 +204,14 @@
   margin-bottom: 4rem;
 }
 
+/* A simple flex container to stack cards vertically with a consistent gap. Used on the homepage where a full grid isn't needed. */
+.fims-card-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+}
+
 .fims-card {
   background: var(--bs-body-bg, #fff);
   border: 1px solid rgba(0,0,0,0.1);
@@ -243,6 +251,11 @@
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 0 !important;
+}
+
+/* This makes the main content area of a card expand, pushing the footer to the bottom. It specifically targets the <section> that Quarto generates from a ### heading. */
+.fims-card > section {
+  flex-grow: 1;
 }
 
 /* Card Lists */

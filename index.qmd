@@ -185,7 +185,7 @@ resources:
 
 
 :::{.column}
-::: {.fims-card-grid}
+::: {.fims-card-stack}
 ::: {.fims-card .position-relative}
 ::: {.fims-card-icon .bi .bi-rocket}
 :::
@@ -198,7 +198,7 @@ Learn how to run a model in FIMS.
 :::
 
 ::: {.fims-card .position-relative}
-::: {.fims-card-icon .bi .bi-rocket}
+::: {.fims-card-icon .bi .bi-puzzle}
 :::
 ### Connect with us!
 Get connected to the FIMS community and resources.
