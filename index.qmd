@@ -185,7 +185,6 @@ resources:
 
 
 :::{.column}
-::: {.fims-horizontal-scroll}
 ::: {.fims-card-grid}
 ::: {.fims-card .position-relative}
 ::: {.fims-card-icon .bi .bi-rocket}
@@ -209,7 +208,6 @@ Get connected to the FIMS community and resources.
 :::
 :::
 
-:::
 :::
 :::
 :::
