@@ -134,17 +134,28 @@ tryCatch({
             desc_text <- gsub("\\\\,", ",", desc_text)
             desc_text <- gsub("\\\\;", ";", desc_text)
             
-            # 4. Clean up any leftover breaks or spaces at the absolute end of the newly chopped string
+            # 4. NEW: Remove redundant time/agenda string from description if present
+            # This regex looks for patterns like "3:20 - 4 PM ET: " and removes them from the start of the description.
+            desc_text <- sub("^(Agenda(<br>|\\\\n|\\\\N|\\s)*)?\\d{1,2}:\\d{2}\\s*-\\s*\\d{1,2}(:\\d{2})?\\s*(AM|PM)?\\s*[A-Z]{2,4}:?\\s*((<br>|\\\\n|\\\\N)\\s*)*", "", desc_text, ignore.case = TRUE)
+            
+            # 5. Clean up any leftover breaks or spaces at the absolute end of the newly chopped string
             desc_text <- gsub("(<br>|\\s)+$", "", desc_text)
             desc_text <- trimws(desc_text)
         }
         
         clean_time <- tryCatch({
-          if (grepl("Z$", raw_time)) {
+          if (grepl("TZID=", dtstart_line)) {
+            # Handles events with a specified timezone, e.g., DTSTART;TZID=America/New_York:20260827T152000
+            tzid <- sub('.*TZID=([^:]+):.*', '\\1', dtstart_line)
+            time_str <- sub('.*:', '', dtstart_line)
+            as.POSIXct(time_str, format="%Y%m%dT%H%M%S", tz=tzid)
+          } else if (grepl("Z$", raw_time)) {
+            # Handles UTC events, e.g., DTSTART:20260827T152000Z
             t <- as.POSIXct(raw_time, format="%Y%m%dT%H%M%SZ", tz="UTC")
             attr(t, "tzone") <- "America/New_York"
             t
           } else {
+            # Fallback for all-day events, e.g., DTSTART;VALUE=DATE:20260827
             as.POSIXct(sub("T.*", "", raw_time), format="%Y%m%d", tz="America/New_York")
           }
         }, error = function(e) NULL)
@@ -302,10 +313,10 @@ Pick a 'Good First Issue' on GitHub and submit your first pull request for peer 
 <h2 class="fw-bold text-primary mb-4">Training Opportunities</h2>
 
 ::: {.row .g-3}
-::: {.col-6 .col-md-3}
+::: {.col-4 .col-md-2}
 ::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative .bg-dark}
 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-cover w-100 h-100" alt="" aria-hidden="true">
-<div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
+<div class="position-absolute bottom-0 start-0 w-100 p-2 bg-gradient-dark">
 <div class="text-white fw-bold small text-uppercase d-block">Fisheries & Oceans Canada Training</div>
 <div class="text-white small">Nanaimo, BC</div>
 <div class="text-white small">October 5-8, 2026</div>
