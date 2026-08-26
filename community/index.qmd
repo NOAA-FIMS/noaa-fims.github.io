@@ -35,7 +35,7 @@ Join a global network of scientists, developers, and researchers building the fu
 Live activity across the FIMS development pipeline.
 :::
 
-<a href="https://github.com/orgs/NOAA-FIMS/projects/29" class="fims-pulse-link">View Full Dashboard <i class="bi bi-arrow-right"></i></a>
+<a href="https://github.com/orgs/NOAA-FIMS/projects/29" class="fims-pulse-link">View Full Project Board <i class="bi bi-arrow-right"></i></a>
 :::
 
 ::: {.fims-pulse-layout}
@@ -226,50 +226,11 @@ tryCatch({
 :::
 :::
 
-::: {.fims-contribute-header}
-## Ways to Contribute
-Whether you're a seasoned modeler or a first-time open-source contributor, there's a place for you in the FIMS community.
-:::
-
-::: {.fims-card-grid}
-::: {.fims-card}
-::: {.fims-card-icon}
-<i class="bi bi-terminal-fill"></i>
-:::
-### Code & Logic
-Help implement new population dynamics features or optimize existing C++ and R libraries.
-
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Good first issues
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Bug triaging
-:::
-
-::: {.fims-card}
-::: {.fims-card-icon}
-<i class="bi bi-file-earmark-text-fill"></i>
-:::
-### Documentation
-Clarify scientific methods, write tutorials, or improve our API documentation and guides.
-
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Wiki updates
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Use-case studies
-:::
-
-::: {.fims-card}
-::: {.fims-card-icon}
-<i class="bi bi-diagram-3-fill"></i>
-:::
-### Scientific Peer Review
-Participate in working groups to validate the mathematical integrity of new modeling modules.
-
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Technical review
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Algorithm testing
-:::
-:::
 
 ::: {.fims-steps-section}
 ::: {.fims-steps-intro}
 ## Getting Involved
-Follow these 4 simple steps to start contributing to the FIMS project today.
+Follow these simple steps to start contributing to the FIMS project today.
 
 ![FIMS dashboard](../images/fims_dashboard.png){fig-alt="FIMS dashboard showing the project workflow and contribution steps." .fims-steps-img}
 :::
@@ -338,27 +299,20 @@ Pick a 'Good First Issue' on GitHub and submit your first pull request for peer 
 :::
 
 ::: {.mb-5}
-<h2 class="fw-bold text-primary mb-4">Community Highlights</h2>
+<h2 class="fw-bold text-primary mb-4">Training Opportunities</h2>
 
 ::: {.row .g-3}
 ::: {.col-6 .col-md-3}
 ::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative .bg-dark}
-<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-cover w-80 h-60 opacity-75" alt="People collaborating">
-<div class="position-absolute bottom-0 start-0 w-80 p-3 bg-gradient-dark">
-<span class="text-white fw-bold small text-uppercase d-block">Fisheries & Oceans Canada Training</span>
-<span class="text-white small">Nanaimo, BC</span>
-<span class="text-white small">October 5-8, 2026</span>
-<span class="text-white small">Private training</span>
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-cover w-100 h-100" alt="" aria-hidden="true">
+<div class="position-absolute bottom-0 start-0 w-100 p-3 bg-gradient-dark">
+<div class="text-white fw-bold small text-uppercase d-block">Fisheries & Oceans Canada Training</div>
+<div class="text-white small">Nanaimo, BC</div>
+<div class="text-white small">October 5-8, 2026</div>
+<div class="text-white small">Private training</div>
 </div>
 :::
 :::
 
 :::
 :::
-
-<style>
-/* A few micro-interactions converted from Tailwind utilities */
-.hover-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
-.hover-lift:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
-.bg-gradient-dark { background: #0e181e; }
-</style>
