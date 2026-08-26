@@ -2,6 +2,20 @@
 title: FIMS Change Log
 ---
 
+## v0.10.0 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.10.0))
+### What's Changed
+- Use `setup_default_parameters()` to set up a model
+- Specify uncertainty in the input data frame using a formula with a distribution and arguments
+- Change time to timing in parameter tibble
+- Change value to observed in FIMSFrame
+- Rename `get_timing()` to `get_run_time()`
+- Change landings to catch everywhere (R and C++)
+
+**Full Changelog**: https://github.com/NOAA-FIMS/FIMS/compare/v0.9.4...v0.10.0
+
+---
+
+
 ## v0.9.4 ([release notes](https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.9.4))
 ### What's Changed
 
