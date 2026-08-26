@@ -94,18 +94,56 @@ async function fetchGitHubActivity() {
   }
 }
 
+function updateNextMeetingTime() {
+  // NOTE: This function assumes the meeting is on the third Wednesday of every month at 1:00 PM US Eastern Time.
+  // It also assumes the page contains elements with id="next-meeting-date" and id="next-meeting-time" to display the calculated values.
+  const dateElement = document.getElementById('next-meeting-date');
+  const timeElement = document.getElementById('next-meeting-time');
+
+  if (!dateElement || !timeElement) {
+    // Don't show an error if the elements aren't on the page.
+    return;
+  }
+
+  const getThirdWednesday = (year, month) => {
+    // Create a date for the first day of the given month in UTC
+    const d = new Date(Date.UTC(year, month, 1));
+    // Find the day of the week for the 1st of the month (0=Sun, 1=Mon, ..., 3=Wed)
+    const firstDay = d.getUTCDay();
+    // Calculate the date of the first Wednesday
+    let dayOfMonth = 1 + (3 - firstDay + 7) % 7;
+    // Add 14 days to get the third Wednesday
+    dayOfMonth += 14;
+    d.setUTCDate(dayOfMonth);
+    return d;
+  };
+
+  const now = new Date();
+  let meetingDate = getThirdWednesday(now.getUTCFullYear(), now.getUTCMonth());
+
+  // Create a date for today (at midnight UTC) for comparison
+  const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  if (meetingDate < today) {
+    // If this month's meeting has passed, get next month's meeting
+    meetingDate = getThirdWednesday(now.getUTCFullYear(), now.getUTCMonth() + 1);
+  }
+
+  const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
+  dateElement.textContent = meetingDate.toLocaleDateString('en-US', dateOptions);
+
+  // Displaying time explicitly as a string to avoid timezone conversion errors in the browser.
+  // This fixes the "00:00 EDT" issue and ensures the time is always correct.
+  timeElement.textContent = '1:00 PM US Eastern Time';
+}
+
 function hideDecorativeSidebarIcons() {
   document.querySelectorAll('.quarto-sidebar i[role="img"]').forEach(icon => {
     icon.setAttribute('aria-hidden', 'true');
   });
 }
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => {
-    hideDecorativeSidebarIcons();
-    fetchGitHubActivity();
-  });
-} else {
+document.addEventListener('DOMContentLoaded', () => {
   hideDecorativeSidebarIcons();
   fetchGitHubActivity();
-}
+  updateNextMeetingTime();
+});

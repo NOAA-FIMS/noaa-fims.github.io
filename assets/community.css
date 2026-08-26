@@ -2,10 +2,10 @@
 
 .fims-giant-card {
   /* REMOVED the solid background-color here! */
-  color: #ffffff; 
-  padding: 3rem;
+  color: #ffffff;
+  padding: 2.5rem;
   border-radius: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   position: relative;
   overflow: hidden; 
   transition: transform 120ms ease, box-shadow 120ms ease;
@@ -31,7 +31,7 @@
     Layer 2 (Bottom): Your ocean image
   */
   background-image: 
-    linear-gradient(#0e6876, #0e6876), 
+    linear-gradient(rgba(14, 104, 118, 0.85), rgba(14, 104, 118, 0.85)), 
     url('../images/ocean_image.png'); 
     
   background-size: cover; 
@@ -60,7 +60,7 @@
 }
 
 .fims-title {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: calc(1.25rem + 2.3vw);
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -69,7 +69,6 @@
 
 /* Description text with a bit more spacing and a lighter weight for better readability */
 .fims-desc {
-  font-size: 1.25rem;
   font-weight: 300;
   margin-bottom: 1.5rem;
   opacity: 1;
@@ -160,10 +159,10 @@
     width: 100%;
   }
   .fims-giant-card {
-    padding: 2rem;
+    padding: 1.75rem;
   }
   .fims-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -571,6 +570,12 @@ h3.no-anchor {
   font-weight: 700;
 }
 
+/* Removes default paragraph margins when used inside these components */
+.fims-feed-icon p,
+.fims-feed-badge p {
+  margin-bottom: 0;
+}
+
 /* Replaces .d-flex, .flex-column, .gap-3 */
 .fims-feed-list {
   display: flex;
@@ -644,13 +649,10 @@ h3.no-anchor {
   text-decoration-thickness: 0.12em;
 }
 
+/* This creates a subtle fade from transparent to dark at the bottom of the highlight cards, ensuring text is readable over the image. */
 .bg-gradient-dark {
-  background-color: #0e181e !important;
-  background-image: none !important;
-}
-
-.bg-gradient-dark span {
-  color: #ffffff !important;
+  /* Gradient starts semi-transparent and darkens, ensuring WCAG-compliant contrast for text over images. */
+  background: linear-gradient(180deg, rgba(14, 24, 30, 0.4), rgba(14, 24, 30, 0.85));
 }
 
 /* Replaces .bg-dark, .bg-opacity-25, .rounded-3, .p-3, .mb-4 */
