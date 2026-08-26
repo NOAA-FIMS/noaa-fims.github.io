@@ -652,7 +652,8 @@ h3.no-anchor {
 /* This creates a subtle fade from transparent to dark at the bottom of the highlight cards, ensuring text is readable over the image. */
 .bg-gradient-dark {
   /* Gradient starts semi-transparent and darkens, ensuring WCAG-compliant contrast for text over images. */
-  background: linear-gradient(180deg, rgba(14, 24, 30, 0.4), rgba(14, 24, 30, 0.85));
+  /* Gradient starts less abruptly, giving more visibility to the image. */
+  background: linear-gradient(180deg, rgba(14, 24, 30, 0.4) 20%, rgba(14, 24, 30, 0.9));
 }
 
 /* Replaces .bg-dark, .bg-opacity-25, .rounded-3, .p-3, .mb-4 */
