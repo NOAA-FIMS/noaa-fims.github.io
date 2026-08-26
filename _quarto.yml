@@ -85,7 +85,7 @@ website:
         - text: "Contact"
           href: about/contact.qmd
           icon: envelope-arrow-up
-        - text: "Contributors"
+        - text: "FIMS Team"
           href: about/contributors.qmd
           icon: people
     - id: get-started
