@@ -3,7 +3,7 @@ title: Frequently Asked Questions
 format:
   html:
     toc: true
-    toc-location: left
+    toc-location: right
     toc-depth: 3
 ---
 
