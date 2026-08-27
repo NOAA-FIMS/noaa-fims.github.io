@@ -186,6 +186,7 @@ resources:
 
 
 :::{.column}
+## Quick Start
 ::: {.fims-card-stack}
 ::: {.fims-card .position-relative}
 ::: {.fims-card-icon .bi .bi-rocket}
