@@ -79,9 +79,7 @@ And at the center of these matryoshka dolls is a function that uses the template
 
 ```{r}
 #| eval: false
-setup_default_AgeSpecific <- function(
-  data
-) {
+setup_default_AgeSpecific <- function(data) {
   default <- setup_default_parameters_template(n_parameters = get_n_ages(data)) |>
     dplyr::mutate(
       module_type = "AgeSpecific",
@@ -131,7 +129,7 @@ dplyr::rows_update(
       ),
       estimation_type = c(rep("fixed_effects", 2), rep("constant", 10))
     ),
-    by = c("fleet", "label", "age")
+    by = c("fleet", "label", "age"))
 ```
 
 This meant only the first two ages were estimated as fixed effects and the rest of the age-specific selectivity values were fixed at true values used to generate the input data to the vignette; selectivity for the older ages were effectively fixed at or near 1 with this specification. From previous experience it is often best to fix one or several selectivity-at-age values close to 1, otherwise the selectivity and fishing mortality parameters can become confounded.
