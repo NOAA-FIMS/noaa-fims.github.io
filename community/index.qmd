@@ -134,10 +134,10 @@ tryCatch({
             desc_text <- gsub("\\\\,", ",", desc_text)
             desc_text <- gsub("\\\\;", ";", desc_text)
             
-            # 4. NEW: Remove redundant time/agenda string from description if present
-            # This regex looks for patterns like "3:20 - 4 PM ET: " and removes them from the start of the description.
-            desc_text <- sub("^(Agenda(<br>|\\\\n|\\\\N|\\s)*)?\\d{1,2}:\\d{2}\\s*-\\s*\\d{1,2}(:\\d{2})?\\s*(AM|PM)?\\s*[A-Z]{2,4}:?\\s*((<br>|\\\\n|\\\\N)\\s*)*", "", desc_text, ignore.case = TRUE)
-            
+            # 4. Remove redundant time/agenda string from description if present.
+            # This regex looks for patterns like "3:20 - 4 PM ET: " or "3:20pm" at the start of the description.
+            desc_text <- sub("^(Agenda(<br>|\\\\n|\\\\N|\\s)*)?\\s*\\(?\\d{1,2}(:\\d{2})?(\\s*([AP]M))?(\\s*-\\s*\\d{1,2}(:\\d{2})?(\\s*([AP]M))?)?(\\s+[A-Z]{2,4})?\\)?:?(\\s*((<br>|\\\\n|\\\\N)\\s*))*", "", desc_text, ignore.case = TRUE)
+
             # 5. Clean up any leftover breaks or spaces at the absolute end of the newly chopped string
             desc_text <- gsub("(<br>|\\s)+$", "", desc_text)
             desc_text <- trimws(desc_text)
@@ -184,6 +184,10 @@ tryCatch({
     time_est  <- format(next_event$start, "%H:%M %Z", tz="America/New_York")
     summary_txt <- next_event$summary
     desc_txt <- next_event$description
+    
+    # Clean time from summary text, as it's displayed separately.
+    # This regex removes various time formats like "10:00am", "10-11", "(3:00 PM ET)" etc. from anywhere in the summary string.
+    summary_txt <- trimws(gsub("\\s*\\(?\\d{1,2}(:\\d{2})?(\\s*([AP]M))?(\\s*-\\s*\\d{1,2}(:\\d{2})?(\\s*([AP]M))?)?(\\s+[A-Z]{2,4})?\\)?", "", summary_txt, ignore.case = TRUE))
     
     # Format description HTML (Hides completely if empty, clamps at 5 lines)
     desc_html <- ""
