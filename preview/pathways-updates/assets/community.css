@@ -1,0 +1,725 @@
+/* ===== FIMS Giant Hero Card ===== */
+
+.fims-giant-card {
+  /* REMOVED the solid background-color here! */
+  color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  overflow: hidden; 
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  
+  /* Fallback color just in case the image path is broken */
+  background-color: var(--bs-primary, #0e6876); 
+}
+
+.fims-giant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+}
+
+.fims-giant-card::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  z-index: 0; 
+  /* REMOVED opacity: 0.2; as it washes out the colors */
+  
+  /* Layer 1 (Top): A blue-to-dark-teal gradient set to 85% opacity (rgba)
+    Layer 2 (Bottom): Your ocean image
+  */
+  background-image: 
+    linear-gradient(rgba(14, 104, 118, 0.85), rgba(14, 104, 118, 0.85)), 
+    url('../images/ocean_image.png'); 
+    
+  background-size: cover; 
+  background-position: center;
+}
+
+/* Replaces .w-75, .position-relative, .z-1 */
+.fims-hero-content {
+  position: relative;
+  z-index: 1;
+  width: 75%;
+}
+
+/* Replaces .badge, .bg-light, .text-primary, .mb-4, .p-2, .text-uppercase, .tracking-wider */
+.fims-badge {
+  display: inline-block;
+  background-color: #f8f9fa;
+  color: #213f4b;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 0.375rem;
+}
+
+.fims-title {
+  font-size: calc(1.25rem + 2.3vw);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #ffffff !important;
+}
+
+/* Description text with a bit more spacing and a lighter weight for better readability */
+.fims-desc {
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  opacity: 1;
+  line-height: 1.5;
+  color: #ffffff !important;
+}
+
+/* Container for the action buttons, allowing them to wrap on smaller screens */
+.fims-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* creates the button */
+.fims-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.fims-giant-card .btn-danger {
+  --bs-btn-bg: #852b35;
+  --bs-btn-border-color: #852b35;
+  --bs-btn-hover-bg: #6a222a;
+  --bs-btn-hover-border-color: #6a222a;
+  --bs-btn-active-bg: #573301;
+  --bs-btn-active-border-color: #573301;
+  background-color: #852b35 !important;
+  border-color: #852b35 !important;
+  color: #ffffff !important;
+}
+
+.btn-outline-light {
+  /* 1. Base Colors (Idle State) */
+  --bs-btn-bg: #0e6876;                  /* Change this to your desired background color */
+  --bs-btn-border-color: none;          /* Change this to your desired outline/border color */
+  --bs-btn-color: #ffffff;                 /* Change this to your desired text color */
+
+  /* 2. Hover Colors (When user mouses over the button) */
+  --bs-btn-hover-bg: #0c5460;            /* Background color on hover */
+  --bs-btn-hover-border-color: #0b4b56;   /* Border color on hover */
+  --bs-btn-hover-color: #ffffff;          /* Text color on hover */
+
+  /* 3. Active Colors (When the button is clicked) */
+  --bs-btn-active-bg: #0a434d;           /* Background color on click */
+  --bs-btn-active-border-color: #093b44;  /* Border color on click */
+  --bs-btn-active-color: #ffffff;         /* Text color on click */
+
+  /* 4. Strict Overrides for Quarto themes */
+  background-color: var(--bs-btn-bg) !important;
+  border-color: var(--bs-btn-border-color) !important;
+  color: var(--bs-btn-color) !important;
+}
+
+.fims-giant-card .btn-outline-light {
+  background-color: #0e6876 !important;
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* 5. Force text color on hover and active states to bypass theme locks */
+.btn-outline-light:hover {
+  color: var(--bs-btn-hover-color) !important;
+  background-color: var(--bs-btn-hover-bg) !important;
+  border-color: var(--bs-btn-hover-border-color) !important;
+}
+
+.btn-outline-light:active, 
+.btn-outline-light.active {
+  color: var(--bs-btn-active-color) !important;
+  background-color: var(--bs-btn-active-bg) !important;
+  border-color: var(--bs-btn-active-border-color) !important;
+}
+
+/* Replaces .shadow */
+.fims-btn-shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+/* --- Responsive Tweaks --- */
+@media (max-width: 768px) {
+  .fims-hero-content {
+    width: 100%;
+  }
+  .fims-giant-card {
+    padding: 1.75rem;
+  }
+  .fims-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* --- Dark Mode Tweaks --- */
+.quarto-dark .fims-giant-card {
+  background: #0f161a;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
+
+.quarto-dark .fims-giant-card:hover {
+  box-shadow: 0 10px 28px rgba(0,0,0,0.55);
+}
+
+
+
+/* ===== FIMS Contribute Header ===== */
+.fims-contribute-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.fims-contribute-header h2 {
+  color: var(--bs-primary, #0d6efd);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.fims-contribute-header p {
+  color: var(--slate-30);
+  font-size: 1.1rem;
+}
+
+/* ===== FIMS Cards Grid ===== */
+.fims-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* A simple flex container to stack cards vertically with a consistent gap. Used on the homepage where a full grid isn't needed. */
+.fims-card-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.fims-card {
+  background: var(--bs-body-bg, #fff);
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 0.4rem;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.fims-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.fims-card-icon {
+  background-color: #f8f9fa;
+  color: var(--bs-primary) !important;
+  display: inline-flex;
+  padding: 0.75rem;
+  border-radius: 0.3rem;
+  font-size: 1.75rem !important;
+  margin-bottom: 0.4rem;
+  align-self: flex-start;
+}
+
+.fims-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 0 !important;
+  margin-bottom: 0.3rem;
+}
+
+.fims-card p {
+  color: var(--slate-30);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0 !important;
+}
+
+/* This makes the main content area of a card expand, pushing the footer to the bottom. It specifically targets the <section> that Quarto generates from a ### heading. */
+.fims-card > section {
+  flex-grow: 1;
+}
+
+/* Card Lists */
+.fims-card ul {
+  list-style: none;
+  padding: 0;
+  margin: auto 0 0 0; /* Pushes the list to the bottom if text varies in length */
+}
+
+.fims-card li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--slate-30);
+  margin-bottom: 0.3rem;
+}
+
+.fims-text-success {
+  color: #198754;
+  font-size: 1.1rem;
+}
+
+/* ===== FIMS Getting Involved Steps ===== */
+.fims-steps-section {
+  background-color: #f8f9fa;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.fims-steps-intro h2 {
+  color: var(--bs-primary, #0d6efd);
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.fims-steps-intro p {
+  color: var(--slate-30);
+  margin-bottom: 1.5rem;
+}
+
+.fims-steps-img {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0,0,0,0.1);
+  opacity: 0.85;
+}
+
+.fims-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fims-step {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.fims-step-number {
+  background-color: var(--bs-primary, #0d6efd);
+  color: #ffffff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Removes Quarto's default paragraph margin inside the circle */
+.fims-step-number p {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1;
+}
+
+.fims-step-content h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.fims-step-content p {
+  color: var(--slate-30);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.fims-step-link {
+  color: var(--bs-primary, #0d6efd);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.fims-step-link:hover {
+  text-decoration: underline;
+}
+
+.fims-btn-small {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* --- Responsive Layout Adjustments --- */
+@media (max-width: 992px) {
+  .fims-steps-section {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .fims-steps-img {
+    max-width: 400px;
+  }
+}
+
+/* --- Dark Mode Tweaks --- */
+.quarto-dark .fims-card,
+.quarto-dark .fims-steps-section,
+.quarto-dark .fims-card-icon {
+  background: #0f161a;
+  border-color: rgba(255,255,255,0.08);
+}
+
+.quarto-dark .fims-card p,
+.quarto-dark .fims-contribute-header p,
+.quarto-dark .fims-step-content p {
+  color: #a0aec0;
+}
+
+.quarto-dark .fims-step-number {
+  background-color: #0e6876; /* Switch to FIMS teal for dark mode */
+}
+
+
+/* ===== FIMS Pulse Header ===== */
+
+/* Replaces .d-flex, .justify-content-between, .align-items-end, .mb-4 */
+.fims-pulse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Keeps the button sitting perfectly on the bottom baseline */
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.fims-pulse-header section.fims-pulse-titles {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Forces the text below the h2 to behave */
+.fims-pulse-header section p {
+  margin-bottom: 0 !important;
+}
+
+/* Fixes Quarto wrapping your link in a paragraph tag */
+.fims-pulse-header > p {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex; 
+}
+
+.fims-pulse-titles {
+  margin: 0 !important;
+}
+
+/* Replaces .fw-bold, .text-primary, .mb-1 */
+.fims-pulse-titles h2 {
+  color: var(--bs-primary, #0d6efd);
+  font-weight: 700;
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem !important;
+  padding: 0 !important;
+}
+
+/* Replaces .text-muted, .mb-0 */
+.fims-pulse-titles p {
+  color: #6c757d;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1rem;
+}
+
+/* Replaces .text-danger, .fw-bold, .text-decoration-none, .d-flex, .align-items-center */
+.fims-pulse-link {
+  color: var(--bs-danger, #dc3545);
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+.fims-pulse-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Responsive Layout Adjustments --- */
+/* On very small screens, stack the title and the link vertically */
+@media (max-width: 576px) {
+  .fims-pulse-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* --- Dark Mode Tweaks --- */
+.quarto-dark .fims-pulse-titles p {
+  color: #a0aec0;
+}
+
+/* ===== FIMS Pulse Layout & Grid ===== */
+
+/* Wraps the entire section (Header + Cards) */
+.fims-pulse-section {
+  margin-bottom: 3rem;
+}
+
+/* Replaces .row, .g-4, .col-lg-8 */
+.fims-pulse-layout {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr; /* Default to single column for mobile stacks */
+}
+
+@media (min-width: 992px) {
+  .fims-pulse-layout {
+    /* Main column gets 2/3 space, side column gets 1/3 space */
+    grid-template-columns: 2fr 1fr; 
+    align-items: stretch; /* Forces both boxes to look exactly the same height */
+  }
+}
+
+.fims-pulse-main-col {
+  width: 100%;
+}
+
+.fims-pulse-side-col {
+  width: 100%;
+  height: 100%;
+}
+
+/* Adjust heading styles when .no-anchor is present to bypass Quarto layout rules */
+h3.no-anchor {
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+  padding: 0 !important;
+}
+
+/* ===== FIMS GitHub Feed Card ===== */
+
+/* Replaces .card, .h-100, .shadow-sm, .border-0, .p-4 */
+.fims-feed-card {
+  background-color: var(--bs-body-bg, #ffffff);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Replaces .d-flex, .align-items-center, .justify-content-between, .mb-4 */
+.fims-feed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; /* Allows the badge to drop down on tiny screens */
+  gap: 1rem;
+}
+
+/* Replaces .d-flex, .align-items-center, .gap-3 */
+.fims-feed-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Replaces .bg-dark, .text-white, .p-2, .rounded-3 */
+.fims-feed-icon {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* Replaces .h5, .fw-bold, .mb-0 */
+.fims-feed-title-group h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Replaces .badge, .bg-light, .text-dark, .font-monospace, .border */
+.fims-feed-badge {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: 1px solid #dee2e6;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+}
+
+/* Removes default paragraph margins when used inside these components */
+.fims-feed-icon p,
+.fims-feed-badge p {
+  margin-bottom: 0;
+}
+
+/* Replaces .d-flex, .flex-column, .gap-3 */
+.fims-feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Replaces .text-muted, .fst-italic, .small */
+.fims-feed-loading {
+  color: #6c757d;
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+/* --- Dark Mode Tweaks --- */
+.quarto-dark .fims-feed-card {
+  background-color: #0f161a;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.quarto-dark .fims-feed-badge {
+  background-color: #1a242b;
+  color: #a0aec0;
+  border-color: rgba(255,255,255,0.15);
+}
+
+.quarto-dark .fims-feed-icon {
+  background-color: #1a242b;
+}
+
+/* ===== FIMS Next Meeting Card ===== */
+
+/* Replaces .card, .h-100, .bg-secondary, .text-white, .border-0, .shadow-sm, .p-4 */
+.fims-meeting-card {
+  background-color: #0e6876;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  
+  /* Flexbox to push the button to the bottom if the card is stretched */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
+
+/* Replaces .h4, .fw-bold, .mb-2 */
+.fims-meeting-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+/* Replaces .mb-4, .opacity-75 */
+.fims-meeting-content > p {
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 1.5rem;
+}
+
+.fims-meeting-description,
+.fims-meeting-description a {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fims-meeting-description a {
+  text-decoration-thickness: 0.12em;
+}
+
+/* This creates a subtle fade from transparent to dark at the bottom of the highlight cards, ensuring text is readable over the image. */
+.bg-gradient-dark {
+  /* Gradient starts semi-transparent and darkens, ensuring WCAG-compliant contrast for text over images. */
+  /* Gradient starts less abruptly, giving more visibility to the image. */
+  background: linear-gradient(180deg, rgba(14, 24, 30, 0.4) 20%, rgba(14, 24, 30, 0.9));
+}
+
+/* Replaces .bg-dark, .bg-opacity-25, .rounded-3, .p-3, .mb-4 */
+.fims-meeting-datetime {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Replaces .d-flex, .align-items-center, .gap-3, .mb-2 */
+.fims-meeting-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.fims-meeting-row:last-child {
+  margin-bottom: 0; /* Removes bottom margin from the last item so the box padding stays even */
+}
+
+/* Replaces .text-danger */
+.fims-icon-danger {
+  color: var(--bs-danger, #dc3545);
+  font-size: 1.25rem;
+}
+
+/* Replaces .text-primary, .fw-bold, .w-100, .py-2 */
+.fims-btn-full {
+  width: 100%;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--bs-primary, #0d6efd);
+}
+
+/* --- Dark Mode Tweaks --- */
+.quarto-dark .fims-meeting-card {
+  background-color: #1a242b; /* A darker tone to match your dark mode theme */
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.fims-giant-card .btn-danger:hover,
+.fims-giant-card .btn-danger:focus-visible {
+  background-color: #6a222a !important;
+  border-color: #6a222a !important;
+  color: #ffffff !important;
+}
+
+.fims-giant-card .btn-outline-light:hover,
+.fims-giant-card .btn-outline-light:focus-visible {
+  background-color: #0c5460 !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
