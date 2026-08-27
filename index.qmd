@@ -69,12 +69,12 @@ resources:
 </div>
 ```
 ::: {.columns}
-:::{.column}
-## Subscribe to the Weekly Newsletter & Blog
+::: {.column width="49%"}
+## Subscribe to the Newsletter & Blog
 
 ```{=html}
 <!-- START - We recommend to place the below code where you want the form in your website html  -->
-<div class="sib-form" style="text-align: center; background-color:#fff; padding: 15px 0;">
+<div class="sib-form" style="text-align: center; background-color:#fff; padding: 0px 0;">
   <div id="sib-form-container" class="sib-form-container">
     <div id="error-message" class="sib-form-message-panel" role="alert" aria-live="assertive" tabindex="-1" style="font-family:var(--bs-body-font-family); font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px; max-width:350px; margin: 0 auto;">
       <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
@@ -101,18 +101,18 @@ resources:
     <section id="sib-container" class="sib-container--large sib-container--vertical" aria-labelledby="newsletter-form-title" aria-describedby="newsletter-form-description" style="padding: 10px !important; max-width:400px; margin: 0 auto; text-align:center; background-color:#f7fafb; border-width:1px; border-style:solid; border-color:#C0CCD9; border-radius:3px; direction:ltr">
       <form id="sib-form" method="POST" action="https://11796369.sibforms.com/serve/MUIFAK1XHMwXI2NT4stSrUOqzvk_N5p9vPeHoF3BCI1dgjJSFy-EiOCNK2tgyvJhpXso6jQu_TUclmZ1Aa5uESA9g4gzTrFel9mghDTJkgPDD-DVijIa3ax16iCbdvK3w8erhPbeNYuoUY-boD64ojPldsu0VNBEO-20emT2pQmH87NHI2-9D0wyZhyXf5mMWYmOUD89fvcHbFeQRQ==" data-type="subscription">
         <fieldset class="sib-form-fieldset">
-          <legend class="visually-hidden">Subscribe to the FIMS Blog newsletter</legend>
+          <legend class="visually-hidden">Subscribe to the FIMS Newsletter & Blog</legend>
 
           <div style="padding: 5px 0;">
             <div class="sib-form-block" style="font-family:var(--bs-font-family-heading, inherit); font-size:calc(1.29rem + 0.48vw); font-weight:700; text-align:left; text-decoration:underline; color:#0e6876; background-color:transparent;">
-              <p id="newsletter-form-title" style="margin: 0; margin-bottom: 2px;">FIMS Blog</p>
+              <p id="newsletter-form-title" style="margin: 0; margin-bottom: 2px;">FIMS Newsletter & Blog</p>
             </div>
           </div>
 
           <div style="padding: 5px 0;">
             <div class="sib-form-block" style="font-family:var(--bs-body-font-family); font-size:16px; text-align:left; color:#3C4858; background-color:transparent;">
               <div class="sib-text-form-block">
-                <p id="newsletter-form-description" style="margin: 0;">Subscribe to our Blog and stay updated.</p>
+                <p id="newsletter-form-description" style="margin: 0;">Subscribe to stay updated.</p>
               </div>
             </div>
           </div>
@@ -184,8 +184,10 @@ resources:
 ```
 :::
 
+::: {.column width="2%"}
+::: 
 
-:::{.column}
+::: {.column width="49%"}
 ## Quick Start
 ::: {.fims-card-stack}
 ::: {.fims-card .position-relative}
