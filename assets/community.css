@@ -51,7 +51,7 @@
   background-color: #f8f9fa;
   color: #213f4b;
   padding: 0.5rem 0.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -62,7 +62,7 @@
 .fims-title {
   font-size: calc(1.25rem + 2.3vw);
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.2;
   color: #ffffff !important;
 }
@@ -560,6 +560,7 @@ h3.no-anchor {
   padding: 0.5rem;
   border-radius: 0.5rem;
   display: inline-flex;
+  align-items: center;
   font-size: 1.25rem;
   line-height: 1;
 }
@@ -586,7 +587,7 @@ h3.no-anchor {
 /* Removes default paragraph margins when used inside these components */
 .fims-feed-icon p,
 .fims-feed-badge p {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 /* Replaces .d-flex, .flex-column, .gap-3 */
