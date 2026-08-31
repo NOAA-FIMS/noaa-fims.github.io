@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alexander Jensen and Emily Liljestrand">
+<meta name="dcterms.date" content="2026-08-25">
 
-<title>contributors – FIMS</title>
+<title>Implementing New Features in FIMS: A Case Study in Selectivity – FIMS</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,6 +27,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -90,8 +127,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
-<meta property="og:title" content="FIMS">
-<meta property="og:description" content="News and updates from the Fisheries Integrated Modeling System project.">
+<meta property="og:title" content="Implementing New Features in FIMS: A Case Study in Selectivity – FIMS">
+<meta property="og:description" content="How to add new features in FIMS using existing code, GitHub, GitHub issues, and FIMS Implementation Team resources">
 <meta property="og:site_name" content="FIMS">
 </head>
 
@@ -260,7 +297,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -365,12 +402,47 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Implementing New Features in FIMS: A Case Study in Selectivity</h1>
+            <p class="subtitle lead">How to add new features in FIMS using existing code, GitHub, GitHub issues, and FIMS Implementation Team resources</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">learn</div>
+                <div class="quarto-category">R</div>
+                <div class="quarto-category">open-science</div>
+                <div class="quarto-category">testing</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alexander Jensen and Emily Liljestrand </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 25, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 <!-- Skip to main content link for keyboard accessibility -->
 <style>
@@ -406,225 +478,142 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="fims-team" class="level1">
-<h1>FIMS Team</h1>
-<p>FIMS is a collaborative effort that would not be possible without the generous support of NOAA Fisheries and its employees as well as members of the FIMS Council.</p>
-<section id="project-lead" class="level2">
-<h2 class="anchored" data-anchor-id="project-lead">Project Lead</h2>
+
+<section id="contributing-to-fims" class="level2">
+<h2 class="anchored" data-anchor-id="contributing-to-fims">Contributing to FIMS</h2>
+<p>The advantage of having a modular modeling system like FIMS is that its development can be broken down and tackled in component parts. By utilizing GitHub’s collaborative structure, while one developer can focus on improving recruitment estimates in FIMS, others can tackle, for example, age-composition likelihoods or diagnostic tools.</p>
+<p>In this way, scientists at different centers can focus on adding those features that are critically necessary to make the assessments in their regions compatible with the FIMS platform. Our small team chipped off a little piece of age-based stock assessment models that was important for our two regions despite being on complete opposite sides of the country, at the Southwest Fisheries Science Center and the Northeast Fisheries Science Center.</p>
+<p>The default selectivity options in FIMS are logistic or double logistic, but various versions of double normal and age-specific selectivity are used in stock synthesis (SS3) and the Woods Hole Assessment Model (WHAM). We set out to add these options and remove one more barrier to replicating regional assessments in FIMS.</p>
+</section>
+<section id="modifying-the-fims-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="modifying-the-fims-workflow">Modifying the FIMS Workflow</h2>
+<p>Though daunting at first, we realized we could add these selectivity options by copying the existing scaffolding from previous selectivity options or even look to features like the recruitment or abundance specification to figure out indexing, calculations, and how variables are passed around the FIMS framework. Implementing new cpp architecture was the most tricky, since neither of us had a strong background in it.</p>
+<p>Before any modifications were made, we branched the GitHub repository into a development branch with an informative name, dev-selectivity-at-age and made all changes there.</p>
+<p>The crux of how selectivity is specified and used in FIMS came down to modifying or adding a few bits of code, described below:</p>
+<p><u>src/rcpp_selectivity.cpp</u> The code includes Rcpp classes for the different selectivity options. We added ‘AgeSpecificSelectivity’ as a new class, with corresponding variable names.</p>
+<p><u>inst/include/common/fims_math.hpp</u> This code contains all of the “fims math” or other formulas and math functions not found in base R functionality. We added new functions to help conversion of Type&amp;x to size_t for indexing purposes in age_specific.hpp</p>
+<p><u>inst/include/common/fims_vector.hpp</u> This code contains utility functions for interacting with vectors using C++. We added a new function to properly index and transform logit-transformed selectivity parameter values within vectors into standard selectivity values as a function of both age and time (<code>get_force_scalar_wrap</code>):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>  <span class="kw">inline</span> Type <span class="op">&amp;</span>get_force_scalar_wrap<span class="op">(</span><span class="dt">size_t</span> pos<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span><span class="kw">this</span><span class="op">-&gt;</span>size<span class="op">()</span> <span class="op">==</span> <span class="dv">1</span> <span class="op">&amp;&amp;</span> pos <span class="op">&gt;</span> <span class="dv">0</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="kw">this</span><span class="op">-&gt;</span>at<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span><span class="kw">this</span><span class="op">-&gt;</span>size<span class="op">()</span> <span class="op">&gt;</span> <span class="dv">1</span> <span class="op">&amp;&amp;</span> pos <span class="op">&gt;=</span> <span class="kw">this</span><span class="op">-&gt;</span>size<span class="op">())</span> <span class="op">{</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">size_t</span> remain <span class="op">=</span> pos <span class="op">%</span> <span class="kw">this</span><span class="op">-&gt;</span>size<span class="op">();</span> </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>      <span class="co">// this only works if both pos and this-&gt;size() are integers</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="kw">this</span><span class="op">-&gt;</span>at<span class="op">(</span>remain<span class="op">);</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="kw">this</span><span class="op">-&gt;</span>at<span class="op">(</span>pos<span class="op">);</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><u>inst/include/interface/rcpp/rcpp_interface.hpp</u> This is the RCPP interface “to declare things”. We copied the code used for the other selectivity options (i.e., “LogisticSelectivityInterface” and “DoubleLogisticSelectivityInterface”) and used it to declare the “AgeSpecificSelectivityInterface”.</p>
+<p><u>inst/include/interface/rcpp/rcpp_objects/rcpp_selectivity.hpp</u> This code is an RCPP interface to declare objects, specifically different types of selectivity. There was already code for “LogisticSelectivityInterface” and “DoubleLogisticSelectivityInterface” so it was trivial to copy this architecture wholesale for “AgeSpecificSelectivityInterface”.</p>
+<p><u>inst/include/population_dynamics/selectivity/selectivity.hpp</u> This code explicitly defines any downstream “functors” (see below) for use in FIMS. We added a single line “#include”functors/age_specific.hpp”.</p>
+<p><u>inst/include/population_dynamics/selectivity/functors/age_specific.hpp</u> This was a brand new bit of code we created, again mimicking the functors for other selectivity options like logistic and double logistic. Here’s where the actual “math” all gets applied, the correct indexing figured out for the age-specific values, and the inverse logit applied to the parameters.</p>
+<p><u>R/FIMS-package.R</u> This code lists all objects that are “imported” and “exported” in FIMS and we modified to include <code>@export AgeSpecificSelectivity</code> and ran <code>devtools::document()</code> to add function to exported functions.</p>
+<p><u>R/initialize_modules.R</u> As the name suggests, this is where a generic module (e.g., “Population” or “Fleet”) is initialized. Unlike other selectivity options, the age-specific selectivity needs the minimum age as an input (more on this in the roadblocks below), so we added it to the vector of integer_fields when a fleet is initialized.</p>
+</section>
+<section id="default-parameters" class="level2">
+<h2 class="anchored" data-anchor-id="default-parameters">Default Parameters</h2>
+<p>All of the above made it explicitly possible to use an age-based selectivity to fit assessment models in FIMS. But for accessibility and to make sure the model does run (rather than simply ‘can’ run), it was critical to specify default parameters when this selectivity is chosen by a user.</p>
+<p><u>R/setup_default_parameters.R</u> This bit of code contains several functions necessary for broadly and specifically specifying default parameters in FIMS. The nested functions are as follows:</p>
 <ul>
-<li>Kelli F. Johnson (OST)</li>
+<li>setup_default_parameters() -&gt; setup_default_Selectivity() -&gt; setup_default_AgeSpecific() -&gt; setup_default_parameters_template()</li>
 </ul>
+<p>And at the center of these matryoshka dolls is <code>setup_default_AgeSpecific()</code>, which uses the generic template to create the basic shape of the data frame before filling in information such as the name, type, and label. Then, it specifies that the parameters, well expect one which is constant, are fixed effects and estimated on the logistic scale (i.e., constrained between 0 and 1), using <code>qlogis()</code>. Calling the new function creates a data frame with appropriate dimensions, depending on the number of ages supplied by the user in the input data.</p>
 </section>
-<section id="core-developers" class="level2">
-<h2 class="anchored" data-anchor-id="core-developers">Core Developers</h2>
-<ul>
-<li>Grant D. Adams (AFSC)</li>
-<li>Jon K. T. Brodziak (PIFSC)</li>
-<li>Kathryn L. Doering (OST)</li>
-<li>Daniel R. Goethel (AFSC)</li>
-<li>Andrea M. Havron (OST)</li>
-<li>Alexander J. Jensen (SWFSC)</li>
-<li>Ronald Klasky (T and T Consulting Services, Inc.)</li>
-<li>Peter T. Kuriyama (SWFSC)</li>
-<li>Bai Li (OST)</li>
-<li>Emily M. Liljestrand (NEFSC)</li>
-<li>Timothy J. Miller (NEFSC)</li>
-<li>Elizabeth Perl (OST)</li>
-<li>Megumi C. Oshima (PIFSC)</li>
-<li>Matthew Supernaw (OST)</li>
-<li>Ian G. Taylor (NWFSC)</li>
-<li>Nathan R. Vaughan (Vaughan Analytics)</li>
-<li>Eric J. Ward (NWFSC)</li>
-<li>Erik H. Williams (SEFSC)</li>
-</ul>
+<section id="vignettes" class="level2">
+<h2 class="anchored" data-anchor-id="vignettes">Vignettes</h2>
+<p>Once the functionality and default parameters were set, it was time to add a vignette that demonstrates the selectivity-at-age function working in action. First, we saved a copy of the existing <u>vignettes/fims-demo.Rmd</u> as <u>fims-demo-age-spec-sel.Rmd</u> and modified it to have age-specific selectivity. Then, while our pull request was being reviewed, it was suggested that we just add this functionality to the original vignette rather than creating a new one. The code below outlines how we altered the vignette.</p>
+<p>When setting up the default parameters, we also created the following object:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>new_selectivity <span class="ot">&lt;-</span> <span class="fu">setup_default_Selectivity</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> data_4_model,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">fleet =</span> <span class="st">"survey1"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">module_type =</span> <span class="st">"AgeSpecific"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Then we manually overwrote the selectivity parameters by filtering out those associated with survey1 and selectivity before and binding on our rows we made in <code>new_selectivity</code>:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>updated_parameters <span class="ot">&lt;-</span> default_parameters <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span>(fleet <span class="sc">==</span> <span class="st">"survey1"</span> <span class="sc">&amp;</span> module_name <span class="sc">==</span> <span class="st">"Selectivity"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">bind_rows</span>(new_selectivity)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Finally, we added a part in the code that creates “parameters_4_model” to specify which parameters are estimated and where we want the estimation to start:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">rows_update</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    tibble<span class="sc">::</span><span class="fu">tibble</span>(</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">fleet =</span> <span class="st">"survey1"</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">label =</span> <span class="st">"logit_sel_at_age"</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">age =</span> <span class="fu">seq</span>(<span class="fu">get_n_ages</span>(data_4_model)),</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">value =</span> <span class="fu">c</span>(</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="dv">0</span>, <span class="dv">0</span>, <span class="fl">2.999999</span>, <span class="fl">4.999993</span>, <span class="fl">6.999946</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        <span class="fl">8.999956</span>, <span class="fl">11.000085</span>, <span class="fl">12.982599</span>, <span class="fl">15.019483</span>, <span class="fl">18.420681</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="fl">18.420681</span>, <span class="fl">18.420681</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">estimation_type =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"fixed_effects"</span>, <span class="dv">2</span>), <span class="fu">rep</span>(<span class="st">"constant"</span>, <span class="dv">10</span>))</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"fleet"</span>, <span class="st">"label"</span>, <span class="st">"age"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>This meant only the first two ages were estimated as fixed effects and the rest of the age-specific selectivity values were fixed at true values used to generate the input data to the vignette; selectivity for the older ages were effectively fixed at or near 1 with this specification. From previous experience it is often best to fix one or several selectivity-at-age values close to 1, otherwise the selectivity and fishing mortality parameters can become confounded.</p>
+<p>Modifying and running the vignette confirmed that we were able to accurately and reliably estimate the two specified age-specific selectivity parameters for the test dataset using the new selectivity feature.</p>
 </section>
-<section id="supporting-developers" class="level2">
-<h2 class="anchored" data-anchor-id="supporting-developers">Supporting Developers</h2>
-<ul>
-<li>Jennifer S. Bigman (University of Delaware)</li>
-<li>Kristan Blackhart (NEFSC)</li>
-<li>Edward J. Dick (SWFSC)</li>
-<li>Alan C. Haynie (ICES)</li>
-<li>James N. Ianelli (AFSC)</li>
-<li>Hui-hua Lee (SWFSC)</li>
-<li>Christopher M. Legault (NEFSC)</li>
-<li>Patrick D. Lynch (OST)</li>
-<li>Richard D. Methot (NWFSC)</li>
-<li>Cole C. Monnahan (AFSC)</li>
-<li>Lisa Pfeiffer (NWFSC)</li>
-<li>Kyle W. Shertzer (SEFSC)</li>
-<li>Christine C. Stawitz (University of Birmingham)</li>
-<li>Jane Y. Sullivan (AFSC)</li>
-<li>Howard Townsend (OST)</li>
-</ul>
+<section id="tests" class="level2">
+<h2 class="anchored" data-anchor-id="tests">Tests</h2>
+<p>Once the actual functionality was in place, default parameters are set, and a vignette is made, it was time to guarantee compatibility across all other areas of FIMS both now and in the future by writing in some checks and tests. There are two main categories of tests in FIMS, the gtests and testthat. The former focuses on C++ code and the latter on Rcpp and R code. In both, we added similar tests, 1) that the input and output get passed around effectively, 2) that the inverse-logit and logit transformations handled values correctly, 3) that parameter values were being properly indexed and called, and 4) that FIMS could handle “edge-cases” or those extreme values where things run up against their bounds.</p>
+<p><u>tests/gtest/CMAkeLists.txt</u>. We just needed to modify one thing — adding test names for AgeSpecificSelectivity to ensure these tests are called during compilation:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>gtest_discover_tests<span class="op">(</span>AgeSpecificSelectivity_Evaluate<span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><u>tests/gtest/test_AgeSpecificSelectivity_Evaluate.cpp</u> Tests performance of evaluate calls with multiple ages and multiple time steps, to show inverse-logit transformations and indexing perform as expected. It was easy to set using <code>FIMS:::use_gtest_template()</code>.</p>
+<p><u>tests/testthat/test-setup_default_AgeSpecific.R</u> - This code specifically tests that <code>setup_default_AgeSpecific()</code> from R/setup_default_parameters.R is working.</p>
+<p><u>tests/testthat/test-setup_default_Selectivity.R</u> - This code specifically tests that <code>setup_default_Selectivity()</code> from R/setup_default_parameters.R is working.</p>
+<p><u>tests/testthat/test-rcpp-selectivity.R</u> - This code is generic to all selectivity options, unlike the gtest above. But we added sections specific to the AgeSpecificSelectivity option to check that the estimation type and evaluate() works correctly:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create selectivity2</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  selectivity2 <span class="ot">&lt;-</span> methods<span class="sc">::</span><span class="fu">new</span>(AgeSpecificSelectivity)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  selectivity2<span class="sc">$</span>logit_sel_at_age<span class="sc">$</span><span class="fu">resize</span>(<span class="dv">1</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  selectivity2<span class="sc">$</span>logit_sel_at_age[<span class="dv">1</span>]<span class="sc">$</span>value <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  selectivity2<span class="sc">$</span>logit_sel_at_age[<span class="dv">1</span>]<span class="sc">$</span>estimation_type<span class="sc">$</span><span class="fu">set</span>(<span class="st">"random_effects"</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  selectivity2<span class="sc">$</span>ages<span class="sc">$</span><span class="fu">resize</span>(<span class="dv">1</span>)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  selectivity2<span class="sc">$</span>ages<span class="sc">$</span><span class="fu">set</span>(<span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="co">#' @description Test that `get_id()` for `AgeSpecificSelectivity` works when a second object is created.</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expect_equal</span>(selectivity2<span class="sc">$</span><span class="fu">get_id</span>(), <span class="dv">2</span>)</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="co">#' @description Test that the `logit_sel_at_age` value is set to 1.</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expect_equal</span>(selectivity2<span class="sc">$</span>logit_sel_at_age[<span class="dv">1</span>]<span class="sc">$</span>value, <span class="fl">1.0</span>)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="co">#' @description Test that the `logit_sel_at_age` estimation type is set to "random_effects".</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expect_equal</span>(selectivity2<span class="sc">$</span>logit_sel_at_age[<span class="dv">1</span>]<span class="sc">$</span>estimation_type<span class="sc">$</span><span class="fu">get</span>(), <span class="st">"random_effects"</span>)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  <span class="co">#' @description Test that `evaluate()` works for `AgeSpecificSelectivity` with "random_effects".</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expect_equal</span>(</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    selectivity2<span class="sc">$</span><span class="fu">evaluate</span>(<span class="dv">1</span>),</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Line below equals 0.2716494</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    <span class="fl">1.0</span> <span class="sc">/</span> (<span class="fl">1.0</span> <span class="sc">+</span> <span class="fu">exp</span>(<span class="sc">-</span><span class="fl">1.0</span>)), <span class="co"># inverse logit equation</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">tolerance =</span> <span class="fl">0.0000001</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Essentially we specified values, ran the evaluation, and used a workhorse function in FIMS testing - <code>expect_equal()</code> to see if we got back the result we expected.</p>
 </section>
-<section id="contributors" class="level2">
-<h2 class="anchored" data-anchor-id="contributors">Contributors</h2>
-<p>Contributors are listed below with profile links.</p>
-<!-- BEGIN AUTO CONTRIBUTORS GRID -->
-<table>
-<tbody><tr>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/ChristineStawitz-NOAA"> <img src="https://avatars.githubusercontent.com/u/47904621?v=4" alt="ChristineStawitz-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>ChristineStawitz-NOAA</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/Andrea-Havron-NOAA"> <img src="https://avatars.githubusercontent.com/u/85530309?v=4" alt="Andrea-Havron-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>Andrea-Havron-NOAA</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/Bai-Li-NOAA"> <img src="https://avatars.githubusercontent.com/u/59936250?v=4" alt="Bai-Li-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>Bai-Li-NOAA</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/kellijohnson-NOAA"> <img src="https://avatars.githubusercontent.com/u/4108564?v=4" alt="kellijohnson-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>kellijohnson-NOAA</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/msupernaw"> <img src="https://avatars.githubusercontent.com/u/4933904?v=4" alt="msupernaw avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>msupernaw</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/k-doering-NOAA"> <img src="https://avatars.githubusercontent.com/u/48930335?v=4" alt="k-doering-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>k-doering-NOAA</sub> </a>
-</td>
-</tr>
-<tr>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/nathanvaughan-NOAA"> <img src="https://avatars.githubusercontent.com/u/53061482?v=4" alt="nathanvaughan-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>nathanvaughan-NOAA</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/JaneSullivan-NOAA"> <img src="https://avatars.githubusercontent.com/u/68303089?v=4" alt="JaneSullivan-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>JaneSullivan-NOAA</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/Eshaan-byte"> <img src="https://avatars.githubusercontent.com/u/146680427?v=4" alt="Eshaan-byte avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>Eshaan-byte</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/awilnoaa"> <img src="https://avatars.githubusercontent.com/u/167116769?v=4" alt="awilnoaa avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>awilnoaa</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/iantaylor-NOAA"> <img src="https://avatars.githubusercontent.com/u/4992918?v=4" alt="iantaylor-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>iantaylor-NOAA</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/szu-yun-ko"> <img src="https://avatars.githubusercontent.com/u/210009874?v=4" alt="szu-yun-ko avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>szu-yun-ko</sub> </a>
-</td>
-</tr>
-<tr>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/JonBrodziak"> <img src="https://avatars.githubusercontent.com/u/11236454?v=4" alt="JonBrodziak avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>JonBrodziak</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/MOshima-PIFSC"> <img src="https://avatars.githubusercontent.com/u/78562167?v=4" alt="MOshima-PIFSC avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>MOshima-PIFSC</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/timjmiller"> <img src="https://avatars.githubusercontent.com/u/17852156?v=4" alt="timjmiller avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>timjmiller</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/Rohith-1717"> <img src="https://avatars.githubusercontent.com/u/200062616?v=4" alt="Rohith-1717 avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>Rohith-1717</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/jimianelli"> <img src="https://avatars.githubusercontent.com/u/2715618?v=4" alt="jimianelli avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>jimianelli</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/e-perl-NOAA"> <img src="https://avatars.githubusercontent.com/u/118312785?v=4" alt="e-perl-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>e-perl-NOAA</sub> </a>
-</td>
-</tr>
-<tr>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/ericward-noaa"> <img src="https://avatars.githubusercontent.com/u/5046884?v=4" alt="ericward-noaa avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>ericward-noaa</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/alexjensen-NOAA"> <img src="https://avatars.githubusercontent.com/u/168662602?v=4" alt="alexjensen-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>alexjensen-NOAA</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/peterkuriyama-NOAA"> <img src="https://avatars.githubusercontent.com/u/103060418?v=4" alt="peterkuriyama-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>peterkuriyama-NOAA</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/abhinav-1305"> <img src="https://avatars.githubusercontent.com/u/113254225?v=4" alt="abhinav-1305 avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>abhinav-1305</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/aman-raj-srivastva"> <img src="https://avatars.githubusercontent.com/u/47248385?v=4" alt="aman-raj-srivastva avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>aman-raj-srivastva</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/KyleShertzer-NOAA"> <img src="https://avatars.githubusercontent.com/u/81244856?v=4" alt="KyleShertzer-NOAA avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>KyleShertzer-NOAA</sub> </a>
-</td>
-</tr>
-<tr>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/LNo-cz"> <img src="https://avatars.githubusercontent.com/u/174143032?v=4" alt="LNo-cz avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>LNo-cz</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/mciechanumich"> <img src="https://avatars.githubusercontent.com/u/110423309?v=4" alt="mciechanumich avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>mciechanumich</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/Nimra-Arshad51"> <img src="https://avatars.githubusercontent.com/u/264476531?v=4" alt="Nimra-Arshad51 avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>Nimra-Arshad51</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/RicardoYin01"> <img src="https://avatars.githubusercontent.com/u/123024031?v=4" alt="RicardoYin01 avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>RicardoYin01</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/Srajald"> <img src="https://avatars.githubusercontent.com/u/99940237?v=4" alt="Srajald avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>Srajald</sub> </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/VedantMadane"> <img src="https://avatars.githubusercontent.com/u/6527493?v=4" alt="VedantMadane avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>VedantMadane</sub> </a>
-</td>
-</tr>
-<tr>
-<td style="padding:12px; text-align: center; vertical-align: top;">
-<a href="https://github.com/vivek0913"> <img src="https://avatars.githubusercontent.com/u/83529785?v=4" alt="vivek0913 avatar" width="80" height="80" style="border-radius: 8px;"> <br><sub>vivek0913</sub> </a>
-</td>
-</tr>
-</tbody></table>
-<!-- END AUTO CONTRIBUTORS GRID -->
+<section id="roadblockslessons-learned" class="level2">
+<h2 class="anchored" data-anchor-id="roadblockslessons-learned">Roadblocks/Lessons Learned</h2>
+<section id="roadblock-1-flexible-indexing-and-age-specification-options" class="level3">
+<h3 class="anchored" data-anchor-id="roadblock-1-flexible-indexing-and-age-specification-options"><span class="emoji" data-emoji="construction">🚧</span> Roadblock #1: Flexible indexing and age-specification options</h3>
+<p>Unlike for other selectivity options which include a few parameters that establish a function between age and selectivity, the selectivity-at-age option uses a flexible number of parameters, specified by the user input data, and each can be set to be fixed to a constant or estimated using fixed effects. At a maximum there can be one estimated parameter for every age and at a minimum there can be no estimated parameters (all values fixed at their default of expected values). There was no precedent for this setting and the other selectivity options wouldn’t help us resolve it. Ultimately, we asked for individual sessions other FIMS Team members that were more familiar with the C++ code to explain the issue and ask for solutions. They recommended including n_ages, the number of ages, and min_age the minimum age when declaring the AgeSpecificSelectivity class.</p>
 </section>
-<section id="fims-council" class="level2">
-<h2 class="anchored" data-anchor-id="fims-council">FIMS Council</h2>
-<ul>
-<li>Anders Nielsen (DTU-Aqua)</li>
-<li>André E. Punt (Chair, SAFS UW)</li>
-<li>Anne M. Cooper (ICES)</li>
-<li>Bjarki Þ. Elvarsson (MFRI, Gadget)</li>
-<li>Curry J. Cunningham (NPFMC)</li>
-<li>Éva E. Plagányi (CSIRO)</li>
-<li>Geneviève M. Nesslage (UMCES)</li>
-<li>Henning Winker (JRC, Jabba)</li>
-<li>Jim N. Sanchirico (UC Davis)</li>
-<li>Jon R. Weidenmann (Rutgers)</li>
-<li>Mark N. Maunder (IATTC)</li>
-<li>Z. Teresa A’mar (Dragonfly Data Science)</li>
-</ul>
+<section id="roadblock-2-naming-conflicts-with-other-selectivity-options" class="level3">
+<h3 class="anchored" data-anchor-id="roadblock-2-naming-conflicts-with-other-selectivity-options"><span class="emoji" data-emoji="construction">🚧</span> Roadblock #2: Naming conflicts with other selectivity options</h3>
+<p>Only when we got to building out the vignette to demo the age-specific selectivity option did we notice a problem with our naming convention that would conflict with how FIMS builds out names and uses features. We’d been calling the age-specific option “SelectivityatAge” but when the setup_default_parameters() function is run, this name gets knitted together with “Selectivity” creating the monstrous “SelectivityatAgeSelectivity” which FIMS can’t understand downstream.</p>
+<p>Our early fix was ugly. We manually put in an if statement to catch when the incorrect name shows up and manually changes it back to something comprehensible. But once we showed the issue and our band-aid solution to the FIMS code club, a weekly meeting that is reserved for debugging and discussion, we were about to crowd source a permanent solution — going back through the FIMS structure and renamed everything that was “selectivity at age” to “age specific selectivity” to fix this overarching issue.</p>
 </section>
-<section id="roles" class="level2">
-<h2 class="anchored" data-anchor-id="roles">Roles</h2>
-<section id="project-lead-1" class="level3">
-<h3 class="anchored" data-anchor-id="project-lead-1">Project Lead</h3>
-<p>The Project Lead is responsible for driving decisions based on the vision and objectives of FIMS as directed in the <a href="../about/FIMS_TOR_08.26.2021.pdf">Terms of Reference</a> and discussions with the Implementation Team. The Project Lead ensures the FIMS product satisfies user and business requirements, incorporates feedback, and iterates on the design and development as needed. The Project Lead will triage issues and pull requests and ensure development and code review occur in a timely manner and according to project guidelines, priorities, and standards. The Project Lead is also responsible for communicating project status via maintenance of the <a href="https://github.com/orgs/NOAA-FIMS/projects">Github Projects</a> and <a href="https://github.com/NOAA-FIMS/FIMS/milestones">GitHub Milestones</a>.</p>
-</section>
-<section id="lead-software-architect" class="level3">
-<h3 class="anchored" data-anchor-id="lead-software-architect">Lead Software Architect</h3>
-<p>The Lead Software Architect is responsible for advising the architecture of FIMS to maximize portability and extensibility; manage technical risks and opportunities; advise the Project Lead on software design, refactor, and implementation decisions; and guarantee quality of deliveries via code review. The Lead Software Architect also educates the team on technical best practices.</p>
-</section>
-<section id="lead-test-engineer" class="level3">
-<h3 class="anchored" data-anchor-id="lead-test-engineer">Lead Test Engineer</h3>
-<p>The Lead Test Engineer is responsible for designing and driving test objectives, test strategies, and test plans of the FIMS product at subsequent milestones. The Lead Test Engineer will identify the tools for test reporting, management and automation, guide and monitor the design, implementation, and execution of test cases and test procedures. The Lead Test Engineer will train and mentor implementation team members on how to effectively write and debug tests.</p>
-</section>
-<section id="lead-statistical-computing-engineer" class="level3">
-<h3 class="anchored" data-anchor-id="lead-statistical-computing-engineer">Lead Statistical Computing Engineer</h3>
-<p>The Lead Statistical Computing Engineer is responsible for designing the FIMS statistical architecture that maximizes statistical accuracy and ensures the implementation of statistical good practices. The Lead Statistical Computing Engineer will advise the Project Lead on design and implementation decisions and will work closely with the Lead Software Architect to ensure a balance between computation and statistical efficiency and with the Lead Test Engineer to develop tests that check the statistical accuracy of model design.</p>
-</section>
-<section id="outreach-and-transition-coordinator" class="level3">
-<h3 class="anchored" data-anchor-id="outreach-and-transition-coordinator">Outreach and Transition Coordinator</h3>
-<p>The Outreach and Transition Coordinator communicates with policy-makers, NOAA leadership, and regional offices on transition plans from existing assessment models and processes to FIMS. This coordinator works with academic partners to develop and coordinate training on using FIMS.</p>
-</section>
-<section id="lead-of-workflows-accessibility-and-integration" class="level3">
-<h3 class="anchored" data-anchor-id="lead-of-workflows-accessibility-and-integration">Lead of Workflows, Accessibility, and Integration</h3>
-<p>The Lead of Workflows, Accessibility, and Integration is responsible for designing and driving workflows and automation to support the reliability and robustness of the FIMS. The Lead of Workflows, Accessibility, and Integration ensures FIMS aligns with expected standards for accessibility and quality control in accordance with guidelines set by the Fisheries Integrated Toolbox. This lead coordinates with the Lead Test Engineer to ensure test cases are automated and successfully run by GitHub Actions and coordinates with the Lead Statistical Computing Engineer to identify opportunities to expand FIMS across related disciplines.</p>
-</section>
-<section id="regional-representatives" class="level3">
-<h3 class="anchored" data-anchor-id="regional-representatives">Regional Representatives</h3>
-<p>Regional Representatives are expected to assist in FIMS implementation through design, development, and testing of FIMS. They also communicate FIMS progress and design to their respective regions and teammates. Representatives serve as power users who provide basic training and outreach within their centers on transitioning to FIMS. These representatives are also responsible for relaying feedback, questions, and training requests that they cannot complete back to the Project Lead. Regional representatives are expected to introduce their partner fishery management organizations to FIMS to assist transition of FIMS from research to operations.</p>
+<section id="roadblock-3-rebasing" class="level3">
+<h3 class="anchored" data-anchor-id="roadblock-3-rebasing"><span class="emoji" data-emoji="construction">🚧</span> Roadblock #3: Rebasing</h3>
+<p>Sometimes we’d get a confusing error message, try a few fixes, check the indexing, check that input and output are to be expected, check that all the variables are properly declared and passed, only to come up totally blank. We’d ask others in the FIMS group just to learn its likely because of a mis-match between ours and the base code, necessitating a process called “rebasing.” For example, in the process of writing this blog post, the function <code>setup_default_parameters()</code> was renamed from <code>create_default_parameters()</code>. We hadn’t noticed and were hitting our heads against the wall when suddenly the demo vignette wasn’t working at all!</p>
+<p>Essentially, once we branched off our project, any other changes made to the main “tree” afterwards don’t automatically get included as we’re working. Re-basing puts us in line with the central “trunk” before we put the branch back into the main version of the code. Our main advice on re-basing (besides letting someone supervise the first few times you try) is to ‘squash’ down all your commits into a single commit before doing the rebase, that way you don’t have to approve commits over and over in the process.</p>
 </section>
 </section>
-<section id="authorship" class="level2">
-<h2 class="anchored" data-anchor-id="authorship">Authorship</h2>
-<p>Current developers of FIMS are listed above and in the relevant DESCRIPTION files within repositories that store R packages, e.g., <a href="https://github.com/NOAA-FIMS/FIMS/blob/main/DESCRIPTION">FIMS DESCRIPTION</a>. When publications or presentations are developed using FIMS, the authors should feel free to list only those who contributed to that publication or presentation in whatever order they collectively see fit.</p>
+<section id="takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
+<p>Once all that was said and done, we had one final contribution to make to the FIMS code base. We updated the manual! In <u>man/setup_default_Selectivity.Rd</u> we updated the listed “allowable forms” of selectivity to include AgeSpecific. We were legit - in the FIMS manual and everything!</p>
+<p>Don’t let contributing to FIMS intimidate you! Nobody understands all the nuanced ins and outs of FIMS except a few core developers and given the amount of features FIMS needs to meet its 25% by 2026 (25% of NOAA stocks to be capable of using FIMS to fit the model and generate management advice), more than that core group needs to be actively contributing. Take on small tasks at first - a new version of an existing feature, like these selectivity options. But maximize efficiency by identifying a feature that is important to several stocks. Starting small will help build confidence and familiarity with FIMS’s modular nature so you might be comfortable with contributing bigger changes down the line. There is also lots of help and expertise available in the FIMS development community! We reached out for help at several points to implement changes to the C++ architecture, implement and debug tests, and format the repository for merging back into the main branch of FIMS. Hope this post helps to identify some key starting spots and illustrates how modifications are really just a matter of taking, copying, and adjusting existing code. Please let us know if you have questions or we can offer advice, at alexander.jensen[at]noaa.gov or emily.liljestrand[at]noaa.gov.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
