@@ -1,0 +1,60 @@
+### 🚀 New FIMS Repositories Discovered!
+
+The monthly discovery action found the following repositories using FIMS that do not have a `fims-metadata.yml` file.
+
+**Repository:** [NOAA-FIMS/FIMS](https://github.com/NOAA-FIMS/FIMS)
+**Owner/Commiter:** @NOAA-FIMS
+**Location:** Unknown
+**FIMS Version:** Unknown (Not specified in renv.lock)
+**Description:** The repository for development of FIMS
+
+---
+**Repository:** [jimianelli/ebswp_fims](https://github.com/jimianelli/ebswp_fims)
+**Owner/Commiter:** @jimianelli
+**Location:** Unknown
+**FIMS Version:** Unknown (Not specified in renv.lock)
+**Description:** DRAFT testing of FIMS
+
+---
+**Repository:** [NOAA-FIMS/FIMSdiags](https://github.com/NOAA-FIMS/FIMSdiags)
+**Owner/Commiter:** @NOAA-FIMS
+**Location:** Unknown
+**FIMS Version:** 0.9.2
+**Description:** R package to run model diagnostics on FIMS models
+
+---
+**Repository:** [NOAA-FIMS/case-studies](https://github.com/NOAA-FIMS/case-studies)
+**Owner/Commiter:** @NOAA-FIMS
+**Location:** Unknown
+**FIMS Version:** Unknown (Not specified in renv.lock)
+**Description:** FIMS case studies after MQ
+
+---
+**Repository:** [NOAA-FIMS/fims-gcp-workstations](https://github.com/NOAA-FIMS/fims-gcp-workstations)
+**Owner/Commiter:** @NOAA-FIMS
+**Location:** Unknown
+**FIMS Version:** Unknown (Not specified in renv.lock)
+**Description:** Example configuration and deployment of Google Cloud Workstations for the FIMS project
+
+---
+**Repository:** [MOshima-PIFSC/Opaka-FIMS-Case-Study](https://github.com/MOshima-PIFSC/Opaka-FIMS-Case-Study)
+**Owner/Commiter:** @MOshima-PIFSC
+**Location:** Honolulu, HI
+**FIMS Version:** Unknown (Not specified in renv.lock)
+**Description:** A FIMS case study using the Opakapaka SS3 model 
+
+---
+**Repository:** [NOAA-FIMS/presentations](https://github.com/NOAA-FIMS/presentations)
+**Owner/Commiter:** @NOAA-FIMS
+**Location:** Unknown
+**FIMS Version:** Unknown (Not specified in renv.lock)
+**Description:** A repository for National Stock Assessment Program presentations
+
+---
+**Repository:** [NOAA-FIMS/Age_Structured_Stock_Assessment_Model_Comparison](https://github.com/NOAA-FIMS/Age_Structured_Stock_Assessment_Model_Comparison)
+**Owner/Commiter:** @NOAA-FIMS
+**Location:** Unknown
+**FIMS Version:** Unknown (Not specified in renv.lock)
+**Description:** This repo is a read-only archive of the age structured stock assessment model comparison project code. The repo has been migrated to NOAA-FIMS
+
+---
