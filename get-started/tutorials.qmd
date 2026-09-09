@@ -5,3 +5,84 @@ toc: true
 toc-location: right
 toc-depth: 2
 ---
+
+## Vignettes
+
+<div id="vignette-cards" class="fims-card-grid vignette-grid" aria-live="polite">
+  <p>Loading vignettes…</p>
+</div>
+
+```{=html}
+<script type="module">
+  async function loadVignetteCards() {
+    const container = document.getElementById("vignette-cards");
+    const endpoint = "https://noaa-fims.github.io/FIMS/vignettes.json";
+
+    const levelInfo = {
+      "new-user": {
+        label: "New User",
+        className: "level-new-user"
+      },
+      intermediate: {
+        label: "Intermediate",
+        className: "level-intermediate"
+      },
+      "power-user": {
+        label: "Power User",
+        className: "level-power-user"
+      }
+    };
+
+    try {
+      const res = await fetch(endpoint, { cache: "no-store" });
+      if (!res.ok) throw new Error(`Failed to fetch vignette metadata: ${res.status}`);
+      const vignettes = await res.json();
+
+      if (!Array.isArray(vignettes) || vignettes.length === 0) {
+        container.innerHTML = "<p>No vignettes found.</p>";
+        return;
+      }
+
+      container.innerHTML = vignettes.map(v => {
+        const title = v.title || "Untitled vignette";
+        const summary = v.summary || "";
+        const page = v.page || "#";
+        const rawLevel = (v.level || "new-user").toLowerCase();
+        const level = levelInfo[rawLevel] || {
+          label: rawLevel.replace(/[-_]/g, " "),
+          className: "level-default"
+        };
+
+        return `
+          <div class="fims-card vignette-card position-relative ${level.className}">
+            <div class="vignette-level-strip"></div>
+            <div class="vignette-level-badge">${level.label}</div>
+            <h3>${title}</h3>
+            <p>${summary}</p>
+            <div class="fims-card-footer">
+              <a
+                href="${page}"
+                class="fims-btn-full stretched-link"
+                aria-label="Go to the ${title} vignette"
+                target="_blank"
+                rel="noopener"
+              >
+                Read vignette <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        `;
+      }).join("");
+    } catch (err) {
+      console.error(err);
+      container.innerHTML = "<p>Could not load vignettes.</p>";
+    }
+  }
+
+  loadVignetteCards();
+</script>
+```
+
+## Case Studies
+
+hold for case studies similar to vignettes
