@@ -1,13 +1,5 @@
 [
   {
-    "listing": "/resources/resources.html",
-    "items": []
-  },
-  {
-    "listing": "/resources/packages.html",
-    "items": []
-  },
-  {
     "listing": "/blog/index.html",
     "items": [
       "/blog/fims-cie.html",
@@ -52,5 +44,13 @@
       "/blog/07.28.2025.html",
       "/blog/07.21.2025.html"
     ]
+  },
+  {
+    "listing": "/get-started/packages.html",
+    "items": []
+  },
+  {
+    "listing": "/get-started/resources.html",
+    "items": []
   }
 ]

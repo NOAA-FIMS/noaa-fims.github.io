@@ -48,9 +48,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-12e365f24a4b4913e1296245ea4537a8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1911c472469b3abc456c65967c0c0098.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-77a721d127891c3c78887e51a816df31.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-1911c472469b3abc456c65967c0c0098.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0b76ebe4f6d88c0dca0ea372321c84b6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0fe8b65fd566757ccb1f817aa0bb886a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-0b76ebe4f6d88c0dca0ea372321c84b6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -91,6 +91,7 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../assets/panelset-extras.css">
 <meta property="og:title" content="Tutorials – FIMS">
+<meta property="og:description" content="News and updates from the Fisheries Integrated Modeling System project.">
 <meta property="og:site_name" content="FIMS">
 </head>
 
@@ -293,29 +294,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../community/index.html"> 
 <span class="menu-text">community</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-packages--resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">packages &amp; resources</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-packages--resources">    
-        <li>
-    <a class="dropdown-item" href="https://noaa-fims.github.io/FIMS/">
- <span class="dropdown-text">FIMS package</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../resources/packages.html">
- <span class="dropdown-text">FIMS-associated R packages</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="https://noaa-fims.github.io/case-studies/">
- <span class="dropdown-text">case studies</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../resources/resources.html">
- <span class="dropdown-text">development resources</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/NOAA-FIMS"> <i class="bi bi-github" role="img" aria-label="github icon">
 </i> 
@@ -354,7 +332,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../get-started/documentation.qmd" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
+  <a href="../get-started/documentation.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
 </i> 
  <span class="menu-text">Documentation</span></a>
   </div>
@@ -366,13 +344,34 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Tutorials</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../get-started/packages.html" class="sidebar-item-text sidebar-link"><i class="bi bi-box" role="img">
+</i> 
+ <span class="menu-text">FIMS-Associated Packages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../get-started/resources.html" class="sidebar-item-text sidebar-link"><i class="bi bi-tools" role="img">
+</i> 
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#vignettes" id="toc-vignettes" class="nav-link active" data-scroll-target="#vignettes">Vignettes</a></li>
+  <li><a href="#case-studies" id="toc-case-studies" class="nav-link" data-scroll-target="#case-studies">Case Studies</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -427,8 +426,88 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="vignettes" class="level2">
+<h2 class="anchored" data-anchor-id="vignettes">Vignettes</h2>
+<div id="vignette-cards" class="fims-card-grid vignette-grid" aria-live="polite">
+<p>
+Loading vignettes…
+</p>
+</div>
+<script type="module">
+  async function loadVignetteCards() {
+    const container = document.getElementById("vignette-cards");
+    const endpoint = "https://noaa-fims.github.io/FIMS/vignettes.json";
+
+    const levelInfo = {
+      "new-user": {
+        label: "New User",
+        className: "level-new-user"
+      },
+      intermediate: {
+        label: "Intermediate",
+        className: "level-intermediate"
+      },
+      "power-user": {
+        label: "Power User",
+        className: "level-power-user"
+      }
+    };
+
+    try {
+      const res = await fetch(endpoint, { cache: "no-store" });
+      if (!res.ok) throw new Error(`Failed to fetch vignette metadata: ${res.status}`);
+      const vignettes = await res.json();
+
+      if (!Array.isArray(vignettes) || vignettes.length === 0) {
+        container.innerHTML = "<p>No vignettes found.</p>";
+        return;
+      }
+
+      container.innerHTML = vignettes.map(v => {
+        const title = v.title || "Untitled vignette";
+        const summary = v.summary || "";
+        const page = v.page || "#";
+        const rawLevel = (v.level || "new-user").toLowerCase();
+        const level = levelInfo[rawLevel] || {
+          label: rawLevel.replace(/[-_]/g, " "),
+          className: "level-default"
+        };
+
+        return `
+          <div class="fims-card vignette-card position-relative ${level.className}">
+            <div class="vignette-level-strip"></div>
+            <div class="vignette-level-badge">${level.label}</div>
+            <h3>${title}</h3>
+            <p>${summary}</p>
+            <div class="fims-card-footer">
+              <a
+                href="${page}"
+                class="fims-btn-full stretched-link"
+                aria-label="Go to the ${title} vignette"
+                target="_blank"
+                rel="noopener"
+              >
+                Read vignette <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        `;
+      }).join("");
+    } catch (err) {
+      console.error(err);
+      container.innerHTML = "<p>Could not load vignettes.</p>";
+    }
+  }
+
+  loadVignetteCards();
+</script>
+</section>
+<section id="case-studies" class="level2">
+<h2 class="anchored" data-anchor-id="case-studies">Case Studies</h2>
+<p>hold for case studies similar to vignettes</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script>
