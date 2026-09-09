@@ -267,6 +267,79 @@ img.thumbnail-image.card-img {
   display: none !important;
 }
 
+/* Tutorials page css for vignettes */
+.vignette-grid {
+  gap: 1rem;
+}
+
+.vignette-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.vignette-level-strip {
+  height: 0.4rem;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.vignette-level-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 2;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  background: var(--vignette-level-color, #6c757d);
+}
+
+.vignette-preview {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.vignette-card h3 {
+  margin: 0 0 0 0.25rem;
+}
+
+.vignette-card p {
+  margin: 0 0 0 0.25rem;
+  color: var(--bs-secondary-color);
+}
+
+/* Level-specific accents */
+.level-new-user {
+  --vignette-level-color: #198754;
+}
+.level-intermediate {
+  --vignette-level-color: #0d6efd;
+}
+.level-power-user {
+  --vignette-level-color: #fd7e14;
+}
+
+.level-new-user .vignette-level-strip {
+  background: #198754;
+}
+.level-intermediate .vignette-level-strip {
+  background: #0d6efd;
+}
+.level-power-user .vignette-level-strip {
+  background: #fd7e14;
+}
+
+
+
 /* --- ACCESSIBILITY FIX: Default Badge Contrast --- */
 /* Your default badges use the pink theme. */
 #listing-listing .listing-category {

@@ -39,24 +39,21 @@ website:
       #   href: blog/index.qmd
       - text: community
         href: community/index.qmd
-          # - text: projects
-          #   aria-label: link to FIMS projects
-          #   href: resources/projects.qmd
-      - text: packages & resources
-        aria-label: link to FIMS resources
-        menu:
-          - text: FIMS package
-            aria-label: link to FIMS package site
-            href: https://noaa-fims.github.io/FIMS/
-          - text: FIMS-associated R packages
-            aria-label: link to FIMS R packages
-            href: resources/packages.qmd
-          - text: case studies
-            href: https://noaa-fims.github.io/case-studies/
-            aria-label: link to FIMS case studies site
-          - text: development resources
-            aria-label: link to development resources
-            href: resources/resources.qmd
+      # - text: packages & resources
+      #   aria-label: link to FIMS resources
+      #   menu:
+      #     - text: FIMS package
+      #       aria-label: link to FIMS package site
+      #       href: https://noaa-fims.github.io/FIMS/
+      #     - text: FIMS-associated R packages
+      #       aria-label: link to FIMS R packages
+      #       href: resources/packages.qmd
+      #     - text: case studies
+      #       href: https://noaa-fims.github.io/case-studies/
+      #       aria-label: link to FIMS case studies site
+      #     - text: development resources
+      #       aria-label: link to development resources
+      #       href: resources/resources.qmd
       - icon: github
         aria-label: github icon
         href: https://github.com/NOAA-FIMS
@@ -103,6 +100,12 @@ website:
         - text: "Tutorials"
           href: get-started/tutorials.qmd
           icon: mortarboard
+        - text: "FIMS-Associated Packages"
+          href: get-started/packages.qmd
+          icon: box
+        - text: "Resources"
+          href: get-started/resources.qmd
+          icon: tools
     - id: community
       title: "Community"
       style: "floating"
@@ -115,17 +118,9 @@ website:
         - text: "FIMS Blog"
           href: blog/index.qmd
           icon: layout-text-window
-        # - text: "Events"
-        #   href: 
-        #   icon: calendar-event
         - text: "Projects & Publications"
           href: community/projects.qmd
           icon: book
-           
-    #       # - text: "User Hub"
-    #       #   href: getting-started/user-hub.qmd
-    #       # - text: "Contributor Hub"
-    #       #   href: getting-started/contributor-hub.qmd
 
   page-footer:
     border: false
