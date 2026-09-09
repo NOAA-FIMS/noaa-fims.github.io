@@ -9,7 +9,7 @@ header-includes: >
 
 ::: {.fims-pathway-pills}
 [<i class="bi bi-person-plus"></i> New User](new-user.qmd){.fims-pill}
-[<i class="bi bi-person-up"></i> Emerging User](emerging-user.qmd){.fims-pill .is-active}
+[<i class="bi bi-person-up"></i> Intermediate User](intermediate-user.qmd){.fims-pill .is-active}
 [<i class="bi bi-lightning"></i> Power User](power-user.qmd){.fims-pill}
 [<i class="bi bi-code-square"></i> Contributor](contributor.qmd){.fims-pill}
 [<i class="bi bi-file-bar-graph"></i> Decision Maker](decision-maker.qmd){.fims-pill}
@@ -18,7 +18,7 @@ header-includes: >
 ::: {.fims-onboarding-header}
 ## You have leveled up!
 <p>Time to move into diagnostics and customizations.</p>
-<h3><i class="bi bi-signpost-split"></i> Emerging User Pathway</h3>
+<h3><i class="bi bi-signpost-split"></i> Intermediate User Pathway</h3>
 :::
 
 ::: {.fims-timeline}

@@ -33,7 +33,7 @@ Get connected to FIMS resources and learn how to run a model in FIMS.
 ::: {.fims-card .position-relative}
 ::: {.fims-card-icon .bi .bi-person-up}
 :::
-### I am an emerging user
+### I am an intermediate user
 Go beyond the default configurations, run diagnostics, etc.
 
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Diagnostics
@@ -41,7 +41,7 @@ Go beyond the default configurations, run diagnostics, etc.
 * <i class="bi bi-check-circle-fill fims-text-success"></i> Comparing FIMS to other models
 
 ::: {.fims-card-footer}
-[Start Emerging User Path <i class="bi bi-arrow-right"></i>](emerging-user.qmd){.fims-btn-full .stretched-link}
+[Start Intermediate User Path <i class="bi bi-arrow-right"></i>](intermediate-user.qmd){.fims-btn-full .stretched-link}
 :::
 
 :::
