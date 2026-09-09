@@ -456,7 +456,9 @@ Loading vignettes…
     try {
       const res = await fetch(endpoint, { cache: "no-store" });
       if (!res.ok) throw new Error(`Failed to fetch vignette metadata: ${res.status}`);
-      const vignettes = await res.json();
+
+      const data = await res.json();
+      const vignettes = Object.values(data);
 
       if (!Array.isArray(vignettes) || vignettes.length === 0) {
         container.innerHTML = "<p>No vignettes found.</p>";
