@@ -23,9 +23,9 @@ toc-depth: 2
         label: "New User",
         className: "level-new-user"
       },
-      intermediate: {
-        label: "Intermediate",
-        className: "level-intermediate"
+      "intermediate-user": {
+        label: "Intermediate User",
+        className: "level-intermediate-user"
       },
       "power-user": {
         label: "Power User",
