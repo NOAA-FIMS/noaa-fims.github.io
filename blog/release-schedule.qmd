@@ -1,0 +1,71 @@
+---
+title: "Release management process"
+subtitle: "Releases of FIMS will follow an orderly process using a quarterly release schedule"
+author: "Kelli Johnson"
+date: "September 17, 2026"
+categories:
+  - releases
+  - schedule
+---
+
+To prevent costly delays and keep operations running efficiently FIMS needs a formal release plan. With that, we need a more systematic way to review Pull Requests. Right now, we try to always review the older Pull Requests first but sometimes that does not make logical sense. The policy below will help set clearer expectations for developers, prevent new bottlenecks, stabilize release cycles, and help onboard collaborators to FIMS.
+
+## Overview
+
+We will be following a fixed quarterly release policy, where FIMS will be released on the last Wednesday of the each quarter within the fiscal year. Thus, users can expect the next release of FIMS to be Wednesday September 30, 2026. These release dates going forward have been added to the [FIMS Calendar](https://noaa-fims.github.io/about/calendar.html). Compiled versions of the latest release will be available on the [Fisheries Integrated Toolbox's R Universe](https://noaa-fisheries-integrated-toolbox.r-universe.dev/FIMS).
+
+## Version numbering
+
+Version numbering will follow [semantic versioning](https://semver.org/), i.e., v<MAJOR>.<MINOR>.<PATCH>. Where `v` is short-hand notation for version and it is always immediately followed by the major release number. The second and third decimals refer to the minor release number and the patch number.
+
+### Major releases
+
+Differences between major release numbers indicate that the code is not backwards compatible. Version 1.0.0, which is set for December 30, 2026, will be the first major release of FIMS. We hope that the user interface is stable by this time so all additional features added in FY27 will be minor releases rather than major releases.
+
+Major releases often represent complete redesigns, removal of old APIs, or massive overhauls. Upgrading risk between major releases is often high and may require rewriting of downstream code. We hope to keep the risks low. A major component of this though is getting early feedback from users on what they like and what they do not like. We continually say that as developers we do not want to code in a vacuum and without feedback we do not know what users want. So, please provide feedback any way that you can, e.g., [Issues](https://github.com/NOAA-FIMS/FIMS/issues), [Discussions](https://github.com/NOAA-FIMS/FIMS/discussions), [contact form](https://noaa-fims.github.io/contact/), [email](mailto:kelli.johnson@noaa.gov), etc.
+
+## Minor releases
+
+Minor releases allow you to use a new version without changing any of your code. New features might exist in the background but you do not have to use them if you do not want to. Additionally, defaults should not change in minor releases. 
+
+## Patch releases
+
+Patches include changes related to bugs and hotfixes. These are often released out of schedule, while the iron is "hot" or "running", hence the name hotfix. The scope of hotfixes are often very narrow as they are meant to address a single urgent flaw or crash. Sometimes these fixes are so rapid they might undergo minimal testing as long as the known bug is fixed. Whereas, patches will often bundle multiple bug fixes into a single patch and subject to the same rigorous testing protocols that major and minor releases must undergo.
+
+Within FIMS we will maintain patches for all major versions that were released within a Fiscal Year. That is, if we release version 1.1 in Q2 and 2.0 in Q3 but we find a bug that has been present since 0.9.1 we will release 1.1.1 and 2.0.1 simultaneously to fix both 1.1 and 2.0. This allows users that are in the middle of an assessment season to install the version-specific patch that they need without needing to update their code. Note that patches will only be released for the newest minor version available, e.g., a patch would not be released for version 1.0 because user-specific code for 1.0 and 1.1 should be the same. Additionally, no patches will be released for older major versions that were not active within the calendar year.
+
+## vX.X.X.9000
+
+This special suffix, .9000, is a [system used by several R packages](https://r-pkgs.org/lifecycle.html#sec-lifecycle-version-number-tidyverse) to indicate that developmental code is present in main. Thus, when you see the .9000 suffix as part of a version number you know that the code you are working with has not formally been released. We add .9000 onto the current version as soon as it is released so new changes can come into main.
+
+We tried using a `dev` branch for several years but decided to do away with this system because of the constant rebasing struggles and the burnout from reviewing code multiple times, i.e., when it was merged into dev and again when it was merged into main. Additionally, by removing the dev branch we were able to simplify several of our GitHub actions.
+
+## Pull Request reviews
+
+Unless a Pull Request is for a patch, all Pull Requests will be reviewed on the first and third Thursday of the month. Thus, there will be six opportunities per quarter for your Pull Request to be reviewed.
+
+Additionally, with PRs only being reviewed two times a month, that means that the code in main should be stable during these two-week time periods. Drum roll ... so no more constantly needing to rebase your code if you can implement your feature within this two-week time window.
+
+We hope that by abiding to this schedule it will (1) help developers plan, (2) reduce the constant struggle of rebasing to main, (3) encourage smaller PRs, and (4) create an entry point to new developers wanting to learn the code base. Regarding (4), we hope to accomplish this by having Review Days that are advertised on the [Google Calendar](https://noaa-fims.github.io/about/calendar.html) and welcoming to developers of all levels. So, share this widely, let your friends know about these Review Days! We will use breakout rooms to pair newer developers of FIMS with those that are more familiar with the codebase, and thus, these review days will be a great opportunity to learn the code and shape the user experience.
+
+## Conclusion
+
+The bottom line here is that no new PRs will be reviewed the week of a release and releases will happen on the last Wednesday of each quarter! So, plan accordingly. Stay tuned for more guidance regarding release notes and how to style your commit messages to have them easily incorporated into the release notes.
+
+```{=html}
+<script src="https://giscus.app/client.js"
+        data-repo="noaa-fims/FIMS"
+        data-repo-id="R_kgDOGvEn5A"
+        data-category="Blog discussions"
+        data-category-id="DIC_kwDOGvEn5M4C-hls"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+```
