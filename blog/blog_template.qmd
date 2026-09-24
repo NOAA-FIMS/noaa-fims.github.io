@@ -5,6 +5,7 @@ title: "Title"
 # because if you don't have a description then it just shows your starting text
 # and I don't want that for the fims-weekly ones.
 subtitle: "Brief subtitle about content"
+description: "A 30 word or less description that will be used for the RSS feed."
 author: "Your Name"
 date: "Month 01, 2026"
 categories:

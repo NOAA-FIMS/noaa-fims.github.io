@@ -22,7 +22,7 @@ listing:
   type: default
   feed: 
     items: 1       # Restricts the feed to only the 1 most recent post
-    type: full
+    type: metadata
   categories: true
   sort-ui: true
   filter-ui: true
