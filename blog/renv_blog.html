@@ -85,9 +85,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-12e365f24a4b4913e1296245ea4537a8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-cd1a03730c92ea0fd729a65f3fec8050.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-97b42bbe5c5c8e01f6824d6dd53332d3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-cd1a03730c92ea0fd729a65f3fec8050.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4ef05ebe9b6c519d2eba4a8bd6e0a97f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-851c62b41912986bc498d404e53c39b4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-4ef05ebe9b6c519d2eba4a8bd6e0a97f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -485,7 +485,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="why-we-use-renv" class="level2">
 <h2 class="anchored" data-anchor-id="why-we-use-renv">Why we use {renv}</h2>
-<p>Typically, when you install an R package, you are installing it into a central library that is accessible for all R sessions on that computer. This generally will work but what happens when you are working on a project with someone else and they write some code but when you try to run it on your computer it doesn’t work. You get a confusing error message and spend hours trying to debug it, only to realize you are using an older version of a package than they are and an argument has changed in a function. You update that package to the newest version and everything runs fine. But, the next time you work on a different project, you realize that you actually need the older version of that package. This leads to a lot of frustration and having to remember to install and uninstall different versions of r packages or having to change your code. As the {FIMS} ecosystem grows and we encounter or anticipate these and similar situations, we have begun incorporating {renv} into our workflows to address certain challenges. The <a href="https://rstudio.github.io/renv/">{renv}</a> R package is a package manager that tracks and records all R packages used within a project and creates a project-specific package library. It makes each of your projects their own isolated, portable, and reproducible environment that can be shared easily with others. In our experience, three challenges in particular pushed us toward using {renv} for {<a href="https://github.com/NOAA-FIMS/FIMSdiags">FIMSdiags</a>} and the <a href="https://github.com/NOAA-FIMS/case-studies/tree/main">case studies</a>. The three challenges we faced were:</p>
+<p>Typically, when you install an R package, you are installing it into a central library that is accessible for all R sessions on that computer. This generally will work but what happens when you are working on a project with someone else and they write some code but when you try to run it on your computer it doesn’t work. You get a confusing error message and spend hours trying to debug it, only to realize you are using an older version of a package than they are and an argument has changed in a function. You update that package to the newest version and everything runs fine. But, the next time you work on a different project, you realize that you actually need the older version of that package. This leads to a lot of frustration and having to remember to install and uninstall different versions of r packages or having to change your code. As the {FIMS} ecosystem grows and we encounter or anticipate these and similar situations, we have begun incorporating {renv} into our workflows to address certain challenges. The <a href="https://rstudio.github.io/renv/">{renv}</a> R package is a package manager that tracks and records all R packages used within a project and creates a project-specific package library. It makes each of your projects their own isolated, portable, and reproducible environment that can be shared easily with others. In our experience, three challenges in particular pushed us toward using {renv} for {FIMSdiags} (edit: a package that was later absorbed into FIMS) and the <a href="https://github.com/NOAA-FIMS/case-studies/tree/main">case studies</a>. The three challenges we faced were:</p>
 <ol type="1">
 <li>Collaborating across different machines and operating systems<br>
 </li>
@@ -571,7 +571,6 @@ document.addEventListener("DOMContentLoaded", function () {
   var forceNewTabPaths = [
     "/case-studies/",
     "/FIMS/",
-    "/FIMSdiags/",
     "/FIMSRTMB/",
     "/fims-pkgdown-template/",
     "/ecosystemom/",
