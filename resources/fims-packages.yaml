@@ -7,15 +7,6 @@
   image-alt: "FIMS base package hex logo"
   categories: [vignettes, doxygen, TMB, C++]
 
-- title: "FIMSdiags"
-  weight: 10
-  description: > 
-    Run common diagnostic analyses on FIMS models
-  path: "https://noaa-fims.github.io/FIMSdiags/"
-  image: ../images/FIMSdiags_placeholder.png
-  image-alt: "FIMSdiags placeholder package hex logo"
-  categories: [diagnostics]
-
 - title: "FIMSRTMB"
   weight: 11
   description: >

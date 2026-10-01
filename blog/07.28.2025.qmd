@@ -9,7 +9,7 @@ categories:
   - projections
 three-big-things:
   bt1: "Writing tests 🧪 for length-based selectivity and finding the remaining 🐛."
-  bt2: "Meg and Ian are working on FIMSdiags. If you are interested in joining them, watch the FIMS Calendar for meetings or ask Meg specifically to be invited."
+  bt2: "Meg and Ian are working on FIMSdiags (edit: a package that was later absorbed into FIMS). If you are interested in joining them, watch the FIMS Calendar for meetings or ask Meg specifically to be invited."
   bt3: "Projections and reference points are in the works. An update will be presented at the next FIMS Implementation Team Meeting."
 # Announcements go below because of formatting that quarto doesn't transfer over from the yml
 upcoming-events:

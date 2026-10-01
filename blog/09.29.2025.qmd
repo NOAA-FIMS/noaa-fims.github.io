@@ -36,7 +36,7 @@ photo:
 
 ::: {#announcements}
 - 36 more days until the CIE Review
-- Meg and Ian have made excellent progress on [FIMSdiags](https://github.com/NOAA-FIMS/FIMSdiags), complete with a [pkgdown site](https://noaa-fims.github.io/FIMSdiags/)
+- Meg and Ian have made excellent progress on FIMSdiags (edit: a package that was later absorbed into FIMS)
 ::: 
     
 ::: {#additional-events}
