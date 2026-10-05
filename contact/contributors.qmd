@@ -103,15 +103,15 @@ Contributors are listed below with profile links.
   </a>
 </td>
 <td style="padding:12px; text-align: center; vertical-align: top;">
-  <a href="https://github.com/Eshaan-byte">
-    <img src="https://avatars.githubusercontent.com/u/146680427?v=4" alt="Eshaan-byte avatar" width="80" height="80" style="border-radius: 8px;" />
-    <br/><sub>Eshaan-byte</sub>
-  </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
   <a href="https://github.com/grantdadams">
     <img src="https://avatars.githubusercontent.com/u/25754306?v=4" alt="grantdadams avatar" width="80" height="80" style="border-radius: 8px;" />
     <br/><sub>grantdadams</sub>
+  </a>
+</td>
+<td style="padding:12px; text-align: center; vertical-align: top;">
+  <a href="https://github.com/Eshaan-byte">
+    <img src="https://avatars.githubusercontent.com/u/146680427?v=4" alt="Eshaan-byte avatar" width="80" height="80" style="border-radius: 8px;" />
+    <br/><sub>Eshaan-byte</sub>
   </a>
 </td>
 <td style="padding:12px; text-align: center; vertical-align: top;">
