@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>FIMS</title>
+<link>https://noaa-fims.github.io/preview/update-comparison-table/blog/</link>
+<atom:link href="https://noaa-fims.github.io/preview/update-comparison-table/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>**Category Definitions** &lt;br&gt; &lt;i class=&quot;fa-solid fa-magnifying-glass&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;deep-dive&lt;/strong&gt;: learning about complex stock assessment concepts, academic exercises, and statistical best practices &lt;br&gt; &lt;i class=&quot;fa-solid fa-newspaper&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;fims-weekly&lt;/strong&gt;: FIMS weekly newsletter posts &lt;br&gt; &lt;i class=&quot;fa-solid fa-graduation-cap&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;learn&lt;/strong&gt;: learning about packages within FIMS, geared toward beginner and intermediate users &lt;br&gt; &lt;i class=&quot;fa-solid fa-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;span class=&quot;visually-hidden&quot;&gt;Category icon: &lt;/span&gt;&lt;strong&gt;other&lt;/strong&gt;: posts that do not fit the other categories &lt;br&gt; &lt;br&gt;
+**Filtering** &lt;br&gt; Filter blog posts by major category using the categories panel. You can also filter by selecting a category listed on an individual post below. To clear the filter, select &quot;Categories&quot; in the navigation panel. &lt;br&gt;
+</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Thu, 17 Sep 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Release management process</title>
+  <dc:creator>Kelli Johnson</dc:creator>
+  <link>https://noaa-fims.github.io/preview/update-comparison-table/blog/release-schedule.html</link>
+  <description><![CDATA[  ]]></description>
+  <category>releases</category>
+  <category>schedule</category>
+  <guid>https://noaa-fims.github.io/preview/update-comparison-table/blog/release-schedule.html</guid>
+  <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
