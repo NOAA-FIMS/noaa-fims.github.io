@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -43,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-12e365f24a4b4913e1296245ea4537a8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-77aa4e30699b0da0b85049c325a6c11a.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-12e365f24a4b4913e1296245ea4537a8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-44f775885073ba7b820c498614cb2f4c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-318c711c49d60269403f6171a639c9e0.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-44f775885073ba7b820c498614cb2f4c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-4ef05ebe9b6c519d2eba4a8bd6e0a97f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -269,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="../images/FIMS_logo3.png" alt="FIMS logo" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">FIMS <small>v0.10.0</small></span>
+    <span class="navbar-title">FIMS <small>v0.11.0</small></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -422,6 +422,85 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="v0.11.0-release-notes" class="level2">
+<h2 class="anchored" data-anchor-id="v0.11.0-release-notes">v0.11.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.11.0">release notes</a>)</h2>
+<section id="bug-fixes" class="level3">
+<h3 class="anchored" data-anchor-id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li><em>(CatchAtAge)</em> Build expected length comps from age comp proportions (#1751)</li>
+<li><em>(devcontainer)</em> Add missing comma</li>
+<li><em>(fims_likelihood)</em> Use module_name when selecting the profiled parameter (#1774)</li>
+<li><em>(fimsfit)</em> Name random effects in the sdreport so their standard errors reach get_estimates() (#1773)</li>
+<li><em>(get_estimates)</em> Adds random effect distribution parameters (#1771)</li>
+<li><em>(information)</em> Drop density component links</li>
+<li><em>(interface)</em> Register fleet log_q and maturity parameters in variable_map (#1793)</li>
+<li><em>(json)</em> Keep whitespace inside strings and decode escapes</li>
+<li><em>(model)</em> Clear the TMB objective function pointer after each evaluation (#1766)</li>
+<li><em>(output)</em> Write fleet names and keep infinite values readable (#1770)</li>
+<li><em>(selectivity)</em> Error on a logit_sel_at_age length that does not fit n_ages</li>
+<li><em>(setup_default_parameters)</em> Use the geometric plus group for default initial numbers (#1787)</li>
+<li><em>(test)</em> Update initial values for estimation tests</li>
+<li><em>(No Category)</em> Docs: fix broken relative URLs in adding-new-module vignette</li>
+<li><em>(No Category)</em> File paths were too long for windows</li>
+</ul>
+</section>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
+<ul>
+<li><em>(mohns_rho)</em> Fix sign of Mohn’s rho in documentation (#1772)</li>
+<li><em>(No Category)</em> Adds more exploration/explanation to demo</li>
+</ul>
+</section>
+<section id="features" class="level3">
+<h3 class="anchored" data-anchor-id="features">Features</h3>
+<ul>
+<li><em>(growth)</em> Size and growth infrastructure (#1697)</li>
+<li><em>(selectivity)</em> Selectivity at age</li>
+</ul>
+</section>
+<section id="performance" class="level3">
+<h3 class="anchored" data-anchor-id="performance">Performance</h3>
+<ul>
+<li><em>(fit_fims)</em> Skip the derived-quantity covariance in sdreport (#1775)</li>
+</ul>
+</section>
+<section id="new-contributors" class="level3">
+<h3 class="anchored" data-anchor-id="new-contributors">New Contributors</h3>
+<ul>
+<li><span class="citation" data-cites="grantdadams">@grantdadams</span> made their first contribution in <a href="https://github.com/NOAA-FIMS/FIMS/pull/1771">#1771</a></li>
+<li><span class="citation" data-cites="VedantMadane">@VedantMadane</span> made their first contribution in <a href="https://github.com/NOAA-FIMS/FIMS/pull/1703">#1703</a></li>
+</ul>
+</section>
+<section id="commit-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="commit-statistics">Commit Statistics</h3>
+<ul>
+<li>20 commit(s) contributed to the release.</li>
+<li>38 day(s) passed between the first and last commit.</li>
+<li>20 commit(s) parsed as conventional.</li>
+<li>15 linked issue/PR reference(s) detected in commits.
+<ul>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1748">#1748</a> (referenced 3 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1764">#1764</a> (referenced 2 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1556">#1556</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1697">#1697</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1739">#1739</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1751">#1751</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1766">#1766</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1770">#1770</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1771">#1771</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1772">#1772</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1773">#1773</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1774">#1774</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1775">#1775</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1787">#1787</a> (referenced 1 time(s))</li>
+<li><a href="https://github.com/NOAA-FIMS/FIMS/issues/1793">#1793</a> (referenced 1 time(s))</li>
+</ul></li>
+<li>53 day(s) passed between releases.</li>
+</ul>
+<p><strong>Full Changelog</strong>: https://github.com/NOAA-FIMS/FIMS/compare/v0.10.0…v0.11.0</p>
+<hr>
+</section>
+</section>
 <section id="v0.10.0-release-notes" class="level2">
 <h2 class="anchored" data-anchor-id="v0.10.0-release-notes">v0.10.0 (<a href="https://github.com/NOAA-FIMS/FIMS/releases/tag/v0.10.0">release notes</a>)</h2>
 <section id="whats-changed" class="level3">
@@ -443,8 +522,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="whats-changed-1" class="level3">
 <h3 class="anchored" data-anchor-id="whats-changed-1">What’s Changed</h3>
 </section>
-<section id="bug-fixes" class="level3">
-<h3 class="anchored" data-anchor-id="bug-fixes">Bug Fixes</h3>
+<section id="bug-fixes-1" class="level3">
+<h3 class="anchored" data-anchor-id="bug-fixes-1">Bug Fixes</h3>
 <ul>
 <li>fix(JSON): use sanitize_val() for JSON output values by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/1505">#1505</a>*</li>
 <li>fix(ci): fix swap file creation for slow-tests on ubuntu-latest by <span class="citation" data-cites="aman-raj-srivastva">@aman-raj-srivastva</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/1545">#1545</a></li>
@@ -482,8 +561,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Migrate FIMSdiags from separate repo into FIMS repo by <span class="citation" data-cites="iantaylor-NOAA">@iantaylor-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/1542">#1542</a></li>
 </ul>
 </section>
-<section id="new-contributors" class="level3">
-<h3 class="anchored" data-anchor-id="new-contributors">New Contributors</h3>
+<section id="new-contributors-1" class="level3">
+<h3 class="anchored" data-anchor-id="new-contributors-1">New Contributors</h3>
 <ul>
 <li><span class="citation" data-cites="vivek0913">@vivek0913</span> made their first contribution in <a href="https://github.com/NOAA-FIMS/FIMS/pull/1526">#1526</a></li>
 </ul>
@@ -696,8 +775,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Summary of high level/breaking changes: - Added a <code>pkgdown</code> site for FIMS - Add code cov tests and site link - Remove recruitment bias correction and adjustment because we plan to use <code>TMB</code> (<a href="https://github.com/NOAA-FIMS/FIMS/issues/185">#185</a>) - Improve logging coverage and separate logs into multiple files - Put recruitment deviations on the log scale when input - Report more values with standard errors - Code cleanup, documentation, and consistency improvements - Remove rapidjson dependence - Add <code>start_year</code> and <code>end_year</code> as slots to FIMSFrame - Make <code>log_obs_error</code> a vector - Load the Rcpp module upon package install so components don’t need to be prefaced by <code>fims$</code> - Refactor vectors to use <code>fims::Vector</code> class - Add Newton steps to FIMS integration test to improve convergence in integration test</p>
 <p>More detail: - Update issue forms by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/426">#426</a> - Update DESCRIPTION to match release number by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/425">#425</a> - resolved issues causing warnings by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/430">#430</a> - #307: export age comp function by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/438">#438</a> - 368 convert fims to a pkgdown site by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/437">#437</a> - #242 fix codecov calc and upload by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/436">#436</a> - 391 feature find a file parser for c++ tests by <span class="citation" data-cites="msupernaw">@msupernaw</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/434">#434</a> - fix: deploying pkgdown by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/448">#448</a> - fix: remove set() by <span class="citation" data-cites="KyleShertzer-NOAA">@KyleShertzer-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/451">#451</a> - Update DESCRIPTION by <span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/435">#435</a> - Remove bias correction/adjustment by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/452">#452</a> - doc: error and progress logging for information.hpp by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/424">#424</a> - fix: refactor parameter constructor by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/455">#455</a> - doc: logit_steep correction by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/463">#463</a> - refactor add_tmb_to_fims_internal by <span class="citation" data-cites="msupernaw">@msupernaw</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/459">#459</a> - Created get-gtest-codecov to create coverage.xml report for issue #242 by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/470">#470</a> - #441: fix reviewer checklist build trigger, edit checklist by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/474">#474</a> - 377 refactor call report f from modelhpp instead of fleet and population by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/466">#466</a> - Changed <t> to <type> by <span class="citation" data-cites="MOshima-PIFSC">@MOshima-PIFSC</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/487">#487</a> - 411 refactor naming convention of member and local variables in the fleet class by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/476">#476</a> - Remove test data from fims deterministic folder by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/481">#481</a> - Update GHA workflows to enforce FIMS installation by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/489">#489</a> - renamed dimension folded indices to be clearer by <span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/480">#480</a> - rm acomp/index nll tests objects by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/491">#491</a> - Delete test files by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/492">#492</a> - fix: update windows-2019 to windows-latest by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/495">#495</a> - Create multiple namespaces in FIMS by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/479">#479</a> - fix: use expect_equal() for deterministic tests by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/496">#496</a> - fix: build trigger only on pr being opened by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/498">#498</a> - 407 updating log files by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/499">#499</a> - Name refactoring for tests, growth, and median by <span class="citation" data-cites="nathanvaughan-NOAA">@nathanvaughan-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/503">#503</a> - Fix the test for population.CalculateRecruitment() by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/508">#508</a> - fix: update run google test to use windows latest by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/511">#511</a> - refactor: move duplicated code into the test fixture section by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/497">#497</a> - Fims concurrent by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/520">#520</a> - Remove third party library rapidjson by <span class="citation" data-cites="Bai-Li-NOAA">@Bai-Li-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/519">#519</a> - Make Doxygen comment style the same by <span class="citation" data-cites="k-doering-NOAA">@k-doering-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/518">#518</a> - refactor recruitment deviations to log space by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/514">#514</a> - add documentation to test-fims-estimation by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/515">#515</a> - Added start_year and end_year as slots to FIMSFrame by <span class="citation" data-cites="kellijohnson-NOAA">@kellijohnson-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/501">#501</a> - New 464 load module by <span class="citation" data-cites="Andrea-Havron-NOAA">@Andrea-Havron-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/526">#526</a> - make log_obs_error a vector by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/532">#532</a> - Fims vector by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/517">#517</a> - Release mq by <span class="citation" data-cites="ChristineStawitz-NOAA">@ChristineStawitz-NOAA</span> in <a href="https://github.com/NOAA-FIMS/FIMS/pull/533">#533</a></type></t></p>
 </section>
-<section id="new-contributors-1" class="level3">
-<h3 class="anchored" data-anchor-id="new-contributors-1">New Contributors</h3>
+<section id="new-contributors-2" class="level3">
+<h3 class="anchored" data-anchor-id="new-contributors-2">New Contributors</h3>
 <ul>
 <li><span class="citation" data-cites="peterkuriyama-NOAA">@peterkuriyama-NOAA</span> made their first contribution in <a href="https://github.com/NOAA-FIMS/FIMS/pull/435">#435</a></li>
 </ul>
