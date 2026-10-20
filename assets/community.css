@@ -3,9 +3,9 @@
 .fims-giant-card {
   /* REMOVED the solid background-color here! */
   color: #ffffff;
-  padding: 2.5rem;
-  border-radius: 1.5rem;
-  margin-bottom: 2.5rem;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  margin-bottom: 2rem;
   position: relative;
   overflow: hidden; 
   transition: transform 120ms ease, box-shadow 120ms ease;
@@ -70,7 +70,7 @@
 /* Description text with a bit more spacing and a lighter weight for better readability */
 .fims-desc {
   font-weight: 300;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   opacity: 1;
   line-height: 1.5;
   color: #ffffff !important;
@@ -159,7 +159,7 @@
     width: 100%;
   }
   .fims-giant-card {
-    padding: 1.75rem;
+    padding: 1.5rem;
   }
   .fims-title {
     font-size: 2.2rem;
@@ -284,11 +284,11 @@
 .fims-steps-section {
   background-color: #f8f9fa;
   border-radius: 1.25rem;
-  padding: 2rem !important;
-  margin-bottom: 2.5rem;
+  padding: 1.5rem !important;
+  margin-bottom: 2rem;
   display: grid;
   grid-template-columns: 5fr 7fr;
-  gap: 2.5rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
@@ -414,7 +414,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end; /* Keeps the button sitting perfectly on the bottom baseline */
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   gap: 1.5rem;
 }
 
@@ -489,7 +489,7 @@
 
 /* Wraps the entire section (Header + Cards) */
 .fims-pulse-section {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* Replaces .row, .g-4, .col-lg-8 */
