@@ -47,22 +47,6 @@ Go beyond the default configurations, run diagnostics, etc.
 :::
 
 ::: {.fims-card .position-relative}
-::: {.fims-card-icon .bi .bi-lightning}
-:::
-### I am a power user
-Learn how to use FIMS beyond the R helper functions.
-
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Advanced vignettes
-* <i class="bi bi-check-circle-fill fims-text-success"></i> Case studies
-* <i class="bi bi-check-circle-fill fims-text-success"></i> C++ documentation
-
-::: {.fims-card-footer}
-[Start Power User Path <i class="bi bi-arrow-right"></i>](power-user.qmd){.fims-btn-full .stretched-link}
-:::
-
-:::
-
-::: {.fims-card .position-relative}
 ::: {.fims-card-icon .bi .bi-code-square}
 :::
 ### I want to contribute
