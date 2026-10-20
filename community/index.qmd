@@ -317,14 +317,14 @@ Pick a 'Good First Issue' on GitHub and submit your first pull request for peer 
 <h2 class="fw-bold text-primary mb-4">Training Opportunities</h2>
 
 ::: {.row .g-3}
-::: {.col-3 .col-md-2}
-::: {.ratio .ratio-4x3 .rounded-3 .overflow-hidden .position-relative .bg-dark}
-<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-contain w-90 h-70" style="width: 50% !important; height: 50% !important; top: 10%; left: 25%;" alt="" aria-hidden="true">
-<div class="position-absolute bottom-0 start-0 w-90 p-2 bg-gradient-dark">
-<div class="text-white fw-bold small text-uppercase d-block">Fisheries & Oceans Canada FIMS Training</div>
-<div class="text-white small">Nanaimo, BC</div>
-<div class="text-white small">October 5-8, 2026</div>
-<div class="text-white small">Private training</div>
+::: {.col-auto style="max-width: 180px;"}
+::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative}
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-cover" alt="" aria-hidden="true">
+<div class="position-absolute bottom-0 start-0 w-100 p-2 bg-gradient-dark">
+<div class="text-white fw-bold small text-uppercase d-block" style="font-size: 0.72rem; line-height: 1.1;">Fisheries & Oceans Canada FIMS Training</div>
+<div class="text-white small" style="font-size: 0.65rem;">Nanaimo, BC</div>
+<div class="text-white small" style="font-size: 0.65rem;">October 5-8, 2026</div>
+<div class="text-white small" style="font-size: 0.65rem;">Private training</div>
 </div>
 :::
 :::
