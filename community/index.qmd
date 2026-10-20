@@ -317,7 +317,7 @@ Pick a 'Good First Issue' on GitHub and submit your first pull request for peer 
 <h2 class="fw-bold text-primary mb-4">Training Opportunities</h2>
 
 ::: {.row .g-3}
-::: {.col-auto style="max-width: 180px;"}
+::: {.col-auto style="max-width: 350px;"}
 ::: {.ratio .ratio-1x1 .rounded-3 .overflow-hidden .position-relative}
 <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-cover" alt="" aria-hidden="true">
 <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-gradient-dark">
