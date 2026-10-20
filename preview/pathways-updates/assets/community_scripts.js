@@ -1,0 +1,106 @@
+// JavaScript for GitHub Recent Activity Feed
+async function fetchGitHubActivity() {
+  const feedContainer = document.getElementById('github-activity-feed');
+  if (!feedContainer) return;
+
+  const owner = 'noaa-fims'; 
+  const repo = 'fims';       
+
+  try {
+    feedContainer.innerHTML = '<span class="text-primary fst-italic small">Attempting to contact GitHub...</span>';
+    
+    // MAXED OUT PARAMETER: Requesting 100 events to dig past bot/issue activity noise
+    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/events?per_page=100`);
+    
+    if (!response.ok) {
+      throw new Error(`GitHub Error: ${response.status} ${response.statusText}`);
+    }
+    
+    const events = await response.json();
+    
+    // Extract all Push and PR events from the large log
+    const allRelevantEvents = events.filter(event => 
+      event.type === 'PullRequestEvent' || event.type === 'PushEvent'
+    );
+
+    // If even within 100 events there's no code activity, look for a standard fallback
+    if (allRelevantEvents.length === 0) {
+       feedContainer.innerHTML = '<span class="text-muted small">No code pushes or PR updates found in recent history.</span>';
+       return;
+    }
+
+    // Calculate our 3-day cutoff window in milliseconds
+    const threeDaysAgoMs = Date.now() - (3 * 24 * 60 * 60 * 1000);
+    
+    // Filter for events strictly inside the 3-day window
+    let displayEvents = allRelevantEvents.filter(event => Date.parse(event.created_at) >= threeDaysAgoMs);
+    
+    let noticeHTML = '';
+    
+    // SMART FALLBACK: If the past 3 days have been quiet, show the last 3 overall events instead
+    if (displayEvents.length === 0) {
+      displayEvents = allRelevantEvents.slice(0, 3);
+      noticeHTML = '<div class="px-3 pb-2 text-muted fst-italic" style="font-size: 0.8rem;">No code updates in the last 3 days. Latest project updates:</div>';
+    } else {
+      displayEvents = displayEvents.slice(0, 3);
+    }
+
+    feedContainer.innerHTML = noticeHTML; 
+
+    displayEvents.forEach(event => {
+      let actionText = '';
+      let detailText = '';
+      let branchName = '';
+
+      if (event.type === 'PullRequestEvent') {
+        actionText = `${event.payload.action} pull request`;
+        detailText = event.payload.pull_request.title;
+        branchName = `#${event.payload.number}`;
+      } else if (event.type === 'PushEvent') {
+        const commits = event.payload.commits || []; 
+        const commitCount = commits.length;
+        
+        actionText = `pushed ${commitCount} commit${commitCount !== 1 ? 's' : ''} to`;
+        detailText = commits[0]?.message || 'Branch update / No commit message';
+        branchName = event.payload.ref.replace('refs/heads/', '');
+      }
+
+      const date = new Date(event.created_at);
+      const diffHours = Math.floor((new Date() - date) / (1000 * 60 * 60));
+      const timeAgo = diffHours > 24 ? `${Math.floor(diffHours/24)}d ago` : `${diffHours}h ago`;
+
+      const eventHTML = `
+        <div class="d-flex align-items-start gap-3 p-3 rounded-3 border border-transparent custom-hover-bg transition-colors">
+          <div class="rounded-circle bg-light overflow-hidden flex-shrink-0" style="width: 40px; height: 40px;">
+            <img src="${event.actor.avatar_url}" alt="${event.actor.display_login}" class="w-100 h-100 object-fit-cover" />
+          </div>
+          <div class="flex-grow-1">
+            <p class="mb-1 small">
+              <span class="text-primary fw-bold">${event.actor.display_login}</span> 
+              ${actionText} 
+              <span class="text-danger font-monospace fw-bold">${branchName}</span>
+            </p>
+            <p class="small text-muted mb-0 fst-italic">"${detailText}"</p>
+          </div>
+          <span class="text-muted fw-medium" style="font-size: 0.7rem; white-space: nowrap;">${timeAgo}</span>
+        </div>
+      `;
+      feedContainer.insertAdjacentHTML('beforeend', eventHTML);
+    });
+
+  } catch (error) {
+    console.error(error);
+    feedContainer.innerHTML = `<p class="small text-danger p-3 fw-bold">${error.message}</p>`;
+  }
+}
+
+function hideDecorativeSidebarIcons() {
+  document.querySelectorAll('.quarto-sidebar i[role="img"]').forEach(icon => {
+    icon.setAttribute('aria-hidden', 'true');
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  hideDecorativeSidebarIcons();
+  fetchGitHubActivity();
+});
