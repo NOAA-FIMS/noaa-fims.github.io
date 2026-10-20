@@ -283,12 +283,12 @@
 /* ===== FIMS Getting Involved Steps ===== */
 .fims-steps-section {
   background-color: #f8f9fa;
-  border-radius: 1.5rem;
-  padding: 3rem;
-  margin-bottom: 3rem;
+  border-radius: 1.25rem;
+  padding: 2rem !important;
+  margin-bottom: 2.5rem;
   display: grid;
   grid-template-columns: 5fr 7fr;
-  gap: 3rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
@@ -314,7 +314,7 @@
 .fims-steps-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .fims-step {
@@ -414,7 +414,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end; /* Keeps the button sitting perfectly on the bottom baseline */
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   gap: 1.5rem;
 }
 
@@ -530,7 +530,7 @@ h3.no-anchor {
   background-color: var(--bs-body-bg, #ffffff);
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  padding: 1.5rem;
+  padding: 1.25rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -541,7 +541,7 @@ h3.no-anchor {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap; /* Allows the badge to drop down on tiny screens */
   gap: 1rem;
 }
@@ -627,7 +627,7 @@ h3.no-anchor {
   background-color: #0e6876;
   color: #ffffff;
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   
   /* Flexbox to push the button to the bottom if the card is stretched */
