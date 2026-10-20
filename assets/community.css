@@ -314,7 +314,7 @@
 .fims-steps-list {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .fims-step {
@@ -347,7 +347,7 @@
 .fims-step-content h4 {
   font-size: 1.1rem;
   font-weight: 700;
-  margin-top: 0;
+  margin-top: 0 !important;
   margin-bottom: 0.25rem;
 }
 
