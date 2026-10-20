@@ -483,6 +483,12 @@ img.thumbnail-image.card-img {
     color: #f4f4f4 !important; /* Use a light color for dark mode, consistent with other fixes. */
 }
 
+/* --- Blog Category Sidebar Filter --- */
+/* Hide all sidebar category entries by default */
+.quarto-listing-category .category {
+  display: none !important;
+}
+
 /* deep-dive */
 .quarto-listing-category .category[data-category="ZGVlcC1kaXZl"] {
   display: flex !important;    /* Horizontally align icon and text */
