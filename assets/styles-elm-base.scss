@@ -324,7 +324,7 @@ img.thumbnail-image.card-img {
 .level-intermediate-user {
   --vignette-level-color: #0d6efd;
 }
-.level-power-user {
+.level-contributor {
   --vignette-level-color: #fd7e14;
 }
 
@@ -334,7 +334,7 @@ img.thumbnail-image.card-img {
 .level-intermediate-user .vignette-level-strip {
   background: #0d6efd;
 }
-.level-power-user .vignette-level-strip {
+.level-contributor .vignette-level-strip {
   background: #fd7e14;
 }
 
@@ -697,6 +697,37 @@ div.quarto-post .metadata {
     padding: 6px 14px !important; 
     background-color: #33818c !important; /* Override Brevo default for AA contrast */
   }
+ 
+  /* =========================================================
+   Equations page formatting since it comes from output from the
+   FIMS repo
+   ========================================================= */
+  .fims-equation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.fims-equation-grid .equation-card {
+  border: 1px solid var(--bs-border-color);
+  border-radius: .5rem;
+  padding: 1rem;
+  background: var(--bs-body-bg);
+}
+
+.fims-equation-grid .equation-card h2 {
+  font-size: 1.1rem;
+  margin: .4rem 0 .5rem 0;
+}
+
+.fims-equation-grid .equation-meta span {
+  display: inline-block;
+  font-size: .75rem;
+  padding: .15rem .5rem;
+  border-radius: 999px;
+  background: var(--bs-tertiary-bg);
+  margin-right: .35rem;
+}
 
   /* =========================================================
    ACCESSIBILITY FIX: HEADLESS SCANNER CONTRAST BUG

@@ -27,9 +27,9 @@ toc-depth: 2
         label: "Intermediate User",
         className: "level-intermediate-user"
       },
-      "power-user": {
-        label: "Power User",
-        className: "level-power-user"
+      "contributor": {
+        label: "Contributor",
+        className: "level-contributor"
       }
     };
 
@@ -38,7 +38,18 @@ toc-depth: 2
       if (!res.ok) throw new Error(`Failed to fetch vignette metadata: ${res.status}`);
 
       const data = await res.json();
-      const vignettes = Object.values(data);
+      const levelOrder = {
+        "new-user": 1,
+        "intermediate-user": 2,
+        "contributor": 3
+      };
+
+      const vignettes = Object.values(data).sort((a, b) => {
+        const levelA = (a.level || "new-user").toLowerCase();
+        const levelB = (b.level || "new-user").toLowerCase();
+
+        return (levelOrder[levelA] || 99) - (levelOrder[levelB] || 99);
+      });
 
       if (!Array.isArray(vignettes) || vignettes.length === 0) {
         container.innerHTML = "<p>No vignettes found.</p>";
