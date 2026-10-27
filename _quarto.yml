@@ -2,9 +2,9 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "sites/*.qmd"
     - "about/*.qmd"
-    - "contact/*.qmd"
+    - "get-started/*.qmd"
+    - "community/*.qmd"
     - "blog/*.qmd"
 
   resources:
@@ -97,6 +97,9 @@ website:
         - text: "Documentation"
           href: get-started/documentation.qmd
           icon: book
+        # - text: "Equations"
+          # href: get-started/equations.qmd
+          # icon: x-square
         - text: "Tutorials"
           href: get-started/tutorials.qmd
           icon: mortarboard
