@@ -6,11 +6,11 @@ toc-location: right
 toc-depth: 2
 ---
 ## Links to documentation
+
 ::: {.fims-horizontal-scroll}
 ::: {.fims-card-grid}
 ::: {.fims-card .position-relative}
-<i class="fa-brands fa-r-project"></i>
-::: {.fims-card-icon .bi .bi-person-plus}
+::: {.fims-card-icon .fa-brands .fa-r-project}
 :::
 ### FIMS R Package
 `{pkgdown}` site for the `{FIMS}` R package.
@@ -29,7 +29,7 @@ toc-depth: 2
 C++ functions documentation through Doxygen.
 
 ::: {.fims-card-footer}
-[Got to site <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMS/doxygen/index.html){.fims-btn-full .stretched-link}
+[Go to site <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMS/doxygen/index.html){.fims-btn-full .stretched-link}
 :::
 
 :::
