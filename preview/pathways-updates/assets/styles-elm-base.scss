@@ -256,6 +256,11 @@ img.thumbnail-image.card-img {
   line-height: 1.2rem;
 }
 
+.quarto-listing h3.listing-title,
+h3.listing-title {
+  margin-top: 0.5 !important; /* Set your desired margin-top value */
+}
+
 /* On blog pages, hide any category that isn't explicitly styled with an icon.
    This creates a curated list for the blog, while other pages (like Resources) show all categories. */
 .page-blog .quarto-listing-category .category:not([data-category=""]):not([data-category="ZGVlcC1kaXZl"]):not([data-category="Zmltcy13ZWVrbHk="]):not([data-category="bGVhcm4="]):not([data-category="b3RoZXI="]) {

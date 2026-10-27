@@ -50,7 +50,7 @@
     "href": "get-started/documentation.html",
     "title": "Documentation",
     "section": "",
-    "text": "::: {.fims-card-icon .bi .bi-person-plus}\n\n\n\n{pkgdown} site for the {FIMS} R package.\n\nGo to site \n\n\n\n\n\n\n\n\n\nC++ functions documentation through Doxygen.\n\nGot to site \n\n\n\n\n:::",
+    "text": "{pkgdown} site for the {FIMS} R package.\n\nGo to site \n\n\n\n\n\n\n\n\n\nC++ functions documentation through Doxygen.\n\nGo to site",
     "crumbs": [
       "get started",
       "Documentation"
@@ -61,7 +61,7 @@
     "href": "get-started/documentation.html#links-to-documentation",
     "title": "Documentation",
     "section": "",
-    "text": "::: {.fims-card-icon .bi .bi-person-plus}\n\n\n\n{pkgdown} site for the {FIMS} R package.\n\nGo to site \n\n\n\n\n\n\n\n\n\nC++ functions documentation through Doxygen.\n\nGot to site \n\n\n\n\n:::",
+    "text": "{pkgdown} site for the {FIMS} R package.\n\nGo to site \n\n\n\n\n\n\n\n\n\nC++ functions documentation through Doxygen.\n\nGo to site",
     "crumbs": [
       "get started",
       "Documentation"
