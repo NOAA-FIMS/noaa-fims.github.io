@@ -100,7 +100,7 @@ header-includes: >
 
 ::: {.fims-card .position-relative}
 
-<a href="/resources/packages.html" class="stretched-link"></a>
+<a href="/get-started/packages.html" class="stretched-link" aria-label="FIMS R Packages"></a>
 
 ::: {.fims-card-icon .bi .bi-box-seam}
 :::

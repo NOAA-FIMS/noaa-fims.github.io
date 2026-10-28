@@ -80,7 +80,7 @@
 /* --- Dynamic SVG S-Curves --- */
 
 /* Path 1: Odd to Even (Curves Left to Right) */
-.fims-timeline-item:nth-child(odd):not(.is-last)::after {
+.fims-timeline-item:nth-child(odd):not(.is-last) .fims-step-number::after {
   content: '';
   position: absolute;
   top: 48px; /* Starts exactly at the bottom of your 48px step-number circle */
@@ -96,7 +96,7 @@
 }
 
 /* Path 2: Even to Odd (Curves Right to Left) */
-.fims-timeline-item:nth-child(even):not(.is-last)::after {
+.fims-timeline-item:nth-child(even):not(.is-last) .fims-step-number::after {
   content: '';
   position: absolute;
   top: 48px;
@@ -109,6 +109,14 @@
   background-size: 100% 100%;
   z-index: -1;
   opacity: 0.5;
+}
+
+.fims-timeline-item .fims-step-content { 
+  background-color: #ffffff;
+  color: #213f4b;
+  padding: 1rem; 
+  border-radius: 0.5rem; 
+  border: 1px solid transparent; 
 }
 
 /* Hide task button by default */
