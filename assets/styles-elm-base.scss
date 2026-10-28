@@ -63,6 +63,14 @@ h2, h3, h4, h5, h6 {
   margin-right: 6px;
 }
 
+.sidebar-navigation {
+    padding-left: 10px !important;
+}
+
+#quarto-sidebar>* {
+    padding-right: 10px !important;
+}
+
 .sidebar-item {
     margin-bottom: 1em;
     margin-top: 1em;
