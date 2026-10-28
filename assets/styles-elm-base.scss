@@ -465,10 +465,27 @@ h3.listing-title {
 .quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
 .quarto-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
 .quarto-listing .listing-category[onclick*="bGVhcm4="],
-.quarto-listing .listing-category[onclick*="b3RoZXI="] {
+.quarto-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-category:has(a[href*="category=deep-dive"]),
+.quarto-category:has(a[href*="category=fims-weekly"]),
+.quarto-category:has(a[href*="category=learn"]),
+.quarto-category:has(a[href*="category=other"]) {
   color: #09414a !important;             /* blue-10 for high contrast */
   border-color: #09414a !important;      /* Matches text perfectly */
   background-color: #e4f0f1 !important;  
+  opacity: 1 !important;
+}
+
+.quarto-category a[href*="category=deep-dive"],
+.quarto-category a[href*="category=deep-dive"]:hover,
+.quarto-category a[href*="category=fims-weekly"],
+.quarto-category a[href*="category=fims-weekly"]:hover,
+.quarto-category a[href*="category=learn"],
+.quarto-category a[href*="category=learn"]:hover,
+.quarto-category a[href*="category=other"],
+.quarto-category a[href*="category=other"]:hover {
+  color: #09414a !important;
+  text-decoration: none !important;
 }
 
 /* Dark Mode (Old-school explicit selectors) */
@@ -479,10 +496,27 @@ h3.listing-title {
 .quarto-dark .quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
 .quarto-dark .quarto-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
 .quarto-dark .quarto-listing .listing-category[onclick*="bGVhcm4="],
-.quarto-dark .quarto-listing .listing-category[onclick*="b3RoZXI="] {
+.quarto-dark .quarto-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-dark .quarto-category:has(a[href*="category=deep-dive"]),
+.quarto-dark .quarto-category:has(a[href*="category=fims-weekly"]),
+.quarto-dark .quarto-category:has(a[href*="category=learn"]),
+.quarto-dark .quarto-category:has(a[href*="category=other"]) {
   color: #f7fafb !important;             /* blue-100 for high contrast on dark */
   border-color: #f7fafb !important;      /* Matches text perfectly */
   background-color: #09414a !important;  
+  opacity: 1 !important;
+}
+
+.quarto-dark .quarto-category a[href*="category=deep-dive"],
+.quarto-dark .quarto-category a[href*="category=deep-dive"]:hover,
+.quarto-dark .quarto-category a[href*="category=fims-weekly"],
+.quarto-dark .quarto-category a[href*="category=fims-weekly"]:hover,
+.quarto-dark .quarto-category a[href*="category=learn"],
+.quarto-dark .quarto-category a[href*="category=learn"]:hover,
+.quarto-dark .quarto-category a[href*="category=other"],
+.quarto-dark .quarto-category a[href*="category=other"]:hover {
+  color: #f7fafb !important;
+  text-decoration: none !important;
 }
 
 /* --- ACCESSIBILITY FIX: Code Club page contrast --- */
