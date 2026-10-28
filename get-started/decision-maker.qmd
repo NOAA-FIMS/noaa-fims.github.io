@@ -88,7 +88,7 @@ header-includes: >
 
 ::: {.fims-card .position-relative}
 
-<a href="https://noaa-fims.github.io/FIMSRTMB/" class="stretched-link"></a>
+<a href="https://noaa-fims.github.io/FIMSRTMB/" class="stretched-link" aria-label="FIMSRTMB package"></a>
 
 ::: {.fims-card-icon .bi .bi-box-seam}
 :::
@@ -99,7 +99,7 @@ header-includes: >
 
 ::: {.fims-card .position-relative}
 
-<a href="https://noaa-fims.github.io/about/calendar.html" class="stretched-link"></a>
+<a href="/about/calendar.html" class="stretched-link" aria-label="FIMS Calendar"></a>
 
 ::: {.fims-card-icon .bi .bi-calendar-event}
 :::

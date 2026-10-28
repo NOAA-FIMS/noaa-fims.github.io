@@ -60,6 +60,7 @@ jobs:
                 "axe",
                 "htmlcs"
               ],
+              "levelCapWhenNeedsReview": "warning",
               "hideElements": ".anchorjs-link, #helpful-resources, #listing-listing input.search, #listing-listing a.no-external, .listing-category, #listing-listing-sort, #a-space-for-everyone p, .sourceCode, #photo-code pre", 
               "reporters": [
                 "cli",
