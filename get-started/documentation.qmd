@@ -4,32 +4,34 @@ include-after-body: ../assets/open-in-new-tab.html
 toc: true
 toc-location: right
 toc-depth: 2
+header-includes: >
+  <link rel="stylesheet" href="../assets/community.css">
 ---
 ## Links to documentation
 
 ::: {.fims-horizontal-scroll}
 ::: {.fims-card-grid}
 ::: {.fims-card .position-relative}
-::: {.fims-card-icon .fa-brands .fa-r-project}
+::: {.fims-card-icon .fa-brands .fa-r-project aria-hidden="true"}
 :::
 ### FIMS R Package
 `{pkgdown}` site for the `{FIMS}` R package.
 
 ::: {.fims-card-footer}
-[Go to site <i class="bi bi-arrow-right"></i>](https://nmfs-ost.github.io/FIMS){.fims-btn-full .stretched-link}
+[Go to site <i class="bi bi-arrow-right" aria-hidden="true"></i>](https://nmfs-ost.github.io/FIMS){.fims-btn-full .stretched-link aria-label="Go to FIMS R package site"}
 :::
 
 :::
 
 
 ::: {.fims-card .position-relative}
-::: {.fims-card-icon .bi .bi-code}
+::: {.fims-card-icon .bi .bi-code aria-hidden="true"}
 :::
 ### C++ Documentation
 C++ functions documentation through Doxygen.
 
 ::: {.fims-card-footer}
-[Go to site <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMS/doxygen/index.html){.fims-btn-full .stretched-link}
+[Go to site <i class="bi bi-arrow-right" aria-hidden="true"></i>](https://noaa-fims.github.io/FIMS/doxygen/index.html){.fims-btn-full .stretched-link aria-label="Go to C++ Doxygen documentation site"}
 :::
 
 :::
