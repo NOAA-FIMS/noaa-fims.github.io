@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.19">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,18 +42,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-44f775885073ba7b820c498614cb2f4c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-318c711c49d60269403f6171a639c9e0.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-44f775885073ba7b820c498614cb2f4c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5742269e1ea2de7b7e2e7e2cbcaf2a68.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-5e5bccd88cda5c6bbb1dc0b253b797e1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-5742269e1ea2de7b7e2e7e2cbcaf2a68.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-db865a188cf60e71a33a42c7a02fe712.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-8fb747ab256094e1e22bebe01ffe2c08.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-db865a188cf60e71a33a42c7a02fe712.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-54528ee6b7e9941776f9381274f29fc1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-2b0f72d2e8b5c3951a500aeed76ce17d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-54528ee6b7e9941776f9381274f29fc1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,12 +105,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -157,7 +152,7 @@ window.Quarto = {
 <meta property="og:site_name" content="FIMS">
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -180,6 +175,7 @@ window.Quarto = {
       for (let i=0; i < toggles.length; i++) {
         const toggle = toggles[i];
         if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
           if (alternate) {
             toggle.classList.add("alternate");
           } else {
@@ -209,13 +205,19 @@ window.Quarto = {
       manageTransitions('#quarto-margin-sidebar .nav-link', true);
       // Switch the toggles
       setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
       if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
         manageTransitions("body", false);
-        window.scrollTo(0, 1);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
         setTimeout(() => {
-          window.scrollTo(0, 0);
+          window.scrollTo(0, scrollY);
           manageTransitions("body", true);
         }, 40);
       }
@@ -309,6 +311,7 @@ window.Quarto = {
       // Read the current dark / light value
       let toAlternate = !hasAlternateSentinel();
       toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
@@ -323,7 +326,7 @@ window.Quarto = {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
@@ -334,8 +337,7 @@ window.Quarto = {
     <span class="navbar-title">FIMS <small><strong>?env:VERSION</strong></small></span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -364,17 +366,18 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
 </div>
+            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../blog/index.html">FIMS Blog</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../blog/index.html">FIMS Blog</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -382,7 +385,7 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Section">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -415,7 +418,7 @@ window.Quarto = {
         
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(44)</span></div><div class="category" data-category="YmFzaA==">bash <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2FzZSUyMHN0dWRpZXM=">case studies <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Q0tNUg==">CKMR <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kZS1jbHVi">code-club <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kZXNwYWNlcw==">codespaces <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29tbXVuaXR5">community <span class="quarto-category-count">(4)</span></div><div class="category" data-category="ZGVwZW5kZW5jaWVz">dependencies <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGlhZ25vc3RpY3M=">diagnostics <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ZG9jdW1lbnRhdGlvbg==">documentation <span class="quarto-category-count">(4)</span></div><div class="category" data-category="RFNFTQ==">DSEM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Zmltcy13ZWVrbHk=">fims-weekly <span class="quarto-category-count">(38)</span></div><div class="category" data-category="Z2l0">git <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R1NvQw==">GSoC <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW50ZXJmYWNl">interface <span class="quarto-category-count">(1)</span></div><div class="category" data-category="anNvbg==">json <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bGVhcm4=">learn <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bWFudXNjcmlwdHM=">manuscripts <span class="quarto-category-count">(1)</span></div><div class="category" data-category="b3BlbiUyMHNjaWVuY2U=">open science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="b3Blbi1zY2llbmNl">open-science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="b3RoZXI=">other <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UG9zaXQ=">Posit <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJvamVjdGlvbnM=">projections <span class="quarto-category-count">(5)</span></div><div class="category" data-category="cHVycnI=">purrr <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(4)</span></div><div class="category" data-category="cmVsZWFzZXM=">releases <span class="quarto-category-count">(11)</span></div><div class="category" data-category="c2NoZWR1bGU=">schedule <span class="quarto-category-count">(3)</span></div><div class="category" data-category="c2VsZWN0aXZpdHk=">selectivity <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U0lT">SIS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3VycGx1cyUyMFByb2R1Y3Rpb24=">Surplus Production <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGVzdGluZw==">testing <span class="quarto-category-count">(11)</span></div><div class="category" data-category="dHJhaW5pbmc=">training <span class="quarto-category-count">(5)</span></div><div class="category" data-category="dmlnbmV0dGVz">vignettes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VlNDb2Rl">VSCode <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content" tabindex="-1">
 
 <!-- Skip to main content link for keyboard accessibility -->
 <style>
@@ -503,13 +506,13 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="cmVsZWFzZXMlMkNzY2hlZHVsZQ==" data-listing-date-sort="1789603200000" data-listing-file-modified-sort="1793221845873" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1097">
+<div class="quarto-post image-right" data-index="0" data-categories="cmVsZWFzZXMlMkNzY2hlZHVsZQ==" data-listing-date-sort="1789603200000" data-listing-file-modified-sort="1793802115777" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1097">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/release-schedule.html" class="no-external">Release management process</a>
+<a href="../blog/release-schedule.html" class="no-external-icon">Release management process</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../blog/release-schedule.html" class="no-external">Releases of FIMS will follow an orderly process using a quarterly release schedule</a>
+<a href="../blog/release-schedule.html" class="no-external-icon">Releases of FIMS will follow an orderly process using a quarterly release schedule</a>
 </div>
 <div class="listing-categories">
 
@@ -520,7 +523,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/release-schedule.html" class="no-external">
+<a href="../blog/release-schedule.html" class="no-external-icon">
 <div class="listing-date">
 Sep 17, 2026
 </div>
@@ -530,13 +533,13 @@ Kelli Johnson
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="bGVhcm4lMkNSJTJDb3Blbi1zY2llbmNlJTJDdGVzdGluZw==" data-listing-date-sort="1787616000000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2354">
+<div class="quarto-post image-right" data-index="1" data-categories="bGVhcm4lMkNSJTJDb3Blbi1zY2llbmNlJTJDdGVzdGluZw==" data-listing-date-sort="1787616000000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2354">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/contributing_sel_blog.html" class="no-external">Implementing New Features in FIMS: A Case Study in Selectivity</a>
+<a href="../blog/contributing_sel_blog.html" class="no-external-icon">Implementing New Features in FIMS: A Case Study in Selectivity</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../blog/contributing_sel_blog.html" class="no-external">How to add new features in FIMS using existing code, GitHub, GitHub issues, and FIMS Implementation Team resources</a>
+<a href="../blog/contributing_sel_blog.html" class="no-external-icon">How to add new features in FIMS using existing code, GitHub, GitHub issues, and FIMS Implementation Team resources</a>
 </div>
 <div class="listing-categories">
 
@@ -551,7 +554,7 @@ Kelli Johnson
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/contributing_sel_blog.html" class="no-external">
+<a href="../blog/contributing_sel_blog.html" class="no-external-icon">
 <div class="listing-date">
 Aug 25, 2026
 </div>
@@ -561,13 +564,13 @@ Alexander Jensen and Emily Liljestrand
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="b3RoZXIlMkNzY2hlZHVsZSUyQ2NvbW11bml0eQ==" data-listing-date-sort="1787184000000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1008">
+<div class="quarto-post image-right" data-index="2" data-categories="b3RoZXIlMkNzY2hlZHVsZSUyQ2NvbW11bml0eQ==" data-listing-date-sort="1787184000000" data-listing-file-modified-sort="1793802115771" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1008">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/fims-planning-2026.html" class="no-external">Planning for 2027</a>
+<a href="../blog/fims-planning-2026.html" class="no-external-icon">Planning for 2027</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../blog/fims-planning-2026.html" class="no-external">Annual planning for FIMS development for FY2027</a>
+<a href="../blog/fims-planning-2026.html" class="no-external-icon">Annual planning for FIMS development for FY2027</a>
 </div>
 <div class="listing-categories">
 
@@ -580,7 +583,7 @@ Alexander Jensen and Emily Liljestrand
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/fims-planning-2026.html" class="no-external">
+<a href="../blog/fims-planning-2026.html" class="no-external-icon">
 <div class="listing-date">
 Aug 20, 2026
 </div>
@@ -590,13 +593,13 @@ Kelli Johnson
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="b3RoZXIlMkNjb21tdW5pdHklMkN0ZXN0aW5n" data-listing-date-sort="1783900800000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1016">
+<div class="quarto-post image-right" data-index="3" data-categories="b3RoZXIlMkNjb21tdW5pdHklMkN0ZXN0aW5n" data-listing-date-sort="1783900800000" data-listing-file-modified-sort="1793802115771" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1016">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/fims-cie.html" class="no-external">FIMS CIE Review</a>
+<a href="../blog/fims-cie.html" class="no-external-icon">FIMS CIE Review</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../blog/fims-cie.html" class="no-external">CIE concludes that FIMS is on the right track</a>
+<a href="../blog/fims-cie.html" class="no-external-icon">CIE concludes that FIMS is on the right track</a>
 </div>
 <div class="listing-categories">
 
@@ -609,7 +612,7 @@ Kelli Johnson
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/fims-cie.html" class="no-external">
+<a href="../blog/fims-cie.html" class="no-external-icon">
 <div class="listing-date">
 Jul 13, 2026
 </div>
@@ -619,14 +622,11 @@ Kelli Johnson
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1779062400000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="137">
+<div class="quarto-post image-right" data-index="4" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1779062400000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="137">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/05.18.2026.html" class="no-external">FIMS Weekly - May 18–22, 2026</a>
+<a href="../blog/05.18.2026.html" class="no-external-icon">FIMS Weekly - May 18–22, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/05.18.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -634,21 +634,18 @@ Kelli Johnson
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/05.18.2026.html" class="no-external">
+<a href="../blog/05.18.2026.html" class="no-external-icon">
 <div class="listing-date">
 May 18, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1778457600000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="162">
+<div class="quarto-post image-right" data-index="5" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1778457600000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="162">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/05.11.2026.html" class="no-external">FIMS Weekly - May 11–15, 2026</a>
+<a href="../blog/05.11.2026.html" class="no-external-icon">FIMS Weekly - May 11–15, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/05.11.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -656,21 +653,18 @@ May 18, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/05.11.2026.html" class="no-external">
+<a href="../blog/05.11.2026.html" class="no-external-icon">
 <div class="listing-date">
 May 11, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Zmltcy13ZWVrbHklMkNDS01SJTJDR1NvQw==" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
+<div class="quarto-post image-right" data-index="6" data-categories="Zmltcy13ZWVrbHklMkNDS01SJTJDR1NvQw==" data-listing-date-sort="1777852800000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/05.04.2026.html" class="no-external">FIMS Weekly - May 04–08, 2026</a>
+<a href="../blog/05.04.2026.html" class="no-external-icon">FIMS Weekly - May 04–08, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/05.04.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -682,21 +676,18 @@ May 11, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/05.04.2026.html" class="no-external">
+<a href="../blog/05.04.2026.html" class="no-external-icon">
 <div class="listing-date">
 May 4, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1777248000000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="201">
+<div class="quarto-post image-right" data-index="7" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1777248000000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="201">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/04.27.2026.html" class="no-external">FIMS Weekly - April 27–May 01, 2026</a>
+<a href="../blog/04.27.2026.html" class="no-external-icon">FIMS Weekly - April 27–May 01, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/04.27.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -704,21 +695,18 @@ May 4, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/04.27.2026.html" class="no-external">
+<a href="../blog/04.27.2026.html" class="no-external-icon">
 <div class="listing-date">
 Apr 27, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="Zmltcy13ZWVrbHklMkNkZXBlbmRlbmNpZXM=" data-listing-date-sort="1776643200000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="181">
+<div class="quarto-post image-right" data-index="8" data-categories="Zmltcy13ZWVrbHklMkNkZXBlbmRlbmNpZXM=" data-listing-date-sort="1776643200000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="181">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/04.20.2026.html" class="no-external">FIMS Weekly - April 20–24, 2026</a>
+<a href="../blog/04.20.2026.html" class="no-external-icon">FIMS Weekly - April 20–24, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/04.20.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -728,21 +716,18 @@ Apr 27, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/04.20.2026.html" class="no-external">
+<a href="../blog/04.20.2026.html" class="no-external-icon">
 <div class="listing-date">
 Apr 20, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1776038400000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="147">
+<div class="quarto-post image-right" data-index="9" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1776038400000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="147">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/04.13.2026.html" class="no-external">FIMS Weekly - April 13–17, 2026</a>
+<a href="../blog/04.13.2026.html" class="no-external-icon">FIMS Weekly - April 13–17, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/04.13.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -750,21 +735,18 @@ Apr 20, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/04.13.2026.html" class="no-external">
+<a href="../blog/04.13.2026.html" class="no-external-icon">
 <div class="listing-date">
 Apr 13, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1775433600000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="154">
+<div class="quarto-post image-right" data-index="10" data-categories="Zmltcy13ZWVrbHk=" data-listing-date-sort="1775433600000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="154">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/04.06.2026.html" class="no-external">FIMS Weekly - April 06–10, 2026</a>
+<a href="../blog/04.06.2026.html" class="no-external-icon">FIMS Weekly - April 06–10, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/04.06.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -772,21 +754,18 @@ Apr 13, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/04.06.2026.html" class="no-external">
+<a href="../blog/04.06.2026.html" class="no-external-icon">
 <div class="listing-date">
 Apr 6, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="Zmltcy13ZWVrbHklMkN0cmFpbmluZw==" data-listing-date-sort="1774828800000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="186">
+<div class="quarto-post image-right" data-index="11" data-categories="Zmltcy13ZWVrbHklMkN0cmFpbmluZw==" data-listing-date-sort="1774828800000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="186">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/03.30.2026.html" class="no-external">FIMS Weekly - March 30–April 03, 2026</a>
+<a href="../blog/03.30.2026.html" class="no-external-icon">FIMS Weekly - March 30–April 03, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/03.30.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -796,21 +775,18 @@ Apr 6, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/03.30.2026.html" class="no-external">
+<a href="../blog/03.30.2026.html" class="no-external-icon">
 <div class="listing-date">
 Mar 30, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="Zmltcy13ZWVrbHklMkNjYXNlJTIwc3R1ZGllcyUyQ3JlbGVhc2Vz" data-listing-date-sort="1773619200000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
+<div class="quarto-post image-right" data-index="12" data-categories="Zmltcy13ZWVrbHklMkNjYXNlJTIwc3R1ZGllcyUyQ3JlbGVhc2Vz" data-listing-date-sort="1773619200000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/03.16.2026.html" class="no-external">FIMS Weekly - March 16–20, 2026</a>
+<a href="../blog/03.16.2026.html" class="no-external-icon">FIMS Weekly - March 16–20, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/03.16.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -822,21 +798,18 @@ Mar 30, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/03.16.2026.html" class="no-external">
+<a href="../blog/03.16.2026.html" class="no-external-icon">
 <div class="listing-date">
 Mar 16, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="Zmltcy13ZWVrbHklMkN0cmFpbmluZyUyQ3Rlc3Rpbmc=" data-listing-date-sort="1773619200000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="217">
+<div class="quarto-post image-right" data-index="13" data-categories="Zmltcy13ZWVrbHklMkN0cmFpbmluZyUyQ3Rlc3Rpbmc=" data-listing-date-sort="1773619200000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="217">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/03.23.2026.html" class="no-external">FIMS Weekly - March 23–27, 2026</a>
+<a href="../blog/03.23.2026.html" class="no-external-icon">FIMS Weekly - March 23–27, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/03.23.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -848,21 +821,18 @@ Mar 16, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/03.23.2026.html" class="no-external">
+<a href="../blog/03.23.2026.html" class="no-external-icon">
 <div class="listing-date">
 Mar 16, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="Zmltcy13ZWVrbHklMkNtYW51c2NyaXB0cw==" data-listing-date-sort="1773014400000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="205">
+<div class="quarto-post image-right" data-index="14" data-categories="Zmltcy13ZWVrbHklMkNtYW51c2NyaXB0cw==" data-listing-date-sort="1773014400000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="205">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/03.09.2026.html" class="no-external">FIMS Weekly - March 09–13, 2026</a>
+<a href="../blog/03.09.2026.html" class="no-external-icon">FIMS Weekly - March 09–13, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/03.09.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -872,21 +842,18 @@ Mar 16, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/03.09.2026.html" class="no-external">
+<a href="../blog/03.09.2026.html" class="no-external-icon">
 <div class="listing-date">
 Mar 9, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5n" data-listing-date-sort="1772409600000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="298">
+<div class="quarto-post image-right" data-index="15" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5n" data-listing-date-sort="1772409600000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="298">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/03.02.2026.html" class="no-external">FIMS Weekly - March 02–06, 2026</a>
+<a href="../blog/03.02.2026.html" class="no-external-icon">FIMS Weekly - March 02–06, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/03.02.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -896,21 +863,18 @@ Mar 9, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/03.02.2026.html" class="no-external">
+<a href="../blog/03.02.2026.html" class="no-external-icon">
 <div class="listing-date">
 Mar 2, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcw==" data-listing-date-sort="1771804800000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
+<div class="quarto-post image-right" data-index="16" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcw==" data-listing-date-sort="1771804800000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/02.23.2026.html" class="no-external">FIMS Weekly - February 23–27, 2026</a>
+<a href="../blog/02.23.2026.html" class="no-external-icon">FIMS Weekly - February 23–27, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/02.23.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -920,20 +884,20 @@ Mar 2, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/02.23.2026.html" class="no-external">
+<a href="../blog/02.23.2026.html" class="no-external-icon">
 <div class="listing-date">
 Feb 23, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="bGVhcm4lMkNSJTJDb3BlbiUyMHNjaWVuY2UlMkNkaWFnbm9zdGljcw==" data-listing-date-sort="1771545600000" data-listing-file-modified-sort="1793221845873" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1508">
+<div class="quarto-post image-right" data-index="17" data-categories="bGVhcm4lMkNSJTJDb3BlbiUyMHNjaWVuY2UlMkNkaWFnbm9zdGljcw==" data-listing-date-sort="1771545600000" data-listing-file-modified-sort="1793802115777" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1508">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/renv_blog.html" class="no-external">R Package Chaos, Solved</a>
+<a href="../blog/renv_blog.html" class="no-external-icon">R Package Chaos, Solved</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../blog/renv_blog.html" class="no-external">How we use {renv} to keep the FIMS ecosystem reproducible and collaborative</a>
+<a href="../blog/renv_blog.html" class="no-external-icon">How we use {renv} to keep the FIMS ecosystem reproducible and collaborative</a>
 </div>
 <div class="listing-categories">
 
@@ -948,7 +912,7 @@ Feb 23, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/renv_blog.html" class="no-external">
+<a href="../blog/renv_blog.html" class="no-external-icon">
 <div class="listing-date">
 Feb 20, 2026
 </div>
@@ -958,13 +922,13 @@ Meg Oshima
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="b3RoZXIlMkNjb2RlLWNsdWIlMkNjb21tdW5pdHklMkNvcGVuLXNjaWVuY2U=" data-listing-date-sort="1771286400000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="651">
+<div class="quarto-post image-right" data-index="18" data-categories="b3RoZXIlMkNjb2RlLWNsdWIlMkNjb21tdW5pdHklMkNvcGVuLXNjaWVuY2U=" data-listing-date-sort="1771286400000" data-listing-file-modified-sort="1793802115771" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="651">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/fims-code-club.html" class="no-external">FIMS Code Club</a>
+<a href="../blog/fims-code-club.html" class="no-external-icon">FIMS Code Club</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../blog/fims-code-club.html" class="no-external">Beyond the Code: Building a Community</a>
+<a href="../blog/fims-code-club.html" class="no-external-icon">Beyond the Code: Building a Community</a>
 </div>
 <div class="listing-categories">
 
@@ -979,7 +943,7 @@ Meg Oshima
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/fims-code-club.html" class="no-external">
+<a href="../blog/fims-code-club.html" class="no-external-icon">
 <div class="listing-date">
 Feb 17, 2026
 </div>
@@ -989,14 +953,11 @@ Elizabeth Perl
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcw==" data-listing-date-sort="1771200000000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190">
+<div class="quarto-post image-right" data-index="19" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcw==" data-listing-date-sort="1771200000000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/02.16.2026.html" class="no-external">FIMS Weekly - February 16–20, 2026</a>
+<a href="../blog/02.16.2026.html" class="no-external-icon">FIMS Weekly - February 16–20, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/02.16.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1006,21 +967,18 @@ Elizabeth Perl
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/02.16.2026.html" class="no-external">
+<a href="../blog/02.16.2026.html" class="no-external-icon">
 <div class="listing-date">
 Feb 16, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5nJTJDY2FzZSUyMHN0dWRpZXM=" data-listing-date-sort="1770595200000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="233">
+<div class="quarto-post image-right" data-index="20" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5nJTJDY2FzZSUyMHN0dWRpZXM=" data-listing-date-sort="1770595200000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="233">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/02.09.2026.html" class="no-external">FIMS Weekly - February 09–13, 2026</a>
+<a href="../blog/02.09.2026.html" class="no-external-icon">FIMS Weekly - February 09–13, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/02.09.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1032,21 +990,18 @@ Feb 16, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/02.09.2026.html" class="no-external">
+<a href="../blog/02.09.2026.html" class="no-external-icon">
 <div class="listing-date">
 Feb 9, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-categories="Zmltcy13ZWVrbHklMkNTSVMlMkNjYXNlJTIwc3R1ZGllcyUyQ2RpYWdub3N0aWNz" data-listing-date-sort="1769990400000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="244">
+<div class="quarto-post image-right" data-index="21" data-categories="Zmltcy13ZWVrbHklMkNTSVMlMkNjYXNlJTIwc3R1ZGllcyUyQ2RpYWdub3N0aWNz" data-listing-date-sort="1769990400000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="244">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/02.02.2026.html" class="no-external">FIMS Weekly - February 02–06, 2026</a>
+<a href="../blog/02.02.2026.html" class="no-external-icon">FIMS Weekly - February 02–06, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/02.02.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1060,21 +1015,18 @@ Feb 9, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/02.02.2026.html" class="no-external">
+<a href="../blog/02.02.2026.html" class="no-external-icon">
 <div class="listing-date">
 Feb 2, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-categories="Zmltcy13ZWVrbHklMkN0cmFpbmluZw==" data-listing-date-sort="1769385600000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
+<div class="quarto-post image-right" data-index="22" data-categories="Zmltcy13ZWVrbHklMkN0cmFpbmluZw==" data-listing-date-sort="1769385600000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/01.26.2026.html" class="no-external">FIMS Weekly - January 26–30, 2026</a>
+<a href="../blog/01.26.2026.html" class="no-external-icon">FIMS Weekly - January 26–30, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/01.26.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1084,21 +1036,18 @@ Feb 2, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/01.26.2026.html" class="no-external">
+<a href="../blog/01.26.2026.html" class="no-external-icon">
 <div class="listing-date">
 Jan 26, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ3Rlc3Rpbmc=" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
+<div class="quarto-post image-right" data-index="23" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ3Rlc3Rpbmc=" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/01.19.2026.html" class="no-external">FIMS Weekly - January 19–23, 2026</a>
+<a href="../blog/01.19.2026.html" class="no-external-icon">FIMS Weekly - January 19–23, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/01.19.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1110,21 +1059,18 @@ Jan 26, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/01.19.2026.html" class="no-external">
+<a href="../blog/01.19.2026.html" class="no-external-icon">
 <div class="listing-date">
 Jan 19, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-categories="Zmltcy13ZWVrbHklMkN0cmFpbmluZw==" data-listing-date-sort="1768176000000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="170">
+<div class="quarto-post image-right" data-index="24" data-categories="Zmltcy13ZWVrbHklMkN0cmFpbmluZw==" data-listing-date-sort="1768176000000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="170">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/01.12.2026.html" class="no-external">FIMS Weekly - January 12–16, 2026</a>
+<a href="../blog/01.12.2026.html" class="no-external-icon">FIMS Weekly - January 12–16, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/01.12.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1134,21 +1080,18 @@ Jan 19, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/01.12.2026.html" class="no-external">
+<a href="../blog/01.12.2026.html" class="no-external-icon">
 <div class="listing-date">
 Jan 12, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="25" data-categories="Zmltcy13ZWVrbHklMkNTdXJwbHVzJTIwUHJvZHVjdGlvbiUyQ0RTRU0lMkNjb2Rlc3BhY2Vz" data-listing-date-sort="1767571200000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
+<div class="quarto-post image-right" data-index="25" data-categories="Zmltcy13ZWVrbHklMkNTdXJwbHVzJTIwUHJvZHVjdGlvbiUyQ0RTRU0lMkNjb2Rlc3BhY2Vz" data-listing-date-sort="1767571200000" data-listing-file-modified-sort="1793802115768" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/01.04.2026.html" class="no-external">FIMS Weekly - January 05–09, 2026</a>
+<a href="../blog/01.04.2026.html" class="no-external-icon">FIMS Weekly - January 05–09, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/01.04.2026.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1162,21 +1105,18 @@ Jan 12, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/01.04.2026.html" class="no-external">
+<a href="../blog/01.04.2026.html" class="no-external-icon">
 <div class="listing-date">
 Jan 5, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="26" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ3RyYWluaW5n" data-listing-date-sort="1766966400000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
+<div class="quarto-post image-right" data-index="26" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ3RyYWluaW5n" data-listing-date-sort="1766966400000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="191">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/12.29.2025.html" class="no-external">FIMS Weekly - December 29, 2025–January 02, 2026</a>
+<a href="../blog/12.29.2025.html" class="no-external-icon">FIMS Weekly - December 29, 2025–January 02, 2026</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/12.29.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1188,21 +1128,18 @@ Jan 5, 2026
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/12.29.2025.html" class="no-external">
+<a href="../blog/12.29.2025.html" class="no-external-icon">
 <div class="listing-date">
 Dec 29, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="27" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ1IlMkNiYXNo" data-listing-date-sort="1766361600000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
+<div class="quarto-post image-right" data-index="27" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ1IlMkNiYXNo" data-listing-date-sort="1766361600000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/12.22.2025.html" class="no-external">FIMS Weekly - December 22–26, 2025</a>
+<a href="../blog/12.22.2025.html" class="no-external-icon">FIMS Weekly - December 22–26, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/12.22.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1216,21 +1153,18 @@ Dec 29, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/12.22.2025.html" class="no-external">
+<a href="../blog/12.22.2025.html" class="no-external-icon">
 <div class="listing-date">
 Dec 22, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="28" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ1I=" data-listing-date-sort="1765756800000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
+<div class="quarto-post image-right" data-index="28" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ1I=" data-listing-date-sort="1765756800000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/12.15.2025.html" class="no-external">FIMS Weekly - December 15–19, 2025</a>
+<a href="../blog/12.15.2025.html" class="no-external-icon">FIMS Weekly - December 15–19, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/12.15.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1242,21 +1176,18 @@ Dec 22, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/12.15.2025.html" class="no-external">
+<a href="../blog/12.15.2025.html" class="no-external-icon">
 <div class="listing-date">
 Dec 15, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="29" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ3Byb2plY3Rpb25z" data-listing-date-sort="1765152000000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="179">
+<div class="quarto-post image-right" data-index="29" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ3Byb2plY3Rpb25z" data-listing-date-sort="1765152000000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="179">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/12.08.2025.html" class="no-external">FIMS Weekly - December 08–12, 2025</a>
+<a href="../blog/12.08.2025.html" class="no-external-icon">FIMS Weekly - December 08–12, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/12.08.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1268,21 +1199,18 @@ Dec 15, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/12.08.2025.html" class="no-external">
+<a href="../blog/12.08.2025.html" class="no-external-icon">
 <div class="listing-date">
 Dec 8, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="30" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5n" data-listing-date-sort="1764547200000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
+<div class="quarto-post image-right" data-index="30" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5n" data-listing-date-sort="1764547200000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/12.01.2025.html" class="no-external">FIMS Weekly - December 01–05, 2025</a>
+<a href="../blog/12.01.2025.html" class="no-external-icon">FIMS Weekly - December 01–05, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/12.01.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1292,21 +1220,18 @@ Dec 8, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/12.01.2025.html" class="no-external">
+<a href="../blog/12.01.2025.html" class="no-external-icon">
 <div class="listing-date">
 Dec 1, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="31" data-categories="Zmltcy13ZWVrbHklMkNQb3NpdCUyQ3JlbGVhc2Vz" data-listing-date-sort="1763942400000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="152">
+<div class="quarto-post image-right" data-index="31" data-categories="Zmltcy13ZWVrbHklMkNQb3NpdCUyQ3JlbGVhc2Vz" data-listing-date-sort="1763942400000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="152">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/11.24.2025.html" class="no-external">FIMS Weekly - November 24–28, 2025</a>
+<a href="../blog/11.24.2025.html" class="no-external-icon">FIMS Weekly - November 24–28, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/11.24.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1318,21 +1243,18 @@ Dec 1, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/11.24.2025.html" class="no-external">
+<a href="../blog/11.24.2025.html" class="no-external-icon">
 <div class="listing-date">
 Nov 24, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="32" data-categories="Zmltcy13ZWVrbHklMkNjb21tdW5pdHklMkNzY2hlZHVsZQ==" data-listing-date-sort="1763337600000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="182">
+<div class="quarto-post image-right" data-index="32" data-categories="Zmltcy13ZWVrbHklMkNjb21tdW5pdHklMkNzY2hlZHVsZQ==" data-listing-date-sort="1763337600000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="182">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/11.17.2025.html" class="no-external">FIMS Weekly - November 17–21, 2025</a>
+<a href="../blog/11.17.2025.html" class="no-external-icon">FIMS Weekly - November 17–21, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/11.17.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1344,21 +1266,18 @@ Nov 24, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/11.17.2025.html" class="no-external">
+<a href="../blog/11.17.2025.html" class="no-external-icon">
 <div class="listing-date">
 Nov 17, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="33" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5nJTJDZG9jdW1lbnRhdGlvbiUyQ2RvY3VtZW50YXRpb24=" data-listing-date-sort="1759104000000" data-listing-file-modified-sort="1793221845867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
+<div class="quarto-post image-right" data-index="33" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5nJTJDZG9jdW1lbnRhdGlvbiUyQ2RvY3VtZW50YXRpb24=" data-listing-date-sort="1759104000000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="183">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/09.29.2025.html" class="no-external">FIMS Weekly - September 29–October 03, 2025</a>
+<a href="../blog/09.29.2025.html" class="no-external-icon">FIMS Weekly - September 29–October 03, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/09.29.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1372,21 +1291,18 @@ Nov 17, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/09.29.2025.html" class="no-external">
+<a href="../blog/09.29.2025.html" class="no-external-icon">
 <div class="listing-date">
 Sep 29, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="34" data-categories="Zmltcy13ZWVrbHklMkNkb2N1bWVudGF0aW9u" data-listing-date-sort="1758412800000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
+<div class="quarto-post image-right" data-index="34" data-categories="Zmltcy13ZWVrbHklMkNkb2N1bWVudGF0aW9u" data-listing-date-sort="1758412800000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/09.21.2025.html" class="no-external">FIMS Weekly - September 21–26, 2025</a>
+<a href="../blog/09.21.2025.html" class="no-external-icon">FIMS Weekly - September 21–26, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/09.21.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1396,21 +1312,18 @@ Sep 29, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/09.21.2025.html" class="no-external">
+<a href="../blog/09.21.2025.html" class="no-external-icon">
 <div class="listing-date">
 Sep 21, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="35" data-categories="Zmltcy13ZWVrbHklMkN2aWduZXR0ZXM=" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="172">
+<div class="quarto-post image-right" data-index="35" data-categories="Zmltcy13ZWVrbHklMkN2aWduZXR0ZXM=" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="172">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/09.15.2025.html" class="no-external">FIMS Weekly - September 15–19, 2025</a>
+<a href="../blog/09.15.2025.html" class="no-external-icon">FIMS Weekly - September 15–19, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/09.15.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1420,21 +1333,18 @@ Sep 21, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/09.15.2025.html" class="no-external">
+<a href="../blog/09.15.2025.html" class="no-external-icon">
 <div class="listing-date">
 Sep 15, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="36" data-categories="Zmltcy13ZWVrbHklMkNqc29uJTJDcHVycnI=" data-listing-date-sort="1757289600000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
+<div class="quarto-post image-right" data-index="36" data-categories="Zmltcy13ZWVrbHklMkNqc29uJTJDcHVycnI=" data-listing-date-sort="1757289600000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/09.08.2025.html" class="no-external">FIMS Weekly - September 08–12, 2025</a>
+<a href="../blog/09.08.2025.html" class="no-external-icon">FIMS Weekly - September 08–12, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/09.08.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1446,21 +1356,18 @@ Sep 15, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/09.08.2025.html" class="no-external">
+<a href="../blog/09.08.2025.html" class="no-external-icon">
 <div class="listing-date">
 Sep 8, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="37" data-categories="Zmltcy13ZWVrbHklMkNqc29uJTJDcHJvamVjdGlvbnM=" data-listing-date-sort="1756684800000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="564">
+<div class="quarto-post image-right" data-index="37" data-categories="Zmltcy13ZWVrbHklMkNqc29uJTJDcHJvamVjdGlvbnM=" data-listing-date-sort="1756684800000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="564">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/09.01.2025.html" class="no-external">FIMS Weekly - September 01–05, 2025</a>
+<a href="../blog/09.01.2025.html" class="no-external-icon">FIMS Weekly - September 01–05, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/09.01.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1472,21 +1379,18 @@ Sep 8, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/09.01.2025.html" class="no-external">
+<a href="../blog/09.01.2025.html" class="no-external-icon">
 <div class="listing-date">
 Sep 1, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="38" data-categories="Zmltcy13ZWVrbHklMkNkb2N1bWVudGF0aW9uJTJDaW50ZXJmYWNl" data-listing-date-sort="1756080000000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
+<div class="quarto-post image-right" data-index="38" data-categories="Zmltcy13ZWVrbHklMkNkb2N1bWVudGF0aW9uJTJDaW50ZXJmYWNl" data-listing-date-sort="1756080000000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/08.25.2025.html" class="no-external">FIMS Weekly - August 25–29, 2025</a>
+<a href="../blog/08.25.2025.html" class="no-external-icon">FIMS Weekly - August 25–29, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/08.25.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1498,21 +1402,18 @@ Sep 1, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/08.25.2025.html" class="no-external">
+<a href="../blog/08.25.2025.html" class="no-external-icon">
 <div class="listing-date">
 Aug 25, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="39" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5n" data-listing-date-sort="1755475200000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="194">
+<div class="quarto-post image-right" data-index="39" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5n" data-listing-date-sort="1755475200000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="194">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/08.18.2025.html" class="no-external">FIMS Weekly - August 18–22, 2025</a>
+<a href="../blog/08.18.2025.html" class="no-external-icon">FIMS Weekly - August 18–22, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/08.18.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1522,21 +1423,18 @@ Aug 25, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/08.18.2025.html" class="no-external">
+<a href="../blog/08.18.2025.html" class="no-external-icon">
 <div class="listing-date">
 Aug 18, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="40" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ2dpdCUyQ1ZTQ29kZQ==" data-listing-date-sort="1754870400000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="217">
+<div class="quarto-post image-right" data-index="40" data-categories="Zmltcy13ZWVrbHklMkNyZWxlYXNlcyUyQ2dpdCUyQ1ZTQ29kZQ==" data-listing-date-sort="1754870400000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="217">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/08.11.2025.html" class="no-external">FIMS Weekly - August 11–15, 2025</a>
+<a href="../blog/08.11.2025.html" class="no-external-icon">FIMS Weekly - August 11–15, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/08.11.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1550,21 +1448,18 @@ Aug 18, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/08.11.2025.html" class="no-external">
+<a href="../blog/08.11.2025.html" class="no-external-icon">
 <div class="listing-date">
 Aug 11, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="41" data-categories="Zmltcy13ZWVrbHklMkNjYXNlJTIwc3R1ZGllcyUyQ3Byb2plY3Rpb25z" data-listing-date-sort="1754265600000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
+<div class="quarto-post image-right" data-index="41" data-categories="Zmltcy13ZWVrbHklMkNjYXNlJTIwc3R1ZGllcyUyQ3Byb2plY3Rpb25z" data-listing-date-sort="1754265600000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/08.04.2025.html" class="no-external">FIMS Weekly - August 04–08, 2025</a>
+<a href="../blog/08.04.2025.html" class="no-external-icon">FIMS Weekly - August 04–08, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/08.04.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1576,21 +1471,18 @@ Aug 11, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/08.04.2025.html" class="no-external">
+<a href="../blog/08.04.2025.html" class="no-external-icon">
 <div class="listing-date">
 Aug 4, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="42" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5nJTJDc2VsZWN0aXZpdHklMkNkaWFnbm9zdGljcyUyQ3Byb2plY3Rpb25z" data-listing-date-sort="1753660800000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="170">
+<div class="quarto-post image-right" data-index="42" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5nJTJDc2VsZWN0aXZpdHklMkNkaWFnbm9zdGljcyUyQ3Byb2plY3Rpb25z" data-listing-date-sort="1753660800000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="170">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/07.28.2025.html" class="no-external">FIMS Weekly - July 28–August 1, 2025</a>
+<a href="../blog/07.28.2025.html" class="no-external-icon">FIMS Weekly - July 28–August 1, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/07.28.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1606,21 +1498,18 @@ Aug 4, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/07.28.2025.html" class="no-external">
+<a href="../blog/07.28.2025.html" class="no-external-icon">
 <div class="listing-date">
 Jul 28, 2025
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="43" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5nJTJDc2VsZWN0aXZpdHklMkNwcm9qZWN0aW9ucw==" data-listing-date-sort="1753056000000" data-listing-file-modified-sort="1793221845866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="451">
+<div class="quarto-post image-right" data-index="43" data-categories="Zmltcy13ZWVrbHklMkN0ZXN0aW5nJTJDc2VsZWN0aXZpdHklMkNwcm9qZWN0aW9ucw==" data-listing-date-sort="1753056000000" data-listing-file-modified-sort="1793802115770" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="451">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../blog/07.21.2025.html" class="no-external">FIMS Weekly - July 21–25, 2025</a>
+<a href="../blog/07.21.2025.html" class="no-external-icon">FIMS Weekly - July 21–25, 2025</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../blog/07.21.2025.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Zmltcy13ZWVrbHk='); return false;">fims-weekly</div>
@@ -1634,7 +1523,7 @@ Jul 28, 2025
 </div>
 </div>
 <div class="metadata">
-<a href="../blog/07.21.2025.html" class="no-external">
+<a href="../blog/07.21.2025.html" class="no-external-icon">
 <div class="listing-date">
 Jul 21, 2025
 </div>
@@ -1705,15 +1594,50 @@ document.addEventListener("DOMContentLoaded", function () {
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
       const i = window.document.createElement("i");
       i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
     }
     setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
@@ -1792,7 +1716,8 @@ document.addEventListener("DOMContentLoaded", function () {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -1801,8 +1726,69 @@ document.addEventListener("DOMContentLoaded", function () {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -1816,6 +1802,7 @@ document.addEventListener("DOMContentLoaded", function () {
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -1978,44 +1965,54 @@ document.addEventListener("DOMContentLoaded", function () {
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -2113,6 +2110,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 <footer class="footer">
