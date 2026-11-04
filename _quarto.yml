@@ -28,54 +28,38 @@ website:
     background: light
     right:
       - text: home
-        aria-label: link to home
         href: index.qmd
       - text: about
         menu:
           - text: overview
-            aria-label: link to about page
             href: about/index.qmd
           - text: faq
-            aria-label: link to faq page
             href: about/faq.qmd
           - text: calendar
-            aria-label: link to FIMS calendar
             href: about/calendar.qmd
           - text: changelog
-            aria-label: link to changelog
             href: about/FIMS_CHANGELOG.qmd
           - text: acknowledgements
-            aria-label: link to acknowledgements
             href: about/acknowledgements.qmd
       - text: blog
-        aria-label: link to blog
         href: blog/index.qmd
       - text: packages & resources
-        aria-label: link to FIMS resources
         menu:
           - text: FIMS package
-            aria-label: link to FIMS package site
             href: https://noaa-fims.github.io/FIMS/
           - text: FIMS-associated R packages
-            aria-label: link to FIMS R packages
             href: resources/packages.qmd
           - text: case studies
             href: https://noaa-fims.github.io/case-studies/
-            aria-label: link to FIMS case studies site
           - text: development resources
-            aria-label: link to development resources
             href: resources/resources.qmd
           # - text: projects
-          #   aria-label: link to FIMS projects
           #   href: resources/projects.qmd
       - text: contact
-        aria-label: link to contacts
         menu:
           - text: contact FIMS lead
-            aria-label: link to FIMS lead contact info
             href: contact/index.qmd
           - text: FIMS team
-            aria-label: link to list of contributors
             href: contact/contributors.qmd
       - icon: github
         aria-label: github icon
@@ -95,7 +79,6 @@ format:
     body-width: 100%
     anchor-sections: true
     include-after-body: assets/open-in-new-tab.html
-    include-before-body: assets/skip-link.html
     scripts: 
       - assets/scripts.js
     header-includes: |
@@ -130,4 +113,3 @@ format:
 
 execute:
   freeze: auto
-
