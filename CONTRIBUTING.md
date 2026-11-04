@@ -4,15 +4,7 @@ This repository contains the source for the FIMS website which uses Quarto. Most
 
 ## Repository Workflow
 
-This site is rendered from `main` and published to the `gh-pages` branch by GitHub Actions. Most changes can be made on a branch and submitted with a Pull Request. However, if you plan to make changes to the overall look of the website in some major way, we suggest that you work from a fork following the instructions below.
-
-When creating your fork:
-
-1. Choose the option to copy **all branches** so your fork also includes `gh-pages`.
-2. In your fork repository settings, enable GitHub Pages.
-3. Clone your fork and create feature branches from `main`.
-
-This setup makes it easier to view major changes to the website and ensure it renders like it would in the upstream repository. This also makes it easy to link in a Pull Request for the reviewers to see the rendered changes.
+This site is rendered from `main` and published to the `gh-pages` branch by GitHub Actions. Most changes can be made on a branch and submitted with a Pull Request. All changes made on branches can be viewed at https://noaa-fims.github.io/preview/<<insert-your-branch-name-here>>
 
 ## Local Setup
 
@@ -123,11 +115,10 @@ The repository uses `execute.freeze: auto`, so Quarto may preserve rendered resu
 
 Before submitting a contribution:
 
-1. Preview the site locally with `quarto preview`.
-2. Run `quarto render` from the repository root.
-3. Check the pages affected by your change, especially if you edited shared navigation, theme files, includes, or scripts.
-4. Confirm that new links, images, and downloadable assets resolve correctly.
-5. Make sure generated output was updated only when appropriate.
+1. Preview the site locally with `quarto preview` or look at the https://noaa-fims.github.io/preview/<<insert-your-branch-name-here>>.
+2. Check the pages affected by your change, especially if you edited shared navigation, theme files, includes, or scripts.
+3. Confirm that new links, images, and downloadable assets resolve correctly.
+4. Make sure generated output was updated only when appropriate.
 
 Small, focused pull requests are easier to review than broad mixes of content, style, and behavior changes.
 
@@ -138,7 +129,6 @@ In your pull request description, include:
 - What changed
 - Which pages or sections were affected
 - Whether you changed shared assets or page-specific files
-- Any manual checks you ran, such as `quarto render` or local preview testing
-- If you chose to work in a fork, please use a link to the gh-pages of your fork so that your changes can be live-viewed there.
+- Any manual checks you ran, such as `quarto preview` or viewing the preview online
 
 If your change touches custom HTML, CSS, or JavaScript, mention that explicitly so reviewers know to validate layout and interaction behavior.
