@@ -1,5 +1,5 @@
 ---
-title: Model Architecture
+title: Model Features
 include-after-body: ../assets/open-in-new-tab.html
 toc: true
 toc-location: right
