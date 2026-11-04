@@ -68,18 +68,14 @@ function initQuartoAccessibilityFixes() {
     });
   };
 
-  // Initial call to apply fixes on page load.
-  fixScrollableCodeBlocks();
-  hideDecorativeSidebarIcons();
-  // Re-apply the scrollable code block fix when a Bootstrap tab is shown.
-  // This ensures that code blocks inside newly visible tabs are also accessible.
-  document.addEventListener('shown.bs.tab', fixScrollableCodeBlocks);
+  if (!window.__A11Y_HELPERS_ACTIVE__) {
+    fixScrollableCodeBlocks();
+    hideDecorativeSidebarIcons();
+    document.addEventListener('shown.bs.tab', fixScrollableCodeBlocks);
 
-  // Use a MutationObserver to watch for changes in the document body.
-  // This ensures that if the sidebar is dynamically updated (e.g., by Quarto),
-  // the decorative icons are hidden again.
-  const sidebarObserver = new MutationObserver(hideDecorativeSidebarIcons);
-  sidebarObserver.observe(document.body, { childList: true, subtree: true });
+    const sidebarObserver = new MutationObserver(hideDecorativeSidebarIcons);
+    sidebarObserver.observe(document.body, { childList: true, subtree: true });
+  }
 
   // Adds accessible labels to controls and links within Quarto listings.
   // Listings are often generated dynamically, and their controls may lack proper labels.
@@ -130,6 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initQuartoAccessibilityFixes();
   addPageSpecificClass();
   const img = document.getElementById("fims-main-img");
-  const state = img ? stateFromImageSrc(img.getAttribute("src") || "") : null;
-  setVisibleLinksForState(state || "__none__");
+  if (img && typeof stateFromImageSrc === "function" && typeof setVisibleLinksForState === "function") {
+    const state = stateFromImageSrc(img.getAttribute("src") || "");
+    setVisibleLinksForState(state || "__none__");
+  }
 });

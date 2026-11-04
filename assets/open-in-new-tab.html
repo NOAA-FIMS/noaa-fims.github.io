@@ -9,45 +9,86 @@ document.addEventListener("DOMContentLoaded", function () {
     "/fishprior/"
   ];
 
-  document.querySelectorAll("a[href]").forEach(function (link) {
-    var href = link.getAttribute("href");
-    if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) {
-      return;
-    }
+  function applyInternalNewTabPaths() {
+    document.querySelectorAll("a[href]").forEach(function (link) {
+      var href = link.getAttribute("href");
+      if (!href) return;
 
-    try {
-      var url = new URL(href, window.location.origin);
-      var isExternal = url.hostname !== window.location.hostname;
-      var isForcedInternal = forceNewTabPaths.includes(url.pathname);
+      try {
+        var url = new URL(href, window.location.origin);
+        var isForcedInternal = forceNewTabPaths.includes(url.pathname);
 
-      if (isExternal || isForcedInternal) {
-        link.setAttribute("target", "_blank");
-        link.setAttribute("rel", "noopener noreferrer");
-
-        // Accessibility Fix: Add a screen-reader-only warning if not already present
-        if (!link.hasAttribute("data-new-tab-warning")) {
-          var srWarning = document.createElement("span");
-          srWarning.textContent = " (opens in a new tab)";
-
-          // Use CSS to hide this text visually, but keep it available to screen readers
-          srWarning.style.position = "absolute";
-          srWarning.style.width = "1px";
-          srWarning.style.height = "1px";
-          srWarning.style.padding = "0";
-          srWarning.style.margin = "-1px";
-          srWarning.style.overflow = "hidden";
-          srWarning.style.clip = "rect(0, 0, 0, 0)";
-          srWarning.style.whiteSpace = "nowrap";
-          srWarning.style.border = "0";
-          
-          link.appendChild(srWarning);
-          // Prevent duplicates
-          link.setAttribute("data-new-tab-warning", "true");
+        if (url.hostname === window.location.hostname && isForcedInternal) {
+          link.setAttribute("target", "_blank");
+          link.setAttribute("rel", "noopener noreferrer");
         }
+      } catch (error) {
+        console.warn("Skipping invalid link URL:", href, error);
       }
-    } catch (error) {
-      console.warn("Skipping invalid link URL:", href, error);
-    }
+    });
+  }
+
+  function addNewTabWarnings() {
+    document.querySelectorAll('a[target="_blank"]').forEach(function (link) {
+      if (link.hasAttribute("data-new-tab-warning")) return;
+
+      try {
+        var url = new URL(link.href, window.location.origin);
+        if (url.hostname === window.location.hostname && !forceNewTabPaths.includes(url.pathname)) {
+          return;
+        }
+      } catch (error) {
+        console.warn("Skipping invalid link URL:", link.href, error);
+        return;
+      }
+
+      var warningText = " (opens in a new tab)";
+      var ariaLabel = link.getAttribute("aria-label");
+      var title = link.getAttribute("title");
+      var labelledIcon = link.querySelector("i[aria-label], i[title]");
+      var iconLabel = labelledIcon && (
+        labelledIcon.getAttribute("aria-label") || labelledIcon.getAttribute("title")
+      );
+      var text = Array.from(link.childNodes)
+        .filter(function (child) {
+          return !(child.nodeType === Node.ELEMENT_NODE && child.classList.contains("a11y-sr-only"));
+        })
+        .map(function (child) {
+          return child.textContent;
+        })
+        .join("")
+        .trim();
+
+      if (ariaLabel) {
+        if (!ariaLabel.includes(warningText.trim())) {
+          link.setAttribute("aria-label", ariaLabel + warningText);
+        }
+      } else if (iconLabel) {
+        link.setAttribute("aria-label", iconLabel.trim() + warningText);
+      } else if (title && !text) {
+        link.setAttribute("aria-label", title + warningText);
+      } else {
+        var warning = document.createElement("span");
+        warning.className = "a11y-sr-only";
+        warning.textContent = warningText;
+        link.appendChild(warning);
+      }
+
+      link.setAttribute("data-new-tab-warning", "true");
+    });
+  }
+
+  applyInternalNewTabPaths();
+  addNewTabWarnings();
+
+  var warningObserver = new MutationObserver(function () {
+    addNewTabWarnings();
+  });
+  warningObserver.observe(document.body, {
+    attributes: true,
+    attributeFilter: ["target"],
+    childList: true,
+    subtree: true
   });
 });
 </script>
