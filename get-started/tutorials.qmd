@@ -8,87 +8,195 @@ toc-depth: 2
 
 ## Vignettes
 
+<div
+  id="vignette-filters"
+  class="vignette-filters"
+  role="group"
+  aria-label="Filter vignettes by audience level"
+></div>
+
 <div id="vignette-cards" class="fims-card-grid vignette-grid" aria-live="polite">
   <p>Loading vignettes…</p>
 </div>
 
 ```{=html}
 <script type="module">
+  const levelInfo = {
+    "new-user": {
+      label: "New User",
+      className: "level-new-user"
+    },
+    "intermediate-user": {
+      label: "Intermediate User",
+      className: "level-intermediate-user"
+    },
+    "contributor": {
+      label: "Contributor",
+      className: "level-contributor"
+    }
+  };
+
+  const levelOrder = {
+    "new-user": 1,
+    "intermediate-user": 2,
+    "contributor": 3
+  };
+
+  let allVignettes = [];
+  let currentFilter = "all";
+
+  function renderVignettes(vignettes, filter = "all") {
+    const container = document.getElementById("vignette-cards");
+    if (!container) return;
+
+    const filtered = filter === "all"
+      ? vignettes
+      : vignettes.filter(v => (v.level || "new-user").toLowerCase() === filter);
+
+    container.textContent = "";
+
+    if (filtered.length === 0) {
+      const p = document.createElement("p");
+      p.textContent = "No vignettes found for this filter.";
+      container.appendChild(p);
+      return;
+    }
+
+    filtered.forEach(v => {
+      const rawLevel = (v.level || "new-user").toLowerCase();
+      const level = levelInfo[rawLevel] || {
+        label: rawLevel.replace(/[-_]/g, " "),
+        className: "level-default"
+      };
+
+      const card = document.createElement("div");
+      card.className = `fims-card vignette-card position-relative ${level.className}`;
+
+      const strip = document.createElement("div");
+      strip.className = "vignette-level-strip";
+
+      const badge = document.createElement("div");
+      badge.className = "vignette-level-badge";
+      badge.textContent = level.label;
+
+      const title = document.createElement("h3");
+      title.textContent = v.title || "Untitled vignette";
+
+      const summary = document.createElement("p");
+      summary.textContent = v.summary || "";
+
+      const footer = document.createElement("div");
+      footer.className = "fims-card-footer";
+
+      const link = document.createElement("a");
+      const pageUrl = v.page || "#";
+      // Validate external link protocol to adhere to security instructions
+      if (/^https?:\/\//i.test(pageUrl) || pageUrl.startsWith("/") || pageUrl.startsWith("#")) {
+        link.href = pageUrl;
+      } else {
+        link.href = "#";
+      }
+      link.className = "fims-btn-full stretched-link";
+      link.setAttribute("aria-label", `Go to the ${v.title || "vignette"} vignette`);
+      link.target = "_blank";
+      link.rel = "noopener";
+
+      const linkText = document.createTextNode("Read vignette ");
+      const icon = document.createElement("i");
+      icon.className = "bi bi-arrow-right";
+      icon.setAttribute("aria-hidden", "true");
+
+      link.append(linkText, icon);
+      footer.appendChild(link);
+      card.append(strip, badge, title, summary, footer);
+      container.appendChild(card);
+    });
+  }
+
+  function setupFilterButtons(vignettes) {
+    const filtersContainer = document.getElementById("vignette-filters");
+    if (!filtersContainer) return;
+
+    filtersContainer.textContent = "";
+
+    const counts = { all: vignettes.length };
+    vignettes.forEach(v => {
+      const rawLevel = (v.level || "new-user").toLowerCase();
+      counts[rawLevel] = (counts[rawLevel] || 0) + 1;
+    });
+
+    const filterOptions = [
+      { id: "all", label: "All" },
+      { id: "new-user", label: "New User" },
+      { id: "intermediate-user", label: "Intermediate User" },
+      { id: "contributor", label: "Contributor" }
+    ];
+
+    filterOptions.forEach(opt => {
+      const count = counts[opt.id] || 0;
+      if (opt.id !== "all" && count === 0) return;
+
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = `vignette-filter-btn ${opt.id === currentFilter ? "active" : ""}`;
+      btn.setAttribute("aria-pressed", opt.id === currentFilter ? "true" : "false");
+      btn.dataset.filter = opt.id;
+
+      const labelSpan = document.createElement("span");
+      labelSpan.textContent = opt.label;
+
+      const countSpan = document.createElement("span");
+      countSpan.className = "vignette-filter-count";
+      countSpan.textContent = String(count);
+
+      btn.append(labelSpan, countSpan);
+
+      btn.addEventListener("click", () => {
+        currentFilter = opt.id;
+        const allButtons = filtersContainer.querySelectorAll(".vignette-filter-btn");
+        allButtons.forEach(b => {
+          const isActive = b.dataset.filter === currentFilter;
+          b.classList.toggle("active", isActive);
+          b.setAttribute("aria-pressed", isActive ? "true" : "false");
+        });
+        renderVignettes(allVignettes, currentFilter);
+      });
+
+      filtersContainer.appendChild(btn);
+    });
+  }
+
   async function loadVignetteCards() {
     const container = document.getElementById("vignette-cards");
     const endpoint = "https://e-perl-noaa.github.io/FIMS/vignettes.json";
-
-    const levelInfo = {
-      "new-user": {
-        label: "New User",
-        className: "level-new-user"
-      },
-      "intermediate-user": {
-        label: "Intermediate User",
-        className: "level-intermediate-user"
-      },
-      "contributor": {
-        label: "Contributor",
-        className: "level-contributor"
-      }
-    };
 
     try {
       const res = await fetch(endpoint, { cache: "no-store" });
       if (!res.ok) throw new Error(`Failed to fetch vignette metadata: ${res.status}`);
 
       const data = await res.json();
-      const levelOrder = {
-        "new-user": 1,
-        "intermediate-user": 2,
-        "contributor": 3
-      };
-
-      const vignettes = Object.values(data).sort((a, b) => {
+      allVignettes = Object.values(data).sort((a, b) => {
         const levelA = (a.level || "new-user").toLowerCase();
         const levelB = (b.level || "new-user").toLowerCase();
-
         return (levelOrder[levelA] || 99) - (levelOrder[levelB] || 99);
       });
 
-      if (!Array.isArray(vignettes) || vignettes.length === 0) {
-        container.innerHTML = "<p>No vignettes found.</p>";
+      if (!Array.isArray(allVignettes) || allVignettes.length === 0) {
+        container.textContent = "";
+        const p = document.createElement("p");
+        p.textContent = "No vignettes found.";
+        container.appendChild(p);
         return;
       }
 
-      container.innerHTML = vignettes.map(v => {
-        const title = v.title || "Untitled vignette";
-        const summary = v.summary || "";
-        const page = v.page || "#";
-        const rawLevel = (v.level || "new-user").toLowerCase();
-        const level = levelInfo[rawLevel] || {
-          label: rawLevel.replace(/[-_]/g, " "),
-          className: "level-default"
-        };
-
-        return `
-          <div class="fims-card vignette-card position-relative ${level.className}">
-            <div class="vignette-level-strip"></div>
-            <div class="vignette-level-badge">${level.label}</div>
-            <h3>${title}</h3>
-            <p>${summary}</p>
-            <div class="fims-card-footer">
-              <a
-                href="${page}"
-                class="fims-btn-full stretched-link"
-                aria-label="Go to the ${title} vignette"
-                target="_blank"
-                rel="noopener"
-              >
-                Read vignette <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        `;
-      }).join("");
+      setupFilterButtons(allVignettes);
+      renderVignettes(allVignettes, currentFilter);
     } catch (err) {
       console.error(err);
-      container.innerHTML = "<p>Could not load vignettes.</p>";
+      container.textContent = "";
+      const p = document.createElement("p");
+      p.textContent = "Could not load vignettes.";
+      container.appendChild(p);
     }
   }
 
@@ -98,4 +206,4 @@ toc-depth: 2
 
 ## Case Studies
 
-hold for case studies similar to vignettes
+Hold for case studies cards that will be similar to the vignette cards.
