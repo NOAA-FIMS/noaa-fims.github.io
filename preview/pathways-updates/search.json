@@ -72,7 +72,7 @@
     "href": "get-started/documentation.html#see-ways-to-improve-our-documentation-let-us-know",
     "title": "Documentation",
     "section": "See ways to improve our documentation? Let us know!",
-    "text": "See ways to improve our documentation? Let us know!\nOur documentation is always evolving and improving. We welcome and encourage users to open issues if they see ways we can improve our documentation or to submit a Pull Request after making changes themselves.\n\n\n&lt;a href=\"https://github.com/NOAA-FIMS/FIMS/issues/new/choose\" class=\"btn btn-dark fims-btn-small w-100 d-flex align-items-center justify-content-center text-center\"&gt;Open Issue for FIMS Documentation&lt;/a&gt;\n\n\n&lt;a href=\"https://github.com/NOAA-FIMS/noaa-fims.github.io/issues/new/choose\" class=\"btn btn-dark fims-btn-small w-100 d-flex align-items-center justify-content-center text-center\"&gt;Open Issue for Website&lt;/a&gt;\n\n\n&lt;a href=\"https://github.com/NOAA-FIMS/FIMS/blob/main/CONTRIBUTING.md\" class=\"btn btn-dark fims-btn-small w-100 d-flex align-items-center justify-content-center text-center\"&gt;See Contributing Guidelines to Make a PR Yourself&lt;/a&gt;",
+    "text": "See ways to improve our documentation? Let us know!\nOur documentation is always evolving and improving. We welcome and encourage users to open issues if they see ways we can improve our documentation or to submit a Pull Request after making changes themselves.\n\n\nOpen Issue for FIMS Documentation\n\n\nOpen Issue for Website\n\n\nSee Contributing Guidelines to Make a PR Yourself",
     "crumbs": [
       "get started",
       "Documentation"
@@ -1111,7 +1111,7 @@
     "text": "Feature\nSS3\nFIMS\nRCEATTLE\nSPoRC\nWHAM\nMulti-WHAM\n\n\n\n\nSoftware\nADMB\nTMB and C++\nTMB/RTMB\nRTMB\nTMB\nTMB\n\n\nOperational ready\nYes\nNo\nYes\nNo\nYes\nYes\n\n\nPrior specification?\nYes\nYes\nM, Q, and SRR\nM, h, Tag Reporting, Movement, Q, selectivity\nQ only\nQ only\n\n\nCAAL\nYes\nNo\nIn dev\nNo\nYes (deprecated)\nNo\n\n\nSplit sex\nYes\nNo\nYes\nYes\nNo\nMaybe\n\n\nAge-error\nYes\nNo\nYes\nTV but not fleet specific\nIn branch\nNo\n\n\nFleet Age-error\nYes\nNo\nYes\nNo\nNo\nNo\n\n\nTV Age-error\nYes\nNo\nIn branch\nYes\nNo\nNo\n\n\nVariety of selectivity\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nTV selectivity\nYes\nIn branch\nYes (random walks, random deviates, blocks)\nYes (blocks, iid and random walks, semi-parametric 3d and 2d)\nYes\nYes\n\n\nGrowth estimation\nYes\nNo\nYes\nNo\nYes\nNo\n\n\nMarginal lengths\nYes\nYes\nYes\nYes\nYes\nNo\n\n\nDM compositions\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nAdditive logistic-normal compositions\nNo\nNo\nNo\nYes\nNo\nNo\n\n\nEnvironmental linkages\nYes\nNo\nM, Q, SRR (any number of indices)\nQ\nYes\nYes\n\n\nMulti-area\nYes\nNo\nNo\nYes\nNo\nYes\n\n\nPopulation Structures\nglobal SRR\nNo\nNo\nglobal or local SRR\nNo\nNatal homing, local SRR\n\n\nMulti species\nNo\nNo\nYes\nNo\nNo\nYes\n\n\nMulti-variate indices\nNo\nNo\nNo\nNo\nNo\nNo\n\n\nMulti-seasonal\nYes\nNo\nNo\nIn branch\nNo\nYes\n\n\nNAA or M state-space\nNo\nNo\nM\nWill be in dev\nNAA and M\nNAA and M\n\n\nDSEM-ready\nNever\nLong-term\nYes\nYes\nHarder\nHarder\n\n\nInternal OSA\nNo\nNo\nIn dev\nNo\nYes\nYes\n\n\nInternal AFSC proj scenarios\nYes\nNo\nYes\nYes\nNo\nNo\n\n\nReference point estimation\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nMSE tools\nYes\nNo\nYes\nYes\nYes\nYes",
     "crumbs": [
       "about",
-      "Model Architecture"
+      "Model Features"
     ]
   },
   {
@@ -1122,7 +1122,7 @@
     "text": "Feature\nSS3\nFIMS\nRCEATTLE\nSPoRC\nWHAM\nMulti-WHAM\n\n\n\n\nSoftware\nADMB\nTMB and C++\nTMB/RTMB\nRTMB\nTMB\nTMB\n\n\nOperational ready\nYes\nNo\nYes\nNo\nYes\nYes\n\n\nPrior specification?\nYes\nYes\nM, Q, and SRR\nM, h, Tag Reporting, Movement, Q, selectivity\nQ only\nQ only\n\n\nCAAL\nYes\nNo\nIn dev\nNo\nYes (deprecated)\nNo\n\n\nSplit sex\nYes\nNo\nYes\nYes\nNo\nMaybe\n\n\nAge-error\nYes\nNo\nYes\nTV but not fleet specific\nIn branch\nNo\n\n\nFleet Age-error\nYes\nNo\nYes\nNo\nNo\nNo\n\n\nTV Age-error\nYes\nNo\nIn branch\nYes\nNo\nNo\n\n\nVariety of selectivity\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nTV selectivity\nYes\nIn branch\nYes (random walks, random deviates, blocks)\nYes (blocks, iid and random walks, semi-parametric 3d and 2d)\nYes\nYes\n\n\nGrowth estimation\nYes\nNo\nYes\nNo\nYes\nNo\n\n\nMarginal lengths\nYes\nYes\nYes\nYes\nYes\nNo\n\n\nDM compositions\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nAdditive logistic-normal compositions\nNo\nNo\nNo\nYes\nNo\nNo\n\n\nEnvironmental linkages\nYes\nNo\nM, Q, SRR (any number of indices)\nQ\nYes\nYes\n\n\nMulti-area\nYes\nNo\nNo\nYes\nNo\nYes\n\n\nPopulation Structures\nglobal SRR\nNo\nNo\nglobal or local SRR\nNo\nNatal homing, local SRR\n\n\nMulti species\nNo\nNo\nYes\nNo\nNo\nYes\n\n\nMulti-variate indices\nNo\nNo\nNo\nNo\nNo\nNo\n\n\nMulti-seasonal\nYes\nNo\nNo\nIn branch\nNo\nYes\n\n\nNAA or M state-space\nNo\nNo\nM\nWill be in dev\nNAA and M\nNAA and M\n\n\nDSEM-ready\nNever\nLong-term\nYes\nYes\nHarder\nHarder\n\n\nInternal OSA\nNo\nNo\nIn dev\nNo\nYes\nYes\n\n\nInternal AFSC proj scenarios\nYes\nNo\nYes\nYes\nNo\nNo\n\n\nReference point estimation\nYes\nNo\nYes\nYes\nYes\nYes\n\n\nMSE tools\nYes\nNo\nYes\nYes\nYes\nYes",
     "crumbs": [
       "about",
-      "Model Architecture"
+      "Model Features"
     ]
   },
   {
@@ -1751,7 +1751,7 @@
     "href": "get-started/tutorials.html#case-studies",
     "title": "Tutorials",
     "section": "Case Studies",
-    "text": "Case Studies\nhold for case studies similar to vignettes",
+    "text": "Case Studies\nHold for case studies cards that will be similar to the vignette cards.",
     "crumbs": [
       "get started",
       "Tutorials"
