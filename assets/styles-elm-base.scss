@@ -334,25 +334,33 @@ h3.listing-title {
   color: var(--bs-secondary-color);
 }
 
+#0072B2
+#875D00
+#007653
+#B34D00
+#236C91
+#9B4678
+#716800
+
 /* Level-specific accents */
 .level-new-user {
-  --vignette-level-color: #198754;
+  --vignette-level-color: #007653;
 }
 .level-intermediate-user {
-  --vignette-level-color: #0d6efd;
+  --vignette-level-color: #236C91;
 }
 .level-contributor {
-  --vignette-level-color: #a76101;
+  --vignette-level-color: #9B4678;
 }
 
 .level-new-user .vignette-level-strip {
-  background: #198754;
+  background: #007653;
 }
 .level-intermediate-user .vignette-level-strip {
-  background: #0d6efd;
+  background: #236C91;
 }
 .level-contributor .vignette-level-strip {
-  background: #a76101;
+  background: #9B4678;
 }
 
 /* Vignette card layout */
