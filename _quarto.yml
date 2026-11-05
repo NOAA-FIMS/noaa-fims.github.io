@@ -70,7 +70,7 @@ website:
         - text: "FAQ"
           icon: question-circle
           href: about/faq.qmd
-        - text: "Model Architecture"
+        - text: "Model Features"
           href: about/architecture.qmd
           icon: diagram-3
         - text: "Calendar"
