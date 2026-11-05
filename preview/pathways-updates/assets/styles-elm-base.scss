@@ -448,16 +448,29 @@ h3.listing-title {
 
 .vignette-filter-count {
   display: inline-block;
-  padding: 0.1rem 0.4rem;
+  padding: 0.1rem 0.45rem;
   font-size: 0.75rem;
+  font-weight: 700;
   border-radius: 999px;
-  background-color: rgba(0, 0, 0, 0.1);
-  color: inherit;
+  background-color: #ebeeef !important;
+  color: #213f4b !important;
 }
 
 .vignette-filter-btn.active .vignette-filter-count,
 .vignette-filter-btn[aria-pressed="true"] .vignette-filter-count {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: #0b535d !important;
+  color: #ffffff !important;
+}
+
+.quarto-dark .vignette-filter-count {
+  background-color: #334f5a !important;
+  color: #ebeeef !important;
+}
+
+.quarto-dark .vignette-filter-btn.active .vignette-filter-count,
+.quarto-dark .vignette-filter-btn[aria-pressed="true"] .vignette-filter-count {
+  background-color: #0e6876 !important;
+  color: #ffffff !important;
 }
 
 /* --- ACCESSIBILITY FIX: Default Badge Contrast --- */
