@@ -1,0 +1,144 @@
+name: FIMS Projects Discovery, Report, & Outreach
+
+on:
+  push:
+  schedule:
+    - cron: '0 14 1 * *'
+  workflow_dispatch: 
+
+jobs:
+  discover-and-report:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+      
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y libcurl4-openssl-dev libxml2-dev
+
+      - name: Run Discovery Script (R)
+        id: discovery
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          install.packages(c("httr", "jsonlite", "xml2"), repos = "https://packagemanager.posit.co/cran/latest")
+          library(httr)
+          library(jsonlite)
+
+          token <- Sys.getenv("GITHUB_TOKEN")
+          auth <- add_headers(
+              Authorization = paste("Bearer", token), 
+              Accept = "application/vnd.github.v3+json"
+            )
+          raw_auth <- add_headers(
+              Authorization = paste("Bearer", token), 
+              Accept = "application/vnd.github.v3.raw"
+            )
+
+          read_list <- function(f) if (file.exists(f)) { 
+              l <- readLines(f, warn = FALSE); l[l != ""] 
+            } else character(0)
+          skip_list <- unique(c(read_list("ignore_repos.txt"), read_list("contacted_repos.txt")))
+          get_val <- function(x, default) if (is.null(x)) default else x
+          
+          # 1. API Search (Casting the wide net)
+          # 1. API Search (Casting the wide net)
+          search_res <- content(GET("https://api.github.com/search/code?q=library+FIMS+extension:R+extension:Rmd+extension:qmd&per_page=100", auth))
+          
+          targets <- list()
+
+          # 2. Strict Regex Validation (Filtering the net)
+          confirmed <- character()
+          
+          # FIX 1: Changed search_results to search_res
+          if (length(search_res$items) > 0) {
+            for (item in search_res$items) {
+              repo <- item$repository$full_name
+              if (repo %in% confirmed || repo %in% skip_list) next
+              
+              # Fetch raw text directly instead of JSON + base64 decoding
+              file_txt <- content(GET(item$url, raw_auth), as = "text", encoding = "UTF-8")
+              
+              if (grepl("(library|require)\\s*\\(\\s*['\"]?fims['\"]?\\s*\\)", file_txt, ignore.case = TRUE)) {
+                confirmed <- c(confirmed, repo)
+                
+                if (status_code(GET(paste0("https://api.github.com/repos/", repo, "/contents/fims-metadata.yml"), auth)) == 404) {
+                  info <- content(GET(paste0("https://api.github.com/repos/", repo), auth))
+                  user <- content(GET(paste0("https://api.github.com/users/", info$owner$login), auth))
+                  
+                  # Fetch raw renv.lock text directly
+                  renv_txt <- content(GET(paste0("https://api.github.com/repos/", repo, "/contents/renv.lock"), raw_auth), as = "text", encoding = "UTF-8")
+                  ver <- tryCatch(fromJSON(renv_txt)$Packages$FIMS$Version, error = function(e) NULL)
+                  
+                  targets[[length(targets) + 1]] <- list(
+                    name = repo,
+                    owner = get_val(info$owner$login, "Unknown"),
+                    desc = get_val(info$description, "No description provided."),
+                    loc = get_val(user$location, "Unknown"),
+                    ver = get_val(ver, "Unknown (Not specified in renv.lock)")
+                  )
+                }
+              }
+            }
+          } # FIX 2: Missing closing bracket added right here!
+
+          env_file <- Sys.getenv("GITHUB_OUTPUT")
+
+          # 3. Create report of new FIMS repositories if there are any
+          if (length(targets) == 0) {
+            cat("found_new=false\n", file = env_file, append = TRUE)
+          } else {
+            cat("### 🚀 New FIMS Repositories Discovered!\n\n", file = "report.md")
+            cat("The monthly discovery action found the following repositories using FIMS that do not have a `fims-metadata.yml` file.\n\n", file = "report.md", append = TRUE)
+            
+            for (t in targets) {
+              cat(sprintf("**Repository:** [%s](https://github.com/%s)\n", t$name, t$name), file = "report.md", append = TRUE)
+              cat(sprintf("**Owner/Commiter:** @%s\n", t$owner), file = "report.md", append = TRUE)
+              # FIX 3 & 4: Changed t$location to t$loc, and t$version to t$ver
+              cat(sprintf("**Location:** %s\n", t$loc), file = "report.md", append = TRUE)
+              cat(sprintf("**FIMS Version:** %s\n", t$ver), file = "report.md", append = TRUE)
+              cat(sprintf("**Description:** %s\n\n", t$desc), file = "report.md", append = TRUE)
+              cat("---\n", file = "report.md", append = TRUE)
+            }
+            
+            cat("found_new=true\n", file = env_file, append = TRUE)
+          }
+        shell: Rscript {0}
+
+      - name: Create GitHub Issue
+        if: steps.discovery.outputs.found_new == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "Monthly FIMS Discovery Report" \
+            --body-file report.md \
+            --label "outreach"
+            
+      - name: Save report to .github folder and commit
+        if: steps.discovery.outputs.found_new == 'true'
+        run: |
+          # Create a dated filename so you have a history of reports
+          DATE=$(date +'%Y-%m-%d')
+          FILENAME="discovery_report_${DATE}.txt"
+          
+          # Copy the markdown report to a text file in the .github folder
+          mkdir -p .github
+          cp report.md .github/$FILENAME
+          
+          # Configure git and commit the new file
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/$FILENAME
+          git commit -m "chore: save discovery report for $DATE"
+          git push
