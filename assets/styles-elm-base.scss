@@ -326,7 +326,7 @@ h3.listing-title {
 }
 
 .vignette-card {
-  padding: 1.25rem;
+  padding: 1.25rem !important;
 }
 
 .vignette-card p {
@@ -334,13 +334,6 @@ h3.listing-title {
   color: var(--bs-secondary-color);
 }
 
-#0072B2
-#875D00
-#007653
-#B34D00
-#236C91
-#9B4678
-#716800
 
 /* Level-specific accents */
 .level-new-user {
