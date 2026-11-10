@@ -381,14 +381,22 @@
   font-size: 1rem;
 }
 
-.fims-doc-buttons .col-md {
+.fims-doc-buttons {
+  max-width: 900px;
+}
+
+.fims-doc-buttons .col-md-4 {
   display: flex;
 }
 
-.fims-doc-buttons .col-md p {
+.fims-doc-buttons .col-md-4 p {
   width: 100%;
   display: flex;
   margin-bottom: 0;
+}
+
+.fims-doc-buttons .btn {
+  padding: 0.75rem 1rem;
 }
 
 /* --- Responsive Layout Adjustments --- */
