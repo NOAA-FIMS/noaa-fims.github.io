@@ -80,7 +80,7 @@ jobs:
           FIMS_EQ_HTML_OUT: ${{ github.workspace }}/get-started/fims_equation_catalog_raw.html
         run: |
           cd _fims_src
-          Rscript visualization/visualizations/equation-catalog/output/generate-equation-catalog.R
+          Rscript visualizations/equation-catalog/output/generate-equation-catalog.R
 
       - name: Render Quarto Project
         if: steps.release_updated.outputs.release_updated == 'true'
