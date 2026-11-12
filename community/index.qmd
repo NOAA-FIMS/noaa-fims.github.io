@@ -1,0 +1,333 @@
+---
+title: "Community & Collaboration"
+page-layout: full
+header-includes: >
+  <link rel="stylesheet" href="../assets/community.css">
+  <script src="../assets/community_scripts.js" defer></script>
+---
+
+::: {.fims-giant-card}
+::: {.fims-hero-content}
+<span class="fims-badge">FIMS Open Science Ecosystem</span>
+
+<h1 class="fims-title">Collaborating for Sustainable Fisheries</h1>
+
+<p class="fims-desc">
+Join a global network of scientists, developers, and researchers building the future of fisheries integrated modeling. Open source, collaborative, and peer-reviewed.
+</p>
+
+<div class="fims-actions">
+<button onclick="window.location.href='#getting-involved'" class="btn btn-danger fims-btn fims-btn-shadow">
+  <i class="bi bi-megaphone-fill"></i> Get Involved Now
+</button>
+<button onclick="window.location.href='../about/calendar.html'"class="btn btn-outline-light fims-btn">
+  <i class="bi bi-calendar-month"></i> Join Next Meeting
+</button>
+</div>
+:::
+:::
+
+::: {.fims-pulse-section}
+
+::: {.fims-pulse-header}
+::: {.fims-pulse-titles}
+## Ecosystem Pulse
+Live activity across the FIMS development pipeline.
+:::
+
+<a href="https://github.com/orgs/NOAA-FIMS/projects/29" class="fims-pulse-link">View Full Project Board <i class="bi bi-arrow-right"></i></a>
+:::
+
+::: {.fims-pulse-layout}
+
+::: {.fims-pulse-main-col}
+::: {.fims-feed-card}
+::: {.fims-feed-header}
+::: {.fims-feed-title-group}
+::: {.fims-feed-icon}
+<i class="bi bi-terminal-fill"></i>
+:::
+### Recent GitHub Activity
+:::
+::: {.fims-feed-badge}
+fims / main
+:::
+:::
+
+::: {#github-activity-feed .fims-feed-list}
+::: {.fims-feed-loading}
+Loading recent activity...
+:::
+:::
+:::
+:::
+
+```{r}
+#| echo: false
+#| results: asis
+#| message: false
+#| warning: false
+
+if(!requireNamespace("glue", quietly = TRUE)) {
+  install.packages("glue", repos = "https://cloud.r-project.org")
+}
+library(glue)
+
+cal_id <- "c_6eluv1h8o830k7vt8ctcs6ghto@group.calendar.google.com"
+
+# Calculates today's date formatted as a URL-safe text timestamp
+start_bound <- URLencode(format(Sys.time(), "%Y-%m-%dT00:00:00Z", tz="UTC"))
+
+# Forces Google to dump the historical backlog and show up to 100 current/future events
+url <- paste0(
+  "https://calendar.google.com/calendar/ical/", URLencode(cal_id), "/public/basic.ics",
+  "?timeMin=", start_bound,
+  "&maxResults=100",
+  "&singleEvents=true"
+)
+
+tryCatch({
+  tmp_ics <- tempfile(fileext = ".ics")
+  
+  if (Sys.info()[["sysname"]] == "Windows") {
+    download.file(url, destfile = tmp_ics, method = "wininet", quiet = TRUE)
+  } else {
+    options(download.file.method = "curl", download.file.extra = "-L -k")
+    download.file(url, destfile = tmp_ics, quiet = TRUE)
+  }
+  
+  raw_lines <- readLines(tmp_ics, warn = FALSE)
+  
+  # Crucial for iCal: Join lines that Google wraps/folds at 75 characters
+  unfolded_text <- paste(raw_lines, collapse = "\n")
+  unfolded_text <- gsub("\n[ \t]", "", unfolded_text) 
+  lines <- strsplit(unfolded_text, "\n")[[1]]
+  
+  event_starts <- which(lines == "BEGIN:VEVENT")
+  event_ends   <- which(lines == "END:VEVENT")
+  events_list <- list()
+  
+  if (length(event_starts) > 0) {
+    for (i in seq_along(event_starts)) {
+      ev_lines <- lines[event_starts[i]:event_ends[i]]
+      summary_line <- ev_lines[grep("^SUMMARY:", ev_lines)]
+      dtstart_line <- ev_lines[grep("^DTSTART([;:])", ev_lines)]
+      desc_line    <- ev_lines[grep("^DESCRIPTION:", ev_lines)]
+      
+      if (length(summary_line) > 0 && length(dtstart_line) > 0) {
+        summary_text <- sub("^SUMMARY:", "", summary_line[1])
+        raw_time <- sub("^DTSTART.*:", "", dtstart_line[1])
+        
+        # --- Clean up the description ---
+        desc_text <- ""
+        if (length(desc_line) > 0) {
+            desc_text <- sub("^DESCRIPTION:", "", desc_line[1])
+            
+            # 1. THE FOOLPROOF CHOP: 
+            # Finds HTML breaks/newlines immediately followed by the boilerplate, and deletes ALL of it to the end of the string.
+            desc_text <- sub("(<br>|\\\\n|\\\\N|\\s)*(Join with Google Meet|Google Meet joining info|This event has a video call|Join Zoom Meeting|-::~:~::~:~:~).*$", "", desc_text, ignore.case = TRUE)
+            
+            # 2. Convert any leftover iCal literal newlines to HTML breaks
+            desc_text <- gsub("\\\\n|\\\\N", "<br>", desc_text)
+            
+            # 3. Fix escaped commas and semicolons
+            desc_text <- gsub("\\\\,", ",", desc_text)
+            desc_text <- gsub("\\\\;", ";", desc_text)
+            
+            # 4. Remove redundant time/agenda string from description if present.
+            # This regex looks for patterns like "3:20 - 4 PM ET: " or "3:20pm" at the start of the description.
+            desc_text <- sub("^(Agenda(<br>|\\\\n|\\\\N|\\s)*)?\\s*\\(?\\d{1,2}(:\\d{2})?(\\s*([AP]M))?(\\s*-\\s*\\d{1,2}(:\\d{2})?(\\s*([AP]M))?)?(\\s+[A-Z]{2,4})?\\)?:?(\\s*((<br>|\\\\n|\\\\N)\\s*))*", "", desc_text, ignore.case = TRUE)
+
+            # 5. Clean up any leftover breaks or spaces at the absolute end of the newly chopped string
+            desc_text <- gsub("(<br>|\\s)+$", "", desc_text)
+            desc_text <- trimws(desc_text)
+        }
+        
+        clean_time <- tryCatch({
+          if (grepl("TZID=", dtstart_line)) {
+            # Handles events with a specified timezone, e.g., DTSTART;TZID=America/New_York:20260827T152000
+            tzid <- sub('.*TZID=([^:]+):.*', '\\1', dtstart_line)
+            time_str <- sub('.*:', '', dtstart_line)
+            as.POSIXct(time_str, format="%Y%m%dT%H%M%S", tz=tzid)
+          } else if (grepl("Z$", raw_time)) {
+            # Handles UTC events, e.g., DTSTART:20260827T152000Z
+            t <- as.POSIXct(raw_time, format="%Y%m%dT%H%M%SZ", tz="UTC")
+            attr(t, "tzone") <- "America/New_York"
+            t
+          } else {
+            # Fallback for all-day events, e.g., DTSTART;VALUE=DATE:20260827
+            as.POSIXct(sub("T.*", "", raw_time), format="%Y%m%d", tz="America/New_York")
+          }
+        }, error = function(e) NULL)
+        
+        if (!is.null(clean_time)) {
+          events_list[[length(events_list) + 1]] <- list(
+            summary = summary_text,
+            start = clean_time,
+            description = desc_text
+          )
+        }
+      }
+    }
+  }
+  
+  current_str <- format(Sys.time(), tz="America/New_York", usetz=FALSE)
+  current_time_est <- as.POSIXct(current_str, tz="America/New_York")
+  
+  future_events <- Filter(function(x) x$start >= current_time_est, events_list)
+  
+  if (length(future_events) > 0) {
+    future_events <- future_events[order(sapply(future_events, function(x) x$start))]
+    next_event <- future_events[[1]]
+    
+    date_est  <- format(next_event$start, "%B %d, %Y", tz="America/New_York")
+    time_est  <- format(next_event$start, "%H:%M %Z", tz="America/New_York")
+    summary_txt <- next_event$summary
+    desc_txt <- next_event$description
+    
+    # Clean time from summary text, as it's displayed separately.
+    # This regex removes various time formats like "10:00am", "10-11", "(3:00 PM ET)" etc. from anywhere in the summary string.
+    summary_txt <- trimws(gsub("\\s*\\(?\\d{1,2}(:\\d{2})?(\\s*([AP]M))?(\\s*-\\s*\\d{1,2}(:\\d{2})?(\\s*([AP]M))?)?(\\s+[A-Z]{2,4})?\\)?", "", summary_txt, ignore.case = TRUE))
+    
+    # Format description HTML (Hides completely if empty, clamps at 5 lines)
+    desc_html <- ""
+    if (nchar(desc_txt) > 0) {
+      desc_html <- paste0('<div class="mb-4 small fims-meeting-description" style="display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;">', desc_txt, '</div>')
+    } else {
+      desc_html <- '<div class="mb-4"></div>' 
+    }
+    
+    html_output <- paste0(
+      '<div class="fims-pulse-side-col">',
+        '<div class="fims-meeting-card">',
+          '<div class="fims-meeting-content">',
+            '<h3 class="no-anchor">Next Meeting</h3>',
+            '<p class="mb-1 fw-bold fims-meeting-summary">', summary_txt, '</p>',
+            desc_html,
+            '<div class="fims-meeting-datetime">',
+              '<div class="fims-meeting-row">',
+                '<i class="bi bi-calendar-event-fill fims-icon-danger"></i> <strong>', date_est, '</strong>',
+              '</div>',
+              '<div class="fims-meeting-row">',
+                '<i class="bi bi-clock-fill fims-icon-danger"></i> <strong>', time_est, '</strong>',
+              '</div>',
+            '</div>',
+          '</div>',
+          '<a href="https://calendar.google.com/calendar/u/0?cid=Y182ZWx1djFoOG84MzBrN3Z0OGN0Y3M2Z2h0b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank" class="btn btn-light fims-btn-full">Add to calendar</a>',
+        '</div>',
+      '</div>'
+    )
+    cat(html_output)
+    
+  } else {
+    stop("No future events found")
+  }
+  
+}, error = function(e) {
+  fallback_output <- paste0(
+    '<div class="fims-pulse-side-col">',
+      '<div class="fims-meeting-card">',
+        '<div class="fims-meeting-content">',
+          '<h3 class="no-anchor">Next Meeting</h3>',
+          '<p class="mb-4 fims-meeting-description">No upcoming meetings scheduled.</p>',
+        '</div>',
+      '</div>',
+    '</div>'
+  )
+  cat(fallback_output)
+})
+```
+
+:::
+:::
+
+
+::: {.fims-steps-section}
+::: {.fims-steps-intro}
+## Getting Involved
+Follow these simple steps to start contributing to the FIMS project today.
+
+![FIMS dashboard](../images/fims_dashboard.png){fig-alt="FIMS dashboard showing the project workflow and contribution steps." .fims-steps-img}
+:::
+
+::: {.fims-steps-list}
+::: {.fims-step}
+::: {.fims-step-number}
+1
+:::
+::: {.fims-step-content}
+#### Introduce Yourself
+Introduce yourself on the FIMS discussion board and start following discussions and the FIMS repository.
+
+<a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="fims-step-link">Introduce Yourself <i class="bi bi-box-arrow-up-right"></i></a>
+:::
+:::
+
+::: {.fims-step}
+::: {.fims-step-number}
+2
+:::
+::: {.fims-step-content}
+#### Go through the FIMS Vignettes
+Go through the FIMS vignettes to understand the package's functionality.
+
+<a href="https://noaa-fims.github.io/FIMS/" class="fims-step-link">Learn Now <i class="bi bi-file-text"></i></a>
+:::
+:::
+
+::: {.fims-step}
+::: {.fims-step-number}
+3
+:::
+::: {.fims-step-content}
+#### Review Contribution Guide
+Read our technical standards for contributing to FIMS.
+
+<a href="https://github.com/NOAA-FIMS/FIMS/blob/main/CONTRIBUTING.md" class="fims-step-link">Read Guide <i class="bi bi-file-text"></i></a>
+:::
+:::
+
+::: {.fims-step}
+::: {.fims-step-number}
+4
+:::
+::: {.fims-step-content}
+#### Come to Code Club and other FIMS trainings
+Attend FIMS Code Clubs and trainings to learn more about contributing to FIMS and connect with other contributors. You don't need to be an expert to attend - these are meant to be welcoming spaces for learning and collaboration!
+
+<a href="../about/calendar.html'" class="fims-step-link">Browse Calendar <i class="bi bi-people"></i></a>
+:::
+:::
+
+::: {.fims-step}
+::: {.fims-step-number}
+5
+:::
+::: {.fims-step-content}
+#### Start Small
+Pick a 'Good First Issue' on GitHub and submit your first pull request for peer review.
+
+<a href="https://github.com/NOAA-FIMS/FIMS/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22" class="btn btn-dark fims-btn-small">Find First Issue</a>
+:::
+:::
+:::
+:::
+
+::: {.mb-5}
+<h2 class="fw-bold text-primary mb-4">Training Opportunities</h2>
+
+::: {.row .g-3}
+::: {.col-auto style="max-width: 500px;"}
+::: {.ratio .ratio-16x9 .rounded-3 .overflow-hidden .position-relative}
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwHDnTqXHXRUtDV24hIj_VeNauYDwFUxLs_BRftLPM4XT5zbg0TNHSoeMdys5s6r-wGCwrQueIf9vl-VBcmUVZ6wVUbYO9Qauxrid9GtYQRiQWr4UUHQXkNQgzWlVGXjn0IH-ZSeQnM1YLpJrgFOMHA444F_ZjD6kP7UfLyRXqMfl22swGsSoLn6zMyIN6lhMfpUhy337S3qzBb1ZqgJlgpRhnTjix1kEKR0cdiE2YQHy6rcpo0tzj3SCWX_kKdZTNOBHdmeeFNBo" class="object-fit-cover" alt="" aria-hidden="true">
+<div class="position-absolute bottom-0 start-0 w-100 p-2 bg-gradient-dark">
+<div class="text-white fw-bold small text-uppercase d-block" style="font-size: 0.72rem; line-height: 1.1;">Fisheries & Oceans Canada FIMS Training</div>
+<div class="text-white small" style="font-size: 0.65rem;">Nanaimo, BC</div>
+<div class="text-white small" style="font-size: 0.65rem;">October 5-8, 2026</div>
+<div class="text-white small" style="font-size: 0.65rem;">Private training</div>
+</div>
+:::
+:::
+
+:::
+:::

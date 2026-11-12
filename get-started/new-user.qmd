@@ -1,0 +1,134 @@
+---
+page-layout: full
+header-includes: >
+  <link rel="stylesheet" href="../assets/community.css">
+  <link rel="stylesheet" href="../assets/pathways.css">
+  <script src="../assets/pathways.js" defer></script>
+---
+
+::: {.fims-onboarding-container}
+
+::: {.fims-pathway-pills}
+[<i class="bi bi-person-plus"></i> New User](new-user.qmd){.fims-pill .is-active}
+[<i class="bi bi-person-up"></i> Intermediate User](intermediate-user.qmd){.fims-pill}
+[<i class="bi bi-code-square"></i> Contributor](contributor.qmd){.fims-pill}
+[<i class="bi bi-file-bar-graph"></i> Decision Maker](decision-maker.qmd){.fims-pill}
+:::
+
+::: {.fims-onboarding-header}
+## Welcome!
+<p>Let's get you set up to run your first model in FIMS.</p>
+<h3><i class="bi bi-signpost-split"></i> New User Pathway</h3>
+:::
+
+::: {.fims-timeline}
+
+::: {.fims-step .fims-timeline-item}
+::: {.fims-step-number}
+<i class="bi bi-geo-alt-fill"></i>
+:::
+::: {.fims-step-content}
+<h4>Some info before you start!</h4>
+<p>Use the links below to learn more about FIMS.</p>
+
+[<i class="bi bi-info-circle"></i> FAQs](/about/faq.html){.fims-btn-small .fims-task-btn}
+
+[<i class="bi bi-layout-text-window"></i> Check out our blog](/blog/){.fims-btn-small .fims-task-btn}
+:::
+:::
+
+::: {.fims-step .fims-timeline-item}
+::: {.fims-step-number}
+<i class="bi bi-geo-alt-fill"></i>
+:::
+::: {.fims-step-content}
+<h4>FIMS Community</h4>
+<p>Introduce yourself and get involved in the FIMS community.</p>
+
+[<i class="bi bi-person-plus"></i> Introduce yourself to the team](https://github.com/orgs/NOAA-FIMS/discussions/801){.fims-btn-small .fims-task-btn target="_blank"}
+
+[<i class="bi bi-chat-text"></i> Get involved in other discussions](https://github.com/orgs/NOAA-FIMS/discussions/){.fims-btn-small .fims-task-btn target="_blank"}
+
+[<i class="bi bi-calendar-week"></i> View and add the FIMS calendar](/about/calendar.html){.fims-btn-small .fims-task-btn}
+
+[<i class="bi bi-envelope"></i> Subscribe to our weekly newsletter](https://github.com/orgs/NOAA-FIMS/discussions/1461#discussioncomment-17065818){.fims-btn-small .fims-task-btn target="_blank"}
+:::
+:::
+
+
+::: {.fims-step .fims-timeline-item}
+::: {.fims-step-number}
+<i class="bi bi-geo-alt-fill"></i>
+:::
+::: {.fims-step-content}
+<h4>Build a basic FIMS model</h4>
+<p>Walk through the model and data initial setup and familiarize yourself with the interface.</p>
+
+[<i class="bi bi-rocket"></i> Introduction to FIMS](https://noaa-fims.github.io/FIMS/articles/fims-demo.html){.fims-btn-small .fims-task-btn target="_blank"}
+
+[<i class="bi bi-file-spreadsheet"></i> FIMS Input Data](https://noaa-fims.github.io/FIMS/articles/fims-input-data.html){.fims-btn-small .fims-task-btn target="_blank"}
+:::
+:::
+
+::: {.fims-step .fims-timeline-item}
+::: {.fims-step-number}
+<i class="bi bi-geo-alt-fill"></i>
+:::
+::: {.fims-step-content}
+<h4>FIMS Functions Overview</h4>
+<p>Learn about the different functions available in FIMS and how to use them.</p>
+[Start <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMS/reference/index.html){.fims-btn-small .fims-task-btn target="_blank"}
+:::
+:::
+
+::: {.fims-step .fims-timeline-item .is-last}
+::: {.fims-step-number}
+<i class="bi bi-geo-alt-fill"></i>
+:::
+::: {.fims-step-content}
+<h4>Transition to FIMS</h4>
+<p>Learn about transitioning to FIMS from other frameworks and how to adapt your workflow.</p>
+[Start <i class="bi bi-arrow-right"></i>](/get-started/transitioning.html){.fims-btn-small .fims-task-btn}
+:::
+:::
+
+::: {.fims-kb-header}
+<h3>Additional Resources & Links</h3>
+:::
+
+::: {.fims-horizontal-scroll}
+
+::: {.fims-card .position-relative}
+
+<a href="/get-started/packages.html" class="stretched-link" aria-label="FIMS R Packages"></a>
+
+::: {.fims-card-icon .bi .bi-box-seam}
+:::
+
+<h4>FIMS R Packages</h4>
+<p>Other R packages for FIMS.</p>
+:::
+
+<!-- ::: {.fims-card .position-relative}
+
+<a href="/blog/index.html" class="stretched-link"></a>
+
+::: {.fims-card-icon .bi .bi-layout-text-window}
+:::
+
+<h4>FIMS Blog</h4>
+<p>Latest FIMS news and updates.</p>
+::: -->
+
+<!-- ::: {.fims-card .position-relative}
+
+<a href="/about/calendar.html" class="stretched-link"></a>
+
+::: {.fims-card-icon .bi .bi-calendar-event}
+:::
+
+<h4>FIMS Calendar</h4>
+<p>Upcoming events like Code Clubs, tutorials, etc.</p>
+::: -->
+
+:::

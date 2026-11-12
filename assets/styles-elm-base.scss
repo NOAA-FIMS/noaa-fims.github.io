@@ -43,9 +43,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h2, h3, h4, h5, h6 {
   font-weight: 400;
-  margin-top: 1.66em;
+  margin-top: 1.3em !important;
   margin-bottom: 0.66em;
 }
+
 
 .navbar-title, .navbar-nav .nav-item {
   font-family: $font-family-heading;
@@ -60,6 +61,14 @@ h2, h3, h4, h5, h6 {
 .navbar-brand-logo img {
   max-height: 37px;
   margin-right: 6px;
+}
+
+.sidebar-navigation {
+    padding-left: 10px !important;
+}
+
+#quarto-sidebar>* {
+    padding-right: 10px !important;
 }
 
 .sidebar-item {
@@ -255,6 +264,11 @@ img.thumbnail-image.card-img {
   line-height: 1.2rem;
 }
 
+.quarto-listing h3.listing-title,
+h3.listing-title {
+  margin-top: 0.5 !important; /* Set your desired margin-top value */
+}
+
 /* On blog pages, hide any category that isn't explicitly styled with an icon.
    This creates a curated list for the blog, while other pages (like Resources) show all categories. */
 .page-blog .quarto-listing-category .category:not([data-category=""]):not([data-category="ZGVlcC1kaXZl"]):not([data-category="Zmltcy13ZWVrbHk="]):not([data-category="bGVhcm4="]):not([data-category="b3RoZXI="]) {
@@ -264,6 +278,199 @@ img.thumbnail-image.card-img {
 /* "All" category (example: fa-list) */
 .quarto-listing-category .category[data-category=""] {
   display: none !important;
+}
+
+/* Tutorials page css for vignettes */
+.vignette-grid {
+  gap: 1rem;
+}
+
+.vignette-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.vignette-level-strip {
+  height: 0.4rem;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.vignette-level-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 2;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  background: var(--vignette-level-color, #6c757d);
+}
+
+.vignette-preview {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.vignette-card h3 {
+  margin: 0 0 0 0.25rem;
+}
+
+.vignette-card {
+  padding: 1.25rem !important;
+}
+
+.vignette-card p {
+  margin: 0 0 0 0.25rem;
+  color: var(--bs-secondary-color);
+}
+
+
+/* Level-specific accents */
+.level-new-user {
+  --vignette-level-color: #007653;
+}
+.level-intermediate-user {
+  --vignette-level-color: #236C91;
+}
+.level-contributor {
+  --vignette-level-color: #9B4678;
+}
+
+.level-new-user .vignette-level-strip {
+  background: #007653;
+}
+.level-intermediate-user .vignette-level-strip {
+  background: #236C91;
+}
+.level-contributor .vignette-level-strip {
+  background: #9B4678;
+}
+
+/* Vignette card layout */
+#vignette-cards.vignette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* Prevent the inherited card layout from limiting the cards */
+#vignette-cards.vignette-grid .vignette-card {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Keep card contents evenly distributed */
+#vignette-cards.vignette-grid .vignette-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#vignette-cards.vignette-grid .vignette-card > p {
+  flex-grow: 1;
+}
+
+/* Add visible separation between the color strip and the card content */
+#vignette-cards.vignette-grid .vignette-level-strip {
+  flex: 0 0 auto;
+  height: 0.4rem;
+  margin: 0 0 1rem;
+}
+
+/* Optional: make the cards slightly more distinct */
+#vignette-cards.vignette-grid .vignette-card {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Responsive behavior */
+@media (max-width:  40rem) {
+  #vignette-cards.vignette-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Vignette level filter controls */
+.vignette-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.vignette-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1px solid var(--bs-border-color);
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.vignette-filter-btn:hover {
+  background-color: var(--bs-tertiary-bg);
+  border-color: var(--bs-primary);
+}
+
+.vignette-filter-btn:focus-visible {
+  outline: 2px solid var(--bs-primary);
+  outline-offset: 2px;
+}
+
+.vignette-filter-btn.active,
+.vignette-filter-btn[aria-pressed="true"] {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #ffffff;
+}
+
+.vignette-filter-count {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+  background-color: #ebeeef !important;
+  color: #213f4b !important;
+}
+
+.vignette-filter-btn.active .vignette-filter-count,
+.vignette-filter-btn[aria-pressed="true"] .vignette-filter-count {
+  background-color: #0b535d !important;
+  color: #ffffff !important;
+}
+
+.quarto-dark .vignette-filter-count {
+  background-color: #334f5a !important;
+  color: #ebeeef !important;
+}
+
+.quarto-dark .vignette-filter-btn.active .vignette-filter-count,
+.quarto-dark .vignette-filter-btn[aria-pressed="true"] .vignette-filter-count {
+  background-color: #0e6876 !important;
+  color: #ffffff !important;
 }
 
 /* --- ACCESSIBILITY FIX: Default Badge Contrast --- */
@@ -330,10 +537,27 @@ img.thumbnail-image.card-img {
 .quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
 .quarto-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
 .quarto-listing .listing-category[onclick*="bGVhcm4="],
-.quarto-listing .listing-category[onclick*="b3RoZXI="] {
+.quarto-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-category:has(a[href*="category=deep-dive"]),
+.quarto-category:has(a[href*="category=fims-weekly"]),
+.quarto-category:has(a[href*="category=learn"]),
+.quarto-category:has(a[href*="category=other"]) {
   color: #09414a !important;             /* blue-10 for high contrast */
   border-color: #09414a !important;      /* Matches text perfectly */
   background-color: #e4f0f1 !important;  
+  opacity: 1 !important;
+}
+
+.quarto-category a[href*="category=deep-dive"],
+.quarto-category a[href*="category=deep-dive"]:hover,
+.quarto-category a[href*="category=fims-weekly"],
+.quarto-category a[href*="category=fims-weekly"]:hover,
+.quarto-category a[href*="category=learn"],
+.quarto-category a[href*="category=learn"]:hover,
+.quarto-category a[href*="category=other"],
+.quarto-category a[href*="category=other"]:hover {
+  color: #09414a !important;
+  text-decoration: none !important;
 }
 
 /* Dark Mode (Old-school explicit selectors) */
@@ -344,10 +568,27 @@ img.thumbnail-image.card-img {
 .quarto-dark .quarto-listing .listing-category[onclick*="ZGVlcC1kaXZl"],
 .quarto-dark .quarto-listing .listing-category[onclick*="Zmltcy13ZWVrbHk="],
 .quarto-dark .quarto-listing .listing-category[onclick*="bGVhcm4="],
-.quarto-dark .quarto-listing .listing-category[onclick*="b3RoZXI="] {
+.quarto-dark .quarto-listing .listing-category[onclick*="b3RoZXI="],
+.quarto-dark .quarto-category:has(a[href*="category=deep-dive"]),
+.quarto-dark .quarto-category:has(a[href*="category=fims-weekly"]),
+.quarto-dark .quarto-category:has(a[href*="category=learn"]),
+.quarto-dark .quarto-category:has(a[href*="category=other"]) {
   color: #f7fafb !important;             /* blue-100 for high contrast on dark */
   border-color: #f7fafb !important;      /* Matches text perfectly */
   background-color: #09414a !important;  
+  opacity: 1 !important;
+}
+
+.quarto-dark .quarto-category a[href*="category=deep-dive"],
+.quarto-dark .quarto-category a[href*="category=deep-dive"]:hover,
+.quarto-dark .quarto-category a[href*="category=fims-weekly"],
+.quarto-dark .quarto-category a[href*="category=fims-weekly"]:hover,
+.quarto-dark .quarto-category a[href*="category=learn"],
+.quarto-dark .quarto-category a[href*="category=learn"]:hover,
+.quarto-dark .quarto-category a[href*="category=other"],
+.quarto-dark .quarto-category a[href*="category=other"]:hover {
+  color: #f7fafb !important;
+  text-decoration: none !important;
 }
 
 /* --- ACCESSIBILITY FIX: Code Club page contrast --- */
@@ -359,6 +600,12 @@ img.thumbnail-image.card-img {
 
 .quarto-dark #a-space-for-everyone > div > div:nth-child(1) > p {
     color: #f4f4f4 !important; /* Use a light color for dark mode, consistent with other fixes. */
+}
+
+/* --- Blog Category Sidebar Filter --- */
+/* Hide all sidebar category entries by default */
+.quarto-listing-category .category {
+  display: none !important;
 }
 
 /* deep-dive */
@@ -575,6 +822,37 @@ div.quarto-post .metadata {
     padding: 6px 14px !important; 
     background-color: #33818c !important; /* Override Brevo default for AA contrast */
   }
+ 
+  /* =========================================================
+   Equations page formatting since it comes from output from the
+   FIMS repo
+   ========================================================= */
+  .fims-equation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.fims-equation-grid .equation-card {
+  border: 1px solid var(--bs-border-color);
+  border-radius: .5rem;
+  padding: 1rem;
+  background: var(--bs-body-bg);
+}
+
+.fims-equation-grid .equation-card h2 {
+  font-size: 1.1rem;
+  margin: .4rem 0 .5rem 0;
+}
+
+.fims-equation-grid .equation-meta span {
+  display: inline-block;
+  font-size: .75rem;
+  padding: .15rem .5rem;
+  border-radius: 999px;
+  background: var(--bs-tertiary-bg);
+  margin-right: .35rem;
+}
 
   /* =========================================================
    ACCESSIBILITY FIX: HEADLESS SCANNER CONTRAST BUG

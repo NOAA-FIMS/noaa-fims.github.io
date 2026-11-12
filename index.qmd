@@ -4,6 +4,7 @@ page-layout: full
 title-block-banner: false
 header-includes: >
   <link rel="stylesheet" href="assets/index.css">
+  <link rel="stylesheet" href="assets/community.css">
   <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
   <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 resources:
@@ -67,11 +68,13 @@ resources:
   </div>
 </div>
 ```
-## Subscribe to the FIMS Weekly Newsletter and Blog
+::: {.columns}
+::: {.column width="49%"}
+## Subscribe to the Newsletter & Blog
 
 ```{=html}
 <!-- START - We recommend to place the below code where you want the form in your website html  -->
-<div class="sib-form" style="text-align: center; background-color:#fff; padding: 15px 0;">
+<div class="sib-form" style="text-align: center; background-color:#fff; padding: 0px 0;">
   <div id="sib-form-container" class="sib-form-container">
     <div id="error-message" class="sib-form-message-panel" role="alert" aria-live="assertive" tabindex="-1" style="font-family:var(--bs-body-font-family); font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px; max-width:350px; margin: 0 auto;">
       <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
@@ -98,18 +101,18 @@ resources:
     <section id="sib-container" class="sib-container--large sib-container--vertical" aria-labelledby="newsletter-form-title" aria-describedby="newsletter-form-description" style="padding: 10px !important; max-width:400px; margin: 0 auto; text-align:center; background-color:#f7fafb; border-width:1px; border-style:solid; border-color:#C0CCD9; border-radius:3px; direction:ltr">
       <form id="sib-form" method="POST" action="https://11796369.sibforms.com/serve/MUIFAK1XHMwXI2NT4stSrUOqzvk_N5p9vPeHoF3BCI1dgjJSFy-EiOCNK2tgyvJhpXso6jQu_TUclmZ1Aa5uESA9g4gzTrFel9mghDTJkgPDD-DVijIa3ax16iCbdvK3w8erhPbeNYuoUY-boD64ojPldsu0VNBEO-20emT2pQmH87NHI2-9D0wyZhyXf5mMWYmOUD89fvcHbFeQRQ==" data-type="subscription">
         <fieldset class="sib-form-fieldset">
-          <legend class="visually-hidden">Subscribe to the FIMS Blog newsletter</legend>
+          <legend class="visually-hidden">Subscribe to the FIMS Newsletter & Blog</legend>
 
           <div style="padding: 5px 0;">
             <div class="sib-form-block" style="font-family:var(--bs-font-family-heading, inherit); font-size:calc(1.29rem + 0.48vw); font-weight:700; text-align:left; text-decoration:underline; color:#0e6876; background-color:transparent;">
-              <p id="newsletter-form-title" style="margin: 0; margin-bottom: 2px;">FIMS Blog</p>
+              <p id="newsletter-form-title" style="margin: 0; margin-bottom: 2px;">FIMS Newsletter & Blog</p>
             </div>
           </div>
 
           <div style="padding: 5px 0;">
             <div class="sib-form-block" style="font-family:var(--bs-body-font-family); font-size:16px; text-align:left; color:#3C4858; background-color:transparent;">
               <div class="sib-text-form-block">
-                <p id="newsletter-form-description" style="margin: 0;">Subscribe to our Blog and stay updated.</p>
+                <p id="newsletter-form-description" style="margin: 0;">Subscribe to stay updated.</p>
               </div>
             </div>
           </div>
@@ -179,82 +182,36 @@ resources:
 </div>
 <!-- End Brevo Form -->
 ```
+:::
 
-## FIMS User Pathways
+::: {.column width="2%"}
+::: 
 
-```{=html}
-<div class="fims-graphic-container">
-  <img id="fims-main-img" src="images/fims-user0.png" alt="FIMS User Pathways">
+::: {.column width="49%"}
+## Quick Start
+::: {.fims-card-stack}
+::: {.fims-card .position-relative}
+::: {.fims-card-icon .bi .bi-rocket}
+:::
+### Getting started
+Learn how to run a model in FIMS.
 
-  <button class="hotspot" type="button" id="hs-user1" onclick="changeImage('images/fims-user1.png', 'Pathway for Interested')" aria-label="Show pathway for Interested"></button>
-  <button class="hotspot" type="button" id="hs-user2" onclick="changeImage('images/fims-user2.png', 'Pathway for New User')" aria-label="Show pathway for New User"></button>
-  <button class="hotspot" type="button" id="hs-user3" onclick="changeImage('images/fims-user3.png', 'Pathway for Power User')" aria-label="Show pathway for Power User"></button>
-  <button class="hotspot" type="button" id="hs-user4" onclick="changeImage('images/fims-user4.png', 'Pathway for Contributor')" aria-label="Show pathway for Contributor"></button>
-  <button class="hotspot" type="button" id="hs-user5" onclick="changeImage('images/fims-user5.png', 'Pathway for Receiver of Results')" aria-label="Show pathway for Receiver of Results"></button>
+::: {.fims-card-footer}
+[Learn more <i class="bi bi-arrow-right"></i>](get-started/index.qmd){.fims-btn-full .stretched-link}
+:::
+:::
 
-  <a href="https://noaa-fims.github.io/about/faq.html" class="hotspot link-hotspot" id="link-faq-interested" data-show-on="user1" target="_blank" aria-label="Go to FAQ page" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://github.com/NOAA-FIMS/FIMS/milestones?sort=due_date&direction=asc" class="hotspot link-hotspot" id="link-planning-interested" data-show-on="user1" target="_blank" aria-label="Go to FIMS Project Milestones" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="hotspot link-hotspot" id="link-intro-gh-interested" data-show-on="user1" target="_blank" aria-label="Go to Introductions github discussion" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/about/calendar.html" class="hotspot link-hotspot" id="link-calendar-interested" data-show-on="user1" target="_blank" aria-label="Go to FIMS calendar" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/blog/" class="hotspot link-hotspot" id="link-blog-interested" data-show-on="user1" target="_blank" aria-label="Go to FIMS blog" tabindex="-1" aria-hidden="true"></a>
+::: {.fims-card .position-relative}
+::: {.fims-card-icon .bi .bi-puzzle}
+:::
+### Connect with us!
+Get connected to the FIMS community and resources.
 
-  <a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="hotspot link-hotspot" id="link-intro-gh-newuser" data-show-on="user2" target="_blank" aria-label="Go to Introductions github discussion" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/FIMS/articles/fims-demo.html" class="hotspot link-hotspot" id="link-intro-demo-newuser" data-show-on="user2" target="_blank" aria-label="Go to fims introductory vignette" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/resources/packages.html" class="hotspot link-hotspot" id="link-fims-packages-newuser" data-show-on="user2" target="_blank" aria-label="Go to fims-related packages page" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/blog/" class="hotspot link-hotspot" id="link-blog-newuser" data-show-on="user2" target="_blank" aria-label="Go to FIMS blog" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/about/calendar.html" class="hotspot link-hotspot" id="link-calendar-newuser" data-show-on="user2" target="_blank" aria-label="Go to FIMS calendar" tabindex="-1" aria-hidden="true"></a>
+::: {.fims-card-footer}
+[Connect <i class="bi bi-arrow-right"></i>](community/index.qmd){.fims-btn-full .stretched-link}
+:::
+:::
 
-  <a href="https://noaa-fims.github.io/FIMS/articles/fims-logging.html" class="hotspot link-hotspot" id="link-advanced-vignettes-poweruser" data-show-on="user3" target="_blank" aria-label="Go to advanced user vignettes" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://github.com/orgs/NOAA-FIMS/discussions/" class="hotspot link-hotspot" id="link-gh-discussions-poweruser" data-show-on="user3" target="_blank" aria-label="Go to FIMS github discussions" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/resources/packages.html" class="hotspot link-hotspot" id="link-fims-packages-poweruser" data-show-on="user3" target="_blank" aria-label="Go to fims-related packages page" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/about/calendar.html" class="hotspot link-hotspot" id="link-calendar-poweruser" data-show-on="user3" target="_blank" aria-label="Go to FIMS calendar" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/blog/" class="hotspot link-hotspot" id="link-blog-poweruser" data-show-on="user3" target="_blank" aria-label="Go to FIMS blog" tabindex="-1" aria-hidden="true"></a>
-
-  <a href="https://noaa-fims.github.io/FIMS/articles/fims-path-maturity.html" class="hotspot link-hotspot" id="link-contributor-vignettes-contributor" data-show-on="user4" target="_blank" aria-label="Go to developer vignettes" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://github.com/NOAA-FIMS/FIMS/milestones?sort=due_date&direction=asc" class="hotspot link-hotspot" id="link-planning-contributor" data-show-on="user4" target="_blank" aria-label="Go to FIMS Project Milestones" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://github.com/orgs/NOAA-FIMS/discussions/" class="hotspot link-hotspot" id="link-gh-discussions-contributor" data-show-on="user4" target="_blank" aria-label="Go to FIMS github discussions" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/about/calendar.html" class="hotspot link-hotspot" id="link-calendar-contributor" data-show-on="user4" target="_blank" aria-label="Go to FIMS calendar" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/blog/" class="hotspot link-hotspot" id="link-blog-contributor" data-show-on="user4" target="_blank" aria-label="Go to FIMS blog" tabindex="-1" aria-hidden="true"></a>
-
-  <a href="https://noaa-fims.github.io/about/faq.html" class="hotspot link-hotspot" id="link-faq-receiver" data-show-on="user5" target="_blank" aria-label="Go to FAQ page" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://github.com/NOAA-FIMS/FIMS/milestones?sort=due_date&direction=asc" class="hotspot link-hotspot" id="link-planning-receiver" data-show-on="user5" target="_blank" aria-label="Go to FIMS Project Milestones" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://github.com/orgs/NOAA-FIMS/discussions/801" class="hotspot link-hotspot" id="link-intro-gh-receiver" data-show-on="user5" target="_blank" aria-label="Go to Introductions github discussion" tabindex="-1" aria-hidden="true"></a>
-  <a href="https://noaa-fims.github.io/blog/" class="hotspot link-hotspot" id="link-blog-receiver" data-show-on="user5" target="_blank" aria-label="Go to FIMS blog" tabindex="-1" aria-hidden="true"></a>
-</div>
-
-<!-- INJECTED SCRIPT: Bypasses external caching and Quarto modules -->
-<script>
-  window.changeImage = function(newSrc, newAltText) {
-    const mainImage = document.getElementById("fims-main-img");
-    if (!mainImage) return;
-
-    // 1) Swap the picture
-    mainImage.src = newSrc;
-
-    // 2) Swap the alt text for screen readers
-    mainImage.alt = newAltText;
-
-    // 3) Calculate state from the image filename
-    const match = newSrc.match(/fims-user(\d+)\.png$/);
-    const targetState = match ? `user${match[1]}` : "__none__";
-
-    // 4) Show/hide the appropriate href hotspots
-    const links = document.querySelectorAll(".fims-graphic-container a.link-hotspot");
-    links.forEach((a) => {
-      const showOn = (a.dataset.showOn || "").trim();
-      const allowed = showOn.split(/\s+/).filter(Boolean);
-      const shouldShow = allowed.includes(targetState);
-
-      a.classList.toggle("is-visible", shouldShow);
-
-      if (shouldShow) {
-        a.removeAttribute("aria-hidden");
-        a.removeAttribute("tabindex");
-      } else {
-        a.setAttribute("aria-hidden", "true");
-        a.setAttribute("tabindex", "-1");
-      }
-    });
-  };
-</script>
-```
+:::
+:::
+:::

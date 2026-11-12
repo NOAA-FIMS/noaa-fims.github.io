@@ -1,0 +1,51 @@
+---
+title: Documentation
+include-after-body: ../assets/open-in-new-tab.html
+toc: true
+toc-location: right
+toc-depth: 2
+header-includes: >
+  <link rel="stylesheet" href="../assets/community.css">
+---
+## Links to documentation
+
+::: {.fims-horizontal-scroll}
+::: {.fims-card-grid}
+::: {.fims-card .position-relative}
+::: {.fims-card-icon .fa-brands .fa-r-project aria-hidden="true"}
+:::
+### FIMS R Package
+`{pkgdown}` site for the `{FIMS}` R package.
+
+::: {.fims-card-footer}
+[Go to site <i class="bi bi-arrow-right" aria-hidden="true"></i>](https://nmfs-ost.github.io/FIMS){.fims-btn-full .stretched-link aria-label="Go to FIMS R package site"}
+:::
+
+:::
+
+
+::: {.fims-card .position-relative}
+::: {.fims-card-icon .bi .bi-code aria-hidden="true"}
+:::
+### C++ Documentation
+C++ functions documentation through Doxygen.
+
+::: {.fims-card-footer}
+[Go to site <i class="bi bi-arrow-right" aria-hidden="true"></i>](https://noaa-fims.github.io/FIMS/doxygen/index.html){.fims-btn-full .stretched-link aria-label="Go to C++ Doxygen documentation site"}
+:::
+
+:::
+:::
+:::
+
+## See ways to improve our documentation? Let us know!
+
+Our documentation is always evolving and improving. We welcome and encourage users to open issues if they see ways we can improve our documentation or to submit a Pull Request after making changes themselves. 
+
+::: {.fims-doc-button-grid}
+[Open an Issue for FIMS Documentation](https://github.com/NOAA-FIMS/FIMS/issues/new/choose){.btn .btn-primary .fims-btn-small .d-flex .align-items-center .text-start target="_blank" rel="noopener"}
+
+[Open an Issue for the Website](https://github.com/NOAA-FIMS/noaa-fims.github.io/issues/new/choose){.btn .btn-primary .fims-btn-small .d-flex .align-items-center .text-start target="_blank" rel="noopener"}
+
+[See Contributing Guidelines to Make a PR Yourself!](https://github.com/NOAA-FIMS/FIMS/blob/main/CONTRIBUTING.md){.btn .btn-primary .fims-btn-small .d-flex .align-items-center .text-start target="_blank" rel="noopener"}
+:::

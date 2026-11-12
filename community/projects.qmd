@@ -1,9 +1,12 @@
 ---
-title: FIMS Projects
+title: Projects & Publications
+include-after-body: ../assets/open-in-new-tab.html
 toc: true
-toc-location: left
+toc-location: right
 toc-depth: 2
 ---
+
+Placeholder content for projects and publications page. This page will include information about FIMS-related projects and publications, including links to relevant papers, reports, and other resources.
 
 # Current projects
 
