@@ -382,21 +382,23 @@
 }
 
 .fims-doc-buttons {
-  max-width: 900px;
+  max-width: 650px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.fims-doc-buttons .col-md-4 {
+.fims-doc-buttons .col-12 {
   display: flex;
 }
 
-.fims-doc-buttons .col-md-4 p {
+.fims-doc-buttons .col-12 p {
   width: 100%;
   display: flex;
   margin-bottom: 0;
 }
 
 .fims-doc-buttons .btn {
-  padding: 0.75rem 1rem;
+  padding: 1rem 1.25rem;
 }
 
 /* --- Responsive Layout Adjustments --- */
