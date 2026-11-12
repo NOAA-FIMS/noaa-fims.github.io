@@ -43,9 +43,9 @@ C++ functions documentation through Doxygen.
 Our documentation is always evolving and improving. We welcome and encourage users to open issues if they see ways we can improve our documentation or to submit a Pull Request after making changes themselves. 
 
 ::: {.fims-doc-button-grid}
-[Open Issue for FIMS Documentation](https://github.com/NOAA-FIMS/FIMS/issues/new/choose){.btn .btn-primary .fims-btn-small .d-flex .align-items-center .text-start target="_blank" rel="noopener"}
+[Open an Issue for FIMS Documentation](https://github.com/NOAA-FIMS/FIMS/issues/new/choose){.btn .btn-primary .fims-btn-small .d-flex .align-items-center .text-start target="_blank" rel="noopener"}
 
-[Open Issue for Website](https://github.com/NOAA-FIMS/noaa-fims.github.io/issues/new/choose){.btn .btn-primary .fims-btn-small .d-flex .align-items-center .text-start target="_blank" rel="noopener"}
+[Open an Issue for the Website](https://github.com/NOAA-FIMS/noaa-fims.github.io/issues/new/choose){.btn .btn-primary .fims-btn-small .d-flex .align-items-center .text-start target="_blank" rel="noopener"}
 
-[See Contributing Guidelines to Make a PR Yourself](https://github.com/NOAA-FIMS/FIMS/blob/main/CONTRIBUTING.md){.btn .btn-primary .fims-btn-small .d-flex .align-items-center .text-start target="_blank" rel="noopener"}
+[See Contributing Guidelines to Make a PR Yourself!](https://github.com/NOAA-FIMS/FIMS/blob/main/CONTRIBUTING.md){.btn .btn-primary .fims-btn-small .d-flex .align-items-center .text-start target="_blank" rel="noopener"}
 :::
