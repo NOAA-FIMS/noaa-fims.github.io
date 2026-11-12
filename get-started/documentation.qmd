@@ -42,7 +42,7 @@ C++ functions documentation through Doxygen.
 
 Our documentation is always evolving and improving. We welcome and encourage users to open issues if they see ways we can improve our documentation or to submit a Pull Request after making changes themselves. 
 
-::: {.row .g-4 .fims-doc-buttons}
+::: {.row .gx-4 .gy-4 .fims-doc-buttons}
 ::: {.col-12 .col-md-4}
 [Open Issue for FIMS Documentation](https://github.com/NOAA-FIMS/FIMS/issues/new/choose){.btn .btn-primary .fims-btn-small .w-100 .h-100 .d-flex .align-items-center .text-start target="_blank" rel="noopener"}
 :::
