@@ -55,7 +55,7 @@ header-includes: >
 
 [<i class="bi bi-briefcase" aria-hidden="true"></i> Contributing Case Studies](https://github.com//NOAA-FIMS/case-studies#fims-case-studies){.fims-btn-small .fims-task-btn target="_blank"}
 
-[<i class="bi bi-layout-text-window" aria-hidden="true"></i> Contributing a Blog Post or to the Website](/contributing.md){.fims-btn-small .fims-task-btn}
+[<i class="bi bi-layout-text-window" aria-hidden="true"></i> Contributing a Blog Post or to the Website](https://github.com/NOAA-FIMS/noaa-fims.github.io/blob/main/CONTRIBUTING.md){.fims-btn-small .fims-task-btn}
 :::
 :::
 

@@ -4,7 +4,7 @@ title: FIMS Calendar
 
 FIMS has both recurring meetings, such as FIMS Code Club and FIMS Implementation Team meetings, and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If a meeting is public, the description includes a Google Meet link.
 
-Let us know on the [contact page](../contact/index.qmd) if there are meetings you are interested in joining, since not all meeting links are provided in the calendar. Implementation Team meetings are currently limited to [Implementation Team members](../contact/contributors.qmd#core-developers).
+Let us know on the [contact page](contact.qmd) if there are meetings you are interested in joining, since not all meeting links are provided in the calendar. Implementation Team meetings are currently limited to [Implementation Team members](contributors.qmd#core-developers).
 
 If the embedded calendar is difficult to use, open the [FIMS Community Calendar in a new tab](https://calendar.google.com/calendar/embed?src=c_6eluv1h8o830k7vt8ctcs6ghto%40group.calendar.google.com&ctz=America%2FNew_York).
 

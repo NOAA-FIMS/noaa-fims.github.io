@@ -27,13 +27,13 @@ We aim to accomplish our mission with a **user-friendly stock assessment tool** 
 
 ## Why FIMS?
 
-Learn more on the [FAQ page](/about/faq.qmd#why). If you would like to learn more about transitioning your model to FIMS, please see the [transitioning to FIMS page under Getting Started](../getting-started/transitioning.qmd).
+Learn more on the [FAQ page](/about/faq.qmd#why). If you would like to learn more about transitioning your model to FIMS, please see the [transitioning to FIMS page under Getting Started](../get-started/transitioning.qmd).
 
 ## Community
 
-A team of [experts](../contact/contributors.qmd) within NOAA Fisheries is designing and developing the system, and we are advised by the [FIMS Council](../contact/contributors.qmd#fims-council) which includes academic, industry, and international partners.
+A team of [experts](contributors.qmd) within NOAA Fisheries is designing and developing the system, and we are advised by the [FIMS Council](contributors.qmd#fims-council) which includes academic, industry, and international partners.
 
-Contributions from individuals of all skill levels are welcome. The codebase and documentation rely heavily on contributions from volunteers, and feedback from users helps keep the experience aligned with the goal of being user friendly. The roles of internal and external collaborators are outlined in the [roles section](../contact/contributors.qmd#roles) of this community playbook.
+Contributions from individuals of all skill levels are welcome. The codebase and documentation rely heavily on contributions from volunteers, and feedback from users helps keep the experience aligned with the goal of being user friendly. The roles of internal and external collaborators are outlined in the [roles section](contributors.qmd#roles) of this community playbook.
 
 ### Get involved
 

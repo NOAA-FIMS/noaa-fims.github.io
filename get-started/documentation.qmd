@@ -18,7 +18,7 @@ header-includes: >
 `{pkgdown}` site for the `{FIMS}` R package.
 
 ::: {.fims-card-footer}
-[Go to site <i class="bi bi-arrow-right" aria-hidden="true"></i>](https://nmfs-ost.github.io/FIMS){.fims-btn-full .stretched-link aria-label="Go to FIMS R package site"}
+[Go to site <i class="bi bi-arrow-right" aria-hidden="true"></i>](https://noaa-fims.github.io/FIMS/){.fims-btn-full .stretched-link aria-label="Go to FIMS R package site"}
 :::
 
 :::
