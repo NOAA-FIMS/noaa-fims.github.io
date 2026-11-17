@@ -40,5 +40,9 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: true
-          args: --accept 200,403,503 _site/
+          args: >-
+            --accept 200,403,503
+            --host-concurrency 1
+            --host-request-interval 2s
+            _site/
       
