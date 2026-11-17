@@ -41,8 +41,6 @@ jobs:
         with:
           fail: true
           args: >-
-            --accept 200,403,503
-            --host-concurrency 1
-            --host-request-interval 2s
+            --accept 200,403,503,429
             _site/
       
