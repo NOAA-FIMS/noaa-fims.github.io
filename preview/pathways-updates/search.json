@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "\n      NOAA Fisheries Integrated Modeling System\n    ",
     "section": "",
-    "text": "Welcome to the Fisheries Integrated Modeling System (FIMS) community playbook, your source of information for all members of the FIMS community--developers, users, and receivers of stock assessments. We welcome both those that are new and seasoned to the field to join us as we work to fulfill our mission!\n    \n    See the overview page for more! →"
+    "text": "Welcome to the Fisheries Integrated Modeling System (FIMS) community playbook, your source of information for all members of the FIMS community--developers, users, and receivers of stock assessments. We welcome both those that are new and seasoned to the field to join us as we work to fulfill our mission!\n    \n    See the about pages for more! →"
   },
   {
     "objectID": "index.html#subscribe-to-the-newsletter-blog",
@@ -18,7 +18,7 @@
     "href": "index.html#quick-start",
     "title": "\n      NOAA Fisheries Integrated Modeling System\n    ",
     "section": "Quick Start",
-    "text": "Quick Start\n\n\n\n\n\n\nGetting started\nLearn how to run a model in FIMS.\n\nLearn more \n\n\n\n\n\n\n\n\nConnect with us!\nGet connected to the FIMS community and resources.\n\nConnect"
+    "text": "Quick Start\n\n\n\n\n\n\nGetting started\nLearn how to run a model in FIMS.\n\nLearn more \n\n\n\n\n\n\n\n\nConnect with the FIMS community!\nGet connected to the FIMS community and resources.\n\nConnect"
   },
   {
     "objectID": "get-started/transitioning.html",
@@ -39,11 +39,18 @@
     ]
   },
   {
+    "objectID": "get-started/intermediate-user.html",
+    "href": "get-started/intermediate-user.html",
+    "title": "FIMS",
+    "section": "",
+    "text": "New User  Intermediate User  Contributor  Decision Maker\n\n\n\n\nTime to move into projections and customizations.\n\n\n\n\n\n\n\n\n\n\n\nLearn how to run simple projections in FIMS.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn how to run FIMS in virtual environments.\n\nStart \n\n\n\n\n\n\n\n\n\nCompare FIMS features with other modeling frameworks.\n\nStart \n\n\n\n\n\n\n\n\n\nStay updated on our blog posts and updates.\n\nStart"
+  },
+  {
     "objectID": "get-started/intermediate-user.html#you-have-leveled-up",
     "href": "get-started/intermediate-user.html#you-have-leveled-up",
     "title": "FIMS",
-    "section": "You have leveled up!",
-    "text": "You have leveled up!\n\nTime to move into diagnostics and customizations.\n\n\n Intermediate User Pathway"
+    "section": "",
+    "text": "Time to move into projections and customizations."
   },
   {
     "objectID": "get-started/decision-maker.html",
@@ -1693,7 +1700,7 @@
     "href": "get-started/new-user.html",
     "title": "FIMS",
     "section": "",
-    "text": "New User  Intermediate User  Contributor  Decision Maker\n\n\n\n\nLet’s get you set up to run your first model in FIMS.\n\n\n\n\n\n\n\n\n\n\n\nUse the links below to learn more about FIMS.\n\n FAQs\n Check out our blog\n\n\n\n\n\n\n\n\n\nIntroduce yourself and get involved in the FIMS community.\n\n Introduce yourself to the team\n Get involved in other discussions\n View and add the FIMS calendar\n Subscribe to our weekly newsletter\n\n\n\n\n\n\n\n\n\nWalk through the model and data initial setup and familiarize yourself with the interface.\n\n Introduction to FIMS\n FIMS Input Data\n\n\n\n\n\n\n\n\n\nLearn about the different functions available in FIMS and how to use them.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn about transitioning to FIMS from other frameworks and how to adapt your workflow.\n\nStart \n\n\n\n\n\n\n\n\n\n\n\n\n\nOther R packages for FIMS."
+    "text": "New User  Intermediate User  Contributor  Decision Maker\n\n\n\n\nLet’s get you set up to run your first model in FIMS.\n\n\n\n\n\n\n\n\n\n\n\nUse the links below to learn more about FIMS.\n\n FAQs\n Check out our blog\n\n\n\n\n\n\n\n\n\nIntroduce yourself and get involved in the FIMS community.\n\n Introduce yourself to the team\n Get involved in other discussions\n View and add the FIMS calendar\n Subscribe to our weekly newsletter\n\n\n\n\n\n\n\n\n\nWalk through the model and data initial setup and familiarize yourself with the interface.\n\n Introduction to FIMS\n FIMS Input Data\n\n\n\n\n\n\n\n\n\nRun diagnostic checks to ensure your model is properly configured.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn about the different functions available in FIMS and how to use them.\n\nStart \n\n\n\n\n\n\n\n\n\nLearn about transitioning to FIMS from other frameworks and how to adapt your workflow.\n\nStart \n\n\n\n\n\n\n\n\n\n\n\n\n\nOther R packages for FIMS."
   },
   {
     "objectID": "get-started/new-user.html#welcome",
