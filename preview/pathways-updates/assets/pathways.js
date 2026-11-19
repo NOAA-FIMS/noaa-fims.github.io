@@ -7,42 +7,48 @@ document.addEventListener('DOMContentLoaded', () => {
         timelineItems.forEach(el => {
             const isActive = el === targetItem;
             el.classList.toggle('is-active', isActive);
-            el.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+            const toggle = el.querySelector('.fims-step-toggle');
+            if (toggle) {
+                toggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+            }
         });
     }
 
     if (timelineItems.length > 0) {
         timelineItems.forEach((item, idx) => {
-            item.setAttribute('role', 'button');
-            item.setAttribute('tabindex', '0');
-
             const heading = item.querySelector('h4');
-            if (heading) {
-                if (!heading.id) {
-                    heading.id = `fims-step-heading-${idx}`;
-                }
-                item.setAttribute('aria-labelledby', heading.id);
+            const content = item.querySelector('.fims-step-content');
+            const contentId = `fims-step-content-${idx}`;
+
+            if (content && !content.id) {
+                content.id = contentId;
             }
 
-            const isActive = item.classList.contains('is-active');
-            item.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+            if (heading) {
+                const isActive = item.classList.contains('is-active');
+                const toggleBtn = document.createElement('button');
+                toggleBtn.type = 'button';
+                toggleBtn.className = 'fims-step-toggle';
+                toggleBtn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+                if (content) {
+                    toggleBtn.setAttribute('aria-controls', content.id);
+                }
+                while (heading.firstChild) {
+                    toggleBtn.appendChild(heading.firstChild);
+                }
+                heading.appendChild(toggleBtn);
+
+                toggleBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    setActiveItem(item);
+                });
+            }
 
             item.addEventListener('click', (e) => {
-                // If a link/button within the active card was clicked, let it navigate normally
                 if (e.target.closest('a, button')) {
                     return;
                 }
                 setActiveItem(item);
-            });
-
-            item.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    if (e.target.closest('a, button')) {
-                        return;
-                    }
-                    e.preventDefault();
-                    setActiveItem(item);
-                }
             });
         });
 

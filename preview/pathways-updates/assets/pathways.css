@@ -80,7 +80,7 @@
 
 /* Hover & Focus state for inactive items */
 .fims-timeline-item:not(.is-active):hover .fims-step-content,
-.fims-timeline-item:not(.is-active):focus-visible .fims-step-content {
+.fims-timeline-item:not(.is-active):focus-within .fims-step-content {
   border-color: var(--slate-80);
   box-shadow: 0 4px 14px rgba(14, 104, 118, 0.12);
   transform: translateY(-2px);
@@ -90,9 +90,25 @@
   outline: none;
 }
 
-.fims-timeline-item:focus-visible .fims-step-content {
+/* Disclosure button styling */
+.fims-step-toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.fims-step-toggle:focus-visible {
   outline: 2px solid var(--bs-primary);
-  outline-offset: 2px;
+  outline-offset: 4px;
 }
 
 /* --- Dynamic SVG S-Curves --- */
