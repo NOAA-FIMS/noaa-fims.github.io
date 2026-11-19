@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (heading) {
+                // Prevent Quarto's AnchorJS from injecting anchor links into timeline step headings
+                heading.classList.remove('anchored');
+
                 const isActive = item.classList.contains('is-active');
                 const toggleBtn = document.createElement('button');
                 toggleBtn.type = 'button';
@@ -33,10 +36,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (content) {
                     toggleBtn.setAttribute('aria-controls', content.id);
                 }
-                while (heading.firstChild) {
-                    toggleBtn.appendChild(heading.firstChild);
-                }
+
+                // Move all children except any anchor links into toggleBtn
+                const children = Array.from(heading.childNodes);
+                children.forEach(child => {
+                    if (child.nodeType === Node.ELEMENT_NODE && (child.tagName === 'A' || child.classList.contains('anchorjs-link'))) {
+                        return;
+                    }
+                    toggleBtn.appendChild(child);
+                });
+
+                // Find anchor link if already present to preserve it outside the button
+                const existingAnchor = heading.querySelector('a.anchorjs-link, a');
+                heading.innerHTML = '';
                 heading.appendChild(toggleBtn);
+                if (existingAnchor) {
+                    heading.appendChild(existingAnchor);
+                }
+
+                // If AnchorJS runs later, watch for and relocate any newly added anchor links outside toggleBtn
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach((mutation) => {
+                        mutation.addedNodes.forEach((node) => {
+                            if (node.nodeType === Node.ELEMENT_NODE && (node.tagName === 'A' || node.classList.contains('anchorjs-link'))) {
+                                heading.appendChild(node);
+                            }
+                        });
+                    });
+                });
+                observer.observe(toggleBtn, { childList: true });
 
                 toggleBtn.addEventListener('click', (e) => {
                     e.stopPropagation();
