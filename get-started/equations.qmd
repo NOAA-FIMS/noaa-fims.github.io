@@ -1,0 +1,52 @@
+---
+title: "FIMS Equation Catalog"
+---
+
+<!--
+To test this:
+-   ```bash
+    git clone \
+      -b <your-fims-branch> https://github.com/NOAA-FIMS/FIMS.git ../_fims_src
+    ```
+    
+-   **Generate the catalog files** directly into `get-started/` of this repo:
+    
+    ```bash
+    cd ../_fims_src
+    FIMS_EQ_CSV_OUT="../noaa-fims.github.io/get-started/fims_equation_catalog.csv" \
+    FIMS_EQ_HTML_OUT="../noaa-fims.github.io/get-started/fims_equation_catalog_raw.html" \
+    Rscript tools/build-equation-catalog.R
+    ```
+    
+-   **Preview the page**:
+    
+    ```bash
+    cd ../noaa-fims.github.io
+    quarto preview get-started/equations.qmd
+    ```
+-->
+
+```{=html}
+<div id="equation-catalog-root"></div>
+<script>
+fetch("fims_equation_catalog_raw.html")
+  .then(r => r.text())
+  .then(html => {
+    // Pull only cards from prototype html
+    const doc = new DOMParser().parseFromString(html, "text/html");
+    const grid = doc.querySelector(".grid");
+    const root = document.getElementById("equation-catalog-root");
+    if (grid) {
+      root.innerHTML = "";
+      // Rewrap cards in Quarto-friendly container
+      const section = document.createElement("section");
+      section.className = "fims-equation-grid";
+      section.innerHTML = grid.innerHTML;
+      root.appendChild(section);
+      if (window.MathJax?.typesetPromise) window.MathJax.typesetPromise();
+    } else {
+      root.innerHTML = "<p>Equation catalog not available.</p>";
+    }
+  });
+</script>
+```

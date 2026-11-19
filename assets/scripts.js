@@ -52,8 +52,9 @@ function initQuartoAccessibilityFixes() {
   // Hides decorative icons in the Quarto sidebar from screen readers by adding aria-hidden="true".
   // These icons don't convey information and can be noisy for assistive technology users.
   const hideDecorativeSidebarIcons = () => {
-    document.querySelectorAll('.quarto-sidebar i[role="img"]').forEach((icon) => {
+    document.querySelectorAll('#quarto-sidebar i[role="img"], .sidebar i[role="img"]').forEach((icon) => {
       icon.setAttribute("aria-hidden", "true");
+      icon.removeAttribute("role");
     });
   };
 
