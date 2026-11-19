@@ -1,5 +1,6 @@
 ---
 title: FIMS R Packages
+page-layout: full
 listing:
   id: fims-packages
   contents:

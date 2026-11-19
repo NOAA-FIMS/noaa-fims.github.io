@@ -1,5 +1,6 @@
 ---
 title: FIMS Calendar
+page-layout: full
 ---
 
 FIMS has both recurring meetings, such as FIMS Code Club and FIMS Implementation Team meetings, and one-off meetings each month. See the calendar below for meeting descriptions and links to running notes. If a meeting is public, the description includes a Google Meet link.

@@ -48,6 +48,10 @@ h2, h3, h4, h5, h6 {
 }
 
 
+#quarto-header.headroom--unpinned {
+  transform: translateY(0%) !important;
+}
+
 .navbar-title, .navbar-nav .nav-item {
   font-family: $font-family-heading;
   font-weight: 400;

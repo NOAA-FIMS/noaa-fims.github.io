@@ -75,6 +75,19 @@ header-includes: >
 <i class="bi bi-geo-alt-fill"></i>
 :::
 ::: {.fims-step-content}
+<h4>Diagnostics</h4>
+<p>Run diagnostic checks to ensure your model is properly configured.</p>
+
+[Start <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMS/articles/fims-diagnostics.html){.fims-btn-small .fims-task-btn target="_blank"}
+
+:::
+:::
+
+::: {.fims-step .fims-timeline-item}
+::: {.fims-step-number}
+<i class="bi bi-geo-alt-fill"></i>
+:::
+::: {.fims-step-content}
 <h4>FIMS Functions Overview</h4>
 <p>Learn about the different functions available in FIMS and how to use them.</p>
 [Start <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMS/reference/index.html){.fims-btn-small .fims-task-btn target="_blank"}

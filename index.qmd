@@ -60,7 +60,7 @@ resources:
     <p class="site-intro fs-5">
       Welcome to the <strong>Fisheries Integrated Modeling System (FIMS)</strong> community playbook, your source of information for all members of the FIMS community--developers, users, and receivers of stock assessments. We welcome both those that are new and seasoned to the field to join us as we work to fulfill our <a href="about/index.qmd#mission">mission</a>!
     </p>
-    <a class="mt4 action text" href="about/index.qmd">See the <strong>overview page</strong> for more! →</a>
+    <a class="mt4 action text" href="about/index.qmd">See the <strong>about pages</strong> for more! →</a>
   </div>
 
   <div class="site-logo">
@@ -204,7 +204,7 @@ Learn how to run a model in FIMS.
 ::: {.fims-card .position-relative}
 ::: {.fims-card-icon .bi .bi-puzzle}
 :::
-### Connect with us!
+### Connect with the FIMS community!
 Get connected to the FIMS community and resources.
 
 ::: {.fims-card-footer}

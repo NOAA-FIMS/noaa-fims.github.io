@@ -2,16 +2,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 1. Interactive Timeline Logic ---
     const timelineItems = document.querySelectorAll('.fims-timeline-item');
-    if (timelineItems.length > 0 && !document.querySelector('.fims-timeline-item.is-active')) {
-        timelineItems[0].classList.add('is-active');
+
+    function setActiveItem(targetItem) {
+        timelineItems.forEach(el => {
+            const isActive = el === targetItem;
+            el.classList.toggle('is-active', isActive);
+            el.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        });
     }
 
-    timelineItems.forEach(item => {
-        item.addEventListener('click', () => {
-            timelineItems.forEach(el => el.classList.remove('is-active'));
-            item.classList.add('is-active');
+    if (timelineItems.length > 0) {
+        timelineItems.forEach((item, idx) => {
+            item.setAttribute('role', 'button');
+            item.setAttribute('tabindex', '0');
+
+            const heading = item.querySelector('h4');
+            if (heading) {
+                if (!heading.id) {
+                    heading.id = `fims-step-heading-${idx}`;
+                }
+                item.setAttribute('aria-labelledby', heading.id);
+            }
+
+            const isActive = item.classList.contains('is-active');
+            item.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+
+            item.addEventListener('click', (e) => {
+                // If a link/button within the active card was clicked, let it navigate normally
+                if (e.target.closest('a, button')) {
+                    return;
+                }
+                setActiveItem(item);
+            });
+
+            item.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    if (e.target.closest('a, button')) {
+                        return;
+                    }
+                    e.preventDefault();
+                    setActiveItem(item);
+                }
+            });
         });
-    });
+
+        if (!document.querySelector('.fims-timeline-item.is-active')) {
+            setActiveItem(timelineItems[0]);
+        }
+    }
 
     // --- 2. Horizontal Scroll Dragging ---
     const scrollContainer = document.querySelector('.fims-horizontal-scroll');

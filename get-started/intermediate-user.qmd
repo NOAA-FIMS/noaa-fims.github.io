@@ -1,3 +1,4 @@
+---
 page-layout: full
 header-includes: >
   <link rel="stylesheet" href="../assets/community.css">
@@ -16,24 +17,11 @@ header-includes: >
 
 ::: {.fims-onboarding-header}
 ## You have leveled up!
-<p>Time to move into diagnostics and customizations.</p>
+<p>Time to move into projections and customizations.</p>
 <h3><i class="bi bi-signpost-split"></i> Intermediate User Pathway</h3>
 :::
 
 ::: {.fims-timeline}
-
-::: {.fims-step .fims-timeline-item}
-::: {.fims-step-number}
-<i class="bi bi-geo-alt-fill"></i>
-:::
-::: {.fims-step-content}
-<h4>Diagnostics</h4>
-<p>Run diagnostic checks to ensure your model is properly configured.</p>
-
-[Start <i class="bi bi-arrow-right"></i>](https://noaa-fims.github.io/FIMS/articles/fims-diagnostics.html){.fims-btn-small .fims-task-btn target="_blank"}
-
-:::
-:::
 
 ::: {.fims-step .fims-timeline-item}
 ::: {.fims-step-number}

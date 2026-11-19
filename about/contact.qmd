@@ -1,5 +1,6 @@
 ---
 title: Contact
+page-layout: full
 image: ../images/FIMS_logo3.png
 include-after-body: ../assets/open-in-new-tab.html
 toc: false

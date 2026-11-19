@@ -67,14 +67,32 @@
 .fims-timeline-item { 
   position: relative; 
   cursor: pointer; 
-  transition: all 0.3s ease; 
+  transition: transform 0.2s ease; 
   /* Prevents shifted items from breaking the page width */
   max-width: calc(100% - 60px); 
+  outline: none;
 }
 
 /* 1. Weave back and forth: Shift every Even item 60px to the right */
 .fims-timeline-item:nth-child(even) {
   transform: translateX(60px); 
+}
+
+/* Hover & Focus state for inactive items */
+.fims-timeline-item:not(.is-active):hover .fims-step-content,
+.fims-timeline-item:not(.is-active):focus-visible .fims-step-content {
+  border-color: var(--slate-80);
+  box-shadow: 0 4px 14px rgba(14, 104, 118, 0.12);
+  transform: translateY(-2px);
+}
+
+.fims-timeline-item:focus-visible {
+  outline: none;
+}
+
+.fims-timeline-item:focus-visible .fims-step-content {
+  outline: 2px solid var(--bs-primary);
+  outline-offset: 2px;
 }
 
 /* --- Dynamic SVG S-Curves --- */
@@ -114,9 +132,35 @@
 .fims-timeline-item .fims-step-content { 
   background-color: #ffffff;
   color: #213f4b;
-  padding: 1rem; 
+  padding: 1rem 2.25rem 1rem 1rem; 
   border-radius: 0.5rem; 
-  border: 1px solid transparent; 
+  border: 1px solid var(--slate-90); 
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* Chevron expand indicator */
+.fims-timeline-item .fims-step-content::after {
+  content: '';
+  position: absolute;
+  top: 1.35rem;
+  right: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid var(--slate-40);
+  border-bottom: 2px solid var(--slate-40);
+  transform: rotate(45deg);
+  transition: transform 0.25s ease, border-color 0.2s ease;
+}
+
+.fims-timeline-item:hover .fims-step-content::after {
+  border-color: var(--bs-primary);
+}
+
+.fims-timeline-item.is-active .fims-step-content::after {
+  transform: rotate(-135deg);
+  border-color: var(--bs-primary);
+  top: 1.55rem;
 }
 
 /* Hide task button by default */

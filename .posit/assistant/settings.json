@@ -1,0 +1,12 @@
+{
+  "permission": {
+    "bash": {
+      "gh *": "allow",
+      "echo *": "allow",
+      "quarto *": "allow"
+    },
+    "executeCode": {
+      "*": "allow"
+    }
+  }
+}
