@@ -1,0 +1,32 @@
+---
+title: FIMS R Packages
+page-layout: full
+listing:
+  id: fims-packages
+  contents:
+    - fims-packages.yaml
+  sort:
+    - "weight"
+    - "title"
+  type: grid
+  image-height: 250px
+  grid-columns: 3
+  fields: [image, title, description, categories]
+header-includes: >
+  <link rel="stylesheet" href="../assets/packages.css">
+---
+
+::: {#fims-packages-listing}
+::: {.quarto-listing-container}
+:::
+:::
+
+
+
+
+
+
+
+
+
+

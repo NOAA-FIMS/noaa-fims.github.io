@@ -1,0 +1,79 @@
+---
+title: Get Started
+include-after-body: ../assets/open-in-new-tab.html
+page-layout: full
+header-includes: >
+  <link rel="stylesheet" href="../assets/community.css">
+---
+<h2>Unsure where to start? Choose your path!</h2>
+
+Select the user pathway that best describes your goals. Click on the button for each pathway to see all of the resources available.
+
+::: {.fims-horizontal-scroll}
+::: {.fims-card-grid}
+::: {.fims-card .position-relative}
+::: {.fims-card-icon .bi .bi-person-plus}
+:::
+### I am a new user
+Get connected to FIMS resources and learn how to run a model in FIMS.
+
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Welcome to FIMS!
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Running a basic FIMS model
+* <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS Input Data
+
+::: {.fims-card-footer}
+[Start New User Path <i class="bi bi-arrow-right"></i>](new-user.qmd){.fims-btn-full .stretched-link}
+:::
+
+:::
+
+
+::: {.fims-card .position-relative}
+::: {.fims-card-icon .bi .bi-person-up}
+:::
+### I am an intermediate user
+Go beyond the default configurations, run diagnostics, etc.
+
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Diagnostics
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Changing model configurations
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Comparing FIMS to other models
+
+::: {.fims-card-footer}
+[Start Intermediate User Path <i class="bi bi-arrow-right"></i>](intermediate-user.qmd){.fims-btn-full .stretched-link}
+:::
+
+:::
+
+::: {.fims-card .position-relative}
+::: {.fims-card-icon .bi .bi-code-square}
+:::
+### I want to contribute
+Learn how to contribute contribute code, documentation, testing, etc. to FIMS! 
+
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Contributor guidelines
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Good first issues
+* <i class="bi bi-check-circle-fill fims-text-success"></i> FIMS project board
+
+::: {.fims-card-footer}
+[Start Contributor Path <i class="bi bi-arrow-right"></i>](contributor.qmd){.fims-btn-full .stretched-link}
+:::
+
+:::
+
+::: {.fims-card .position-relative}
+::: {.fims-card-icon .bi .bi-file-bar-graph}
+:::
+### I am a decision maker or manager
+Learn how to interpret FIMS outputs and use them to inform decision making.
+
+* <i class="bi bi-check-circle-fill fims-text-success"></i> FAQ
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Project milestones
+* <i class="bi bi-check-circle-fill fims-text-success"></i> Projects & publications
+
+::: {.fims-card-footer}
+[Start Decision Maker Path <i class="bi bi-arrow-right"></i>](decision-maker.qmd){.fims-btn-full .stretched-link}
+:::
+
+:::
+:::
+:::
