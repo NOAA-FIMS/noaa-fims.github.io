@@ -1,0 +1,33 @@
+{
+  "stories": {
+    "https://github.com/NOAA-FIMS/FIMS/pull/1966": {
+      "lastFeatured": "2026-11-23",
+      "status": "merged",
+      "fingerprint": "5b55da2d952c91b1e4ef6e50ebf6cdfc5b372b293e3e2ef0408e775c1c64b23d"
+    },
+    "https://github.com/NOAA-FIMS/case-studies/pull/148": {
+      "lastFeatured": "2026-11-23",
+      "status": "merged",
+      "fingerprint": "edf5d5236dbb21dd1191d170c11ffa88e99e34879b16354fd347c618873e1188"
+    },
+    "https://github.com/NOAA-FIMS/FIMS/issues/1975": {
+      "lastFeatured": "2026-11-23",
+      "status": "open",
+      "fingerprint": "5df38afc2bf36c6c616a10a3ad12d73aff036f908a46a080700078117034c65c"
+    },
+    "https://github.com/NOAA-FIMS/FIMS/pull/1986": {
+      "lastFeatured": "2026-11-23",
+      "status": "open",
+      "fingerprint": "463558912737227d956c1daae495c7f8ed27068fbe25af9a14f9dac57d01d07e"
+    }
+  },
+  "spotlights": {},
+  "contributors": {
+    "Bai-Li-NOAA": "2026-11-23",
+    "e-perl-NOAA": "2026-11-23",
+    "grantdadams": "2026-11-23",
+    "iantaylor-NOAA": "2026-11-23",
+    "kellijohnson-NOAA": "2026-11-23",
+    "nathanvaughan-NOAA": "2026-11-23"
+  }
+}
