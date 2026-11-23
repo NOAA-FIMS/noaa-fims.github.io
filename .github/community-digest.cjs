@@ -28,7 +28,7 @@ module.exports = async ({ github, core }) => {
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
-    .replace(/[\\`*_[\]{}()!#|]/g, "\\$&");
+    .replace(/[[\]*`]/g, "\\$&");
 
   const author = "author { __typename login }";
   const page = "pageInfo { hasPreviousPage }";
@@ -140,14 +140,14 @@ module.exports = async ({ github, core }) => {
       `, { owner, repo });
 
       const discussions = result.repository.discussions;
+      const recentDiscussions = discussions.nodes.filter(d => recent(d.updatedAt));
 
-      if (discussions.pageInfo.hasNextPage) {
+      // Only note capping if the last retrieved node is still within the recent window
+      if (discussions.pageInfo.hasNextPage && discussions.nodes.length && recent(discussions.nodes.at(-1).updatedAt)) {
         notes.add(`${fullName}: discussion retrieval capped at 100.`);
       }
 
-      ids.push(...discussions.nodes
-        .filter(d => recent(d.updatedAt))
-        .map(d => d.id));
+      ids.push(...recentDiscussions.map(d => d.id));
     }
 
     for (let offset = 0; offset < ids.length; offset += 10) {
@@ -332,18 +332,16 @@ module.exports = async ({ github, core }) => {
   const feature = (
     heading, candidates, invitation, limit = 2, recognition = false
   ) => {
-    lines.push(`## ${heading}`, "");
-
     const picks = candidates
       .filter(s => !selected.has(s.url))
       .sort(rank)
       .slice(0, limit);
 
     if (!picks.length) {
-      lines.push(
-        "_No eligible story found in this run's bounded sample._", ""
-      );
+      return;
     }
+
+    lines.push(`## ${heading}`, "");
 
     for (const s of picks) {
       selected.add(s.url);
@@ -363,11 +361,18 @@ module.exports = async ({ github, core }) => {
       }
 
       if (s.kind !== "release") {
-        lines.push(
-          `During this window: ${s.activity.length}${s.incomplete ? "+" : ""} human comments, replies, or review submissions; ` +
-          `${s.people.length}${s.incomplete ? "+" : ""} distinct participants.`,
-          ""
-        );
+        if (s.activity.length === 0) {
+          lines.push(
+            "No responses yet during this window.",
+            ""
+          );
+        } else {
+          lines.push(
+            `During this window: ${s.activity.length}${s.incomplete ? "+" : ""} human comments, replies, or review submissions; ` +
+            `${s.people.length}${s.incomplete ? "+" : ""} distinct participants.`,
+            ""
+          );
+        }
       }
 
       if (s.people.length) {
@@ -488,6 +493,18 @@ module.exports = async ({ github, core }) => {
     "Editor: identify the unresolved question and whose perspective would help.",
     1
   );
+
+  // Seed existing team / contributors from contact/contributors.qmd if contributors memory is empty
+  if (Object.keys(memory.contributors).length === 0 && fs.existsSync("contact/contributors.qmd")) {
+    const contribContent = fs.readFileSync("contact/contributors.qmd", "utf8");
+    const matches = contribContent.matchAll(/github\.com\/([a-zA-Z0-9_-]+)/g);
+    for (const m of matches) {
+      const handle = m[1];
+      if (!handle.endsWith("[bot]")) {
+        memory.contributors[handle] = "seeded";
+      }
+    }
+  }
 
   // Identify new participants appearing in featured stories for the first time
   const featuredPeople = new Set();
