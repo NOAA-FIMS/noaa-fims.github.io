@@ -316,7 +316,7 @@ Pick a 'Good First Issue' on GitHub and submit your first pull request for peer 
 ::: {.mb-5}
 <h2 class="fw-bold text-primary mb-4">Training Opportunities</h2>
 
-**Coming soon in late 2027 and 2028**
+**Coming soon in late 2027 and 2028!**
 
 Contact the [FIMS Project Lead](mailto:kelli.johnson@noaa.gov) if you would like to inquire about the process for requesting a training.
 
@@ -332,8 +332,7 @@ Contact the [FIMS Project Lead](mailto:kelli.johnson@noaa.gov) if you would like
 <div class="text-white small" style="font-size: 0.65rem;">Private training</div> -->
 </div>
 :::
-::: 
--->
+::: -->
 
 ::: 
 :::
