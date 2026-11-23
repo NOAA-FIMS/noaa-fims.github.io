@@ -332,7 +332,7 @@ Contact the [FIMS Project Lead](mailto:kelli.johnson@noaa.gov) if you would like
 <div class="text-white small" style="font-size: 0.65rem;">Private training</div> -->
 </div>
 :::
-::: -->
+:::
+::: --->
 
-::: 
 :::
