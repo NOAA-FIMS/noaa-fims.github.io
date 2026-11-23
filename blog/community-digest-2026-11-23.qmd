@@ -1,0 +1,91 @@
+---
+title: "Around FIMS - 2026-11-23"
+date: 2026-11-23
+categories: [community-digest]
+draft: true
+---
+
+Reporting window: 2026-11-16T22:21:59.708Z to 2026-11-23T22:21:59.708Z (UTC).
+
+::: {.callout-warning}
+Editorial draft. Verify credit and add context before publication.
+No quotes, consensus, contributor profiles, or release availability are inferred.
+:::
+
+## What we accomplished together
+
+### Categories in vignettes for website
+
+**Source:** [NOAA-FIMS/FIMS PR](https://github.com/NOAA-FIMS/FIMS/pull/1966) — merged.
+
+Opened by **e-perl-NOAA**.
+
+During this window: 18 human comments, replies, or review submissions; 3 distinct participants.
+
+Participants: e-perl-NOAA, iantaylor-NOAA, kellijohnson-NOAA.
+
+**Why it matters:** _Editor: connect the source to members' experience._
+
+**Join in:** Check the source for usage and testing instructions; merged work is not necessarily released.
+
+### remove renv from case-studies
+
+**Source:** [NOAA-FIMS/case-studies PR](https://github.com/NOAA-FIMS/case-studies/pull/148) — merged.
+
+Opened by **iantaylor-NOAA**.
+
+During this window: 4 human comments, replies, or review submissions; 2 distinct participants.
+
+Participants: iantaylor-NOAA, kellijohnson-NOAA.
+
+Linked issues: [case-studies#147](https://github.com/NOAA-FIMS/case-studies/issues/147).
+
+**Why it matters:** _Editor: connect the source to members' experience._
+
+**Join in:** Check the source for usage and testing instructions; merged work is not necessarily released.
+
+## A question looking for another voice
+
+### An NA estimation_type is treated as constant in some places and as estimated in others
+
+**Source:** [NOAA-FIMS/FIMS issue](https://github.com/NOAA-FIMS/FIMS/issues/1975) — open.
+
+Opened by **grantdadams**.
+
+No responses yet during this window.
+
+**Why it matters:** _Editor: connect the source to members' experience._
+
+**Join in:** If you have relevant experience, offer an example or a clarifying question in the source thread.
+
+## A conversation worth joining
+
+### Add conditional age at length composition (Needs example data and tests)
+
+**Source:** [NOAA-FIMS/FIMS PR](https://github.com/NOAA-FIMS/FIMS/pull/1986) — open.
+
+Opened by **nathanvaughan-NOAA**.
+
+During this window: 8 human comments, replies, or review submissions; 4 distinct participants.
+
+Participants: Bai-Li-NOAA, e-perl-NOAA, iantaylor-NOAA, nathanvaughan-NOAA.
+
+**Why it matters:** _Editor: connect the source to members' experience._
+
+**Join in:** Editor: identify the unresolved question and whose perspective would help.
+
+## Next week's invitation
+
+_Editor: choose one concrete action above. Link directly to where members can participate._
+
+## Collection notes
+
+Repositories: NOAA-FIMS/FIMS, NOAA-FIMS/noaa-fims.github.io, NOAA-FIMS/case-studies, NOAA-FIMS/ecosystemom.
+
+Only sources updated during the window are discovered; older unanswered questions may be missed.
+Counts exclude detected bots and include top-level comments, discussion replies, and submitted PR reviews;
+inline review comments, edits, reactions, and deleted activity are not counted.
+Participation is not evidence of agreement, helpfulness, or impact. No contribution leaderboard is produced.
+Closed issues are not assumed completed; merged PRs are not assumed released.
+Recognition favors authors not spotlighted in 28 days; editors must verify credit for all roles.
+Memory records reviewed selections only after the digest PR is merged; reconcile it with editorial deletions.
