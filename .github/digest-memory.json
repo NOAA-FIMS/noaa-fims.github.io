@@ -1,0 +1,66 @@
+{
+  "stories": {
+    "https://github.com/NOAA-FIMS/FIMS/pull/1966": {
+      "lastFeatured": "2026-11-23",
+      "status": "merged",
+      "fingerprint": "5b55da2d952c91b1e4ef6e50ebf6cdfc5b372b293e3e2ef0408e775c1c64b23d"
+    },
+    "https://github.com/NOAA-FIMS/case-studies/pull/148": {
+      "lastFeatured": "2026-11-23",
+      "status": "merged",
+      "fingerprint": "edf5d5236dbb21dd1191d170c11ffa88e99e34879b16354fd347c618873e1188"
+    },
+    "https://github.com/NOAA-FIMS/FIMS/issues/1975": {
+      "lastFeatured": "2026-11-23",
+      "status": "open",
+      "fingerprint": "5df38afc2bf36c6c616a10a3ad12d73aff036f908a46a080700078117034c65c"
+    },
+    "https://github.com/NOAA-FIMS/FIMS/pull/1986": {
+      "lastFeatured": "2026-11-23",
+      "status": "open",
+      "fingerprint": "463558912737227d956c1daae495c7f8ed27068fbe25af9a14f9dac57d01d07e"
+    }
+  },
+  "spotlights": {},
+  "contributors": {
+    "kellijohnson-NOAA": "seeded",
+    "orgs": "seeded",
+    "NOAA-FIMS": "seeded",
+    "msupernaw": "seeded",
+    "Bai-Li-NOAA": "seeded",
+    "Andrea-Havron-NOAA": "seeded",
+    "e-perl-NOAA": "seeded",
+    "k-doering-NOAA": "seeded",
+    "erikhwilliams": "seeded",
+    "Nikolai-Klibansky": "seeded",
+    "mtvincent-NOAA": "seeded",
+    "emilyliljestrand": "seeded",
+    "timjmiller": "seeded",
+    "iantaylor-NOAA": "seeded",
+    "ericward-noaa": "seeded",
+    "alexjensen-NOAA": "seeded",
+    "peterkuriyama-NOAA": "seeded",
+    "ChristineStawitz-NOAA": "seeded",
+    "nathanvaughan-NOAA": "seeded",
+    "grantdadams": "seeded",
+    "JaneSullivan-NOAA": "seeded",
+    "Eshaan-byte": "seeded",
+    "awilnoaa": "seeded",
+    "szu-yun-ko": "seeded",
+    "MOshima-PIFSC": "seeded",
+    "JonBrodziak": "seeded",
+    "Rohith-1717": "seeded",
+    "jimianelli": "seeded",
+    "abhinav-1305": "seeded",
+    "aman-raj-srivastva": "seeded",
+    "KyleShertzer-NOAA": "seeded",
+    "LNo-cz": "seeded",
+    "mciechanumich": "seeded",
+    "Nimra-Arshad51": "seeded",
+    "RicardoYin01": "seeded",
+    "samanthatrueman": "seeded",
+    "Srajald": "seeded",
+    "VedantMadane": "seeded",
+    "vivek0913": "seeded"
+  }
+}
