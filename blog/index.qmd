@@ -3,6 +3,7 @@ title: FIMS Blog
 description: >
   **Category Definitions**
   <br>
+  <i class="fa-solid fa-users" aria-hidden="true"></i> <span class="visually-hidden">Category icon: </span><strong>community-digest</strong>: curated digests of recent community activity, discussions, and collaboration across FIMS repositories <br>
   <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> <span class="visually-hidden">Category icon: </span><strong>deep-dive</strong>: learning about complex stock assessment concepts, academic exercises, and statistical best practices <br>
   <i class="fa-solid fa-newspaper" aria-hidden="true"></i> <span class="visually-hidden">Category icon: </span><strong>fims-weekly</strong>: FIMS weekly newsletter posts <br>
   <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> <span class="visually-hidden">Category icon: </span><strong>learn</strong>: learning about packages within FIMS, geared toward beginner and intermediate users <br>

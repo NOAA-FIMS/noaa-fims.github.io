@@ -1,0 +1,69 @@
+name: FIMS community digest
+
+on:
+  workflow_dispatch:
+  push:
+  # Enable after reviewing a manual trial:
+  # schedule:
+  #   - cron: "0 14 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: fims-community-digest
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gather evidence and draft community stories
+        id: collect
+        uses: actions/github-script@v7
+        env:
+          DIGEST_REPOSITORIES: NOAA-FIMS/FIMS,NOAA-FIMS/noaa-fims.github.io,NOAA-FIMS/case-studies,NOAA-FIMS/ecosystemom
+        with:
+          github-token: ${{ secrets.DIGEST_READ_TOKEN }}
+          script: |
+            const draft = require("./.github/community-digest.cjs");
+            await draft({ github, core });
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: digest-evidence-${{ steps.collect.outputs.date }}
+          path: digest-evidence/activity.json
+          retention-days: 30
+
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ github.token }}
+          branch: automation/community-digest-${{ steps.collect.outputs.date }}
+          add-paths: |
+            blog/community-digest-${{ steps.collect.outputs.date }}.qmd
+            .github/digest-memory.json
+          draft: true
+          title: "Community digest draft: ${{ steps.collect.outputs.date }}"
+          commit-message: |
+            Draft FIMS community digest
+
+            Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+          body: |
+            Evidence-based editorial draft; no automatic publication.
+
+            - Verify credit, outcomes, and every proposed invitation.
+            - Add why each story matters; do not infer consensus or invent quotes.
+            - Confirm permission for profiles, quotes, and submitted stories.
+            - Check evidence and retrieval warnings in the workflow artifact.
+            - Keep only useful sections; do not fill quiet weeks with invented news.
+            - Reconcile .github/digest-memory.json with the stories retained.
+            - Preview the post; remove draft: true only when ready.
+
+            Memory advances only when this PR is merged, not when generated.
+            Merge digest PRs in date order. Memory tracks reviewed selections,
+            not proof of publication. GITHUB_TOKEN PRs may not trigger previews.
