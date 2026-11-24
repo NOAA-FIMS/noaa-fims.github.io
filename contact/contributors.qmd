@@ -140,15 +140,15 @@ Contributors are listed below with profile links.
 </tr>
 <tr>
 <td style="padding:12px; text-align: center; vertical-align: top;">
-  <a href="https://github.com/nathanvaughan-NOAA">
-    <img src="https://avatars.githubusercontent.com/u/53061482?v=4" alt="nathanvaughan-NOAA avatar" width="80" height="80" style="border-radius: 8px;" />
-    <br/><sub>nathanvaughan-NOAA</sub>
-  </a>
-</td>
-<td style="padding:12px; text-align: center; vertical-align: top;">
   <a href="https://github.com/grantdadams">
     <img src="https://avatars.githubusercontent.com/u/25754306?v=4" alt="grantdadams avatar" width="80" height="80" style="border-radius: 8px;" />
     <br/><sub>grantdadams</sub>
+  </a>
+</td>
+<td style="padding:12px; text-align: center; vertical-align: top;">
+  <a href="https://github.com/nathanvaughan-NOAA">
+    <img src="https://avatars.githubusercontent.com/u/53061482?v=4" alt="nathanvaughan-NOAA avatar" width="80" height="80" style="border-radius: 8px;" />
+    <br/><sub>nathanvaughan-NOAA</sub>
   </a>
 </td>
 <td style="padding:12px; text-align: center; vertical-align: top;">
@@ -307,6 +307,12 @@ Contributors are listed below with profile links.
   <a href="https://github.com/vivek0913">
     <img src="https://avatars.githubusercontent.com/u/83529785?v=4" alt="vivek0913 avatar" width="80" height="80" style="border-radius: 8px;" />
     <br/><sub>vivek0913</sub>
+  </a>
+</td>
+<td style="padding:12px; text-align: center; vertical-align: top;">
+  <a href="https://github.com/codeafridi">
+    <img src="https://avatars.githubusercontent.com/u/177653516?v=4" alt="codeafridi avatar" width="80" height="80" style="border-radius: 8px;" />
+    <br/><sub>codeafridi</sub>
   </a>
 </td>
 </tr>
